@@ -58,7 +58,7 @@ SCRIPT_NAME = "generate_climate_policy_reference.py"
 TABLE_NAME = "climate_policy_reference_raw"
 
 LLM_MODEL = "gpt-4o-mini"
-OPENAI_API_URL = "https://api.openai.com/v1/chat/completions"
+OPENAI_API_URL = "https://eyq-incubator.europe.fabric.ey.com/eyq/eu/api/openai/deployments/gpt-4o-mini/chat/completions"
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "")
 
 # GPT-4o-mini prices used by your cost tracker
@@ -708,7 +708,7 @@ def call_openai(
                 data=json.dumps(payload).encode("utf-8"),
                 headers={
                     "Content-Type": "application/json",
-                    "Authorization": f"Bearer {OPENAI_API_KEY}",
+                    "api-key": OPENAI_API_KEY,
                 },
                 method="POST",
             )
