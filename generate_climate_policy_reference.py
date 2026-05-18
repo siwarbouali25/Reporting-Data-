@@ -56,7 +56,7 @@ OUTPUT_CSV = DATA_DIR / "climate_policy_reference.csv"
 USAGE_CSV  = DATA_DIR / "llm_usage_log.csv"   # cumulative cross-run usage ledger
 
 LLM_MODEL      = "gpt-4o-mini"
-OPENAI_API_URL = "https://api.openai.com/v1/chat/completions"
+OPENAI_API_URL = "https://eyq-incubator.europe.fabric.ey.com/eyq/eu/api/openai/deployments/gpt-4o-mini/chat/completions"
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "")  # set env var before running
 
 # gpt-4o-mini pricing USD per 1 000 tokens (update if OpenAI changes rates)
@@ -460,7 +460,7 @@ def call_openai(user_content, tracker, row_id, entity_id, reporting_year,
                 data    = json.dumps(payload).encode(),
                 headers = {
                     "Content-Type" : "application/json",
-                    "Authorization": f"Bearer {OPENAI_API_KEY}",
+                    "api-key": OPENAI_API_KEY,
                 },
                 method  = "POST",
             )
