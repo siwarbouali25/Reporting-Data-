@@ -56,7 +56,7 @@ SCRIPT_NAME = "generate_climate_transition_plan.py"
 TABLE_NAME = "climate_transition_plan_raw"
 
 LLM_MODEL = "gpt-4o-mini"
-OPENAI_API_URL = "https://api.openai.com/v1/chat/completions"
+OPENAI_API_URL = "https://eyq-incubator.europe.fabric.ey.com/eyq/eu/api/openai/deployments/gpt-4o-mini/chat/completions"
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "")
 
 PRICE_INPUT_PER_1K = 0.000150
@@ -542,7 +542,7 @@ def build_skeleton(
                 entity_filter(erm, eid)
                 & year_filter(erm, yr)
                 & erm["risk_category"].astype(str).str.lower().str.contains(
-                    "transition|policy|technology|market|reputation",
+                    "physical_acute|governance|physical_chronic|social|transition_market|transition_policy",
                     na=False,
                     regex=True,
                 )
@@ -1078,7 +1078,7 @@ def call_openai(
                 data=json.dumps(payload).encode("utf-8"),
                 headers={
                     "Content-Type": "application/json",
-                    "Authorization": f"Bearer {OPENAI_API_KEY}",
+                    "api-key": OPENAI_API_KEY,
                 },
                 method="POST",
             )
