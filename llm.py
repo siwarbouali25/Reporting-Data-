@@ -1,36 +1,31 @@
-from openai import OpenAI
-from dotenv import load_dotenv
 import os
-import json
+from dotenv import load_dotenv
+from openai import AzureOpenAI
 
-load_dotenv()
+load_dotenv(override=True)
 
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+endpoint = os.getenv("AZURE_OPENAI_ENDPOINT")
+deployment = os.getenv("AZURE_OPENAI_DEPLOYMENT")
+api_version = os.getenv("AZURE_OPENAI_API_VERSION", "2024-02-01")
+key = os.getenv("AZURE_OPENAI_API_KEY")
 
-DEPLOYMENT_NAME = "gpt-4o-mini"
+print("Endpoint:", endpoint)
+print("Deployment:", deployment)
+print("API version:", api_version)
+print("Key loaded:", key is not None)
+print("Key length:", len(key) if key else None)
+print("Key prefix:", key[:4] if key else None)
 
-def call_llm(system_prompt: str, user_prompt: str, temperature: float = 0.2) -> str:
-    response = client.chat.completions.create(
-        model=DEPLOYMENT_NAME,
-        messages=[
-            {"role": "system", "content": system_prompt},
-            {"role": "user", "content": user_prompt}
-        ],
-        temperature=temperature,
-        max_tokens=2000
-    )
-    return response.choices[0].message.content
+client = AzureOpenAI(
+    api_key=key,
+    api_version=api_version,
+    azure_endpoint=endpoint,
+)
 
+response = client.chat.completions.create(
+    model=deployment,
+    messages=[{"role": "user", "content": "Reply with: Azure works"}],
+    max_tokens=20,
+)
 
-def call_llm_json(system_prompt: str, user_prompt: str) -> dict:
-    response = client.chat.completions.create(
-        model=DEPLOYMENT_NAME,
-        messages=[
-            {"role": "system", "content": system_prompt},
-            {"role": "user", "content": user_prompt}
-        ],
-        temperature=0.0,
-        max_tokens=1200,
-        response_format={"type": "json_object"}
-    )
-    return json.loads(response.choices[0].message.content)
+print(response.choices[0].message.content)
