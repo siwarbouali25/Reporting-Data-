@@ -19,7 +19,7 @@ load_dotenv()
 # CONFIG
 # =========================================================
 
-OPENAI_API_URL = "https://api.openai.com/v1/chat/completions"
+OPENAI_API_URL = "https://eyq-incubator.europe.fabric.ey.com/eyq/eu/api/openai/deployments/gpt-4o-mini/chat/completions"
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "")
 LLM_MODEL = "gpt-4o-mini"
 
