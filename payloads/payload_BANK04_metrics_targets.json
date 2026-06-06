@@ -45,19 +45,19 @@
       }
     ],
     "pcaf_methodology": {
-      "corporate_loans": "outstanding_amount_meur / evic_meur * total_ghg_tco2e (PCAF Standard \u00a7B62)",
-      "sovereign_bonds_investments": "nominal_amount_meur / ppp_gdp_meur * national_scope1_tco2e (PCAF Standard \u00a7B62A)",
-      "listed_equity": "market_value_meur / issuer_evic_meur * issuer_revenue_meur (PCAF Standard \u00a7B61 proxy \u2014 revenue substituted for direct issuer emissions due to absence of counterparty-level emission data in investment records)",
+      "corporate_loans": "outstanding_amount_meur / evic_meur * total_ghg_tco2e (PCAF Standard §B62)",
+      "sovereign_bonds_investments": "nominal_amount_meur / ppp_gdp_meur * national_scope1_tco2e (PCAF Standard §B62A)",
+      "listed_equity": "market_value_meur / issuer_evic_meur * issuer_revenue_meur (PCAF Standard §B61 proxy — revenue substituted for direct issuer emissions due to absence of counterparty-level emission data in investment records)",
       "sovereign_bonds_note": "issuer_evic_meur and issuer_revenue_meur are null for sovereign bonds by design. EVIC and revenue are corporate concepts not applicable to sovereigns.",
       "investments_counterparty_note": "counterparty_id is null across all 185 investment rows. This is a known data generation gap. Attribution is at bank level only."
     },
-    "scope2_rec_reconciliation": "scope2_market_tco2e is sourced directly from utility_invoices.scope2_market_tco2e, which already reflects market-based accounting with grid emission factors adjusted for renewable energy certificates and PPAs. The rec_registry.csv data is not subtracted again during preparation \u2014 it is used for disclosure narrative only (certificate type, volume, registry). There is no double-counting.",
+    "scope2_rec_reconciliation": "scope2_market_tco2e is sourced directly from utility_invoices.scope2_market_tco2e, which already reflects market-based accounting with grid emission factors adjusted for renewable energy certificates and PPAs. The rec_registry.csv data is not subtracted again during preparation — it is used for disclosure narrative only (certificate type, volume, registry). There is no double-counting.",
     "risk_rating_methodology": "climate_risk_register.risk_rating is derived from a 5x5 risk matrix: scores 1-2 = low, 3-6 = medium, 8-12 = high, 15-25 = critical. Specifically: likelihood_score * severity_score; critical >= 15, high >= 8, medium >= 3, low < 3. This formula must be used verbatim if the rating methodology is described in the report.",
     "vehicles_correction": {
       "method": "Scope 1 fleet recalculated from annual_fuel_consumption_l * 2.67 kg_CO2/litre / 1000",
       "reason": "Pre-computed scope1_tco2e_2024 had errors including non-zero values for electric vehicles.",
       "electric_vehicles_zeroed": true,
-      "emission_factor_source": "Empirically derived \u2014 consistent 2.67 kg CO2/litre across all fuel types"
+      "emission_factor_source": "Empirically derived — consistent 2.67 kg CO2/litre across all fuel types"
     }
   },
   "bank": {
@@ -234,9 +234,9 @@
       "purchase_date": "2023-04-17",
       "issuer_revenue_meur": 1447.8,
       "issuer_evic_meur": 2397.5,
-      "ppp_gdp_meur": NaN,
+      "ppp_gdp_meur": null,
       "pcaf_data_quality_score": 2,
-      "counterparty_id": NaN,
+      "counterparty_id": null,
       "reporting_year": 2024,
       "attribution_factor": 0.07052763295099061,
       "attributed_emissions_proxy_tco2e": 102.1099069864442,
@@ -259,9 +259,9 @@
       "purchase_date": "2020-04-26",
       "issuer_revenue_meur": 3403.2,
       "issuer_evic_meur": 4601.3,
-      "ppp_gdp_meur": NaN,
+      "ppp_gdp_meur": null,
       "pcaf_data_quality_score": 2,
-      "counterparty_id": NaN,
+      "counterparty_id": null,
       "reporting_year": 2024,
       "attribution_factor": 0.07386608132484297,
       "attributed_emissions_proxy_tco2e": 251.3810479647056,
@@ -284,9 +284,9 @@
       "purchase_date": "2019-04-16",
       "issuer_revenue_meur": 11442.2,
       "issuer_evic_meur": 20504.1,
-      "ppp_gdp_meur": NaN,
+      "ppp_gdp_meur": null,
       "pcaf_data_quality_score": 2,
-      "counterparty_id": NaN,
+      "counterparty_id": null,
       "reporting_year": 2024,
       "attribution_factor": 0.05699055310889042,
       "attributed_emissions_proxy_tco2e": 652.097306782546,
@@ -309,9 +309,9 @@
       "purchase_date": "2020-12-05",
       "issuer_revenue_meur": 1671.0,
       "issuer_evic_meur": 2015.8,
-      "ppp_gdp_meur": NaN,
+      "ppp_gdp_meur": null,
       "pcaf_data_quality_score": 2,
-      "counterparty_id": NaN,
+      "counterparty_id": null,
       "reporting_year": 2024,
       "attribution_factor": 0.22288421470383968,
       "attributed_emissions_proxy_tco2e": 372.4395227701161,
@@ -334,9 +334,9 @@
       "purchase_date": "2020-08-20",
       "issuer_revenue_meur": 2731.9,
       "issuer_evic_meur": 4443.0,
-      "ppp_gdp_meur": NaN,
+      "ppp_gdp_meur": null,
       "pcaf_data_quality_score": 2,
-      "counterparty_id": NaN,
+      "counterparty_id": null,
       "reporting_year": 2024,
       "attribution_factor": 0.14198514517218097,
       "attributed_emissions_proxy_tco2e": 387.88921809588123,
@@ -359,18 +359,18 @@
       "currency": "EUR",
       "esg_classification": "article_9",
       "purchase_date": "2022-10-12",
-      "issuer_revenue_meur": NaN,
-      "issuer_evic_meur": NaN,
+      "issuer_revenue_meur": null,
+      "issuer_evic_meur": null,
       "ppp_gdp_meur": 3680000.0,
       "pcaf_data_quality_score": 3,
-      "counterparty_id": NaN,
+      "counterparty_id": null,
       "reporting_year": 2024,
       "attribution_factor": 0.00021162228260869566,
       "national_scope1_tco2e": 290000000.0,
       "ppp_adjusted_gdp_meur": 3680000.0,
       "attributed_emissions_tco2e": 61370.46195652174,
       "data_gap_flag": false,
-      "data_gap_reason": NaN
+      "data_gap_reason": null
     },
     {
       "investment_id": "INV00157",
@@ -384,18 +384,18 @@
       "currency": "EUR",
       "esg_classification": "article_9",
       "purchase_date": "2021-10-04",
-      "issuer_revenue_meur": NaN,
-      "issuer_evic_meur": NaN,
+      "issuer_revenue_meur": null,
+      "issuer_evic_meur": null,
       "ppp_gdp_meur": 3020000.0,
       "pcaf_data_quality_score": 3,
-      "counterparty_id": NaN,
+      "counterparty_id": null,
       "reporting_year": 2024,
       "attribution_factor": 0.0008848211920529801,
       "national_scope1_tco2e": 330000000.0,
       "ppp_adjusted_gdp_meur": 3020000.0,
       "attributed_emissions_tco2e": 291990.99337748345,
       "data_gap_flag": false,
-      "data_gap_reason": NaN
+      "data_gap_reason": null
     },
     {
       "investment_id": "INV00158",
@@ -409,18 +409,18 @@
       "currency": "EUR",
       "esg_classification": "article_9",
       "purchase_date": "2021-06-15",
-      "issuer_revenue_meur": NaN,
-      "issuer_evic_meur": NaN,
+      "issuer_revenue_meur": null,
+      "issuer_evic_meur": null,
       "ppp_gdp_meur": 3680000.0,
       "pcaf_data_quality_score": 3,
-      "counterparty_id": NaN,
+      "counterparty_id": null,
       "reporting_year": 2024,
       "attribution_factor": 0.00012675271739130434,
       "national_scope1_tco2e": 290000000.0,
       "ppp_adjusted_gdp_meur": 3680000.0,
       "attributed_emissions_tco2e": 36758.28804347826,
       "data_gap_flag": false,
-      "data_gap_reason": NaN
+      "data_gap_reason": null
     }
   ],
   "targets": [
@@ -437,15 +437,15 @@
       "target_framework": "SBTi_1.5C",
       "status": "on_track",
       "gross_or_net": "gross",
-      "associated_gross_target_id": NaN,
+      "associated_gross_target_id": null,
       "ghg_gases_covered": "all_kyoto_7",
       "scope_coverage": "scope1_and_2",
       "third_party_validated": true,
       "validation_body": "SBTi",
       "sectoral_decarbonisation": false,
       "interim_milestones_json": "[{\"year\": 2025, \"value\": 1299.1, \"metric\": \"tco2e\"}, {\"year\": 2028, \"value\": 993.4, \"metric\": \"tco2e\"}]",
-      "planned_carbon_credits_pct": NaN,
-      "planned_credit_type": NaN,
+      "planned_carbon_credits_pct": null,
+      "planned_credit_type": null,
       "target_applies_to": "whole_entity",
       "latest_paris_alignment": true,
       "review_frequency": "biennial",
@@ -477,15 +477,15 @@
       "target_framework": "NZBA",
       "status": "on_track",
       "gross_or_net": "gross",
-      "associated_gross_target_id": NaN,
+      "associated_gross_target_id": null,
       "ghg_gases_covered": "all_kyoto_7",
       "scope_coverage": "scope3_cat15",
       "third_party_validated": true,
       "validation_body": "UNEP_FI",
       "sectoral_decarbonisation": true,
       "interim_milestones_json": "[{\"year\": 2025, \"value\": 5.0, \"metric\": \"tco2e_per_meur_lending\"}, {\"year\": 2028, \"value\": 3.7, \"metric\": \"tco2e_per_meur_lending\"}]",
-      "planned_carbon_credits_pct": NaN,
-      "planned_credit_type": NaN,
+      "planned_carbon_credits_pct": null,
+      "planned_credit_type": null,
       "target_applies_to": "whole_entity",
       "latest_paris_alignment": true,
       "review_frequency": "triennial",
@@ -523,7 +523,7 @@
       "third_party_validated": true,
       "validation_body": "UNEP_FI",
       "sectoral_decarbonisation": false,
-      "interim_milestones_json": NaN,
+      "interim_milestones_json": null,
       "planned_carbon_credits_pct": 29.3,
       "planned_credit_type": "technology_removal",
       "target_applies_to": "whole_entity",
@@ -574,8 +574,8 @@
       "additionality_verified": true,
       "planned_flag": false,
       "reporting_year": 2023,
-      "retirement_year": NaN,
-      "associated_target_id": NaN
+      "retirement_year": null,
+      "associated_target_id": null
     },
     {
       "credit_id": "CC0013",
@@ -637,8 +637,8 @@
       "additionality_verified": true,
       "planned_flag": false,
       "reporting_year": 2022,
-      "retirement_year": NaN,
-      "associated_target_id": NaN
+      "retirement_year": null,
+      "associated_target_id": null
     },
     {
       "credit_id": "CC0024",
@@ -658,8 +658,8 @@
       "additionality_verified": true,
       "planned_flag": false,
       "reporting_year": 2022,
-      "retirement_year": NaN,
-      "associated_target_id": NaN
+      "retirement_year": null,
+      "associated_target_id": null
     },
     {
       "credit_id": "CC0025",
@@ -679,8 +679,8 @@
       "additionality_verified": true,
       "planned_flag": false,
       "reporting_year": 2023,
-      "retirement_year": NaN,
-      "associated_target_id": NaN
+      "retirement_year": null,
+      "associated_target_id": null
     },
     {
       "credit_id": "CC0026",
@@ -700,8 +700,8 @@
       "additionality_verified": true,
       "planned_flag": false,
       "reporting_year": 2023,
-      "retirement_year": NaN,
-      "associated_target_id": NaN
+      "retirement_year": null,
+      "associated_target_id": null
     }
   ],
   "internal_carbon_price": [

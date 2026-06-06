@@ -45,19 +45,19 @@
       }
     ],
     "pcaf_methodology": {
-      "corporate_loans": "outstanding_amount_meur / evic_meur * total_ghg_tco2e (PCAF Standard \u00a7B62)",
-      "sovereign_bonds_investments": "nominal_amount_meur / ppp_gdp_meur * national_scope1_tco2e (PCAF Standard \u00a7B62A)",
-      "listed_equity": "market_value_meur / issuer_evic_meur * issuer_revenue_meur (PCAF Standard \u00a7B61 proxy \u2014 revenue substituted for direct issuer emissions due to absence of counterparty-level emission data in investment records)",
+      "corporate_loans": "outstanding_amount_meur / evic_meur * total_ghg_tco2e (PCAF Standard §B62)",
+      "sovereign_bonds_investments": "nominal_amount_meur / ppp_gdp_meur * national_scope1_tco2e (PCAF Standard §B62A)",
+      "listed_equity": "market_value_meur / issuer_evic_meur * issuer_revenue_meur (PCAF Standard §B61 proxy — revenue substituted for direct issuer emissions due to absence of counterparty-level emission data in investment records)",
       "sovereign_bonds_note": "issuer_evic_meur and issuer_revenue_meur are null for sovereign bonds by design. EVIC and revenue are corporate concepts not applicable to sovereigns.",
       "investments_counterparty_note": "counterparty_id is null across all 185 investment rows. This is a known data generation gap. Attribution is at bank level only."
     },
-    "scope2_rec_reconciliation": "scope2_market_tco2e is sourced directly from utility_invoices.scope2_market_tco2e, which already reflects market-based accounting with grid emission factors adjusted for renewable energy certificates and PPAs. The rec_registry.csv data is not subtracted again during preparation \u2014 it is used for disclosure narrative only (certificate type, volume, registry). There is no double-counting.",
+    "scope2_rec_reconciliation": "scope2_market_tco2e is sourced directly from utility_invoices.scope2_market_tco2e, which already reflects market-based accounting with grid emission factors adjusted for renewable energy certificates and PPAs. The rec_registry.csv data is not subtracted again during preparation — it is used for disclosure narrative only (certificate type, volume, registry). There is no double-counting.",
     "risk_rating_methodology": "climate_risk_register.risk_rating is derived from a 5x5 risk matrix: scores 1-2 = low, 3-6 = medium, 8-12 = high, 15-25 = critical. Specifically: likelihood_score * severity_score; critical >= 15, high >= 8, medium >= 3, low < 3. This formula must be used verbatim if the rating methodology is described in the report.",
     "vehicles_correction": {
       "method": "Scope 1 fleet recalculated from annual_fuel_consumption_l * 2.67 kg_CO2/litre / 1000",
       "reason": "Pre-computed scope1_tco2e_2024 had errors including non-zero values for electric vehicles.",
       "electric_vehicles_zeroed": true,
-      "emission_factor_source": "Empirically derived \u2014 consistent 2.67 kg CO2/litre across all fuel types"
+      "emission_factor_source": "Empirically derived — consistent 2.67 kg CO2/litre across all fuel types"
     }
   },
   "bank": {
@@ -85,7 +85,7 @@
       "risk_id": "RISK-BANK01-2023-0001",
       "bank_id": "BANK01",
       "reporting_year": 2023,
-      "risk_name": "Physical risk \u2014 mortgage book flood exposure",
+      "risk_name": "Physical risk — mortgage book flood exposure",
       "risk_category": "physical_acute",
       "risk_description": "Residential and commercial mortgage collateral located in flood-prone zones faces rising acute physical risk. Property damage and devaluation could impair collateral coverage.",
       "time_horizon": "short_0_2yr",
@@ -98,13 +98,13 @@
       "scenario_analysis_link": "SCN0009",
       "monitoring_frequency": "monthly",
       "changed_since_prior_period": false,
-      "ifrs_s2_para_evidence": "\u00a725(a)"
+      "ifrs_s2_para_evidence": "§25(a)"
     },
     {
       "risk_id": "RISK-BANK01-2023-0002",
       "bank_id": "BANK01",
       "reporting_year": 2023,
-      "risk_name": "Reputational risk \u2014 financed emissions scrutiny",
+      "risk_name": "Reputational risk — financed emissions scrutiny",
       "risk_category": "transition_reputational",
       "risk_description": "Stakeholder and NGO scrutiny of financed emissions and fossil financing could damage brand and trigger client attrition.",
       "time_horizon": "long_5yr_plus",
@@ -114,16 +114,16 @@
       "financial_impact_meur": 29.4,
       "mitigation_actions": "Engagement and transition-plan covenants with borrowers",
       "erm_integrated_flag": true,
-      "scenario_analysis_link": NaN,
+      "scenario_analysis_link": null,
       "monitoring_frequency": "quarterly",
       "changed_since_prior_period": true,
-      "ifrs_s2_para_evidence": "\u00a725(a)"
+      "ifrs_s2_para_evidence": "§25(a)"
     },
     {
       "risk_id": "RISK-BANK01-2023-0003",
       "bank_id": "BANK01",
       "reporting_year": 2023,
-      "risk_name": "Stranded assets \u2014 fossil fuel sector exposure",
+      "risk_name": "Stranded assets — fossil fuel sector exposure",
       "risk_category": "transition_market",
       "risk_description": "Demand shifts away from fossil fuels risk stranding reserves and assets held by oil, gas and coal counterparties, reducing their enterprise value.",
       "time_horizon": "medium_2_5yr",
@@ -133,16 +133,16 @@
       "financial_impact_meur": 119.3,
       "mitigation_actions": "Green retrofit financing incentives",
       "erm_integrated_flag": true,
-      "scenario_analysis_link": NaN,
+      "scenario_analysis_link": null,
       "monitoring_frequency": "monthly",
       "changed_since_prior_period": false,
-      "ifrs_s2_para_evidence": "\u00a725(a)"
+      "ifrs_s2_para_evidence": "§25(a)"
     },
     {
       "risk_id": "RISK-BANK01-2023-0004",
       "bank_id": "BANK01",
       "reporting_year": 2023,
-      "risk_name": "Transition risk \u2014 carbon pricing on industrial loans",
+      "risk_name": "Transition risk — carbon pricing on industrial loans",
       "risk_category": "transition_policy",
       "risk_description": "Tightening EU ETS and national carbon pricing raise operating costs for carbon-intensive borrowers, increasing default probability in cement, steel and chemicals.",
       "time_horizon": "medium_2_5yr",
@@ -155,13 +155,13 @@
       "scenario_analysis_link": "SCN0007",
       "monitoring_frequency": "quarterly",
       "changed_since_prior_period": true,
-      "ifrs_s2_para_evidence": "\u00a725(a)"
+      "ifrs_s2_para_evidence": "§25(a)"
     },
     {
       "risk_id": "RISK-BANK01-2023-0005",
       "bank_id": "BANK01",
       "reporting_year": 2023,
-      "risk_name": "Transition risk \u2014 EV shift in auto lending",
+      "risk_name": "Transition risk — EV shift in auto lending",
       "risk_category": "transition_technology",
       "risk_description": "Rapid electrification could strand internal-combustion vehicle manufacturers and suppliers in the lending book.",
       "time_horizon": "short_0_2yr",
@@ -174,13 +174,13 @@
       "scenario_analysis_link": "SCN0007",
       "monitoring_frequency": "monthly",
       "changed_since_prior_period": false,
-      "ifrs_s2_para_evidence": "\u00a725(a)"
+      "ifrs_s2_para_evidence": "§25(a)"
     },
     {
       "risk_id": "RISK-BANK01-2023-0006",
       "bank_id": "BANK01",
       "reporting_year": 2023,
-      "risk_name": "Physical risk \u2014 wildfire exposure in southern portfolio",
+      "risk_name": "Physical risk — wildfire exposure in southern portfolio",
       "risk_category": "physical_acute",
       "risk_description": "Wildfire frequency in southern European exposures threatens collateral and business continuity for affected counterparties.",
       "time_horizon": "long_5yr_plus",
@@ -193,13 +193,13 @@
       "scenario_analysis_link": "SCN0007",
       "monitoring_frequency": "semi_annual",
       "changed_since_prior_period": false,
-      "ifrs_s2_para_evidence": "\u00a725(a)"
+      "ifrs_s2_para_evidence": "§25(a)"
     },
     {
       "risk_id": "RISK-BANK01-2023-0007",
       "bank_id": "BANK01",
       "reporting_year": 2023,
-      "risk_name": "Transition risk \u2014 building energy performance regulation",
+      "risk_name": "Transition risk — building energy performance regulation",
       "risk_category": "transition_policy",
       "risk_description": "Minimum energy performance standards may require costly retrofits for low-EPC mortgage collateral, reducing values and increasing LTV.",
       "time_horizon": "long_5yr_plus",
@@ -212,13 +212,13 @@
       "scenario_analysis_link": "SCN0011",
       "monitoring_frequency": "semi_annual",
       "changed_since_prior_period": false,
-      "ifrs_s2_para_evidence": "\u00a725(a)"
+      "ifrs_s2_para_evidence": "§25(a)"
     },
     {
       "risk_id": "RISK-BANK01-2023-0008",
       "bank_id": "BANK01",
       "reporting_year": 2023,
-      "risk_name": "Physical risk \u2014 heat stress on agricultural borrowers",
+      "risk_name": "Physical risk — heat stress on agricultural borrowers",
       "risk_category": "physical_chronic",
       "risk_description": "Chronic heat and shifting precipitation reduce yields for agricultural counterparties, weakening repayment capacity over the medium term.",
       "time_horizon": "long_5yr_plus",
@@ -231,13 +231,13 @@
       "scenario_analysis_link": "SCN0005",
       "monitoring_frequency": "quarterly",
       "changed_since_prior_period": false,
-      "ifrs_s2_para_evidence": "\u00a725(a)"
+      "ifrs_s2_para_evidence": "§25(a)"
     },
     {
       "risk_id": "RISK-BANK01-2024-0001",
       "bank_id": "BANK01",
       "reporting_year": 2024,
-      "risk_name": "Physical risk \u2014 mortgage book flood exposure",
+      "risk_name": "Physical risk — mortgage book flood exposure",
       "risk_category": "physical_acute",
       "risk_description": "Residential and commercial mortgage collateral located in flood-prone zones faces rising acute physical risk. Property damage and devaluation could impair collateral coverage.",
       "time_horizon": "long_5yr_plus",
@@ -250,13 +250,13 @@
       "scenario_analysis_link": "SCN0004",
       "monitoring_frequency": "quarterly",
       "changed_since_prior_period": false,
-      "ifrs_s2_para_evidence": "\u00a725(a)"
+      "ifrs_s2_para_evidence": "§25(a)"
     },
     {
       "risk_id": "RISK-BANK01-2024-0002",
       "bank_id": "BANK01",
       "reporting_year": 2024,
-      "risk_name": "Transition risk \u2014 building energy performance regulation",
+      "risk_name": "Transition risk — building energy performance regulation",
       "risk_category": "transition_policy",
       "risk_description": "Minimum energy performance standards may require costly retrofits for low-EPC mortgage collateral, reducing values and increasing LTV.",
       "time_horizon": "long_5yr_plus",
@@ -266,16 +266,16 @@
       "financial_impact_meur": 21.6,
       "mitigation_actions": "Green retrofit financing incentives",
       "erm_integrated_flag": false,
-      "scenario_analysis_link": NaN,
+      "scenario_analysis_link": null,
       "monitoring_frequency": "semi_annual",
       "changed_since_prior_period": false,
-      "ifrs_s2_para_evidence": "\u00a725(a)"
+      "ifrs_s2_para_evidence": "§25(a)"
     },
     {
       "risk_id": "RISK-BANK01-2024-0003",
       "bank_id": "BANK01",
       "reporting_year": 2024,
-      "risk_name": "Physical risk \u2014 heat stress on agricultural borrowers",
+      "risk_name": "Physical risk — heat stress on agricultural borrowers",
       "risk_category": "physical_chronic",
       "risk_description": "Chronic heat and shifting precipitation reduce yields for agricultural counterparties, weakening repayment capacity over the medium term.",
       "time_horizon": "short_0_2yr",
@@ -288,13 +288,13 @@
       "scenario_analysis_link": "SCN0011",
       "monitoring_frequency": "semi_annual",
       "changed_since_prior_period": true,
-      "ifrs_s2_para_evidence": "\u00a725(a)"
+      "ifrs_s2_para_evidence": "§25(a)"
     },
     {
       "risk_id": "RISK-BANK01-2024-0004",
       "bank_id": "BANK01",
       "reporting_year": 2024,
-      "risk_name": "Physical risk \u2014 wildfire exposure in southern portfolio",
+      "risk_name": "Physical risk — wildfire exposure in southern portfolio",
       "risk_category": "physical_acute",
       "risk_description": "Wildfire frequency in southern European exposures threatens collateral and business continuity for affected counterparties.",
       "time_horizon": "short_0_2yr",
@@ -307,13 +307,13 @@
       "scenario_analysis_link": "SCN0002",
       "monitoring_frequency": "semi_annual",
       "changed_since_prior_period": false,
-      "ifrs_s2_para_evidence": "\u00a725(a)"
+      "ifrs_s2_para_evidence": "§25(a)"
     },
     {
       "risk_id": "RISK-BANK01-2024-0005",
       "bank_id": "BANK01",
       "reporting_year": 2024,
-      "risk_name": "Stranded assets \u2014 fossil fuel sector exposure",
+      "risk_name": "Stranded assets — fossil fuel sector exposure",
       "risk_category": "transition_market",
       "risk_description": "Demand shifts away from fossil fuels risk stranding reserves and assets held by oil, gas and coal counterparties, reducing their enterprise value.",
       "time_horizon": "long_5yr_plus",
@@ -323,16 +323,16 @@
       "financial_impact_meur": 136.5,
       "mitigation_actions": "Collateral revaluation and flood mapping overlay",
       "erm_integrated_flag": true,
-      "scenario_analysis_link": NaN,
+      "scenario_analysis_link": null,
       "monitoring_frequency": "quarterly",
       "changed_since_prior_period": false,
-      "ifrs_s2_para_evidence": "\u00a725(a)"
+      "ifrs_s2_para_evidence": "§25(a)"
     },
     {
       "risk_id": "RISK-BANK01-2024-0006",
       "bank_id": "BANK01",
       "reporting_year": 2024,
-      "risk_name": "Transition risk \u2014 EV shift in auto lending",
+      "risk_name": "Transition risk — EV shift in auto lending",
       "risk_category": "transition_technology",
       "risk_description": "Rapid electrification could strand internal-combustion vehicle manufacturers and suppliers in the lending book.",
       "time_horizon": "short_0_2yr",
@@ -345,13 +345,13 @@
       "scenario_analysis_link": "SCN0011",
       "monitoring_frequency": "quarterly",
       "changed_since_prior_period": true,
-      "ifrs_s2_para_evidence": "\u00a725(a)"
+      "ifrs_s2_para_evidence": "§25(a)"
     },
     {
       "risk_id": "RISK-BANK01-2024-0007",
       "bank_id": "BANK01",
       "reporting_year": 2024,
-      "risk_name": "Reputational risk \u2014 financed emissions scrutiny",
+      "risk_name": "Reputational risk — financed emissions scrutiny",
       "risk_category": "transition_reputational",
       "risk_description": "Stakeholder and NGO scrutiny of financed emissions and fossil financing could damage brand and trigger client attrition.",
       "time_horizon": "medium_2_5yr",
@@ -364,13 +364,13 @@
       "scenario_analysis_link": "SCN0013",
       "monitoring_frequency": "semi_annual",
       "changed_since_prior_period": true,
-      "ifrs_s2_para_evidence": "\u00a725(a)"
+      "ifrs_s2_para_evidence": "§25(a)"
     },
     {
       "risk_id": "RISK-BANK01-2024-0008",
       "bank_id": "BANK01",
       "reporting_year": 2024,
-      "risk_name": "Transition risk \u2014 carbon pricing on industrial loans",
+      "risk_name": "Transition risk — carbon pricing on industrial loans",
       "risk_category": "transition_policy",
       "risk_description": "Tightening EU ETS and national carbon pricing raise operating costs for carbon-intensive borrowers, increasing default probability in cement, steel and chemicals.",
       "time_horizon": "medium_2_5yr",
@@ -380,10 +380,10 @@
       "financial_impact_meur": 67.5,
       "mitigation_actions": "Sector exposure limits and enhanced due diligence",
       "erm_integrated_flag": true,
-      "scenario_analysis_link": NaN,
+      "scenario_analysis_link": null,
       "monitoring_frequency": "quarterly",
       "changed_since_prior_period": true,
-      "ifrs_s2_para_evidence": "\u00a725(a)"
+      "ifrs_s2_para_evidence": "§25(a)"
     }
   ],
   "physical_risk_exposures": [
@@ -3326,17 +3326,17 @@
     {
       "node_id": "VC-BANK01-0001",
       "bank_id": "BANK01",
-      "node_name": "Own banking operations \u2014 buildings",
+      "node_name": "Own banking operations — buildings",
       "node_type": "own_operations",
       "upstream_downstream": "own",
       "sustainability_theme": "climate_physical",
       "climate_exposure_type": "physical_chronic",
       "materiality_flag": true,
       "climate_risk_description": "Operational sites and travel generate Scope 1-2 emissions and face physical disruption.",
-      "financial_exposure_meur": NaN,
+      "financial_exposure_meur": null,
       "nace_link": "L68",
-      "scope3_category": NaN,
-      "ifrs_s2_para_evidence": "\u00a713(a)"
+      "scope3_category": null,
+      "ifrs_s2_para_evidence": "§13(a)"
     },
     {
       "node_id": "VC-BANK01-0002",
@@ -3348,10 +3348,10 @@
       "climate_exposure_type": "transition_market",
       "materiality_flag": true,
       "climate_risk_description": "Operational sites and travel generate Scope 1-2 emissions and face physical disruption.",
-      "financial_exposure_meur": NaN,
+      "financial_exposure_meur": null,
       "nace_link": "H49",
       "scope3_category": "Cat.6",
-      "ifrs_s2_para_evidence": "\u00a713(a)"
+      "ifrs_s2_para_evidence": "§13(a)"
     },
     {
       "node_id": "VC-BANK01-0003",
@@ -3362,11 +3362,11 @@
       "sustainability_theme": "environmental_other",
       "climate_exposure_type": "none",
       "materiality_flag": false,
-      "climate_risk_description": NaN,
-      "financial_exposure_meur": NaN,
-      "nace_link": NaN,
+      "climate_risk_description": null,
+      "financial_exposure_meur": null,
+      "nace_link": null,
       "scope3_category": "Cat.7",
-      "ifrs_s2_para_evidence": "\u00a713(a)"
+      "ifrs_s2_para_evidence": "§13(a)"
     },
     {
       "node_id": "VC-BANK01-0004",
@@ -3377,11 +3377,11 @@
       "sustainability_theme": "environmental_other",
       "climate_exposure_type": "none",
       "materiality_flag": false,
-      "climate_risk_description": NaN,
+      "climate_risk_description": null,
       "financial_exposure_meur": 223.85,
       "nace_link": "J62",
       "scope3_category": "Cat.1",
-      "ifrs_s2_para_evidence": "\u00a713(a)"
+      "ifrs_s2_para_evidence": "§13(a)"
     },
     {
       "node_id": "VC-BANK01-0005",
@@ -3392,11 +3392,11 @@
       "sustainability_theme": "environmental_other",
       "climate_exposure_type": "none",
       "materiality_flag": false,
-      "climate_risk_description": NaN,
+      "climate_risk_description": null,
       "financial_exposure_meur": 445.41,
       "nace_link": "L68",
       "scope3_category": "Cat.2",
-      "ifrs_s2_para_evidence": "\u00a713(a)"
+      "ifrs_s2_para_evidence": "§13(a)"
     },
     {
       "node_id": "VC-BANK01-0006",
@@ -3407,16 +3407,16 @@
       "sustainability_theme": "environmental_other",
       "climate_exposure_type": "none",
       "materiality_flag": false,
-      "climate_risk_description": NaN,
+      "climate_risk_description": null,
       "financial_exposure_meur": 120.73,
       "nace_link": "M70",
       "scope3_category": "Cat.1",
-      "ifrs_s2_para_evidence": "\u00a713(a)"
+      "ifrs_s2_para_evidence": "§13(a)"
     },
     {
       "node_id": "VC-BANK01-0007",
       "bank_id": "BANK01",
-      "node_name": "Corporate borrowers \u2014 Manufacture of coke and refined petroleum",
+      "node_name": "Corporate borrowers — Manufacture of coke and refined petroleum",
       "node_type": "financing_counterparty",
       "upstream_downstream": "downstream",
       "sustainability_theme": "climate_transition",
@@ -3426,12 +3426,12 @@
       "financial_exposure_meur": 3903.65,
       "nace_link": "C19",
       "scope3_category": "Cat.15",
-      "ifrs_s2_para_evidence": "\u00a713(a)"
+      "ifrs_s2_para_evidence": "§13(a)"
     },
     {
       "node_id": "VC-BANK01-0008",
       "bank_id": "BANK01",
-      "node_name": "Corporate borrowers \u2014 Manufacture of motor vehicles",
+      "node_name": "Corporate borrowers — Manufacture of motor vehicles",
       "node_type": "financing_counterparty",
       "upstream_downstream": "downstream",
       "sustainability_theme": "climate_physical",
@@ -3441,12 +3441,12 @@
       "financial_exposure_meur": 3871.6,
       "nace_link": "C29",
       "scope3_category": "Cat.15",
-      "ifrs_s2_para_evidence": "\u00a713(a)"
+      "ifrs_s2_para_evidence": "§13(a)"
     },
     {
       "node_id": "VC-BANK01-0009",
       "bank_id": "BANK01",
-      "node_name": "Corporate borrowers \u2014 Mining of coal and lignite",
+      "node_name": "Corporate borrowers — Mining of coal and lignite",
       "node_type": "financing_counterparty",
       "upstream_downstream": "downstream",
       "sustainability_theme": "climate_transition",
@@ -3456,12 +3456,12 @@
       "financial_exposure_meur": 3547.58,
       "nace_link": "B05",
       "scope3_category": "Cat.15",
-      "ifrs_s2_para_evidence": "\u00a713(a)"
+      "ifrs_s2_para_evidence": "§13(a)"
     },
     {
       "node_id": "VC-BANK01-0010",
       "bank_id": "BANK01",
-      "node_name": "Corporate borrowers \u2014 Education",
+      "node_name": "Corporate borrowers — Education",
       "node_type": "financing_counterparty",
       "upstream_downstream": "downstream",
       "sustainability_theme": "climate_physical",
@@ -3471,12 +3471,12 @@
       "financial_exposure_meur": 2962.25,
       "nace_link": "P85",
       "scope3_category": "Cat.15",
-      "ifrs_s2_para_evidence": "\u00a713(a)"
+      "ifrs_s2_para_evidence": "§13(a)"
     },
     {
       "node_id": "VC-BANK01-0011",
       "bank_id": "BANK01",
-      "node_name": "Corporate borrowers \u2014 Mining of metal ores",
+      "node_name": "Corporate borrowers — Mining of metal ores",
       "node_type": "financing_counterparty",
       "upstream_downstream": "downstream",
       "sustainability_theme": "climate_transition",
@@ -3486,12 +3486,12 @@
       "financial_exposure_meur": 2749.58,
       "nace_link": "B07",
       "scope3_category": "Cat.15",
-      "ifrs_s2_para_evidence": "\u00a713(a)"
+      "ifrs_s2_para_evidence": "§13(a)"
     },
     {
       "node_id": "VC-BANK01-0012",
       "bank_id": "BANK01",
-      "node_name": "Corporate borrowers \u2014 Other mining and quarrying",
+      "node_name": "Corporate borrowers — Other mining and quarrying",
       "node_type": "financing_counterparty",
       "upstream_downstream": "downstream",
       "sustainability_theme": "climate_transition",
@@ -3501,12 +3501,12 @@
       "financial_exposure_meur": 2102.44,
       "nace_link": "B08",
       "scope3_category": "Cat.15",
-      "ifrs_s2_para_evidence": "\u00a713(a)"
+      "ifrs_s2_para_evidence": "§13(a)"
     },
     {
       "node_id": "VC-BANK01-0013",
       "bank_id": "BANK01",
-      "node_name": "Corporate borrowers \u2014 Manufacture of electrical equipment",
+      "node_name": "Corporate borrowers — Manufacture of electrical equipment",
       "node_type": "financing_counterparty",
       "upstream_downstream": "downstream",
       "sustainability_theme": "climate_physical",
@@ -3516,12 +3516,12 @@
       "financial_exposure_meur": 1827.09,
       "nace_link": "C27",
       "scope3_category": "Cat.15",
-      "ifrs_s2_para_evidence": "\u00a713(a)"
+      "ifrs_s2_para_evidence": "§13(a)"
     },
     {
       "node_id": "VC-BANK01-0014",
       "bank_id": "BANK01",
-      "node_name": "Corporate borrowers \u2014 Manufacture of food products",
+      "node_name": "Corporate borrowers — Manufacture of food products",
       "node_type": "financing_counterparty",
       "upstream_downstream": "downstream",
       "sustainability_theme": "climate_physical",
@@ -3531,12 +3531,12 @@
       "financial_exposure_meur": 1765.5,
       "nace_link": "C10",
       "scope3_category": "Cat.15",
-      "ifrs_s2_para_evidence": "\u00a713(a)"
+      "ifrs_s2_para_evidence": "§13(a)"
     },
     {
       "node_id": "VC-BANK01-0015",
       "bank_id": "BANK01",
-      "node_name": "Corporate borrowers \u2014 Civil engineering",
+      "node_name": "Corporate borrowers — Civil engineering",
       "node_type": "financing_counterparty",
       "upstream_downstream": "downstream",
       "sustainability_theme": "climate_physical",
@@ -3546,12 +3546,12 @@
       "financial_exposure_meur": 1709.19,
       "nace_link": "F42",
       "scope3_category": "Cat.15",
-      "ifrs_s2_para_evidence": "\u00a713(a)"
+      "ifrs_s2_para_evidence": "§13(a)"
     },
     {
       "node_id": "VC-BANK01-0016",
       "bank_id": "BANK01",
-      "node_name": "Corporate borrowers \u2014 Air transport",
+      "node_name": "Corporate borrowers — Air transport",
       "node_type": "financing_counterparty",
       "upstream_downstream": "downstream",
       "sustainability_theme": "climate_transition",
@@ -3561,7 +3561,7 @@
       "financial_exposure_meur": 1548.11,
       "nace_link": "H51",
       "scope3_category": "Cat.15",
-      "ifrs_s2_para_evidence": "\u00a713(a)"
+      "ifrs_s2_para_evidence": "§13(a)"
     }
   ],
   "governance": [
