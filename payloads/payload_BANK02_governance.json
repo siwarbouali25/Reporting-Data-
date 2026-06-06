@@ -45,19 +45,19 @@
       }
     ],
     "pcaf_methodology": {
-      "corporate_loans": "outstanding_amount_meur / evic_meur * total_ghg_tco2e (PCAF Standard \u00a7B62)",
-      "sovereign_bonds_investments": "nominal_amount_meur / ppp_gdp_meur * national_scope1_tco2e (PCAF Standard \u00a7B62A)",
-      "listed_equity": "market_value_meur / issuer_evic_meur * issuer_revenue_meur (PCAF Standard \u00a7B61 proxy \u2014 revenue substituted for direct issuer emissions due to absence of counterparty-level emission data in investment records)",
+      "corporate_loans": "outstanding_amount_meur / evic_meur * total_ghg_tco2e (PCAF Standard §B62)",
+      "sovereign_bonds_investments": "nominal_amount_meur / ppp_gdp_meur * national_scope1_tco2e (PCAF Standard §B62A)",
+      "listed_equity": "market_value_meur / issuer_evic_meur * issuer_revenue_meur (PCAF Standard §B61 proxy — revenue substituted for direct issuer emissions due to absence of counterparty-level emission data in investment records)",
       "sovereign_bonds_note": "issuer_evic_meur and issuer_revenue_meur are null for sovereign bonds by design. EVIC and revenue are corporate concepts not applicable to sovereigns.",
       "investments_counterparty_note": "counterparty_id is null across all 185 investment rows. This is a known data generation gap. Attribution is at bank level only."
     },
-    "scope2_rec_reconciliation": "scope2_market_tco2e is sourced directly from utility_invoices.scope2_market_tco2e, which already reflects market-based accounting with grid emission factors adjusted for renewable energy certificates and PPAs. The rec_registry.csv data is not subtracted again during preparation \u2014 it is used for disclosure narrative only (certificate type, volume, registry). There is no double-counting.",
+    "scope2_rec_reconciliation": "scope2_market_tco2e is sourced directly from utility_invoices.scope2_market_tco2e, which already reflects market-based accounting with grid emission factors adjusted for renewable energy certificates and PPAs. The rec_registry.csv data is not subtracted again during preparation — it is used for disclosure narrative only (certificate type, volume, registry). There is no double-counting.",
     "risk_rating_methodology": "climate_risk_register.risk_rating is derived from a 5x5 risk matrix: scores 1-2 = low, 3-6 = medium, 8-12 = high, 15-25 = critical. Specifically: likelihood_score * severity_score; critical >= 15, high >= 8, medium >= 3, low < 3. This formula must be used verbatim if the rating methodology is described in the report.",
     "vehicles_correction": {
       "method": "Scope 1 fleet recalculated from annual_fuel_consumption_l * 2.67 kg_CO2/litre / 1000",
       "reason": "Pre-computed scope1_tco2e_2024 had errors including non-zero values for electric vehicles.",
       "electric_vehicles_zeroed": true,
-      "emission_factor_source": "Empirically derived \u2014 consistent 2.67 kg CO2/litre across all fuel types"
+      "emission_factor_source": "Empirically derived — consistent 2.67 kg CO2/litre across all fuel types"
     }
   },
   "bank": {
@@ -171,7 +171,7 @@
       "climate_topics_discussed": "green_finance_growth|net_zero_progress|carbon_credit_approval",
       "decision_made_flag": true,
       "decision_summary": "Approved 2024 ESG report for publication",
-      "ifrs_s2_para_evidence": "\u00a76(a)(v)"
+      "ifrs_s2_para_evidence": "§6(a)(v)"
     },
     {
       "meeting_id": "MTG-BANK02-FB-2022-002",
@@ -186,7 +186,7 @@
       "climate_topics_discussed": "physical_risk_update|exec_remuneration_esg_kpis",
       "decision_made_flag": true,
       "decision_summary": "Approved 2024 ESG report for publication",
-      "ifrs_s2_para_evidence": "\u00a76(a)(iii)"
+      "ifrs_s2_para_evidence": "§6(a)(iii)"
     },
     {
       "meeting_id": "MTG-BANK02-FB-2022-003",
@@ -198,10 +198,10 @@
       "quorum_reached": true,
       "members_present": 8,
       "climate_agenda_flag": false,
-      "climate_topics_discussed": NaN,
+      "climate_topics_discussed": null,
       "decision_made_flag": false,
-      "decision_summary": NaN,
-      "ifrs_s2_para_evidence": "\u00a76(a)(iii)"
+      "decision_summary": null,
+      "ifrs_s2_para_evidence": "§6(a)(iii)"
     },
     {
       "meeting_id": "MTG-BANK02-FB-2022-004",
@@ -215,8 +215,8 @@
       "climate_agenda_flag": true,
       "climate_topics_discussed": "tcfd_review|physical_risk_update",
       "decision_made_flag": false,
-      "decision_summary": NaN,
-      "ifrs_s2_para_evidence": "\u00a76(a)(iii)"
+      "decision_summary": null,
+      "ifrs_s2_para_evidence": "§6(a)(iii)"
     },
     {
       "meeting_id": "MTG-BANK02-FB-2022-005",
@@ -231,7 +231,7 @@
       "climate_topics_discussed": "green_finance_growth|physical_risk_update|scenario_analysis",
       "decision_made_flag": true,
       "decision_summary": "Approved climate scenario analysis methodology",
-      "ifrs_s2_para_evidence": "\u00a76(a)(iii)"
+      "ifrs_s2_para_evidence": "§6(a)(iii)"
     },
     {
       "meeting_id": "MTG-BANK02-FB-2022-006",
@@ -243,10 +243,10 @@
       "quorum_reached": true,
       "members_present": 4,
       "climate_agenda_flag": false,
-      "climate_topics_discussed": NaN,
+      "climate_topics_discussed": null,
       "decision_made_flag": false,
-      "decision_summary": NaN,
-      "ifrs_s2_para_evidence": "\u00a76(a)(iii)"
+      "decision_summary": null,
+      "ifrs_s2_para_evidence": "§6(a)(iii)"
     },
     {
       "meeting_id": "MTG-BANK02-ESG-2022-007",
@@ -261,7 +261,7 @@
       "climate_topics_discussed": "carbon_credit_approval|physical_risk_update",
       "decision_made_flag": true,
       "decision_summary": "Approved carbon credit procurement budget",
-      "ifrs_s2_para_evidence": "\u00a76(a)(v)"
+      "ifrs_s2_para_evidence": "§6(a)(v)"
     },
     {
       "meeting_id": "MTG-BANK02-ESG-2022-008",
@@ -275,8 +275,8 @@
       "climate_agenda_flag": true,
       "climate_topics_discussed": "green_finance_growth|net_zero_progress",
       "decision_made_flag": false,
-      "decision_summary": NaN,
-      "ifrs_s2_para_evidence": "\u00a76(a)(iii)"
+      "decision_summary": null,
+      "ifrs_s2_para_evidence": "§6(a)(iii)"
     },
     {
       "meeting_id": "MTG-BANK02-ESG-2022-009",
@@ -291,7 +291,7 @@
       "climate_topics_discussed": "scenario_analysis|carbon_credit_approval",
       "decision_made_flag": true,
       "decision_summary": "Endorsed updated transition plan",
-      "ifrs_s2_para_evidence": "\u00a76(a)(v)"
+      "ifrs_s2_para_evidence": "§6(a)(v)"
     },
     {
       "meeting_id": "MTG-BANK02-ESG-2022-010",
@@ -306,7 +306,7 @@
       "climate_topics_discussed": "green_finance_growth|carbon_credit_approval|tcfd_review",
       "decision_made_flag": true,
       "decision_summary": "Approved 2024 ESG report for publication",
-      "ifrs_s2_para_evidence": "\u00a76(a)(v)"
+      "ifrs_s2_para_evidence": "§6(a)(v)"
     },
     {
       "meeting_id": "MTG-BANK02-FB-2023-001",
@@ -321,7 +321,7 @@
       "climate_topics_discussed": "exec_remuneration_esg_kpis|scenario_analysis",
       "decision_made_flag": true,
       "decision_summary": "Approved 2024 ESG report for publication",
-      "ifrs_s2_para_evidence": "\u00a76(a)(v)"
+      "ifrs_s2_para_evidence": "§6(a)(v)"
     },
     {
       "meeting_id": "MTG-BANK02-FB-2023-002",
@@ -333,10 +333,10 @@
       "quorum_reached": true,
       "members_present": 6,
       "climate_agenda_flag": false,
-      "climate_topics_discussed": NaN,
+      "climate_topics_discussed": null,
       "decision_made_flag": false,
-      "decision_summary": NaN,
-      "ifrs_s2_para_evidence": "\u00a76(a)(iii)"
+      "decision_summary": null,
+      "ifrs_s2_para_evidence": "§6(a)(iii)"
     },
     {
       "meeting_id": "MTG-BANK02-FB-2023-003",
@@ -351,7 +351,7 @@
       "climate_topics_discussed": "scenario_analysis",
       "decision_made_flag": true,
       "decision_summary": "Approved carbon credit procurement budget",
-      "ifrs_s2_para_evidence": "\u00a76(a)(iii)"
+      "ifrs_s2_para_evidence": "§6(a)(iii)"
     },
     {
       "meeting_id": "MTG-BANK02-FB-2023-004",
@@ -363,10 +363,10 @@
       "quorum_reached": true,
       "members_present": 7,
       "climate_agenda_flag": false,
-      "climate_topics_discussed": NaN,
+      "climate_topics_discussed": null,
       "decision_made_flag": false,
-      "decision_summary": NaN,
-      "ifrs_s2_para_evidence": "\u00a76(a)(iii)"
+      "decision_summary": null,
+      "ifrs_s2_para_evidence": "§6(a)(iii)"
     },
     {
       "meeting_id": "MTG-BANK02-FB-2023-005",
@@ -378,10 +378,10 @@
       "quorum_reached": true,
       "members_present": 6,
       "climate_agenda_flag": false,
-      "climate_topics_discussed": NaN,
+      "climate_topics_discussed": null,
       "decision_made_flag": false,
-      "decision_summary": NaN,
-      "ifrs_s2_para_evidence": "\u00a76(a)(iii)"
+      "decision_summary": null,
+      "ifrs_s2_para_evidence": "§6(a)(iii)"
     },
     {
       "meeting_id": "MTG-BANK02-FB-2023-006",
@@ -393,10 +393,10 @@
       "quorum_reached": true,
       "members_present": 8,
       "climate_agenda_flag": false,
-      "climate_topics_discussed": NaN,
+      "climate_topics_discussed": null,
       "decision_made_flag": false,
-      "decision_summary": NaN,
-      "ifrs_s2_para_evidence": "\u00a76(a)(iii)"
+      "decision_summary": null,
+      "ifrs_s2_para_evidence": "§6(a)(iii)"
     },
     {
       "meeting_id": "MTG-BANK02-ESG-2023-007",
@@ -411,7 +411,7 @@
       "climate_topics_discussed": "physical_risk_update|green_finance_growth|exec_remuneration_esg_kpis",
       "decision_made_flag": true,
       "decision_summary": "Approved carbon credit procurement budget",
-      "ifrs_s2_para_evidence": "\u00a76(a)(v)"
+      "ifrs_s2_para_evidence": "§6(a)(v)"
     },
     {
       "meeting_id": "MTG-BANK02-ESG-2023-008",
@@ -425,8 +425,8 @@
       "climate_agenda_flag": true,
       "climate_topics_discussed": "transition_plan_review|green_finance_growth",
       "decision_made_flag": false,
-      "decision_summary": NaN,
-      "ifrs_s2_para_evidence": "\u00a76(a)(iii)"
+      "decision_summary": null,
+      "ifrs_s2_para_evidence": "§6(a)(iii)"
     },
     {
       "meeting_id": "MTG-BANK02-ESG-2023-009",
@@ -441,7 +441,7 @@
       "climate_topics_discussed": "scenario_analysis|net_zero_progress",
       "decision_made_flag": true,
       "decision_summary": "Endorsed updated transition plan",
-      "ifrs_s2_para_evidence": "\u00a76(a)(v)"
+      "ifrs_s2_para_evidence": "§6(a)(v)"
     },
     {
       "meeting_id": "MTG-BANK02-ESG-2023-010",
@@ -456,7 +456,7 @@
       "climate_topics_discussed": "scenario_analysis|tcfd_review|green_finance_growth",
       "decision_made_flag": true,
       "decision_summary": "Endorsed updated transition plan",
-      "ifrs_s2_para_evidence": "\u00a76(a)(v)"
+      "ifrs_s2_para_evidence": "§6(a)(v)"
     },
     {
       "meeting_id": "MTG-BANK02-FB-2024-001",
@@ -471,7 +471,7 @@
       "climate_topics_discussed": "tcfd_review",
       "decision_made_flag": true,
       "decision_summary": "Approved 2024 ESG report for publication",
-      "ifrs_s2_para_evidence": "\u00a76(a)(v)"
+      "ifrs_s2_para_evidence": "§6(a)(v)"
     },
     {
       "meeting_id": "MTG-BANK02-FB-2024-002",
@@ -486,7 +486,7 @@
       "climate_topics_discussed": "scenario_analysis|carbon_credit_approval|tcfd_review",
       "decision_made_flag": true,
       "decision_summary": "Approved carbon credit procurement budget",
-      "ifrs_s2_para_evidence": "\u00a76(a)(iii)"
+      "ifrs_s2_para_evidence": "§6(a)(iii)"
     },
     {
       "meeting_id": "MTG-BANK02-FB-2024-003",
@@ -500,8 +500,8 @@
       "climate_agenda_flag": true,
       "climate_topics_discussed": "green_finance_growth|scenario_analysis|carbon_credit_approval",
       "decision_made_flag": false,
-      "decision_summary": NaN,
-      "ifrs_s2_para_evidence": "\u00a76(a)(iii)"
+      "decision_summary": null,
+      "ifrs_s2_para_evidence": "§6(a)(iii)"
     },
     {
       "meeting_id": "MTG-BANK02-FB-2024-004",
@@ -513,10 +513,10 @@
       "quorum_reached": true,
       "members_present": 9,
       "climate_agenda_flag": false,
-      "climate_topics_discussed": NaN,
+      "climate_topics_discussed": null,
       "decision_made_flag": false,
-      "decision_summary": NaN,
-      "ifrs_s2_para_evidence": "\u00a76(a)(iii)"
+      "decision_summary": null,
+      "ifrs_s2_para_evidence": "§6(a)(iii)"
     },
     {
       "meeting_id": "MTG-BANK02-ESG-2024-005",
@@ -531,7 +531,7 @@
       "climate_topics_discussed": "net_zero_progress|carbon_credit_approval",
       "decision_made_flag": true,
       "decision_summary": "Approved carbon credit procurement budget",
-      "ifrs_s2_para_evidence": "\u00a76(a)(v)"
+      "ifrs_s2_para_evidence": "§6(a)(v)"
     },
     {
       "meeting_id": "MTG-BANK02-ESG-2024-006",
@@ -545,8 +545,8 @@
       "climate_agenda_flag": true,
       "climate_topics_discussed": "transition_plan_review|scenario_analysis|net_zero_progress",
       "decision_made_flag": false,
-      "decision_summary": NaN,
-      "ifrs_s2_para_evidence": "\u00a76(a)(iii)"
+      "decision_summary": null,
+      "ifrs_s2_para_evidence": "§6(a)(iii)"
     },
     {
       "meeting_id": "MTG-BANK02-ESG-2024-007",
@@ -560,8 +560,8 @@
       "climate_agenda_flag": true,
       "climate_topics_discussed": "green_finance_growth|tcfd_review",
       "decision_made_flag": false,
-      "decision_summary": NaN,
-      "ifrs_s2_para_evidence": "\u00a76(a)(iii)"
+      "decision_summary": null,
+      "ifrs_s2_para_evidence": "§6(a)(iii)"
     },
     {
       "meeting_id": "MTG-BANK02-ESG-2024-008",
@@ -576,7 +576,313 @@
       "climate_topics_discussed": "exec_remuneration_esg_kpis|physical_risk_update|carbon_credit_approval",
       "decision_made_flag": true,
       "decision_summary": "Endorsed updated transition plan",
-      "ifrs_s2_para_evidence": "\u00a76(a)(v)"
+      "ifrs_s2_para_evidence": "§6(a)(v)"
+    }
+  ],
+  "climate_risk_register": [
+    {
+      "risk_id": "RISK-BANK02-2023-0001",
+      "bank_id": "BANK02",
+      "reporting_year": 2023,
+      "risk_name": "Transition risk — carbon pricing on industrial loans",
+      "risk_category": "transition_policy",
+      "risk_description": "Tightening EU ETS and national carbon pricing raise operating costs for carbon-intensive borrowers, increasing default probability in cement, steel and chemicals.",
+      "time_horizon": "short_0_2yr",
+      "likelihood_score": 3,
+      "severity_score": 4,
+      "risk_rating": "medium",
+      "financial_impact_meur": 33.0,
+      "mitigation_actions": "Collateral revaluation and flood mapping overlay",
+      "erm_integrated_flag": false,
+      "scenario_analysis_link": "SCN0024",
+      "monitoring_frequency": "semi_annual",
+      "changed_since_prior_period": false,
+      "ifrs_s2_para_evidence": "§25(a)"
+    },
+    {
+      "risk_id": "RISK-BANK02-2023-0002",
+      "bank_id": "BANK02",
+      "reporting_year": 2023,
+      "risk_name": "Physical risk — heat stress on agricultural borrowers",
+      "risk_category": "physical_chronic",
+      "risk_description": "Chronic heat and shifting precipitation reduce yields for agricultural counterparties, weakening repayment capacity over the medium term.",
+      "time_horizon": "long_5yr_plus",
+      "likelihood_score": 5,
+      "severity_score": 3,
+      "risk_rating": "high",
+      "financial_impact_meur": 33.0,
+      "mitigation_actions": "Engagement and transition-plan covenants with borrowers",
+      "erm_integrated_flag": true,
+      "scenario_analysis_link": "SCN0032",
+      "monitoring_frequency": "quarterly",
+      "changed_since_prior_period": false,
+      "ifrs_s2_para_evidence": "§25(a)"
+    },
+    {
+      "risk_id": "RISK-BANK02-2023-0003",
+      "bank_id": "BANK02",
+      "reporting_year": 2023,
+      "risk_name": "Physical risk — wildfire exposure in southern portfolio",
+      "risk_category": "physical_acute",
+      "risk_description": "Wildfire frequency in southern European exposures threatens collateral and business continuity for affected counterparties.",
+      "time_horizon": "short_0_2yr",
+      "likelihood_score": 3,
+      "severity_score": 4,
+      "risk_rating": "medium",
+      "financial_impact_meur": 72.6,
+      "mitigation_actions": "Portfolio decarbonisation glide-path monitoring",
+      "erm_integrated_flag": true,
+      "scenario_analysis_link": "SCN0030",
+      "monitoring_frequency": "semi_annual",
+      "changed_since_prior_period": true,
+      "ifrs_s2_para_evidence": "§25(a)"
+    },
+    {
+      "risk_id": "RISK-BANK02-2023-0004",
+      "bank_id": "BANK02",
+      "reporting_year": 2023,
+      "risk_name": "Transition risk — building energy performance regulation",
+      "risk_category": "transition_policy",
+      "risk_description": "Minimum energy performance standards may require costly retrofits for low-EPC mortgage collateral, reducing values and increasing LTV.",
+      "time_horizon": "short_0_2yr",
+      "likelihood_score": 4,
+      "severity_score": 4,
+      "risk_rating": "high",
+      "financial_impact_meur": 122.8,
+      "mitigation_actions": "Portfolio decarbonisation glide-path monitoring",
+      "erm_integrated_flag": true,
+      "scenario_analysis_link": null,
+      "monitoring_frequency": "quarterly",
+      "changed_since_prior_period": true,
+      "ifrs_s2_para_evidence": "§25(a)"
+    },
+    {
+      "risk_id": "RISK-BANK02-2023-0005",
+      "bank_id": "BANK02",
+      "reporting_year": 2023,
+      "risk_name": "Reputational risk — financed emissions scrutiny",
+      "risk_category": "transition_reputational",
+      "risk_description": "Stakeholder and NGO scrutiny of financed emissions and fossil financing could damage brand and trigger client attrition.",
+      "time_horizon": "short_0_2yr",
+      "likelihood_score": 4,
+      "severity_score": 4,
+      "risk_rating": "high",
+      "financial_impact_meur": 54.1,
+      "mitigation_actions": "Green retrofit financing incentives",
+      "erm_integrated_flag": true,
+      "scenario_analysis_link": "SCN0022",
+      "monitoring_frequency": "quarterly",
+      "changed_since_prior_period": false,
+      "ifrs_s2_para_evidence": "§25(a)"
+    },
+    {
+      "risk_id": "RISK-BANK02-2023-0006",
+      "bank_id": "BANK02",
+      "reporting_year": 2023,
+      "risk_name": "Transition risk — EV shift in auto lending",
+      "risk_category": "transition_technology",
+      "risk_description": "Rapid electrification could strand internal-combustion vehicle manufacturers and suppliers in the lending book.",
+      "time_horizon": "short_0_2yr",
+      "likelihood_score": 3,
+      "severity_score": 4,
+      "risk_rating": "medium",
+      "financial_impact_meur": 124.9,
+      "mitigation_actions": "Collateral revaluation and flood mapping overlay",
+      "erm_integrated_flag": true,
+      "scenario_analysis_link": "SCN0035",
+      "monitoring_frequency": "semi_annual",
+      "changed_since_prior_period": false,
+      "ifrs_s2_para_evidence": "§25(a)"
+    },
+    {
+      "risk_id": "RISK-BANK02-2023-0007",
+      "bank_id": "BANK02",
+      "reporting_year": 2023,
+      "risk_name": "Stranded assets — fossil fuel sector exposure",
+      "risk_category": "transition_market",
+      "risk_description": "Demand shifts away from fossil fuels risk stranding reserves and assets held by oil, gas and coal counterparties, reducing their enterprise value.",
+      "time_horizon": "long_5yr_plus",
+      "likelihood_score": 5,
+      "severity_score": 5,
+      "risk_rating": "critical",
+      "financial_impact_meur": 558.7,
+      "mitigation_actions": "Portfolio decarbonisation glide-path monitoring",
+      "erm_integrated_flag": true,
+      "scenario_analysis_link": null,
+      "monitoring_frequency": "monthly",
+      "changed_since_prior_period": false,
+      "ifrs_s2_para_evidence": "§25(a)"
+    },
+    {
+      "risk_id": "RISK-BANK02-2023-0008",
+      "bank_id": "BANK02",
+      "reporting_year": 2023,
+      "risk_name": "Physical risk — mortgage book flood exposure",
+      "risk_category": "physical_acute",
+      "risk_description": "Residential and commercial mortgage collateral located in flood-prone zones faces rising acute physical risk. Property damage and devaluation could impair collateral coverage.",
+      "time_horizon": "long_5yr_plus",
+      "likelihood_score": 4,
+      "severity_score": 3,
+      "risk_rating": "medium",
+      "financial_impact_meur": 30.1,
+      "mitigation_actions": "Climate scenario stress testing integrated into ICAAP",
+      "erm_integrated_flag": true,
+      "scenario_analysis_link": null,
+      "monitoring_frequency": "semi_annual",
+      "changed_since_prior_period": true,
+      "ifrs_s2_para_evidence": "§25(a)"
+    },
+    {
+      "risk_id": "RISK-BANK02-2024-0001",
+      "bank_id": "BANK02",
+      "reporting_year": 2024,
+      "risk_name": "Physical risk — heat stress on agricultural borrowers",
+      "risk_category": "physical_chronic",
+      "risk_description": "Chronic heat and shifting precipitation reduce yields for agricultural counterparties, weakening repayment capacity over the medium term.",
+      "time_horizon": "short_0_2yr",
+      "likelihood_score": 4,
+      "severity_score": 4,
+      "risk_rating": "high",
+      "financial_impact_meur": 70.0,
+      "mitigation_actions": "Engagement and transition-plan covenants with borrowers",
+      "erm_integrated_flag": true,
+      "scenario_analysis_link": null,
+      "monitoring_frequency": "quarterly",
+      "changed_since_prior_period": true,
+      "ifrs_s2_para_evidence": "§25(a)"
+    },
+    {
+      "risk_id": "RISK-BANK02-2024-0002",
+      "bank_id": "BANK02",
+      "reporting_year": 2024,
+      "risk_name": "Physical risk — wildfire exposure in southern portfolio",
+      "risk_category": "physical_acute",
+      "risk_description": "Wildfire frequency in southern European exposures threatens collateral and business continuity for affected counterparties.",
+      "time_horizon": "long_5yr_plus",
+      "likelihood_score": 3,
+      "severity_score": 5,
+      "risk_rating": "high",
+      "financial_impact_meur": 229.4,
+      "mitigation_actions": "Sector exposure limits and enhanced due diligence",
+      "erm_integrated_flag": true,
+      "scenario_analysis_link": "SCN0031",
+      "monitoring_frequency": "quarterly",
+      "changed_since_prior_period": true,
+      "ifrs_s2_para_evidence": "§25(a)"
+    },
+    {
+      "risk_id": "RISK-BANK02-2024-0003",
+      "bank_id": "BANK02",
+      "reporting_year": 2024,
+      "risk_name": "Transition risk — carbon pricing on industrial loans",
+      "risk_category": "transition_policy",
+      "risk_description": "Tightening EU ETS and national carbon pricing raise operating costs for carbon-intensive borrowers, increasing default probability in cement, steel and chemicals.",
+      "time_horizon": "medium_2_5yr",
+      "likelihood_score": 3,
+      "severity_score": 3,
+      "risk_rating": "medium",
+      "financial_impact_meur": 20.1,
+      "mitigation_actions": "Sector exposure limits and enhanced due diligence",
+      "erm_integrated_flag": true,
+      "scenario_analysis_link": null,
+      "monitoring_frequency": "semi_annual",
+      "changed_since_prior_period": true,
+      "ifrs_s2_para_evidence": "§25(a)"
+    },
+    {
+      "risk_id": "RISK-BANK02-2024-0004",
+      "bank_id": "BANK02",
+      "reporting_year": 2024,
+      "risk_name": "Reputational risk — financed emissions scrutiny",
+      "risk_category": "transition_reputational",
+      "risk_description": "Stakeholder and NGO scrutiny of financed emissions and fossil financing could damage brand and trigger client attrition.",
+      "time_horizon": "medium_2_5yr",
+      "likelihood_score": 5,
+      "severity_score": 3,
+      "risk_rating": "high",
+      "financial_impact_meur": 9.2,
+      "mitigation_actions": "Portfolio decarbonisation glide-path monitoring",
+      "erm_integrated_flag": true,
+      "scenario_analysis_link": null,
+      "monitoring_frequency": "quarterly",
+      "changed_since_prior_period": true,
+      "ifrs_s2_para_evidence": "§25(a)"
+    },
+    {
+      "risk_id": "RISK-BANK02-2024-0005",
+      "bank_id": "BANK02",
+      "reporting_year": 2024,
+      "risk_name": "Physical risk — mortgage book flood exposure",
+      "risk_category": "physical_acute",
+      "risk_description": "Residential and commercial mortgage collateral located in flood-prone zones faces rising acute physical risk. Property damage and devaluation could impair collateral coverage.",
+      "time_horizon": "medium_2_5yr",
+      "likelihood_score": 3,
+      "severity_score": 5,
+      "risk_rating": "high",
+      "financial_impact_meur": 441.2,
+      "mitigation_actions": "Portfolio decarbonisation glide-path monitoring",
+      "erm_integrated_flag": true,
+      "scenario_analysis_link": null,
+      "monitoring_frequency": "quarterly",
+      "changed_since_prior_period": false,
+      "ifrs_s2_para_evidence": "§25(a)"
+    },
+    {
+      "risk_id": "RISK-BANK02-2024-0006",
+      "bank_id": "BANK02",
+      "reporting_year": 2024,
+      "risk_name": "Stranded assets — fossil fuel sector exposure",
+      "risk_category": "transition_market",
+      "risk_description": "Demand shifts away from fossil fuels risk stranding reserves and assets held by oil, gas and coal counterparties, reducing their enterprise value.",
+      "time_horizon": "medium_2_5yr",
+      "likelihood_score": 4,
+      "severity_score": 5,
+      "risk_rating": "critical",
+      "financial_impact_meur": 131.1,
+      "mitigation_actions": "Climate scenario stress testing integrated into ICAAP",
+      "erm_integrated_flag": true,
+      "scenario_analysis_link": "SCN0035",
+      "monitoring_frequency": "monthly",
+      "changed_since_prior_period": true,
+      "ifrs_s2_para_evidence": "§25(a)"
+    },
+    {
+      "risk_id": "RISK-BANK02-2024-0007",
+      "bank_id": "BANK02",
+      "reporting_year": 2024,
+      "risk_name": "Transition risk — EV shift in auto lending",
+      "risk_category": "transition_technology",
+      "risk_description": "Rapid electrification could strand internal-combustion vehicle manufacturers and suppliers in the lending book.",
+      "time_horizon": "long_5yr_plus",
+      "likelihood_score": 3,
+      "severity_score": 3,
+      "risk_rating": "medium",
+      "financial_impact_meur": 14.7,
+      "mitigation_actions": "Sector exposure limits and enhanced due diligence",
+      "erm_integrated_flag": false,
+      "scenario_analysis_link": "SCN0033",
+      "monitoring_frequency": "semi_annual",
+      "changed_since_prior_period": false,
+      "ifrs_s2_para_evidence": "§25(a)"
+    },
+    {
+      "risk_id": "RISK-BANK02-2024-0008",
+      "bank_id": "BANK02",
+      "reporting_year": 2024,
+      "risk_name": "Transition risk — building energy performance regulation",
+      "risk_category": "transition_policy",
+      "risk_description": "Minimum energy performance standards may require costly retrofits for low-EPC mortgage collateral, reducing values and increasing LTV.",
+      "time_horizon": "short_0_2yr",
+      "likelihood_score": 4,
+      "severity_score": 4,
+      "risk_rating": "high",
+      "financial_impact_meur": 34.5,
+      "mitigation_actions": "Portfolio decarbonisation glide-path monitoring",
+      "erm_integrated_flag": true,
+      "scenario_analysis_link": null,
+      "monitoring_frequency": "quarterly",
+      "changed_since_prior_period": true,
+      "ifrs_s2_para_evidence": "§25(a)"
     }
   ],
   "reporting_kpis": {
