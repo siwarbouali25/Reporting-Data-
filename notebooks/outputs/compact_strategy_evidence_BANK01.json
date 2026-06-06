@@ -1,0 +1,423 @@
+{
+  "bank": {
+    "bank_id": "BANK01",
+    "bank_name": "Eurolux Universal Bank AG",
+    "country": "DE",
+    "reporting_year": 2024,
+    "reporting_currency": "EUR",
+    "total_assets_meur": 850000,
+    "total_loans_meur": 31150.64
+  },
+  "risk_summary": {
+    "risk_count_2024": 8,
+    "physical_risk_count": 3,
+    "transition_risk_count": 5,
+    "risk_categories": [
+      "physical_acute",
+      "physical_chronic",
+      "transition_market",
+      "transition_policy",
+      "transition_reputational",
+      "transition_technology"
+    ],
+    "time_horizons": [
+      "long_5yr_plus",
+      "medium_2_5yr",
+      "short_0_2yr"
+    ],
+    "risk_ratings": [
+      "high",
+      "medium"
+    ],
+    "top_risks_by_financial_impact": [
+      {
+        "risk_name": "Transition risk — EV shift in auto lending",
+        "risk_category": "transition_technology",
+        "time_horizon": "short_0_2yr",
+        "risk_rating": "high",
+        "financial_impact_meur": 165.2,
+        "mitigation_actions": "Climate scenario stress testing integrated into ICAAP",
+        "scenario_analysis_link": "SCN0011"
+      },
+      {
+        "risk_name": "Stranded assets — fossil fuel sector exposure",
+        "risk_category": "transition_market",
+        "time_horizon": "long_5yr_plus",
+        "risk_rating": "high",
+        "financial_impact_meur": 136.5,
+        "mitigation_actions": "Collateral revaluation and flood mapping overlay"
+      },
+      {
+        "risk_name": "Transition risk — carbon pricing on industrial loans",
+        "risk_category": "transition_policy",
+        "time_horizon": "medium_2_5yr",
+        "risk_rating": "high",
+        "financial_impact_meur": 67.5,
+        "mitigation_actions": "Sector exposure limits and enhanced due diligence"
+      },
+      {
+        "risk_name": "Reputational risk — financed emissions scrutiny",
+        "risk_category": "transition_reputational",
+        "time_horizon": "medium_2_5yr",
+        "risk_rating": "medium",
+        "financial_impact_meur": 65.5,
+        "mitigation_actions": "Portfolio decarbonisation glide-path monitoring",
+        "scenario_analysis_link": "SCN0013"
+      },
+      {
+        "risk_name": "Physical risk — mortgage book flood exposure",
+        "risk_category": "physical_acute",
+        "time_horizon": "long_5yr_plus",
+        "risk_rating": "high",
+        "financial_impact_meur": 24.8,
+        "mitigation_actions": "Engagement and transition-plan covenants with borrowers",
+        "scenario_analysis_link": "SCN0004"
+      }
+    ]
+  },
+  "scenario_summary": {
+    "available": true,
+    "scenario_count": 18,
+    "frameworks": [
+      "NGFS_v4"
+    ],
+    "scenario_types": [
+      "disorderly",
+      "hot_house",
+      "orderly"
+    ],
+    "scenario_names": [
+      "Below 2°C",
+      "Current Policies",
+      "Delayed Transition",
+      "Divergent Net Zero",
+      "Nationally Determined Contributions",
+      "Net Zero 2050"
+    ],
+    "horizon_years": [
+      2025,
+      2030,
+      2050
+    ],
+    "max_physical_risk_loss_pct_capital": {
+      "scenario_id": "SCN0018",
+      "scenario_name": "Current Policies",
+      "scenario_type": "hot_house",
+      "horizon": "long_term",
+      "horizon_year": 2050,
+      "physical_risk_loss_pct_capital": 32.0
+    },
+    "max_transition_risk_loss_pct_capital": {
+      "scenario_id": "SCN0007",
+      "scenario_name": "Divergent Net Zero",
+      "scenario_type": "disorderly",
+      "horizon": "short_term",
+      "horizon_year": 2025,
+      "transition_risk_loss_pct_capital": 23.1
+    },
+    "max_stranded_assets_estimate_meur": {
+      "scenario_id": "SCN0003",
+      "scenario_name": "Net Zero 2050",
+      "scenario_type": "orderly",
+      "horizon": "long_term",
+      "horizon_year": 2050,
+      "stranded_assets_estimate_meur": 33575.2
+    },
+    "max_revenue_at_risk_meur": {
+      "scenario_id": "SCN0013",
+      "scenario_name": "Nationally Determined Contributions",
+      "scenario_type": "hot_house",
+      "horizon": "short_term",
+      "horizon_year": 2025,
+      "revenue_at_risk_meur": 35509.1
+    },
+    "methodology_summary": [
+      "NGFS v4 scenarios applied to banking book exposures across the available jurisdictions.",
+      "Outputs are modelled estimates and must not be described as actual losses.",
+      "Scenario results vary by transition pathway, physical risk assumptions, carbon price, technology readiness and time horizon."
+    ],
+    "resilience_boundary": "Describe resilience only within scenario assumptions; do not claim general bank-wide resilience.",
+    "resilience_assessment_by_scenario_type": {
+      "orderly": "Under orderly transition scenarios, the portfolio demonstrates adequate resilience. Transition risk losses remain within Pillar 2 capital buffer thresholds. Green loan growth and client engagement on transition plans are expected to progressively reduce high-carbon sector concentration over the medium term.",
+      "disorderly": "Under disorderly transition scenarios, near-term resilience is acceptable but medium-term capital consumption from stranded asset impairments is material. The bank's current sector exposure limits and active portfolio decarbonisation glide-path monitoring are the primary resilience mechanisms. Additional capital buffers may be required post-2030 under the most adverse disorderly assumptions.",
+      "hot_house": "Under hot house world scenarios, physical risk losses represent the dominant long-term resilience challenge. Collateral revaluation risk in flood-exposed mortgage books and agricultural borrower default risk from chronic heat stress are identified as the primary transmission channels. The bank's flood-zone overlay and EPC-based collateral monitoring are resilience mechanisms deployed for the 2050 horizon."
+    }
+  },
+  "value_chain_summary": {
+    "available": true,
+    "total_nodes": 16,
+    "material_nodes": 12,
+    "node_types": [
+      "downstream_customer",
+      "financing_counterparty",
+      "own_operations",
+      "upstream_supplier"
+    ],
+    "material_value_chain_examples": [
+      {
+        "node_name": "Own banking operations — buildings",
+        "node_type": "own_operations",
+        "upstream_downstream": "own",
+        "climate_exposure_type": "physical_chronic"
+      },
+      {
+        "node_name": "Corporate fleet & business travel",
+        "node_type": "own_operations",
+        "upstream_downstream": "own",
+        "climate_exposure_type": "transition_market",
+        "scope3_category": "Cat.6"
+      },
+      {
+        "node_name": "Corporate borrowers — Manufacture of coke and refined petroleum",
+        "node_type": "financing_counterparty",
+        "upstream_downstream": "downstream",
+        "climate_exposure_type": "transition_policy",
+        "financial_exposure_meur": 3903.65,
+        "scope3_category": "Cat.15"
+      },
+      {
+        "node_name": "Corporate borrowers — Manufacture of motor vehicles",
+        "node_type": "financing_counterparty",
+        "upstream_downstream": "downstream",
+        "climate_exposure_type": "physical_chronic",
+        "financial_exposure_meur": 3871.6,
+        "scope3_category": "Cat.15"
+      },
+      {
+        "node_name": "Corporate borrowers — Mining of coal and lignite",
+        "node_type": "financing_counterparty",
+        "upstream_downstream": "downstream",
+        "climate_exposure_type": "transition_policy",
+        "financial_exposure_meur": 3547.58,
+        "scope3_category": "Cat.15"
+      },
+      {
+        "node_name": "Corporate borrowers — Education",
+        "node_type": "financing_counterparty",
+        "upstream_downstream": "downstream",
+        "climate_exposure_type": "physical_chronic",
+        "financial_exposure_meur": 2962.25,
+        "scope3_category": "Cat.15"
+      },
+      {
+        "node_name": "Corporate borrowers — Mining of metal ores",
+        "node_type": "financing_counterparty",
+        "upstream_downstream": "downstream",
+        "climate_exposure_type": "transition_policy",
+        "financial_exposure_meur": 2749.58,
+        "scope3_category": "Cat.15"
+      },
+      {
+        "node_name": "Corporate borrowers — Other mining and quarrying",
+        "node_type": "financing_counterparty",
+        "upstream_downstream": "downstream",
+        "climate_exposure_type": "transition_policy",
+        "financial_exposure_meur": 2102.44,
+        "scope3_category": "Cat.15"
+      }
+    ],
+    "largest_quantified_nodes": [
+      {
+        "node_name": "Corporate borrowers — Manufacture of coke and refined petroleum",
+        "node_type": "financing_counterparty",
+        "financial_exposure_meur": 3903.65,
+        "scope3_category": "Cat.15"
+      },
+      {
+        "node_name": "Corporate borrowers — Manufacture of motor vehicles",
+        "node_type": "financing_counterparty",
+        "financial_exposure_meur": 3871.6,
+        "scope3_category": "Cat.15"
+      },
+      {
+        "node_name": "Corporate borrowers — Mining of coal and lignite",
+        "node_type": "financing_counterparty",
+        "financial_exposure_meur": 3547.58,
+        "scope3_category": "Cat.15"
+      },
+      {
+        "node_name": "Corporate borrowers — Education",
+        "node_type": "financing_counterparty",
+        "financial_exposure_meur": 2962.25,
+        "scope3_category": "Cat.15"
+      },
+      {
+        "node_name": "Corporate borrowers — Mining of metal ores",
+        "node_type": "financing_counterparty",
+        "financial_exposure_meur": 2749.58,
+        "scope3_category": "Cat.15"
+      }
+    ],
+    "boundary": "Some own-operations and supplier nodes may be mapped qualitatively where financial exposure is unavailable."
+  },
+  "opportunity_summary": {
+    "available": true,
+    "opportunity_count": 5,
+    "examples": [
+      {
+        "opportunity_type": "green_loan_growth",
+        "category": "Products_and_services",
+        "estimated_revenue_impact_meur": 180.0,
+        "time_horizon": "medium_term",
+        "confidence_level": "medium",
+        "description": "Expansion of green and sustainability-linked loan book aligned with EU Taxonomy, driven by corporate client transition financing demand."
+      },
+      {
+        "opportunity_type": "sustainable_bond_underwriting",
+        "category": "Products_and_services",
+        "estimated_revenue_impact_meur": 95.0,
+        "time_horizon": "short_term",
+        "confidence_level": "medium",
+        "description": "Growth in green bond and social bond underwriting and distribution fees as sovereign and corporate issuers accelerate ESG capital market activity."
+      },
+      {
+        "opportunity_type": "transition_advisory",
+        "category": "Products_and_services",
+        "estimated_revenue_impact_meur": 42.0,
+        "time_horizon": "medium_term",
+        "confidence_level": "medium",
+        "description": "Fee income from climate risk advisory, transition planning support, and ESG due diligence services offered to large corporate clients."
+      },
+      {
+        "opportunity_type": "renewable_energy_project_finance",
+        "category": "Products_and_services",
+        "estimated_revenue_impact_meur": 130.0,
+        "time_horizon": "long_term",
+        "confidence_level": "medium",
+        "description": "Project finance for solar, wind, and battery storage infrastructure aligned with REPowerEU and national renewable energy targets."
+      },
+      {
+        "opportunity_type": "operational_energy_efficiency",
+        "category": "Resource_efficiency",
+        "estimated_revenue_impact_meur": 18.0,
+        "time_horizon": "short_term",
+        "confidence_level": "medium",
+        "description": "Reduction in energy costs from facility EPC upgrades and REC procurement, lowering Scope 2 emissions and operational expenditure."
+      }
+    ],
+    "total_estimated_revenue_impact_meur": 465.0,
+    "revenue_impact_boundary": "Opportunity values are estimates and should not be described as guaranteed revenue."
+  },
+  "portfolio_summary": {
+    "green_loans_meur": 3335.75,
+    "green_loans_pct": 10.71,
+    "climate_capex_meur": 476.95,
+    "climate_opex_meur": 219.32,
+    "financed_emissions_tco2e": 35973167.6878965,
+    "carbon_intensity_tco2e_per_meur": 1154.8131,
+    "high_carbon_sector_exposure_pct": 35.5,
+    "high_carbon_sector_exposure_meur": 11059.49,
+    "fossil_fuel_exposure_pct": 22.15,
+    "fossil_fuel_exposure_meur": 6899.59
+  },
+  "targets": [
+    {
+      "target_id": "TGT001",
+      "type": "absolute_reduction",
+      "scope": "scope1_and_2",
+      "status": "on_track",
+      "target_year": 2030,
+      "framework": "SBTi_1.5C",
+      "target_progress_pct_2024": 40.0
+    },
+    {
+      "target_id": "TGT002",
+      "type": "intensity_reduction",
+      "scope": "scope3_cat15",
+      "status": "on_track",
+      "target_year": 2030,
+      "framework": "NZBA",
+      "target_progress_pct_2024": 25.0
+    },
+    {
+      "target_id": "TGT003",
+      "type": "net_zero",
+      "scope": "all_scopes",
+      "status": "on_track",
+      "target_year": 2050,
+      "framework": "NZBA",
+      "target_progress_pct_2024": 13.3
+    }
+  ],
+  "evidence_boundaries": {
+    "scenario_outputs_are_modelled_estimates": true,
+    "opportunity_impacts_are_estimates": true,
+    "do_not_overclaim_resilience": true,
+    "do_not_overclaim_paris_alignment": true,
+    "business_model_detail_available": false,
+    "value_chain_detail_available": true,
+    "tradeoff_evidence_available": false,
+    "high_carbon_and_fossil_exposure_available": true
+  },
+  "availability_profile": {
+    "physical_risk_evidence_available": true,
+    "transition_risk_evidence_available": true,
+    "time_horizons_available": true,
+    "business_model_detail_available": false,
+    "value_chain_detail_available": true,
+    "quantified_value_chain_exposure_available": true,
+    "strategy_tradeoff_evidence_available": false,
+    "portfolio_financial_metrics_available": true,
+    "resource_allocation_evidence_available": true,
+    "high_carbon_exposure_available": true,
+    "fossil_fuel_exposure_available": true,
+    "climate_opportunities_available": true,
+    "quantified_opportunity_estimates_available": true,
+    "scenario_analysis_available": true,
+    "scenario_assumptions_available": true,
+    "scenario_financial_outputs_available": true,
+    "resilience_evidence_available": true,
+    "paris_flag_or_framework_available": true,
+    "scenario_outputs_are_modelled_estimates": true,
+    "opportunity_impacts_are_estimates": true,
+    "writer_policy": {
+      "use_available_evidence": "Use every material Strategy evidence item that is available and relevant.",
+      "handle_unavailable_evidence": "When a material Strategy disclosure is unsupported by available evidence, state the boundary once in the relevant subsection and do not invent it.",
+      "scenario_wording": "Describe scenario financial outputs as modelled estimates, not actual losses.",
+      "opportunity_wording": "Describe opportunity revenue impacts as estimates with their confidence level, not guaranteed future revenue.",
+      "resilience_wording": "Confine resilience statements to the relevant scenario assumptions and boundaries.",
+      "final_language": "Use 'available evidence', 'available documentation', or 'source data'; do not use the technical word 'payload' in the final disclosure."
+    }
+  },
+  "source_traceability": {
+    "source_payload_path": "strategy-specific payload",
+    "source_tables": [
+      "bank",
+      "financial_summary",
+      "climate_scenarios",
+      "climate_risk_register",
+      "value_chain_map",
+      "climate_opportunities",
+      "reporting_kpis",
+      "business_model_impacts",
+      "strategy_tradeoff_decisions"
+    ],
+    "top_risk_refs": [
+      "Transition risk — EV shift in auto lending",
+      "Stranded assets — fossil fuel sector exposure",
+      "Transition risk — carbon pricing on industrial loans",
+      "Reputational risk — financed emissions scrutiny",
+      "Physical risk — mortgage book flood exposure"
+    ],
+    "scenario_refs": [
+      "SCN0018",
+      "SCN0007",
+      "SCN0003",
+      "SCN0013"
+    ],
+    "value_chain_refs": [
+      "Corporate borrowers — Manufacture of coke and refined petroleum",
+      "Corporate borrowers — Manufacture of motor vehicles",
+      "Corporate borrowers — Mining of coal and lignite",
+      "Corporate borrowers — Education",
+      "Corporate borrowers — Mining of metal ores"
+    ],
+    "opportunity_refs": [
+      "green_loan_growth",
+      "sustainable_bond_underwriting",
+      "transition_advisory",
+      "renewable_energy_project_finance",
+      "operational_energy_efficiency"
+    ]
+  }
+}

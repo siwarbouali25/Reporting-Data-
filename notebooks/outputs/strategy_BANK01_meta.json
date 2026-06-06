@@ -3,23 +3,53 @@
   "bank_name": "Eurolux Universal Bank AG",
   "section": "strategy",
   "status": "failed",
-  "approval_status": null,
+  "approval_status": "revision_required",
   "raw_score": null,
-  "final_score": 4,
+  "final_score": 6,
   "score_cap_reason": null,
   "revisions": 1,
   "approved": false,
   "checklist": {
-    "all_six_subsections_present": false,
-    "no_visible_ifrs_refs": true,
-    "physical_transition_distinct": true,
-    "scenario_analysis_covered": true,
+    "required_structure_present": false,
+    "physical_and_transition_risks_used_according_to_availability": true,
+    "time_horizons_used_according_to_availability": true,
+    "business_model_handled_according_to_availability": true,
+    "value_chain_used_according_to_availability": true,
+    "strategy_tradeoffs_handled_according_to_availability": true,
+    "financial_effects_used_according_to_availability": false,
+    "resource_allocation_used_according_to_availability": true,
+    "high_carbon_and_fossil_exposure_used_if_available": true,
+    "opportunities_used_according_to_availability": true,
+    "scenario_analysis_used_according_to_availability": false,
+    "scenario_assumptions_used_according_to_availability": false,
     "resilience_not_overclaimed": true,
     "paris_alignment_not_overclaimed": true,
-    "modelled_estimates_not_overstated": true,
-    "false_count": 1
+    "modelled_estimates_not_overstated": false,
+    "no_visible_ifrs_refs": true,
+    "no_unsupported_strong_claims": false
   },
   "issues": [
-    "Fix hard fail: missing_strategy_headings"
-  ]
+    "Scenario analysis disclosure is incomplete: omits available assumptions/methodology drivers and omits revenue-at-risk output; scenario section ends mid-sentence.",
+    "Modelled estimates labelling is inconsistent due to truncation and lack of clear ‘modelled estimates’ qualifier for each scenario metric in the financial effects subsection.",
+    "One mitigation action appears misapplied (flood overlay for stranded assets), undermining faithful representation even if sourced.",
+    "Required Strategy structure is not fully met: missing an explicit resilience discussion tied to scenario assumptions and missing clear linkage from risks/opportunities to financial planning over horizons."
+  ],
+  "available_evidence_omitted": [
+    "Scenario output: max revenue at risk EUR 35,509.1m (SCN0013, NDC, 2025) is not disclosed.",
+    "Scenario methodology/assumptions summary (NGFS v4, drivers like carbon price/tech readiness/time horizon) not described.",
+    "Resilience assessment by scenario type (orderly/disorderly/hot house) not included, despite being available."
+  ],
+  "unsupported_claims": [
+    "EV shift risk is linked to scenario analysis SCN0011, but evidence links this top risk to SCN0011 while draft earlier frames scenario linkage inconsistently (SCN0004/SCN0013 only).",
+    "Stranded assets — fossil fuel sector exposure mitigation includes “flood mapping overlays”; evidence states this, but it appears mismatched to transition risk and reads implausible without explanation.",
+    "Scenario-based financial effects section is truncated (“Maximum stranded assets estimate… under ‘Net Zero 2050’ (orderly”), creating risk of misstatement/omission."
+  ],
+  "correctly_disclosed_evidence_boundaries": [
+    "Business model narrative detail not fully documented; section focuses on observable channels with quantification.",
+    "Quantitative financial impacts beyond identified top risks are not yet fully modelled.",
+    "Some own-operations and supplier value-chain nodes are qualitative where financial exposure is unavailable.",
+    "No documented strategy trade-off decisions available; treated as a boundary."
+  ],
+  "raw_strategy_payload_path": "outputs\\payload_BANK01_strategy_raw.json",
+  "compact_strategy_evidence_path": "outputs\\compact_strategy_evidence_BANK01.json"
 }
