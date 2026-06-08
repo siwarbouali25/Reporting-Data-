@@ -1,54 +1,19 @@
-AZURE_OPENAI_API_KEY = os.getenv("AZURE_OPENAI_API_KEY")
-AZURE_OPENAI_CHAT_URL = os.getenv("AZURE_OPENAI_CHAT_URL")
+print("Strategy word count:", len(strategy_result["final_section"].split()))
+print("Has all required headings:")
+for h in [
+    "#### Climate-related risks and opportunities",
+    "#### Effects on business model and value chain",
+    "#### Effects on strategy and decision-making",
+    "#### Financial effects and resource allocation",
+    "#### Climate resilience and scenario analysis",
+    "#### Strategy limitations and evidence boundaries",
+]:
+    print(h, h in strategy_result["final_section"])
 
-def call_llm(system_prompt: str, user_prompt: str, temperature: float = 0.2) -> str:
-    payload = {
-        "messages": [
-            {"role": "system", "content": system_prompt},
-            {"role": "user", "content": user_prompt},
-        ],
-        "temperature": temperature,
-        "max_tokens": 2000,
-    }
+print("\nFinal 1000 characters:")
+print(strategy_result["final_section"][-1000:])
 
-    req = urllib.request.Request(
-        AZURE_OPENAI_CHAT_URL,
-        data=json.dumps(payload).encode("utf-8"),
-        headers={
-            "Content-Type": "application/json",
-            "api-key": AZURE_OPENAI_API_KEY,
-        },
-        method="POST",
-    )
-
-    with urllib.request.urlopen(req, timeout=120) as resp:
-        data = json.loads(resp.read().decode("utf-8"))
-
-    return data["choices"][0]["message"]["content"]
-
-
-def call_llm_json(system_prompt: str, user_prompt: str) -> dict:
-    payload = {
-        "messages": [
-            {"role": "system", "content": system_prompt},
-            {"role": "user", "content": user_prompt},
-        ],
-        "temperature": 0.0,
-        "max_tokens": 1200,
-        "response_format": {"type": "json_object"},
-    }
-
-    req = urllib.request.Request(
-        AZURE_OPENAI_CHAT_URL,
-        data=json.dumps(payload).encode("utf-8"),
-        headers={
-            "Content-Type": "application/json",
-            "api-key": AZURE_OPENAI_API_KEY,
-        },
-        method="POST",
-    )
-
-    with urllib.request.urlopen(req, timeout=120) as resp:
-        data = json.loads(resp.read().decode("utf-8"))
-
-    return json.loads(data["choices"][0]["message"]["content"])
+print("\nJudge false checklist items:")
+for k, v in strategy_result["judge_result"].get("checklist", {}).items():
+    if v is False:
+        print("-", k)
