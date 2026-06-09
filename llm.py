@@ -1,19 +1,42 @@
-print("Strategy word count:", len(strategy_result["final_section"].split()))
-print("Has all required headings:")
-for h in [
-    "#### Climate-related risks and opportunities",
-    "#### Effects on business model and value chain",
-    "#### Effects on strategy and decision-making",
-    "#### Financial effects and resource allocation",
-    "#### Climate resilience and scenario analysis",
-    "#### Strategy limitations and evidence boundaries",
-]:
-    print(h, h in strategy_result["final_section"])
+# 5. Azure OpenAI client setup
 
-print("\nFinal 1000 characters:")
-print(strategy_result["final_section"][-1000:])
+import os
+from openai import AzureOpenAI
 
-print("\nJudge false checklist items:")
-for k, v in strategy_result["judge_result"].get("checklist", {}).items():
-    if v is False:
-        print("-", k)
+# Required Azure variables:
+# AZURE_OPENAI_API_KEY
+# AZURE_OPENAI_ENDPOINT
+# AZURE_OPENAI_API_VERSION
+# AZURE_OPENAI_DEPLOYMENT
+
+required_vars = [
+    "AZURE_OPENAI_API_KEY",
+    "AZURE_OPENAI_ENDPOINT",
+    "AZURE_OPENAI_API_VERSION",
+    "AZURE_OPENAI_DEPLOYMENT",
+]
+
+missing = [v for v in required_vars if not os.getenv(v)]
+
+if missing:
+    print("Missing environment variables:")
+    for v in missing:
+        print("-", v)
+
+    print("\nSet them before running API cells.")
+else:
+    print("Azure OpenAI environment variables found.")
+
+client = AzureOpenAI(
+    api_key=os.getenv("AZURE_OPENAI_API_KEY"),
+    azure_endpoint=os.getenv("AZURE_OPENAI_ENDPOINT"),
+    api_version=os.getenv("AZURE_OPENAI_API_VERSION"),
+)
+
+# In Azure, MODEL must be your DEPLOYMENT NAME, not just the base model name.
+MODEL = os.getenv("AZURE_OPENAI_DEPLOYMENT")
+
+print("Azure client ready.")
+print("Endpoint:", os.getenv("AZURE_OPENAI_ENDPOINT"))
+print("Deployment:", MODEL)
+print("API version:", os.getenv("AZURE_OPENAI_API_VERSION"))
