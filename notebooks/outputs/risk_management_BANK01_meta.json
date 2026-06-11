@@ -1,0 +1,52 @@
+{
+  "bank_id": "BANK01",
+  "bank_name": "Eurolux Universal Bank AG",
+  "section": "risk_management",
+  "status": "failed",
+  "approval_status": "revision_required",
+  "final_score": 6,
+  "revisions": 1,
+  "approved": false,
+  "checklist": {
+    "required_structure_present": false,
+    "report_style_structure_present": false,
+    "upstream_internal_downstream_structure_present": true,
+    "risk_identification_used_correctly": true,
+    "physical_transition_distinction_used": true,
+    "risk_assessment_prioritisation_used_correctly": true,
+    "monitoring_process_used_correctly": true,
+    "mitigation_actions_used_correctly": false,
+    "erm_integration_used_correctly": true,
+    "scenario_analysis_used_correctly": true,
+    "risk_appetite_handled_according_to_availability": true,
+    "controls_procedures_handled_according_to_availability": true,
+    "escalation_handled_according_to_availability": true,
+    "evidence_boundaries_present": false,
+    "no_visible_ifrs_refs_or_internal_refs": true,
+    "no_unsupported_strong_claims": false
+  },
+  "issues": [
+    "Deterministic pre-check failure: missing required subsection 'Risk management limitations and evidence boundaries' and the limitations section is missing.",
+    "The 'Monitoring and scenario analysis' subsection is truncated mid-sentence, creating incompleteness and weakening IFRS S1/S2 usability.",
+    "Some mitigation/control wording drifts beyond register-style evidence (implying control design detail or additional mitigations not evidenced) rather than staying strictly within the recorded mitigation action text.",
+    "Structure requirement not met: Emirates-style structure requires a dedicated limitations section; without it, the section fails the required structure even though upstream/internal/downstream parts are present."
+  ],
+  "available_evidence_omitted": [
+    "Scenario analysis details available but only partially carried through: the draft references NGFS v4 and example pathways, but does not clearly state the scenario types (orderly/disorderly/hot-house) and horizon years (2025/2030/2050) as a structured input set in the monitoring/scenario subsection (also the Monitoring and scenario analysis subsection is cut off mid-sentence).",
+    "Explicit evidence boundary that formal controls/procedures, policies, risk appetite thresholds and escalation thresholds are not available (this boundary exists in the evidence profile but is not stated in a dedicated limitations subsection).",
+    "ERM integration evidence is quantified (6 of 8; 75%) and included, but the draft does not clearly identify which two risks are not ERM-integrated in the overview (it is later inferable, but not explicit in the overview)."
+  ],
+  "unsupported_claims": [
+    "For wildfire risk, the draft states mitigation includes 'collateral revaluation and the application of flood mapping overlays'—the evidence only supports 'Collateral revaluation and flood mapping overlay' and does not evidence 'flood mapping overlays to collateral assessment' as a separate control; wording implies operational control design detail not evidenced.",
+    "For stranded assets (fossil fuel sector exposure), the draft states mitigation actions such as 'collateral revaluation and flood mapping overlay'—this is evidenced, but the phrasing 'such as' implies there may be additional mitigations not evidenced.",
+    "The overview states 'where evidenced, linked to existing risk processes such as ICAAP'—ICAAP linkage is evidenced for specific risks (EV shift; heat stress) but not evidenced for all ERM-integrated risks; the statement is borderline and should be tightened to name only the risks where ICAAP linkage is recorded."
+  ],
+  "correctly_disclosed_evidence_boundaries": [
+    "Upstream risks: explicitly states the register does not distinguish a separate upstream taxonomy and that upstream risks are not separately identified, rated or monitored.",
+    "Internal operations: explicitly states no distinct register entries for internal operational climate risks and no documented controls/procedures for internal climate-related operational risk.",
+    "Risk appetite: explicitly states KPIs are contextual and are not documented as formal risk appetite limits in the source data.",
+    "Scenario analysis: described as a forward-looking input for selected risks and not as realised financial losses."
+  ],
+  "raw_risk_management_payload_path": "outputs\\payload_BANK01_risk_management_raw.json",
+  "compact_risk_management_evidence_path": "outputs\\compact_risk_management_evidence_BANK01.json"
+}

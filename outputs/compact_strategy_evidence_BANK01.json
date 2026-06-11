@@ -18,14 +18,17 @@
       "climate_risk_register",
       "value_chain_map",
       "climate_opportunities",
+      "targets",
       "reporting_kpis"
     ],
-    "full_targets_table_available": false,
+    "full_targets_table_available": true,
     "target_summary_available": true,
     "climate_scenarios_count": 18,
     "risk_register_count": 16,
     "value_chain_node_count": 16,
-    "opportunity_count": 5
+    "opportunity_count": 5,
+    "business_model_impacts_available": false,
+    "strategy_tradeoff_decisions_available": false
   },
   "risk_summary": {
     "risk_count_2024": 8,
@@ -176,9 +179,23 @@
       "revenue_at_risk_meur": 35509.1
     },
     "key_assumption_ranges": {
-      "carbon_price_eur_per_tco2e": {
+      "carbon_price_eur_per_tco2e_overall": {
         "min": 1.2,
         "max": 287.1
+      },
+      "carbon_price_by_scenario_type": {
+        "orderly": {
+          "min": 86.3,
+          "max": 287.1
+        },
+        "disorderly": {
+          "min": 51.5,
+          "max": 77.4
+        },
+        "hot_house": {
+          "min": 1.2,
+          "max": 16.9
+        }
       },
       "technology_readiness": [
         "high",
@@ -328,6 +345,9 @@
   "portfolio_summary": {
     "total_assets_meur": 850000,
     "total_loans_meur": 31150.64,
+    "tier1_capital_meur": 151208.6,
+    "cet1_ratio_pct": 27.4,
+    "total_revenue_meur": 24136.2,
     "green_loans_meur": 3335.75,
     "green_loans_pct": 10.71,
     "financed_emissions_tco2e": 35973167.6878965,
@@ -342,29 +362,103 @@
   "targets": [
     {
       "target_id": "TGT001",
-      "type": "absolute_reduction",
-      "scope": "scope1_and_2",
-      "status": "on_track",
+      "bank_id": "BANK01",
+      "target_type": "absolute_reduction",
+      "scope": "scope_1_and_2",
+      "metric": "tco2e",
+      "baseline_year": 2020,
+      "baseline_value": 137849.0,
       "target_year": 2030,
-      "framework": "SBTi_1.5C",
+      "target_value_pct_reduction": 42,
+      "target_framework": "SBTi_1.5C",
+      "status": "on_track",
+      "gross_or_net": "gross",
+      "ghg_gases_covered": "all_kyoto_7",
+      "scope_coverage": "scope1_and_2",
+      "third_party_validated": true,
+      "validation_body": "SBTi",
+      "sectoral_decarbonisation": false,
+      "interim_milestones_json": "[{\"year\": 2025, \"value\": 120480.0, \"metric\": \"tco2e\"}, {\"year\": 2028, \"value\": 97321.4, \"metric\": \"tco2e\"}]",
+      "target_applies_to": "whole_entity",
+      "latest_paris_alignment": true,
+      "review_frequency": "triennial",
+      "progress_metric": "tco2e_absolute",
+      "milestones_parsed": [
+        {
+          "year": 2025,
+          "value": 120480.0,
+          "metric": "tco2e"
+        },
+        {
+          "year": 2028,
+          "value": 97321.4,
+          "metric": "tco2e"
+        }
+      ],
       "target_progress_pct_2024": 40.0
     },
     {
       "target_id": "TGT002",
-      "type": "intensity_reduction",
-      "scope": "scope3_cat15",
-      "status": "on_track",
+      "bank_id": "BANK01",
+      "target_type": "intensity_reduction",
+      "scope": "scope_3_cat15_financed",
+      "metric": "tco2e_per_meur_lending",
+      "baseline_year": 2022,
+      "baseline_value": 20.0,
       "target_year": 2030,
-      "framework": "NZBA",
+      "target_value_pct_reduction": 30,
+      "target_framework": "NZBA",
+      "status": "on_track",
+      "gross_or_net": "gross",
+      "ghg_gases_covered": "all_kyoto_7",
+      "scope_coverage": "scope3_cat15",
+      "third_party_validated": true,
+      "validation_body": "UNEP_FI",
+      "sectoral_decarbonisation": true,
+      "interim_milestones_json": "[{\"year\": 2025, \"value\": 18.2, \"metric\": \"tco2e_per_meur_lending\"}, {\"year\": 2028, \"value\": 15.8, \"metric\": \"tco2e_per_meur_lending\"}]",
+      "target_applies_to": "whole_entity",
+      "latest_paris_alignment": true,
+      "review_frequency": "annual",
+      "progress_metric": "tco2e_per_meur",
+      "milestones_parsed": [
+        {
+          "year": 2025,
+          "value": 18.2,
+          "metric": "tco2e_per_meur_lending"
+        },
+        {
+          "year": 2028,
+          "value": 15.8,
+          "metric": "tco2e_per_meur_lending"
+        }
+      ],
       "target_progress_pct_2024": 25.0
     },
     {
       "target_id": "TGT003",
-      "type": "net_zero",
+      "bank_id": "BANK01",
+      "target_type": "net_zero",
       "scope": "all_scopes",
-      "status": "on_track",
+      "metric": "tco2e",
+      "baseline_year": 2020,
+      "baseline_value": 120000.0,
       "target_year": 2050,
-      "framework": "NZBA",
+      "target_value_pct_reduction": 100,
+      "target_framework": "NZBA",
+      "status": "on_track",
+      "gross_or_net": "net",
+      "associated_gross_target_id": "TGT001",
+      "ghg_gases_covered": "all_kyoto_7",
+      "scope_coverage": "all_scopes",
+      "third_party_validated": true,
+      "validation_body": "UNEP_FI",
+      "sectoral_decarbonisation": false,
+      "planned_carbon_credits_pct": 8.2,
+      "planned_credit_type": "technology_removal",
+      "target_applies_to": "whole_entity",
+      "latest_paris_alignment": true,
+      "review_frequency": "biennial",
+      "progress_metric": "pct_reduction_vs_baseline",
       "target_progress_pct_2024": 13.3
     }
   ],
@@ -377,9 +471,11 @@
     "value_chain_detail_available": true,
     "tradeoff_evidence_available": false,
     "high_carbon_and_fossil_exposure_available": true,
-    "full_targets_table_available": false,
+    "full_targets_table_available": true,
     "target_summary_available": true,
-    "target_instruction": "Only reporting_kpis.target_summary is available; do not invent target baselines, validation bodies, milestones, gross/net status or planned credit details."
+    "target_instruction": "Full target records are available with baseline_year, baseline_value, target_value_pct_reduction, target_framework, validation_body, gross_or_net, milestones and planned_carbon_credits_pct. Use all available target fields. Do not treat targets as summary-only.",
+    "resource_allocation_instruction": "climate_capex_meur and climate_opex_meur are available from the financial summary. These must be used in the Financial effects and resource allocation subsection.",
+    "financed_emissions_instruction": "financed_emissions_tco2e and carbon_intensity_tco2e_per_meur are available. Reference these metrics where financed-emissions scrutiny risk is discussed."
   },
   "availability_profile": {
     "physical_risk_evidence_available": true,
@@ -391,6 +487,10 @@
     "strategy_tradeoff_evidence_available": false,
     "portfolio_financial_metrics_available": true,
     "resource_allocation_evidence_available": true,
+    "climate_capex_meur": 476.95,
+    "climate_opex_meur": 219.32,
+    "financed_emissions_available": true,
+    "carbon_intensity_available": true,
     "high_carbon_exposure_available": true,
     "fossil_fuel_exposure_available": true,
     "climate_opportunities_available": true,
@@ -399,7 +499,7 @@
     "scenario_assumptions_available": true,
     "scenario_financial_outputs_available": true,
     "resilience_evidence_available": true,
-    "full_targets_table_available": false,
+    "full_targets_table_available": true,
     "target_summary_available": true,
     "targets_available": true,
     "scenario_outputs_are_modelled_estimates": true,
@@ -407,15 +507,17 @@
     "writer_policy": {
       "use_available_evidence": "Use every material Strategy evidence item that is available and relevant.",
       "handle_unavailable_evidence": "When a material Strategy disclosure is unsupported by available evidence, state the boundary once in the relevant subsection and do not invent it.",
-      "target_boundary": "Only reporting_kpis.target_summary is available; do not invent target baselines, validation bodies, milestones, gross/net status or planned credit details.",
+      "target_boundary": "Full target records are available with baseline_year, baseline_value, target_value_pct_reduction, target_framework, validation_body, gross_or_net, milestones and planned_carbon_credits_pct. Use all available target fields. Do not treat targets as summary-only.",
+      "resource_allocation_instruction": "climate_capex_meur and climate_opex_meur are available from the financial summary. These must be used in the Financial effects and resource allocation subsection.",
+      "financed_emissions_instruction": "financed_emissions_tco2e and carbon_intensity_tco2e_per_meur are available. Reference these metrics where financed-emissions scrutiny risk is discussed.",
       "scenario_wording": "Describe scenario financial outputs as modelled estimates, not actual losses.",
       "opportunity_wording": "Describe opportunity revenue impacts as estimates with confidence level, not guaranteed future revenue.",
-      "resilience_wording": "Confine resilience statements to the relevant scenario assumptions and boundaries.",
-      "final_language": "Use 'available evidence', 'available documentation', or 'source data'; do not use the word 'payload' in final disclosure."
+      "resilience_wording": "Confine resilience statements to the relevant scenario-type assumptions and boundaries.",
+      "final_language": "Use 'available evidence', 'available documentation', or 'source data'; do not use 'payload'."
     }
   },
   "source_traceability": {
-    "source_payload_path": "c:\\Users\\BV426BP\\Documents\\IFRS Data\\Reporting-Data-\\notebooks\\payloads\\payload_BANK01_strategy.json",
+    "source_payload_path": "c:\\Users\\BV426BP\\Documents\\IFRS Data\\Reporting-Data-\\payloads\\payload_BANK01_strategy.json",
     "source_tables": [
       "bank",
       "financial_summary",
@@ -423,6 +525,7 @@
       "climate_risk_register",
       "value_chain_map",
       "climate_opportunities",
+      "targets",
       "reporting_kpis"
     ],
     "top_risk_refs": [
@@ -438,21 +541,6 @@
       "SCN0007",
       "SCN0003",
       "SCN0013"
-    ],
-    "value_chain_refs": [
-      "Corporate borrowers — Manufacture of coke and refined petroleum",
-      "Corporate borrowers — Manufacture of motor vehicles",
-      "Corporate borrowers — Mining of coal and lignite",
-      "Corporate borrowers — Education",
-      "Corporate borrowers — Mining of metal ores",
-      "Corporate borrowers — Other mining and quarrying"
-    ],
-    "opportunity_refs": [
-      "OPP-BANK01-01",
-      "OPP-BANK01-02",
-      "OPP-BANK01-03",
-      "OPP-BANK01-04",
-      "OPP-BANK01-05"
     ]
   }
 }

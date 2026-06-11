@@ -1,0 +1,40 @@
+{
+  "bank_id": "BANK01",
+  "bank_name": "Eurolux Universal Bank AG",
+  "section": "general_requirements",
+  "status": "failed",
+  "approval_status": "revision_required",
+  "final_score": 7,
+  "revisions": 1,
+  "approved": false,
+  "checklist": {
+    "required_structure_present": false,
+    "report_style_structure_present": true,
+    "approach_to_ifrs_s1_s2_present": true,
+    "fair_presentation_boundary_correct": true,
+    "connected_information_present": true,
+    "comparative_information_handled_correctly": true,
+    "timing_and_location_handled_correctly": true,
+    "reporting_entity_business_model_value_chain_present": true,
+    "sources_of_guidance_handled_correctly": true,
+    "statement_of_compliance_not_overclaimed": true,
+    "materiality_not_invented": true,
+    "no_whole_report_assurance_overclaim": true,
+    "no_financed_emissions_assurance_overclaim": true,
+    "no_visible_internal_refs_or_file_names": false
+  },
+  "issues": [
+    "Fails deterministic pre-check due to visible internal/file reference; must be removed to be publishable under constraints.",
+    "Missing the required 'nine required headings' Emirates-style General Requirements structure (the draft contains multiple subsections, but it is not demonstrably the required nine-heading set as requested by the evaluation principles).",
+    "A few assertions about what Strategy/Risk Management/Metrics sections 'do' rely on evidence outside this General Requirements evidence pack; wording should be tightened to avoid implying verified content beyond what is evidenced here."
+  ],
+  "available_evidence_omitted": [
+    "Explicit quantification of value-chain upstream supplier financial exposures included in the evidence (IT infrastructure & cloud providers: EUR 223.85m; Office space landlords: EUR 445.41m; Professional services suppliers: EUR 120.73m) is not carried into the narrative (only mentioned qualitatively).",
+    "Evidence boundary that the General Requirements section was generated after core sections (and should be displayed before them) is only partially reflected; the draft says it was generated after core evidence was assembled, but does not reflect the presentational ordering boundary."
+  ],
+  "unsupported_claims": [
+    "Deterministic pre-check failure: the draft contains a visible internal/file reference ('file'), which violates the no-internal-references constraint.",
+    "Connected information section asserts that 'The Strategy section draws on climate scenario analysis and a climate risk register' and that 'The Risk management section explains...'—the General Requirements evidence package here only confirms those items exist in other payloads/keys, but does not provide the underlying scenario/risk-register content within this General Requirements evidence pack. This is a mild overreach unless phrased strictly as 'available evidence indicates' and kept non-specific.",
+    "Statement that 'significant climate-sensitive sectors within the financing portfolio' are included: sector exposures are evidenced in the value chain map, but 'significant' is an evaluative label without a documented materiality process; should be framed as 'materiality_flag=true in the value chain map' or similar evidence-based language."
+  ]
+}

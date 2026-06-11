@@ -2,48 +2,56 @@
   "bank_id": "BANK01",
   "bank_name": "Eurolux Universal Bank AG",
   "section": "governance",
-  "status": "approved",
-  "approval_status": "approved_with_limitations",
+  "status": "failed",
+  "approval_status": "revision_required",
   "raw_score": null,
-  "final_score": 7,
+  "final_score": 6,
   "score_cap_reason": null,
-  "revisions": 0,
-  "approved": true,
+  "revisions": 2,
+  "approved": false,
   "checklist": {
     "required_structure_present": true,
-    "available_board_metrics_used_correctly": true,
-    "available_trends_used_correctly": true,
-    "available_decisions_used_correctly": true,
+    "report_style_structure_present": true,
+    "board_metrics_used_correctly": true,
+    "trend_metrics_used_correctly": true,
+    "board_decisions_used_correctly": false,
     "formal_mandate_handled_according_to_availability": true,
     "board_tradeoffs_handled_according_to_availability": true,
-    "management_process_handled_according_to_availability": true,
+    "management_evidence_handled_according_to_availability": true,
+    "risk_register_used_if_available_or_not_invented_if_absent": true,
     "escalation_handled_according_to_availability": true,
     "skills_handled_according_to_availability": true,
     "remuneration_evidence_used_correctly": true,
-    "assurance_scope_used_correctly": false,
-    "no_unsupported_committee_evolution": true,
-    "no_unsupported_strong_claims": true,
-    "no_visible_ifrs_refs": true,
-    "no_duplicate_decisions": true
+    "assurance_scope_used_correctly": true,
+    "no_unsupported_committee_evolution": false,
+    "no_duplicate_decisions": false,
+    "no_visible_ifrs_refs_or_internal_refs": true,
+    "no_unsupported_strong_claims": false
   },
   "issues": [
-    "Assurance scope handling conflicts with provided availability flags; draft infers financed emissions/Scope 3 out-of-scope without supporting availability context.",
-    "Material governance elements are limitation-covered (formal mandate, trade-offs, escalation thresholds, skills adequacy), preventing high completeness.",
-    "Board oversight subsection hints at decisions and major transaction checks but lacks any evidence of formal policy/controls beyond the boolean indicator."
+    "Decision duplication and leakage: specific decision topics and dates appear in the Governance decisions subsection (appropriate) but are also referenced earlier (e.g., committee work described as including consideration of climate performance indicators/risk updates that 'informed documented 2024 Board and committee decisions'). The bigger issue is that the decisions list itself repeats the same decision group across multiple dates and frames them as repeated 'approvals' without clear evidence that each listed date was an approval decision.",
+    "Potential contradiction with evidence grouping: the compact evidence groups decisions with multiple dates under a single decision (e.g., methodology approval; carbon credit budget approval). The draft converts these into multiple approvals on multiple dates, which may overstate decision frequency.",
+    "Unsupported committee continuity/evolution risk: the draft uses trend committee names (2022/2023) in the narrative context without explicitly stating that evidence does not show renaming/evolution; this increases misinterpretation risk.",
+    "Alignment flags appear in the Overview, contrary to the stated principle that alignment flags should be confined to the boundaries subsection with a limitation statement.",
+    "Over-strong wording in a few places (e.g., 'scenario outputs are used', 'governance controls reflected in mitigation actions') that implies operationalisation/effectiveness beyond the evidence."
   ],
   "available_evidence_omitted": [
-    "Governance evidence flags state tcfd_aligned=true and ifrs_s2_aligned=true; draft does not mention alignment (optional, but available)."
+    "Explicit statement that source data flags TCFD-aligned and IFRS S2-aligned should be confined to the boundaries subsection (draft includes it in the Overview, contrary to the stated principle)."
   ],
   "unsupported_claims": [
-    "Assurance section states financed emissions/Scope 3 are outside assurance scope; availability_profile says financed emissions not available for scope context and assurance_scope_is_scope1_scope2_only=false."
+    "Overview: 'External limited assurance over selected climate metrics is provided within the scope described in the final subsection of this Governance section.' Evidence supports limited assurance over Scope 1 and 2 emissions only; the phrase 'selected climate metrics' is broader than evidenced.",
+    "Overview: 'Executive responsibility for climate-related risks and opportunities is assigned to the Climate Risk Management Committee' is supported for 2024, but the draft also presents comparative committee naming in a way that can imply evolution/renaming without stating the evidence limitation (2022 and 2023 committee names differ and evidence does not prove continuity).",
+    "Management subsection: 'scenario outputs are used in assessing potential financial impacts' is stronger than the evidence, which supports links/references to scenario IDs in the register but does not evidence how outputs are used.",
+    "Controls subsection: 'Management governance controls ... are reflected in ... mitigation actions recorded ... such as ... sector exposure limits and enhanced due diligence.' The risk register lists mitigation actions, but describing these as operating 'controls' can overstate what is evidenced (actions listed vs implemented control effectiveness).",
+    "Board committees subsection: 'reviews climate-related risks and opportunities ... and provides recommendations to the full Board' is plausible but not explicitly evidenced in the compact evidence (no charter/ToR; minutes evidence decisions but not the recommendation workflow)."
   ],
   "correctly_disclosed_evidence_boundaries": [
-    "Committee charter/terms of reference not available; therefore no formal written climate mandate described.",
-    "Decision evidence identifies decisions and bodies, but does not describe specific trade-offs considered.",
-    "No further detail available on formalisation of major transaction climate checks as policy/control.",
-    "No formal escalation thresholds/routes for elevating climate risks to board level described in evidence.",
-    "No formal process for assessing adequacy of climate-related skills at board/management level described.",
-    "Remuneration percentages are evidenced but underlying metrics/targets within ESG/climate components are not described."
+    "Committee charter/terms of reference not available; draft states documentation does not include the ESG & Sustainability Committee charter or terms of reference.",
+    "No trade-off evidence; draft states decisions do not describe specific trade-offs (profitability, capital allocation, implementation cost, risk appetite, competing priorities).",
+    "No formal escalation thresholds; draft states documentation does not evidence formal escalation thresholds or trigger-based escalation mechanics beyond ERM integration indicators and committee oversight.",
+    "Skills adequacy process not evidenced; draft states no separate formal process beyond metrics and development programme.",
+    "Assurance scope limitation: limited assurance covers Scope 1 and 2 only; financed emissions/Scope 3 outside scope.",
+    "Alignment control limitation: draft states no separate governance control process evidenced to verify/assure TCFD/IFRS S2 alignment."
   ],
   "raw_governance_payload_path": "outputs\\payload_BANK01_governance_raw.json",
   "compact_governance_evidence_path": "outputs\\compact_governance_evidence_BANK01.json"
