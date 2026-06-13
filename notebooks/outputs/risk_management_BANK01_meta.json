@@ -2,50 +2,47 @@
   "bank_id": "BANK01",
   "bank_name": "Eurolux Universal Bank AG",
   "section": "risk_management",
-  "status": "failed",
-  "approval_status": "revision_required",
-  "final_score": 6,
-  "revisions": 1,
-  "approved": false,
+  "status": "approved",
+  "approval_status": "approved_with_limitations",
+  "final_score": 7,
+  "revisions": 0,
+  "approved": true,
   "checklist": {
-    "required_structure_present": false,
-    "report_style_structure_present": false,
+    "required_structure_present": true,
+    "report_style_structure_present": true,
     "upstream_internal_downstream_structure_present": true,
     "risk_identification_used_correctly": true,
     "physical_transition_distinction_used": true,
     "risk_assessment_prioritisation_used_correctly": true,
     "monitoring_process_used_correctly": true,
-    "mitigation_actions_used_correctly": false,
+    "mitigation_actions_used_correctly": true,
     "erm_integration_used_correctly": true,
     "scenario_analysis_used_correctly": true,
     "risk_appetite_handled_according_to_availability": true,
     "controls_procedures_handled_according_to_availability": true,
     "escalation_handled_according_to_availability": true,
-    "evidence_boundaries_present": false,
+    "evidence_boundaries_present": true,
     "no_visible_ifrs_refs_or_internal_refs": true,
     "no_unsupported_strong_claims": false
   },
   "issues": [
-    "Deterministic pre-check failure: missing required subsection 'Risk management limitations and evidence boundaries' and the limitations section is missing.",
-    "The 'Monitoring and scenario analysis' subsection is truncated mid-sentence, creating incompleteness and weakening IFRS S1/S2 usability.",
-    "Some mitigation/control wording drifts beyond register-style evidence (implying control design detail or additional mitigations not evidenced) rather than staying strictly within the recorded mitigation action text.",
-    "Structure requirement not met: Emirates-style structure requires a dedicated limitations section; without it, the section fails the required structure even though upstream/internal/downstream parts are present."
+    "Some mitigation-action narratives risk over-interpreting or mislabelling register items (eg, ‘transition-plan covenants’ tied to flood risk; mitigation for stranded assets described with physical-risk style tools).",
+    "IFRS S1/S2 risk-management process description is register-centric and does not clearly describe the actual process mechanics (inputs/data sources, methodologies, frequency of register refresh, prioritisation criteria) beyond listing fields—acceptable given evidence limits but still leaves ‘process’ thin.",
+    "Industry-based banking guidance is only partially addressed: the draft does not clearly explain incorporation of ESG/climate factors into credit analysis and ECL/expected credit loss estimation, nor the scope across C&I lending and project finance, nor day-to-day roles/responsibilities (and does not explicitly boundary-disclose these gaps as ‘not available’)."
   ],
   "available_evidence_omitted": [
-    "Scenario analysis details available but only partially carried through: the draft references NGFS v4 and example pathways, but does not clearly state the scenario types (orderly/disorderly/hot-house) and horizon years (2025/2030/2050) as a structured input set in the monitoring/scenario subsection (also the Monitoring and scenario analysis subsection is cut off mid-sentence).",
-    "Explicit evidence boundary that formal controls/procedures, policies, risk appetite thresholds and escalation thresholds are not available (this boundary exists in the evidence profile but is not stated in a dedicated limitations subsection).",
-    "ERM integration evidence is quantified (6 of 8; 75%) and included, but the draft does not clearly identify which two risks are not ERM-integrated in the overview (it is later inferable, but not explicit in the overview)."
+    "Value-chain mapping evidence (value_chain_map is available in the compact evidence profile but is not used to describe breadth/composition beyond qualitative upstream/downstream narrative).",
+    "Governance evidence exists as a top-level key but is not used; the draft relies on a cross-reference (“described elsewhere”) without summarising what is evidenced (if anything) for risk management linkages."
   ],
   "unsupported_claims": [
-    "For wildfire risk, the draft states mitigation includes 'collateral revaluation and the application of flood mapping overlays'—the evidence only supports 'Collateral revaluation and flood mapping overlay' and does not evidence 'flood mapping overlays to collateral assessment' as a separate control; wording implies operational control design detail not evidenced.",
-    "For stranded assets (fossil fuel sector exposure), the draft states mitigation actions such as 'collateral revaluation and flood mapping overlay'—this is evidenced, but the phrasing 'such as' implies there may be additional mitigations not evidenced.",
-    "The overview states 'where evidenced, linked to existing risk processes such as ICAAP'—ICAAP linkage is evidenced for specific risks (EV shift; heat stress) but not evidenced for all ERM-integrated risks; the statement is borderline and should be tightened to name only the risks where ICAAP linkage is recorded."
+    "“collateral revaluation and flood mapping overlay” is stated as a mitigation action for transition market risk ‘stranded assets — fossil fuel sector exposure’; this pairing is unusual and may mischaracterise the action as transition-risk mitigation without explaining linkage (even though the register lists it, the narrative should avoid implying it is an effective/appropriate mitigation for stranded-asset risk).",
+    "“engagement and transition-plan covenants with borrowers in relation to flood-exposed mortgage portfolios” is presented as mitigation for a physical acute flood risk; calling them “transition-plan covenants” for a physical hazard may be misleading without evidence that these covenants relate to adaptation/physical risk resilience rather than transition planning."
   ],
   "correctly_disclosed_evidence_boundaries": [
-    "Upstream risks: explicitly states the register does not distinguish a separate upstream taxonomy and that upstream risks are not separately identified, rated or monitored.",
-    "Internal operations: explicitly states no distinct register entries for internal operational climate risks and no documented controls/procedures for internal climate-related operational risk.",
-    "Risk appetite: explicitly states KPIs are contextual and are not documented as formal risk appetite limits in the source data.",
-    "Scenario analysis: described as a forward-looking input for selected risks and not as realised financial losses."
+    "Formal climate risk appetite thresholds are not evidenced in available documentation and are therefore not described.",
+    "Formal climate-specific risk policy documents, detailed control descriptions/procedural manuals, and escalation thresholds/triggers are not available in source data and are therefore not described.",
+    "Upstream climate risk processes are not separately documented; upstream treatment is described as indirect/embedded rather than a distinct process.",
+    "Scenario analysis is described as a forward-looking risk assessment input linked to selected risks; scenario outputs are not presented as realised or forecast losses and portfolio-wide quantitative outcomes are not provided."
   ],
   "raw_risk_management_payload_path": "outputs\\payload_BANK01_risk_management_raw.json",
   "compact_risk_management_evidence_path": "outputs\\compact_risk_management_evidence_BANK01.json"

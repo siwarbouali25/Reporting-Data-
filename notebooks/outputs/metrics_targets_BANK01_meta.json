@@ -2,17 +2,17 @@
   "bank_id": "BANK01",
   "bank_name": "Eurolux Universal Bank AG",
   "section": "metrics_targets",
-  "status": "failed",
-  "approval_status": "revision_required",
-  "final_score": 6,
-  "revisions": 1,
-  "approved": false,
+  "status": "approved",
+  "approval_status": "approved_with_limitations",
+  "final_score": 7,
+  "revisions": 0,
+  "approved": true,
   "checklist": {
     "required_structure_present": true,
     "overview_present": true,
     "report_style_structure_present": true,
     "emirates_style_metrics_flow_present": true,
-    "operational_ghg_handled_according_to_availability": false,
+    "operational_ghg_handled_according_to_availability": true,
     "financed_emissions_used_correctly": true,
     "portfolio_intensity_used_correctly": true,
     "financial_metrics_used_correctly": true,
@@ -25,22 +25,23 @@
     "no_unsupported_strong_claims": false
   },
   "issues": [
-    "Deterministic pre-check failure flagged: 'operational_ghg_values_invented'. The draft must be checked to ensure it does not present any operational Scope 1/2/3 values anywhere (including within target sections) in a way that could be interpreted as 2024 measured emissions.",
-    "Overclaiming risk around validation/status language ('validated', 'on_track', 'Paris alignment'): needs stricter framing as internal target-record fields and explicitly not assurance/verification.",
-    "IFRS S2 financed-emissions completeness gaps remain (acceptable given evidence limits), but the draft should avoid implying broader coverage (e.g., other asset classes) when only loans are evidenced."
+    "One over-assertive compliance claim (\"In line with IFRS S1 and IFRS S2\") without evidential support in the provided evidence pack",
+    "One scoping statement for portfolio metrics (excluding mortgages and revolving credit) that is not supported by the compact evidence and could be interpreted as a methodological claim",
+    "IFRS S1 governance linkage requirement (oversight of target-setting/monitoring and remuneration linkage) is not addressed in this section; no explicit boundary statement is provided for that omission (may exist elsewhere in the report, but not evidenced here)"
   ],
   "available_evidence_omitted": [
-    "Targets: explicit disclosure that TGT001 and TGT003 have sectoral_decarbonisation=false (draft only mentions it for TGT002)."
+    "Target-record field: target status = \"on_track\" for all three targets (not disclosed, which is acceptable but is available evidence)",
+    "Target-record field: latest_paris_alignment = true for all three targets (not disclosed; preferable to omit rather than overclaim without careful framing)"
   ],
   "unsupported_claims": [
-    "Use of strong-status language: targets described as 'on_track' in narrative without consistently framing as a target-record status field (even though later caveated).",
-    "Repeated references to 'third_party_validated' and naming SBTi/UNEP_FI could be read as external validation/assurance; needs tighter wording as 'target record indicates third_party_validated' with no confirmation in available documentation."
+    "Unqualified statement that the section is \"In line with IFRS S1 and IFRS S2\" (not evidenced; should be framed as \"prepared with reference to\" or removed)",
+    "Claim that financed emissions exclude \"retail mortgage and revolving credit products\" (exclusion is mentioned, but no explicit evidence of this scoping choice exists in the compact evidence; it is an industry-guidance-consistent statement but still unsupported by provided evidence)"
   ],
   "correctly_disclosed_evidence_boundaries": [
-    "Operational Scope 1, Scope 2 and other Scope 3 GHG emissions for 2024 are not available; therefore no operational emissions figures or scope disaggregation are presented.",
-    "Financed emissions available only in aggregate for loans; no disaggregation by asset class, sector or geography in available evidence.",
-    "No methodology records available; detailed calculation methodology, data quality assessments and assumptions are not described in available evidence.",
-    "No information in source data regarding external assurance over financed emissions metrics or targets."
+    "Detailed 2024 operational Scope 1, Scope 2 and Scope 3 emissions records are unavailable; therefore no quantified operational emissions are disclosed for 2024",
+    "Financed emissions methodology details, data quality assessments, assumptions and sectoral breakdowns are not described in the available evidence",
+    "High-carbon/fossil-fuel/green-loan definitions and sector mapping criteria are not fully described in the available documentation",
+    "All 2024 metrics and target progress indicators are not independently verified; references to third-party validation relate to target-record attributes only"
   ],
   "raw_metrics_targets_payload_path": "outputs\\payload_BANK01_metrics_targets_raw.json",
   "compact_metrics_targets_evidence_path": "outputs\\compact_metrics_targets_evidence_BANK01.json"
