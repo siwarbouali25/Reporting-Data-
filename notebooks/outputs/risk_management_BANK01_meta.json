@@ -2,11 +2,11 @@
   "bank_id": "BANK01",
   "bank_name": "Eurolux Universal Bank AG",
   "section": "risk_management",
-  "status": "approved",
-  "approval_status": "approved_with_limitations",
-  "final_score": 7,
-  "revisions": 0,
-  "approved": true,
+  "status": "needs_human_review",
+  "approval_status": "needs_human_review",
+  "final_score": 8,
+  "revisions": 3,
+  "approved": false,
   "checklist": {
     "required_structure_present": true,
     "report_style_structure_present": true,
@@ -26,23 +26,31 @@
     "no_unsupported_strong_claims": false
   },
   "issues": [
-    "Some mitigation-action narratives risk over-interpreting or mislabelling register items (eg, ‘transition-plan covenants’ tied to flood risk; mitigation for stranded assets described with physical-risk style tools).",
-    "IFRS S1/S2 risk-management process description is register-centric and does not clearly describe the actual process mechanics (inputs/data sources, methodologies, frequency of register refresh, prioritisation criteria) beyond listing fields—acceptable given evidence limits but still leaves ‘process’ thin.",
-    "Industry-based banking guidance is only partially addressed: the draft does not clearly explain incorporation of ESG/climate factors into credit analysis and ECL/expected credit loss estimation, nor the scope across C&I lending and project finance, nor day-to-day roles/responsibilities (and does not explicitly boundary-disclose these gaps as ‘not available’)."
+    "One material overstatement in mitigation wording (plural ‘overlays’ vs evidenced singular ‘overlay’).",
+    "IFRS S1/S2 risk-management-process expectations are only partially met because the draft relies on the risk register attributes but does not evidence an actual ‘process’ (inputs/parameters, roles, steps); this is partly mitigated by boundaries but still leaves IFRS alignment weaker on process description.",
+    "Governance linkage required by S1/S2 (how bodies/individuals take climate risks into account) is not evidenced in the risk management evidence set; the draft avoids explicit governance claims, but the section also does not clearly cross-link to governance disclosures (if any) to satisfy connectivity expectations."
   ],
   "available_evidence_omitted": [
-    "Value-chain mapping evidence (value_chain_map is available in the compact evidence profile but is not used to describe breadth/composition beyond qualitative upstream/downstream narrative).",
-    "Governance evidence exists as a top-level key but is not used; the draft relies on a cross-reference (“described elsewhere”) without summarising what is evidenced (if anything) for risk management linkages."
+    "Scenario analysis evidence: the draft names NGFS_v4 and scenario types/horizons, but does not use any of the available scenario name examples (e.g., Net Zero 2050, Current Policies) to make the scenario set more concrete."
   ],
   "unsupported_claims": [
-    "“collateral revaluation and flood mapping overlay” is stated as a mitigation action for transition market risk ‘stranded assets — fossil fuel sector exposure’; this pairing is unusual and may mischaracterise the action as transition-risk mitigation without explaining linkage (even though the register lists it, the narrative should avoid implying it is an effective/appropriate mitigation for stranded-asset risk).",
-    "“engagement and transition-plan covenants with borrowers in relation to flood-exposed mortgage portfolios” is presented as mitigation for a physical acute flood risk; calling them “transition-plan covenants” for a physical hazard may be misleading without evidence that these covenants relate to adaptation/physical risk resilience rather than transition planning."
+    "“Mitigation actions … include: … collateral revaluation and flood mapping overlays” is broader than the available evidence, which supports “collateral revaluation and flood mapping overlay” as a recorded mitigation action but does not evidence multiple overlays or a broader overlay program.",
+    "“The Bank’s … KPIs … are used as monitoring context” is plausible but not explicitly evidenced as a defined monitoring input/process in the risk register or process documentation (only the KPI values are evidenced)."
+  ],
+  "material_unsupported_claims": [
+    "“Mitigation actions … include: … collateral revaluation and flood mapping overlays” (plural ‘overlays’) overstates what is evidenced (singular ‘overlay’)."
+  ],
+  "minor_wording_to_tighten": [
+    "“provide additional context … and are used as monitoring context” — tighten to “provide contextual information” unless there is explicit evidence that KPIs are used in monitoring routines.",
+    "“updated when assessments are revised” — evidence supports that 4 risks are marked ‘changed since prior period’, but not the trigger/discipline for updates; tighten to “the register records changes to assessments for four risks versus the prior period.”",
+    "“internal operational climate risk management … reflected indirectly through … business continuity arrangements” — acceptable as a boundary narrative, but should be clearly framed as inference rather than evidenced practice."
   ],
   "correctly_disclosed_evidence_boundaries": [
-    "Formal climate risk appetite thresholds are not evidenced in available documentation and are therefore not described.",
-    "Formal climate-specific risk policy documents, detailed control descriptions/procedural manuals, and escalation thresholds/triggers are not available in source data and are therefore not described.",
-    "Upstream climate risk processes are not separately documented; upstream treatment is described as indirect/embedded rather than a distinct process.",
-    "Scenario analysis is described as a forward-looking risk assessment input linked to selected risks; scenario outputs are not presented as realised or forecast losses and portfolio-wide quantitative outcomes are not provided."
+    "No formal climate risk appetite thresholds are evidenced; the draft explicitly states it does not describe quantitative climate risk appetite limits.",
+    "No formal climate-risk-specific policy documents or formal escalation thresholds/triggers are evidenced; the draft discloses these are not available in the source data.",
+    "No detailed controls/procedures (eg underwriting, pricing, ECL/provisioning integration) are evidenced; the draft states mitigation actions are presented as risk-specific register entries rather than a complete control framework.",
+    "Value chain coverage is constrained: no distinct upstream climate risk entries and no purely operational climate risk entries are recorded; the draft discloses this limitation.",
+    "Scenario analysis outputs are described as modelled, forward-looking inputs and not realised losses; the draft makes this explicit and avoids implying portfolio-wide application."
   ],
   "raw_risk_management_payload_path": "outputs\\payload_BANK01_risk_management_raw.json",
   "compact_risk_management_evidence_path": "outputs\\compact_risk_management_evidence_BANK01.json"

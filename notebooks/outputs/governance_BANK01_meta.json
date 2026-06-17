@@ -2,19 +2,19 @@
   "bank_id": "BANK01",
   "bank_name": "Eurolux Universal Bank AG",
   "section": "governance",
-  "status": "approved",
-  "approval_status": "approved_with_limitations",
+  "status": "needs_human_review",
+  "approval_status": "needs_human_review",
   "raw_score": null,
-  "final_score": 7,
+  "final_score": 8,
   "score_cap_reason": null,
-  "revisions": 0,
-  "approved": true,
+  "revisions": 3,
+  "approved": false,
   "checklist": {
     "required_structure_present": true,
     "report_style_structure_present": true,
     "board_metrics_used_correctly": true,
     "trend_metrics_used_correctly": true,
-    "board_decisions_used_correctly": false,
+    "board_decisions_used_correctly": true,
     "formal_mandate_handled_according_to_availability": true,
     "board_tradeoffs_handled_according_to_availability": true,
     "management_evidence_handled_according_to_availability": true,
@@ -29,28 +29,35 @@
     "no_unsupported_strong_claims": false
   },
   "issues": [
-    "Decision-content placement: topic-level decision detail appears in earlier subsections (Board role; committees) rather than being confined to the dedicated 'Governance decisions...' subsection as required by the principles.",
-    "Some wording slightly overstates completeness of risk-register mechanics (eg 'each risk' has specific attributes) and should be softened to match what is explicitly evidenced.",
-    "Overview contains broad summary claims that could be read as stronger than the evidence (eg stable assignment of responsibility), even though later boundaries qualify it."
+    "One material over-assertion about 'recorded financial impact estimates' being part of the register/examples as documented register content; evidence supports financial impact estimates for selected risks but not necessarily as a register-wide recorded attribute.",
+    "A few phrases slightly over-generalise governance controls (eg 'ERM integration indicators', 'supporting processes') beyond the compact evidence’s more specific flags/mechanisms."
   ],
   "available_evidence_omitted": [
-    "Management process evidence includes example risk financial impacts (EURm) for selected risks (eg 165.2, 136.5, 67.5, 24.8, 65.5); the draft does not use any of these quantified examples (optional, but available).",
-    "Scenario analysis links are evidenced as specific identifiers (SCN0002, SCN0004, SCN0011, SCN0013); the draft mentions identifiers generically but does not reflect that only some risks link to scenarios nor the example IDs (optional)."
+    "Explicit statement that the bank has total assets of MEUR 850,000 and is under CSRD (contextual governance context; not required but available).",
+    "Explicit mention that board_minutes_count is 37 (traceability context; optional)."
   ],
   "unsupported_claims": [
-    "Overview: 'executive management responsibility ... is assigned to the Climate Risk Management Committee' is supported, but phrasing implies a stable governance assignment; evidence only supports the 2024 committee name and does not evidence continuity across years (the draft later discloses discontinuity, so tighten the Overview to avoid overstatement).",
-    "Board/committee subsections include topic-level descriptions of 2024 decisions (eg remuneration KPI calibration, net-zero progress, physical risk updates, TCFD-related review, transition plan review) which, per the principles, should be confined to the dedicated decisions subsection; this is not strictly 'unsupported' but is a governance-claims boundary/duplication control requirement breach.",
-    "Risk register: 'Each risk is assigned ... an associated monitoring frequency'—evidence supports monitoring frequencies exist, but does not confirm every single risk has a defined frequency; safer to say 'risks include monitoring frequencies (quarterly or semi-annual)'.",
-    "Mitigation actions list: presented as examples 'for each risk'; evidence shows mitigation actions exist and provides examples, but not that each risk has those specific actions; should be framed as examples observed in the register rather than implying completeness at the per-risk level."
+    "Overview: 'supporting processes' and 'supporting processes' framing could be read as broader than evidenced (evidence supports specific mechanisms: semi-annual reporting, ERM integration flag/indicators, major-transaction climate checks, risk register).",
+    "Overview: 'Controls and assurance include ERM integration indicators for climate risks' — the evidence provides an ERM integration flag and integrated-count; 'indicators' is plausible but not explicitly evidenced as a defined control framework.",
+    "Management risk register: 'The register also records mitigation actions at the register level' — evidence lists mitigation actions, but does not explicitly state they are recorded as register fields versus management actions linked to risks."
+  ],
+  "material_unsupported_claims": [
+    "Management risk register: 'These examples include recorded financial impact estimates' — the compact evidence provides financial impact estimates for the listed material risk examples, but it does not explicitly evidence that such estimates are recorded in the register for all examples as a register attribute; this should be reframed to 'available evidence includes financial impact estimates for selected risks' or similar."
+  ],
+  "minor_wording_to_tighten": [
+    "Use 'ERM integration flag/indicator (6 of 8 integrated)' rather than implying a broader set of 'ERM integration indicators' unless the underlying documentation explicitly defines indicators.",
+    "Use 'available evidence indicates mitigation actions associated with risks include…' rather than implying the register formally 'records' those actions as a structured register field.",
+    "Avoid implying assurance is part of 'controls' unless clearly separated as external assurance over specific metrics (already mostly done)."
   ],
   "correctly_disclosed_evidence_boundaries": [
-    "No climate-specific Board/committee charter or terms of reference is evidenced; draft states this clearly.",
-    "No board-level trade-off evidence is available; draft states decisions do not describe quantified/specific trade-offs.",
-    "No formal skills adequacy assessment process is evidenced; draft states this clearly and relies on expertise percentage + training programme as indicators.",
-    "No formal quantitative escalation thresholds/trigger framework is evidenced for transaction climate checks or risk escalation; draft states this clearly.",
-    "Management committee continuity across 2022–2024 is not evidenced; draft states the names by year and notes lack of evidence of evolution/renaming.",
-    "Alignment control process: flags for TCFD/IFRS S2 alignment exist, but no separate governance control to verify alignment is evidenced; draft states this clearly.",
-    "Assurance boundary: limited assurance over Scope 1 and 2 only; financed emissions (Scope 3 Cat 15) outside scope; draft states this clearly."
+    "Board charter/mandate boundary: states documentation does not include a separate climate-specific Board charter or formal mandate.",
+    "Committee charter boundary: states documentation does not include ESG & Sustainability Committee charter/terms of reference and describes role based on observed activities.",
+    "Trade-offs boundary: explicitly states decision evidence does not describe quantified/specific Board-level trade-offs (profitability, capital allocation, implementation cost, risk appetite, competing priorities).",
+    "Escalation boundary: states no formal escalation thresholds/trigger-based escalation mechanics evidenced for climate risks.",
+    "Skills adequacy boundary: states no formal process evidenced for Board assessment of adequacy of climate skills/competencies.",
+    "Major transaction checks boundary: states checks are evidenced but no formal mandatory policy or thresholds are described.",
+    "Alignment boundary: treats TCFD/IFRS S2 alignment as source-data flags and states no separate governance control process to verify/assure alignment is evidenced.",
+    "Assurance boundary: correctly limits external assurance to Scope 1 and Scope 2 under ISAE 3000 by EY and clarifies financed emissions/Scope 3 are outside scope."
   ],
   "raw_governance_payload_path": "outputs\\payload_BANK01_governance_raw.json",
   "compact_governance_evidence_path": "outputs\\compact_governance_evidence_BANK01.json"

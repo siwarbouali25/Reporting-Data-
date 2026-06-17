@@ -2,19 +2,19 @@
   "bank_id": "BANK01",
   "bank_name": "Eurolux Universal Bank AG",
   "section": "strategy",
-  "status": "approved",
-  "approval_status": "approved_with_limitations",
+  "status": "needs_human_review",
+  "approval_status": "needs_human_review",
   "raw_score": null,
-  "final_score": 7,
+  "final_score": 8,
   "score_cap_reason": null,
-  "revisions": 1,
-  "approved": true,
+  "revisions": 3,
+  "approved": false,
   "checklist": {
-    "required_structure_present": false,
+    "required_structure_present": true,
     "overview_present": true,
     "report_style_structure_present": true,
     "physical_and_transition_risks_used_correctly": true,
-    "time_horizons_used_correctly": true,
+    "time_horizons_used_correctly": false,
     "business_model_handled_according_to_availability": true,
     "value_chain_used_correctly": true,
     "strategy_tradeoffs_handled_according_to_availability": true,
@@ -34,25 +34,34 @@
     "no_unsupported_strong_claims": false
   },
   "issues": [
-    "Deterministic failure: presence of unsupported strong strategy language ('guaranteed')—must be removed or reframed.",
-    "Deterministic failure flagged limitations boundary incompleteness: while opportunity estimates are described as not assured in-body, the limitations section should explicitly and unambiguously restate the boundary for opportunity revenue impacts (as a single boundary statement) to satisfy the pre-check expectation.",
-    "Required structure: does not follow the seven required Emirates-style headings (uses different subheadings).",
-    "Scenario assumptions: generally strong, but the scope of analysis could be stated more explicitly and consistently (portfolio coverage and geographies) and the carbon price source attribution could be tightened to match evidence."
+    "Time-horizon inconsistency across subsections undermines clarity and could be read as redefining horizons mid-document.",
+    "A few scenario-methodology statements are slightly broader than the evidence (IEA NZE reference; NDC vs Current Policies carbon-price ramp wording)."
   ],
   "available_evidence_omitted": [
-    "Scenario methodology scope statement from evidence (covers all lending book exposures across DE, FR, IT, NL, ES) is only partially reflected; jurisdictions and scope could be stated more explicitly where methodology is described.",
-    "Scenario methodology detail that carbon price assumptions are sourced from an IEA NZE 2050 trajectory mapping to NACE sectors is not clearly attributed in the draft (draft refers to an 'external net-zero energy scenario' rather than the specified source)."
+    "Scenario methodology detail that is available in the evidence (orderly/disorderly/hot house methodology summaries) is mostly included, but the hot house methodology in the draft is described using NDC/Current Policies together; the evidence only provides a specific methodology summary for the NGFS v4 NDC scenario type.",
+    "Risk register count in evidence profile (16 total entries) is not reconciled with the statement that the 2024 register identifies eight material risks (acceptable if eight are the material subset, but the draft does not explicitly state this)."
   ],
   "unsupported_claims": [
-    "Use of the term 'guaranteed' (strong/assured language) conflicts with the evidence boundary that opportunity impacts are estimates and scenario outputs are modelled.",
-    "Overview: 'align portfolio steering with its transition and net zero ambitions' may be read as an alignment claim; although generally acceptable, it lacks a clear boundary that it is intent/steering rather than demonstrated alignment outcomes."
+    "Inconsistent time-horizon definitions: the draft first uses short (0–2), medium (2–5), long (>5) and later defines short up to 2025, medium up to 2030, long up to 2050. This creates an unsupported/unclear mapping between risk-register horizons and strategic planning horizons.",
+    "Orderly scenario carbon price mapping is described as from an 'international net-zero emissions 2050 trajectory' whereas the evidence specifies mapping from an IEA NZE 2050 trajectory (close but not identical).",
+    "Hot house scenario description states 'carbon pricing ramp-ups from 2030 onwards' for 'Nationally Determined Contributions and Current Policies'; the evidence only states this ramp-up assumption for the NGFS v4 NDC scenario narrative, not explicitly for Current Policies."
+  ],
+  "material_unsupported_claims": [
+    "Inconsistent time-horizon definitions (0–2/2–5/>5 vs up to 2025/2030/2050) without explaining how they reconcile. This affects IFRS S1 time-horizon clarity and could mislead users about when effects are expected."
+  ],
+  "minor_wording_to_tighten": [
+    "Replace 'international net-zero emissions 2050 trajectory' with 'IEA NZE 2050 trajectory' to match the available evidence.",
+    "Clarify that the eight risks are the 'eight material risks' selected from a broader register (evidence profile indicates 16 register entries).",
+    "When discussing hot house scenarios, separate what is evidenced for NDC vs what is assumed/used for Current Policies, or state that detailed carbon-price ramp assumptions are only evidenced for NDC."
   ],
   "correctly_disclosed_evidence_boundaries": [
-    "Validation status, baselines, and milestones are not available in the source data (targets boundary).",
-    "Available evidence does not specify detailed assumptions or dependencies underlying the transition plan.",
-    "Scenario analysis outputs (capital losses, stranded assets, revenue at risk) are modelled estimates and not realised losses.",
-    "Opportunity revenue impacts are estimates with medium confidence and not assured future revenue (stated in opportunities/financial effects and limitations).",
-    "Business model: evidence does not include a separate, detailed business-model impact assessment; trade-offs analysis not documented."
+    "Business model: explicitly states that a separate, detailed business-model impact assessment is not available and therefore not provided.",
+    "Trade-offs: explicitly states quantified/documented trade-off analysis is not available.",
+    "Targets: clearly limits disclosure to target summary fields and states that validation/baselines/milestones/gross-net/credit use are not specified.",
+    "Transition plan: states that key assumptions/dependencies are not specified in the Strategy evidence and are not described.",
+    "Scenarios: repeatedly and clearly states scenario outputs are modelled estimates and not realised losses/forecasts.",
+    "Opportunities: states revenue impacts are estimates with confidence levels and not assured outcomes.",
+    "Resilience: bounds resilience statements to NGFS v4 scenarios/assumptions and notes limits on assessing full operational adaptation capacity."
   ],
   "raw_strategy_payload_path": "outputs\\payload_BANK01_strategy_raw.json",
   "compact_strategy_evidence_path": "outputs\\compact_strategy_evidence_BANK01.json"

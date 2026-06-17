@@ -2,11 +2,11 @@
   "bank_id": "BANK01",
   "bank_name": "Eurolux Universal Bank AG",
   "section": "general_requirements",
-  "status": "approved",
-  "approval_status": "approved_with_limitations",
-  "final_score": 8,
-  "revisions": 0,
-  "approved": true,
+  "status": "needs_human_review",
+  "approval_status": "needs_human_review",
+  "final_score": 7,
+  "revisions": 3,
+  "approved": false,
   "checklist": {
     "required_structure_present": true,
     "report_style_structure_present": true,
@@ -16,24 +16,32 @@
     "comparative_information_handled_correctly": true,
     "timing_and_location_handled_correctly": true,
     "reporting_entity_business_model_value_chain_present": true,
-    "sources_of_guidance_handled_correctly": true,
+    "sources_of_guidance_handled_correctly": false,
     "statement_of_compliance_not_overclaimed": true,
-    "materiality_not_invented": false,
+    "materiality_not_invented": true,
     "no_whole_report_assurance_overclaim": true,
     "no_financed_emissions_assurance_overclaim": true,
     "no_visible_internal_refs_or_file_names": true
   },
   "issues": [
-    "Materiality language remains somewhat process-forward and could be read as an invented formal materiality assessment (pre-check warning: possible_materiality_process_invented; strict boundary: do_not_invent_materiality_survey_or_stakeholders). Even though it denies a stakeholder survey, it still describes procedural elements not evidenced in the materiality package.",
-    "Some statements are generic rather than evidencing bank-specific facts (eg 'large banking institution' plus limited business model detail). This is acceptable given stated boundaries, but specificity could be improved by using available value-chain nodes and exposures more explicitly.",
-    "The 'Sources of guidance' section does not mention SASB consideration, which is flagged in the requirements heuristic list; however, because the draft explicitly limits sources and does not overclaim, this is not a hard failure—just an IFRS S1 completeness risk depending on the broader report’s actual approach."
+    "Sources of guidance section overreaches: evidence does not support claims about what other frameworks were or were not considered/applied; must be reframed as an evidence boundary.",
+    "Missing explicit disclosure that synthetic/generated data is used, despite evidence package flagging this at report level.",
+    "A few statements risk implying broader governance/decision documentation than evidenced (limited decision records)."
   ],
   "available_evidence_omitted": [
-    "Explicit mention that CSRD is the bank’s evidenced regulatory regime (evidence: regulatory_regime = CSRD) could be included in 'Sources of guidance' / context, without implying compliance.",
-    "Value-chain upstream financial exposures are available (IT infrastructure & cloud providers EUR 223.85m; office space landlords EUR 445.41m; professional services suppliers EUR 120.73m) and could be stated more precisely rather than qualitatively."
+    "Bank regulatory regime context in evidence package (CSRD) is not reflected; draft uses generic 'evolving requirements' wording without anchoring to the evidenced regime.",
+    "Report-level boundary that synthetic/generated data is used (uses_synthetic_or_generated_data=true) is not explicitly disclosed in the draft."
   ],
   "unsupported_claims": [
-    "Materiality section implies a structured, ongoing 'approach' and selection logic (eg 'portfolio and value chain screening', 'risk and opportunity linkage to financial effects') without explicit materiality-process evidence in the General Requirements evidence package (materiality = {}). While plausible, it is not directly evidenced and should be framed more explicitly as 'based on available evidence inputs' rather than as an established process.",
-    "Comparative information examples cite 'frequency of board or committee consideration of climate-related topics' and 'integration of climate considerations into remuneration' as comparative/trend indicators; evidence shows trend metrics exist, but the draft does not anchor to the specific evidenced KPI names (climate_on_board_agenda_pct; ceo_esg_compensation_pct; all_exec_climate_remuneration_pct; esg_committee_meetings), increasing risk of overreach."
+    "Sources of guidance section implies IFRS S1/S2 are the 'primary framing' and that no other frameworks were applied; however, the evidence package 'sources_of_guidance' is empty and does not evidence what guidance was applied or not applied.",
+    "Connected information section states the Governance section includes 'frequency of ESG- and climate-related discussions' and 'climate-related decision records'—while board_minutes/decision evidence exists, the draft risks implying comprehensive decision records beyond the limited evidenced set (selected_decision_count=5)."
+  ],
+  "material_unsupported_claims": [
+    "Sources of guidance: 'The available evidence does not document the application or consideration of other sustainability disclosure frameworks or standards (such as SASB...)' conflicts with IFRS S1 expectations to consider SASB and is not supported by evidence (sources_of_guidance is blank). This should be reframed to: 'No documentation was available in the evidence set on whether SASB or other sources were considered/applied.'"
+  ],
+  "minor_wording_to_tighten": [
+    "Fair presentation: 'The Bank aims to present the information in a transparent, balanced and decision‑oriented manner.' This is aspirational and acceptable, but could be tightened to avoid implying a formal policy not evidenced.",
+    "Connected information: trend metrics are described as used to 'illustrate the evolution of oversight over time'—acceptable given trend metrics exist, but clarify that these are the specific trend KPIs available in evidence (not a complete governance effectiveness assessment).",
+    "Materiality assessment: 'risk‑ and portfolio‑driven screening approach' is plausible but not evidenced as a documented process artefact; keep but explicitly label as 'based on available evidence indicators' rather than a formal process."
   ]
 }

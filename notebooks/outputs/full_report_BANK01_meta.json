@@ -2,7 +2,7 @@
   "bank_id": "BANK01",
   "bank_name": "Eurolux Universal Bank AG",
   "reporting_year": "2024",
-  "created_at_utc": "2026-06-12T12:24:13.806481+00:00",
+  "created_at_utc": "2026-06-15T13:40:52.404919+00:00",
   "section_order": [
     "general_requirements",
     "governance",
@@ -57,159 +57,189 @@
   },
   "sections": {
     "general_requirements": {
-      "word_count": 2762,
+      "word_count": 2373,
       "metadata": {
         "section": "general_requirements",
-        "status": "approved",
-        "approved": true,
-        "approval_status": "approved_with_limitations",
-        "overall_score": 8,
-        "revisions": 0,
+        "status": "needs_human_review",
+        "approved": false,
+        "approval_status": "needs_human_review",
+        "overall_score": 7,
+        "revisions": 3,
         "main_issues": [
-          "Materiality language remains somewhat process-forward and could be read as an invented formal materiality assessment (pre-check warning: possible_materiality_process_invented; strict boundary: do_not_invent_materiality_survey_or_stakeholders). Even though it denies a stakeholder survey, it still describes procedural elements not evidenced in the materiality package.",
-          "Some statements are generic rather than evidencing bank-specific facts (eg 'large banking institution' plus limited business model detail). This is acceptable given stated boundaries, but specificity could be improved by using available value-chain nodes and exposures more explicitly.",
-          "The 'Sources of guidance' section does not mention SASB consideration, which is flagged in the requirements heuristic list; however, because the draft explicitly limits sources and does not overclaim, this is not a hard failure—just an IFRS S1 completeness risk depending on the broader report’s actual approach."
+          "Sources of guidance section overreaches: evidence does not support claims about what other frameworks were or were not considered/applied; must be reframed as an evidence boundary.",
+          "Missing explicit disclosure that synthetic/generated data is used, despite evidence package flagging this at report level.",
+          "A few statements risk implying broader governance/decision documentation than evidenced (limited decision records)."
         ],
         "required_fixes": [
-          "Tighten 'Materiality assessment' wording to avoid implying a formalised, bank-wide materiality process. Recast as: 'Material topics in this report were determined from available evidence inputs (climate risk register, scenario outputs, sector exposure mapping, financed emissions outputs), rather than from a documented materiality methodology.' Remove/soften terms like 'Key elements of this approach include' unless you explicitly describe them as 'the lenses applied in preparing this report' and link to evidence inputs.",
-          "Where comparative information is referenced, anchor examples to the specific evidenced trend KPIs (eg climate_on_board_agenda_pct, esg_committee_meetings, ceo_esg_compensation_pct, all_exec_climate_remuneration_pct) and avoid implying other comparative datasets exist.",
-          "In the value chain subsection, replace qualitative statements about upstream exposure being 'relatively limited' with the available upstream financial exposure figures (EUR 223.85m / 445.41m / 120.73m) and keep clear that these are the available nodes only, not a complete supplier footprint.",
-          "Optionally add a brief context line that the bank operates under a CSRD regulatory regime (evidence: regulatory_regime = CSRD) while explicitly stating this report is IFRS S1/S2-style and does not claim CSRD/ESRS compliance unless evidenced elsewhere."
+          "Revise 'Sources of guidance' to be strictly evidence-based: state that the report is structured in an IFRS S1/S2-style format, and that the evidence set did not include documentation of additional guidance (e.g., SASB) being applied/considered—avoid asserting it was not considered.",
+          "Add an explicit boundary statement in General Requirements that parts of the report use synthetic/generated data (and identify at a high level which areas, if applicable), consistent with report_level_boundaries.uses_synthetic_or_generated_data=true.",
+          "Tighten governance/decision-record wording to reflect the evidence boundary (e.g., 'selected board/committee decision records available' rather than implying comprehensive records)."
         ],
         "unsupported_claims": [
-          "Materiality section implies a structured, ongoing 'approach' and selection logic (eg 'portfolio and value chain screening', 'risk and opportunity linkage to financial effects') without explicit materiality-process evidence in the General Requirements evidence package (materiality = {}). While plausible, it is not directly evidenced and should be framed more explicitly as 'based on available evidence inputs' rather than as an established process.",
-          "Comparative information examples cite 'frequency of board or committee consideration of climate-related topics' and 'integration of climate considerations into remuneration' as comparative/trend indicators; evidence shows trend metrics exist, but the draft does not anchor to the specific evidenced KPI names (climate_on_board_agenda_pct; ceo_esg_compensation_pct; all_exec_climate_remuneration_pct; esg_committee_meetings), increasing risk of overreach."
+          "Sources of guidance section implies IFRS S1/S2 are the 'primary framing' and that no other frameworks were applied; however, the evidence package 'sources_of_guidance' is empty and does not evidence what guidance was applied or not applied.",
+          "Connected information section states the Governance section includes 'frequency of ESG- and climate-related discussions' and 'climate-related decision records'—while board_minutes/decision evidence exists, the draft risks implying comprehensive decision records beyond the limited evidenced set (selected_decision_count=5)."
+        ],
+        "material_unsupported_claims": [
+          "Sources of guidance: 'The available evidence does not document the application or consideration of other sustainability disclosure frameworks or standards (such as SASB...)' conflicts with IFRS S1 expectations to consider SASB and is not supported by evidence (sources_of_guidance is blank). This should be reframed to: 'No documentation was available in the evidence set on whether SASB or other sources were considered/applied.'"
+        ],
+        "minor_wording_to_tighten": [
+          "Fair presentation: 'The Bank aims to present the information in a transparent, balanced and decision‑oriented manner.' This is aspirational and acceptable, but could be tightened to avoid implying a formal policy not evidenced.",
+          "Connected information: trend metrics are described as used to 'illustrate the evolution of oversight over time'—acceptable given trend metrics exist, but clarify that these are the specific trend KPIs available in evidence (not a complete governance effectiveness assessment).",
+          "Materiality assessment: 'risk‑ and portfolio‑driven screening approach' is plausible but not evidenced as a documented process artefact; keep but explicitly label as 'based on available evidence indicators' rather than a formal process."
         ],
         "available_evidence_omitted": [
-          "Explicit mention that CSRD is the bank’s evidenced regulatory regime (evidence: regulatory_regime = CSRD) could be included in 'Sources of guidance' / context, without implying compliance.",
-          "Value-chain upstream financial exposures are available (IT infrastructure & cloud providers EUR 223.85m; office space landlords EUR 445.41m; professional services suppliers EUR 120.73m) and could be stated more precisely rather than qualitatively."
+          "Bank regulatory regime context in evidence package (CSRD) is not reflected; draft uses generic 'evolving requirements' wording without anchoring to the evidenced regime.",
+          "Report-level boundary that synthetic/generated data is used (uses_synthetic_or_generated_data=true) is not explicitly disclosed in the draft."
         ],
         "deterministic_checks": null
       }
     },
     "governance": {
-      "word_count": 2340,
+      "word_count": 2023,
       "metadata": {
         "section": "governance",
-        "status": "approved",
-        "approved": true,
-        "approval_status": "approved_with_limitations",
-        "overall_score": 7,
-        "revisions": 0,
+        "status": "needs_human_review",
+        "approved": false,
+        "approval_status": "needs_human_review",
+        "overall_score": 8,
+        "revisions": 3,
         "main_issues": [
-          "Decision-content placement: topic-level decision detail appears in earlier subsections (Board role; committees) rather than being confined to the dedicated 'Governance decisions...' subsection as required by the principles.",
-          "Some wording slightly overstates completeness of risk-register mechanics (eg 'each risk' has specific attributes) and should be softened to match what is explicitly evidenced.",
-          "Overview contains broad summary claims that could be read as stronger than the evidence (eg stable assignment of responsibility), even though later boundaries qualify it."
+          "One material over-assertion about 'recorded financial impact estimates' being part of the register/examples as documented register content; evidence supports financial impact estimates for selected risks but not necessarily as a register-wide recorded attribute.",
+          "A few phrases slightly over-generalise governance controls (eg 'ERM integration indicators', 'supporting processes') beyond the compact evidence’s more specific flags/mechanisms."
         ],
         "required_fixes": [
-          "Move all topic-specific 2024 decision descriptors (eg remuneration KPI calibration, TCFD review, net-zero progress updates, physical risk updates) out of the 'role of the Board' and 'Board committees' subsections. Those subsections should refer only generically to 'documented 2024 Board and committee decisions', with the dated/topics list only in the decisions subsection.",
-          "Soften absolute risk-register phrasing: replace 'each risk is assigned a rating...time horizon...monitoring frequency' with evidence-anchored wording such as 'the register records risk categories, ratings (high/medium), time horizons (0–2, 2–5, 5+ years) and monitoring frequencies (quarterly or semi-annual)'.",
-          "Adjust mitigation-action framing to avoid implying uniform application: state these are 'examples of mitigation actions recorded in the register' rather than implying they apply to every risk.",
-          "Tighten the Overview to avoid implying continuity or a long-standing committee assignment; specify 'In 2024, management responsibility is assigned to the Climate Risk Management Committee' and avoid implying an established structure beyond what is evidenced."
+          "Reframe the statement about financial impact estimates to align strictly with evidence (eg 'available evidence includes financial impact estimates for selected material risks' rather than implying the register systematically records them).",
+          "Tighten control language: replace or qualify 'ERM integration indicators' with 'ERM integration flag/indicator (6 of 8 risks integrated into ERM)' unless the underlying documentation explicitly defines indicators.",
+          "Qualify mitigation-action wording to avoid implying the register formally records actions as structured fields unless evidenced; present them as 'mitigation actions associated with risks include…'."
         ],
         "unsupported_claims": [
-          "Overview: 'executive management responsibility ... is assigned to the Climate Risk Management Committee' is supported, but phrasing implies a stable governance assignment; evidence only supports the 2024 committee name and does not evidence continuity across years (the draft later discloses discontinuity, so tighten the Overview to avoid overstatement).",
-          "Board/committee subsections include topic-level descriptions of 2024 decisions (eg remuneration KPI calibration, net-zero progress, physical risk updates, TCFD-related review, transition plan review) which, per the principles, should be confined to the dedicated decisions subsection; this is not strictly 'unsupported' but is a governance-claims boundary/duplication control requirement breach.",
-          "Risk register: 'Each risk is assigned ... an associated monitoring frequency'—evidence supports monitoring frequencies exist, but does not confirm every single risk has a defined frequency; safer to say 'risks include monitoring frequencies (quarterly or semi-annual)'.",
-          "Mitigation actions list: presented as examples 'for each risk'; evidence shows mitigation actions exist and provides examples, but not that each risk has those specific actions; should be framed as examples observed in the register rather than implying completeness at the per-risk level."
+          "Overview: 'supporting processes' and 'supporting processes' framing could be read as broader than evidenced (evidence supports specific mechanisms: semi-annual reporting, ERM integration flag/indicators, major-transaction climate checks, risk register).",
+          "Overview: 'Controls and assurance include ERM integration indicators for climate risks' — the evidence provides an ERM integration flag and integrated-count; 'indicators' is plausible but not explicitly evidenced as a defined control framework.",
+          "Management risk register: 'The register also records mitigation actions at the register level' — evidence lists mitigation actions, but does not explicitly state they are recorded as register fields versus management actions linked to risks."
+        ],
+        "material_unsupported_claims": [
+          "Management risk register: 'These examples include recorded financial impact estimates' — the compact evidence provides financial impact estimates for the listed material risk examples, but it does not explicitly evidence that such estimates are recorded in the register for all examples as a register attribute; this should be reframed to 'available evidence includes financial impact estimates for selected risks' or similar."
+        ],
+        "minor_wording_to_tighten": [
+          "Use 'ERM integration flag/indicator (6 of 8 integrated)' rather than implying a broader set of 'ERM integration indicators' unless the underlying documentation explicitly defines indicators.",
+          "Use 'available evidence indicates mitigation actions associated with risks include…' rather than implying the register formally 'records' those actions as a structured register field.",
+          "Avoid implying assurance is part of 'controls' unless clearly separated as external assurance over specific metrics (already mostly done)."
         ],
         "available_evidence_omitted": [
-          "Management process evidence includes example risk financial impacts (EURm) for selected risks (eg 165.2, 136.5, 67.5, 24.8, 65.5); the draft does not use any of these quantified examples (optional, but available).",
-          "Scenario analysis links are evidenced as specific identifiers (SCN0002, SCN0004, SCN0011, SCN0013); the draft mentions identifiers generically but does not reflect that only some risks link to scenarios nor the example IDs (optional)."
+          "Explicit statement that the bank has total assets of MEUR 850,000 and is under CSRD (contextual governance context; not required but available).",
+          "Explicit mention that board_minutes_count is 37 (traceability context; optional)."
         ],
         "deterministic_checks": null
       }
     },
     "strategy": {
-      "word_count": 2339,
+      "word_count": 2653,
       "metadata": {
         "section": "strategy",
-        "status": "approved",
-        "approved": true,
-        "approval_status": "approved_with_limitations",
-        "overall_score": 7,
-        "revisions": 1,
+        "status": "needs_human_review",
+        "approved": false,
+        "approval_status": "needs_human_review",
+        "overall_score": 8,
+        "revisions": 3,
         "main_issues": [
-          "Deterministic failure: presence of unsupported strong strategy language ('guaranteed')—must be removed or reframed.",
-          "Deterministic failure flagged limitations boundary incompleteness: while opportunity estimates are described as not assured in-body, the limitations section should explicitly and unambiguously restate the boundary for opportunity revenue impacts (as a single boundary statement) to satisfy the pre-check expectation.",
-          "Required structure: does not follow the seven required Emirates-style headings (uses different subheadings).",
-          "Scenario assumptions: generally strong, but the scope of analysis could be stated more explicitly and consistently (portfolio coverage and geographies) and the carbon price source attribution could be tightened to match evidence."
+          "Time-horizon inconsistency across subsections undermines clarity and could be read as redefining horizons mid-document.",
+          "A few scenario-methodology statements are slightly broader than the evidence (IEA NZE reference; NDC vs Current Policies carbon-price ramp wording)."
         ],
         "required_fixes": [
-          "Remove any occurrence of 'guaranteed' and replace with evidence-consistent wording (eg, 'estimated', 'expected', 'intended', 'not assured').",
-          "In 'Strategy limitations and evidence boundaries', add/strengthen one explicit boundary sentence covering opportunity revenue impacts as estimates with stated confidence level and not assured (even if already mentioned elsewhere), to close the deterministic boundary failure.",
-          "Recast the section into the required seven Emirates-style headings (retain content but reorganise to meet structure requirement).",
-          "Scenario methodology: explicitly state the analysis scope and coverage consistent with available evidence (all lending book exposures across DE, FR, IT, NL, ES) and tighten attribution of carbon price source (IEA NZE 2050 trajectory mapped to NACE sectors) where described.",
-          "Soften/clarify any potential implied alignment language in the overview by stating it as portfolio steering intent and linking to available metrics (high-carbon 35.5%, fossil fuel 22.15%, green loans 10.71%) rather than implying achieved alignment."
+          "Make time horizons internally consistent: either (a) keep 0–2/2–5/>5 throughout and link them explicitly to 2025/2030/2050 scenario points, or (b) adopt 2025/2030/2050 definitions throughout and restate the risk-register horizons accordingly (without inventing new evidence).",
+          "Align scenario methodology wording precisely to the evidence: explicitly reference the IEA NZE 2050 trajectory for the orderly mapping; avoid attributing NDC-specific carbon-price ramp assumptions to Current Policies unless the source data supports it (or disclose that detailed ramp assumptions are only evidenced for NDC).",
+          "Add one clarifying sentence that the 'eight material risks' are the material subset from the broader climate risk register (which contains more entries), to avoid apparent inconsistency with the evidence profile."
         ],
         "unsupported_claims": [
-          "Use of the term 'guaranteed' (strong/assured language) conflicts with the evidence boundary that opportunity impacts are estimates and scenario outputs are modelled.",
-          "Overview: 'align portfolio steering with its transition and net zero ambitions' may be read as an alignment claim; although generally acceptable, it lacks a clear boundary that it is intent/steering rather than demonstrated alignment outcomes."
+          "Inconsistent time-horizon definitions: the draft first uses short (0–2), medium (2–5), long (>5) and later defines short up to 2025, medium up to 2030, long up to 2050. This creates an unsupported/unclear mapping between risk-register horizons and strategic planning horizons.",
+          "Orderly scenario carbon price mapping is described as from an 'international net-zero emissions 2050 trajectory' whereas the evidence specifies mapping from an IEA NZE 2050 trajectory (close but not identical).",
+          "Hot house scenario description states 'carbon pricing ramp-ups from 2030 onwards' for 'Nationally Determined Contributions and Current Policies'; the evidence only states this ramp-up assumption for the NGFS v4 NDC scenario narrative, not explicitly for Current Policies."
+        ],
+        "material_unsupported_claims": [
+          "Inconsistent time-horizon definitions (0–2/2–5/>5 vs up to 2025/2030/2050) without explaining how they reconcile. This affects IFRS S1 time-horizon clarity and could mislead users about when effects are expected."
+        ],
+        "minor_wording_to_tighten": [
+          "Replace 'international net-zero emissions 2050 trajectory' with 'IEA NZE 2050 trajectory' to match the available evidence.",
+          "Clarify that the eight risks are the 'eight material risks' selected from a broader register (evidence profile indicates 16 register entries).",
+          "When discussing hot house scenarios, separate what is evidenced for NDC vs what is assumed/used for Current Policies, or state that detailed carbon-price ramp assumptions are only evidenced for NDC."
         ],
         "available_evidence_omitted": [
-          "Scenario methodology scope statement from evidence (covers all lending book exposures across DE, FR, IT, NL, ES) is only partially reflected; jurisdictions and scope could be stated more explicitly where methodology is described.",
-          "Scenario methodology detail that carbon price assumptions are sourced from an IEA NZE 2050 trajectory mapping to NACE sectors is not clearly attributed in the draft (draft refers to an 'external net-zero energy scenario' rather than the specified source)."
+          "Scenario methodology detail that is available in the evidence (orderly/disorderly/hot house methodology summaries) is mostly included, but the hot house methodology in the draft is described using NDC/Current Policies together; the evidence only provides a specific methodology summary for the NGFS v4 NDC scenario type.",
+          "Risk register count in evidence profile (16 total entries) is not reconciled with the statement that the 2024 register identifies eight material risks (acceptable if eight are the material subset, but the draft does not explicitly state this)."
         ],
         "deterministic_checks": null
       }
     },
     "risk_management": {
-      "word_count": 2548,
+      "word_count": 2577,
       "metadata": {
         "section": "risk_management",
-        "status": "approved",
-        "approved": true,
-        "approval_status": "approved_with_limitations",
-        "overall_score": 7,
-        "revisions": 0,
+        "status": "needs_human_review",
+        "approved": false,
+        "approval_status": "needs_human_review",
+        "overall_score": 8,
+        "revisions": 3,
         "main_issues": [
-          "Some mitigation-action narratives risk over-interpreting or mislabelling register items (eg, ‘transition-plan covenants’ tied to flood risk; mitigation for stranded assets described with physical-risk style tools).",
-          "IFRS S1/S2 risk-management process description is register-centric and does not clearly describe the actual process mechanics (inputs/data sources, methodologies, frequency of register refresh, prioritisation criteria) beyond listing fields—acceptable given evidence limits but still leaves ‘process’ thin.",
-          "Industry-based banking guidance is only partially addressed: the draft does not clearly explain incorporation of ESG/climate factors into credit analysis and ECL/expected credit loss estimation, nor the scope across C&I lending and project finance, nor day-to-day roles/responsibilities (and does not explicitly boundary-disclose these gaps as ‘not available’)."
+          "One material overstatement in mitigation wording (plural ‘overlays’ vs evidenced singular ‘overlay’).",
+          "IFRS S1/S2 risk-management-process expectations are only partially met because the draft relies on the risk register attributes but does not evidence an actual ‘process’ (inputs/parameters, roles, steps); this is partly mitigated by boundaries but still leaves IFRS alignment weaker on process description.",
+          "Governance linkage required by S1/S2 (how bodies/individuals take climate risks into account) is not evidenced in the risk management evidence set; the draft avoids explicit governance claims, but the section also does not clearly cross-link to governance disclosures (if any) to satisfy connectivity expectations."
         ],
         "required_fixes": [
-          "Tighten mitigation wording to avoid implying effectiveness or misclassification: (a) for flood risk, describe borrower engagement/covenants as ‘risk management actions recorded in the register’ and clarify whether they relate to adaptation/insurance/resilience rather than ‘transition-plan’ unless evidenced; (b) for stranded-asset risk, either explain how collateral revaluation applies to the exposures concerned or avoid presenting it as the primary mitigation if it is not logically connected.",
-          "Add one concise boundary statement that the available documentation does not evidence (i) how climate/ESG factors are incorporated into credit underwriting/credit review, (ii) how they are incorporated into ECL estimation, (iii) coverage across C&I lending and project finance, and (iv) roles/responsibilities—unless you can support these from available evidence.",
-          "Use available value-chain mapping evidence (if material in the provided source data) to describe value-chain breadth/composition for climate risks more concretely; if the map is not sufficiently detailed, explicitly state that limitation.",
-          "Clarify scenario-analysis scope using available evidence: specify that only SCN0002/SCN0004/SCN0011/SCN0013 are linked to risks in the register (already implied) and avoid any implication that all 18 scenarios are operationally applied to all risks/portfolios unless evidenced."
+          "Change “flood mapping overlays” to “flood mapping overlay” (or otherwise align exactly to the recorded mitigation action wording).",
+          "Reframe KPI usage to avoid implying a formal monitoring mechanism unless evidenced; e.g., “provide contextual information for transition and reputational risks” without stating they are used in monitoring.",
+          "Tighten statements that imply a defined update discipline (“updated when assessments are revised”) to what is evidenced (4 risks marked changed since prior period).",
+          "If available elsewhere in the report, add a brief connectivity sentence pointing readers to where governance oversight of climate risk is described; if not available, explicitly state that governance-role evidence is outside the available documentation for this section."
         ],
         "unsupported_claims": [
-          "“collateral revaluation and flood mapping overlay” is stated as a mitigation action for transition market risk ‘stranded assets — fossil fuel sector exposure’; this pairing is unusual and may mischaracterise the action as transition-risk mitigation without explaining linkage (even though the register lists it, the narrative should avoid implying it is an effective/appropriate mitigation for stranded-asset risk).",
-          "“engagement and transition-plan covenants with borrowers in relation to flood-exposed mortgage portfolios” is presented as mitigation for a physical acute flood risk; calling them “transition-plan covenants” for a physical hazard may be misleading without evidence that these covenants relate to adaptation/physical risk resilience rather than transition planning."
+          "“Mitigation actions … include: … collateral revaluation and flood mapping overlays” is broader than the available evidence, which supports “collateral revaluation and flood mapping overlay” as a recorded mitigation action but does not evidence multiple overlays or a broader overlay program.",
+          "“The Bank’s … KPIs … are used as monitoring context” is plausible but not explicitly evidenced as a defined monitoring input/process in the risk register or process documentation (only the KPI values are evidenced)."
+        ],
+        "material_unsupported_claims": [
+          "“Mitigation actions … include: … collateral revaluation and flood mapping overlays” (plural ‘overlays’) overstates what is evidenced (singular ‘overlay’)."
+        ],
+        "minor_wording_to_tighten": [
+          "“provide additional context … and are used as monitoring context” — tighten to “provide contextual information” unless there is explicit evidence that KPIs are used in monitoring routines.",
+          "“updated when assessments are revised” — evidence supports that 4 risks are marked ‘changed since prior period’, but not the trigger/discipline for updates; tighten to “the register records changes to assessments for four risks versus the prior period.”",
+          "“internal operational climate risk management … reflected indirectly through … business continuity arrangements” — acceptable as a boundary narrative, but should be clearly framed as inference rather than evidenced practice."
         ],
         "available_evidence_omitted": [
-          "Value-chain mapping evidence (value_chain_map is available in the compact evidence profile but is not used to describe breadth/composition beyond qualitative upstream/downstream narrative).",
-          "Governance evidence exists as a top-level key but is not used; the draft relies on a cross-reference (“described elsewhere”) without summarising what is evidenced (if anything) for risk management linkages."
+          "Scenario analysis evidence: the draft names NGFS_v4 and scenario types/horizons, but does not use any of the available scenario name examples (e.g., Net Zero 2050, Current Policies) to make the scenario set more concrete."
         ],
         "deterministic_checks": null
       }
     },
     "metrics_targets": {
-      "word_count": 2286,
+      "word_count": 2583,
       "metadata": {
         "section": "metrics_targets",
-        "status": "approved",
-        "approved": true,
-        "approval_status": "approved_with_limitations",
-        "overall_score": 7,
-        "revisions": 0,
+        "status": "needs_human_review",
+        "approved": false,
+        "approval_status": "needs_human_review",
+        "overall_score": 8,
+        "revisions": 3,
         "main_issues": [
-          "One over-assertive compliance claim (\"In line with IFRS S1 and IFRS S2\") without evidential support in the provided evidence pack",
-          "One scoping statement for portfolio metrics (excluding mortgages and revolving credit) that is not supported by the compact evidence and could be interpreted as a methodological claim",
-          "IFRS S1 governance linkage requirement (oversight of target-setting/monitoring and remuneration linkage) is not addressed in this section; no explicit boundary statement is provided for that omission (may exist elsewhere in the report, but not evidenced here)"
+          "Over-strong/unclear 'third-party validation' claims for NZBA targets (Targets 2 and 3) risk being read as external assurance/validation when evidence only supports that these are internal target-record fields with a named body.",
+          "Some metric classification statements (green/high-carbon/fossil-fuel; climate capex/opex) are appropriately bounded, but a few phrases still imply established taxonomies/criteria without evidence."
         ],
         "required_fixes": [
-          "Replace or qualify \"In line with IFRS S1 and IFRS S2\" with a neutral, supportable statement (e.g., \"prepared with reference to IFRS S1/S2 requirements\") or remove it",
-          "Either (a) provide an evidence-based statement of the portfolio boundary for financed emissions/exposures (what is included/excluded) consistent with available evidence, or (b) remove the specific claim about excluding retail mortgages and revolving credit; alternatively add a clear boundary note that product-level inclusion/exclusion details are not evidenced",
-          "Add a concise boundary note for governance/remuneration linkage if it is not disclosed elsewhere (e.g., \"Information on governance oversight of targets and remuneration linkages is provided in the Governance section\"; if not available, state it is not available in the source data for this report)"
+          "Reframe Targets 2 and 3 validation language to avoid asserting external validation: describe 'third_party_validated' and 'validation_body' strictly as target-record fields and add a short clarification that available documentation does not describe the nature/scope of any validation for these targets.",
+          "Tighten green/high-carbon/fossil-fuel and climate capex/opex classification wording to avoid implying specific taxonomies/criteria are applied unless evidenced; keep the existing boundary that methodologies/criteria are not described in available documentation.",
+          "Optionally add one sentence clarifying that the financed emissions metric is for the loan portfolio total only (as per evidence) and that no further asset-class breakdown is available/disclosed here."
         ],
         "unsupported_claims": [
-          "Unqualified statement that the section is \"In line with IFRS S1 and IFRS S2\" (not evidenced; should be framed as \"prepared with reference to\" or removed)",
-          "Claim that financed emissions exclude \"retail mortgage and revolving credit products\" (exclusion is mentioned, but no explicit evidence of this scoping choice exists in the compact evidence; it is an industry-guidance-consistent statement but still unsupported by provided evidence)"
+          "Target 2: 'third‑party validation is recorded, with UNEP FI identified as the validation body' (validation by UNEP FI is not a standard validation concept for NZBA targets; evidence only shows a target-record field 'third_party_validated: true' and 'validation_body: UNEP_FI' without explaining what 'validated' means).",
+          "Target 3: 'third‑party validation is recorded, with UNEP FI identified as the validation body' (same issue as above)."
+        ],
+        "material_unsupported_claims": [
+          "Implied third-party validation/validation body for NZBA targets (Targets 2 and 3) presented as validation rather than as an internal target-record attribute with unclear meaning."
+        ],
+        "minor_wording_to_tighten": [
+          "Overview: 'medium- and long-term greenhouse gas reduction targets that cover both operational and financed emissions' could be tightened to clarify these are target-record parameters and that 2024 operational emissions are not reported due to unavailable records.",
+          "Green loans definition: 'based on internal criteria and/or applicable regulatory or market taxonomies' is plausible but not evidenced; consider framing as 'classified as green in internal records; criteria not described in available documentation'."
         ],
         "available_evidence_omitted": [
-          "Target-record field: target status = \"on_track\" for all three targets (not disclosed, which is acceptable but is available evidence)",
-          "Target-record field: latest_paris_alignment = true for all three targets (not disclosed; preferable to omit rather than overclaim without careful framing)"
+          "Target-record status fields (e.g., 'on_track') are available in evidence but not used (acceptable omission).",
+          "Target-record 'latest_paris_alignment' fields are available in evidence but not used (acceptable omission)."
         ],
         "deterministic_checks": null
       }
@@ -225,8 +255,13 @@
   "senior_final_quality_check": {
     "passed": true,
     "failures": [],
-    "warnings": [],
+    "warnings": [
+      {
+        "check": "metrics_assurance_vocabulary_present",
+        "details": "Prefer validation/verification wording in Metrics and targets."
+      }
+    ],
     "failure_count": 0,
-    "warning_count": 0
+    "warning_count": 1
   }
 }

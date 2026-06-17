@@ -2,139 +2,122 @@
 
 #### Understanding the Bank’s approach towards implementing IFRS S1 and IFRS S2 requirements
 
-This report has been prepared by Eurolux Universal Bank AG as a dedicated sustainability-related and climate-related financial disclosure, structured in line with the core concepts and architecture of IFRS S1 and IFRS S2. The report focuses on the sustainability-related and climate-related risks and opportunities that could reasonably be expected to affect the Bank’s prospects, including its cash flows, access to finance and cost of capital over the short, medium and long term.
+This report has been structured around IFRS S1- and IFRS S2-style sustainability-related and climate-related financial disclosure areas for Eurolux Universal Bank AG. It is intended to provide decision‑useful information on sustainability-related and climate-related risks and opportunities that could reasonably be expected to affect the Bank’s business model, cash flows, access to finance and cost of capital over the short, medium and long term.
 
-The disclosure is organised to reflect the four core thematic areas commonly associated with IFRS Sustainability Disclosure Standards: Governance, Strategy, Risk management, and Metrics and targets. These thematic sections are preceded by this General Requirements section, which sets out the basis of preparation, reporting boundaries and materiality approach for the sustainability-related financial disclosures.
+The disclosure follows the core architecture of IFRS Sustainability Disclosure Standards, organised into the pillars of Governance, Strategy, Risk management, and Metrics and targets. Within this structure, the report focuses on:
 
-The primary purpose of this report is to provide current and potential investors, creditors and other users of general purpose financial reports with decision-useful information on how sustainability-related and climate-related factors interact with Eurolux Universal Bank AG’s business model and value chain, and how these factors may influence the Bank’s financial position and performance over relevant time horizons. The report is intended to be read in conjunction with the Bank’s related financial statements and other public disclosures in order to obtain a more complete view of the Bank’s overall risk profile and strategy.
+- sustainability-related and climate-related risks and opportunities relevant to a commercial bank, with particular emphasis on climate transition and physical risks in the financing portfolio and own operations;  
+- the way these risks and opportunities are overseen by governance bodies and integrated into strategy, risk management and performance measurement; and  
+- the links between climate-related exposures, scenario analysis, financed emissions and other climate metrics, and the Bank’s broader sustainability context.
 
-The approach described in this report represents an alignment with the principles and disclosure objectives of IFRS S1 and IFRS S2, taking into account the European sustainability reporting environment and sustainability reporting requirements that may apply to banks operating in Europe. The Bank expects that its approach to sustainability-related financial reporting will continue to evolve in line with emerging regulatory expectations, market practices and improvements in data quality and methodologies.
+The country code recorded in the available evidence is DE (Germany), and the reporting currency is euro (EUR). The specific reporting period is not specified in the available evidence. The report is prepared in the context of evolving sustainability reporting requirements that may apply to banks operating in Europe and is intended to align with the principles and structure of IFRS S1 and IFRS S2, without asserting full legal compliance with those Standards or with any specific jurisdictional adoption framework.
 
 Parts of the report rely on modelled estimates, internally generated analytical outputs and available source data, particularly for climate scenario analysis and financed emissions.
 
 #### Fair presentation
 
-Eurolux Universal Bank AG aims to present its sustainability-related and climate-related disclosures in a manner that fairly reflects the material sustainability-related risks and opportunities that could reasonably be expected to affect the Bank’s prospects. In this context, fair presentation is understood as providing information that is balanced and transparent about methodologies, estimates and known limitations, rather than asserting completeness or the absence of material error.
+The sustainability-related and climate-related financial information in this report has been prepared using the evidence currently available for Eurolux Universal Bank AG, including:
 
-The information in this report has been prepared using the following principles:
+- governance information, board and management oversight indicators and climate-related decision records;  
+- a climate risk register and climate scenario analysis outputs;  
+- value chain mapping and portfolio exposure data by sector and climate theme; and  
+- climate-related metrics and targets, including financed emissions and selected trend indicators.
 
-- reliance on the available internal documentation, risk registers, exposure mapping and climate scenario outputs relevant to the reporting entity;
-- use of quantitative indicators where underlying data are available, complemented by qualitative disclosures where data or methodologies are still developing;
-- consistent use, to the extent possible, of the Bank’s reporting currency (euro, EUR) for monetary amounts to align with the unit of measure used in the related financial statements; and
-- application of internal definitions of short term, medium term and long term that are consistent with the Bank’s strategic planning horizons, as further described in the Strategy and Risk management sections.
+The Bank aims to present the information in a transparent, balanced and decision‑oriented manner. Where quantitative information is based on estimates, scenario analysis or partial data coverage, this is reflected through narrative explanation in the relevant sections. Data and assumptions used for sustainability-related disclosures are intended to be consistent, to the extent possible based on the available evidence, with those used for financial planning and risk management, recognising that detailed alignment with the related financial statements is not documented in the evidence set.
 
-Where data, methodologies or internal records are incomplete or still maturing, this report may not fully satisfy all attributes of completeness, neutrality and freedom from material error as envisaged in IFRS Sustainability Disclosure Standards. In particular:
+The report does not claim that all sustainability-related and climate-related risks and opportunities have been exhaustively identified or quantified. In particular:
 
-- detailed methodological descriptions for some metrics and targets, including certain financed emissions indicators, are not available in the current evidence base;
-- operational greenhouse gas emissions data (for Scope 1, Scope 2 and relevant Scope 3 categories) are not comprehensively documented in the available records; and
-- organisational consolidation boundaries and explicit alignment with the boundaries used in the Bank’s financial statements are not evidenced and are therefore not asserted.
+- detailed calculation methodologies, data quality assessments and assumptions for certain metrics, including financed emissions and climate-related capital allocation, are not fully described in the available evidence;  
+- external assurance is not in place for the report as a whole; and  
+- assurance evidence, where available, relates only to selected Scope 1 and Scope 2 greenhouse gas emissions and does not extend to financed emissions.
 
-The Bank does not claim external assurance over the entirety of this report. Available evidence indicates that independent assurance, where obtained, relates only to selected components such as Scope 1 and Scope 2 greenhouse gas emissions. Assurance over financed emissions or other sustainability metrics is not asserted.
-
-Given these factors, user judgement is required when interpreting trend analyses and comparing this information with other institutions’ disclosures or with the Bank’s future reporting, especially as methodologies, data sources and regulatory expectations change over time.
+Governance disclosures are based on the governance evidence currently available and are subject to the evidence boundaries described in the Governance section. As sustainability-related reporting practices, data systems and methodologies evolve, the Bank expects that future disclosures will be refined and expanded.
 
 #### Connected information
 
-The structure and content of this report are intended to enable users to understand the connections between different sustainability-related and climate-related disclosures and their linkage to the Bank’s financial position and performance.
+The report is designed to enable users to understand the connections between the Bank’s governance, strategy, risk management, and metrics and targets in relation to sustainability-related and climate-related matters.
 
-Within the report, the Governance section describes the available governance arrangements overseeing sustainability-related and climate-related matters, including board and management-level oversight, management processes related to the climate risk register and the integration of climate considerations into decision-making. Governance disclosures are based on the governance evidence currently available and are subject to the evidence boundaries described in the Governance section.
+- Governance: The Governance section describes how the Board and relevant management bodies oversee sustainability-related and climate-related risks and opportunities, including the frequency of ESG- and climate-related discussions, the integration of climate considerations into remuneration, and the use of a climate risk register. Trend metrics such as the number of ESG committee meetings, the percentage of board members with climate expertise, the proportion of executive remuneration linked to climate or ESG, the percentage of board meetings with climate on the agenda, and board meeting frequency are used to illustrate the evolution of oversight over time.
 
-The Strategy section outlines how identified climate-related and other sustainability-related risks and opportunities, including those emerging from scenario analysis, may affect the Bank’s business model, portfolio, and value chain over different time horizons. This includes consideration of exposure to sectors with elevated transition risk and sectors facing physical chronic risk.
+- Strategy: The Strategy section explains how identified climate-related risks and opportunities, including those arising from high‑emitting or climate‑sensitive sectors in the financing portfolio, inform the Bank’s strategic positioning, portfolio steering and engagement with clients. Scenario analysis is used to explore potential impacts on the Bank’s business model and portfolio exposures over different time horizons.
 
-The Risk management section explains how climate-related and other sustainability-related risks are identified, assessed and managed, including the use of a climate risk register, integration into broader risk management processes, and use of scenario analysis outputs to inform risk assessment and portfolio steering.
+- Risk management: The Risk management section outlines how climate-related risks are identified, assessed and monitored within the Bank’s broader risk framework, including the use of a climate risk register and sectoral exposure mapping. It explains how transition and physical risks in the financing portfolio and own operations are integrated into risk processes and how these processes interact with governance oversight and strategic decision‑making.
 
-The Metrics and targets section provides quantitative indicators and targets, where available, that are used by the Bank to monitor and manage these risks and opportunities. This includes indicators related to financed emissions, sectoral exposures (for example, lending to mining, refined petroleum, air transport and other sectors), exposure to sectors with physical chronic risk, and selected green or transition-related finance metrics and climate-related capital and operating expenditures.
+- Metrics and targets: The Metrics and targets section sets out key indicators used to monitor sustainability-related and climate-related performance, including financed emissions, exposure to sectors with elevated transition or physical risk, green finance metrics and climate-related capital and operating expenditure, as well as climate-related targets where available.
 
-Connections across these sections include:
-
-- governance oversight of the development, review and use of the climate risk register and scenario analysis outputs that inform the Strategy and Risk management sections;
-- use of the same value chain mapping and sector exposure data to identify material climate-related risks and opportunities, describe their strategic implications, and quantify associated exposures and financed emissions;
-- alignment, to the extent supported by available data, between risk management processes and the metrics and targets used for internal monitoring and external disclosure; and
-- consistent use of the Bank’s internal time horizons for short term, medium term and long term across governance discussions, strategic planning and risk assessment.
-
-Users are encouraged to read the sections on Governance, Strategy, Risk management, and Metrics and targets together to obtain a coherent view of how sustainability-related matters are embedded into the Bank’s overall management framework.
+These sections are interconnected. For example, the climate risk register and scenario analysis inform both strategic planning and risk management processes; governance bodies oversee the setting and monitoring of climate-related targets; and portfolio-level metrics and financed emissions provide quantitative evidence to support strategic decisions and risk appetite. The report seeks to present these linkages clearly so that users can understand how sustainability-related and climate-related considerations are embedded across the Bank’s activities.
 
 #### Comparative information
 
-This report provides comparative information and trend indicators where such information is available in the underlying evidence, for example in relation to:
+Where available, the Bank uses comparative information to support an understanding of trends in sustainability-related and climate-related governance and performance. The available evidence includes trend metrics over time for:
 
-- selected governance and oversight metrics, such as the frequency of board or committee consideration of climate-related topics and the integration of climate considerations into remuneration; and
-- certain risk and exposure indicators, including trends in exposure to sectors associated with elevated transition risk or physical chronic risk.
+- the number of ESG- or sustainability-related committee meetings;  
+- the percentage of board members with climate-related expertise;  
+- the percentage of CEO and executive remuneration linked to climate or ESG objectives;  
+- the percentage of board meetings at which climate-related matters are on the agenda; and  
+- the frequency of full board meetings.
 
-In other areas, particularly where data collection or methodologies are at an early stage or have been recently introduced (for example, certain financed emissions metrics or new green finance indicators), consistent multi-year data are not yet available in the evidence base. In such cases, only current-period information is provided, and users should be aware that year-on-year comparisons may be limited or not yet possible.
+These trend indicators are used in the Governance and Metrics and targets sections to illustrate changes in oversight and management of sustainability-related and climate-related matters over time.
 
-Where methodologies, data sources or definitions change in future reporting periods, the Bank intends, where practicable and supported by available evidence, to explain the nature of such changes and their implications for comparability. For the current report, no prior-year restatements are asserted due to the absence of detailed historical methodological records in the available documentation.
+Comparative information for portfolio exposure metrics, financed emissions and other climate-related quantitative indicators is not available in the evidence set. As a result, year‑on‑year comparisons for these metrics cannot be provided, and users should be aware that the current disclosures may represent an initial baseline rather than a time series. Where methodologies or data coverage evolve in future periods, the Bank will explain any significant impacts on comparability in the relevant sections.
 
 #### Timing and location of disclosure
 
-The disclosures in this report relate to Eurolux Universal Bank AG and are intended to align with a single annual reporting period corresponding to the Bank’s financial year. However, explicit start and end dates for the reporting period are not evidenced in the available data and are therefore not specified in this section.
+The specific reporting period for this sustainability-related and climate-related disclosure is not specified in the available evidence. The report is prepared in euro (EUR), consistent with the reporting currency recorded for Eurolux Universal Bank AG.
 
-This sustainability-related financial disclosure is designed as a dedicated report focused on IFRS S1- and IFRS S2-style requirements. It is intended to be read alongside the Bank’s related financial statements and other regulatory and sustainability disclosures that may be published separately in accordance with applicable banking and securities regulation. No assertion is made in this report regarding the specific publication date, filing location or formal integration into the Bank’s statutory annual report.
-
-Where information reflects developments or data after the reporting period, this is based on the available evidence and is intended to provide users with relevant and timely insight, recognising that cut-off dates for data collection and internal validation may differ across metrics and qualitative disclosures.
+This General Requirements section forms part of a dedicated sustainability-related and climate-related financial disclosure report for Eurolux Universal Bank AG, structured in line with IFRS S1 and IFRS S2 pillars. The report is intended to be read alongside the Bank’s general-purpose financial reports and other relevant sustainability communications to obtain a more complete view of the Bank’s performance and risk profile. The available evidence does not specify the publication date, whether the report is integrated with the annual report, or any external filing location.
 
 #### Reporting entity, business model and value chain
 
-The reporting entity for this sustainability-related financial disclosure is Eurolux Universal Bank AG, a bank incorporated in Germany. The Bank’s reporting currency for these disclosures is the euro (EUR), consistent with the currency indicated for the related financial statements.
+The reporting entity for this sustainability-related and climate-related disclosure is Eurolux Universal Bank AG. The country code recorded in the available evidence is DE (Germany), and the reporting currency is euro (EUR). The available data indicate total assets of approximately EUR 850,000 million and total loans of approximately EUR 31,150.64 million, highlighting the scale of the Bank’s balance sheet and the importance of understanding climate-related risks and opportunities in its financing activities.
 
-Based on the available evidence, Eurolux Universal Bank AG is a large banking institution with total assets of approximately EUR 850,000 million and total loans of approximately EUR 31,150.64 million. Detailed descriptions of the Bank’s business model, segment structure and product offering are not provided in the current evidence base and are therefore not elaborated upon in this section. Similarly, explicit information on consolidation boundaries, subsidiary structure and formal alignment of the sustainability reporting boundary with the financial statement consolidation scope is not available and is not asserted.
+The evidence does not specify the consolidation boundary, the list of subsidiaries included, or whether the sustainability-related disclosures are fully aligned with the boundary of the related financial statements. Accordingly, the report refers to Eurolux Universal Bank AG at the level indicated by the available data, without asserting a specific consolidation scope.
 
-Notwithstanding these boundaries, the Bank’s value chain mapping provides insight into key nodes relevant for sustainability-related and climate-related risk and opportunity assessment. The available value chain information includes:
+While detailed business model information is not provided in the evidence, the value chain mapping and portfolio exposure data indicate that the Bank’s activities encompass:
 
-- Own operations: operational buildings, corporate fleet and business travel are recognised as sources of Scope 1 and Scope 2 emissions and as being exposed to physical disruption and transition-related factors. These activities are associated with economic activities such as real estate (renting and operation of own or leased real estate) and transport services.
-- Upstream suppliers: the Bank engages with upstream providers such as IT infrastructure and cloud services, office space landlords and professional services suppliers. Financial exposure to these upstream activities is relatively limited compared with the overall balance sheet, but they contribute to the Bank’s broader environmental and social footprint.
-- Downstream activities and financing counterparties: the Bank’s core sustainability-related risk profile is driven by its lending and other financing activities to corporate borrowers. Available evidence identifies material exposures to sectors including:
-  - manufacture of coke and refined petroleum products;
-  - mining of coal and lignite;
-  - mining of metal ores;
-  - other mining and quarrying;
-  - air transport;
-  - manufacture of motor vehicles and electrical equipment;
-  - manufacture of food products;
-  - civil engineering; and
-  - education and other sectors with moderate physical chronic risk.
+- Own operations: including banking operations in buildings and a corporate fleet and business travel. These activities generate Scope 1 and Scope 2 emissions and are exposed to potential physical disruption and transition-related changes affecting operational efficiency and travel patterns.
 
-For several of these sectors, elevated transition risk is identified due to potential impacts of carbon pricing, regulatory changes and demand shifts, while others are characterised by moderate exposure to physical chronic risk and associated adaptation needs. These value chain nodes inform the Bank’s assessment of material climate-related risks and opportunities, scenario analysis and associated financed emissions metrics.
+- Upstream value chain: including IT infrastructure and cloud providers, office space landlords and professional services suppliers. These upstream relationships are associated with environmental and other sustainability themes, with financial exposures recorded for IT infrastructure and cloud providers (approximately EUR 223.85 million), office space landlords (approximately EUR 445.41 million) and professional services suppliers (approximately EUR 120.73 million).
 
-The Bank acknowledges that value chain information outside these identified nodes, including broader Scope 3 categories such as employee commuting, is not comprehensively documented in the available evidence and may therefore not be fully reflected in this report.
+- Downstream value chain and financing portfolio: including a range of corporate borrowers across sectors with varying climate-related risk profiles. Material climate-related exposures identified in the available evidence include:
+  - sectors with elevated transition risk, such as Manufacture of coke and refined petroleum (approximately EUR 3,903.65 million), Mining of coal and lignite (approximately EUR 3,547.58 million), Mining of metal ores (approximately EUR 2,749.58 million), Other mining and quarrying (approximately EUR 2,102.44 million) and Air transport (approximately EUR 1,548.11 million); and  
+  - sectors with notable physical and transition risk, such as Manufacture of motor vehicles (approximately EUR 3,871.6 million), Education (approximately EUR 2,962.25 million), Manufacture of electrical equipment (approximately EUR 1,827.09 million), Manufacture of food products (approximately EUR 1,765.5 million) and Civil engineering (approximately EUR 1,709.19 million).
+
+These exposures are used in the Strategy, Risk management and Metrics and targets sections to illustrate how climate-related risks and opportunities manifest across the Bank’s value chain and financing portfolio. The evidence does not provide a full portfolio summary or detailed business line breakdown, and the report therefore focuses on the sectors and value chain nodes explicitly identified.
 
 #### Sources of guidance
 
-The primary framing for this report is provided by IFRS S1 (General Requirements for Disclosure of Sustainability-related Financial Information) and IFRS S2 (Climate-related Disclosures). These standards inform the structure of the report, the focus on material sustainability-related and climate-related risks and opportunities, and the emphasis on providing information that is useful to users of general purpose financial reports.
+The primary framing for this sustainability-related and climate-related financial disclosure is the IFRS Sustainability Disclosure Standards, specifically IFRS S1 (General Requirements for Disclosure of Sustainability-related Financial Information) and IFRS S2 (Climate-related Disclosures). The structure of the report, the focus on governance, strategy, risk management, and metrics and targets, and the emphasis on decision‑useful information about sustainability-related and climate-related risks and opportunities are aligned with these Standards.
 
-In addition to IFRS S1 and IFRS S2, the Bank has considered the broader European sustainability reporting environment and sustainability reporting requirements that may apply to banks operating in Europe. These requirements are relevant for understanding expectations regarding climate-related and other sustainability-related disclosures, including sector classification (for example, NACE codes) and concepts such as transition and physical risk.
-
-No additional specific disclosure frameworks or reporting standards beyond IFRS S1, IFRS S2 and the surrounding European sustainability reporting environment are evidenced as formal bases of preparation for this report. However, the underlying metrics and targets referenced in the Metrics and targets section may take into account market practices, industry benchmarks and climate target frameworks where explicitly evidenced in the Bank’s internal records, even if such frameworks are not formally adopted as reporting standards for this document.
+The available evidence does not document the application or consideration of other sustainability disclosure frameworks or standards (such as SASB or other sector-specific standards) as a basis for preparing this report. While other climate-related initiatives or target‑setting frameworks may be referenced in underlying climate or target records, no additional report‑preparation framework beyond IFRS S1 and IFRS S2 is evidenced as having been applied to the overall structure and content of this disclosure.
 
 #### Statement of compliance
 
-Eurolux Universal Bank AG has prepared this report with the intention of aligning its sustainability-related and climate-related financial disclosures with the core concepts, disclosure objectives and structure of IFRS S1 and IFRS S2. The report applies key principles from these standards, including:
+This report has been prepared with the intention of aligning the Bank’s sustainability-related and climate-related financial disclosures with the principles and core disclosure areas of IFRS S1 and IFRS S2. The report:
 
-- focusing on sustainability-related risks and opportunities that could reasonably be expected to affect the Bank’s prospects;
-- providing information that is intended to be comparable, verifiable, timely and understandable to users;
-- disclosing material information on governance, strategy, risk management, and metrics and targets; and
-- identifying and describing key connections between sustainability-related information and the Bank’s financial position and performance.
+- follows the governance, strategy, risk management, and metrics and targets architecture of IFRS Sustainability Disclosure Standards;  
+- focuses on sustainability-related and climate-related risks and opportunities that could reasonably be expected to affect the Bank’s prospects; and  
+- seeks to provide information that is comparable, understandable and useful for users of general-purpose financial reports.
 
-In the absence of explicit evidence that the Bank has formally stated full compliance with IFRS Sustainability Disclosure Standards or that these standards have been formally adopted or endorsed as mandatory within the Bank’s jurisdiction, this report does not assert full legal compliance with IFRS S1 or IFRS S2. Instead, it should be understood as an application of IFRS S1- and IFRS S2-style disclosure principles and requirements, adapted to the extent permitted by the available evidence and data.
-
-The report also does not assert that its disclosures are prepared under a specific transposed or jurisdictionalised version of these standards, nor does it claim full alignment with all detailed technical requirements that may be embedded in applicable European sustainability reporting regulations. As regulatory expectations and market practices evolve, the Bank intends to further refine its alignment with IFRS S1 and IFRS S2 and related jurisdictional requirements, subject to data availability and internal governance processes.
+The available evidence does not include an explicit formal statement that the report is in full compliance with IFRS S1 and IFRS S2, nor does it document jurisdictional endorsement or statutory adoption of these Standards for Eurolux Universal Bank AG. Accordingly, the Bank describes this report as being prepared in alignment with IFRS S1 and IFRS S2, rather than asserting full compliance. As regulatory expectations and internal capabilities develop, the Bank may further enhance the extent of alignment and the precision of its disclosures.
 
 #### Materiality assessment
 
-The sustainability-related and climate-related disclosures in this report are based on a materiality approach that is primarily risk- and portfolio-driven. Rather than being derived from a formal stakeholder materiality survey, the Bank’s approach reflects the information currently available in internal risk registers, exposure mapping and climate scenario outputs.
+The selection of sustainability-related and climate-related topics and disclosures in this report is based on a risk‑ and portfolio‑driven screening approach using the available evidence. In the absence of a documented IFRS S1 materiality process artefact, the Bank has focused on those matters that, based on the current information set, could reasonably be expected to affect its prospects.
 
-Key elements of this approach include:
+The approach draws on:
 
-- Identification of sustainability-related and climate-related risk drivers: the Bank uses its climate risk register and available scenario analysis to identify transition risks (for example, policy, legal and market changes affecting sectors such as mining, refined petroleum, and air transport) and physical risks (for example, physical chronic risk affecting certain sectors and own operations).
-- Portfolio and value chain screening: exposures within the Bank’s portfolio and value chain are mapped using sector classifications (including NACE codes) and financial exposure data. Nodes with higher financial exposure and identified climate risk characteristics, such as lending to mining, refined petroleum, energy-intensive manufacturing, transport and selected services sectors, are considered priority areas for disclosure.
-- Risk and opportunity linkage to financial effects: where supported by available evidence, the Bank considers the potential for identified risks and opportunities to influence credit risk, market risk, operational risk and business model resilience, taking into account relevant time horizons (short term, medium term and long term) and the Bank’s strategic planning cycles.
-- Metrics and targets focus: metrics and targets are selected where they are directly linked to identified risk concentrations, transition or physical risk exposures and key aspects of the Bank’s climate-related strategy, including financed emissions and sectoral exposure indicators.
+- the climate risk register and associated risk descriptions, which identify key transition and physical risk drivers relevant to the Bank’s activities;  
+- value chain mapping, highlighting own operations, upstream suppliers and downstream financing counterparties, including sectors with elevated transition or physical risk;  
+- portfolio exposure data by sector and climate theme, particularly for high‑emitting or climate‑sensitive sectors such as fossil fuel extraction and processing, energy‑intensive manufacturing, transport and selected services;  
+- climate scenario analysis outputs, which provide indicative insights into how different climate pathways could affect the Bank’s risk profile and portfolio over the short, medium and long term; and  
+- governance and metrics evidence, including trend indicators on board and management oversight and the availability of financed emissions and other climate-related metrics.
 
-Due to evidence boundaries, the materiality approach described here does not incorporate a structured, survey-based assessment of stakeholder priorities, and no specific stakeholder groups or consultation processes are asserted. Instead, material topics reflected in this report have been derived from:
+Using this evidence base, the Bank has prioritised disclosures on:
 
-- the available climate risk register and risk management documentation;
-- sectoral exposure and financed emissions data;
-- scenario analysis outputs and related internal assessments; and
-- governance and management information regarding the oversight of sustainability-related and climate-related risks and opportunities.
+- climate transition risks associated with lending to sectors such as Mining of coal and lignite, Manufacture of coke and refined petroleum, Mining of metal ores, Other mining and quarrying and Air transport;  
+- physical and transition risks affecting sectors such as Manufacture of motor vehicles, Education, Manufacture of electrical equipment, Manufacture of food products and Civil engineering;  
+- climate-related risks and opportunities in own operations, including potential physical disruption and transition-related impacts on buildings, fleet and business travel; and  
+- key climate-related metrics and targets, including financed emissions and exposure to climate‑sensitive sectors.
 
-As the Bank’s data, methodologies and governance processes continue to develop, the materiality approach may be further refined, including potential integration of more formalised stakeholder input, enhanced quantitative thresholds and more granular assessment of emerging sustainability-related topics, subject to available evidence and internal governance approval.
+The materiality lens applied is financial in nature and is focused on sustainability-related and climate-related risks and opportunities that could reasonably be expected to influence the Bank’s cash flows, access to finance or cost of capital over relevant time horizons. No detailed stakeholder materiality survey or formal stakeholder‑engagement‑based materiality process is documented in the available evidence. As the Bank’s risk assessment processes, data and governance arrangements continue to develop, the materiality assessment and resulting disclosures may be refined in future reporting cycles.
