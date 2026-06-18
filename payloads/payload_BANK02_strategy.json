@@ -1235,7 +1235,11 @@
           "metric": "tco2e"
         }
       ],
-      "target_progress_pct_2024": 40.0
+      "schedule_elapsed_pct_2024": 40.0,
+      "actual_progress_pct_2024": null,
+      "progress_basis": "schedule_elapsed_only",
+      "progress_is_schedule_proxy": true,
+      "target_progress_pct_2024": null
     },
     {
       "target_id": "TGT005",
@@ -1275,7 +1279,11 @@
           "metric": "tco2e_per_meur_lending"
         }
       ],
-      "target_progress_pct_2024": 25.0
+      "schedule_elapsed_pct_2024": 25.0,
+      "actual_progress_pct_2024": null,
+      "progress_basis": "schedule_elapsed_only",
+      "progress_is_schedule_proxy": true,
+      "target_progress_pct_2024": null
     },
     {
       "target_id": "TGT006",
@@ -1304,7 +1312,183 @@
       "review_frequency": "triennial",
       "progress_metric": "pct_reduction_vs_baseline",
       "milestones_parsed": [],
-      "target_progress_pct_2024": 13.3
+      "schedule_elapsed_pct_2024": 13.3,
+      "actual_progress_pct_2024": null,
+      "progress_basis": "schedule_elapsed_only",
+      "progress_is_schedule_proxy": true,
+      "target_progress_pct_2024": null
+    }
+  ],
+  "transition_plan": [
+    {
+      "tp_id": "TP-BANK02-2024",
+      "bank_id": "BANK02",
+      "reporting_year": 2024,
+      "has_transition_plan": true,
+      "net_zero_target_year": 2050,
+      "aligned_framework": "NZBA",
+      "key_assumptions": "Carbon-price trajectory of EUR 7.3-342.0/tCO2e across NGFS scenarios; orderly policy implementation toward NZBA pathways; gradual client transition in high-carbon sectors; stable renewable-technology cost decline.",
+      "dependencies": "Government policy and carbon-pricing stability; client/counterparty decarbonisation; availability of credible transition finance demand; data quality on financed emissions.",
+      "resourcing_meur": 409.8,
+      "resourcing_description": "Funded from existing climate capex/opex budgets covering risk-management capability, data and analytics, and green-product development.",
+      "prior_period_progress": "Interim milestones tracked against the intensity and absolute targets; progress reported on a schedule basis pending verified reductions.",
+      "is_synthetic": true,
+      "data_source": "synthetic_estimate"
+    }
+  ],
+  "resilience_assessment": [
+    {
+      "resilience_id": "RES-BANK02-orderly",
+      "bank_id": "BANK02",
+      "reporting_year": 2024,
+      "scenario_type": "orderly",
+      "capacity_to_adjust": "Modelled losses are within current capital buffers; gradual portfolio reweighting feasible.",
+      "asset_redeployment_capacity": "Lending portfolio can be repriced and reweighted at origination/renewal; limited owned physical assets to redeploy.",
+      "financial_resource_flexibility": "Climate capex EUR 112.95m and opex EUR 296.85m; buffers per ICAAP.",
+      "significant_uncertainties": "Policy/carbon-price path, counterparty transition speed, physical-hazard frequency, and financed-emissions data quality.",
+      "assessment_horizon": "short_medium_long",
+      "is_synthetic": true,
+      "data_source": "synthetic_estimate"
+    },
+    {
+      "resilience_id": "RES-BANK02-disorderly",
+      "bank_id": "BANK02",
+      "reporting_year": 2024,
+      "scenario_type": "disorderly",
+      "capacity_to_adjust": "Near-term resilience manageable; medium-term capital consumption from stranded assets may require additional buffers.",
+      "asset_redeployment_capacity": "Lending portfolio can be repriced and reweighted at origination/renewal; limited owned physical assets to redeploy.",
+      "financial_resource_flexibility": "Climate capex EUR 112.95m and opex EUR 296.85m; buffers per ICAAP.",
+      "significant_uncertainties": "Policy/carbon-price path, counterparty transition speed, physical-hazard frequency, and financed-emissions data quality.",
+      "assessment_horizon": "short_medium_long",
+      "is_synthetic": true,
+      "data_source": "synthetic_estimate"
+    },
+    {
+      "resilience_id": "RES-BANK02-hot_house",
+      "bank_id": "BANK02",
+      "reporting_year": 2024,
+      "scenario_type": "hot_house",
+      "capacity_to_adjust": "Physical-risk losses dominate long term; collateral revaluation and exposure limits are the main levers.",
+      "asset_redeployment_capacity": "Lending portfolio can be repriced and reweighted at origination/renewal; limited owned physical assets to redeploy.",
+      "financial_resource_flexibility": "Climate capex EUR 112.95m and opex EUR 296.85m; buffers per ICAAP.",
+      "significant_uncertainties": "Policy/carbon-price path, counterparty transition speed, physical-hazard frequency, and financed-emissions data quality.",
+      "assessment_horizon": "short_medium_long",
+      "is_synthetic": true,
+      "data_source": "synthetic_estimate"
+    }
+  ],
+  "climate_financial_effects": [
+    {
+      "effect_id": "FE-RISK-BANK02-2024-0005",
+      "bank_id": "BANK02",
+      "reporting_year": 2024,
+      "driver_type": "risk",
+      "linked_id": "RISK-BANK02-2024-0005",
+      "affected_statement": "balance_sheet/income_statement",
+      "line_item": "Loans and advances - collateral value / ECL allowance",
+      "effect_timing": "current",
+      "horizon": "medium_2_5yr",
+      "quantitative_effect_meur": 44.12,
+      "qualitative_description": "Current-period effect attributable to: Physical risk — mortgage book flood exposure.",
+      "material_adjustment_next_period_flag": false,
+      "basis": "modelled_estimate",
+      "is_synthetic": true
+    },
+    {
+      "effect_id": "FE-RISK-BANK02-2024-0005-ANT",
+      "bank_id": "BANK02",
+      "reporting_year": 2024,
+      "driver_type": "risk",
+      "linked_id": "RISK-BANK02-2024-0005",
+      "affected_statement": "balance_sheet/income_statement",
+      "line_item": "Loans and advances - collateral value / ECL allowance",
+      "effect_timing": "anticipated",
+      "horizon": "medium_2_5yr",
+      "quantitative_effect_meur": 441.2,
+      "qualitative_description": "Anticipated medium_2_5yr effect attributable to: Physical risk — mortgage book flood exposure.",
+      "material_adjustment_next_period_flag": false,
+      "basis": "modelled_estimate",
+      "is_synthetic": true
+    },
+    {
+      "effect_id": "FE-RISK-BANK02-2024-0002",
+      "bank_id": "BANK02",
+      "reporting_year": 2024,
+      "driver_type": "risk",
+      "linked_id": "RISK-BANK02-2024-0002",
+      "affected_statement": "balance_sheet/income_statement",
+      "line_item": "Loans and advances - collateral value / ECL allowance",
+      "effect_timing": "current",
+      "horizon": "long_5yr_plus",
+      "quantitative_effect_meur": 22.94,
+      "qualitative_description": "Current-period effect attributable to: Physical risk — wildfire exposure in southern portfolio.",
+      "material_adjustment_next_period_flag": false,
+      "basis": "modelled_estimate",
+      "is_synthetic": true
+    },
+    {
+      "effect_id": "FE-RISK-BANK02-2024-0002-ANT",
+      "bank_id": "BANK02",
+      "reporting_year": 2024,
+      "driver_type": "risk",
+      "linked_id": "RISK-BANK02-2024-0002",
+      "affected_statement": "balance_sheet/income_statement",
+      "line_item": "Loans and advances - collateral value / ECL allowance",
+      "effect_timing": "anticipated",
+      "horizon": "long_5yr_plus",
+      "quantitative_effect_meur": 229.4,
+      "qualitative_description": "Anticipated long_5yr_plus effect attributable to: Physical risk — wildfire exposure in southern portfolio.",
+      "material_adjustment_next_period_flag": false,
+      "basis": "modelled_estimate",
+      "is_synthetic": true
+    },
+    {
+      "effect_id": "FE-RISK-BANK02-2024-0006",
+      "bank_id": "BANK02",
+      "reporting_year": 2024,
+      "driver_type": "risk",
+      "linked_id": "RISK-BANK02-2024-0006",
+      "affected_statement": "balance_sheet/income_statement",
+      "line_item": "Loans and advances to customers - ECL allowance",
+      "effect_timing": "current",
+      "horizon": "medium_2_5yr",
+      "quantitative_effect_meur": 13.11,
+      "qualitative_description": "Current-period effect attributable to: Stranded assets — fossil fuel sector exposure.",
+      "material_adjustment_next_period_flag": false,
+      "basis": "modelled_estimate",
+      "is_synthetic": true
+    },
+    {
+      "effect_id": "FE-RISK-BANK02-2024-0006-ANT",
+      "bank_id": "BANK02",
+      "reporting_year": 2024,
+      "driver_type": "risk",
+      "linked_id": "RISK-BANK02-2024-0006",
+      "affected_statement": "balance_sheet/income_statement",
+      "line_item": "Loans and advances to customers - ECL allowance",
+      "effect_timing": "anticipated",
+      "horizon": "medium_2_5yr",
+      "quantitative_effect_meur": 131.1,
+      "qualitative_description": "Anticipated medium_2_5yr effect attributable to: Stranded assets — fossil fuel sector exposure.",
+      "material_adjustment_next_period_flag": false,
+      "basis": "modelled_estimate",
+      "is_synthetic": true
+    },
+    {
+      "effect_id": "FE-OPP-BANK02-01",
+      "bank_id": "BANK02",
+      "reporting_year": 2024,
+      "driver_type": "opportunity",
+      "linked_id": "OPP-BANK02-01",
+      "affected_statement": "income_statement",
+      "line_item": "Net interest income - green and sustainability-linked lending",
+      "effect_timing": "anticipated",
+      "horizon": "medium_term",
+      "quantitative_effect_meur": 180.0,
+      "qualitative_description": "Anticipated revenue opportunity: Expansion of green and sustainability-linked loan book aligned with EU Taxonomy, driven by corporate client transition financing demand.",
+      "material_adjustment_next_period_flag": false,
+      "basis": "estimate",
+      "is_synthetic": true
     }
   ],
   "reporting_kpis": {
@@ -1335,7 +1519,10 @@
         "status": "on_track",
         "target_year": 2030,
         "framework": "SBTi_1.5C",
-        "target_progress_pct_2024": 40.0
+        "target_progress_pct_2024": null,
+        "schedule_elapsed_pct_2024": 40.0,
+        "progress_basis": "schedule_elapsed_only",
+        "progress_is_schedule_proxy": true
       },
       {
         "target_id": "TGT005",
@@ -1344,7 +1531,10 @@
         "status": "on_track",
         "target_year": 2030,
         "framework": "NZBA",
-        "target_progress_pct_2024": 25.0
+        "target_progress_pct_2024": null,
+        "schedule_elapsed_pct_2024": 25.0,
+        "progress_basis": "schedule_elapsed_only",
+        "progress_is_schedule_proxy": true
       },
       {
         "target_id": "TGT006",
@@ -1353,7 +1543,10 @@
         "status": "on_track",
         "target_year": 2050,
         "framework": "NZBA",
-        "target_progress_pct_2024": 13.3
+        "target_progress_pct_2024": null,
+        "schedule_elapsed_pct_2024": 13.3,
+        "progress_basis": "schedule_elapsed_only",
+        "progress_is_schedule_proxy": true
       }
     ],
     "high_carbon_sector_exposure_pct": 27.35,
