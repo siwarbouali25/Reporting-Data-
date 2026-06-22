@@ -2,96 +2,115 @@
 
 #### Overview
 
-For the year ended 31 December 2024, climate-related governance at Eurolux Universal Bank AG is organised across the Board of Directors, the ESG & Sustainability Committee, executive management and supporting processes. Based on available evidence, climate-related governance is reflected in Board oversight, ESG & Sustainability Committee activity, executive management responsibility, semi-annual Board reporting, ERM integration indicators, climate checks for major transactions and a climate risk register.
+Eurolux Universal Bank AG organises climate-related governance across the Board of Directors, the ESG & Sustainability Committee, executive management and control functions. Climate-related governance is reflected in Board oversight, ESG & Sustainability Committee activity, executive management responsibility, semi-annual Board reporting on climate risk, the use of a climate risk register, climate checks for major transactions and linkages to enterprise risk management for specific climate-related risks.
 
-The Board of Directors oversees the overall direction of the bank, including climate-related risks and opportunities, through its meeting agenda, periodic reporting and documented 2024 Board decisions. The ESG & Sustainability Committee supports the Board through more detailed consideration of climate-related topics and documented 2024 committee decisions. At management level, the Climate Risk Management Committee coordinates the identification and assessment of climate-related risks and opportunities, uses a climate risk register that, in 2024, recorded 8 climate-related risks, and provides semi-annual climate risk reporting to the Board.
+In 2024, the Board of Directors comprised 10 members, of whom 68.5% were independent. Climate-related topics appeared on the Board agenda at 72.6% of Board meetings, and climate risk reporting was provided to the Board on a semi-annual basis. The ESG & Sustainability Committee met seven times during the year. Management responsibilities for climate-related risks and opportunities were assigned to the Climate Risk Management Committee, which uses a climate risk register that, in 2024, recorded eight climate-related risks and flagged six of these as linked to enterprise risk management processes.
 
-Skills and incentives are reflected in the proportion of Board members with climate-related expertise, a skills development programme and the inclusion of ESG and climate-related components in executive remuneration. Controls and assurance include ERM integration indicators for climate risks, climate checks for major transactions and limited external assurance over Scope 1 and Scope 2 greenhouse gas emissions.
+Climate-related skills and incentives are reflected in the proportion of Board members with climate expertise, which increased from 33.5% in 2022 to 37.5% in 2024, and in remuneration structures, with 9.3% of the Chief Executive Officer’s 2024 compensation linked to ESG measures and 15.1% of all executive remuneration linked to climate-related performance. Climate checks are applied to major transactions, although these checks are not described as a formal mandatory policy across all transactions. Documented 2024 Board and committee decisions on climate-related matters are summarised in the final subsection of this Governance section.
 
 #### The role of the Board of Directors
 
-The Board of Directors of Eurolux Universal Bank AG comprised 10 members in 2024, of whom 68.5% were independent. Source data indicates that the Board held 8 full meetings during 2024, compared with 7 meetings in 2023 and 4 meetings in 2022. Climate-related topics appeared on the Board agenda in 72.6% of meetings in 2024, compared with 73.1% in 2023 and 69.8% in 2022. This agenda coverage, together with semi-annual climate risk reporting and documented 2024 Board decisions, evidences Board-level oversight of climate-related risks and opportunities.
+The Board of Directors of Eurolux Universal Bank AG oversees climate-related risks and opportunities as part of its overall oversight of the Bank’s business and risk profile. In 2024, the Board comprised 10 members, with 68.5% classified as independent. The Board met eight times during the year, compared with seven meetings in 2023 and four meetings in 2022.
 
-The Board is informed about climate-related matters through semi-annual climate risk reports prepared under the coordination of the Climate Risk Management Committee, as well as through other Board papers and presentations on climate-related topics. These channels provide information on climate-related risk exposures, selected scenario analysis outputs and progress on climate-related initiatives, as reflected in the climate risk register and management reporting.
+Climate-related topics were included on the Board agenda at 72.6% of Board meetings in 2024, compared with 73.1% in 2023 and 69.8% in 2022. Climate risk reporting is provided to the Board on a semi-annual basis and gives an overview of material climate-related risks drawn from the climate risk register. Through this reporting, the Board is informed about the Bank’s key climate-related risk exposures, their evolution over time, associated financial impacts and related management actions.
 
-Board oversight of climate-related risks and opportunities is reflected in:
+The Board oversees the setting and monitoring of climate-related targets and the consideration of climate-related risks and opportunities in strategy and major decisions through its review of management reports, its interaction with the ESG & Sustainability Committee and documented climate-related decisions in 2024. These decisions are set out in the Governance decisions, controls and evidence boundaries subsection.
 
-- inclusion of climate-related topics on the Board agenda in most meetings over the last three years;
-- semi-annual reporting on climate-related risks from management; and
-- documented 2024 Board decisions on climate-related matters.
-
-Available documentation evidences Board activity, meeting frequency and climate-related agenda coverage, but does not include a separate climate-specific Board charter or formal mandate.
-
-The documentation reviewed does not describe quantified or specific Board-level trade-offs between climate-related considerations and other factors such as profitability, capital allocation, implementation cost, risk appetite or competing strategic priorities.
+The Board’s oversight of climate-related risks and opportunities is further reflected in governance key performance indicators, including the frequency of climate-related agenda items, the proportion of Board members with climate expertise and the linkage of executive remuneration to climate-related performance.
 
 #### Board committees and climate-related oversight
 
-The Board is supported by an ESG & Sustainability Committee, which considered climate-related topics during 2024. Source data indicates that this committee met 7 times in 2024, compared with 6 meetings in 2023 and 5 meetings in 2022, indicating an increasing frequency of committee-level engagement on ESG and climate-related matters.
+The Board is supported in its climate-related oversight by the ESG & Sustainability Committee. This committee is a Board committee and reports to the Board on its activities and recommendations.
 
-Available documentation indicates that the ESG & Sustainability Committee reports to the Board and that its activities in 2024 included the preparation and discussion of climate-related matters that were subsequently considered by the Board. These activities included review of climate-related risk information, climate-related methodologies and climate-related aspects of executive remuneration, as reflected in documented 2024 committee decisions. The committee’s work forms part of the governance by which climate-related risks and opportunities are considered in the bank’s strategy, risk management and remuneration frameworks.
+The ESG & Sustainability Committee met seven times in 2024, compared with six meetings in 2023 and five meetings in 2022. Through these meetings, the committee considered climate-related risks and opportunities, including matters related to climate risk management, climate-related targets and climate-related aspects of executive remuneration, as reflected in documented 2024 committee decisions.
 
-Documentation reviewed evidences ESG & Sustainability Committee activity and meeting frequency, but does not include the committee charter or terms of reference. As a result, this report describes the committee’s climate-related role based on observed activities and reporting lines rather than a formal climate-specific mandate.
+The committee’s work in 2024 included reviewing management proposals on climate-related approaches, considering progress against climate-related objectives and discussing climate-related performance indicators. The committee escalated its recommendations to the Board for consideration and approval where required. The Bank does not currently disclose a separate climate-specific charter or terms of reference for the ESG & Sustainability Committee; this report therefore focuses on the committee’s activities, meeting frequency and reporting line to the Board.
 
 #### Management responsibility for climate-related risks and opportunities
 
-Management responsibility for climate-related risks and opportunities in 2024 is assigned to the Climate Risk Management Committee. Source data indicates that this committee coordinates climate-related risk identification and assessment, prepares semi-annual climate risk reports for the Board and supports the integration of climate-related risks into the bank’s broader risk management processes.
+Day-to-day management of climate-related risks and opportunities in 2024 was assigned to the Climate Risk Management Committee. This management committee is responsible for coordinating climate-related risk identification and assessment, preparing climate risk reporting for the Board and supporting the integration of climate-related considerations into selected risk and business processes.
 
-The management process is evidenced by the use of a climate risk register that, in 2024, recorded 8 climate-related risks. The register covers both physical and transition risks, including categories such as physical acute, physical chronic, transition market, transition policy, transition reputational and transition technology. Risks in the register are assigned ratings (high or medium) and time horizons (short term 0–2 years, medium term 2–5 years and long term over 5 years). Monitoring frequencies recorded in the register are quarterly or semi-annual, depending on the nature and assessed materiality of the risk.
+Climate risk reporting is provided to the Board on a semi-annual basis. This reporting draws on the climate risk register and provides the Board with an overview of material climate-related risks, their estimated financial impacts and related management actions.
 
-The climate risk register includes scenario analysis identifiers for selected risks (for example, SCN0002, SCN0004, SCN0011 and SCN0013), linking those risks to specific climate-related scenario analyses used by the bank. The register also records mitigation actions at the register level, such as:
+The Climate Risk Management Committee uses a climate risk register that, in 2024, recorded eight climate-related risks. These risks are identified and documented in the register and are classified by:
 
-- climate scenario stress testing integrated into the Internal Capital Adequacy Assessment Process (ICAAP);
-- collateral revaluation and flood mapping overlays;
+- risk category, including physical acute, physical chronic, transition market, transition policy, transition reputational and transition technology risks;
+- time horizon, including short term (0–2 years), medium term (2–5 years) and long term (more than 5 years);
+- risk rating, with risks recorded as high or medium.
+
+The register records monitoring frequencies for climate-related risks, with quarterly and semi-annual monitoring applied. In 2024, four of the eight climate-related risks recorded in the register changed compared with the prior period. The register also records identifiers for climate-related scenario analysis for selected risks.
+
+Mitigation actions are recorded in the climate risk register. In 2024, mitigation actions recorded in the register included:
+
+- climate scenario stress testing integrated into the Internal Capital Adequacy Assessment Process;
+- collateral revaluation and flood mapping overlay;
 - engagement and transition-plan covenants with borrowers;
 - green retrofit financing incentives;
-- portfolio decarbonisation glide-path monitoring; and
+- portfolio decarbonisation glide-path monitoring;
 - sector exposure limits and enhanced due diligence.
 
-Source data indicates that 6 of the 8 climate-related risks in the register are integrated into the bank’s enterprise risk management (ERM) processes, and that 4 risks were changed since the prior period, reflecting updates to risk assessments or mitigation approaches. Material risk examples recorded in the register include transition risks related to the shift to electric vehicles in auto lending, stranded assets in the fossil fuel sector, carbon pricing on industrial loans, physical flood risk in the mortgage portfolio and reputational risk linked to financed emissions scrutiny. These examples include recorded financial impact estimates, time horizons, monitoring frequencies, ERM integration indicators and, where applicable, scenario analysis identifiers and mitigation actions.
+These mitigation actions are recorded at risk level in the register and indicate how specific climate-related risks are intended to be addressed. Six of the eight climate-related risks were flagged in the register as linked to the Bank’s enterprise risk management processes. These flags indicate linkages between specific climate-related risks and broader risk management activities, without implying full integration of climate risk across all elements of the enterprise risk management framework.
 
-In addition to the risk register, source data indicates that climate-related considerations are applied to major transactions through climate checks. These checks are evidenced as being performed for major transactions, but available documentation does not describe a formal mandatory policy or specific escalation thresholds for such checks.
+The climate risk register includes material risk examples such as:
 
-Documentation reviewed indicates that climate-related risks are integrated into ERM through ERM integration indicators and the inclusion of selected climate-related risks in the broader risk inventory. However, the documentation does not evidence formal escalation thresholds or trigger-based escalation mechanics for climate-related risks.
+- physical risk to the mortgage book from flood exposure, rated high, with a long-term time horizon, quarterly monitoring and an estimated potential financial impact of EUR 24.8 million;
+- transition market risk from potential stranded assets in fossil fuel sector exposures, rated high, with a long-term time horizon, quarterly monitoring and an estimated potential financial impact of EUR 136.5 million;
+- transition technology risk related to the shift to electric vehicles in auto lending, rated high, with a short-term time horizon, quarterly monitoring and an estimated potential financial impact of EUR 165.2 million;
+- transition policy risk from carbon pricing on industrial loans, rated high, with a medium-term time horizon, quarterly monitoring and an estimated potential financial impact of EUR 67.5 million;
+- transition reputational risk from scrutiny of financed emissions, rated medium, with a medium-term time horizon, semi-annual monitoring and an estimated potential financial impact of EUR 65.5 million.
 
-Source data for prior years records different management committee names (Group Sustainability Committee in 2022 and ESG Executive Committee in 2023). The documentation does not evidence whether these committees were predecessors of, or were formally renamed as, the Climate Risk Management Committee, and this report therefore presents the 2024 committee name without inferring continuity.
+Climate-related considerations are also applied to major transactions. In 2024, climate checks were applied to major transactions, reflecting the consideration of climate-related risks and opportunities in significant credit or investment decisions. The Bank does not currently describe these checks as a formal mandatory policy across all transactions.
+
+The Bank notes that management committee names differ across years in the underlying data (Group Sustainability Committee in 2022, ESG Executive Committee in 2023 and Climate Risk Management Committee in 2024). This report presents the 2024 Climate Risk Management Committee as the management body with climate-related responsibilities in the reporting year and does not infer continuity or formal renaming between prior-year committees.
+
+Formal escalation thresholds or trigger-based escalation mechanics for climate-related risks are not described in the underlying process documentation. As a result, this report does not present quantitative escalation thresholds for climate-related risk management.
 
 #### Skills, competencies and remuneration
 
-Board-level climate-related skills and competencies are evidenced by the proportion of Board members with climate-related expertise and by a skills development programme. Source data indicates that the percentage of Board members with climate-related expertise increased from 33.5% in 2022 to 35.5% in 2023 and 37.5% in 2024. A skills development programme is in place, under which Board members and senior executives participate in climate-related training and briefings. Available documentation does not describe a formal process by which the Board assesses the adequacy of its climate-related skills and competencies; this report therefore relies on the observed expertise percentage and the existence of the skills development programme as evidence of activity in this area.
+Board-level climate-related skills and competencies are reflected in the proportion of Board members with climate expertise. In 2024, 37.5% of Board members were recorded as having climate-related expertise, compared with 35.5% in 2023 and 33.5% in 2022. The Bank has a skills development programme that relates to climate-related risks and opportunities.
 
-Remuneration structures incorporate ESG and climate-related components. For the Chief Executive Officer, the proportion of total compensation linked to ESG-related performance increased from 6.3% in 2022 to 7.8% in 2023 and 9.3% in 2024. For the wider executive population, the proportion of remuneration linked to climate-related performance metrics was 8.7% in 2022, 15.3% in 2023 and 15.1% in 2024. These metrics indicate that climate-related performance is considered in executive remuneration, including for the CEO and other executives, and that the weighting of such components has increased compared with 2022.
+The Bank does not currently disclose a formal process for assessing the adequacy of Board climate-related skills and competencies against defined criteria. The reported climate expertise percentages and the existence of a skills development programme are therefore presented as outcome and activity indicators rather than as evidence of a formal skills adequacy assessment framework.
 
-Available documentation indicates that the ESG & Sustainability Committee considered climate-related aspects of executive remuneration in 2024 as part of its activities. However, the documentation does not provide a detailed description of the underlying performance metrics or the internal process used to determine the adequacy of climate-related skills and competencies at Board level.
+Climate-related performance is incorporated into remuneration. In 2024:
+
+- 9.3% of the Chief Executive Officer’s total compensation was linked to ESG-related performance measures, compared with 7.8% in 2023 and 6.3% in 2022; and
+- 15.1% of all executive remuneration was linked to climate-related performance, compared with 15.3% in 2023 and 8.7% in 2022.
+
+These linkages reflect the inclusion of climate-related and broader ESG objectives in executive incentive structures. Board and committee discussions in 2024 included consideration of executive remuneration ESG key performance indicators, as summarised in the final subsection of this Governance section.
 
 #### Governance decisions, controls and evidence boundaries
 
-In 2024, the Board of Directors and the ESG & Sustainability Committee took a number of documented climate-related decisions:
+**Documented 2024 Board and committee decisions**
 
-- On 24 January 2024, the Full Board approved the 2024 ESG report for publication, following consideration of climate-related disclosures and associated reporting.
-- On 15 April 2024, the ESG & Sustainability Committee approved a climate scenario analysis methodology, which was subsequently considered by the Full Board on 10 June, 17 July and 29 August 2024.
-- On 15 April, 20 May and 19 July 2024, the ESG & Sustainability Committee considered climate-related aspects of executive remuneration, net-zero progress, physical risk updates, scenario analysis and transition plan matters, culminating in a Full Board decision on 26 November 2024 to approve a carbon credit procurement budget for 2024.
-- On 7 October 2024, the Full Board endorsed an updated transition plan, following prior review of transition plan matters by the ESG & Sustainability Committee.
-- On 1 November 2024, the Full Board endorsed a revision to interim net-zero targets, following consideration of net-zero progress and related matters.
+In 2024, the Board of Directors and the ESG & Sustainability Committee took a number of specific climate-related decisions:
 
-These decisions, together with the semi-annual climate risk reports and the climate risk register, form the principal evidence of how climate-related risks and opportunities are taken into account in the bank’s strategy, major transactions and risk management processes. The decision evidence does not describe quantified or specific Board-level trade-offs between climate-related objectives and other considerations such as profitability, capital allocation, implementation cost, risk appetite or competing strategic priorities.
+- On 24 January 2024, the Full Board approved the 2024 ESG report for publication. The topics discussed in connection with this decision included the review of the Bank’s transition plan and the approval of a carbon credit procurement budget for 2024.
+- On 15 April 2024, the ESG & Sustainability Committee considered climate-related matters including executive remuneration ESG key performance indicators, net-zero progress, physical risk updates, climate-related disclosure frameworks and the transition plan. Following committee review, the climate scenario analysis methodology was approved through a sequence of meetings held on 15 April, 10 June, 17 July and 29 August 2024 involving both the ESG & Sustainability Committee and the Full Board.
+- On 15 April, 20 May and 19 July 2024, the ESG & Sustainability Committee considered climate-related topics including executive remuneration ESG key performance indicators, net-zero progress, physical risk updates, scenario analysis, climate-related disclosure frameworks and the transition plan. On 26 November 2024, the Full Board approved the carbon credit procurement budget for 2024, following these committee discussions.
+- On 7 October 2024, the Full Board discussed green finance growth and climate-related disclosure frameworks and endorsed an updated transition plan.
+- On 1 November 2024, the Full Board discussed net-zero progress and endorsed a revision to the Bank’s interim net-zero target.
 
-Controls and procedures used by management to support the oversight of climate-related risks and opportunities are evidenced by:
+These decisions show Board and committee involvement in climate-related strategy, target setting, transition planning, scenario analysis, resource allocation (including carbon credit procurement), climate-related disclosures and the integration of climate-related metrics into executive remuneration.
 
-- the Climate Risk Management Committee’s coordination role and semi-annual reporting to the Board;
-- the climate risk register, which in 2024 recorded 8 climate-related risks with categories, ratings, time horizons, monitoring frequencies, scenario analysis identifiers and mitigation actions;
-- ERM integration indicators, with 6 of the 8 climate-related risks recorded as integrated into the broader ERM framework;
-- climate checks for major transactions, which are evidenced as being performed but are not documented as a formal mandatory policy with defined thresholds; and
-- the use of climate scenario analysis identifiers to link selected risks to specific climate-related scenarios.
+**Controls, procedures and assurance**
 
-External assurance over climate-related information is limited in scope. For 2024, EY provided limited assurance in accordance with ISAE 3000 over the bank’s Scope 1 and Scope 2 greenhouse gas emissions. Based on available evidence, financed emissions and other Scope 3 categories, including the bank’s 2024 financed emissions of 35,973,167.6878965 tCO2e, are outside the stated assurance scope.
+Climate-related governance controls and procedures in 2024 included:
 
-Source data flags the bank’s climate-related disclosures as aligned with TCFD and IFRS S2. However, available documentation does not evidence a separate governance control process specifically designed to verify or assure such alignment. Accordingly, this report notes the alignment indicators as source-data attributes rather than as outcomes of a distinct governance control.
+- semi-annual climate risk reporting to the Board, providing an overview of material climate-related risks drawn from the climate risk register, including risk classifications, monitoring frequencies and estimated financial impacts;
+- the use of a climate risk register that recorded eight climate-related risks, including risk categories, ratings, time horizons, monitoring frequencies, links to climate-related scenario analysis, mitigation actions recorded in the register and indicators of integration into enterprise risk management processes, with six of the eight risks flagged as linked to those processes and four risks having changed since the prior period;
+- climate checks applied to major transactions, reflecting the consideration of climate-related risks and opportunities in significant credit or investment decisions, without being described as a formal mandatory policy across all transactions;
+- climate scenario stress testing recorded in the climate risk register as a mitigation action integrated into the Internal Capital Adequacy Assessment Process;
+- the linkage of executive remuneration to climate-related and broader ESG performance metrics, including the Chief Executive Officer’s ESG-linked compensation percentage and the all-executive climate-linked remuneration percentage.
 
-Documentation reviewed does not include:
+External assurance over climate-related information in this report is limited to Scope 1 and Scope 2 greenhouse gas emissions. In 2024, EY provided limited assurance in accordance with ISAE 3000 over the Bank’s Scope 1 and Scope 2 emissions, as specified in the assurance statement. Financed emissions and other Scope 3 categories, including the Bank’s 2024 financed emissions of 35,973,167.6878965 tonnes of carbon dioxide equivalent, are outside the scope of this external assurance.
 
-- a separate climate-specific charter, terms of reference or formal mandate for the Board or the ESG & Sustainability Committee, beyond the evidence of their activities and meeting frequencies;
-- a formal Board-level process for assessing the adequacy of climate-related skills and competencies, beyond the observed expertise percentage and skills development programme;
-- formal escalation thresholds or trigger-based escalation mechanics for climate-related risks within the climate risk register or ERM processes; or
-- criteria used by the Board or management to assess the quality of ESG factor incorporation in credit analysis beyond the existence of ERM integration indicators, climate risk reporting and climate checks for major transactions.
+**Evidence boundaries and limitations**
 
-These evidence boundaries should be considered when interpreting the governance disclosures in this section and when assessing the extent to which climate-related governance processes, controls and procedures are formalised within Eurolux Universal Bank AG.
+This Governance section is subject to the following evidence boundaries and limitations:
+
+- Formal mandates and terms of reference: The Bank does not currently disclose a separate climate-specific charter, terms of reference or formal mandate for the Board or the ESG & Sustainability Committee. Governance descriptions in this section are therefore based on roles, activities, meeting frequencies and documented decisions rather than on formal climate-specific mandate documents.
+- Trade-offs: Board decision records identify climate-related decisions on targets, transition planning, scenario methodologies, carbon credit procurement, disclosures and remuneration. However, the decision records do not describe quantified or specific Board-level trade-offs between climate-related objectives and factors such as profitability, capital allocation, implementation cost, risk appetite or competing strategic priorities. This report therefore does not present detailed trade-off analyses.
+- Skills adequacy assessment: The Bank does not currently disclose a formal process for assessing the adequacy of Board climate-related skills and competencies against defined criteria. The reported climate expertise percentages and the existence of a skills development programme are presented as indicators of skills and training, not as evidence of a formal skills adequacy assessment framework.
+- Escalation thresholds: Process documentation for the climate risk register and related management activities does not describe formal escalation thresholds or trigger-based escalation mechanics for climate-related risks. As a result, this report does not specify quantitative escalation thresholds for climate-related risk escalation to management or the Board.
+- Management committee continuity: Different management committee names are recorded for 2022 (Group Sustainability Committee), 2023 (ESG Executive Committee) and 2024 (Climate Risk Management Committee). The Bank does not currently disclose whether these committees represent a single evolving body or separate committees. This report therefore treats the Climate Risk Management Committee as the relevant management body for 2024 without inferring continuity or renaming from prior years.
+- TCFD and IFRS S2 alignment indicators: Internal data flags the Bank’s climate-related disclosures as aligned with TCFD and IFRS S2. The Bank does not currently disclose a separate governance control process specifically designed to verify or assure such alignment. References to alignment in this report should therefore be understood as internal alignment indicators rather than as outcomes of a distinct alignment assurance process.

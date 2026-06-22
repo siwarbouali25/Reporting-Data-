@@ -11,12 +11,12 @@
     "required_structure_present": true,
     "report_style_structure_present": true,
     "approach_to_ifrs_s1_s2_present": true,
-    "fair_presentation_boundary_correct": true,
+    "fair_presentation_boundary_correct": false,
     "connected_information_present": true,
     "comparative_information_handled_correctly": true,
     "timing_and_location_handled_correctly": true,
     "reporting_entity_business_model_value_chain_present": true,
-    "sources_of_guidance_handled_correctly": false,
+    "sources_of_guidance_handled_correctly": true,
     "statement_of_compliance_not_overclaimed": true,
     "materiality_not_invented": true,
     "no_whole_report_assurance_overclaim": true,
@@ -24,24 +24,26 @@
     "no_visible_internal_refs_or_file_names": true
   },
   "issues": [
-    "Sources of guidance section overreaches: evidence does not support claims about what other frameworks were or were not considered/applied; must be reframed as an evidence boundary.",
-    "Missing explicit disclosure that synthetic/generated data is used, despite evidence package flagging this at report level.",
-    "A few statements risk implying broader governance/decision documentation than evidenced (limited decision records)."
+    "Assurance language is too specific and implies assurance may have been obtained for Scope 1 and Scope 2, which is not evidenced here and conflicts with the stated lack of detailed operational GHG data.",
+    "Transparency gap: the evidence package explicitly flags use of synthetic/generated data at report level, but the draft does not disclose this boundary.",
+    "Some “section will include” descriptions (governance/strategy/risk/metrics) risk overpromising content breadth; General Requirements should describe what the Bank discloses, not what internal records exist."
   ],
   "available_evidence_omitted": [
-    "Bank regulatory regime context in evidence package (CSRD) is not reflected; draft uses generic 'evolving requirements' wording without anchoring to the evidenced regime.",
-    "Report-level boundary that synthetic/generated data is used (uses_synthetic_or_generated_data=true) is not explicitly disclosed in the draft."
+    "Report-level boundary that the report uses synthetic or generated data (report_level_boundaries.uses_synthetic_or_generated_data=true) is not disclosed anywhere in General Requirements.",
+    "Known evidence boundary that operational GHG records are not available (operational_ghg_records_available=false) is not explicitly reflected; draft instead implies selected Scope 1 and Scope 2 information exists and may be assured.",
+    "Known evidence boundary that methodology records are not available (methodology_records_available=false) is only partially reflected; draft says detailed methodologies are not disclosed, but does not clearly state they are not currently available/maintained at the level needed for disclosure."
   ],
   "unsupported_claims": [
-    "Sources of guidance section implies IFRS S1/S2 are the 'primary framing' and that no other frameworks were applied; however, the evidence package 'sources_of_guidance' is empty and does not evidence what guidance was applied or not applied.",
-    "Connected information section states the Governance section includes 'frequency of ESG- and climate-related discussions' and 'climate-related decision records'—while board_minutes/decision evidence exists, the draft risks implying comprehensive decision records beyond the limited evidenced set (selected_decision_count=5)."
+    "“The report is not externally assured as a whole. Any external assurance, where obtained, is limited to selected greenhouse gas information relating to Scope 1 and Scope 2 emissions.” (Assurance existence is not evidenced in the General Requirements evidence package; only a boundary flag indicates assurance evidence exists, without specifying that assurance was actually obtained for this reporting period/report.)",
+    "“The Governance section describes key elements of Board and management oversight … including information on committee structures, meeting frequency, skills and remuneration linkages …” (The evidence package indicates some governance metrics exist, but this sentence risks overpromising breadth—eg, committee structures and meeting frequency may be present, but “skills” and “remuneration linkages” should be stated as what is actually disclosed, not what records exist.)",
+    "“The Strategy section outlines … including the use of climate scenario analysis where available.” (Scenario analysis exists in other section payload keys, but General Requirements evidence does not itself evidence that scenario analysis is actually used/disclosed in the Strategy section as drafted; acceptable if the Strategy section indeed contains it, but as a standalone evaluation this is a mild support gap.)"
   ],
   "material_unsupported_claims": [
-    "Sources of guidance: 'The available evidence does not document the application or consideration of other sustainability disclosure frameworks or standards (such as SASB...)' conflicts with IFRS S1 expectations to consider SASB and is not supported by evidence (sources_of_guidance is blank). This should be reframed to: 'No documentation was available in the evidence set on whether SASB or other sources were considered/applied.'"
+    "External assurance wording implies assurance may have been obtained for Scope 1 and Scope 2. Given operational GHG records are flagged as not available, and the evidence package does not provide an assurance statement or scope details for the reporting period, this must be reframed to avoid implying assurance was obtained (eg, state the Bank does not obtain external assurance for this report; if assurance is obtained in future/elsewhere, specify location and scope)."
   ],
   "minor_wording_to_tighten": [
-    "Fair presentation: 'The Bank aims to present the information in a transparent, balanced and decision‑oriented manner.' This is aspirational and acceptable, but could be tightened to avoid implying a formal policy not evidenced.",
-    "Connected information: trend metrics are described as used to 'illustrate the evolution of oversight over time'—acceptable given trend metrics exist, but clarify that these are the specific trend KPIs available in evidence (not a complete governance effectiveness assessment).",
-    "Materiality assessment: 'risk‑ and portfolio‑driven screening approach' is plausible but not evidenced as a documented process artefact; keep but explicitly label as 'based on available evidence indicators' rather than a formal process."
+    "“This report sets out … climate‑ and sustainability‑related financial disclosures.” (Fine, but could clarify that the report focuses primarily on climate, with broader sustainability only to the extent addressed, to avoid implying full S1 breadth.)",
+    "“These horizons are intended to be broadly consistent with the Bank’s internal strategic and risk planning cycles.” (Defensible; could be tightened to “are aligned to” only if evidenced.)",
+    "“The Bank seeks to describe the nature of the metrics and key limitations at a high level in the relevant sections of the report.” (Could be tightened to avoid implying this is consistently done unless confirmed in the core sections.)"
   ]
 }
