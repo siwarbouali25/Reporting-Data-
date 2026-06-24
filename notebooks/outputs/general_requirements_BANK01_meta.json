@@ -8,15 +8,15 @@
   "revisions": 3,
   "approved": false,
   "checklist": {
-    "required_structure_present": true,
+    "required_structure_present": false,
     "report_style_structure_present": true,
     "approach_to_ifrs_s1_s2_present": true,
-    "fair_presentation_boundary_correct": false,
+    "fair_presentation_boundary_correct": true,
     "connected_information_present": true,
     "comparative_information_handled_correctly": true,
     "timing_and_location_handled_correctly": true,
     "reporting_entity_business_model_value_chain_present": true,
-    "sources_of_guidance_handled_correctly": true,
+    "sources_of_guidance_handled_correctly": false,
     "statement_of_compliance_not_overclaimed": true,
     "materiality_not_invented": true,
     "no_whole_report_assurance_overclaim": true,
@@ -24,26 +24,28 @@
     "no_visible_internal_refs_or_file_names": true
   },
   "issues": [
-    "Assurance language is too specific and implies assurance may have been obtained for Scope 1 and Scope 2, which is not evidenced here and conflicts with the stated lack of detailed operational GHG data.",
-    "Transparency gap: the evidence package explicitly flags use of synthetic/generated data at report level, but the draft does not disclose this boundary.",
-    "Some “section will include” descriptions (governance/strategy/risk/metrics) risk overpromising content breadth; General Requirements should describe what the Bank discloses, not what internal records exist."
+    "Required structure gap: the draft does not present the full 'Emirates-style' nine required headings as discrete headings in the expected format (it has eight main subsections and lacks a dedicated 'Reporting period' / 'Reporting boundary and consolidation' heading; boundaries are embedded but not as a standalone required heading).",
+    "Sources of guidance handling is the main IFRS S1 General Requirements weakness: it risks non-compliance/omission because external methodologies are likely used for financed emissions and scenario analysis but are not identified as applied.",
+    "Several statements imply integration into ERM/risk appetite/credit policy and use of specific tools (risk register, scenario outputs) without clear boundary language in this section; this increases hallucination risk if the underlying sections do not fully substantiate."
   ],
   "available_evidence_omitted": [
-    "Report-level boundary that the report uses synthetic or generated data (report_level_boundaries.uses_synthetic_or_generated_data=true) is not disclosed anywhere in General Requirements.",
-    "Known evidence boundary that operational GHG records are not available (operational_ghg_records_available=false) is not explicitly reflected; draft instead implies selected Scope 1 and Scope 2 information exists and may be assured.",
-    "Known evidence boundary that methodology records are not available (methodology_records_available=false) is only partially reflected; draft says detailed methodologies are not disclosed, but does not clearly state they are not currently available/maintained at the level needed for disclosure."
+    "Report-level boundary that the report uses synthetic or generated data (report_level_boundaries.uses_synthetic_or_generated_data=true) is not explicitly stated in the General Requirements section.",
+    "Known evidence boundary that formal governance mandate is not available (formal_governance_mandate_available=false) is not reflected as a governance boundary in this General Requirements section (though it is acceptable to place in Governance).",
+    "Known evidence boundary that formal escalation thresholds are not available (formal_escalation_thresholds_available=false) is not reflected as a boundary statement (acceptable to place in Risk management/Governance).",
+    "Known evidence boundary that operational GHG records are not available (operational_ghg_records_available=false) is not reflected here (though it may be covered in Metrics and targets)."
   ],
   "unsupported_claims": [
-    "“The report is not externally assured as a whole. Any external assurance, where obtained, is limited to selected greenhouse gas information relating to Scope 1 and Scope 2 emissions.” (Assurance existence is not evidenced in the General Requirements evidence package; only a boundary flag indicates assurance evidence exists, without specifying that assurance was actually obtained for this reporting period/report.)",
-    "“The Governance section describes key elements of Board and management oversight … including information on committee structures, meeting frequency, skills and remuneration linkages …” (The evidence package indicates some governance metrics exist, but this sentence risks overpromising breadth—eg, committee structures and meeting frequency may be present, but “skills” and “remuneration linkages” should be stated as what is actually disclosed, not what records exist.)",
-    "“The Strategy section outlines … including the use of climate scenario analysis where available.” (Scenario analysis exists in other section payload keys, but General Requirements evidence does not itself evidence that scenario analysis is actually used/disclosed in the Strategy section as drafted; acceptable if the Strategy section indeed contains it, but as a standalone evaluation this is a mild support gap.)"
+    "Connected information / Governance: 'Governance trend metrics ... are used to illustrate how oversight is evolving over time.' (Support for trend metrics exists, but whether they are actually presented/used in the Governance section cannot be confirmed from the General Requirements evidence package alone.)",
+    "Strategy: 'This includes the use of climate scenario analysis and a climate risk register...' (Scenario analysis and risk register exist in other section payload keys, but this General Requirements section does not cite boundaries/extent; wording is broadly plausible but should be tightened to avoid implying completeness.)",
+    "Risk management: 'integrated into the Bank’s broader risk management framework... to inform risk appetite, credit policies and portfolio steering.' (ERM integration/risk appetite linkage is not evidenced in the General Requirements package; could be true but not supported here.)",
+    "Statement of compliance: 'Scope 1 and Scope 2 emissions are subject to limited external assurance (see Metrics and targets).' (Assurance evidence exists at a boundary level, but the assurance provider/standard/period/scope details are not evidenced in this package; keep but ensure Metrics and targets substantiates.)"
   ],
   "material_unsupported_claims": [
-    "External assurance wording implies assurance may have been obtained for Scope 1 and Scope 2. Given operational GHG records are flagged as not available, and the evidence package does not provide an assurance statement or scope details for the reporting period, this must be reframed to avoid implying assurance was obtained (eg, state the Bank does not obtain external assurance for this report; if assurance is obtained in future/elsewhere, specify location and scope)."
+    "Sources of guidance: The requirements pack expects identification of other guidance applied (e.g., SASB consideration). The draft states it does not identify other standards beyond IFRS S1/S2; however, elsewhere in the report (Metrics and targets / financed emissions / scenario analysis) it is highly likely that external methodologies are used. Without explicit confirmation, this creates a material risk of omission/misstatement. Either (a) explicitly state that no other external standards were applied, or (b) list the specific ones actually used (e.g., PCAF for financed emissions, GHG Protocol for Scopes 1–3, scenario providers) if they are used in the underlying sections."
   ],
   "minor_wording_to_tighten": [
-    "“This report sets out … climate‑ and sustainability‑related financial disclosures.” (Fine, but could clarify that the report focuses primarily on climate, with broader sustainability only to the extent addressed, to avoid implying full S1 breadth.)",
-    "“These horizons are intended to be broadly consistent with the Bank’s internal strategic and risk planning cycles.” (Defensible; could be tightened to “are aligned to” only if evidenced.)",
-    "“The Bank seeks to describe the nature of the metrics and key limitations at a high level in the relevant sections of the report.” (Could be tightened to avoid implying this is consistently done unless confirmed in the core sections.)"
+    "Fair presentation: 'The Bank aims to prepare this report in a transparent, balanced and decision-useful manner.' (Fine, but avoid implying neutrality/faithful representation beyond what is supported; current wording is mostly aspirational.)",
+    "Connected information: 'The Bank aims to ensure that the data and assumptions ... are ... consistent with those used in preparing the related financial statements...' (Acceptable as an aim; avoid implying achieved consistency without specifying what is actually aligned.)",
+    "Timing and location: 'The disclosures form part of ... dedicated sustainability and climate-related financial reporting for the period.' (Acceptable, but could clarify whether this is a standalone report or part of another publication; draft already notes publication date/location not specified.)"
   ]
 }
