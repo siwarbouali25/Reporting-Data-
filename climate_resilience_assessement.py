@@ -59,7 +59,8 @@ SCRIPT_NAME = "generate_climate_resilience_assessment.py"
 TABLE_NAME = "climate_resilience_assessment_raw"
 
 LLM_MODEL = "gpt-4o-mini"
-OPENAI_API_URL = "https://api.openai.com/v1/chat/completions"
+OPENAI_API_URL = "https://eyq-incubator.europe.fabric.ey.com/eyq/eu/api/openai/deployments/gpt-4o-mini/chat/completions"
+
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "")
 
 PRICE_INPUT_PER_1K = 0.000150
@@ -750,7 +751,8 @@ def call_openai(
                 data=json.dumps(payload).encode("utf-8"),
                 headers={
                     "Content-Type": "application/json",
-                    "Authorization": f"Bearer {OPENAI_API_KEY}",
+                    "api-key": OPENAI_API_KEY,
+
                 },
                 method="POST",
             )

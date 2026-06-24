@@ -1,0 +1,51 @@
+{
+  "bank_id": "BANK01",
+  "bank_name": "Eurolux Universal Bank AG",
+  "section": "general_requirements",
+  "status": "needs_human_review",
+  "approval_status": "needs_human_review",
+  "final_score": 7,
+  "revisions": 3,
+  "approved": false,
+  "checklist": {
+    "required_structure_present": false,
+    "report_style_structure_present": true,
+    "approach_to_ifrs_s1_s2_present": true,
+    "fair_presentation_boundary_correct": true,
+    "connected_information_present": true,
+    "comparative_information_handled_correctly": true,
+    "timing_and_location_handled_correctly": true,
+    "reporting_entity_business_model_value_chain_present": true,
+    "sources_of_guidance_handled_correctly": false,
+    "statement_of_compliance_not_overclaimed": true,
+    "materiality_not_invented": true,
+    "no_whole_report_assurance_overclaim": true,
+    "no_financed_emissions_assurance_overclaim": true,
+    "no_visible_internal_refs_or_file_names": true
+  },
+  "issues": [
+    "Required structure gap: the draft does not present the full 'Emirates-style' nine required headings as discrete headings in the expected format (it has eight main subsections and lacks a dedicated 'Reporting period' / 'Reporting boundary and consolidation' heading; boundaries are embedded but not as a standalone required heading).",
+    "Sources of guidance handling is the main IFRS S1 General Requirements weakness: it risks non-compliance/omission because external methodologies are likely used for financed emissions and scenario analysis but are not identified as applied.",
+    "Several statements imply integration into ERM/risk appetite/credit policy and use of specific tools (risk register, scenario outputs) without clear boundary language in this section; this increases hallucination risk if the underlying sections do not fully substantiate."
+  ],
+  "available_evidence_omitted": [
+    "Report-level boundary that the report uses synthetic or generated data (report_level_boundaries.uses_synthetic_or_generated_data=true) is not explicitly stated in the General Requirements section.",
+    "Known evidence boundary that formal governance mandate is not available (formal_governance_mandate_available=false) is not reflected as a governance boundary in this General Requirements section (though it is acceptable to place in Governance).",
+    "Known evidence boundary that formal escalation thresholds are not available (formal_escalation_thresholds_available=false) is not reflected as a boundary statement (acceptable to place in Risk management/Governance).",
+    "Known evidence boundary that operational GHG records are not available (operational_ghg_records_available=false) is not reflected here (though it may be covered in Metrics and targets)."
+  ],
+  "unsupported_claims": [
+    "Connected information / Governance: 'Governance trend metrics ... are used to illustrate how oversight is evolving over time.' (Support for trend metrics exists, but whether they are actually presented/used in the Governance section cannot be confirmed from the General Requirements evidence package alone.)",
+    "Strategy: 'This includes the use of climate scenario analysis and a climate risk register...' (Scenario analysis and risk register exist in other section payload keys, but this General Requirements section does not cite boundaries/extent; wording is broadly plausible but should be tightened to avoid implying completeness.)",
+    "Risk management: 'integrated into the Bank’s broader risk management framework... to inform risk appetite, credit policies and portfolio steering.' (ERM integration/risk appetite linkage is not evidenced in the General Requirements package; could be true but not supported here.)",
+    "Statement of compliance: 'Scope 1 and Scope 2 emissions are subject to limited external assurance (see Metrics and targets).' (Assurance evidence exists at a boundary level, but the assurance provider/standard/period/scope details are not evidenced in this package; keep but ensure Metrics and targets substantiates.)"
+  ],
+  "material_unsupported_claims": [
+    "Sources of guidance: The requirements pack expects identification of other guidance applied (e.g., SASB consideration). The draft states it does not identify other standards beyond IFRS S1/S2; however, elsewhere in the report (Metrics and targets / financed emissions / scenario analysis) it is highly likely that external methodologies are used. Without explicit confirmation, this creates a material risk of omission/misstatement. Either (a) explicitly state that no other external standards were applied, or (b) list the specific ones actually used (e.g., PCAF for financed emissions, GHG Protocol for Scopes 1–3, scenario providers) if they are used in the underlying sections."
+  ],
+  "minor_wording_to_tighten": [
+    "Fair presentation: 'The Bank aims to prepare this report in a transparent, balanced and decision-useful manner.' (Fine, but avoid implying neutrality/faithful representation beyond what is supported; current wording is mostly aspirational.)",
+    "Connected information: 'The Bank aims to ensure that the data and assumptions ... are ... consistent with those used in preparing the related financial statements...' (Acceptable as an aim; avoid implying achieved consistency without specifying what is actually aligned.)",
+    "Timing and location: 'The disclosures form part of ... dedicated sustainability and climate-related financial reporting for the period.' (Acceptable, but could clarify whether this is a standalone report or part of another publication; draft already notes publication date/location not specified.)"
+  ]
+}
