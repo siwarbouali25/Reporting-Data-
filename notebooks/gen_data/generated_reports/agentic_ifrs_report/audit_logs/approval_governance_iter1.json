@@ -1,68 +1,56 @@
 {
   "section_name": "Governance",
   "approved": false,
-  "reason": "deterministic_gates_failed",
-  "required_fixes": {
-    "section_name": "Governance",
-    "passed": false,
-    "gates": [
-      {
-        "gate_name": "claims_integrity",
-        "passed": false,
-        "failures": [
-          {
-            "claim_id": "GOV-011",
-            "issue": "claim_marked_unsupported",
-            "claim": "Climate-related matters are incorporated into board oversight through agenda coverage and periodic reporting."
-          },
-          {
-            "claim_id": "GOV-011",
-            "issue": "no_evidence_source",
-            "claim": "Climate-related matters are incorporated into board oversight through agenda coverage and periodic reporting."
-          }
-        ],
-        "claim_count": 11
-      },
-      {
-        "gate_name": "factlock_numbers_entities",
-        "passed": false,
-        "failures": [
-          {
-            "type": "number_not_in_payload_or_claims",
-            "value": "33.5%"
-          },
-          {
-            "type": "number_not_in_payload_or_claims",
-            "value": "69.8%"
-          }
-        ],
-        "draft_numbers": [
-          "1",
-          "1.1",
-          "1.2",
-          "1.3",
-          "10",
-          "33.5%",
-          "4",
-          "5",
-          "6",
-          "69.8%"
-        ],
-        "draft_entities": [
-          "Group Sustainability Committee",
-          "IFRS S2"
-        ]
-      },
-      {
-        "gate_name": "reference_firewall",
-        "passed": true,
-        "forbidden_term_hits": []
-      },
-      {
-        "gate_name": "report_cleanliness_no_missing_payload_language",
-        "passed": true,
-        "blocked_phrase_hits": []
-      }
-    ]
+  "scores": {
+    "ifrs_coverage": 6.0,
+    "evidence": 3.0,
+    "style": 6.2
+  },
+  "failures": [
+    {
+      "judge": "ifrs_coverage_judge",
+      "score": 6.0,
+      "required_fixes": [
+        "Identify the specific governance body(ies)/committee(s) and/or designated individual(s) responsible for oversight of sustainability-related and climate-related risks and opportunities (not just generic placeholders).",
+        "Disclose how the governance body assesses whether appropriate skills/competencies are available or will be developed (eg skills matrix, training plan, external advisors), leveraging available evidence (skills development programme; board climate expertise %).",
+        "Disclose how and how often the governance body is informed about sustainability/climate risks and opportunities (cadence and channels), leveraging available evidence (board/committee meeting frequency; climate risk reporting to board; agenda coverage).",
+        "Explain how targets oversight links to remuneration in practice (whether/how metrics are included; who is covered), leveraging available evidence (executive climate remuneration %).",
+        "Identify the management-level position/committee delegated responsibility and describe how oversight is exercised (reporting/escalation cadence), leveraging available evidence (management committee name).",
+        "Describe how management controls/procedures for sustainability/climate oversight are integrated with other internal functions (eg ERM integration), leveraging available evidence (ERM integration flag)."
+      ]
+    },
+    {
+      "judge": "evidence_judge",
+      "score": 3.0,
+      "required_fixes": [
+        "Replace generic assertions of assigned oversight and documented responsibilities (terms of reference/mandates/role descriptions/policies) with evidence-backed specifics, or qualify as 'intended'/'in development' if not evidenced.",
+        "Add evidence-backed specifics for information flow: state the actual reporting frequency (e.g., semi-annual) and describe the reporting mechanism/materials if evidenced; otherwise remove 'manner and frequency' language.",
+        "If claiming skills/competency oversight, tie to evidence (e.g., board_climate_expertise_pct, skills development programme) and describe the governance process only if supported; otherwise soften to 'assesses' only with proof.",
+        "For strategy/major transactions/risk management oversight and trade-offs, either cite concrete evidence (e.g., board/committee decision records) or remove/qualify the trade-off and decision-oversight assertions.",
+        "For targets/progress monitoring and remuneration linkage, either provide evidence of board oversight and policy linkage mechanics or narrow the claim to what is evidenced (e.g., remuneration includes ESG KPIs at X% and board discusses net zero progress).",
+        "For management role claims (responsibility, delegation, escalation, controls/procedures integration), identify the evidenced committee/position and provide evidence of reporting/escalation/controls; otherwise rephrase as 'management supports' without asserting formal responsibility structures."
+      ]
+    },
+    {
+      "judge": "style_judge",
+      "score": 6.2,
+      "required_fixes": [
+        "Introduce a short framing paragraph at the start of the Governance section that links sustainability- and climate-related governance to the business model, operations, and overall enterprise risk management context.",
+        "Add explicit one-sentence purpose statements at the start of each subsection (e.g., 'This subsection describes how the governance body oversees sustainability-related and climate-related risks and opportunities.').",
+        "Apply a numbered heading hierarchy aligned to IFRS pillars (e.g., '1 Governance', '1.1 Oversight of sustainability-related and climate-related risks and opportunities', '1.2 Management’s role').",
+        "Refine wording to use more standards-oriented and governance-specific verbs (e.g., 'oversees', 'reviews', 'approves', 'reports', 'escalates') and to clarify responsibility flows and decision rights.",
+        "Shorten or split longer multi-clause sentences and bullets to maintain clear subject–verb–object structure and improve readability, while keeping parallel grammar across list items.",
+        "Add a compact governance role-to-responsibility mapping table (with a numbered caption) that summarizes which governance bodies and management roles are accountable for specific sustainability- and climate-related oversight activities, and reference this table in the narrative.",
+        "Include a conceptual governance structure figure (with caption and numbering) that shows information flows and reporting lines between the governance body(ies), management-level committees/positions, and operational functions, and reference it in the text.",
+        "Close each major subsection with a brief connectivity sentence that links governance processes to related sections (e.g., Strategy, Risk Management, Metrics and Targets) using generic cross-reference placeholders.",
+        "Clarify, where relevant, whether described governance processes are current, under development, or planned, using cautious modality and standardized status labels (e.g., 'under development', 'not applicable', 'not reported for the period') for any missing or evolving elements.",
+        "Integrate references to generic documented artifacts (e.g., terms of reference, mandates, policies, periodic reports) as evidence of governance mechanics, while keeping them non-company-specific and aligned with the no-copying rules."
+      ]
+    }
+  ],
+  "thresholds": {
+    "ifrs_coverage_score_min": 8.0,
+    "evidence_score_min": 8.0,
+    "style_score_min": 7.5
   }
 }

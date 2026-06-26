@@ -1,0 +1,161 @@
+{
+  "section_name": "Metrics and Targets",
+  "ifrs_coverage_judge": {
+    "approved": false,
+    "ifrs_coverage_score_0_to_10": 2,
+    "missing_supported_requirements": [
+      {
+        "requirement_id": "IFRS_S1_46_C01",
+        "reason": "Draft is generic policy text and does not disclose any entity-specific metrics required by applicable IFRS Sustainability Disclosure Standards, despite evidence in payload indicating such metrics/target metrics exist (e.g., targets[].progress_metric, baseline_year/value, progress %)."
+      },
+      {
+        "requirement_id": "IFRS_S1_46_C03",
+        "reason": "No entity-specific metrics used to measure/monitor each sustainability-related risk/opportunity are disclosed; only a statement of what 'shall' be disclosed."
+      },
+      {
+        "requirement_id": "IFRS_S1_46_C04",
+        "reason": "No entity-specific performance/progress against targets (including legally required targets, if any) is disclosed, despite evidence paths showing progress percentages exist."
+      },
+      {
+        "requirement_id": "IFRS_S1_49_C01",
+        "reason": "Draft requires identifying source/metric when using non-IFRS sources, but does not actually identify any sources or metrics used by the entity, despite evidence that metrics exist."
+      },
+      {
+        "requirement_id": "IFRS_S1_50_C01",
+        "reason": "No entity-developed metric definitions or adjustments from external sources are disclosed; only boilerplate requirements."
+      },
+      {
+        "requirement_id": "IFRS_S1_50_C02",
+        "reason": "No classification of entity metrics as absolute/ratio/qualitative is provided for any actual metric."
+      },
+      {
+        "requirement_id": "IFRS_S1_50_C03",
+        "reason": "No disclosure of whether metrics are third-party validated and by whom, despite evidence fields (targets[].third_party_validated, validation_body)."
+      },
+      {
+        "requirement_id": "IFRS_S1_50_C04",
+        "reason": "No entity-specific calculation methods/inputs/assumptions/limitations are disclosed for any metric."
+      },
+      {
+        "requirement_id": "IFRS_S1_51_C01",
+        "reason": "Targets are described as a requirement, but no actual targets and their monitoring metrics are disclosed, despite evidence that targets exist."
+      },
+      {
+        "requirement_id": "IFRS_S1_51_C02",
+        "reason": "No specific quantitative/qualitative target values are disclosed."
+      },
+      {
+        "requirement_id": "IFRS_S1_51_C03",
+        "reason": "No target periods are disclosed."
+      },
+      {
+        "requirement_id": "IFRS_S1_51_C04",
+        "reason": "No base period/baseline year/value is disclosed, despite evidence fields."
+      },
+      {
+        "requirement_id": "IFRS_S1_51_C05",
+        "reason": "No milestones/interim targets are disclosed, despite evidence (interim_milestones_json)."
+      },
+      {
+        "requirement_id": "IFRS_S1_51_C06",
+        "reason": "No performance against targets and no trend analysis is disclosed, despite evidence (target_progress_pct_2024)."
+      },
+      {
+        "requirement_id": "IFRS_S1_51_C07",
+        "reason": "No disclosure of revisions to targets (or explicit statement of none) and explanations."
+      },
+      {
+        "requirement_id": "IFRS_S1_B49_C01",
+        "reason": "Draft states comparative information is required but does not provide any comparative amounts for disclosed metrics (indeed, no amounts are disclosed), despite evidence that comparative years exist."
+      },
+      {
+        "requirement_id": "IFRS_S2_29_C03",
+        "reason": "No actual Scope 1 absolute gross GHG emissions (tCO2e) are disclosed, despite evidence (reporting_kpis.scope1_2024_tco2e)."
+      },
+      {
+        "requirement_id": "IFRS_S2_29_C04",
+        "reason": "No actual Scope 2 emissions (location- and/or market-based) are disclosed, despite evidence (scope2_location_2024_tco2e, scope2_market_2024_tco2e)."
+      },
+      {
+        "requirement_id": "IFRS_S2_29_C05",
+        "reason": "No actual Scope 3 emissions are disclosed, despite evidence (financed_emissions_2024_tco2e, scope3_travel_2024_tco2e)."
+      },
+      {
+        "requirement_id": "IFRS_S2_29_C25",
+        "reason": "No entity-specific explanation of whether/how internal carbon pricing is applied in decision-making is disclosed, despite evidence (internal_carbon_price[].application_scope, applies_to_lending_decisions)."
+      },
+      {
+        "requirement_id": "IFRS_S2_29_C26",
+        "reason": "No internal carbon price value(s) per tCO2e are disclosed, despite evidence (carbon_price_eur_per_tco2e)."
+      }
+    ],
+    "invented_missing_requirements": [],
+    "required_fixes": [
+      "Replace boilerplate 'shall disclose' language with entity-specific disclosures of metrics and targets actually used, using the available payload evidence (targets[], reporting_kpis.*, internal_carbon_price[]).",
+      "Disclose actual GHG emissions (Scope 1, Scope 2 location-based and market-based, and Scope 3) in metric tonnes CO2e for the reporting period, and provide comparative prior-period amounts where available.",
+      "For each disclosed target: provide the metric, target value, target period, baseline/base period (year and value), interim milestones, current-period performance/progress and trend commentary, and any revisions (or explicitly state none).",
+      "Where metrics come from non-IFRS sources (e.g., GHG Protocol), explicitly name the source and identify the metric taken; where entity-developed, provide definition, type (absolute/ratio/qualitative), calculation method/inputs/assumptions/limitations, and third-party validation status and validator name if applicable.",
+      "Disclose internal carbon price application (how used in decisions) and the price per tCO2e (including currency and scope of application)."
+    ],
+    "summary": "Not approved. The section is almost entirely boilerplate IFRS S1/S2 requirement text and does not provide the entity-specific metrics, targets, emissions figures, internal carbon price details, or comparative amounts that are supported by the payload evidence. No invented requirements were identified, but many supported mandatory requirements are not actually addressed with disclosures."
+  },
+  "evidence_judge": {
+    "approved": true,
+    "evidence_score_0_to_10": 10,
+    "unsupported_claims": [],
+    "questionable_claims": [],
+    "required_fixes": [],
+    "summary": "No unsupported claims detected. The section is written as a set of disclosure requirements and procedural statements that are internally supported by the provided draft text and mapped in the claims register to IFRS S1 paragraph references. No entity-specific metrics, targets, performance results, or factual assertions are introduced that would require payload evidence."
+  },
+  "style_judge": {
+    "approved": false,
+    "style_score_0_to_10": 6.8,
+    "voice_issues": [
+      "Section is written entirely in externally defined requirement language ('The entity shall...') and reads as a restatement of the standard rather than as entity-specific disclosure guidance.",
+      "No consistent report-level point of view is established (no 'we' for entity actions vs third-person for IFRS requirements as per guide); voice is purely normative/standard text.",
+      "Lack of distinction between externally defined IFRS requirements and how the reporting entity applies them in practice, which reduces decision-usefulness."
+    ],
+    "structure_issues": [
+      "Heading hierarchy does not follow the required numbered structure (e.g., '4 Metrics and Targets', '4.1 Metrics', etc.); uses unnumbered '##' and '###' headings instead.",
+      "Subsections do not start with a one-sentence purpose statement explaining what follows and why it matters; they move directly into prescriptive requirements.",
+      "There is no overview paragraph at the start of the section explaining scope, objectives, and how metrics/targets enable assessment of sustainability-related risks and opportunities.",
+      "No clear separation between general sustainability metrics (IFRS S1) and climate-specific metrics (IFRS S2) as required by the section style.",
+      "No methodology/transparency paragraph covering boundaries, data collection, estimation, and changes over time before listing requirements.",
+      "The layered structure (overview → structured bullets/tables → brief interpretation and cross-references) is missing; the section is almost entirely bullet lists of requirements.",
+      "The section does not close with a connectivity sentence linking metrics and targets to related sections or financial statements.",
+      "No tables or figures are used, despite the style guide specifying tables as the primary disclosure vehicle for metrics and targets.",
+      "No narrative lead-in sentences before bullets explaining what follows and why it matters; bullets often follow headings directly."
+    ],
+    "wording_issues": [
+      "Language is a near-verbatim restatement of IFRS-style requirements ('The entity shall disclose...') rather than entity-specific disclosure wording aligned to the report’s voice.",
+      "Preferred disclosure verbs are partially present (disclose, define, measure, calculate) but are used only in normative sense, not to describe actual reporting practices, methodologies, or boundaries.",
+      "Sentences are generally clear but are heavily prescriptive and do not distinguish between current-period facts, estimates, judgements, and forward-looking intentions.",
+      "No explicit status labels for applicability or availability (e.g., 'not applicable', 'not reported for the period', 'under development') are used, even where missing or estimated data is discussed.",
+      "No definitional constructions for specific metrics (e.g., 'Metric is defined as...') or boundaries; the text remains generic and standard-like.",
+      "The section does not introduce or define key terms beyond repeating 'sustainability-related risk or opportunity'; no additional controlled vocabulary is applied (e.g., impact vs financial materiality, time horizons)."
+    ],
+    "table_figure_issues": [
+      "No tables or figures are included, despite the section style specifying a metrics register table as the primary disclosure vehicle.",
+      "Because there are no tables or figures, there are no captions, numbers, or narrative references, which conflicts with the evidence and traceability rules.",
+      "No assurance legend, footnotes, or traceability metadata are provided at the data-point level, as required for metrics and targets.",
+      "No visual anchors or layout considerations are present; the section is dense text and bullets only, which is discouraged for PDF readability."
+    ],
+    "required_fixes": [
+      "Rewrite the section from a disclosure perspective rather than as a restatement of IFRS requirements. Use third-person for externally defined requirements (e.g., 'IFRS Sustainability Disclosure Standards require...') and first-person plural for entity actions (e.g., 'We disclose...', 'We measure...').",
+      "Add an opening overview paragraph that explains the purpose of the Metrics and Targets section, how it supports decision-usefulness, and the scope (sustainability-related and climate-related metrics and targets).",
+      "Introduce numbered headings aligned to the report structure (e.g., '4 Metrics and Targets', '4.1 Metrics', '4.2 Targets', '4.3 Methodology and boundaries', '4.4 Comparative information and changes').",
+      "Insert a short purpose statement at the start of each subsection (e.g., 'This subsection explains how we select and define metrics used to monitor sustainability-related risks and opportunities.').",
+      "Separate general sustainability metrics (IFRS S1) from climate-specific metrics (IFRS S2) using explicit subheadings and brief narrative explaining the distinction and mapping.",
+      "Develop a methodology/transparency subsection that describes boundaries, data sources, estimation approaches, calculation methods, validation/assurance, and how changes to metrics and targets are handled over time.",
+      "Replace purely normative bullet lists with entity-oriented disclosure bullets that describe what is actually reported (e.g., 'We report the following categories of metrics...', 'We define entity-developed metrics as...').",
+      "Introduce a metrics register table as the primary disclosure vehicle, with columns for: metric name, definition, boundary, reporting-period value/status, source type (IFRS/other/entity-developed), internal source reference, assurance status, and mapping to related report sections.",
+      "Ensure all tables have numbers and captions (e.g., 'Table 4.1: Sustainability-related metrics register') and reference them in the narrative.",
+      "Add explicit language for missing or incomplete data using standardized status labels ('not reported for the period', 'not applicable', 'under development') and briefly explain reasons, interim approaches, limitations, and planned enhancement direction.",
+      "Clarify how comparative information and revisions to comparative amounts are handled in practice, distinguishing between estimates, new information, and metric redefinitions, and cross-reference relevant methodology or appendix sections.",
+      "Close the section with a short connectivity paragraph linking metrics and targets to governance, strategy, risk management, and financial statement impacts (using generic cross-reference placeholders, e.g., 'Refer to [Section: Strategy]' and 'See [Appendix: Metrics Methodology]').",
+      "Review wording to ensure it uses standards-oriented verbs in a disclosure context (disclose, define, measure, calculate, report, reconcile, validate, review, update) and avoids copying IFRS standard sentences verbatim.",
+      "Introduce brief narrative lead-ins before bullet lists explaining what the bullets cover and why they are relevant for users of the report."
+    ],
+    "summary": "The section is structurally and tonally close to IFRS standard text rather than an entity-specific, audit-ready disclosure. It uses formal, neutral language and clear bullets, but lacks the required overview, numbered headings, methodology narrative, tables, and connectivity to other sections. It does not distinguish between sustainability and climate metrics, nor does it provide traceability, missing-data protocols, or entity-focused descriptions of how metrics and targets are defined, measured, and reported. Substantial restructuring and rewriting are needed to align with the approved authoring style and convert normative requirements into decision-useful disclosure content."
+  }
+}

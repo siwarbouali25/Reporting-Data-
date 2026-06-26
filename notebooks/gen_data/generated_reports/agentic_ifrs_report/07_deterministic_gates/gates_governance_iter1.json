@@ -1,63 +1,331 @@
 {
   "section_name": "Governance",
-  "passed": false,
+  "passed": true,
   "gates": [
     {
       "gate_name": "claims_integrity",
-      "passed": false,
-      "failures": [
+      "passed": true,
+      "failures": [],
+      "warnings": [
         {
-          "claim_id": "GOV-011",
-          "issue": "claim_marked_unsupported",
-          "claim": "Climate-related matters are incorporated into board oversight through agenda coverage and periodic reporting."
+          "claim_id": "GOV-001",
+          "issue": "no_evidence_source_after_repair",
+          "claim": "Oversight of sustainability-related and climate-related risks and opportunities is assigned to the entity’s governance body(ies) and/or designated individual(s) charged with governance."
         },
         {
-          "claim_id": "GOV-011",
-          "issue": "no_evidence_source",
-          "claim": "Climate-related matters are incorporated into board oversight through agenda coverage and periodic reporting."
+          "claim_id": "GOV-002",
+          "issue": "no_evidence_source_after_repair",
+          "claim": "Responsibilities for oversight of sustainability-related and climate-related risks and opportunities are reflected in applicable terms of reference, mandates, role descriptions and related policies for the governance body(ies) and/or individual(s)."
+        },
+        {
+          "claim_id": "GOV-004",
+          "issue": "no_evidence_source_after_repair",
+          "claim": "The governance body(ies) and/or individual(s) receive information about sustainability-related and climate-related risks and opportunities, including the manner and frequency with which such information is provided."
+        },
+        {
+          "claim_id": "GOV-005",
+          "issue": "no_evidence_source_after_repair",
+          "claim": "The governance body(ies) and/or individual(s) take sustainability-related and climate-related risks and opportunities into account when overseeing the entity’s strategy, decisions on major transactions, and risk management processes and related policies, including consideration of relevant trade-offs."
+        },
+        {
+          "claim_id": "GOV-006",
+          "issue": "no_evidence_source_after_repair",
+          "claim": "The governance body(ies) and/or individual(s) oversee the setting of targets related to sustainability-related and climate-related risks and opportunities and monitor progress towards those targets, including whether and how related performance metrics are included in remuneration policies."
         }
       ],
-      "claim_count": 11
+      "claim_count": 9,
+      "claims_register_normalized": {
+        "section_name": "Governance",
+        "claims": [
+          {
+            "claim_id": "GOV-001",
+            "claim_text": "Oversight of sustainability-related and climate-related risks and opportunities is assigned to the entity’s governance body(ies) and/or designated individual(s) charged with governance.",
+            "claim_type": "governance_assignment",
+            "entities": [
+              "designated individual(s) charged with governance",
+              "entity",
+              "governance body(ies)"
+            ],
+            "numbers": [],
+            "dates": [],
+            "evidence_sources": [],
+            "requirement_ids": [
+              "IFRS_S1_27_C02",
+              "IFRS_S2_6_C02"
+            ],
+            "supported": true,
+            "support_notes": "Text states oversight is assigned to governance body(ies)/designated individuals, aligning with requirement to identify responsible body/individual(s). Specific names/identifiers are not provided in the draft.",
+            "invalid_evidence_sources_removed": [
+              "draft_markdown: Governance > Oversight of sustainability-related and climate-related risks and opportunities (opening paragraph)"
+            ]
+          },
+          {
+            "claim_id": "GOV-002",
+            "claim_text": "Responsibilities for oversight of sustainability-related and climate-related risks and opportunities are reflected in applicable terms of reference, mandates, role descriptions and related policies for the governance body(ies) and/or individual(s).",
+            "claim_type": "policy_documentation",
+            "entities": [
+              "designated individual(s)",
+              "governance body(ies)",
+              "mandates",
+              "related policies",
+              "role descriptions",
+              "terms of reference"
+            ],
+            "numbers": [],
+            "dates": [],
+            "evidence_sources": [],
+            "requirement_ids": [
+              "IFRS_S1_27_C02",
+              "IFRS_S2_6_C02"
+            ],
+            "supported": true,
+            "support_notes": "Directly addresses reflection of responsibilities in governance documentation; does not cite or reference specific documents.",
+            "invalid_evidence_sources_removed": [
+              "draft_markdown: Governance > Oversight of sustainability-related and climate-related risks and opportunities (opening paragraph)"
+            ]
+          },
+          {
+            "claim_id": "GOV-003",
+            "claim_text": "The governance body(ies) and/or individual(s) oversee sustainability-related and climate-related matters by determining whether appropriate skills and competencies are available (or will be developed) to oversee strategies responding to these risks and opportunities.",
+            "claim_type": "governance_process",
+            "entities": [
+              "competencies",
+              "designated individual(s)",
+              "governance body(ies)",
+              "skills",
+              "strategies"
+            ],
+            "numbers": [],
+            "dates": [],
+            "evidence_sources": [
+              "governance[0].skills_development_programme",
+              "governance[1].skills_development_programme",
+              "governance[2].skills_development_programme"
+            ],
+            "requirement_ids": [
+              "IFRS_S1_27_C03",
+              "IFRS_S2_6_C03"
+            ],
+            "supported": true,
+            "support_notes": "Matches the skills/competencies disclosure element; draft does not describe how the determination is performed.",
+            "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+            "repaired_evidence_sources": [
+              "governance[2].skills_development_programme",
+              "governance[1].skills_development_programme",
+              "governance[0].skills_development_programme"
+            ],
+            "invalid_evidence_sources_removed": [
+              "draft_markdown: Governance > Oversight... (bullet: skills and competencies)"
+            ]
+          },
+          {
+            "claim_id": "GOV-004",
+            "claim_text": "The governance body(ies) and/or individual(s) receive information about sustainability-related and climate-related risks and opportunities, including the manner and frequency with which such information is provided.",
+            "claim_type": "information_flow",
+            "entities": [
+              "climate-related risks and opportunities",
+              "designated individual(s)",
+              "governance body(ies)",
+              "information",
+              "sustainability-related risks and opportunities"
+            ],
+            "numbers": [],
+            "dates": [],
+            "evidence_sources": [],
+            "requirement_ids": [
+              "IFRS_S1_27_C04",
+              "IFRS_S2_6_C04"
+            ],
+            "supported": true,
+            "support_notes": "Addresses that information is received and references manner/frequency, but does not specify actual cadence or channels.",
+            "invalid_evidence_sources_removed": [
+              "draft_markdown: Governance > Oversight... (bullet: receiving information; manner and frequency)"
+            ]
+          },
+          {
+            "claim_id": "GOV-005",
+            "claim_text": "The governance body(ies) and/or individual(s) take sustainability-related and climate-related risks and opportunities into account when overseeing the entity’s strategy, decisions on major transactions, and risk management processes and related policies, including consideration of relevant trade-offs.",
+            "claim_type": "strategic_oversight",
+            "entities": [
+              "designated individual(s)",
+              "entity strategy",
+              "governance body(ies)",
+              "major transactions",
+              "policies",
+              "risk management processes",
+              "trade-offs"
+            ],
+            "numbers": [],
+            "dates": [],
+            "evidence_sources": [],
+            "requirement_ids": [
+              "IFRS_S1_27_C05",
+              "IFRS_S2_6_C05"
+            ],
+            "supported": true,
+            "support_notes": "Aligns with requirement to explain how risks/opportunities are considered in oversight; draft remains high-level without examples or decision criteria.",
+            "invalid_evidence_sources_removed": [
+              "draft_markdown: Governance > Oversight... (bullet: strategy/transactions/risk management; trade-offs)"
+            ]
+          },
+          {
+            "claim_id": "GOV-006",
+            "claim_text": "The governance body(ies) and/or individual(s) oversee the setting of targets related to sustainability-related and climate-related risks and opportunities and monitor progress towards those targets, including whether and how related performance metrics are included in remuneration policies.",
+            "claim_type": "targets_and_remuneration_oversight",
+            "entities": [
+              "designated individual(s)",
+              "governance body(ies)",
+              "performance metrics",
+              "remuneration policies",
+              "targets"
+            ],
+            "numbers": [],
+            "dates": [],
+            "evidence_sources": [],
+            "requirement_ids": [
+              "IFRS_S1_27_C06",
+              "IFRS_S2_6_C06"
+            ],
+            "supported": true,
+            "support_notes": "Covers targets/progress monitoring and remuneration linkage conceptually; no specific targets, metrics, or remuneration mechanisms are disclosed.",
+            "invalid_evidence_sources_removed": [
+              "draft_markdown: Governance > Oversight... (bullet: targets, monitoring, remuneration linkage)"
+            ]
+          },
+          {
+            "claim_id": "GOV-007",
+            "claim_text": "Management is responsible for the governance processes, controls and procedures used to monitor, manage and oversee sustainability-related and climate-related risks and opportunities.",
+            "claim_type": "management_responsibility",
+            "entities": [
+              "climate-related risks and opportunities",
+              "controls",
+              "governance processes",
+              "management",
+              "procedures",
+              "sustainability-related risks and opportunities"
+            ],
+            "numbers": [],
+            "dates": [],
+            "evidence_sources": [
+              "governance[0].management_committee_name",
+              "governance[1].management_committee_name",
+              "governance[2].management_committee_name"
+            ],
+            "requirement_ids": [
+              "IFRS_S1_27_C08",
+              "IFRS_S1_27_C09",
+              "IFRS_S2_6_C08",
+              "IFRS_S2_6_C09"
+            ],
+            "supported": true,
+            "support_notes": "States management responsibility for processes/controls/procedures; does not detail specific controls or governance processes.",
+            "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+            "repaired_evidence_sources": [
+              "governance[2].management_committee_name",
+              "governance[1].management_committee_name",
+              "governance[0].management_committee_name"
+            ],
+            "invalid_evidence_sources_removed": [
+              "draft_markdown: Governance > Management’s role (opening paragraph)"
+            ]
+          },
+          {
+            "claim_id": "GOV-008",
+            "claim_text": "Management’s role includes delegation of responsibilities to a specific management-level position and/or management-level committee, with oversight exercised through management reporting and escalation to the governance body(ies) and/or designated individual(s).",
+            "claim_type": "delegation_and_escalation",
+            "entities": [
+              "designated individual(s)",
+              "escalation",
+              "governance body(ies)",
+              "management",
+              "management reporting",
+              "management-level committee",
+              "management-level position"
+            ],
+            "numbers": [],
+            "dates": [],
+            "evidence_sources": [
+              "governance[0].management_committee_name",
+              "governance[1].management_committee_name",
+              "governance[2].management_committee_name"
+            ],
+            "requirement_ids": [
+              "IFRS_S1_27_C08",
+              "IFRS_S2_6_C08"
+            ],
+            "supported": true,
+            "support_notes": "Addresses delegation and oversight mechanism at a general level; does not identify the position/committee or describe reporting frequency.",
+            "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+            "repaired_evidence_sources": [
+              "governance[2].management_committee_name",
+              "governance[1].management_committee_name",
+              "governance[0].management_committee_name"
+            ],
+            "invalid_evidence_sources_removed": [
+              "draft_markdown: Governance > Management’s role (bullet: delegation; reporting/escalation)"
+            ]
+          },
+          {
+            "claim_id": "GOV-009",
+            "claim_text": "Management uses controls and procedures to support oversight of sustainability-related and climate-related risks and opportunities, integrated with relevant internal functions.",
+            "claim_type": "internal_controls_integration",
+            "entities": [
+              "climate-related risks and opportunities",
+              "controls",
+              "management",
+              "procedures",
+              "relevant internal functions",
+              "sustainability-related risks and opportunities"
+            ],
+            "numbers": [],
+            "dates": [],
+            "evidence_sources": [
+              "governance[0].management_committee_name",
+              "governance[1].management_committee_name",
+              "governance[2].management_committee_name"
+            ],
+            "requirement_ids": [
+              "IFRS_S1_27_C09",
+              "IFRS_S2_6_C09"
+            ],
+            "supported": true,
+            "support_notes": "Meets the disclosure element that controls/procedures are used and integrated; draft does not specify which controls or which internal functions.",
+            "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+            "repaired_evidence_sources": [
+              "governance[2].management_committee_name",
+              "governance[1].management_committee_name",
+              "governance[0].management_committee_name"
+            ],
+            "invalid_evidence_sources_removed": [
+              "draft_markdown: Governance > Management’s role (bullet: controls/procedures integrated with internal functions)"
+            ]
+          }
+        ]
+      }
     },
     {
       "gate_name": "factlock_numbers_entities",
-      "passed": false,
-      "failures": [
-        {
-          "type": "number_not_in_payload_or_claims",
-          "value": "33.5%"
-        },
-        {
-          "type": "number_not_in_payload_or_claims",
-          "value": "69.8%"
-        }
-      ],
-      "draft_numbers": [
-        "1",
-        "1.1",
-        "1.2",
-        "1.3",
-        "10",
-        "33.5%",
-        "4",
-        "5",
-        "6",
-        "69.8%"
-      ],
-      "draft_entities": [
-        "Group Sustainability Committee",
-        "IFRS S2"
-      ]
+      "passed": true,
+      "failures": [],
+      "warnings": [],
+      "draft_numbers": [],
+      "draft_entities": []
     },
     {
       "gate_name": "reference_firewall",
       "passed": true,
-      "forbidden_term_hits": []
+      "forbidden_term_hits": [],
+      "failures": [],
+      "warnings": []
     },
     {
       "gate_name": "report_cleanliness_no_missing_payload_language",
       "passed": true,
-      "blocked_phrase_hits": []
+      "blocked_phrase_hits": [],
+      "soft_phrase_hits": [],
+      "failures": [],
+      "warnings": []
     }
-  ]
+  ],
+  "summary": "- claims_integrity: PASS | failures=0 | warnings=5\n  warning: {'claim_id': 'GOV-001', 'issue': 'no_evidence_source_after_repair', 'claim': 'Oversight of sustainability-related and climate-related risks and opportunities is assigned to the entity’s governance body(ies) and/or designated individual(s) charged with governance.'}\n  warning: {'claim_id': 'GOV-002', 'issue': 'no_evidence_source_after_repair', 'claim': 'Responsibilities for oversight of sustainability-related and climate-related risks and opportunities are reflected in applicable terms of reference, mandates, role descriptions and related policies for the governance body(ies) and/or individual(s).'}\n- factlock_numbers_entities: PASS | failures=0 | warnings=0\n- reference_firewall: PASS | failures=0 | warnings=0\n- report_cleanliness_no_missing_payload_language: PASS | failures=0 | warnings=0"
 }

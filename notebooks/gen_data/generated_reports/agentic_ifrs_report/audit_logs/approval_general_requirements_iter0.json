@@ -1,80 +1,49 @@
 {
   "section_name": "General Requirements",
   "approved": false,
-  "reason": "deterministic_gates_failed",
-  "required_fixes": {
-    "section_name": "General Requirements",
-    "passed": false,
-    "gates": [
-      {
-        "gate_name": "claims_integrity",
-        "passed": false,
-        "failures": [
-          {
-            "claim_id": "GR-001",
-            "issue": "claim_marked_unsupported",
-            "claim": "The sustainability-related financial disclosures in this report package have been prepared and presented on the basis set out in this section."
-          },
-          {
-            "claim_id": "GR-001",
-            "issue": "no_evidence_source",
-            "claim": "The sustainability-related financial disclosures in this report package have been prepared and presented on the basis set out in this section."
-          },
-          {
-            "claim_id": "GR-007",
-            "issue": "claim_marked_unsupported",
-            "claim": "Governance-related alignment and oversight context is addressed through governance disclosures within this report package."
-          },
-          {
-            "claim_id": "GR-007",
-            "issue": "no_evidence_source",
-            "claim": "Governance-related alignment and oversight context is addressed through governance disclosures within this report package."
-          },
-          {
-            "claim_id": "GR-008",
-            "issue": "claim_marked_unsupported",
-            "claim": "The Governance section contains detailed roles, responsibilities, and processes."
-          },
-          {
-            "claim_id": "GR-008",
-            "issue": "no_evidence_source",
-            "claim": "The Governance section contains detailed roles, responsibilities, and processes."
-          }
-        ],
-        "claim_count": 8
-      },
-      {
-        "gate_name": "factlock_numbers_entities",
-        "passed": false,
-        "failures": [
-          {
-            "type": "entity_not_in_payload_or_claims",
-            "value": "IFRS Sustainability Disclosure Standards\nThe"
-          }
-        ],
-        "draft_numbers": [
-          "1",
-          "1.1",
-          "1.2",
-          "1.3",
-          "6"
-        ],
-        "draft_entities": [
-          "IFRS S2",
-          "IFRS Sustainability Disclosure Standards",
-          "IFRS Sustainability Disclosure Standards\nThe"
-        ]
-      },
-      {
-        "gate_name": "reference_firewall",
-        "passed": true,
-        "forbidden_term_hits": []
-      },
-      {
-        "gate_name": "report_cleanliness_no_missing_payload_language",
-        "passed": true,
-        "blocked_phrase_hits": []
-      }
-    ]
+  "scores": {
+    "ifrs_coverage": 6.0,
+    "evidence": 10.0,
+    "style": 5.2
+  },
+  "failures": [
+    {
+      "judge": "ifrs_coverage_judge",
+      "score": 6.0,
+      "required_fixes": [
+        "Add Strategy to the 'Core content' list and cite IFRS S1.25(b).",
+        "Add a 'Subsequent events' paragraph covering IFRS S1.68 (disclose material events after period end but before authorisation if non-disclosure could influence decisions), in addition to the existing IFRS S1.67 update requirement.",
+        "Add a 'Comparative information' paragraph covering IFRS S1.70 (comparatives for all amounts; comparatives for narrative/descriptive information when useful).",
+        "Add a 'Significant judgements' paragraph covering IFRS S1.74 (judgements other than estimation that significantly affect disclosures).",
+        "Add 'Measurement uncertainty' paragraphs covering IFRS S1.78(a) and IFRS S1.78(b)(i) (identify amounts with high measurement uncertainty and disclose sources of uncertainty).",
+        "Add 'Prior period errors' paragraphs covering IFRS S1.83 and IFRS S1.86 (restatement of material prior period errors; apply B55–B59 when a material error is identified).",
+        "Optionally add an 'Interim reporting' paragraph reflecting IFRS S1.69 (not mandated, but if interim disclosures are required/elected, apply B48)."
+      ]
+    },
+    {
+      "judge": "style_judge",
+      "score": 5.2,
+      "required_fixes": [
+        "Reframe the section from a verbatim restatement of IFRS S1 into a basis-of-preparation disclosure that explains how the reporting entity prepares, presents, and connects its sustainability-related financial disclosures, using the approved report voice.",
+        "Introduce a numbered heading hierarchy aligned to the report structure (e.g., '1. General Requirements', '1.1 Objective and scope', '1.2 Fair presentation', etc.) and ensure consistent use across the section.",
+        "Add an opening scope and basis-of-preparation paragraph that explains the purpose of the section ('how to read this report') and its role in the overall IFRS S1/S2 disclosure set.",
+        "For each subsection (Objective and scope, Fair presentation, Materiality, Reporting entity, Connected information, Core content, Sources of guidance, Location of disclosures, Timing of reporting), add a one-sentence purpose statement before detailed requirements, explaining why the topic matters for users.",
+        "Replace or paraphrase IFRS wording to avoid exact copying while maintaining standards alignment; reference IFRS S1/S2 at a high level rather than reproducing paragraph text and citations verbatim.",
+        "Shift from purely prescriptive 'the entity shall...' language to a mixed voice that distinguishes externally defined requirements (third-person) from the entity’s own actions and methods (first-person plural where appropriate, e.g., 'we apply IFRS S1 B1–B12 to identify sustainability-related risks and opportunities').",
+        "Introduce a bulleted list summarizing key qualitative characteristics and preparation principles (e.g., completeness, neutrality, accuracy, freedom from material error, consistency with financial reporting boundary) in line with the section_style.",
+        "Explain practical mechanics for each general requirement: how materiality is determined in practice, how connected information is ensured, how cross-references are used, how timing and location of disclosures are managed, and how sources of guidance (including SASB) are considered.",
+        "Add explicit cross-reference placeholders to related sections and appendices (e.g., 'Refer to [Section: Governance]', 'See [Appendix: Methodology]') to support connectivity and traceability.",
+        "Incorporate cautious, conditional language where estimates, judgements, and forward-looking information are involved, clarifying how such information is prepared and updated.",
+        "Include a short closing connectivity paragraph for the overall section, linking general requirements to the detailed disclosures under Governance, Strategy, Risk Management, and Metrics and Targets.",
+        "Optionally introduce a simple table summarizing general requirement topics and where they are addressed in the report, ensuring any table is numbered, captioned, and referenced in the narrative.",
+        "Ensure that any discussion of missing or incomplete data follows the missing-data protocol: state what is missing, why, interim approach, limitations, and planned enhancement direction, even if at a high level.",
+        "Review terminology and capitalization for consistency with the global_style_guide (e.g., 'sustainability-related risks and opportunities', 'sustainability-related financial disclosures') and align unit and currency references with the report’s basis of preparation rather than generic IFRS text."
+      ]
+    }
+  ],
+  "thresholds": {
+    "ifrs_coverage_score_min": 8.0,
+    "evidence_score_min": 8.0,
+    "style_score_min": 7.5
   }
 }

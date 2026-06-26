@@ -11,31 +11,31 @@ The report contains only evidence-supported disclosures. Requirements not availa
 ## Section summary
 
 ### General Requirements
-- Requirements total: 3
-- Coverage counts: `{'not_available_in_payload': 2, 'partially_covered': 1}`
-- Missing requirements count: 2
+- Requirements total: 108
+- Coverage counts: `{'covered': 79, 'not_available_in_payload': 14, 'partially_covered': 15}`
+- Missing requirements count: 14
 - Approved markdown exists: False
 
 ### Governance
-- Requirements total: 3
-- Coverage counts: `{'covered': 2, 'partially_covered': 1}`
+- Requirements total: 15
+- Coverage counts: `{'covered': 15}`
 - Missing requirements count: 0
 - Approved markdown exists: False
 
 ### Strategy
-- Requirements total: 3
-- Coverage counts: `{'not_available_in_payload': 2, 'partially_covered': 1}`
-- Missing requirements count: 2
+- Requirements total: 70
+- Coverage counts: `{'not_available_in_payload': 4, 'covered': 57, 'partially_covered': 9}`
+- Missing requirements count: 4
 - Approved markdown exists: False
 
 ### Risk Management
-- Requirements total: 3
-- Coverage counts: `{'not_available_in_payload': 1, 'partially_covered': 2}`
-- Missing requirements count: 1
+- Requirements total: 17
+- Coverage counts: `{'covered': 17}`
+- Missing requirements count: 0
 - Approved markdown exists: False
 
 ### Metrics and Targets
-- Requirements total: 3
-- Coverage counts: `{'not_available_in_payload': 2, 'covered': 1}`
+- Requirements total: 151
+- Coverage counts: `{'covered': 142, 'partially_covered': 7, 'not_available_in_payload': 2}`
 - Missing requirements count: 2
 - Approved markdown exists: False

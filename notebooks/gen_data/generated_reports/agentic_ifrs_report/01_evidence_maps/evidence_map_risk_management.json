@@ -1,127 +1,1834 @@
 [
   {
-    "requirement_id": "section_key",
+    "requirement_id": "IFRS_S1_44_C02",
     "section_name": "Risk Management",
-    "requirement_text": "risk_management",
-    "mandatory": true,
-    "evidence_candidates": [],
-    "mapping_method": "deterministic_lexical"
-  },
-  {
-    "requirement_id": "section_title",
-    "section_name": "Risk Management",
-    "requirement_text": "Risk Management",
+    "requirement_text": "To achieve this objective, an entity shall disclose information about — (a) the processes and related policies the entity uses to identify, assess, prioritise and monitor sustainability-related risks, including information about: — (i) the inputs and parameters the entity uses (for example, information about data sources and the scope of operations covered in the processes)",
     "mandatory": true,
     "evidence_candidates": [
       {
-        "payload_path": "governance[0].management_committee_name",
-        "value_preview": "Group Sustainability Committee",
+        "payload_path": "metadata.risk_rating_methodology",
+        "payload_root": "metadata",
+        "value_preview": "climate_risk_register.risk_rating is derived from a 5x5 risk matrix: scores 1-2 = low, 3-6 = medium, 8-12 = high, 15-25 = critical. Specifically: likelihood_score * severity_score; critical >= 15, high >= 8, medium >= 3, low < 3. This formula must be used verb...",
         "value_type": "str",
-        "match_score": 2,
+        "match_score": 12,
         "matched_keywords": [
-          "management"
-        ]
+          "likelihood",
+          "method",
+          "risk_rating",
+          "severity"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
       },
       {
-        "payload_path": "governance[1].management_committee_name",
-        "value_preview": "ESG Executive Committee",
+        "payload_path": "value_chain_map[0].climate_risk_description",
+        "payload_root": "value_chain_map",
+        "value_preview": "Operational sites and travel generate Scope 1-2 emissions and face physical disruption.",
         "value_type": "str",
-        "match_score": 2,
+        "match_score": 12,
         "matched_keywords": [
-          "management"
-        ]
+          "risk_description",
+          "scope"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
       },
       {
-        "payload_path": "governance[2].management_committee_name",
-        "value_preview": "Climate Risk Management Committee",
+        "payload_path": "value_chain_map[1].climate_risk_description",
+        "payload_root": "value_chain_map",
+        "value_preview": "Operational sites and travel generate Scope 1-2 emissions and face physical disruption.",
         "value_type": "str",
-        "match_score": 2,
+        "match_score": 12,
         "matched_keywords": [
-          "management"
-        ]
+          "risk_description",
+          "scope"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "physical_risk_exposures[0].data_source",
+        "payload_root": "physical_risk_exposures",
+        "value_preview": "ECB_climate_indicators",
+        "value_type": "str",
+        "match_score": 11,
+        "matched_keywords": [
+          "data",
+          "data_source",
+          "source"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "physical_risk_exposures[1].data_source",
+        "payload_root": "physical_risk_exposures",
+        "value_preview": "ECB_climate_indicators",
+        "value_type": "str",
+        "match_score": 11,
+        "matched_keywords": [
+          "data",
+          "data_source",
+          "source"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "physical_risk_exposures[2].data_source",
+        "payload_root": "physical_risk_exposures",
+        "value_preview": "ECB_climate_indicators",
+        "value_type": "str",
+        "match_score": 11,
+        "matched_keywords": [
+          "data",
+          "data_source",
+          "source"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "physical_risk_exposures[3].data_source",
+        "payload_root": "physical_risk_exposures",
+        "value_preview": "ECB_climate_indicators",
+        "value_type": "str",
+        "match_score": 11,
+        "matched_keywords": [
+          "data",
+          "data_source",
+          "source"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "physical_risk_exposures[4].data_source",
+        "payload_root": "physical_risk_exposures",
+        "value_preview": "ECB_climate_indicators",
+        "value_type": "str",
+        "match_score": 11,
+        "matched_keywords": [
+          "data",
+          "data_source",
+          "source"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
       }
     ],
-    "mapping_method": "deterministic_lexical"
+    "mapping_method": "deterministic_payload_aware"
   },
   {
-    "requirement_id": "source",
+    "requirement_id": "IFRS_S1_44_C03",
     "section_name": "Risk Management",
-    "requirement_text": "IFRS S1 and IFRS S2 deterministic generation-ready requirements",
+    "requirement_text": "To achieve this objective, an entity shall disclose information about — (a) the processes and related policies the entity uses to identify, assess, prioritise and monitor sustainability-related risks, including information about: — (ii) whether and how the entity uses scenario analysis to inform its identification of sustainability-related risks",
     "mandatory": true,
     "evidence_candidates": [
       {
-        "payload_path": "climate_risk_register[0].ifrs_s2_para_evidence",
-        "value_preview": "§25(a)",
+        "payload_path": "climate_risk_register[0].scenario_analysis_link",
+        "payload_root": "climate_risk_register",
+        "value_preview": "SCN0009",
         "value_type": "str",
-        "match_score": 2,
+        "match_score": 13,
         "matched_keywords": [
-          "ifrs"
-        ]
+          "analysis",
+          "scenario",
+          "scenario_analysis"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
       },
       {
-        "payload_path": "climate_risk_register[1].ifrs_s2_para_evidence",
-        "value_preview": "§25(a)",
-        "value_type": "str",
-        "match_score": 2,
+        "payload_path": "climate_risk_register[1].scenario_analysis_link",
+        "payload_root": "climate_risk_register",
+        "value_preview": "nan",
+        "value_type": "float",
+        "match_score": 13,
         "matched_keywords": [
-          "ifrs"
-        ]
+          "analysis",
+          "scenario",
+          "scenario_analysis"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
       },
       {
-        "payload_path": "climate_risk_register[2].ifrs_s2_para_evidence",
-        "value_preview": "§25(a)",
-        "value_type": "str",
-        "match_score": 2,
+        "payload_path": "climate_risk_register[2].scenario_analysis_link",
+        "payload_root": "climate_risk_register",
+        "value_preview": "nan",
+        "value_type": "float",
+        "match_score": 13,
         "matched_keywords": [
-          "ifrs"
-        ]
+          "analysis",
+          "scenario",
+          "scenario_analysis"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
       },
       {
-        "payload_path": "climate_risk_register[3].ifrs_s2_para_evidence",
-        "value_preview": "§25(a)",
+        "payload_path": "climate_risk_register[3].scenario_analysis_link",
+        "payload_root": "climate_risk_register",
+        "value_preview": "SCN0007",
         "value_type": "str",
-        "match_score": 2,
+        "match_score": 13,
         "matched_keywords": [
-          "ifrs"
-        ]
+          "analysis",
+          "scenario",
+          "scenario_analysis"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
       },
       {
-        "payload_path": "climate_risk_register[4].ifrs_s2_para_evidence",
-        "value_preview": "§25(a)",
+        "payload_path": "climate_risk_register[4].scenario_analysis_link",
+        "payload_root": "climate_risk_register",
+        "value_preview": "SCN0007",
         "value_type": "str",
-        "match_score": 2,
+        "match_score": 13,
         "matched_keywords": [
-          "ifrs"
-        ]
+          "analysis",
+          "scenario",
+          "scenario_analysis"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
       },
       {
-        "payload_path": "climate_risk_register[5].ifrs_s2_para_evidence",
-        "value_preview": "§25(a)",
+        "payload_path": "climate_risk_register[5].scenario_analysis_link",
+        "payload_root": "climate_risk_register",
+        "value_preview": "SCN0007",
         "value_type": "str",
-        "match_score": 2,
+        "match_score": 13,
         "matched_keywords": [
-          "ifrs"
-        ]
+          "analysis",
+          "scenario",
+          "scenario_analysis"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
       },
       {
-        "payload_path": "climate_risk_register[6].ifrs_s2_para_evidence",
-        "value_preview": "§25(a)",
+        "payload_path": "climate_risk_register[6].scenario_analysis_link",
+        "payload_root": "climate_risk_register",
+        "value_preview": "SCN0011",
         "value_type": "str",
-        "match_score": 2,
+        "match_score": 13,
         "matched_keywords": [
-          "ifrs"
-        ]
+          "analysis",
+          "scenario",
+          "scenario_analysis"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
       },
       {
-        "payload_path": "climate_risk_register[7].ifrs_s2_para_evidence",
-        "value_preview": "§25(a)",
+        "payload_path": "climate_risk_register[7].scenario_analysis_link",
+        "payload_root": "climate_risk_register",
+        "value_preview": "SCN0005",
         "value_type": "str",
-        "match_score": 2,
+        "match_score": 13,
         "matched_keywords": [
-          "ifrs"
-        ]
+          "analysis",
+          "scenario",
+          "scenario_analysis"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
       }
     ],
-    "mapping_method": "deterministic_lexical"
+    "mapping_method": "deterministic_payload_aware"
+  },
+  {
+    "requirement_id": "IFRS_S1_44_C04",
+    "section_name": "Risk Management",
+    "requirement_text": "To achieve this objective, an entity shall disclose information about — (a) the processes and related policies the entity uses to identify, assess, prioritise and monitor sustainability-related risks, including information about: — (iii) how the entity assesses the nature, likelihood and magnitude of the effects of those risks (for example, whether the entity considers qualitative factors, quantitative thresholds or other criteria)",
+    "mandatory": true,
+    "evidence_candidates": [
+      {
+        "payload_path": "climate_risk_register[0].likelihood_score",
+        "payload_root": "climate_risk_register",
+        "value_preview": "4",
+        "value_type": "int",
+        "match_score": 9,
+        "matched_keywords": [
+          "likelihood"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[1].likelihood_score",
+        "payload_root": "climate_risk_register",
+        "value_preview": "5",
+        "value_type": "int",
+        "match_score": 9,
+        "matched_keywords": [
+          "likelihood"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[2].likelihood_score",
+        "payload_root": "climate_risk_register",
+        "value_preview": "4",
+        "value_type": "int",
+        "match_score": 9,
+        "matched_keywords": [
+          "likelihood"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[3].likelihood_score",
+        "payload_root": "climate_risk_register",
+        "value_preview": "5",
+        "value_type": "int",
+        "match_score": 9,
+        "matched_keywords": [
+          "likelihood"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[4].likelihood_score",
+        "payload_root": "climate_risk_register",
+        "value_preview": "5",
+        "value_type": "int",
+        "match_score": 9,
+        "matched_keywords": [
+          "likelihood"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[5].likelihood_score",
+        "payload_root": "climate_risk_register",
+        "value_preview": "4",
+        "value_type": "int",
+        "match_score": 9,
+        "matched_keywords": [
+          "likelihood"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[6].likelihood_score",
+        "payload_root": "climate_risk_register",
+        "value_preview": "3",
+        "value_type": "int",
+        "match_score": 9,
+        "matched_keywords": [
+          "likelihood"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[7].likelihood_score",
+        "payload_root": "climate_risk_register",
+        "value_preview": "4",
+        "value_type": "int",
+        "match_score": 9,
+        "matched_keywords": [
+          "likelihood"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      }
+    ],
+    "mapping_method": "deterministic_payload_aware"
+  },
+  {
+    "requirement_id": "IFRS_S1_44_C05",
+    "section_name": "Risk Management",
+    "requirement_text": "To achieve this objective, an entity shall disclose information about — (a) the processes and related policies the entity uses to identify, assess, prioritise and monitor sustainability-related risks, including information about: — (iv) whether and how the entity prioritises sustainability-related risks relative to other types of risk",
+    "mandatory": true,
+    "evidence_candidates": [
+      {
+        "payload_path": "value_chain_map[11].climate_risk_description",
+        "payload_root": "value_chain_map",
+        "value_preview": "Lending to Other mining and quarrying carries elevated transition risk from carbon pricing and demand shifts.",
+        "value_type": "str",
+        "match_score": 8,
+        "matched_keywords": [
+          "other",
+          "risk_description"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[0].monitoring_frequency",
+        "payload_root": "climate_risk_register",
+        "value_preview": "monthly",
+        "value_type": "str",
+        "match_score": 8,
+        "matched_keywords": [
+          "monitoring_frequency"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[1].monitoring_frequency",
+        "payload_root": "climate_risk_register",
+        "value_preview": "quarterly",
+        "value_type": "str",
+        "match_score": 8,
+        "matched_keywords": [
+          "monitoring_frequency"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[2].monitoring_frequency",
+        "payload_root": "climate_risk_register",
+        "value_preview": "monthly",
+        "value_type": "str",
+        "match_score": 8,
+        "matched_keywords": [
+          "monitoring_frequency"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[3].monitoring_frequency",
+        "payload_root": "climate_risk_register",
+        "value_preview": "quarterly",
+        "value_type": "str",
+        "match_score": 8,
+        "matched_keywords": [
+          "monitoring_frequency"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[4].monitoring_frequency",
+        "payload_root": "climate_risk_register",
+        "value_preview": "monthly",
+        "value_type": "str",
+        "match_score": 8,
+        "matched_keywords": [
+          "monitoring_frequency"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[5].monitoring_frequency",
+        "payload_root": "climate_risk_register",
+        "value_preview": "semi_annual",
+        "value_type": "str",
+        "match_score": 8,
+        "matched_keywords": [
+          "monitoring_frequency"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[6].monitoring_frequency",
+        "payload_root": "climate_risk_register",
+        "value_preview": "semi_annual",
+        "value_type": "str",
+        "match_score": 8,
+        "matched_keywords": [
+          "monitoring_frequency"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      }
+    ],
+    "mapping_method": "deterministic_payload_aware"
+  },
+  {
+    "requirement_id": "IFRS_S1_44_C06",
+    "section_name": "Risk Management",
+    "requirement_text": "To achieve this objective, an entity shall disclose information about — (a) the processes and related policies the entity uses to identify, assess, prioritise and monitor sustainability-related risks, including information about: — (v) how the entity monitors sustainability-related risks",
+    "mandatory": true,
+    "evidence_candidates": [
+      {
+        "payload_path": "climate_risk_register[0].monitoring_frequency",
+        "payload_root": "climate_risk_register",
+        "value_preview": "monthly",
+        "value_type": "str",
+        "match_score": 8,
+        "matched_keywords": [
+          "monitoring_frequency"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[1].monitoring_frequency",
+        "payload_root": "climate_risk_register",
+        "value_preview": "quarterly",
+        "value_type": "str",
+        "match_score": 8,
+        "matched_keywords": [
+          "monitoring_frequency"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[2].monitoring_frequency",
+        "payload_root": "climate_risk_register",
+        "value_preview": "monthly",
+        "value_type": "str",
+        "match_score": 8,
+        "matched_keywords": [
+          "monitoring_frequency"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[3].monitoring_frequency",
+        "payload_root": "climate_risk_register",
+        "value_preview": "quarterly",
+        "value_type": "str",
+        "match_score": 8,
+        "matched_keywords": [
+          "monitoring_frequency"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[4].monitoring_frequency",
+        "payload_root": "climate_risk_register",
+        "value_preview": "monthly",
+        "value_type": "str",
+        "match_score": 8,
+        "matched_keywords": [
+          "monitoring_frequency"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[5].monitoring_frequency",
+        "payload_root": "climate_risk_register",
+        "value_preview": "semi_annual",
+        "value_type": "str",
+        "match_score": 8,
+        "matched_keywords": [
+          "monitoring_frequency"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[6].monitoring_frequency",
+        "payload_root": "climate_risk_register",
+        "value_preview": "semi_annual",
+        "value_type": "str",
+        "match_score": 8,
+        "matched_keywords": [
+          "monitoring_frequency"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[7].monitoring_frequency",
+        "payload_root": "climate_risk_register",
+        "value_preview": "quarterly",
+        "value_type": "str",
+        "match_score": 8,
+        "matched_keywords": [
+          "monitoring_frequency"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      }
+    ],
+    "mapping_method": "deterministic_payload_aware"
+  },
+  {
+    "requirement_id": "IFRS_S1_44_C07",
+    "section_name": "Risk Management",
+    "requirement_text": "To achieve this objective, an entity shall disclose information about — (a) the processes and related policies the entity uses to identify, assess, prioritise and monitor sustainability-related risks, including information about: — (vi) whether and how the entity has changed the processes it uses compared with the previous reporting period",
+    "mandatory": true,
+    "evidence_candidates": [
+      {
+        "payload_path": "climate_risk_register[0].changed_since_prior_period",
+        "payload_root": "climate_risk_register",
+        "value_preview": "False",
+        "value_type": "bool",
+        "match_score": 15,
+        "matched_keywords": [
+          "changed",
+          "changed_since_prior_period",
+          "period"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[1].changed_since_prior_period",
+        "payload_root": "climate_risk_register",
+        "value_preview": "True",
+        "value_type": "bool",
+        "match_score": 15,
+        "matched_keywords": [
+          "changed",
+          "changed_since_prior_period",
+          "period"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[2].changed_since_prior_period",
+        "payload_root": "climate_risk_register",
+        "value_preview": "False",
+        "value_type": "bool",
+        "match_score": 15,
+        "matched_keywords": [
+          "changed",
+          "changed_since_prior_period",
+          "period"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[3].changed_since_prior_period",
+        "payload_root": "climate_risk_register",
+        "value_preview": "True",
+        "value_type": "bool",
+        "match_score": 15,
+        "matched_keywords": [
+          "changed",
+          "changed_since_prior_period",
+          "period"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[4].changed_since_prior_period",
+        "payload_root": "climate_risk_register",
+        "value_preview": "False",
+        "value_type": "bool",
+        "match_score": 15,
+        "matched_keywords": [
+          "changed",
+          "changed_since_prior_period",
+          "period"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[5].changed_since_prior_period",
+        "payload_root": "climate_risk_register",
+        "value_preview": "False",
+        "value_type": "bool",
+        "match_score": 15,
+        "matched_keywords": [
+          "changed",
+          "changed_since_prior_period",
+          "period"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[6].changed_since_prior_period",
+        "payload_root": "climate_risk_register",
+        "value_preview": "False",
+        "value_type": "bool",
+        "match_score": 15,
+        "matched_keywords": [
+          "changed",
+          "changed_since_prior_period",
+          "period"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[7].changed_since_prior_period",
+        "payload_root": "climate_risk_register",
+        "value_preview": "False",
+        "value_type": "bool",
+        "match_score": 15,
+        "matched_keywords": [
+          "changed",
+          "changed_since_prior_period",
+          "period"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      }
+    ],
+    "mapping_method": "deterministic_payload_aware"
+  },
+  {
+    "requirement_id": "IFRS_S1_44_C08",
+    "section_name": "Risk Management",
+    "requirement_text": "To achieve this objective, an entity shall disclose information about — (b) the processes the entity uses to identify, assess, prioritise and monitor sustainability-related opportunities",
+    "mandatory": true,
+    "evidence_candidates": [
+      {
+        "payload_path": "climate_risk_register[0].monitoring_frequency",
+        "payload_root": "climate_risk_register",
+        "value_preview": "monthly",
+        "value_type": "str",
+        "match_score": 8,
+        "matched_keywords": [
+          "monitoring_frequency"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[1].monitoring_frequency",
+        "payload_root": "climate_risk_register",
+        "value_preview": "quarterly",
+        "value_type": "str",
+        "match_score": 8,
+        "matched_keywords": [
+          "monitoring_frequency"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[2].monitoring_frequency",
+        "payload_root": "climate_risk_register",
+        "value_preview": "monthly",
+        "value_type": "str",
+        "match_score": 8,
+        "matched_keywords": [
+          "monitoring_frequency"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[3].monitoring_frequency",
+        "payload_root": "climate_risk_register",
+        "value_preview": "quarterly",
+        "value_type": "str",
+        "match_score": 8,
+        "matched_keywords": [
+          "monitoring_frequency"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[4].monitoring_frequency",
+        "payload_root": "climate_risk_register",
+        "value_preview": "monthly",
+        "value_type": "str",
+        "match_score": 8,
+        "matched_keywords": [
+          "monitoring_frequency"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[5].monitoring_frequency",
+        "payload_root": "climate_risk_register",
+        "value_preview": "semi_annual",
+        "value_type": "str",
+        "match_score": 8,
+        "matched_keywords": [
+          "monitoring_frequency"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[6].monitoring_frequency",
+        "payload_root": "climate_risk_register",
+        "value_preview": "semi_annual",
+        "value_type": "str",
+        "match_score": 8,
+        "matched_keywords": [
+          "monitoring_frequency"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[7].monitoring_frequency",
+        "payload_root": "climate_risk_register",
+        "value_preview": "quarterly",
+        "value_type": "str",
+        "match_score": 8,
+        "matched_keywords": [
+          "monitoring_frequency"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      }
+    ],
+    "mapping_method": "deterministic_payload_aware"
+  },
+  {
+    "requirement_id": "IFRS_S1_44_C09",
+    "section_name": "Risk Management",
+    "requirement_text": "To achieve this objective, an entity shall disclose information about — (c) the extent to which, and how, the processes for identifying, assessing, prioritising and monitoring sustainability-related risks and opportunities are integrated into and inform the entity’s overall risk management process.",
+    "mandatory": true,
+    "evidence_candidates": [
+      {
+        "payload_path": "climate_risk_register[0].erm_integrated_flag",
+        "payload_root": "climate_risk_register",
+        "value_preview": "True",
+        "value_type": "bool",
+        "match_score": 15,
+        "matched_keywords": [
+          "erm",
+          "erm_integrated",
+          "integrated"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[1].erm_integrated_flag",
+        "payload_root": "climate_risk_register",
+        "value_preview": "True",
+        "value_type": "bool",
+        "match_score": 15,
+        "matched_keywords": [
+          "erm",
+          "erm_integrated",
+          "integrated"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[2].erm_integrated_flag",
+        "payload_root": "climate_risk_register",
+        "value_preview": "True",
+        "value_type": "bool",
+        "match_score": 15,
+        "matched_keywords": [
+          "erm",
+          "erm_integrated",
+          "integrated"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[3].erm_integrated_flag",
+        "payload_root": "climate_risk_register",
+        "value_preview": "True",
+        "value_type": "bool",
+        "match_score": 15,
+        "matched_keywords": [
+          "erm",
+          "erm_integrated",
+          "integrated"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[4].erm_integrated_flag",
+        "payload_root": "climate_risk_register",
+        "value_preview": "True",
+        "value_type": "bool",
+        "match_score": 15,
+        "matched_keywords": [
+          "erm",
+          "erm_integrated",
+          "integrated"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[5].erm_integrated_flag",
+        "payload_root": "climate_risk_register",
+        "value_preview": "False",
+        "value_type": "bool",
+        "match_score": 15,
+        "matched_keywords": [
+          "erm",
+          "erm_integrated",
+          "integrated"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[6].erm_integrated_flag",
+        "payload_root": "climate_risk_register",
+        "value_preview": "True",
+        "value_type": "bool",
+        "match_score": 15,
+        "matched_keywords": [
+          "erm",
+          "erm_integrated",
+          "integrated"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[7].erm_integrated_flag",
+        "payload_root": "climate_risk_register",
+        "value_preview": "True",
+        "value_type": "bool",
+        "match_score": 15,
+        "matched_keywords": [
+          "erm",
+          "erm_integrated",
+          "integrated"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      }
+    ],
+    "mapping_method": "deterministic_payload_aware"
+  },
+  {
+    "requirement_id": "IFRS_S2_25_C02",
+    "section_name": "Risk Management",
+    "requirement_text": "To achieve this objective, an entity shall disclose information about — (a) the processes and related policies the entity uses to identify, assess, prioritise and monitor climate-related risks, including information about: — (i) the inputs and parameters the entity uses (for example, information about data sources and the scope of operations covered in the processes)",
+    "mandatory": true,
+    "evidence_candidates": [
+      {
+        "payload_path": "metadata.risk_rating_methodology",
+        "payload_root": "metadata",
+        "value_preview": "climate_risk_register.risk_rating is derived from a 5x5 risk matrix: scores 1-2 = low, 3-6 = medium, 8-12 = high, 15-25 = critical. Specifically: likelihood_score * severity_score; critical >= 15, high >= 8, medium >= 3, low < 3. This formula must be used verb...",
+        "value_type": "str",
+        "match_score": 13,
+        "matched_keywords": [
+          "likelihood",
+          "medium",
+          "method",
+          "risk_rating",
+          "severity"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "value_chain_map[0].climate_risk_description",
+        "payload_root": "value_chain_map",
+        "value_preview": "Operational sites and travel generate Scope 1-2 emissions and face physical disruption.",
+        "value_type": "str",
+        "match_score": 12,
+        "matched_keywords": [
+          "risk_description",
+          "scope"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "value_chain_map[1].climate_risk_description",
+        "payload_root": "value_chain_map",
+        "value_preview": "Operational sites and travel generate Scope 1-2 emissions and face physical disruption.",
+        "value_type": "str",
+        "match_score": 12,
+        "matched_keywords": [
+          "risk_description",
+          "scope"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "physical_risk_exposures[0].data_source",
+        "payload_root": "physical_risk_exposures",
+        "value_preview": "ECB_climate_indicators",
+        "value_type": "str",
+        "match_score": 11,
+        "matched_keywords": [
+          "data",
+          "data_source",
+          "source"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "physical_risk_exposures[1].data_source",
+        "payload_root": "physical_risk_exposures",
+        "value_preview": "ECB_climate_indicators",
+        "value_type": "str",
+        "match_score": 11,
+        "matched_keywords": [
+          "data",
+          "data_source",
+          "source"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "physical_risk_exposures[2].data_source",
+        "payload_root": "physical_risk_exposures",
+        "value_preview": "ECB_climate_indicators",
+        "value_type": "str",
+        "match_score": 11,
+        "matched_keywords": [
+          "data",
+          "data_source",
+          "source"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "physical_risk_exposures[3].data_source",
+        "payload_root": "physical_risk_exposures",
+        "value_preview": "ECB_climate_indicators",
+        "value_type": "str",
+        "match_score": 11,
+        "matched_keywords": [
+          "data",
+          "data_source",
+          "source"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "physical_risk_exposures[4].data_source",
+        "payload_root": "physical_risk_exposures",
+        "value_preview": "ECB_climate_indicators",
+        "value_type": "str",
+        "match_score": 11,
+        "matched_keywords": [
+          "data",
+          "data_source",
+          "source"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      }
+    ],
+    "mapping_method": "deterministic_payload_aware"
+  },
+  {
+    "requirement_id": "IFRS_S2_25_C03",
+    "section_name": "Risk Management",
+    "requirement_text": "To achieve this objective, an entity shall disclose information about — (a) the processes and related policies the entity uses to identify, assess, prioritise and monitor climate-related risks, including information about: — (ii) whether and how the entity uses climate-related scenario analysis to inform its identification of climate-related risks",
+    "mandatory": true,
+    "evidence_candidates": [
+      {
+        "payload_path": "climate_risk_register[0].scenario_analysis_link",
+        "payload_root": "climate_risk_register",
+        "value_preview": "SCN0009",
+        "value_type": "str",
+        "match_score": 13,
+        "matched_keywords": [
+          "analysis",
+          "scenario",
+          "scenario_analysis"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[1].scenario_analysis_link",
+        "payload_root": "climate_risk_register",
+        "value_preview": "nan",
+        "value_type": "float",
+        "match_score": 13,
+        "matched_keywords": [
+          "analysis",
+          "scenario",
+          "scenario_analysis"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[2].scenario_analysis_link",
+        "payload_root": "climate_risk_register",
+        "value_preview": "nan",
+        "value_type": "float",
+        "match_score": 13,
+        "matched_keywords": [
+          "analysis",
+          "scenario",
+          "scenario_analysis"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[3].scenario_analysis_link",
+        "payload_root": "climate_risk_register",
+        "value_preview": "SCN0007",
+        "value_type": "str",
+        "match_score": 13,
+        "matched_keywords": [
+          "analysis",
+          "scenario",
+          "scenario_analysis"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[4].scenario_analysis_link",
+        "payload_root": "climate_risk_register",
+        "value_preview": "SCN0007",
+        "value_type": "str",
+        "match_score": 13,
+        "matched_keywords": [
+          "analysis",
+          "scenario",
+          "scenario_analysis"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[5].scenario_analysis_link",
+        "payload_root": "climate_risk_register",
+        "value_preview": "SCN0007",
+        "value_type": "str",
+        "match_score": 13,
+        "matched_keywords": [
+          "analysis",
+          "scenario",
+          "scenario_analysis"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[6].scenario_analysis_link",
+        "payload_root": "climate_risk_register",
+        "value_preview": "SCN0011",
+        "value_type": "str",
+        "match_score": 13,
+        "matched_keywords": [
+          "analysis",
+          "scenario",
+          "scenario_analysis"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[7].scenario_analysis_link",
+        "payload_root": "climate_risk_register",
+        "value_preview": "SCN0005",
+        "value_type": "str",
+        "match_score": 13,
+        "matched_keywords": [
+          "analysis",
+          "scenario",
+          "scenario_analysis"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      }
+    ],
+    "mapping_method": "deterministic_payload_aware"
+  },
+  {
+    "requirement_id": "IFRS_S2_25_C04",
+    "section_name": "Risk Management",
+    "requirement_text": "To achieve this objective, an entity shall disclose information about — (a) the processes and related policies the entity uses to identify, assess, prioritise and monitor climate-related risks, including information about: — (iii) how the entity assesses the nature, likelihood and magnitude of the effects of those risks (for example, whether the entity considers qualitative factors, quantitative thresholds or other criteria)",
+    "mandatory": true,
+    "evidence_candidates": [
+      {
+        "payload_path": "metadata.risk_rating_methodology",
+        "payload_root": "metadata",
+        "value_preview": "climate_risk_register.risk_rating is derived from a 5x5 risk matrix: scores 1-2 = low, 3-6 = medium, 8-12 = high, 15-25 = critical. Specifically: likelihood_score * severity_score; critical >= 15, high >= 8, medium >= 3, low < 3. This formula must be used verb...",
+        "value_type": "str",
+        "match_score": 9,
+        "matched_keywords": [
+          "likelihood",
+          "medium",
+          "risk_rating",
+          "severity"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[0].likelihood_score",
+        "payload_root": "climate_risk_register",
+        "value_preview": "4",
+        "value_type": "int",
+        "match_score": 9,
+        "matched_keywords": [
+          "likelihood"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[1].likelihood_score",
+        "payload_root": "climate_risk_register",
+        "value_preview": "5",
+        "value_type": "int",
+        "match_score": 9,
+        "matched_keywords": [
+          "likelihood"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[2].likelihood_score",
+        "payload_root": "climate_risk_register",
+        "value_preview": "4",
+        "value_type": "int",
+        "match_score": 9,
+        "matched_keywords": [
+          "likelihood"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[3].likelihood_score",
+        "payload_root": "climate_risk_register",
+        "value_preview": "5",
+        "value_type": "int",
+        "match_score": 9,
+        "matched_keywords": [
+          "likelihood"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[4].likelihood_score",
+        "payload_root": "climate_risk_register",
+        "value_preview": "5",
+        "value_type": "int",
+        "match_score": 9,
+        "matched_keywords": [
+          "likelihood"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[5].likelihood_score",
+        "payload_root": "climate_risk_register",
+        "value_preview": "4",
+        "value_type": "int",
+        "match_score": 9,
+        "matched_keywords": [
+          "likelihood"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[6].likelihood_score",
+        "payload_root": "climate_risk_register",
+        "value_preview": "3",
+        "value_type": "int",
+        "match_score": 9,
+        "matched_keywords": [
+          "likelihood"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      }
+    ],
+    "mapping_method": "deterministic_payload_aware"
+  },
+  {
+    "requirement_id": "IFRS_S2_25_C05",
+    "section_name": "Risk Management",
+    "requirement_text": "To achieve this objective, an entity shall disclose information about — (a) the processes and related policies the entity uses to identify, assess, prioritise and monitor climate-related risks, including information about: — (iv) whether and how the entity prioritises climate-related risks relative to other types of risk",
+    "mandatory": true,
+    "evidence_candidates": [
+      {
+        "payload_path": "metadata.risk_rating_methodology",
+        "payload_root": "metadata",
+        "value_preview": "climate_risk_register.risk_rating is derived from a 5x5 risk matrix: scores 1-2 = low, 3-6 = medium, 8-12 = high, 15-25 = critical. Specifically: likelihood_score * severity_score; critical >= 15, high >= 8, medium >= 3, low < 3. This formula must be used verb...",
+        "value_type": "str",
+        "match_score": 8,
+        "matched_keywords": [
+          "likelihood",
+          "medium",
+          "risk_rating",
+          "severity"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[5].risk_rating",
+        "payload_root": "climate_risk_register",
+        "value_preview": "medium",
+        "value_type": "str",
+        "match_score": 8,
+        "matched_keywords": [
+          "medium",
+          "risk_rating"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[6].risk_rating",
+        "payload_root": "climate_risk_register",
+        "value_preview": "medium",
+        "value_type": "str",
+        "match_score": 8,
+        "matched_keywords": [
+          "medium",
+          "risk_rating"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[7].risk_description",
+        "payload_root": "climate_risk_register",
+        "value_preview": "Chronic heat and shifting precipitation reduce yields for agricultural counterparties, weakening repayment capacity over the medium term.",
+        "value_type": "str",
+        "match_score": 8,
+        "matched_keywords": [
+          "medium",
+          "risk_description"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[9].risk_rating",
+        "payload_root": "climate_risk_register",
+        "value_preview": "medium",
+        "value_type": "str",
+        "match_score": 8,
+        "matched_keywords": [
+          "medium",
+          "risk_rating"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[10].risk_description",
+        "payload_root": "climate_risk_register",
+        "value_preview": "Chronic heat and shifting precipitation reduce yields for agricultural counterparties, weakening repayment capacity over the medium term.",
+        "value_type": "str",
+        "match_score": 8,
+        "matched_keywords": [
+          "medium",
+          "risk_description"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[10].risk_rating",
+        "payload_root": "climate_risk_register",
+        "value_preview": "medium",
+        "value_type": "str",
+        "match_score": 8,
+        "matched_keywords": [
+          "medium",
+          "risk_rating"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[11].risk_rating",
+        "payload_root": "climate_risk_register",
+        "value_preview": "medium",
+        "value_type": "str",
+        "match_score": 8,
+        "matched_keywords": [
+          "medium",
+          "risk_rating"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      }
+    ],
+    "mapping_method": "deterministic_payload_aware"
+  },
+  {
+    "requirement_id": "IFRS_S2_25_C06",
+    "section_name": "Risk Management",
+    "requirement_text": "To achieve this objective, an entity shall disclose information about — (a) the processes and related policies the entity uses to identify, assess, prioritise and monitor climate-related risks, including information about: — (v) how the entity monitors climate-related risks",
+    "mandatory": true,
+    "evidence_candidates": [
+      {
+        "payload_path": "metadata.risk_rating_methodology",
+        "payload_root": "metadata",
+        "value_preview": "climate_risk_register.risk_rating is derived from a 5x5 risk matrix: scores 1-2 = low, 3-6 = medium, 8-12 = high, 15-25 = critical. Specifically: likelihood_score * severity_score; critical >= 15, high >= 8, medium >= 3, low < 3. This formula must be used verb...",
+        "value_type": "str",
+        "match_score": 8,
+        "matched_keywords": [
+          "likelihood",
+          "medium",
+          "risk_rating",
+          "severity"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[5].risk_rating",
+        "payload_root": "climate_risk_register",
+        "value_preview": "medium",
+        "value_type": "str",
+        "match_score": 8,
+        "matched_keywords": [
+          "medium",
+          "risk_rating"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[6].risk_rating",
+        "payload_root": "climate_risk_register",
+        "value_preview": "medium",
+        "value_type": "str",
+        "match_score": 8,
+        "matched_keywords": [
+          "medium",
+          "risk_rating"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[7].risk_description",
+        "payload_root": "climate_risk_register",
+        "value_preview": "Chronic heat and shifting precipitation reduce yields for agricultural counterparties, weakening repayment capacity over the medium term.",
+        "value_type": "str",
+        "match_score": 8,
+        "matched_keywords": [
+          "medium",
+          "risk_description"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[9].risk_rating",
+        "payload_root": "climate_risk_register",
+        "value_preview": "medium",
+        "value_type": "str",
+        "match_score": 8,
+        "matched_keywords": [
+          "medium",
+          "risk_rating"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[10].risk_description",
+        "payload_root": "climate_risk_register",
+        "value_preview": "Chronic heat and shifting precipitation reduce yields for agricultural counterparties, weakening repayment capacity over the medium term.",
+        "value_type": "str",
+        "match_score": 8,
+        "matched_keywords": [
+          "medium",
+          "risk_description"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[10].risk_rating",
+        "payload_root": "climate_risk_register",
+        "value_preview": "medium",
+        "value_type": "str",
+        "match_score": 8,
+        "matched_keywords": [
+          "medium",
+          "risk_rating"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[11].risk_rating",
+        "payload_root": "climate_risk_register",
+        "value_preview": "medium",
+        "value_type": "str",
+        "match_score": 8,
+        "matched_keywords": [
+          "medium",
+          "risk_rating"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      }
+    ],
+    "mapping_method": "deterministic_payload_aware"
+  },
+  {
+    "requirement_id": "IFRS_S2_25_C07",
+    "section_name": "Risk Management",
+    "requirement_text": "To achieve this objective, an entity shall disclose information about — (a) the processes and related policies the entity uses to identify, assess, prioritise and monitor climate-related risks, including information about: — (vi) whether and how the entity has changed the processes it uses compared with the previous reporting period",
+    "mandatory": true,
+    "evidence_candidates": [
+      {
+        "payload_path": "climate_risk_register[0].changed_since_prior_period",
+        "payload_root": "climate_risk_register",
+        "value_preview": "False",
+        "value_type": "bool",
+        "match_score": 15,
+        "matched_keywords": [
+          "changed",
+          "changed_since_prior_period",
+          "period"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[1].changed_since_prior_period",
+        "payload_root": "climate_risk_register",
+        "value_preview": "True",
+        "value_type": "bool",
+        "match_score": 15,
+        "matched_keywords": [
+          "changed",
+          "changed_since_prior_period",
+          "period"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[2].changed_since_prior_period",
+        "payload_root": "climate_risk_register",
+        "value_preview": "False",
+        "value_type": "bool",
+        "match_score": 15,
+        "matched_keywords": [
+          "changed",
+          "changed_since_prior_period",
+          "period"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[3].changed_since_prior_period",
+        "payload_root": "climate_risk_register",
+        "value_preview": "True",
+        "value_type": "bool",
+        "match_score": 15,
+        "matched_keywords": [
+          "changed",
+          "changed_since_prior_period",
+          "period"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[4].changed_since_prior_period",
+        "payload_root": "climate_risk_register",
+        "value_preview": "False",
+        "value_type": "bool",
+        "match_score": 15,
+        "matched_keywords": [
+          "changed",
+          "changed_since_prior_period",
+          "period"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[5].changed_since_prior_period",
+        "payload_root": "climate_risk_register",
+        "value_preview": "False",
+        "value_type": "bool",
+        "match_score": 15,
+        "matched_keywords": [
+          "changed",
+          "changed_since_prior_period",
+          "period"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[6].changed_since_prior_period",
+        "payload_root": "climate_risk_register",
+        "value_preview": "False",
+        "value_type": "bool",
+        "match_score": 15,
+        "matched_keywords": [
+          "changed",
+          "changed_since_prior_period",
+          "period"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[7].changed_since_prior_period",
+        "payload_root": "climate_risk_register",
+        "value_preview": "False",
+        "value_type": "bool",
+        "match_score": 15,
+        "matched_keywords": [
+          "changed",
+          "changed_since_prior_period",
+          "period"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      }
+    ],
+    "mapping_method": "deterministic_payload_aware"
+  },
+  {
+    "requirement_id": "IFRS_S2_25_C08",
+    "section_name": "Risk Management",
+    "requirement_text": "To achieve this objective, an entity shall disclose information about — (b) the processes the entity uses to identify, assess, prioritise and monitor climate-related opportunities, including information about whether and how the entity uses climate-related scenario analysis to inform its identification of climate-related opportunities",
+    "mandatory": true,
+    "evidence_candidates": [
+      {
+        "payload_path": "climate_risk_register[0].scenario_analysis_link",
+        "payload_root": "climate_risk_register",
+        "value_preview": "SCN0009",
+        "value_type": "str",
+        "match_score": 13,
+        "matched_keywords": [
+          "analysis",
+          "scenario",
+          "scenario_analysis"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[1].scenario_analysis_link",
+        "payload_root": "climate_risk_register",
+        "value_preview": "nan",
+        "value_type": "float",
+        "match_score": 13,
+        "matched_keywords": [
+          "analysis",
+          "scenario",
+          "scenario_analysis"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[2].scenario_analysis_link",
+        "payload_root": "climate_risk_register",
+        "value_preview": "nan",
+        "value_type": "float",
+        "match_score": 13,
+        "matched_keywords": [
+          "analysis",
+          "scenario",
+          "scenario_analysis"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[3].scenario_analysis_link",
+        "payload_root": "climate_risk_register",
+        "value_preview": "SCN0007",
+        "value_type": "str",
+        "match_score": 13,
+        "matched_keywords": [
+          "analysis",
+          "scenario",
+          "scenario_analysis"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[4].scenario_analysis_link",
+        "payload_root": "climate_risk_register",
+        "value_preview": "SCN0007",
+        "value_type": "str",
+        "match_score": 13,
+        "matched_keywords": [
+          "analysis",
+          "scenario",
+          "scenario_analysis"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[5].scenario_analysis_link",
+        "payload_root": "climate_risk_register",
+        "value_preview": "SCN0007",
+        "value_type": "str",
+        "match_score": 13,
+        "matched_keywords": [
+          "analysis",
+          "scenario",
+          "scenario_analysis"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[6].scenario_analysis_link",
+        "payload_root": "climate_risk_register",
+        "value_preview": "SCN0011",
+        "value_type": "str",
+        "match_score": 13,
+        "matched_keywords": [
+          "analysis",
+          "scenario",
+          "scenario_analysis"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[7].scenario_analysis_link",
+        "payload_root": "climate_risk_register",
+        "value_preview": "SCN0005",
+        "value_type": "str",
+        "match_score": 13,
+        "matched_keywords": [
+          "analysis",
+          "scenario",
+          "scenario_analysis"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      }
+    ],
+    "mapping_method": "deterministic_payload_aware"
+  },
+  {
+    "requirement_id": "IFRS_S2_25_C09",
+    "section_name": "Risk Management",
+    "requirement_text": "To achieve this objective, an entity shall disclose information about — (c) the extent to which, and how, the processes for identifying, assessing, prioritising and monitoring climate-related risks and opportunities are integrated into and inform the entity’s overall risk management process.",
+    "mandatory": true,
+    "evidence_candidates": [
+      {
+        "payload_path": "climate_risk_register[0].erm_integrated_flag",
+        "payload_root": "climate_risk_register",
+        "value_preview": "True",
+        "value_type": "bool",
+        "match_score": 15,
+        "matched_keywords": [
+          "erm",
+          "erm_integrated",
+          "integrated"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[1].erm_integrated_flag",
+        "payload_root": "climate_risk_register",
+        "value_preview": "True",
+        "value_type": "bool",
+        "match_score": 15,
+        "matched_keywords": [
+          "erm",
+          "erm_integrated",
+          "integrated"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[2].erm_integrated_flag",
+        "payload_root": "climate_risk_register",
+        "value_preview": "True",
+        "value_type": "bool",
+        "match_score": 15,
+        "matched_keywords": [
+          "erm",
+          "erm_integrated",
+          "integrated"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[3].erm_integrated_flag",
+        "payload_root": "climate_risk_register",
+        "value_preview": "True",
+        "value_type": "bool",
+        "match_score": 15,
+        "matched_keywords": [
+          "erm",
+          "erm_integrated",
+          "integrated"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[4].erm_integrated_flag",
+        "payload_root": "climate_risk_register",
+        "value_preview": "True",
+        "value_type": "bool",
+        "match_score": 15,
+        "matched_keywords": [
+          "erm",
+          "erm_integrated",
+          "integrated"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[5].erm_integrated_flag",
+        "payload_root": "climate_risk_register",
+        "value_preview": "False",
+        "value_type": "bool",
+        "match_score": 15,
+        "matched_keywords": [
+          "erm",
+          "erm_integrated",
+          "integrated"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[6].erm_integrated_flag",
+        "payload_root": "climate_risk_register",
+        "value_preview": "True",
+        "value_type": "bool",
+        "match_score": 15,
+        "matched_keywords": [
+          "erm",
+          "erm_integrated",
+          "integrated"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[7].erm_integrated_flag",
+        "payload_root": "climate_risk_register",
+        "value_preview": "True",
+        "value_type": "bool",
+        "match_score": 15,
+        "matched_keywords": [
+          "erm",
+          "erm_integrated",
+          "integrated"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      }
+    ],
+    "mapping_method": "deterministic_payload_aware"
+  },
+  {
+    "requirement_id": "IFRS_S2_26_C01",
+    "section_name": "Risk Management",
+    "requirement_text": "In preparing disclosures to fulfil the requirements in paragraph 25, an entity shall avoid unnecessary duplication in accordance with IFRS S1 (see paragraph B42(b) of IFRS S1). For example, although an entity shall provide the information required by paragraph 25, if oversight of sustainability-related risks and opportunities is managed on an integrated basis, the entity would avoid duplication by providing integrated risk management disclosures instead of separate disclosures for each sustainability-related risk and opportunity.",
+    "mandatory": true,
+    "evidence_candidates": [
+      {
+        "payload_path": "climate_risk_register[0].erm_integrated_flag",
+        "payload_root": "climate_risk_register",
+        "value_preview": "True",
+        "value_type": "bool",
+        "match_score": 13,
+        "matched_keywords": [
+          "erm",
+          "erm_integrated",
+          "integrated"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[1].erm_integrated_flag",
+        "payload_root": "climate_risk_register",
+        "value_preview": "True",
+        "value_type": "bool",
+        "match_score": 13,
+        "matched_keywords": [
+          "erm",
+          "erm_integrated",
+          "integrated"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[2].erm_integrated_flag",
+        "payload_root": "climate_risk_register",
+        "value_preview": "True",
+        "value_type": "bool",
+        "match_score": 13,
+        "matched_keywords": [
+          "erm",
+          "erm_integrated",
+          "integrated"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[3].erm_integrated_flag",
+        "payload_root": "climate_risk_register",
+        "value_preview": "True",
+        "value_type": "bool",
+        "match_score": 13,
+        "matched_keywords": [
+          "erm",
+          "erm_integrated",
+          "integrated"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[4].erm_integrated_flag",
+        "payload_root": "climate_risk_register",
+        "value_preview": "True",
+        "value_type": "bool",
+        "match_score": 13,
+        "matched_keywords": [
+          "erm",
+          "erm_integrated",
+          "integrated"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[5].erm_integrated_flag",
+        "payload_root": "climate_risk_register",
+        "value_preview": "False",
+        "value_type": "bool",
+        "match_score": 13,
+        "matched_keywords": [
+          "erm",
+          "erm_integrated",
+          "integrated"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[6].erm_integrated_flag",
+        "payload_root": "climate_risk_register",
+        "value_preview": "True",
+        "value_type": "bool",
+        "match_score": 13,
+        "matched_keywords": [
+          "erm",
+          "erm_integrated",
+          "integrated"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "climate_risk_register[7].erm_integrated_flag",
+        "payload_root": "climate_risk_register",
+        "value_preview": "True",
+        "value_type": "bool",
+        "match_score": 13,
+        "matched_keywords": [
+          "erm",
+          "erm_integrated",
+          "integrated"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      }
+    ],
+    "mapping_method": "deterministic_payload_aware"
   }
 ]

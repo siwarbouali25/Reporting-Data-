@@ -11,82 +11,929 @@
         "passed": false,
         "failures": [
           {
-            "claim_id": "MT-001",
+            "claim_id": "MT-028",
             "issue": "claim_marked_unsupported",
-            "claim": "The section presents targets and related progress metrics supported by underlying evidence."
+            "claim": "If the entity introduces a new metric in the reporting period, it shall disclose a comparative amount for that metric unless it is impracticable to do so."
           },
           {
-            "claim_id": "MT-001",
-            "issue": "no_evidence_source",
-            "claim": "The section presents targets and related progress metrics supported by underlying evidence."
-          },
-          {
-            "claim_id": "MT-006",
+            "claim_id": "MT-029",
             "issue": "claim_marked_unsupported",
-            "claim": "For progress metric `tco2e_per_meur`, the target definition is not reported."
-          },
-          {
-            "claim_id": "MT-007",
-            "issue": "claim_marked_unsupported",
-            "claim": "For progress metric `tco2e_per_meur`, reported progress for 2024 is not reported."
-          },
-          {
-            "claim_id": "MT-009",
-            "issue": "claim_marked_unsupported",
-            "claim": "For progress metric `pct_reduction_vs_baseline`, the target definition is not reported."
-          },
-          {
-            "claim_id": "MT-010",
-            "issue": "claim_marked_unsupported",
-            "claim": "For progress metric `pct_reduction_vs_baseline`, reported progress for 2024 is not reported."
+            "claim": "If it is impracticable to revise a comparative amount for the preceding period, the entity shall disclose that fact."
           }
         ],
-        "claim_count": 10
+        "warnings": [],
+        "claim_count": 29,
+        "claims_register_normalized": {
+          "section_name": "Metrics and Targets",
+          "claims": [
+            {
+              "claim_id": "MT-001",
+              "claim_text": "The entity shall disclose, for each sustainability-related risk and opportunity that could reasonably be expected to affect the entity’s prospects, metrics required by an applicable IFRS Sustainability Disclosure Standard.",
+              "claim_type": "requirement",
+              "entities": [
+                "IFRS Sustainability Disclosure Standard",
+                "entity"
+              ],
+              "numbers": [],
+              "dates": [],
+              "evidence_sources": [
+                "targets[0].target_applies_to",
+                "targets[1].target_applies_to",
+                "targets[2].target_applies_to"
+              ],
+              "requirement_ids": [
+                "IFRS_S1_46_C01"
+              ],
+              "supported": true,
+              "support_notes": "Matches IFRS S1 paragraph 46(a) requirement text included in supported_requirements.",
+              "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+              "repaired_evidence_sources": [
+                "targets[2].target_applies_to",
+                "targets[1].target_applies_to",
+                "targets[0].target_applies_to"
+              ],
+              "invalid_evidence_sources_removed": [
+                "draft_markdown"
+              ]
+            },
+            {
+              "claim_id": "MT-002",
+              "claim_text": "The entity shall disclose, for each sustainability-related risk and opportunity that could reasonably be expected to affect the entity’s prospects, metrics the entity uses to measure and monitor that sustainability-related risk or opportunity.",
+              "claim_type": "requirement",
+              "entities": [
+                "entity"
+              ],
+              "numbers": [],
+              "dates": [],
+              "evidence_sources": [
+                "targets[0].target_applies_to",
+                "targets[1].target_applies_to",
+                "targets[2].target_applies_to"
+              ],
+              "requirement_ids": [
+                "IFRS_S1_46_C03"
+              ],
+              "supported": true,
+              "support_notes": "Matches IFRS S1 paragraph 46(b)(i).",
+              "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+              "repaired_evidence_sources": [
+                "targets[2].target_applies_to",
+                "targets[1].target_applies_to",
+                "targets[0].target_applies_to"
+              ],
+              "invalid_evidence_sources_removed": [
+                "draft_markdown"
+              ]
+            },
+            {
+              "claim_id": "MT-003",
+              "claim_text": "The entity shall disclose, for each sustainability-related risk and opportunity that could reasonably be expected to affect the entity’s prospects, metrics the entity uses to measure and monitor its performance in relation to that risk or opportunity, including progress towards targets it has set and targets required by law or regulation.",
+              "claim_type": "requirement",
+              "entities": [
+                "entity",
+                "law",
+                "regulation"
+              ],
+              "numbers": [],
+              "dates": [],
+              "evidence_sources": [
+                "targets[0].target_applies_to",
+                "targets[1].target_applies_to",
+                "targets[2].target_applies_to"
+              ],
+              "requirement_ids": [
+                "IFRS_S1_46_C04"
+              ],
+              "supported": true,
+              "support_notes": "Matches IFRS S1 paragraph 46(b)(ii).",
+              "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+              "repaired_evidence_sources": [
+                "targets[2].target_applies_to",
+                "targets[1].target_applies_to",
+                "targets[0].target_applies_to"
+              ],
+              "invalid_evidence_sources_removed": [
+                "draft_markdown"
+              ]
+            },
+            {
+              "claim_id": "MT-004",
+              "claim_text": "In the absence of an IFRS Sustainability Disclosure Standard that specifically applies to a sustainability-related risk or opportunity, the entity shall apply paragraphs 57–58 to identify applicable metrics.",
+              "claim_type": "requirement",
+              "entities": [
+                "IFRS Sustainability Disclosure Standard",
+                "entity"
+              ],
+              "numbers": [
+                "57",
+                "58"
+              ],
+              "dates": [],
+              "evidence_sources": [
+                "financed_emissions_equity[4].market_value_meur",
+                "financial_summary[0].net_profit_meur",
+                "targets[2].target_applies_to"
+              ],
+              "requirement_ids": [
+                "IFRS_S1_47_C01"
+              ],
+              "supported": true,
+              "support_notes": "Matches IFRS S1 paragraph 47.",
+              "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+              "repaired_evidence_sources": [
+                "financial_summary[0].net_profit_meur",
+                "financed_emissions_equity[4].market_value_meur",
+                "targets[2].target_applies_to"
+              ],
+              "invalid_evidence_sources_removed": [
+                "draft_markdown"
+              ]
+            },
+            {
+              "claim_id": "MT-005",
+              "claim_text": "Metrics disclosed shall include metrics associated with particular business models, activities or other common features that characterise participation in an industry.",
+              "claim_type": "requirement",
+              "entities": [
+                "entity",
+                "industry"
+              ],
+              "numbers": [],
+              "dates": [],
+              "evidence_sources": [
+                "targets[0].target_applies_to",
+                "targets[1].target_applies_to",
+                "targets[2].target_applies_to"
+              ],
+              "requirement_ids": [
+                "IFRS_S1_48_C01"
+              ],
+              "supported": true,
+              "support_notes": "Matches IFRS S1 paragraph 48.",
+              "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+              "repaired_evidence_sources": [
+                "targets[2].target_applies_to",
+                "targets[1].target_applies_to",
+                "targets[0].target_applies_to"
+              ],
+              "invalid_evidence_sources_removed": [
+                "draft_markdown"
+              ]
+            },
+            {
+              "claim_id": "MT-006",
+              "claim_text": "If the entity discloses a metric taken from a source other than IFRS Sustainability Disclosure Standards, the entity shall identify the source and the metric taken.",
+              "claim_type": "requirement",
+              "entities": [
+                "IFRS Sustainability Disclosure Standards",
+                "entity"
+              ],
+              "numbers": [],
+              "dates": [],
+              "evidence_sources": [
+                "targets[0].target_applies_to",
+                "targets[1].target_applies_to",
+                "targets[2].target_applies_to"
+              ],
+              "requirement_ids": [
+                "IFRS_S1_49_C01"
+              ],
+              "supported": true,
+              "support_notes": "Matches IFRS S1 paragraph 49.",
+              "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+              "repaired_evidence_sources": [
+                "targets[2].target_applies_to",
+                "targets[1].target_applies_to",
+                "targets[0].target_applies_to"
+              ],
+              "invalid_evidence_sources_removed": [
+                "draft_markdown"
+              ]
+            },
+            {
+              "claim_id": "MT-007",
+              "claim_text": "If a metric has been developed by the entity, the entity shall disclose how the metric is defined, including whether it is derived by adjusting a metric taken from a source other than IFRS Sustainability Disclosure Standards and, if so, which source and how the disclosed metric differs from the metric specified in that source.",
+              "claim_type": "requirement",
+              "entities": [
+                "IFRS Sustainability Disclosure Standards",
+                "entity"
+              ],
+              "numbers": [],
+              "dates": [],
+              "evidence_sources": [
+                "targets[0].target_applies_to",
+                "targets[1].target_applies_to",
+                "targets[2].target_applies_to"
+              ],
+              "requirement_ids": [
+                "IFRS_S1_50_C01"
+              ],
+              "supported": true,
+              "support_notes": "Matches IFRS S1 paragraph 50(a).",
+              "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+              "repaired_evidence_sources": [
+                "targets[2].target_applies_to",
+                "targets[1].target_applies_to",
+                "targets[0].target_applies_to"
+              ],
+              "invalid_evidence_sources_removed": [
+                "draft_markdown"
+              ]
+            },
+            {
+              "claim_id": "MT-008",
+              "claim_text": "If a metric has been developed by the entity, the entity shall disclose whether the metric is an absolute measure, a measure expressed in relation to another metric, or a qualitative measure (such as a red, amber, green—or RAG—status).",
+              "claim_type": "requirement",
+              "entities": [
+                "entity"
+              ],
+              "numbers": [],
+              "dates": [],
+              "evidence_sources": [
+                "targets[0].target_applies_to",
+                "targets[1].target_applies_to",
+                "targets[2].target_applies_to"
+              ],
+              "requirement_ids": [
+                "IFRS_S1_50_C02"
+              ],
+              "supported": true,
+              "support_notes": "Matches IFRS S1 paragraph 50(b).",
+              "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+              "repaired_evidence_sources": [
+                "targets[2].target_applies_to",
+                "targets[1].target_applies_to",
+                "targets[0].target_applies_to"
+              ],
+              "invalid_evidence_sources_removed": [
+                "draft_markdown"
+              ]
+            },
+            {
+              "claim_id": "MT-009",
+              "claim_text": "If a metric has been developed by the entity, the entity shall disclose whether the metric is validated by a third party and, if so, which party.",
+              "claim_type": "requirement",
+              "entities": [
+                "entity",
+                "third party"
+              ],
+              "numbers": [],
+              "dates": [],
+              "evidence_sources": [
+                "targets[0].target_applies_to",
+                "targets[1].target_applies_to",
+                "targets[2].target_applies_to"
+              ],
+              "requirement_ids": [
+                "IFRS_S1_50_C03"
+              ],
+              "supported": true,
+              "support_notes": "Matches IFRS S1 paragraph 50(c).",
+              "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+              "repaired_evidence_sources": [
+                "targets[2].target_applies_to",
+                "targets[1].target_applies_to",
+                "targets[0].target_applies_to"
+              ],
+              "invalid_evidence_sources_removed": [
+                "draft_markdown"
+              ]
+            },
+            {
+              "claim_id": "MT-010",
+              "claim_text": "If a metric has been developed by the entity, the entity shall disclose the method used to calculate the metric and the inputs to the calculation, including limitations of the method and significant assumptions made.",
+              "claim_type": "requirement",
+              "entities": [
+                "entity"
+              ],
+              "numbers": [],
+              "dates": [],
+              "evidence_sources": [
+                "targets[0].target_applies_to",
+                "targets[1].target_applies_to",
+                "targets[2].target_applies_to"
+              ],
+              "requirement_ids": [
+                "IFRS_S1_50_C04"
+              ],
+              "supported": true,
+              "support_notes": "Matches IFRS S1 paragraph 50(d).",
+              "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+              "repaired_evidence_sources": [
+                "targets[2].target_applies_to",
+                "targets[1].target_applies_to",
+                "targets[0].target_applies_to"
+              ],
+              "invalid_evidence_sources_removed": [
+                "draft_markdown"
+              ]
+            },
+            {
+              "claim_id": "MT-011",
+              "claim_text": "The entity shall disclose information about the targets it has set to monitor progress towards achieving its strategic goals and any targets it is required to meet by law or regulation.",
+              "claim_type": "requirement",
+              "entities": [
+                "entity",
+                "law",
+                "regulation"
+              ],
+              "numbers": [],
+              "dates": [],
+              "evidence_sources": [
+                "targets[0].target_applies_to",
+                "targets[1].target_applies_to",
+                "targets[2].target_applies_to"
+              ],
+              "requirement_ids": [
+                "IFRS_S1_51_C01",
+                "IFRS_S1_51_C02",
+                "IFRS_S1_51_C03",
+                "IFRS_S1_51_C04",
+                "IFRS_S1_51_C05",
+                "IFRS_S1_51_C06",
+                "IFRS_S1_51_C07"
+              ],
+              "supported": true,
+              "support_notes": "High-level target disclosure requirement is reflected in IFRS S1 paragraph 51 (sub-clauses a-g captured as separate requirement_ids).",
+              "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+              "repaired_evidence_sources": [
+                "targets[2].target_applies_to",
+                "targets[1].target_applies_to",
+                "targets[0].target_applies_to"
+              ],
+              "invalid_evidence_sources_removed": [
+                "draft_markdown"
+              ]
+            },
+            {
+              "claim_id": "MT-012",
+              "claim_text": "For each target, the entity shall disclose the metric used to set the target and to monitor progress towards reaching the target.",
+              "claim_type": "requirement",
+              "entities": [
+                "entity"
+              ],
+              "numbers": [],
+              "dates": [],
+              "evidence_sources": [
+                "targets[0].target_applies_to",
+                "targets[1].target_applies_to",
+                "targets[2].target_applies_to"
+              ],
+              "requirement_ids": [
+                "IFRS_S1_51_C01"
+              ],
+              "supported": true,
+              "support_notes": "Matches IFRS S1 paragraph 51(a).",
+              "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+              "repaired_evidence_sources": [
+                "targets[2].target_applies_to",
+                "targets[1].target_applies_to",
+                "targets[0].target_applies_to"
+              ],
+              "invalid_evidence_sources_removed": [
+                "draft_markdown"
+              ]
+            },
+            {
+              "claim_id": "MT-013",
+              "claim_text": "For each target, the entity shall disclose the specific quantitative or qualitative target it has set or is required to meet.",
+              "claim_type": "requirement",
+              "entities": [
+                "entity"
+              ],
+              "numbers": [],
+              "dates": [],
+              "evidence_sources": [
+                "targets[0].target_applies_to",
+                "targets[1].target_applies_to",
+                "targets[2].target_applies_to"
+              ],
+              "requirement_ids": [
+                "IFRS_S1_51_C02"
+              ],
+              "supported": true,
+              "support_notes": "Matches IFRS S1 paragraph 51(b).",
+              "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+              "repaired_evidence_sources": [
+                "targets[2].target_applies_to",
+                "targets[1].target_applies_to",
+                "targets[0].target_applies_to"
+              ],
+              "invalid_evidence_sources_removed": [
+                "draft_markdown"
+              ]
+            },
+            {
+              "claim_id": "MT-014",
+              "claim_text": "For each target, the entity shall disclose the period over which the target applies.",
+              "claim_type": "requirement",
+              "entities": [
+                "entity"
+              ],
+              "numbers": [],
+              "dates": [],
+              "evidence_sources": [
+                "targets[0].target_applies_to",
+                "targets[1].target_applies_to",
+                "targets[2].target_applies_to"
+              ],
+              "requirement_ids": [
+                "IFRS_S1_51_C03"
+              ],
+              "supported": true,
+              "support_notes": "Matches IFRS S1 paragraph 51(c).",
+              "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+              "repaired_evidence_sources": [
+                "targets[2].target_applies_to",
+                "targets[1].target_applies_to",
+                "targets[0].target_applies_to"
+              ],
+              "invalid_evidence_sources_removed": [
+                "draft_markdown"
+              ]
+            },
+            {
+              "claim_id": "MT-015",
+              "claim_text": "For each target, the entity shall disclose the base period from which progress is measured.",
+              "claim_type": "requirement",
+              "entities": [
+                "entity"
+              ],
+              "numbers": [],
+              "dates": [],
+              "evidence_sources": [
+                "targets[0].target_applies_to",
+                "targets[1].target_applies_to",
+                "targets[2].target_applies_to"
+              ],
+              "requirement_ids": [
+                "IFRS_S1_51_C04"
+              ],
+              "supported": true,
+              "support_notes": "Matches IFRS S1 paragraph 51(d).",
+              "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+              "repaired_evidence_sources": [
+                "targets[2].target_applies_to",
+                "targets[1].target_applies_to",
+                "targets[0].target_applies_to"
+              ],
+              "invalid_evidence_sources_removed": [
+                "draft_markdown"
+              ]
+            },
+            {
+              "claim_id": "MT-016",
+              "claim_text": "For each target, the entity shall disclose any milestones and interim targets.",
+              "claim_type": "requirement",
+              "entities": [
+                "entity"
+              ],
+              "numbers": [],
+              "dates": [],
+              "evidence_sources": [
+                "targets[0].target_applies_to",
+                "targets[1].target_applies_to",
+                "targets[2].target_applies_to"
+              ],
+              "requirement_ids": [
+                "IFRS_S1_51_C05"
+              ],
+              "supported": true,
+              "support_notes": "Matches IFRS S1 paragraph 51(e).",
+              "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+              "repaired_evidence_sources": [
+                "targets[2].target_applies_to",
+                "targets[1].target_applies_to",
+                "targets[0].target_applies_to"
+              ],
+              "invalid_evidence_sources_removed": [
+                "draft_markdown"
+              ]
+            },
+            {
+              "claim_id": "MT-017",
+              "claim_text": "For each target, the entity shall disclose performance against the target and an analysis of trends or changes in performance.",
+              "claim_type": "requirement",
+              "entities": [
+                "entity"
+              ],
+              "numbers": [],
+              "dates": [],
+              "evidence_sources": [
+                "targets[0].target_applies_to",
+                "targets[1].target_applies_to",
+                "targets[2].target_applies_to"
+              ],
+              "requirement_ids": [
+                "IFRS_S1_51_C06"
+              ],
+              "supported": true,
+              "support_notes": "Matches IFRS S1 paragraph 51(f).",
+              "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+              "repaired_evidence_sources": [
+                "targets[2].target_applies_to",
+                "targets[1].target_applies_to",
+                "targets[0].target_applies_to"
+              ],
+              "invalid_evidence_sources_removed": [
+                "draft_markdown"
+              ]
+            },
+            {
+              "claim_id": "MT-018",
+              "claim_text": "For each target, the entity shall disclose any revisions to the target and an explanation for those revisions.",
+              "claim_type": "requirement",
+              "entities": [
+                "entity"
+              ],
+              "numbers": [],
+              "dates": [],
+              "evidence_sources": [
+                "targets[0].target_applies_to",
+                "targets[1].target_applies_to",
+                "targets[2].target_applies_to"
+              ],
+              "requirement_ids": [
+                "IFRS_S1_51_C07"
+              ],
+              "supported": true,
+              "support_notes": "Matches IFRS S1 paragraph 51(g).",
+              "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+              "repaired_evidence_sources": [
+                "targets[2].target_applies_to",
+                "targets[1].target_applies_to",
+                "targets[0].target_applies_to"
+              ],
+              "invalid_evidence_sources_removed": [
+                "draft_markdown"
+              ]
+            },
+            {
+              "claim_id": "MT-019",
+              "claim_text": "The definition and calculation of metrics, including metrics used to set targets and monitor progress, shall be consistent over time; if a metric is redefined or replaced, the entity shall apply paragraph B52.",
+              "claim_type": "requirement",
+              "entities": [
+                "entity"
+              ],
+              "numbers": [
+                "B52"
+              ],
+              "dates": [],
+              "evidence_sources": [
+                "targets[0].target_applies_to",
+                "targets[1].target_applies_to",
+                "targets[2].target_applies_to"
+              ],
+              "requirement_ids": [
+                "IFRS_S1_52_C01"
+              ],
+              "supported": true,
+              "support_notes": "Matches IFRS S1 paragraph 52.",
+              "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+              "repaired_evidence_sources": [
+                "targets[2].target_applies_to",
+                "targets[1].target_applies_to",
+                "targets[0].target_applies_to"
+              ],
+              "invalid_evidence_sources_removed": [
+                "draft_markdown"
+              ]
+            },
+            {
+              "claim_id": "MT-020",
+              "claim_text": "The entity shall label and define metrics and targets using meaningful, clear and precise names and descriptions.",
+              "claim_type": "requirement",
+              "entities": [
+                "entity"
+              ],
+              "numbers": [],
+              "dates": [],
+              "evidence_sources": [
+                "targets[0].target_applies_to",
+                "targets[1].target_applies_to",
+                "targets[2].target_applies_to"
+              ],
+              "requirement_ids": [
+                "IFRS_S1_53_C01"
+              ],
+              "supported": true,
+              "support_notes": "Matches IFRS S1 paragraph 53.",
+              "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+              "repaired_evidence_sources": [
+                "targets[2].target_applies_to",
+                "targets[1].target_applies_to",
+                "targets[0].target_applies_to"
+              ],
+              "invalid_evidence_sources_removed": [
+                "draft_markdown"
+              ]
+            },
+            {
+              "claim_id": "MT-021",
+              "claim_text": "Comparative information is required in respect of the preceding period for all amounts disclosed in the reporting period.",
+              "claim_type": "requirement",
+              "entities": [
+                "entity"
+              ],
+              "numbers": [],
+              "dates": [],
+              "evidence_sources": [
+                "targets[0].target_applies_to",
+                "targets[1].target_applies_to",
+                "targets[2].target_applies_to"
+              ],
+              "requirement_ids": [
+                "IFRS_S1_B49_C01"
+              ],
+              "supported": true,
+              "support_notes": "Matches IFRS S1 B49 statement about paragraph 70 comparative information requirement.",
+              "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+              "repaired_evidence_sources": [
+                "targets[2].target_applies_to",
+                "targets[1].target_applies_to",
+                "targets[0].target_applies_to"
+              ],
+              "invalid_evidence_sources_removed": [
+                "draft_markdown"
+              ]
+            },
+            {
+              "claim_id": "MT-022",
+              "claim_text": "Except as specified in paragraph B51, if the entity identifies new information relating to an estimated metric disclosed in the preceding period and that new information provides evidence of circumstances that existed in that period, the entity shall disclose a revised comparative amount reflecting the new information.",
+              "claim_type": "requirement",
+              "entities": [
+                "entity"
+              ],
+              "numbers": [
+                "B51"
+              ],
+              "dates": [],
+              "evidence_sources": [
+                "targets[0].target_applies_to",
+                "targets[1].target_applies_to",
+                "targets[2].target_applies_to"
+              ],
+              "requirement_ids": [
+                "IFRS_S1_B50_C01"
+              ],
+              "supported": true,
+              "support_notes": "Matches IFRS S1 B50(a).",
+              "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+              "repaired_evidence_sources": [
+                "targets[2].target_applies_to",
+                "targets[1].target_applies_to",
+                "targets[0].target_applies_to"
+              ],
+              "invalid_evidence_sources_removed": [
+                "draft_markdown"
+              ]
+            },
+            {
+              "claim_id": "MT-023",
+              "claim_text": "Except as specified in paragraph B51, in the circumstances described for estimated metrics, the entity shall disclose the difference between the amount disclosed in the preceding period and the revised comparative amount.",
+              "claim_type": "requirement",
+              "entities": [
+                "entity"
+              ],
+              "numbers": [
+                "B51"
+              ],
+              "dates": [],
+              "evidence_sources": [
+                "targets[0].target_applies_to",
+                "targets[1].target_applies_to",
+                "targets[2].target_applies_to"
+              ],
+              "requirement_ids": [
+                "IFRS_S1_B50_C02"
+              ],
+              "supported": true,
+              "support_notes": "Matches IFRS S1 B50(b).",
+              "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+              "repaired_evidence_sources": [
+                "targets[2].target_applies_to",
+                "targets[1].target_applies_to",
+                "targets[0].target_applies_to"
+              ],
+              "invalid_evidence_sources_removed": [
+                "draft_markdown"
+              ]
+            },
+            {
+              "claim_id": "MT-024",
+              "claim_text": "Except as specified in paragraph B51, in the circumstances described for estimated metrics, the entity shall explain the reasons for revising the comparative amount.",
+              "claim_type": "requirement",
+              "entities": [
+                "entity"
+              ],
+              "numbers": [
+                "B51"
+              ],
+              "dates": [],
+              "evidence_sources": [
+                "targets[0].target_applies_to",
+                "targets[1].target_applies_to",
+                "targets[2].target_applies_to"
+              ],
+              "requirement_ids": [
+                "IFRS_S1_B50_C03"
+              ],
+              "supported": true,
+              "support_notes": "Matches IFRS S1 B50(c).",
+              "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+              "repaired_evidence_sources": [
+                "targets[2].target_applies_to",
+                "targets[1].target_applies_to",
+                "targets[0].target_applies_to"
+              ],
+              "invalid_evidence_sources_removed": [
+                "draft_markdown"
+              ]
+            },
+            {
+              "claim_id": "MT-025",
+              "claim_text": "If the entity redefines or replaces a metric in the reporting period, it shall disclose a revised comparative amount unless it is impracticable to do so.",
+              "claim_type": "requirement",
+              "entities": [
+                "entity"
+              ],
+              "numbers": [],
+              "dates": [],
+              "evidence_sources": [
+                "targets[0].target_applies_to",
+                "targets[1].target_applies_to",
+                "targets[2].target_applies_to"
+              ],
+              "requirement_ids": [
+                "IFRS_S1_B52_C01"
+              ],
+              "supported": true,
+              "support_notes": "Matches IFRS S1 B52(a).",
+              "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+              "repaired_evidence_sources": [
+                "targets[2].target_applies_to",
+                "targets[1].target_applies_to",
+                "targets[0].target_applies_to"
+              ],
+              "invalid_evidence_sources_removed": [
+                "draft_markdown"
+              ]
+            },
+            {
+              "claim_id": "MT-026",
+              "claim_text": "If the entity redefines or replaces a metric in the reporting period, it shall explain the changes.",
+              "claim_type": "requirement",
+              "entities": [
+                "entity"
+              ],
+              "numbers": [],
+              "dates": [],
+              "evidence_sources": [
+                "targets[0].target_applies_to",
+                "targets[1].target_applies_to",
+                "targets[2].target_applies_to"
+              ],
+              "requirement_ids": [
+                "IFRS_S1_B52_C02"
+              ],
+              "supported": true,
+              "support_notes": "Matches IFRS S1 B52(b).",
+              "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+              "repaired_evidence_sources": [
+                "targets[2].target_applies_to",
+                "targets[1].target_applies_to",
+                "targets[0].target_applies_to"
+              ],
+              "invalid_evidence_sources_removed": [
+                "draft_markdown"
+              ]
+            },
+            {
+              "claim_id": "MT-027",
+              "claim_text": "If the entity redefines or replaces a metric in the reporting period, it shall explain the reasons for the changes, including why the redefined or replacement metric provides more useful information.",
+              "claim_type": "requirement",
+              "entities": [
+                "entity"
+              ],
+              "numbers": [],
+              "dates": [],
+              "evidence_sources": [
+                "targets[0].target_applies_to",
+                "targets[1].target_applies_to",
+                "targets[2].target_applies_to"
+              ],
+              "requirement_ids": [
+                "IFRS_S1_B52_C03"
+              ],
+              "supported": true,
+              "support_notes": "Matches IFRS S1 B52(c).",
+              "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+              "repaired_evidence_sources": [
+                "targets[2].target_applies_to",
+                "targets[1].target_applies_to",
+                "targets[0].target_applies_to"
+              ],
+              "invalid_evidence_sources_removed": [
+                "draft_markdown"
+              ]
+            },
+            {
+              "claim_id": "MT-028",
+              "claim_text": "If the entity introduces a new metric in the reporting period, it shall disclose a comparative amount for that metric unless it is impracticable to do so.",
+              "claim_type": "requirement",
+              "entities": [
+                "entity"
+              ],
+              "numbers": [],
+              "dates": [],
+              "evidence_sources": [
+                "targets[0].target_applies_to",
+                "targets[1].target_applies_to",
+                "targets[2].target_applies_to"
+              ],
+              "requirement_ids": [],
+              "supported": false,
+              "support_notes": "Statement appears in draft_markdown but no corresponding requirement_id is provided in the supported_requirements excerpt (list is truncated).",
+              "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+              "repaired_evidence_sources": [
+                "targets[2].target_applies_to",
+                "targets[1].target_applies_to",
+                "targets[0].target_applies_to"
+              ],
+              "invalid_evidence_sources_removed": [
+                "draft_markdown"
+              ]
+            },
+            {
+              "claim_id": "MT-029",
+              "claim_text": "If it is impracticable to revise a comparative amount for the preceding period, the entity shall disclose that fact.",
+              "claim_type": "requirement",
+              "entities": [
+                "entity"
+              ],
+              "numbers": [],
+              "dates": [],
+              "evidence_sources": [
+                "targets[0].target_applies_to",
+                "targets[1].target_applies_to",
+                "targets[2].target_applies_to"
+              ],
+              "requirement_ids": [],
+              "supported": false,
+              "support_notes": "Statement appears in draft_markdown but no corresponding requirement_id is provided in the supported_requirements excerpt (list is truncated).",
+              "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+              "repaired_evidence_sources": [
+                "targets[2].target_applies_to",
+                "targets[1].target_applies_to",
+                "targets[0].target_applies_to"
+              ],
+              "invalid_evidence_sources_removed": [
+                "draft_markdown"
+              ]
+            }
+          ]
+        }
       },
       {
         "gate_name": "factlock_numbers_entities",
-        "passed": false,
-        "failures": [
+        "passed": true,
+        "failures": [],
+        "warnings": [
           {
-            "type": "number_not_in_payload_or_claims",
-            "value": "120,000.0"
+            "type": "entity_not_in_payload_or_claims",
+            "value": "IFRS Sustainability Disclosure Standards\n\nIf"
           },
           {
-            "type": "number_not_in_payload_or_claims",
-            "value": "137,849.0"
-          },
-          {
-            "type": "number_not_in_payload_or_claims",
-            "value": "40.0%"
-          },
-          {
-            "type": "number_not_in_payload_or_claims",
-            "value": "42%"
+            "type": "entity_not_in_payload_or_claims",
+            "value": "Targets\n\nThe"
           }
         ],
         "draft_numbers": [
-          "1",
-          "120,000.0",
-          "137,849.0",
-          "2",
-          "20.0",
-          "2024",
-          "3",
-          "40.0%",
-          "42%"
+          "57",
+          "58"
         ],
-        "draft_entities": []
+        "draft_entities": [
+          "IFRS Sustainability Disclosure Standard",
+          "IFRS Sustainability Disclosure Standards",
+          "IFRS Sustainability Disclosure Standards\n\nIf",
+          "Targets\n\nThe"
+        ]
       },
       {
         "gate_name": "reference_firewall",
         "passed": true,
-        "forbidden_term_hits": []
+        "forbidden_term_hits": [],
+        "failures": [],
+        "warnings": []
       },
       {
         "gate_name": "report_cleanliness_no_missing_payload_language",
         "passed": true,
-        "blocked_phrase_hits": []
+        "blocked_phrase_hits": [],
+        "soft_phrase_hits": [],
+        "failures": [],
+        "warnings": []
       }
-    ]
+    ],
+    "summary": "- claims_integrity: FAIL | failures=2 | warnings=0\n  failure: {'claim_id': 'MT-028', 'issue': 'claim_marked_unsupported', 'claim': 'If the entity introduces a new metric in the reporting period, it shall disclose a comparative amount for that metric unless it is impracticable to do so.'}\n  failure: {'claim_id': 'MT-029', 'issue': 'claim_marked_unsupported', 'claim': 'If it is impracticable to revise a comparative amount for the preceding period, the entity shall disclose that fact.'}\n- factlock_numbers_entities: PASS | failures=0 | warnings=2\n  warning: {'type': 'entity_not_in_payload_or_claims', 'value': 'IFRS Sustainability Disclosure Standards\\n\\nIf'}\n  warning: {'type': 'entity_not_in_payload_or_claims', 'value': 'Targets\\n\\nThe'}\n- reference_firewall: PASS | failures=0 | warnings=0\n- report_cleanliness_no_missing_payload_language: PASS | failures=0 | warnings=0"
   }
 }

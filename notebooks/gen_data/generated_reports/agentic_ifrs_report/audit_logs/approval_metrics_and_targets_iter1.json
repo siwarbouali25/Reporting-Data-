@@ -1,60 +1,47 @@
 {
   "section_name": "Metrics and Targets",
   "approved": false,
-  "reason": "deterministic_gates_failed",
-  "required_fixes": {
-    "section_name": "Metrics and Targets",
-    "passed": false,
-    "gates": [
-      {
-        "gate_name": "claims_integrity",
-        "passed": false,
-        "failures": [
-          {
-            "claim_id": "C-001",
-            "issue": "claim_marked_unsupported",
-            "claim": "The section presents targets and related progress metrics."
-          },
-          {
-            "claim_id": "C-001",
-            "issue": "no_evidence_source",
-            "claim": "The section presents targets and related progress metrics."
-          }
-        ],
-        "claim_count": 6
-      },
-      {
-        "gate_name": "factlock_numbers_entities",
-        "passed": false,
-        "failures": [
-          {
-            "type": "number_not_in_payload_or_claims",
-            "value": "42%"
-          }
-        ],
-        "draft_numbers": [
-          "1",
-          "120000.0",
-          "137849.0",
-          "2",
-          "20.0",
-          "2024",
-          "3",
-          "40.0",
-          "42%"
-        ],
-        "draft_entities": []
-      },
-      {
-        "gate_name": "reference_firewall",
-        "passed": true,
-        "forbidden_term_hits": []
-      },
-      {
-        "gate_name": "report_cleanliness_no_missing_payload_language",
-        "passed": true,
-        "blocked_phrase_hits": []
-      }
-    ]
+  "scores": {
+    "ifrs_coverage": 2.0,
+    "evidence": 10.0,
+    "style": 6.8
+  },
+  "failures": [
+    {
+      "judge": "ifrs_coverage_judge",
+      "score": 2.0,
+      "required_fixes": [
+        "Replace boilerplate 'shall disclose' language with entity-specific disclosures of metrics and targets actually used, using the available payload evidence (targets[], reporting_kpis.*, internal_carbon_price[]).",
+        "Disclose actual GHG emissions (Scope 1, Scope 2 location-based and market-based, and Scope 3) in metric tonnes CO2e for the reporting period, and provide comparative prior-period amounts where available.",
+        "For each disclosed target: provide the metric, target value, target period, baseline/base period (year and value), interim milestones, current-period performance/progress and trend commentary, and any revisions (or explicitly state none).",
+        "Where metrics come from non-IFRS sources (e.g., GHG Protocol), explicitly name the source and identify the metric taken; where entity-developed, provide definition, type (absolute/ratio/qualitative), calculation method/inputs/assumptions/limitations, and third-party validation status and validator name if applicable.",
+        "Disclose internal carbon price application (how used in decisions) and the price per tCO2e (including currency and scope of application)."
+      ]
+    },
+    {
+      "judge": "style_judge",
+      "score": 6.8,
+      "required_fixes": [
+        "Rewrite the section from a disclosure perspective rather than as a restatement of IFRS requirements. Use third-person for externally defined requirements (e.g., 'IFRS Sustainability Disclosure Standards require...') and first-person plural for entity actions (e.g., 'We disclose...', 'We measure...').",
+        "Add an opening overview paragraph that explains the purpose of the Metrics and Targets section, how it supports decision-usefulness, and the scope (sustainability-related and climate-related metrics and targets).",
+        "Introduce numbered headings aligned to the report structure (e.g., '4 Metrics and Targets', '4.1 Metrics', '4.2 Targets', '4.3 Methodology and boundaries', '4.4 Comparative information and changes').",
+        "Insert a short purpose statement at the start of each subsection (e.g., 'This subsection explains how we select and define metrics used to monitor sustainability-related risks and opportunities.').",
+        "Separate general sustainability metrics (IFRS S1) from climate-specific metrics (IFRS S2) using explicit subheadings and brief narrative explaining the distinction and mapping.",
+        "Develop a methodology/transparency subsection that describes boundaries, data sources, estimation approaches, calculation methods, validation/assurance, and how changes to metrics and targets are handled over time.",
+        "Replace purely normative bullet lists with entity-oriented disclosure bullets that describe what is actually reported (e.g., 'We report the following categories of metrics...', 'We define entity-developed metrics as...').",
+        "Introduce a metrics register table as the primary disclosure vehicle, with columns for: metric name, definition, boundary, reporting-period value/status, source type (IFRS/other/entity-developed), internal source reference, assurance status, and mapping to related report sections.",
+        "Ensure all tables have numbers and captions (e.g., 'Table 4.1: Sustainability-related metrics register') and reference them in the narrative.",
+        "Add explicit language for missing or incomplete data using standardized status labels ('not reported for the period', 'not applicable', 'under development') and briefly explain reasons, interim approaches, limitations, and planned enhancement direction.",
+        "Clarify how comparative information and revisions to comparative amounts are handled in practice, distinguishing between estimates, new information, and metric redefinitions, and cross-reference relevant methodology or appendix sections.",
+        "Close the section with a short connectivity paragraph linking metrics and targets to governance, strategy, risk management, and financial statement impacts (using generic cross-reference placeholders, e.g., 'Refer to [Section: Strategy]' and 'See [Appendix: Metrics Methodology]').",
+        "Review wording to ensure it uses standards-oriented verbs in a disclosure context (disclose, define, measure, calculate, report, reconcile, validate, review, update) and avoids copying IFRS standard sentences verbatim.",
+        "Introduce brief narrative lead-ins before bullet lists explaining what the bullets cover and why they are relevant for users of the report."
+      ]
+    }
+  ],
+  "thresholds": {
+    "ifrs_coverage_score_min": 8.0,
+    "evidence_score_min": 8.0,
+    "style_score_min": 7.5
   }
 }

@@ -7,44 +7,722 @@
       "passed": false,
       "failures": [
         {
-          "claim_id": "MT-001",
+          "claim_id": "MT-008",
           "issue": "claim_marked_unsupported",
-          "claim": "The section is titled \"Metrics and Targets\"."
+          "claim": "The entity discloses Scope 1 emissions (tCO2e) for the reporting period and the preceding period."
         },
         {
-          "claim_id": "MT-001",
-          "issue": "no_evidence_source",
-          "claim": "The section is titled \"Metrics and Targets\"."
+          "claim_id": "MT-009",
+          "issue": "claim_marked_unsupported",
+          "claim": "The entity discloses Scope 2 emissions (location-based and market-based) in tCO2e for the reporting period and the preceding period."
+        },
+        {
+          "claim_id": "MT-010",
+          "issue": "claim_marked_unsupported",
+          "claim": "The entity discloses Scope 3 emissions (tCO2e) for the reporting period and the preceding period."
+        },
+        {
+          "claim_id": "MT-012",
+          "issue": "claim_marked_unsupported",
+          "claim": "For GHG emissions metrics, the source is identified as a placeholder (e.g., the GHG Protocol Corporate Accounting and Reporting Standard), and the metrics taken are Scope 1, Scope 2 (location-based and market-based) and Scope 3 emissions in tCO2e."
+        },
+        {
+          "claim_id": "MT-016",
+          "issue": "claim_marked_unsupported",
+          "claim": "The entity uses an internal carbon price in decision-making and discloses how it is applied and the internal carbon price per tCO2e including currency and scope of application."
+        },
+        {
+          "claim_id": "MT-017",
+          "issue": "claim_marked_unsupported",
+          "claim": "Internal carbon price is disclosed as: [currency] [●] per tCO2e; scope of application: [●]; application in decisions: [●]."
         }
       ],
-      "claim_count": 6
+      "warnings": [
+        {
+          "claim_id": "MT-002",
+          "issue": "no_evidence_source_after_repair",
+          "claim": "The entity discloses metrics required by applicable IFRS Sustainability Disclosure Standards."
+        },
+        {
+          "claim_id": "MT-003",
+          "issue": "no_evidence_source_after_repair",
+          "claim": "The entity discloses the metrics it uses to measure and monitor each sustainability-related risk or opportunity."
+        },
+        {
+          "claim_id": "MT-006",
+          "issue": "no_evidence_source_after_repair",
+          "claim": "Disclosures include metrics associated with business models, activities or other common features that characterise participation in the entity's industry."
+        },
+        {
+          "claim_id": "MT-013",
+          "issue": "no_evidence_source_after_repair",
+          "claim": "For any entity-developed metric disclosed, the entity provides the metric definition (including derivation/adjustments and differences vs the source), whether it is absolute/ratio/qualitative, whether it is third-party validated (and by whom), and the calculation method/inputs including significant assumptions and limitations."
+        },
+        {
+          "claim_id": "MT-019",
+          "issue": "no_evidence_source_after_repair",
+          "claim": "The entity provides comparative information for the preceding period for all amounts disclosed."
+        },
+        {
+          "claim_id": "MT-020",
+          "issue": "no_evidence_source_after_repair",
+          "claim": "When a disclosed metric amount is estimated and new information provides evidence of circumstances that existed in the preceding period, the entity revises the comparative amount (except as specified in paragraph B51), discloses the difference, and explains the reasons for the revision."
+        }
+      ],
+      "claim_count": 20,
+      "claims_register_normalized": {
+        "section_name": "Metrics and Targets",
+        "claims": [
+          {
+            "claim_id": "MT-001",
+            "claim_text": "The section summarises the metrics used to measure and monitor sustainability-related risks and opportunities (including climate-related metrics and targets) and how performance is tracked against those targets.",
+            "claim_type": "narrative_scope",
+            "entities": [
+              "climate-related metrics",
+              "sustainability-related risks and opportunities",
+              "targets"
+            ],
+            "numbers": [],
+            "dates": [],
+            "evidence_sources": [
+              "targets[2].target_applies_to",
+              "targets[2].target_progress_pct_2024",
+              "targets[2].third_party_validated"
+            ],
+            "requirement_ids": [],
+            "supported": true,
+            "support_notes": "Describes scope/purpose; not a specific IFRS disclosure requirement mapping.",
+            "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+            "repaired_evidence_sources": [
+              "targets[2].third_party_validated",
+              "targets[2].target_progress_pct_2024",
+              "targets[2].target_applies_to"
+            ],
+            "invalid_evidence_sources_removed": [
+              "draft_markdown: Metrics and targets (intro paragraph)"
+            ]
+          },
+          {
+            "claim_id": "MT-002",
+            "claim_text": "The entity discloses metrics required by applicable IFRS Sustainability Disclosure Standards.",
+            "claim_type": "disclosure_commitment",
+            "entities": [
+              "IFRS Sustainability Disclosure Standards",
+              "metrics"
+            ],
+            "numbers": [],
+            "dates": [],
+            "evidence_sources": [],
+            "requirement_ids": [
+              "IFRS_S1_46_C01"
+            ],
+            "supported": true,
+            "support_notes": "Statement aligns with IFRS S1 paragraph 46(a); no specific metric list provided here.",
+            "invalid_evidence_sources_removed": [
+              "draft_markdown: \"We disclose: metrics required by applicable IFRS Sustainability Disclosure Standards\""
+            ]
+          },
+          {
+            "claim_id": "MT-003",
+            "claim_text": "The entity discloses the metrics it uses to measure and monitor each sustainability-related risk or opportunity.",
+            "claim_type": "disclosure_commitment",
+            "entities": [
+              "metrics",
+              "sustainability-related opportunity",
+              "sustainability-related risk"
+            ],
+            "numbers": [],
+            "dates": [],
+            "evidence_sources": [],
+            "requirement_ids": [
+              "IFRS_S1_46_C03"
+            ],
+            "supported": true,
+            "support_notes": "High-level commitment; does not enumerate risk/opportunity-specific metrics in this excerpt.",
+            "invalid_evidence_sources_removed": [
+              "draft_markdown: \"the metrics we use to measure and monitor: each sustainability-related risk or opportunity\""
+            ]
+          },
+          {
+            "claim_id": "MT-004",
+            "claim_text": "The entity discloses metrics used to monitor performance in relation to sustainability-related risks and opportunities, including progress towards targets set and any targets required by law or regulation.",
+            "claim_type": "disclosure_commitment",
+            "entities": [
+              "law or regulation",
+              "metrics",
+              "performance",
+              "targets"
+            ],
+            "numbers": [],
+            "dates": [],
+            "evidence_sources": [
+              "targets[1].target_progress_pct_2024",
+              "targets[2].progress_metric",
+              "targets[2].target_progress_pct_2024"
+            ],
+            "requirement_ids": [
+              "IFRS_S1_46_C04"
+            ],
+            "supported": true,
+            "support_notes": "Commitment matches IFRS S1 46(b)(ii); target details are described later but placeholders remain.",
+            "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+            "repaired_evidence_sources": [
+              "targets[2].target_progress_pct_2024",
+              "targets[2].progress_metric",
+              "targets[1].target_progress_pct_2024"
+            ],
+            "invalid_evidence_sources_removed": [
+              "draft_markdown: \"our performance... including progress towards targets... and any targets required by law or regulation\""
+            ]
+          },
+          {
+            "claim_id": "MT-005",
+            "claim_text": "Where no IFRS Sustainability Disclosure Standard specifically applies to a sustainability-related risk or opportunity, the entity identifies applicable metrics by applying the approach in paragraphs 57–58.",
+            "claim_type": "methodology_statement",
+            "entities": [
+              "IFRS Sustainability Disclosure Standards",
+              "metrics",
+              "paragraphs 57–58"
+            ],
+            "numbers": [
+              "57",
+              "58"
+            ],
+            "dates": [],
+            "evidence_sources": [
+              "financed_emissions_equity[4].market_value_meur",
+              "financial_summary[0].net_profit_meur"
+            ],
+            "requirement_ids": [
+              "IFRS_S1_47_C01"
+            ],
+            "supported": true,
+            "support_notes": "Directly mirrors IFRS S1 paragraph 47 requirement.",
+            "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+            "repaired_evidence_sources": [
+              "financial_summary[0].net_profit_meur",
+              "financed_emissions_equity[4].market_value_meur"
+            ],
+            "invalid_evidence_sources_removed": [
+              "draft_markdown: \"Where no IFRS... applies... we identify applicable metrics by applying the approach in paragraphs 57–58\""
+            ]
+          },
+          {
+            "claim_id": "MT-006",
+            "claim_text": "Disclosures include metrics associated with business models, activities or other common features that characterise participation in the entity's industry.",
+            "claim_type": "disclosure_commitment",
+            "entities": [
+              "activities",
+              "business models",
+              "industry",
+              "metrics"
+            ],
+            "numbers": [],
+            "dates": [],
+            "evidence_sources": [],
+            "requirement_ids": [
+              "IFRS_S1_48_C01"
+            ],
+            "supported": true,
+            "support_notes": "Commitment aligns with IFRS S1 paragraph 48; no industry-specific metrics are listed here.",
+            "invalid_evidence_sources_removed": [
+              "draft_markdown: \"Our disclosures include metrics associated with business models, activities or other common features...\""
+            ]
+          },
+          {
+            "claim_id": "MT-007",
+            "claim_text": "The entity reports greenhouse gas emissions in metric tonnes of CO2 equivalent (tCO2e) for the reporting period and provides comparative amounts for the preceding period.",
+            "claim_type": "quantitative_reporting_commitment",
+            "entities": [
+              "CO2 equivalent",
+              "GHG emissions",
+              "preceding period",
+              "reporting period",
+              "tCO2e"
+            ],
+            "numbers": [],
+            "dates": [],
+            "evidence_sources": [
+              "metadata.scope2_rec_reconciliation",
+              "reporting_kpis.financed_emissions_2024_tco2e",
+              "targets[0].milestones_parsed[1].metric"
+            ],
+            "requirement_ids": [
+              "IFRS_S1_B49_C01"
+            ],
+            "supported": true,
+            "support_notes": "Comparative information commitment aligns with IFRS S1 comparative requirement; actual values are placeholders.",
+            "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+            "repaired_evidence_sources": [
+              "reporting_kpis.financed_emissions_2024_tco2e",
+              "metadata.scope2_rec_reconciliation",
+              "targets[0].milestones_parsed[1].metric"
+            ],
+            "invalid_evidence_sources_removed": [
+              "draft_markdown: \"We report GHG emissions in metric tonnes of CO2 equivalent (tCO2e)... and provide comparative amounts\""
+            ]
+          },
+          {
+            "claim_id": "MT-008",
+            "claim_text": "The entity discloses Scope 1 emissions (tCO2e) for the reporting period and the preceding period.",
+            "claim_type": "quantitative_metric_disclosure",
+            "entities": [
+              "Scope 1 emissions",
+              "tCO2e"
+            ],
+            "numbers": [],
+            "dates": [],
+            "evidence_sources": [
+              "metadata.scope2_rec_reconciliation",
+              "reporting_kpis.financed_emissions_2024_tco2e",
+              "reporting_kpis.scope3_travel_2024_tco2e"
+            ],
+            "requirement_ids": [],
+            "supported": false,
+            "support_notes": "Metric is presented but amounts are placeholders; no explicit IFRS S2 GHG metric requirement IDs provided in the supplied supported_requirements list.",
+            "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+            "repaired_evidence_sources": [
+              "reporting_kpis.financed_emissions_2024_tco2e",
+              "metadata.scope2_rec_reconciliation",
+              "reporting_kpis.scope3_travel_2024_tco2e"
+            ],
+            "invalid_evidence_sources_removed": [
+              "draft_markdown: bullet list \"Scope 1 emissions (tCO2e): [reporting period] [●]; [preceding period] [●]\""
+            ]
+          },
+          {
+            "claim_id": "MT-009",
+            "claim_text": "The entity discloses Scope 2 emissions (location-based and market-based) in tCO2e for the reporting period and the preceding period.",
+            "claim_type": "quantitative_metric_disclosure",
+            "entities": [
+              "Scope 2 emissions",
+              "location-based",
+              "market-based",
+              "tCO2e"
+            ],
+            "numbers": [],
+            "dates": [],
+            "evidence_sources": [
+              "metadata.scope2_rec_reconciliation",
+              "reporting_kpis.financed_emissions_2024_tco2e",
+              "reporting_kpis.scope3_travel_2024_tco2e"
+            ],
+            "requirement_ids": [],
+            "supported": false,
+            "support_notes": "Presented with placeholders; no specific requirement IDs for Scope 2 in provided list.",
+            "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+            "repaired_evidence_sources": [
+              "metadata.scope2_rec_reconciliation",
+              "reporting_kpis.financed_emissions_2024_tco2e",
+              "reporting_kpis.scope3_travel_2024_tco2e"
+            ],
+            "invalid_evidence_sources_removed": [
+              "draft_markdown: bullets for Scope 2 location-based and market-based with [●] placeholders"
+            ]
+          },
+          {
+            "claim_id": "MT-010",
+            "claim_text": "The entity discloses Scope 3 emissions (tCO2e) for the reporting period and the preceding period.",
+            "claim_type": "quantitative_metric_disclosure",
+            "entities": [
+              "Scope 3 emissions",
+              "tCO2e"
+            ],
+            "numbers": [],
+            "dates": [],
+            "evidence_sources": [
+              "metadata.scope2_rec_reconciliation",
+              "reporting_kpis.financed_emissions_2024_tco2e",
+              "reporting_kpis.scope3_travel_2024_tco2e"
+            ],
+            "requirement_ids": [],
+            "supported": false,
+            "support_notes": "Presented with placeholders; no specific requirement IDs for Scope 3 in provided list.",
+            "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+            "repaired_evidence_sources": [
+              "reporting_kpis.financed_emissions_2024_tco2e",
+              "metadata.scope2_rec_reconciliation",
+              "reporting_kpis.scope3_travel_2024_tco2e"
+            ],
+            "invalid_evidence_sources_removed": [
+              "draft_markdown: bullet \"Scope 3 emissions (tCO2e): [reporting period] [●]; [preceding period] [●]\""
+            ]
+          },
+          {
+            "claim_id": "MT-011",
+            "claim_text": "When disclosing a metric taken from a source other than IFRS Sustainability Disclosure Standards, the entity identifies the source and the metric taken.",
+            "claim_type": "disclosure_commitment",
+            "entities": [
+              "IFRS Sustainability Disclosure Standards",
+              "metrics",
+              "source"
+            ],
+            "numbers": [],
+            "dates": [],
+            "evidence_sources": [
+              "metadata.scope2_rec_reconciliation"
+            ],
+            "requirement_ids": [
+              "IFRS_S1_49_C01"
+            ],
+            "supported": true,
+            "support_notes": "Directly aligns with IFRS S1 paragraph 49.",
+            "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+            "repaired_evidence_sources": [
+              "metadata.scope2_rec_reconciliation"
+            ],
+            "invalid_evidence_sources_removed": [
+              "draft_markdown: \"When we disclose a metric taken from a source other than IFRS... we identify: the source; and the metric taken.\""
+            ]
+          },
+          {
+            "claim_id": "MT-012",
+            "claim_text": "For GHG emissions metrics, the source is identified as a placeholder (e.g., the GHG Protocol Corporate Accounting and Reporting Standard), and the metrics taken are Scope 1, Scope 2 (location-based and market-based) and Scope 3 emissions in tCO2e.",
+            "claim_type": "methodology_statement",
+            "entities": [
+              "GHG Protocol Corporate Accounting and Reporting Standard",
+              "Scope 1",
+              "Scope 2",
+              "Scope 3",
+              "tCO2e"
+            ],
+            "numbers": [],
+            "dates": [],
+            "evidence_sources": [
+              "metadata.data_gaps[0].instruction",
+              "metadata.data_gaps[1].instruction",
+              "metadata.scope2_rec_reconciliation"
+            ],
+            "requirement_ids": [
+              "IFRS_S1_49_C01"
+            ],
+            "supported": false,
+            "support_notes": "Meets structure but the actual source is not specified (placeholder [●]).",
+            "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+            "repaired_evidence_sources": [
+              "metadata.scope2_rec_reconciliation",
+              "metadata.data_gaps[0].instruction",
+              "metadata.data_gaps[1].instruction"
+            ],
+            "invalid_evidence_sources_removed": [
+              "draft_markdown: \"For our GHG emissions metrics, the source is: [●] (for example, the GHG Protocol...)\""
+            ]
+          },
+          {
+            "claim_id": "MT-013",
+            "claim_text": "For any entity-developed metric disclosed, the entity provides the metric definition (including derivation/adjustments and differences vs the source), whether it is absolute/ratio/qualitative, whether it is third-party validated (and by whom), and the calculation method/inputs including significant assumptions and limitations.",
+            "claim_type": "disclosure_commitment",
+            "entities": [
+              "assumptions",
+              "calculation method",
+              "definition",
+              "entity-developed metric",
+              "limitations",
+              "third-party validation"
+            ],
+            "numbers": [],
+            "dates": [],
+            "evidence_sources": [],
+            "requirement_ids": [
+              "IFRS_S1_50_C01",
+              "IFRS_S1_50_C02",
+              "IFRS_S1_50_C03",
+              "IFRS_S1_50_C04"
+            ],
+            "supported": true,
+            "support_notes": "Directly maps to IFRS S1 paragraph 50(a)-(d); no entity-developed metric examples provided.",
+            "invalid_evidence_sources_removed": [
+              "draft_markdown: \"For any entity-developed metric we disclose:\" bullet list"
+            ]
+          },
+          {
+            "claim_id": "MT-014",
+            "claim_text": "The entity discloses information about targets set to monitor progress towards strategic goals and any targets required by law or regulation.",
+            "claim_type": "disclosure_commitment",
+            "entities": [
+              "law or regulation",
+              "strategic goals",
+              "targets"
+            ],
+            "numbers": [],
+            "dates": [],
+            "evidence_sources": [
+              "targets[1].target_progress_pct_2024",
+              "targets[2].progress_metric",
+              "targets[2].target_progress_pct_2024"
+            ],
+            "requirement_ids": [
+              "IFRS_S1_51_C01",
+              "IFRS_S1_51_C02",
+              "IFRS_S1_51_C03",
+              "IFRS_S1_51_C04",
+              "IFRS_S1_51_C05",
+              "IFRS_S1_51_C06",
+              "IFRS_S1_51_C07"
+            ],
+            "supported": true,
+            "support_notes": "High-level commitment corresponds to IFRS S1 paragraph 51 overall; detailed target fields are listed next.",
+            "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+            "repaired_evidence_sources": [
+              "targets[2].target_progress_pct_2024",
+              "targets[2].progress_metric",
+              "targets[1].target_progress_pct_2024"
+            ],
+            "invalid_evidence_sources_removed": [
+              "draft_markdown: \"We disclose information about: the targets we have set...; and any targets we are required to meet by law or regulation.\""
+            ]
+          },
+          {
+            "claim_id": "MT-015",
+            "claim_text": "For each target, the entity discloses: the metric used; the specific quantitative or qualitative target; the period; the base period (year and value); milestones/interim targets; performance against the target in the reporting period including trend commentary; and any revisions and reasons (or that there were no revisions).",
+            "claim_type": "disclosure_commitment",
+            "entities": [
+              "base period",
+              "interim targets",
+              "metric",
+              "milestones",
+              "performance",
+              "revisions",
+              "target",
+              "trend commentary"
+            ],
+            "numbers": [],
+            "dates": [],
+            "evidence_sources": [
+              "targets[0].interim_milestones_json",
+              "targets[1].interim_milestones_json",
+              "targets[1].milestones_parsed[1].metric"
+            ],
+            "requirement_ids": [
+              "IFRS_S1_51_C01",
+              "IFRS_S1_51_C02",
+              "IFRS_S1_51_C03",
+              "IFRS_S1_51_C04",
+              "IFRS_S1_51_C05",
+              "IFRS_S1_51_C06",
+              "IFRS_S1_51_C07"
+            ],
+            "supported": true,
+            "support_notes": "Matches IFRS S1 51(a)-(g); draft adds explicit 'year and value' for base period and 'or no revisions'.",
+            "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+            "repaired_evidence_sources": [
+              "targets[1].interim_milestones_json",
+              "targets[0].interim_milestones_json",
+              "targets[1].milestones_parsed[1].metric"
+            ],
+            "invalid_evidence_sources_removed": [
+              "draft_markdown: \"For each target, we disclose:\" bullet list"
+            ]
+          },
+          {
+            "claim_id": "MT-016",
+            "claim_text": "The entity uses an internal carbon price in decision-making and discloses how it is applied and the internal carbon price per tCO2e including currency and scope of application.",
+            "claim_type": "disclosure_commitment",
+            "entities": [
+              "currency",
+              "decision-making",
+              "internal carbon price",
+              "scope of application",
+              "tCO2e"
+            ],
+            "numbers": [],
+            "dates": [],
+            "evidence_sources": [
+              "internal_carbon_price[0].carbon_price_eur_per_tco2e",
+              "internal_carbon_price[1].carbon_price_eur_per_tco2e",
+              "internal_carbon_price[2].carbon_price_eur_per_tco2e"
+            ],
+            "requirement_ids": [],
+            "supported": false,
+            "support_notes": "No matching requirement IDs provided in the supplied supported_requirements list; disclosure fields are placeholders.",
+            "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+            "repaired_evidence_sources": [
+              "internal_carbon_price[2].carbon_price_eur_per_tco2e",
+              "internal_carbon_price[1].carbon_price_eur_per_tco2e",
+              "internal_carbon_price[0].carbon_price_eur_per_tco2e"
+            ],
+            "invalid_evidence_sources_removed": [
+              "draft_markdown: \"We use an internal carbon price... We disclose:\" bullet list"
+            ]
+          },
+          {
+            "claim_id": "MT-017",
+            "claim_text": "Internal carbon price is disclosed as: [currency] [●] per tCO2e; scope of application: [●]; application in decisions: [●].",
+            "claim_type": "quantitative_metric_disclosure",
+            "entities": [
+              "currency",
+              "internal carbon price",
+              "scope of application",
+              "tCO2e"
+            ],
+            "numbers": [],
+            "dates": [],
+            "evidence_sources": [
+              "internal_carbon_price[0].carbon_price_eur_per_tco2e",
+              "internal_carbon_price[1].carbon_price_eur_per_tco2e",
+              "internal_carbon_price[2].carbon_price_eur_per_tco2e"
+            ],
+            "requirement_ids": [],
+            "supported": false,
+            "support_notes": "All values are placeholders; cannot be substantiated as an actual disclosed amount.",
+            "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+            "repaired_evidence_sources": [
+              "internal_carbon_price[2].carbon_price_eur_per_tco2e",
+              "internal_carbon_price[1].carbon_price_eur_per_tco2e",
+              "internal_carbon_price[0].carbon_price_eur_per_tco2e"
+            ],
+            "invalid_evidence_sources_removed": [
+              "draft_markdown: \"Internal carbon price: [currency] [●] per tCO2e; scope...\""
+            ]
+          },
+          {
+            "claim_id": "MT-018",
+            "claim_text": "The entity applies consistent definitions and calculation methods for metrics and targets over time; if a metric is redefined or replaced, revised comparative information is presented unless impracticable, and the change and why it provides more useful information are explained.",
+            "claim_type": "policy_statement",
+            "entities": [
+              "calculation methods",
+              "comparative information",
+              "definitions",
+              "metrics",
+              "targets"
+            ],
+            "numbers": [],
+            "dates": [],
+            "evidence_sources": [
+              "targets[1].target_applies_to",
+              "targets[2].progress_metric",
+              "targets[2].target_applies_to"
+            ],
+            "requirement_ids": [
+              "IFRS_S1_52_C01",
+              "IFRS_S1_B52_C01",
+              "IFRS_S1_B52_C02",
+              "IFRS_S1_B52_C03"
+            ],
+            "supported": true,
+            "support_notes": "Aligns with IFRS S1 paragraph 52 and B52(a)-(c).",
+            "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+            "repaired_evidence_sources": [
+              "targets[2].target_applies_to",
+              "targets[2].progress_metric",
+              "targets[1].target_applies_to"
+            ],
+            "invalid_evidence_sources_removed": [
+              "draft_markdown: \"We apply consistent definitions... If we redefine or replace a metric...\""
+            ]
+          },
+          {
+            "claim_id": "MT-019",
+            "claim_text": "The entity provides comparative information for the preceding period for all amounts disclosed.",
+            "claim_type": "disclosure_commitment",
+            "entities": [
+              "amounts disclosed",
+              "comparative information",
+              "preceding period"
+            ],
+            "numbers": [],
+            "dates": [],
+            "evidence_sources": [],
+            "requirement_ids": [
+              "IFRS_S1_B49_C01"
+            ],
+            "supported": true,
+            "support_notes": "Directly aligns with IFRS S1 comparative information requirement.",
+            "invalid_evidence_sources_removed": [
+              "draft_markdown: \"We provide comparative information for the preceding period for all amounts disclosed.\""
+            ]
+          },
+          {
+            "claim_id": "MT-020",
+            "claim_text": "When a disclosed metric amount is estimated and new information provides evidence of circumstances that existed in the preceding period, the entity revises the comparative amount (except as specified in paragraph B51), discloses the difference, and explains the reasons for the revision.",
+            "claim_type": "policy_statement",
+            "entities": [
+              "estimated metric amount",
+              "paragraph B51",
+              "preceding period",
+              "revised comparative amount"
+            ],
+            "numbers": [
+              "B51"
+            ],
+            "dates": [],
+            "evidence_sources": [],
+            "requirement_ids": [
+              "IFRS_S1_B50_C01",
+              "IFRS_S1_B50_C02",
+              "IFRS_S1_B50_C03"
+            ],
+            "supported": true,
+            "support_notes": "Matches IFRS S1 B50(a)-(c); B51 exception referenced but not included in provided requirements list.",
+            "invalid_evidence_sources_removed": [
+              "draft_markdown: final paragraph on estimated metrics and revisions"
+            ]
+          }
+        ]
+      }
     },
     {
       "gate_name": "factlock_numbers_entities",
       "passed": true,
       "failures": [],
+      "warnings": [
+        {
+          "type": "entity_not_in_payload_or_claims",
+          "value": "GHG Protocol Corporate Accounting"
+        },
+        {
+          "type": "entity_not_in_payload_or_claims",
+          "value": "IFRS Sustainability Disclosure Standard"
+        },
+        {
+          "type": "entity_not_in_payload_or_claims",
+          "value": "IFRS Sustainability Disclosure Standards\n\nWhen"
+        },
+        {
+          "type": "entity_not_in_payload_or_claims",
+          "value": "Metrics\n\nWe"
+        },
+        {
+          "type": "entity_not_in_payload_or_claims",
+          "value": "Reporting Standard"
+        },
+        {
+          "type": "entity_not_in_payload_or_claims",
+          "value": "Targets\n\nWe"
+        }
+      ],
       "draft_numbers": [
         "1",
-        "120000.0",
-        "137849.0",
         "2",
-        "20.0",
-        "2024",
         "3",
-        "40.0",
-        "42"
+        "57",
+        "58"
       ],
-      "draft_entities": []
+      "draft_entities": [
+        "GHG Protocol Corporate Accounting",
+        "IFRS Sustainability Disclosure Standard",
+        "IFRS Sustainability Disclosure Standards",
+        "IFRS Sustainability Disclosure Standards\n\nWhen",
+        "Metrics\n\nWe",
+        "Reporting Standard",
+        "Targets\n\nWe"
+      ]
     },
     {
       "gate_name": "reference_firewall",
       "passed": true,
-      "forbidden_term_hits": []
+      "forbidden_term_hits": [],
+      "failures": [],
+      "warnings": []
     },
     {
       "gate_name": "report_cleanliness_no_missing_payload_language",
       "passed": true,
-      "blocked_phrase_hits": []
+      "blocked_phrase_hits": [],
+      "soft_phrase_hits": [],
+      "failures": [],
+      "warnings": []
     }
-  ]
+  ],
+  "summary": "- claims_integrity: FAIL | failures=6 | warnings=6\n  failure: {'claim_id': 'MT-008', 'issue': 'claim_marked_unsupported', 'claim': 'The entity discloses Scope 1 emissions (tCO2e) for the reporting period and the preceding period.'}\n  failure: {'claim_id': 'MT-009', 'issue': 'claim_marked_unsupported', 'claim': 'The entity discloses Scope 2 emissions (location-based and market-based) in tCO2e for the reporting period and the preceding period.'}\n  failure: {'claim_id': 'MT-010', 'issue': 'claim_marked_unsupported', 'claim': 'The entity discloses Scope 3 emissions (tCO2e) for the reporting period and the preceding period.'}\n  failure: {'claim_id': 'MT-012', 'issue': 'claim_marked_unsupported', 'claim': 'For GHG emissions metrics, the source is identified as a placeholder (e.g., the GHG Protocol Corporate Accounting and Reporting Standard), and the metrics taken are Scope 1, Scope 2 (location-based and market-based) and Scope 3 emissions in tCO2e.'}\n  failure: {'claim_id': 'MT-016', 'issue': 'claim_marked_unsupported', 'claim': 'The entity uses an internal carbon price in decision-making and discloses how it is applied and the internal carbon price per tCO2e including currency and scope of application.'}\n  warning: {'claim_id': 'MT-002', 'issue': 'no_evidence_source_after_repair', 'claim': 'The entity discloses metrics required by applicable IFRS Sustainability Disclosure Standards.'}\n  warning: {'claim_id': 'MT-003', 'issue': 'no_evidence_source_after_repair', 'claim': 'The entity discloses the metrics it uses to measure and monitor each sustainability-related risk or opportunity.'}\n- factlock_numbers_entities: PASS | failures=0 | warnings=6\n  warning: {'type': 'entity_not_in_payload_or_claims', 'value': 'GHG Protocol Corporate Accounting'}\n  warning: {'type': 'entity_not_in_payload_or_claims', 'value': 'IFRS Sustainability Disclosure Standard'}\n- reference_firewall: PASS | failures=0 | warnings=0\n- report_cleanliness_no_missing_payload_language: PASS | failures=0 | warnings=0"
 }

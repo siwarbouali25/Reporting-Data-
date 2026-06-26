@@ -1,22 +1,21 @@
-# Governance
+## Governance
 
-## 1. Governance oversight
+### Oversight of sustainability-related and climate-related risks and opportunities
 
-### 1.1 Board oversight of climate-related matters
-The board is comprised of **10** members. **33.5%** of board members have climate-related expertise.
+Oversight of sustainability-related and climate-related risks and opportunities is assigned to the entity’s governance body(ies) and/or designated individual(s) charged with governance. Responsibilities for this oversight are reflected in the applicable terms of reference, mandates, role descriptions and related policies for those governance body(ies) and/or individual(s).
 
-Climate-related matters are incorporated into board oversight through agenda coverage and periodic reporting:
+The governance body(ies) and/or individual(s) oversee sustainability-related and climate-related matters by:
 
-- **Agenda integration:** climate-related topics represented **69.8%** of board agenda coverage.
-- **Reporting to the board:** climate risk reporting is provided to the board on a **semi-annual** basis.
-- **Board meeting cadence:** the board meets **4** times per year.
+- determining whether appropriate skills and competencies are available (or will be developed) to oversee strategies designed to respond to sustainability-related and climate-related risks and opportunities;
+- receiving information about sustainability-related and climate-related risks and opportunities, including the manner and frequency with which such information is provided;
+- taking sustainability-related and climate-related risks and opportunities into account when overseeing the entity’s strategy, decisions on major transactions, and risk management processes and related policies, including consideration of relevant trade-offs; and
+- overseeing the setting of targets related to sustainability-related and climate-related risks and opportunities and monitoring progress towards those targets, including whether and how related performance metrics are included in remuneration policies.
 
-Board materials and minutes include references mapped to IFRS S2 governance-related evidence tags, including **§6(a)(iii)** and **§6(a)(v)**.
+### Management’s role
 
-### 1.2 Committee and management-level governance
-An **ESG committee** exists and meets **5** times per year.
+Management is responsible for the governance processes, controls and procedures used to monitor, manage and oversee sustainability-related and climate-related risks and opportunities.
 
-Management-level governance includes a committee identified as the **Group Sustainability Committee**.
+Management’s role includes:
 
-### 1.3 Alignment statement
-This section is prepared on an **IFRS S2 aligned** basis.
+- delegation of responsibilities to a specific management-level position and/or management-level committee, with oversight exercised through management reporting and escalation to the governance body(ies) and/or designated individual(s); and
+- use of controls and procedures to support oversight of sustainability-related and climate-related risks and opportunities, integrated with relevant internal functions.

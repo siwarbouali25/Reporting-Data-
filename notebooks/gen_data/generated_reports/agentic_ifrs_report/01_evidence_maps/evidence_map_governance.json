@@ -1,261 +1,1710 @@
 [
   {
-    "requirement_id": "section_key",
+    "requirement_id": "IFRS_S1_27_C02",
     "section_name": "Governance",
-    "requirement_text": "governance",
+    "requirement_text": "To achieve this objective, an entity shall disclose information about — (a) the governance body(s) (which can include a board, committee or equivalent body charged with governance) or individual(s) responsible for oversight of sustainability-related risks and opportunities. Specifically, the entity shall identify that body(s) or individual(s) and disclose information about: — (i) how responsibilities for sustainability-related risks and opportunities are reflected in the terms of reference, mandates, role descriptions and other related policies applicable to that body(s) or individual(s)",
     "mandatory": true,
     "evidence_candidates": [
       {
-        "payload_path": "governance[0].board_size",
-        "value_preview": "10",
-        "value_type": "int",
-        "match_score": 4,
-        "matched_keywords": [
-          "board",
-          "governance"
-        ]
-      },
-      {
-        "payload_path": "governance[0].esg_committee_exists",
-        "value_preview": "True",
-        "value_type": "bool",
-        "match_score": 4,
-        "matched_keywords": [
-          "committee",
-          "governance"
-        ]
-      },
-      {
         "payload_path": "governance[0].esg_committee_meetings_per_year",
+        "payload_root": "governance",
         "value_preview": "5",
         "value_type": "int",
-        "match_score": 4,
+        "match_score": 11,
         "matched_keywords": [
           "committee",
-          "governance"
-        ]
-      },
-      {
-        "payload_path": "governance[0].board_climate_expertise_pct",
-        "value_preview": "33.5",
-        "value_type": "float",
-        "match_score": 4,
-        "matched_keywords": [
-          "board",
-          "governance"
-        ]
-      },
-      {
-        "payload_path": "governance[0].climate_risk_reporting_to_board",
-        "value_preview": "semi_annual",
-        "value_type": "str",
-        "match_score": 4,
-        "matched_keywords": [
-          "board",
-          "governance"
-        ]
+          "governance",
+          "meeting"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
       },
       {
         "payload_path": "governance[0].board_full_meeting_frequency",
+        "payload_root": "governance",
         "value_preview": "4",
         "value_type": "int",
-        "match_score": 4,
+        "match_score": 11,
         "matched_keywords": [
           "board",
-          "governance"
-        ]
+          "governance",
+          "meeting"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
       },
       {
-        "payload_path": "governance[0].climate_on_board_agenda_pct",
-        "value_preview": "69.8",
-        "value_type": "float",
-        "match_score": 4,
-        "matched_keywords": [
-          "board",
-          "governance"
-        ]
-      },
-      {
-        "payload_path": "governance[0].management_committee_name",
-        "value_preview": "Group Sustainability Committee",
-        "value_type": "str",
-        "match_score": 4,
+        "payload_path": "governance[1].esg_committee_meetings_per_year",
+        "payload_root": "governance",
+        "value_preview": "6",
+        "value_type": "int",
+        "match_score": 11,
         "matched_keywords": [
           "committee",
+          "governance",
+          "meeting"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[1].board_full_meeting_frequency",
+        "payload_root": "governance",
+        "value_preview": "7",
+        "value_type": "int",
+        "match_score": 11,
+        "matched_keywords": [
+          "board",
+          "governance",
+          "meeting"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[2].esg_committee_meetings_per_year",
+        "payload_root": "governance",
+        "value_preview": "7",
+        "value_type": "int",
+        "match_score": 11,
+        "matched_keywords": [
+          "committee",
+          "governance",
+          "meeting"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[2].board_full_meeting_frequency",
+        "payload_root": "governance",
+        "value_preview": "8",
+        "value_type": "int",
+        "match_score": 11,
+        "matched_keywords": [
+          "board",
+          "governance",
+          "meeting"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "reporting_kpis.governance_maturity.esg_committee_meetings",
+        "payload_root": "reporting_kpis",
+        "value_preview": "7",
+        "value_type": "int",
+        "match_score": 11,
+        "matched_keywords": [
+          "committee",
+          "governance",
+          "meeting"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[0].board_size",
+        "payload_root": "governance",
+        "value_preview": "10",
+        "value_type": "int",
+        "match_score": 11,
+        "matched_keywords": [
+          "board",
           "governance"
-        ]
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
       }
     ],
-    "mapping_method": "deterministic_lexical"
+    "mapping_method": "deterministic_payload_aware"
   },
   {
-    "requirement_id": "section_title",
+    "requirement_id": "IFRS_S1_27_C03",
     "section_name": "Governance",
-    "requirement_text": "Governance",
+    "requirement_text": "To achieve this objective, an entity shall disclose information about — (a) the governance body(s) (which can include a board, committee or equivalent body charged with governance) or individual(s) responsible for oversight of sustainability-related risks and opportunities. Specifically, the entity shall identify that body(s) or individual(s) and disclose information about: — (ii) how the body(s) or individual(s) determines whether appropriate skills and competencies are available or will be developed to oversee strategies designed to respond to sustainability-related risks and opportunities",
     "mandatory": true,
     "evidence_candidates": [
       {
-        "payload_path": "governance[0].board_size",
-        "value_preview": "10",
-        "value_type": "int",
-        "match_score": 4,
-        "matched_keywords": [
-          "board",
-          "governance"
-        ]
-      },
-      {
-        "payload_path": "governance[0].esg_committee_exists",
+        "payload_path": "governance[0].skills_development_programme",
+        "payload_root": "governance",
         "value_preview": "True",
         "value_type": "bool",
-        "match_score": 4,
+        "match_score": 15,
         "matched_keywords": [
-          "committee",
-          "governance"
-        ]
+          "development",
+          "governance",
+          "skill",
+          "skills"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
       },
       {
-        "payload_path": "governance[0].esg_committee_meetings_per_year",
-        "value_preview": "5",
-        "value_type": "int",
-        "match_score": 4,
+        "payload_path": "governance[1].skills_development_programme",
+        "payload_root": "governance",
+        "value_preview": "True",
+        "value_type": "bool",
+        "match_score": 15,
         "matched_keywords": [
-          "committee",
-          "governance"
-        ]
+          "development",
+          "governance",
+          "skill",
+          "skills"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[2].skills_development_programme",
+        "payload_root": "governance",
+        "value_preview": "True",
+        "value_type": "bool",
+        "match_score": 15,
+        "matched_keywords": [
+          "development",
+          "governance",
+          "skill",
+          "skills"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
       },
       {
         "payload_path": "governance[0].board_climate_expertise_pct",
+        "payload_root": "governance",
         "value_preview": "33.5",
         "value_type": "float",
-        "match_score": 4,
+        "match_score": 15,
         "matched_keywords": [
           "board",
+          "expertise",
           "governance"
-        ]
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
       },
       {
-        "payload_path": "governance[0].climate_risk_reporting_to_board",
-        "value_preview": "semi_annual",
-        "value_type": "str",
-        "match_score": 4,
-        "matched_keywords": [
-          "board",
-          "governance"
-        ]
-      },
-      {
-        "payload_path": "governance[0].board_full_meeting_frequency",
-        "value_preview": "4",
-        "value_type": "int",
-        "match_score": 4,
-        "matched_keywords": [
-          "board",
-          "governance"
-        ]
-      },
-      {
-        "payload_path": "governance[0].climate_on_board_agenda_pct",
-        "value_preview": "69.8",
+        "payload_path": "governance[1].board_climate_expertise_pct",
+        "payload_root": "governance",
+        "value_preview": "35.5",
         "value_type": "float",
-        "match_score": 4,
+        "match_score": 15,
         "matched_keywords": [
           "board",
+          "expertise",
           "governance"
-        ]
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
       },
       {
-        "payload_path": "governance[0].management_committee_name",
-        "value_preview": "Group Sustainability Committee",
-        "value_type": "str",
-        "match_score": 4,
+        "payload_path": "governance[2].board_climate_expertise_pct",
+        "payload_root": "governance",
+        "value_preview": "37.5",
+        "value_type": "float",
+        "match_score": 15,
+        "matched_keywords": [
+          "board",
+          "expertise",
+          "governance"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "reporting_kpis.governance_maturity.board_climate_expertise_pct",
+        "payload_root": "reporting_kpis",
+        "value_preview": "37.5",
+        "value_type": "float",
+        "match_score": 15,
+        "matched_keywords": [
+          "board",
+          "expertise",
+          "governance"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[0].esg_committee_meetings_per_year",
+        "payload_root": "governance",
+        "value_preview": "5",
+        "value_type": "int",
+        "match_score": 13,
         "matched_keywords": [
           "committee",
-          "governance"
-        ]
+          "governance",
+          "meeting"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
       }
     ],
-    "mapping_method": "deterministic_lexical"
+    "mapping_method": "deterministic_payload_aware"
   },
   {
-    "requirement_id": "source",
+    "requirement_id": "IFRS_S1_27_C04",
     "section_name": "Governance",
-    "requirement_text": "IFRS S1 and IFRS S2 deterministic generation-ready requirements",
+    "requirement_text": "To achieve this objective, an entity shall disclose information about — (a) the governance body(s) (which can include a board, committee or equivalent body charged with governance) or individual(s) responsible for oversight of sustainability-related risks and opportunities. Specifically, the entity shall identify that body(s) or individual(s) and disclose information about: — (iii) how and how often the body(s) or individual(s) is informed about sustainability-related risks and opportunities",
     "mandatory": true,
     "evidence_candidates": [
       {
-        "payload_path": "governance[0].ifrs_s2_aligned",
-        "value_preview": "True",
-        "value_type": "bool",
-        "match_score": 2,
-        "matched_keywords": [
-          "ifrs"
-        ]
-      },
-      {
-        "payload_path": "governance[1].ifrs_s2_aligned",
-        "value_preview": "True",
-        "value_type": "bool",
-        "match_score": 2,
-        "matched_keywords": [
-          "ifrs"
-        ]
-      },
-      {
-        "payload_path": "governance[2].ifrs_s2_aligned",
-        "value_preview": "True",
-        "value_type": "bool",
-        "match_score": 2,
-        "matched_keywords": [
-          "ifrs"
-        ]
-      },
-      {
-        "payload_path": "board_minutes[0].ifrs_s2_para_evidence",
-        "value_preview": "§6(a)(v)",
+        "payload_path": "governance[0].climate_risk_reporting_to_board",
+        "payload_root": "governance",
+        "value_preview": "semi_annual",
         "value_type": "str",
-        "match_score": 2,
+        "match_score": 15,
         "matched_keywords": [
-          "ifrs"
-        ]
+          "board",
+          "climate_risk_reporting",
+          "governance",
+          "reporting_to_board"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
       },
       {
-        "payload_path": "board_minutes[1].ifrs_s2_para_evidence",
-        "value_preview": "§6(a)(iii)",
-        "value_type": "str",
-        "match_score": 2,
+        "payload_path": "governance[0].board_full_meeting_frequency",
+        "payload_root": "governance",
+        "value_preview": "4",
+        "value_type": "int",
+        "match_score": 15,
         "matched_keywords": [
-          "ifrs"
-        ]
+          "board",
+          "frequency",
+          "governance",
+          "meeting"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
       },
       {
-        "payload_path": "board_minutes[2].ifrs_s2_para_evidence",
-        "value_preview": "§6(a)(iii)",
+        "payload_path": "governance[1].climate_risk_reporting_to_board",
+        "payload_root": "governance",
+        "value_preview": "semi_annual",
         "value_type": "str",
-        "match_score": 2,
+        "match_score": 15,
         "matched_keywords": [
-          "ifrs"
-        ]
+          "board",
+          "climate_risk_reporting",
+          "governance",
+          "reporting_to_board"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
       },
       {
-        "payload_path": "board_minutes[3].ifrs_s2_para_evidence",
-        "value_preview": "§6(a)(iii)",
-        "value_type": "str",
-        "match_score": 2,
+        "payload_path": "governance[1].board_full_meeting_frequency",
+        "payload_root": "governance",
+        "value_preview": "7",
+        "value_type": "int",
+        "match_score": 15,
         "matched_keywords": [
-          "ifrs"
-        ]
+          "board",
+          "frequency",
+          "governance",
+          "meeting"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
       },
       {
-        "payload_path": "board_minutes[4].ifrs_s2_para_evidence",
-        "value_preview": "§6(a)(iii)",
+        "payload_path": "governance[2].climate_risk_reporting_to_board",
+        "payload_root": "governance",
+        "value_preview": "semi_annual",
         "value_type": "str",
-        "match_score": 2,
+        "match_score": 15,
         "matched_keywords": [
-          "ifrs"
-        ]
+          "board",
+          "climate_risk_reporting",
+          "governance",
+          "reporting_to_board"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[2].board_full_meeting_frequency",
+        "payload_root": "governance",
+        "value_preview": "8",
+        "value_type": "int",
+        "match_score": 15,
+        "matched_keywords": [
+          "board",
+          "frequency",
+          "governance",
+          "meeting"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[0].esg_committee_meetings_per_year",
+        "payload_root": "governance",
+        "value_preview": "5",
+        "value_type": "int",
+        "match_score": 15,
+        "matched_keywords": [
+          "committee",
+          "governance",
+          "meeting"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[0].climate_on_board_agenda_pct",
+        "payload_root": "governance",
+        "value_preview": "69.8",
+        "value_type": "float",
+        "match_score": 15,
+        "matched_keywords": [
+          "agenda",
+          "board",
+          "governance"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
       }
     ],
-    "mapping_method": "deterministic_lexical"
+    "mapping_method": "deterministic_payload_aware"
+  },
+  {
+    "requirement_id": "IFRS_S1_27_C05",
+    "section_name": "Governance",
+    "requirement_text": "To achieve this objective, an entity shall disclose information about — (a) the governance body(s) (which can include a board, committee or equivalent body charged with governance) or individual(s) responsible for oversight of sustainability-related risks and opportunities. Specifically, the entity shall identify that body(s) or individual(s) and disclose information about: — (iv) how the body(s) or individual(s) takes into account sustainability-related risks and opportunities when overseeing the entity’s strategy, its decisions on major transactions and its risk management processes and related policies, including whether the body(s) or individual(s) has considered trade-offs associated with those risks and opportunities",
+    "mandatory": true,
+    "evidence_candidates": [
+      {
+        "payload_path": "governance[0].major_transactions_climate_check",
+        "payload_root": "governance",
+        "value_preview": "True",
+        "value_type": "bool",
+        "match_score": 19,
+        "matched_keywords": [
+          "governance",
+          "major",
+          "major_transactions",
+          "transactions"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[1].major_transactions_climate_check",
+        "payload_root": "governance",
+        "value_preview": "True",
+        "value_type": "bool",
+        "match_score": 19,
+        "matched_keywords": [
+          "governance",
+          "major",
+          "major_transactions",
+          "transactions"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[2].major_transactions_climate_check",
+        "payload_root": "governance",
+        "value_preview": "True",
+        "value_type": "bool",
+        "match_score": 19,
+        "matched_keywords": [
+          "governance",
+          "major",
+          "major_transactions",
+          "transactions"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[0].management_committee_name",
+        "payload_root": "governance",
+        "value_preview": "Group Sustainability Committee",
+        "value_type": "str",
+        "match_score": 19,
+        "matched_keywords": [
+          "committee",
+          "governance",
+          "management"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[1].management_committee_name",
+        "payload_root": "governance",
+        "value_preview": "ESG Executive Committee",
+        "value_type": "str",
+        "match_score": 19,
+        "matched_keywords": [
+          "committee",
+          "governance",
+          "management"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[2].management_committee_name",
+        "payload_root": "governance",
+        "value_preview": "Climate Risk Management Committee",
+        "value_type": "str",
+        "match_score": 19,
+        "matched_keywords": [
+          "committee",
+          "governance",
+          "management"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[0].esg_committee_meetings_per_year",
+        "payload_root": "governance",
+        "value_preview": "5",
+        "value_type": "int",
+        "match_score": 17,
+        "matched_keywords": [
+          "committee",
+          "governance",
+          "meeting"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[1].esg_committee_meetings_per_year",
+        "payload_root": "governance",
+        "value_preview": "6",
+        "value_type": "int",
+        "match_score": 17,
+        "matched_keywords": [
+          "committee",
+          "governance",
+          "meeting"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      }
+    ],
+    "mapping_method": "deterministic_payload_aware"
+  },
+  {
+    "requirement_id": "IFRS_S1_27_C06",
+    "section_name": "Governance",
+    "requirement_text": "To achieve this objective, an entity shall disclose information about — (a) the governance body(s) (which can include a board, committee or equivalent body charged with governance) or individual(s) responsible for oversight of sustainability-related risks and opportunities. Specifically, the entity shall identify that body(s) or individual(s) and disclose information about: — (v) how the body(s) or individual(s) oversees the setting of targets related to sustainability-related risks and opportunities, and monitors progress towards those targets (see paragraph 51), including whether and how related performance metrics are included in remuneration policies.",
+    "mandatory": true,
+    "evidence_candidates": [
+      {
+        "payload_path": "board_minutes[34].climate_topics_discussed",
+        "payload_root": "board_minutes",
+        "value_preview": "exec_remuneration_esg_kpis|carbon_credit_approval|net_zero_progress",
+        "value_type": "str",
+        "match_score": 19,
+        "matched_keywords": [
+          "board",
+          "exec",
+          "progress",
+          "remuneration"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "board_minutes[35].climate_topics_discussed",
+        "payload_root": "board_minutes",
+        "value_preview": "net_zero_progress|exec_remuneration_esg_kpis",
+        "value_type": "str",
+        "match_score": 19,
+        "matched_keywords": [
+          "board",
+          "exec",
+          "progress",
+          "remuneration"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[0].all_exec_climate_remuneration_pct",
+        "payload_root": "governance",
+        "value_preview": "8.7",
+        "value_type": "float",
+        "match_score": 19,
+        "matched_keywords": [
+          "exec",
+          "governance",
+          "remuneration"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[1].all_exec_climate_remuneration_pct",
+        "payload_root": "governance",
+        "value_preview": "15.3",
+        "value_type": "float",
+        "match_score": 19,
+        "matched_keywords": [
+          "exec",
+          "governance",
+          "remuneration"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[2].all_exec_climate_remuneration_pct",
+        "payload_root": "governance",
+        "value_preview": "15.1",
+        "value_type": "float",
+        "match_score": 19,
+        "matched_keywords": [
+          "exec",
+          "governance",
+          "remuneration"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "board_minutes[0].climate_topics_discussed",
+        "payload_root": "board_minutes",
+        "value_preview": "transition_plan_review|exec_remuneration_esg_kpis",
+        "value_type": "str",
+        "match_score": 18,
+        "matched_keywords": [
+          "board",
+          "exec",
+          "remuneration"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "board_minutes[2].climate_topics_discussed",
+        "payload_root": "board_minutes",
+        "value_preview": "exec_remuneration_esg_kpis|tcfd_review|carbon_credit_approval",
+        "value_type": "str",
+        "match_score": 18,
+        "matched_keywords": [
+          "board",
+          "exec",
+          "remuneration"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "board_minutes[8].climate_topics_discussed",
+        "payload_root": "board_minutes",
+        "value_preview": "scenario_analysis|transition_plan_review|tcfd_review|exec_remuneration_esg_kpis",
+        "value_type": "str",
+        "match_score": 18,
+        "matched_keywords": [
+          "board",
+          "exec",
+          "remuneration"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      }
+    ],
+    "mapping_method": "deterministic_payload_aware"
+  },
+  {
+    "requirement_id": "IFRS_S1_27_C08",
+    "section_name": "Governance",
+    "requirement_text": "To achieve this objective, an entity shall disclose information about — (b) management’s role in the governance processes, controls and procedures used to monitor, manage and oversee sustainability-related risks and opportunities, including information about: — (i) whether the role is delegated to a specific management-level position or management-level committee and how oversight is exercised over that position or committee",
+    "mandatory": true,
+    "evidence_candidates": [
+      {
+        "payload_path": "governance[0].management_committee_name",
+        "payload_root": "governance",
+        "value_preview": "Group Sustainability Committee",
+        "value_type": "str",
+        "match_score": 19,
+        "matched_keywords": [
+          "committee",
+          "governance",
+          "management"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[1].management_committee_name",
+        "payload_root": "governance",
+        "value_preview": "ESG Executive Committee",
+        "value_type": "str",
+        "match_score": 19,
+        "matched_keywords": [
+          "committee",
+          "governance",
+          "management"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[2].management_committee_name",
+        "payload_root": "governance",
+        "value_preview": "Climate Risk Management Committee",
+        "value_type": "str",
+        "match_score": 19,
+        "matched_keywords": [
+          "committee",
+          "governance",
+          "management"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[0].esg_committee_meetings_per_year",
+        "payload_root": "governance",
+        "value_preview": "5",
+        "value_type": "int",
+        "match_score": 16,
+        "matched_keywords": [
+          "committee",
+          "governance",
+          "meeting"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[1].esg_committee_meetings_per_year",
+        "payload_root": "governance",
+        "value_preview": "6",
+        "value_type": "int",
+        "match_score": 16,
+        "matched_keywords": [
+          "committee",
+          "governance",
+          "meeting"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[2].esg_committee_meetings_per_year",
+        "payload_root": "governance",
+        "value_preview": "7",
+        "value_type": "int",
+        "match_score": 16,
+        "matched_keywords": [
+          "committee",
+          "governance",
+          "meeting"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "reporting_kpis.governance_maturity.esg_committee_meetings",
+        "payload_root": "reporting_kpis",
+        "value_preview": "7",
+        "value_type": "int",
+        "match_score": 16,
+        "matched_keywords": [
+          "committee",
+          "governance",
+          "meeting"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[0].esg_committee_exists",
+        "payload_root": "governance",
+        "value_preview": "True",
+        "value_type": "bool",
+        "match_score": 16,
+        "matched_keywords": [
+          "committee",
+          "governance"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      }
+    ],
+    "mapping_method": "deterministic_payload_aware"
+  },
+  {
+    "requirement_id": "IFRS_S1_27_C09",
+    "section_name": "Governance",
+    "requirement_text": "To achieve this objective, an entity shall disclose information about — (b) management’s role in the governance processes, controls and procedures used to monitor, manage and oversee sustainability-related risks and opportunities, including information about: — (ii) whether management uses controls and procedures to support the oversight of sustainability-related risks and opportunities and, if so, how these controls and procedures are integrated with other internal functions.",
+    "mandatory": true,
+    "evidence_candidates": [
+      {
+        "payload_path": "governance[0].management_committee_name",
+        "payload_root": "governance",
+        "value_preview": "Group Sustainability Committee",
+        "value_type": "str",
+        "match_score": 16,
+        "matched_keywords": [
+          "committee",
+          "governance",
+          "management"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[1].management_committee_name",
+        "payload_root": "governance",
+        "value_preview": "ESG Executive Committee",
+        "value_type": "str",
+        "match_score": 16,
+        "matched_keywords": [
+          "committee",
+          "governance",
+          "management"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[2].management_committee_name",
+        "payload_root": "governance",
+        "value_preview": "Climate Risk Management Committee",
+        "value_type": "str",
+        "match_score": 16,
+        "matched_keywords": [
+          "committee",
+          "governance",
+          "management"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[0].erm_integration_flag",
+        "payload_root": "governance",
+        "value_preview": "True",
+        "value_type": "bool",
+        "match_score": 13,
+        "matched_keywords": [
+          "erm",
+          "erm_integration",
+          "governance"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[1].erm_integration_flag",
+        "payload_root": "governance",
+        "value_preview": "True",
+        "value_type": "bool",
+        "match_score": 13,
+        "matched_keywords": [
+          "erm",
+          "erm_integration",
+          "governance"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[2].erm_integration_flag",
+        "payload_root": "governance",
+        "value_preview": "True",
+        "value_type": "bool",
+        "match_score": 13,
+        "matched_keywords": [
+          "erm",
+          "erm_integration",
+          "governance"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "reporting_kpis.governance_maturity.erm_integration",
+        "payload_root": "reporting_kpis",
+        "value_preview": "True",
+        "value_type": "bool",
+        "match_score": 13,
+        "matched_keywords": [
+          "erm",
+          "erm_integration",
+          "governance"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[0].esg_committee_exists",
+        "payload_root": "governance",
+        "value_preview": "True",
+        "value_type": "bool",
+        "match_score": 11,
+        "matched_keywords": [
+          "committee",
+          "governance"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      }
+    ],
+    "mapping_method": "deterministic_payload_aware"
+  },
+  {
+    "requirement_id": "IFRS_S2_6_C02",
+    "section_name": "Governance",
+    "requirement_text": "To achieve this objective, an entity shall disclose information about — (a) the governance body(s) (which can include a board, committee or equivalent body charged with governance) or individual(s) responsible for oversight of climate-related risks and opportunities. Specifically, the entity shall identify that body(s) or individual(s) and disclose information about: — (i) how responsibilities for climate-related risks and opportunities are reflected in the terms of reference, mandates, role descriptions and other related policies applicable to that body(s) or individual(s)",
+    "mandatory": true,
+    "evidence_candidates": [
+      {
+        "payload_path": "governance[0].esg_committee_meetings_per_year",
+        "payload_root": "governance",
+        "value_preview": "5",
+        "value_type": "int",
+        "match_score": 11,
+        "matched_keywords": [
+          "committee",
+          "governance",
+          "meeting"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[0].board_full_meeting_frequency",
+        "payload_root": "governance",
+        "value_preview": "4",
+        "value_type": "int",
+        "match_score": 11,
+        "matched_keywords": [
+          "board",
+          "governance",
+          "meeting"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[1].esg_committee_meetings_per_year",
+        "payload_root": "governance",
+        "value_preview": "6",
+        "value_type": "int",
+        "match_score": 11,
+        "matched_keywords": [
+          "committee",
+          "governance",
+          "meeting"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[1].board_full_meeting_frequency",
+        "payload_root": "governance",
+        "value_preview": "7",
+        "value_type": "int",
+        "match_score": 11,
+        "matched_keywords": [
+          "board",
+          "governance",
+          "meeting"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[2].esg_committee_meetings_per_year",
+        "payload_root": "governance",
+        "value_preview": "7",
+        "value_type": "int",
+        "match_score": 11,
+        "matched_keywords": [
+          "committee",
+          "governance",
+          "meeting"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[2].board_full_meeting_frequency",
+        "payload_root": "governance",
+        "value_preview": "8",
+        "value_type": "int",
+        "match_score": 11,
+        "matched_keywords": [
+          "board",
+          "governance",
+          "meeting"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "reporting_kpis.governance_maturity.esg_committee_meetings",
+        "payload_root": "reporting_kpis",
+        "value_preview": "7",
+        "value_type": "int",
+        "match_score": 11,
+        "matched_keywords": [
+          "committee",
+          "governance",
+          "meeting"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[0].board_size",
+        "payload_root": "governance",
+        "value_preview": "10",
+        "value_type": "int",
+        "match_score": 11,
+        "matched_keywords": [
+          "board",
+          "governance"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      }
+    ],
+    "mapping_method": "deterministic_payload_aware"
+  },
+  {
+    "requirement_id": "IFRS_S2_6_C03",
+    "section_name": "Governance",
+    "requirement_text": "To achieve this objective, an entity shall disclose information about — (a) the governance body(s) (which can include a board, committee or equivalent body charged with governance) or individual(s) responsible for oversight of climate-related risks and opportunities. Specifically, the entity shall identify that body(s) or individual(s) and disclose information about: — (ii) how the body(s) or individual(s) determines whether appropriate skills and competencies are available or will be developed to oversee strategies designed to respond to climate-related risks and opportunities",
+    "mandatory": true,
+    "evidence_candidates": [
+      {
+        "payload_path": "governance[0].skills_development_programme",
+        "payload_root": "governance",
+        "value_preview": "True",
+        "value_type": "bool",
+        "match_score": 15,
+        "matched_keywords": [
+          "development",
+          "governance",
+          "skill",
+          "skills"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[1].skills_development_programme",
+        "payload_root": "governance",
+        "value_preview": "True",
+        "value_type": "bool",
+        "match_score": 15,
+        "matched_keywords": [
+          "development",
+          "governance",
+          "skill",
+          "skills"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[2].skills_development_programme",
+        "payload_root": "governance",
+        "value_preview": "True",
+        "value_type": "bool",
+        "match_score": 15,
+        "matched_keywords": [
+          "development",
+          "governance",
+          "skill",
+          "skills"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[0].board_climate_expertise_pct",
+        "payload_root": "governance",
+        "value_preview": "33.5",
+        "value_type": "float",
+        "match_score": 15,
+        "matched_keywords": [
+          "board",
+          "expertise",
+          "governance"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[1].board_climate_expertise_pct",
+        "payload_root": "governance",
+        "value_preview": "35.5",
+        "value_type": "float",
+        "match_score": 15,
+        "matched_keywords": [
+          "board",
+          "expertise",
+          "governance"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[2].board_climate_expertise_pct",
+        "payload_root": "governance",
+        "value_preview": "37.5",
+        "value_type": "float",
+        "match_score": 15,
+        "matched_keywords": [
+          "board",
+          "expertise",
+          "governance"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "reporting_kpis.governance_maturity.board_climate_expertise_pct",
+        "payload_root": "reporting_kpis",
+        "value_preview": "37.5",
+        "value_type": "float",
+        "match_score": 15,
+        "matched_keywords": [
+          "board",
+          "expertise",
+          "governance"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[0].esg_committee_meetings_per_year",
+        "payload_root": "governance",
+        "value_preview": "5",
+        "value_type": "int",
+        "match_score": 13,
+        "matched_keywords": [
+          "committee",
+          "governance",
+          "meeting"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      }
+    ],
+    "mapping_method": "deterministic_payload_aware"
+  },
+  {
+    "requirement_id": "IFRS_S2_6_C04",
+    "section_name": "Governance",
+    "requirement_text": "To achieve this objective, an entity shall disclose information about — (a) the governance body(s) (which can include a board, committee or equivalent body charged with governance) or individual(s) responsible for oversight of climate-related risks and opportunities. Specifically, the entity shall identify that body(s) or individual(s) and disclose information about: — (iii) how and how often the body(s) or individual(s) is informed about climate-related risks and opportunities",
+    "mandatory": true,
+    "evidence_candidates": [
+      {
+        "payload_path": "governance[0].climate_risk_reporting_to_board",
+        "payload_root": "governance",
+        "value_preview": "semi_annual",
+        "value_type": "str",
+        "match_score": 15,
+        "matched_keywords": [
+          "board",
+          "climate_risk_reporting",
+          "governance",
+          "reporting_to_board"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[0].board_full_meeting_frequency",
+        "payload_root": "governance",
+        "value_preview": "4",
+        "value_type": "int",
+        "match_score": 15,
+        "matched_keywords": [
+          "board",
+          "frequency",
+          "governance",
+          "meeting"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[1].climate_risk_reporting_to_board",
+        "payload_root": "governance",
+        "value_preview": "semi_annual",
+        "value_type": "str",
+        "match_score": 15,
+        "matched_keywords": [
+          "board",
+          "climate_risk_reporting",
+          "governance",
+          "reporting_to_board"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[1].board_full_meeting_frequency",
+        "payload_root": "governance",
+        "value_preview": "7",
+        "value_type": "int",
+        "match_score": 15,
+        "matched_keywords": [
+          "board",
+          "frequency",
+          "governance",
+          "meeting"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[2].climate_risk_reporting_to_board",
+        "payload_root": "governance",
+        "value_preview": "semi_annual",
+        "value_type": "str",
+        "match_score": 15,
+        "matched_keywords": [
+          "board",
+          "climate_risk_reporting",
+          "governance",
+          "reporting_to_board"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[2].board_full_meeting_frequency",
+        "payload_root": "governance",
+        "value_preview": "8",
+        "value_type": "int",
+        "match_score": 15,
+        "matched_keywords": [
+          "board",
+          "frequency",
+          "governance",
+          "meeting"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[0].esg_committee_meetings_per_year",
+        "payload_root": "governance",
+        "value_preview": "5",
+        "value_type": "int",
+        "match_score": 15,
+        "matched_keywords": [
+          "committee",
+          "governance",
+          "meeting"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[0].climate_on_board_agenda_pct",
+        "payload_root": "governance",
+        "value_preview": "69.8",
+        "value_type": "float",
+        "match_score": 15,
+        "matched_keywords": [
+          "agenda",
+          "board",
+          "governance"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      }
+    ],
+    "mapping_method": "deterministic_payload_aware"
+  },
+  {
+    "requirement_id": "IFRS_S2_6_C05",
+    "section_name": "Governance",
+    "requirement_text": "To achieve this objective, an entity shall disclose information about — (a) the governance body(s) (which can include a board, committee or equivalent body charged with governance) or individual(s) responsible for oversight of climate-related risks and opportunities. Specifically, the entity shall identify that body(s) or individual(s) and disclose information about: — (iv) how the body(s) or individual(s) takes into account climate-related risks and opportunities when overseeing the entity’s strategy, its decisions on major transactions and its risk management processes and related policies, including whether the body(s) or individual(s) has considered trade-offs associated with those risks and opportunities",
+    "mandatory": true,
+    "evidence_candidates": [
+      {
+        "payload_path": "governance[0].major_transactions_climate_check",
+        "payload_root": "governance",
+        "value_preview": "True",
+        "value_type": "bool",
+        "match_score": 19,
+        "matched_keywords": [
+          "governance",
+          "major",
+          "major_transactions",
+          "transactions"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[1].major_transactions_climate_check",
+        "payload_root": "governance",
+        "value_preview": "True",
+        "value_type": "bool",
+        "match_score": 19,
+        "matched_keywords": [
+          "governance",
+          "major",
+          "major_transactions",
+          "transactions"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[2].major_transactions_climate_check",
+        "payload_root": "governance",
+        "value_preview": "True",
+        "value_type": "bool",
+        "match_score": 19,
+        "matched_keywords": [
+          "governance",
+          "major",
+          "major_transactions",
+          "transactions"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[0].management_committee_name",
+        "payload_root": "governance",
+        "value_preview": "Group Sustainability Committee",
+        "value_type": "str",
+        "match_score": 19,
+        "matched_keywords": [
+          "committee",
+          "governance",
+          "management"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[1].management_committee_name",
+        "payload_root": "governance",
+        "value_preview": "ESG Executive Committee",
+        "value_type": "str",
+        "match_score": 19,
+        "matched_keywords": [
+          "committee",
+          "governance",
+          "management"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[2].management_committee_name",
+        "payload_root": "governance",
+        "value_preview": "Climate Risk Management Committee",
+        "value_type": "str",
+        "match_score": 19,
+        "matched_keywords": [
+          "committee",
+          "governance",
+          "management"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[0].esg_committee_meetings_per_year",
+        "payload_root": "governance",
+        "value_preview": "5",
+        "value_type": "int",
+        "match_score": 17,
+        "matched_keywords": [
+          "committee",
+          "governance",
+          "meeting"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[1].esg_committee_meetings_per_year",
+        "payload_root": "governance",
+        "value_preview": "6",
+        "value_type": "int",
+        "match_score": 17,
+        "matched_keywords": [
+          "committee",
+          "governance",
+          "meeting"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      }
+    ],
+    "mapping_method": "deterministic_payload_aware"
+  },
+  {
+    "requirement_id": "IFRS_S2_6_C06",
+    "section_name": "Governance",
+    "requirement_text": "To achieve this objective, an entity shall disclose information about — (a) the governance body(s) (which can include a board, committee or equivalent body charged with governance) or individual(s) responsible for oversight of climate-related risks and opportunities. Specifically, the entity shall identify that body(s) or individual(s) and disclose information about: — (v) how the body(s) or individual(s) oversees the setting of targets related to climate-related risks and opportunities, and monitors progress towards those targets (see paragraphs 33–36), including whether and how related performance metrics are included in remuneration policies (see paragraph 29(g)).",
+    "mandatory": true,
+    "evidence_candidates": [
+      {
+        "payload_path": "board_minutes[34].climate_topics_discussed",
+        "payload_root": "board_minutes",
+        "value_preview": "exec_remuneration_esg_kpis|carbon_credit_approval|net_zero_progress",
+        "value_type": "str",
+        "match_score": 19,
+        "matched_keywords": [
+          "board",
+          "exec",
+          "progress",
+          "remuneration"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "board_minutes[35].climate_topics_discussed",
+        "payload_root": "board_minutes",
+        "value_preview": "net_zero_progress|exec_remuneration_esg_kpis",
+        "value_type": "str",
+        "match_score": 19,
+        "matched_keywords": [
+          "board",
+          "exec",
+          "progress",
+          "remuneration"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[0].all_exec_climate_remuneration_pct",
+        "payload_root": "governance",
+        "value_preview": "8.7",
+        "value_type": "float",
+        "match_score": 19,
+        "matched_keywords": [
+          "exec",
+          "governance",
+          "remuneration"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[1].all_exec_climate_remuneration_pct",
+        "payload_root": "governance",
+        "value_preview": "15.3",
+        "value_type": "float",
+        "match_score": 19,
+        "matched_keywords": [
+          "exec",
+          "governance",
+          "remuneration"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[2].all_exec_climate_remuneration_pct",
+        "payload_root": "governance",
+        "value_preview": "15.1",
+        "value_type": "float",
+        "match_score": 19,
+        "matched_keywords": [
+          "exec",
+          "governance",
+          "remuneration"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "board_minutes[0].climate_topics_discussed",
+        "payload_root": "board_minutes",
+        "value_preview": "transition_plan_review|exec_remuneration_esg_kpis",
+        "value_type": "str",
+        "match_score": 18,
+        "matched_keywords": [
+          "board",
+          "exec",
+          "remuneration"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "board_minutes[2].climate_topics_discussed",
+        "payload_root": "board_minutes",
+        "value_preview": "exec_remuneration_esg_kpis|tcfd_review|carbon_credit_approval",
+        "value_type": "str",
+        "match_score": 18,
+        "matched_keywords": [
+          "board",
+          "exec",
+          "remuneration"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "board_minutes[8].climate_topics_discussed",
+        "payload_root": "board_minutes",
+        "value_preview": "scenario_analysis|transition_plan_review|tcfd_review|exec_remuneration_esg_kpis",
+        "value_type": "str",
+        "match_score": 18,
+        "matched_keywords": [
+          "board",
+          "exec",
+          "remuneration"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      }
+    ],
+    "mapping_method": "deterministic_payload_aware"
+  },
+  {
+    "requirement_id": "IFRS_S2_6_C08",
+    "section_name": "Governance",
+    "requirement_text": "To achieve this objective, an entity shall disclose information about — (b) management’s role in the governance processes, controls and procedures used to monitor, manage and oversee climate-related risks and opportunities, including information about: — (i) whether the role is delegated to a specific management-level position or management-level committee and how oversight is exercised over that position or committee",
+    "mandatory": true,
+    "evidence_candidates": [
+      {
+        "payload_path": "governance[0].management_committee_name",
+        "payload_root": "governance",
+        "value_preview": "Group Sustainability Committee",
+        "value_type": "str",
+        "match_score": 19,
+        "matched_keywords": [
+          "committee",
+          "governance",
+          "management"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[1].management_committee_name",
+        "payload_root": "governance",
+        "value_preview": "ESG Executive Committee",
+        "value_type": "str",
+        "match_score": 19,
+        "matched_keywords": [
+          "committee",
+          "governance",
+          "management"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[2].management_committee_name",
+        "payload_root": "governance",
+        "value_preview": "Climate Risk Management Committee",
+        "value_type": "str",
+        "match_score": 19,
+        "matched_keywords": [
+          "committee",
+          "governance",
+          "management"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[0].esg_committee_meetings_per_year",
+        "payload_root": "governance",
+        "value_preview": "5",
+        "value_type": "int",
+        "match_score": 16,
+        "matched_keywords": [
+          "committee",
+          "governance",
+          "meeting"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[1].esg_committee_meetings_per_year",
+        "payload_root": "governance",
+        "value_preview": "6",
+        "value_type": "int",
+        "match_score": 16,
+        "matched_keywords": [
+          "committee",
+          "governance",
+          "meeting"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[2].esg_committee_meetings_per_year",
+        "payload_root": "governance",
+        "value_preview": "7",
+        "value_type": "int",
+        "match_score": 16,
+        "matched_keywords": [
+          "committee",
+          "governance",
+          "meeting"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "reporting_kpis.governance_maturity.esg_committee_meetings",
+        "payload_root": "reporting_kpis",
+        "value_preview": "7",
+        "value_type": "int",
+        "match_score": 16,
+        "matched_keywords": [
+          "committee",
+          "governance",
+          "meeting"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[0].esg_committee_exists",
+        "payload_root": "governance",
+        "value_preview": "True",
+        "value_type": "bool",
+        "match_score": 16,
+        "matched_keywords": [
+          "committee",
+          "governance"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      }
+    ],
+    "mapping_method": "deterministic_payload_aware"
+  },
+  {
+    "requirement_id": "IFRS_S2_6_C09",
+    "section_name": "Governance",
+    "requirement_text": "To achieve this objective, an entity shall disclose information about — (b) management’s role in the governance processes, controls and procedures used to monitor, manage and oversee climate-related risks and opportunities, including information about: — (ii) whether management uses controls and procedures to support the oversight of climate-related risks and opportunities and, if so, how these controls and procedures are integrated with other internal functions.",
+    "mandatory": true,
+    "evidence_candidates": [
+      {
+        "payload_path": "governance[0].management_committee_name",
+        "payload_root": "governance",
+        "value_preview": "Group Sustainability Committee",
+        "value_type": "str",
+        "match_score": 16,
+        "matched_keywords": [
+          "committee",
+          "governance",
+          "management"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[1].management_committee_name",
+        "payload_root": "governance",
+        "value_preview": "ESG Executive Committee",
+        "value_type": "str",
+        "match_score": 16,
+        "matched_keywords": [
+          "committee",
+          "governance",
+          "management"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[2].management_committee_name",
+        "payload_root": "governance",
+        "value_preview": "Climate Risk Management Committee",
+        "value_type": "str",
+        "match_score": 16,
+        "matched_keywords": [
+          "committee",
+          "governance",
+          "management"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[0].erm_integration_flag",
+        "payload_root": "governance",
+        "value_preview": "True",
+        "value_type": "bool",
+        "match_score": 13,
+        "matched_keywords": [
+          "erm",
+          "erm_integration",
+          "governance"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[1].erm_integration_flag",
+        "payload_root": "governance",
+        "value_preview": "True",
+        "value_type": "bool",
+        "match_score": 13,
+        "matched_keywords": [
+          "erm",
+          "erm_integration",
+          "governance"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[2].erm_integration_flag",
+        "payload_root": "governance",
+        "value_preview": "True",
+        "value_type": "bool",
+        "match_score": 13,
+        "matched_keywords": [
+          "erm",
+          "erm_integration",
+          "governance"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "reporting_kpis.governance_maturity.erm_integration",
+        "payload_root": "reporting_kpis",
+        "value_preview": "True",
+        "value_type": "bool",
+        "match_score": 13,
+        "matched_keywords": [
+          "erm",
+          "erm_integration",
+          "governance"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[0].esg_committee_exists",
+        "payload_root": "governance",
+        "value_preview": "True",
+        "value_type": "bool",
+        "match_score": 11,
+        "matched_keywords": [
+          "committee",
+          "governance"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      }
+    ],
+    "mapping_method": "deterministic_payload_aware"
+  },
+  {
+    "requirement_id": "IFRS_S2_7_C01",
+    "section_name": "Governance",
+    "requirement_text": "In preparing disclosures to fulfil the requirements in paragraph 6, an entity shall avoid unnecessary duplication in accordance with IFRS S1 General Requirements for Disclosure of Sustainability-related Financial Information (IFRS S1) (see paragraph B42(b) of IFRS S1). For example, although an entity shall provide the information required by paragraph 6, if oversight of sustainability-related risks and opportunities is managed on an integrated basis, the entity would avoid duplication by providing integrated governance disclosures instead of separate disclosures for each sustainability-related risk and opportunity.",
+    "mandatory": true,
+    "evidence_candidates": [
+      {
+        "payload_path": "governance[0].management_committee_name",
+        "payload_root": "governance",
+        "value_preview": "Group Sustainability Committee",
+        "value_type": "str",
+        "match_score": 9,
+        "matched_keywords": [
+          "governance",
+          "management"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[0].erm_integration_flag",
+        "payload_root": "governance",
+        "value_preview": "True",
+        "value_type": "bool",
+        "match_score": 9,
+        "matched_keywords": [
+          "erm_integration",
+          "governance"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[1].management_committee_name",
+        "payload_root": "governance",
+        "value_preview": "ESG Executive Committee",
+        "value_type": "str",
+        "match_score": 9,
+        "matched_keywords": [
+          "governance",
+          "management"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[1].erm_integration_flag",
+        "payload_root": "governance",
+        "value_preview": "True",
+        "value_type": "bool",
+        "match_score": 9,
+        "matched_keywords": [
+          "erm_integration",
+          "governance"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[2].management_committee_name",
+        "payload_root": "governance",
+        "value_preview": "Climate Risk Management Committee",
+        "value_type": "str",
+        "match_score": 9,
+        "matched_keywords": [
+          "governance",
+          "management"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[2].erm_integration_flag",
+        "payload_root": "governance",
+        "value_preview": "True",
+        "value_type": "bool",
+        "match_score": 9,
+        "matched_keywords": [
+          "erm_integration",
+          "governance"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "reporting_kpis.governance_maturity.erm_integration",
+        "payload_root": "reporting_kpis",
+        "value_preview": "True",
+        "value_type": "bool",
+        "match_score": 9,
+        "matched_keywords": [
+          "erm_integration",
+          "governance"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      },
+      {
+        "payload_path": "governance[0].reporting_year",
+        "payload_root": "governance",
+        "value_preview": "2022",
+        "value_type": "int",
+        "match_score": 8,
+        "matched_keywords": [
+          "governance"
+        ],
+        "mapping_reason": "payload_root_routing+phrase_boost+lexical"
+      }
+    ],
+    "mapping_method": "deterministic_payload_aware"
   }
 ]
