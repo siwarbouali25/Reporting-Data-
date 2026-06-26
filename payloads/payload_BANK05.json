@@ -60,6 +60,527 @@
       "emission_factor_source": "Empirically derived — consistent 2.67 kg CO2/litre across all fuel types"
     }
   },
+  "general_requirements_context": {
+    "reporting_entity": "Iberian Corporate Finance SA",
+    "bank_id": "BANK05",
+    "reporting_period_end": "2024-12-31",
+    "reporting_year": 2024,
+    "comparative_years": [
+      2022,
+      2023
+    ],
+    "reporting_currency": "EUR",
+    "boundary_type": "financial_control",
+    "regulatory_regime": "CSRD",
+    "standards_basis": "IFRS S1 / IFRS S2-style sustainability-related financial disclosure basis",
+    "source_systems": [
+      {
+        "system_id": "CIF",
+        "system_name": "Customer Information File",
+        "purpose": "counterparty master data",
+        "owner": "CRM"
+      },
+      {
+        "system_id": "KYC",
+        "system_name": "Know Your Customer",
+        "purpose": "due diligence and onboarding",
+        "owner": "Compliance"
+      },
+      {
+        "system_id": "LMS",
+        "system_name": "Loan Management System",
+        "purpose": "exposure & collateral tracking",
+        "owner": "Credit"
+      },
+      {
+        "system_id": "ESG_DATA",
+        "system_name": "ESG Data Warehouse",
+        "purpose": "emissions, targets, sustainability metrics",
+        "owner": "Sustainability"
+      },
+      {
+        "system_id": "ERM_GRC",
+        "system_name": "Enterprise Risk / GRC",
+        "purpose": "risk register, governance documentation",
+        "owner": "Risk"
+      },
+      {
+        "system_id": "HR",
+        "system_name": "Human Resources System",
+        "purpose": "workforce, training, compensation",
+        "owner": "HR"
+      },
+      {
+        "system_id": "FACILITIES",
+        "system_name": "Facilities Management",
+        "purpose": "buildings, utilities, energy",
+        "owner": "Operations"
+      },
+      {
+        "system_id": "FLEET",
+        "system_name": "Fleet Management",
+        "purpose": "vehicles and fuel",
+        "owner": "Operations"
+      },
+      {
+        "system_id": "TRAVEL",
+        "system_name": "Travel & Expense",
+        "purpose": "business travel records",
+        "owner": "Operations"
+      },
+      {
+        "system_id": "PROCUREMENT",
+        "system_name": "Procurement System",
+        "purpose": "supplier data and spend",
+        "owner": "Procurement"
+      }
+    ],
+    "data_gaps": [
+      {
+        "field": "scope1_fleet_tco2e",
+        "affected_years": [
+          2022,
+          2023
+        ],
+        "reason": "Vehicle activity data available for 2024 only.",
+        "instruction": "Report 2024 fleet Scope 1 only. State data unavailable for prior years. Do not report missing years as zero."
+      },
+      {
+        "field": "scope3_travel_tco2e",
+        "affected_years": [
+          2022,
+          2023
+        ],
+        "reason": "Travel records cover 2024 only.",
+        "instruction": "Report 2024 Scope 3 Cat.6 only. Prior years not available."
+      },
+      {
+        "field": "investments.counterparty_id",
+        "affected_years": [
+          2024
+        ],
+        "reason": "counterparty_id not populated in investments table. Investments attributed at bank level only.",
+        "instruction": "Note PCAF DQS 3 for investment attribution. Do not report issuer-level investment claims."
+      },
+      {
+        "field": "total_loans_meur",
+        "affected_years": [
+          2022,
+          2023,
+          2024
+        ],
+        "reason": "total_loans_meur is constant across all reporting years in the available data. Loan book growth data not available.",
+        "instruction": "Carbon intensity trend reflects emission changes only, not loan book growth. Disclose this methodology limitation explicitly. Do not describe a trend in the loan book denominator."
+      }
+    ],
+    "pcaf_methodology": {
+      "corporate_loans": "outstanding_amount_meur / evic_meur * total_ghg_tco2e (PCAF Standard §B62)",
+      "sovereign_bonds_investments": "nominal_amount_meur / ppp_gdp_meur * national_scope1_tco2e (PCAF Standard §B62A)",
+      "listed_equity": "market_value_meur / issuer_evic_meur * issuer_revenue_meur (PCAF Standard §B61 proxy — revenue substituted for direct issuer emissions due to absence of counterparty-level emission data in investment records)",
+      "sovereign_bonds_note": "issuer_evic_meur and issuer_revenue_meur are null for sovereign bonds by design. EVIC and revenue are corporate concepts not applicable to sovereigns.",
+      "investments_counterparty_note": "counterparty_id is null across all 185 investment rows. This is a known data generation gap. Attribution is at bank level only."
+    },
+    "scope2_rec_reconciliation": "scope2_market_tco2e is sourced directly from utility_invoices.scope2_market_tco2e, which already reflects market-based accounting with grid emission factors adjusted for renewable energy certificates and PPAs. The rec_registry.csv data is not subtracted again during preparation — it is used for disclosure narrative only (certificate type, volume, registry). There is no double-counting.",
+    "risk_rating_methodology": "climate_risk_register.risk_rating is derived from a 5x5 risk matrix: scores 1-2 = low, 3-6 = medium, 8-12 = high, 15-25 = critical. Specifically: likelihood_score * severity_score; critical >= 15, high >= 8, medium >= 3, low < 3. This formula must be used verbatim if the rating methodology is described in the report.",
+    "external_assurance": "none",
+    "assurance_provider": null,
+    "assurance_scope": null,
+    "assurance_standard": null,
+    "coherence_fixes_applied": [
+      {
+        "bank_id": "BANK05",
+        "table": "banks",
+        "field": "tier1_capital_meur",
+        "old_value": 7327.2,
+        "new_value": 7453.4,
+        "reason": "Aligned bank master field to 2024 financial_summary."
+      },
+      {
+        "bank_id": "BANK05",
+        "table": "banks",
+        "field": "cet1_ratio_pct",
+        "old_value": 25.1,
+        "new_value": 25.5,
+        "reason": "Aligned bank master field to 2024 financial_summary."
+      },
+      {
+        "bank_id": "BANK05",
+        "table": "governance",
+        "field": "climate_on_board_agenda_pct",
+        "old_value": 42.9,
+        "new_value": 57.1,
+        "reason": "Recomputed from Full Board minutes climate_agenda_flag."
+      },
+      {
+        "bank_id": "BANK05",
+        "table": "climate_scenarios",
+        "field": "stranded_assets_estimate_meur",
+        "old_value": 645.7,
+        "new_value": 93.32,
+        "reason": "Recalculated as fossil-fuel exposure multiplied by high-risk exposure percentage."
+      },
+      {
+        "bank_id": "BANK05",
+        "table": "climate_scenarios",
+        "field": "stranded_assets_estimate_meur",
+        "old_value": 2954.6,
+        "new_value": 427.02,
+        "reason": "Recalculated as fossil-fuel exposure multiplied by high-risk exposure percentage."
+      },
+      {
+        "bank_id": "BANK05",
+        "table": "climate_scenarios",
+        "field": "revenue_at_risk_meur",
+        "old_value": 598.1,
+        "new_value": 594.12,
+        "reason": "Capped at 30% of 2024 revenue to avoid impossible report magnitudes."
+      },
+      {
+        "bank_id": "BANK05",
+        "table": "climate_scenarios",
+        "field": "stranded_assets_estimate_meur",
+        "old_value": 2181.7,
+        "new_value": 315.31,
+        "reason": "Recalculated as fossil-fuel exposure multiplied by high-risk exposure percentage."
+      },
+      {
+        "bank_id": "BANK05",
+        "table": "climate_scenarios",
+        "field": "stranded_assets_estimate_meur",
+        "old_value": 1115.3,
+        "new_value": 161.19,
+        "reason": "Recalculated as fossil-fuel exposure multiplied by high-risk exposure percentage."
+      },
+      {
+        "bank_id": "BANK05",
+        "table": "climate_scenarios",
+        "field": "stranded_assets_estimate_meur",
+        "old_value": 1281.6,
+        "new_value": 185.23,
+        "reason": "Recalculated as fossil-fuel exposure multiplied by high-risk exposure percentage."
+      },
+      {
+        "bank_id": "BANK05",
+        "table": "climate_scenarios",
+        "field": "stranded_assets_estimate_meur",
+        "old_value": 1545.8,
+        "new_value": 223.41,
+        "reason": "Recalculated as fossil-fuel exposure multiplied by high-risk exposure percentage."
+      },
+      {
+        "bank_id": "BANK05",
+        "table": "climate_scenarios",
+        "field": "stranded_assets_estimate_meur",
+        "old_value": 3160.0,
+        "new_value": 456.71,
+        "reason": "Recalculated as fossil-fuel exposure multiplied by high-risk exposure percentage."
+      },
+      {
+        "bank_id": "BANK05",
+        "table": "climate_scenarios",
+        "field": "revenue_at_risk_meur",
+        "old_value": 639.7,
+        "new_value": 594.12,
+        "reason": "Capped at 30% of 2024 revenue to avoid impossible report magnitudes."
+      },
+      {
+        "bank_id": "BANK05",
+        "table": "climate_scenarios",
+        "field": "stranded_assets_estimate_meur",
+        "old_value": 2592.6,
+        "new_value": 374.7,
+        "reason": "Recalculated as fossil-fuel exposure multiplied by high-risk exposure percentage."
+      },
+      {
+        "bank_id": "BANK05",
+        "table": "climate_scenarios",
+        "field": "stranded_assets_estimate_meur",
+        "old_value": 2524.1,
+        "new_value": 364.8,
+        "reason": "Recalculated as fossil-fuel exposure multiplied by high-risk exposure percentage."
+      },
+      {
+        "bank_id": "BANK05",
+        "table": "climate_scenarios",
+        "field": "stranded_assets_estimate_meur",
+        "old_value": 1183.8,
+        "new_value": 171.09,
+        "reason": "Recalculated as fossil-fuel exposure multiplied by high-risk exposure percentage."
+      },
+      {
+        "bank_id": "BANK05",
+        "table": "climate_scenarios",
+        "field": "stranded_assets_estimate_meur",
+        "old_value": 2377.4,
+        "new_value": 343.59,
+        "reason": "Recalculated as fossil-fuel exposure multiplied by high-risk exposure percentage."
+      },
+      {
+        "bank_id": "BANK05",
+        "table": "climate_scenarios",
+        "field": "stranded_assets_estimate_meur",
+        "old_value": 1849.1,
+        "new_value": 267.24,
+        "reason": "Recalculated as fossil-fuel exposure multiplied by high-risk exposure percentage."
+      },
+      {
+        "bank_id": "BANK05",
+        "table": "climate_risk_register",
+        "field": "mitigation_actions",
+        "old_value": "Climate scenario stress testing integrated into ICAAP",
+        "new_value": "Collateral revaluation, flood-zone mapping overlay and updated mortgage underwriting criteria",
+        "reason": "Aligned mitigation action to risk type."
+      },
+      {
+        "bank_id": "BANK05",
+        "table": "climate_risk_register",
+        "field": "mitigation_actions",
+        "old_value": "Green retrofit financing incentives",
+        "new_value": "Sector exposure limits, enhanced due diligence and portfolio decarbonisation glide-path monitoring",
+        "reason": "Aligned mitigation action to risk type."
+      },
+      {
+        "bank_id": "BANK05",
+        "table": "climate_risk_register",
+        "field": "mitigation_actions",
+        "old_value": "Portfolio decarbonisation glide-path monitoring",
+        "new_value": "Enhanced financed-emissions disclosure controls and client engagement on transition plans",
+        "reason": "Aligned mitigation action to risk type."
+      },
+      {
+        "bank_id": "BANK05",
+        "table": "climate_risk_register",
+        "field": "mitigation_actions",
+        "old_value": "Sector exposure limits and enhanced due diligence",
+        "new_value": "Wildfire hazard mapping, collateral revaluation and borrower resilience engagement",
+        "reason": "Aligned mitigation action to risk type."
+      },
+      {
+        "bank_id": "BANK05",
+        "table": "climate_risk_register",
+        "field": "mitigation_actions",
+        "old_value": "Portfolio decarbonisation glide-path monitoring",
+        "new_value": "Technology transition monitoring, sector concentration limits and client transition-plan engagement",
+        "reason": "Aligned mitigation action to risk type."
+      },
+      {
+        "bank_id": "BANK05",
+        "table": "climate_risk_register",
+        "field": "mitigation_actions",
+        "old_value": "Sector exposure limits and enhanced due diligence",
+        "new_value": "Climate scenario stress testing, sector monitoring and borrower adaptation engagement",
+        "reason": "Aligned mitigation action to risk type."
+      },
+      {
+        "bank_id": "BANK05",
+        "table": "climate_risk_register",
+        "field": "mitigation_actions",
+        "old_value": "Sector exposure limits and enhanced due diligence",
+        "new_value": "Sector exposure limits, carbon-cost sensitivity analysis and enhanced due diligence",
+        "reason": "Aligned mitigation action to risk type."
+      },
+      {
+        "bank_id": "BANK05",
+        "table": "climate_risk_register",
+        "field": "mitigation_actions",
+        "old_value": "Climate scenario stress testing integrated into ICAAP",
+        "new_value": "Sector exposure limits, carbon-cost sensitivity analysis and enhanced due diligence",
+        "reason": "Aligned mitigation action to risk type."
+      },
+      {
+        "bank_id": "BANK05",
+        "table": "climate_risk_register",
+        "field": "mitigation_actions",
+        "old_value": "Climate scenario stress testing integrated into ICAAP",
+        "new_value": "Wildfire hazard mapping, collateral revaluation and borrower resilience engagement",
+        "reason": "Aligned mitigation action to risk type."
+      },
+      {
+        "bank_id": "BANK05",
+        "table": "climate_risk_register",
+        "field": "mitigation_actions",
+        "old_value": "Engagement and transition-plan covenants with borrowers",
+        "new_value": "Sector exposure limits, carbon-cost sensitivity analysis and enhanced due diligence",
+        "reason": "Aligned mitigation action to risk type."
+      },
+      {
+        "bank_id": "BANK05",
+        "table": "climate_risk_register",
+        "field": "mitigation_actions",
+        "old_value": "Climate scenario stress testing integrated into ICAAP",
+        "new_value": "Enhanced financed-emissions disclosure controls and client engagement on transition plans",
+        "reason": "Aligned mitigation action to risk type."
+      },
+      {
+        "bank_id": "BANK05",
+        "table": "climate_risk_register",
+        "field": "mitigation_actions",
+        "old_value": "Green retrofit financing incentives",
+        "new_value": "Collateral revaluation, flood-zone mapping overlay and updated mortgage underwriting criteria",
+        "reason": "Aligned mitigation action to risk type."
+      },
+      {
+        "bank_id": "BANK05",
+        "table": "climate_risk_register",
+        "field": "mitigation_actions",
+        "old_value": "Green retrofit financing incentives",
+        "new_value": "Sector exposure limits, carbon-cost sensitivity analysis and enhanced due diligence",
+        "reason": "Aligned mitigation action to risk type."
+      },
+      {
+        "bank_id": "BANK05",
+        "table": "climate_risk_register",
+        "field": "mitigation_actions",
+        "old_value": "Collateral revaluation and flood mapping overlay",
+        "new_value": "Technology transition monitoring, sector concentration limits and client transition-plan engagement",
+        "reason": "Aligned mitigation action to risk type."
+      },
+      {
+        "bank_id": "BANK05",
+        "table": "climate_risk_register",
+        "field": "mitigation_actions",
+        "old_value": "Sector exposure limits and enhanced due diligence",
+        "new_value": "Sector exposure limits, enhanced due diligence and portfolio decarbonisation glide-path monitoring",
+        "reason": "Aligned mitigation action to risk type."
+      },
+      {
+        "bank_id": "BANK05",
+        "table": "climate_risk_register",
+        "field": "mitigation_actions",
+        "old_value": "Climate scenario stress testing integrated into ICAAP",
+        "new_value": "Climate scenario stress testing, sector monitoring and borrower adaptation engagement",
+        "reason": "Aligned mitigation action to risk type."
+      },
+      {
+        "bank_id": "BANK05",
+        "table": "climate_risk_register",
+        "field": "risk_rating",
+        "old_value": "low",
+        "new_value": "medium",
+        "reason": "Recalculated from likelihood_score * severity_score using the stated 5x5 risk matrix."
+      },
+      {
+        "bank_id": "BANK05",
+        "table": "climate_risk_register",
+        "field": "risk_rating",
+        "old_value": "low",
+        "new_value": "medium",
+        "reason": "Recalculated from likelihood_score * severity_score using the stated 5x5 risk matrix."
+      },
+      {
+        "bank_id": "BANK05",
+        "table": "climate_risk_register",
+        "field": "risk_rating",
+        "old_value": "high",
+        "new_value": "critical",
+        "reason": "Recalculated from likelihood_score * severity_score using the stated 5x5 risk matrix."
+      },
+      {
+        "bank_id": "BANK05",
+        "table": "climate_risk_register",
+        "field": "risk_rating",
+        "old_value": "high",
+        "new_value": "critical",
+        "reason": "Recalculated from likelihood_score * severity_score using the stated 5x5 risk matrix."
+      },
+      {
+        "bank_id": "BANK05",
+        "table": "climate_risk_register",
+        "field": "risk_rating",
+        "old_value": "medium",
+        "new_value": "high",
+        "reason": "Recalculated from likelihood_score * severity_score using the stated 5x5 risk matrix."
+      },
+      {
+        "bank_id": "BANK05",
+        "table": "climate_risk_register",
+        "field": "risk_rating",
+        "old_value": "medium",
+        "new_value": "high",
+        "reason": "Recalculated from likelihood_score * severity_score using the stated 5x5 risk matrix."
+      },
+      {
+        "bank_id": "BANK05",
+        "table": "climate_risk_register",
+        "field": "risk_rating",
+        "old_value": "medium",
+        "new_value": "high",
+        "reason": "Recalculated from likelihood_score * severity_score using the stated 5x5 risk matrix."
+      },
+      {
+        "bank_id": "BANK05",
+        "table": "climate_risk_register",
+        "field": "risk_rating",
+        "old_value": "medium",
+        "new_value": "high",
+        "reason": "Recalculated from likelihood_score * severity_score using the stated 5x5 risk matrix."
+      },
+      {
+        "bank_id": "BANK05",
+        "table": "climate_risk_register",
+        "field": "risk_rating",
+        "old_value": "high",
+        "new_value": "critical",
+        "reason": "Recalculated from likelihood_score * severity_score using the stated 5x5 risk matrix."
+      },
+      {
+        "bank_id": "BANK05",
+        "table": "climate_risk_register",
+        "field": "risk_rating",
+        "old_value": "low",
+        "new_value": "medium",
+        "reason": "Recalculated from likelihood_score * severity_score using the stated 5x5 risk matrix."
+      },
+      {
+        "bank_id": "BANK05",
+        "table": "climate_risk_register",
+        "field": "risk_rating",
+        "old_value": "medium",
+        "new_value": "high",
+        "reason": "Recalculated from likelihood_score * severity_score using the stated 5x5 risk matrix."
+      },
+      {
+        "bank_id": "BANK05",
+        "table": "climate_risk_register",
+        "field": "risk_rating",
+        "old_value": "low",
+        "new_value": "medium",
+        "reason": "Recalculated from likelihood_score * severity_score using the stated 5x5 risk matrix."
+      },
+      {
+        "bank_id": "BANK05",
+        "table": "climate_risk_register",
+        "field": "risk_rating",
+        "old_value": "medium",
+        "new_value": "high",
+        "reason": "Recalculated from likelihood_score * severity_score using the stated 5x5 risk matrix."
+      },
+      {
+        "bank_id": "BANK05",
+        "table": "climate_risk_register",
+        "field": "risk_rating",
+        "old_value": "medium",
+        "new_value": "high",
+        "reason": "Recalculated from likelihood_score * severity_score using the stated 5x5 risk matrix."
+      },
+      {
+        "bank_id": "BANK05",
+        "table": "climate_risk_register",
+        "field": "risk_rating",
+        "old_value": "medium",
+        "new_value": "high",
+        "reason": "Recalculated from likelihood_score * severity_score using the stated 5x5 risk matrix."
+      },
+      {
+        "bank_id": "BANK05",
+        "table": "climate_risk_register",
+        "field": "risk_rating",
+        "old_value": "medium",
+        "new_value": "high",
+        "reason": "Recalculated from likelihood_score * severity_score using the stated 5x5 risk matrix."
+      }
+    ]
+  },
   "reporting_kpis": {
     "scope1_2024_tco2e": 1353.580028,
     "scope2_location_2024_tco2e": 1917.645,
@@ -151,8 +672,8 @@
     "regulatory_regime": "CSRD",
     "in_scope_esg_flag": true,
     "total_loans_meur": 9783.4,
-    "tier1_capital_meur": 7327.2,
-    "cet1_ratio_pct": 25.1
+    "tier1_capital_meur": 7453.4,
+    "cet1_ratio_pct": 25.5
   },
   "financial_summary": [
     {
@@ -738,7 +1259,7 @@
       "assurance_provider": null,
       "all_exec_climate_remuneration_pct": 4.9,
       "board_full_meeting_frequency": 7,
-      "climate_on_board_agenda_pct": 42.9,
+      "climate_on_board_agenda_pct": 57.1,
       "management_committee_name": "Risk Committee",
       "erm_integration_flag": false,
       "skills_development_programme": false,
@@ -1027,7 +1548,7 @@
       "physical_risk_loss_pct_capital": 4.5,
       "transition_risk_loss_pct_capital": 13.1,
       "high_risk_exposure_pct": 6.6,
-      "stranded_assets_estimate_meur": 645.7,
+      "stranded_assets_estimate_meur": 93.32,
       "paris_aligned_flag": true,
       "revenue_at_risk_meur": 130.7,
       "carbon_price_assumption_eur_per_tco2e": 86.5,
@@ -1037,7 +1558,8 @@
       "scope_of_analysis": "All banking book exposures across DE, FR, IT, NL, ES",
       "analysis_conducted_year": 2024,
       "methodology_notes": "NGFS v4 Net Zero 2050 scenario applied to the banking book using a top-down sector-pathway approach. Carbon price assumptions from IEA NZE 2050 trajectory mapped to counterparty NACE sectors. Stranded asset estimates derived from sector-level fossil fuel capex exposure. Analysis scope covers all lending book exposures across DE, FR, IT, NL, ES jurisdictions.",
-      "resilience_assessment": "Under orderly transition scenarios, the portfolio demonstrates adequate resilience. Transition risk losses remain within Pillar 2 capital buffer thresholds. Green loan growth and client engagement on transition plans are expected to progressively reduce high-carbon sector concentration over the medium term."
+      "resilience_assessment": "Under orderly transition scenarios, the portfolio demonstrates adequate resilience. Transition risk losses remain within Pillar 2 capital buffer thresholds. Green loan growth and client engagement on transition plans are expected to progressively reduce high-carbon sector concentration over the medium term.",
+      "scenario_magnitude_adjusted_flag": true
     },
     {
       "scenario_id": "SCN0074",
@@ -1051,9 +1573,9 @@
       "physical_risk_loss_pct_capital": 6.1,
       "transition_risk_loss_pct_capital": 11.5,
       "high_risk_exposure_pct": 30.2,
-      "stranded_assets_estimate_meur": 2954.6,
+      "stranded_assets_estimate_meur": 427.02,
       "paris_aligned_flag": true,
-      "revenue_at_risk_meur": 598.1,
+      "revenue_at_risk_meur": 594.12,
       "carbon_price_assumption_eur_per_tco2e": 89.1,
       "gdp_growth_assumption_pct": 2.35,
       "renewable_energy_share_pct": 56.5,
@@ -1061,7 +1583,8 @@
       "scope_of_analysis": "All banking book exposures across DE, FR, IT, NL, ES",
       "analysis_conducted_year": 2024,
       "methodology_notes": "NGFS v4 Net Zero 2050 scenario applied to the banking book using a top-down sector-pathway approach. Carbon price assumptions from IEA NZE 2050 trajectory mapped to counterparty NACE sectors. Stranded asset estimates derived from sector-level fossil fuel capex exposure. Analysis scope covers all lending book exposures across DE, FR, IT, NL, ES jurisdictions.",
-      "resilience_assessment": "Under orderly transition scenarios, the portfolio demonstrates adequate resilience. Transition risk losses remain within Pillar 2 capital buffer thresholds. Green loan growth and client engagement on transition plans are expected to progressively reduce high-carbon sector concentration over the medium term."
+      "resilience_assessment": "Under orderly transition scenarios, the portfolio demonstrates adequate resilience. Transition risk losses remain within Pillar 2 capital buffer thresholds. Green loan growth and client engagement on transition plans are expected to progressively reduce high-carbon sector concentration over the medium term.",
+      "scenario_magnitude_adjusted_flag": true
     },
     {
       "scenario_id": "SCN0075",
@@ -1075,7 +1598,7 @@
       "physical_risk_loss_pct_capital": 10.7,
       "transition_risk_loss_pct_capital": 9.3,
       "high_risk_exposure_pct": 22.3,
-      "stranded_assets_estimate_meur": 2181.7,
+      "stranded_assets_estimate_meur": 315.31,
       "paris_aligned_flag": true,
       "revenue_at_risk_meur": 441.6,
       "carbon_price_assumption_eur_per_tco2e": 338.8,
@@ -1085,7 +1608,8 @@
       "scope_of_analysis": "All banking book exposures across DE, FR, IT, NL, ES",
       "analysis_conducted_year": 2024,
       "methodology_notes": "NGFS v4 Net Zero 2050 scenario applied to the banking book using a top-down sector-pathway approach. Carbon price assumptions from IEA NZE 2050 trajectory mapped to counterparty NACE sectors. Stranded asset estimates derived from sector-level fossil fuel capex exposure. Analysis scope covers all lending book exposures across DE, FR, IT, NL, ES jurisdictions.",
-      "resilience_assessment": "Under orderly transition scenarios, the portfolio demonstrates adequate resilience. Transition risk losses remain within Pillar 2 capital buffer thresholds. Green loan growth and client engagement on transition plans are expected to progressively reduce high-carbon sector concentration over the medium term."
+      "resilience_assessment": "Under orderly transition scenarios, the portfolio demonstrates adequate resilience. Transition risk losses remain within Pillar 2 capital buffer thresholds. Green loan growth and client engagement on transition plans are expected to progressively reduce high-carbon sector concentration over the medium term.",
+      "scenario_magnitude_adjusted_flag": true
     },
     {
       "scenario_id": "SCN0076",
@@ -1099,7 +1623,7 @@
       "physical_risk_loss_pct_capital": 4.9,
       "transition_risk_loss_pct_capital": 8.5,
       "high_risk_exposure_pct": 11.4,
-      "stranded_assets_estimate_meur": 1115.3,
+      "stranded_assets_estimate_meur": 161.19,
       "paris_aligned_flag": false,
       "revenue_at_risk_meur": 225.8,
       "carbon_price_assumption_eur_per_tco2e": 109.3,
@@ -1109,7 +1633,8 @@
       "scope_of_analysis": "All banking book exposures across DE, FR, IT, NL, ES",
       "analysis_conducted_year": 2024,
       "methodology_notes": "NGFS v4 Below 2°C (orderly) scenario applied using NGFS IAM outputs aligned to a 1.8°C median temperature pathway. Carbon price trajectory from REMIND-MAgPIE model. Financial impact assessed through loan-level probability of default sensitivity to carbon cost pass-through by sector carbon intensity tier.",
-      "resilience_assessment": "Under orderly transition scenarios, the portfolio demonstrates adequate resilience. Transition risk losses remain within Pillar 2 capital buffer thresholds. Green loan growth and client engagement on transition plans are expected to progressively reduce high-carbon sector concentration over the medium term."
+      "resilience_assessment": "Under orderly transition scenarios, the portfolio demonstrates adequate resilience. Transition risk losses remain within Pillar 2 capital buffer thresholds. Green loan growth and client engagement on transition plans are expected to progressively reduce high-carbon sector concentration over the medium term.",
+      "scenario_magnitude_adjusted_flag": true
     },
     {
       "scenario_id": "SCN0077",
@@ -1123,7 +1648,7 @@
       "physical_risk_loss_pct_capital": 4.9,
       "transition_risk_loss_pct_capital": 14.4,
       "high_risk_exposure_pct": 13.1,
-      "stranded_assets_estimate_meur": 1281.6,
+      "stranded_assets_estimate_meur": 185.23,
       "paris_aligned_flag": false,
       "revenue_at_risk_meur": 259.4,
       "carbon_price_assumption_eur_per_tco2e": 101.7,
@@ -1133,7 +1658,8 @@
       "scope_of_analysis": "All banking book exposures across DE, FR, IT, NL, ES",
       "analysis_conducted_year": 2024,
       "methodology_notes": "NGFS v4 Below 2°C (orderly) scenario applied using NGFS IAM outputs aligned to a 1.8°C median temperature pathway. Carbon price trajectory from REMIND-MAgPIE model. Financial impact assessed through loan-level probability of default sensitivity to carbon cost pass-through by sector carbon intensity tier.",
-      "resilience_assessment": "Under orderly transition scenarios, the portfolio demonstrates adequate resilience. Transition risk losses remain within Pillar 2 capital buffer thresholds. Green loan growth and client engagement on transition plans are expected to progressively reduce high-carbon sector concentration over the medium term."
+      "resilience_assessment": "Under orderly transition scenarios, the portfolio demonstrates adequate resilience. Transition risk losses remain within Pillar 2 capital buffer thresholds. Green loan growth and client engagement on transition plans are expected to progressively reduce high-carbon sector concentration over the medium term.",
+      "scenario_magnitude_adjusted_flag": true
     },
     {
       "scenario_id": "SCN0078",
@@ -1147,7 +1673,7 @@
       "physical_risk_loss_pct_capital": 10.1,
       "transition_risk_loss_pct_capital": 10.0,
       "high_risk_exposure_pct": 15.8,
-      "stranded_assets_estimate_meur": 1545.8,
+      "stranded_assets_estimate_meur": 223.41,
       "paris_aligned_flag": false,
       "revenue_at_risk_meur": 312.9,
       "carbon_price_assumption_eur_per_tco2e": 341.5,
@@ -1157,7 +1683,8 @@
       "scope_of_analysis": "All banking book exposures across DE, FR, IT, NL, ES",
       "analysis_conducted_year": 2024,
       "methodology_notes": "NGFS v4 Below 2°C (orderly) scenario applied using NGFS IAM outputs aligned to a 1.8°C median temperature pathway. Carbon price trajectory from REMIND-MAgPIE model. Financial impact assessed through loan-level probability of default sensitivity to carbon cost pass-through by sector carbon intensity tier.",
-      "resilience_assessment": "Under orderly transition scenarios, the portfolio demonstrates adequate resilience. Transition risk losses remain within Pillar 2 capital buffer thresholds. Green loan growth and client engagement on transition plans are expected to progressively reduce high-carbon sector concentration over the medium term."
+      "resilience_assessment": "Under orderly transition scenarios, the portfolio demonstrates adequate resilience. Transition risk losses remain within Pillar 2 capital buffer thresholds. Green loan growth and client engagement on transition plans are expected to progressively reduce high-carbon sector concentration over the medium term.",
+      "scenario_magnitude_adjusted_flag": true
     },
     {
       "scenario_id": "SCN0079",
@@ -1171,9 +1698,9 @@
       "physical_risk_loss_pct_capital": 13.7,
       "transition_risk_loss_pct_capital": 4.1,
       "high_risk_exposure_pct": 32.3,
-      "stranded_assets_estimate_meur": 3160.0,
+      "stranded_assets_estimate_meur": 456.71,
       "paris_aligned_flag": false,
-      "revenue_at_risk_meur": 639.7,
+      "revenue_at_risk_meur": 594.12,
       "carbon_price_assumption_eur_per_tco2e": 2.8,
       "gdp_growth_assumption_pct": 1.19,
       "renewable_energy_share_pct": 17.8,
@@ -1181,7 +1708,8 @@
       "scope_of_analysis": "All banking book exposures across DE, FR, IT, NL, ES",
       "analysis_conducted_year": 2024,
       "methodology_notes": "NGFS v4 NDC scenario represents delayed but eventually strengthened policy action. Carbon pricing ramp-up assumed from 2030 onward based on Paris Agreement NDC submission trajectories. Revenue-at-risk computed from sector revenue sensitivity to carbon price at EUR/tCO2e levels specified in the scenario.",
-      "resilience_assessment": "Under hot house world scenarios, physical risk losses represent the dominant long-term resilience challenge. Collateral revaluation risk in flood-exposed mortgage books and agricultural borrower default risk from chronic heat stress are identified as the primary transmission channels. The bank's flood-zone overlay and EPC-based collateral monitoring are resilience mechanisms deployed for the 2050 horizon."
+      "resilience_assessment": "Under hot house world scenarios, physical risk losses represent the dominant long-term resilience challenge. Collateral revaluation risk in flood-exposed mortgage books and agricultural borrower default risk from chronic heat stress are identified as the primary transmission channels. The bank's flood-zone overlay and EPC-based collateral monitoring are resilience mechanisms deployed for the 2050 horizon.",
+      "scenario_magnitude_adjusted_flag": true
     },
     {
       "scenario_id": "SCN0080",
@@ -1195,7 +1723,7 @@
       "physical_risk_loss_pct_capital": 18.9,
       "transition_risk_loss_pct_capital": 3.0,
       "high_risk_exposure_pct": 26.5,
-      "stranded_assets_estimate_meur": 2592.6,
+      "stranded_assets_estimate_meur": 374.7,
       "paris_aligned_flag": false,
       "revenue_at_risk_meur": 524.8,
       "carbon_price_assumption_eur_per_tco2e": 11.6,
@@ -1205,7 +1733,8 @@
       "scope_of_analysis": "All banking book exposures across DE, FR, IT, NL, ES",
       "analysis_conducted_year": 2024,
       "methodology_notes": "NGFS v4 NDC scenario represents delayed but eventually strengthened policy action. Carbon pricing ramp-up assumed from 2030 onward based on Paris Agreement NDC submission trajectories. Revenue-at-risk computed from sector revenue sensitivity to carbon price at EUR/tCO2e levels specified in the scenario.",
-      "resilience_assessment": "Under hot house world scenarios, physical risk losses represent the dominant long-term resilience challenge. Collateral revaluation risk in flood-exposed mortgage books and agricultural borrower default risk from chronic heat stress are identified as the primary transmission channels. The bank's flood-zone overlay and EPC-based collateral monitoring are resilience mechanisms deployed for the 2050 horizon."
+      "resilience_assessment": "Under hot house world scenarios, physical risk losses represent the dominant long-term resilience challenge. Collateral revaluation risk in flood-exposed mortgage books and agricultural borrower default risk from chronic heat stress are identified as the primary transmission channels. The bank's flood-zone overlay and EPC-based collateral monitoring are resilience mechanisms deployed for the 2050 horizon.",
+      "scenario_magnitude_adjusted_flag": true
     },
     {
       "scenario_id": "SCN0081",
@@ -1219,7 +1748,7 @@
       "physical_risk_loss_pct_capital": 35.6,
       "transition_risk_loss_pct_capital": 5.1,
       "high_risk_exposure_pct": 25.8,
-      "stranded_assets_estimate_meur": 2524.1,
+      "stranded_assets_estimate_meur": 364.8,
       "paris_aligned_flag": false,
       "revenue_at_risk_meur": 510.9,
       "carbon_price_assumption_eur_per_tco2e": 17.5,
@@ -1229,7 +1758,8 @@
       "scope_of_analysis": "All banking book exposures across DE, FR, IT, NL, ES",
       "analysis_conducted_year": 2024,
       "methodology_notes": "NGFS v4 NDC scenario represents delayed but eventually strengthened policy action. Carbon pricing ramp-up assumed from 2030 onward based on Paris Agreement NDC submission trajectories. Revenue-at-risk computed from sector revenue sensitivity to carbon price at EUR/tCO2e levels specified in the scenario.",
-      "resilience_assessment": "Under hot house world scenarios, physical risk losses represent the dominant long-term resilience challenge. Collateral revaluation risk in flood-exposed mortgage books and agricultural borrower default risk from chronic heat stress are identified as the primary transmission channels. The bank's flood-zone overlay and EPC-based collateral monitoring are resilience mechanisms deployed for the 2050 horizon."
+      "resilience_assessment": "Under hot house world scenarios, physical risk losses represent the dominant long-term resilience challenge. Collateral revaluation risk in flood-exposed mortgage books and agricultural borrower default risk from chronic heat stress are identified as the primary transmission channels. The bank's flood-zone overlay and EPC-based collateral monitoring are resilience mechanisms deployed for the 2050 horizon.",
+      "scenario_magnitude_adjusted_flag": true
     },
     {
       "scenario_id": "SCN0082",
@@ -1243,7 +1773,7 @@
       "physical_risk_loss_pct_capital": 17.9,
       "transition_risk_loss_pct_capital": 3.0,
       "high_risk_exposure_pct": 12.1,
-      "stranded_assets_estimate_meur": 1183.8,
+      "stranded_assets_estimate_meur": 171.09,
       "paris_aligned_flag": false,
       "revenue_at_risk_meur": 239.6,
       "carbon_price_assumption_eur_per_tco2e": 14.2,
@@ -1253,7 +1783,8 @@
       "scope_of_analysis": "All banking book exposures across DE, FR, IT, NL, ES",
       "analysis_conducted_year": 2024,
       "methodology_notes": "NGFS v4 Current Policies (hot house world) scenario used as the adverse baseline. Physical risk parameters sourced from NGFS chronic and acute hazard layers, downscaled to counterparty postcode and collateral location. RCP 8.5 physical risk projections used for 2050 horizon analysis.",
-      "resilience_assessment": "Under hot house world scenarios, physical risk losses represent the dominant long-term resilience challenge. Collateral revaluation risk in flood-exposed mortgage books and agricultural borrower default risk from chronic heat stress are identified as the primary transmission channels. The bank's flood-zone overlay and EPC-based collateral monitoring are resilience mechanisms deployed for the 2050 horizon."
+      "resilience_assessment": "Under hot house world scenarios, physical risk losses represent the dominant long-term resilience challenge. Collateral revaluation risk in flood-exposed mortgage books and agricultural borrower default risk from chronic heat stress are identified as the primary transmission channels. The bank's flood-zone overlay and EPC-based collateral monitoring are resilience mechanisms deployed for the 2050 horizon.",
+      "scenario_magnitude_adjusted_flag": true
     },
     {
       "scenario_id": "SCN0083",
@@ -1267,7 +1798,7 @@
       "physical_risk_loss_pct_capital": 14.7,
       "transition_risk_loss_pct_capital": 4.2,
       "high_risk_exposure_pct": 24.3,
-      "stranded_assets_estimate_meur": 2377.4,
+      "stranded_assets_estimate_meur": 343.59,
       "paris_aligned_flag": false,
       "revenue_at_risk_meur": 481.2,
       "carbon_price_assumption_eur_per_tco2e": 11.3,
@@ -1277,7 +1808,8 @@
       "scope_of_analysis": "All banking book exposures across DE, FR, IT, NL, ES",
       "analysis_conducted_year": 2024,
       "methodology_notes": "NGFS v4 Current Policies (hot house world) scenario used as the adverse baseline. Physical risk parameters sourced from NGFS chronic and acute hazard layers, downscaled to counterparty postcode and collateral location. RCP 8.5 physical risk projections used for 2050 horizon analysis.",
-      "resilience_assessment": "Under hot house world scenarios, physical risk losses represent the dominant long-term resilience challenge. Collateral revaluation risk in flood-exposed mortgage books and agricultural borrower default risk from chronic heat stress are identified as the primary transmission channels. The bank's flood-zone overlay and EPC-based collateral monitoring are resilience mechanisms deployed for the 2050 horizon."
+      "resilience_assessment": "Under hot house world scenarios, physical risk losses represent the dominant long-term resilience challenge. Collateral revaluation risk in flood-exposed mortgage books and agricultural borrower default risk from chronic heat stress are identified as the primary transmission channels. The bank's flood-zone overlay and EPC-based collateral monitoring are resilience mechanisms deployed for the 2050 horizon.",
+      "scenario_magnitude_adjusted_flag": true
     },
     {
       "scenario_id": "SCN0084",
@@ -1291,7 +1823,7 @@
       "physical_risk_loss_pct_capital": 24.5,
       "transition_risk_loss_pct_capital": 3.7,
       "high_risk_exposure_pct": 18.9,
-      "stranded_assets_estimate_meur": 1849.1,
+      "stranded_assets_estimate_meur": 267.24,
       "paris_aligned_flag": false,
       "revenue_at_risk_meur": 374.3,
       "carbon_price_assumption_eur_per_tco2e": 10.5,
@@ -1301,7 +1833,8 @@
       "scope_of_analysis": "All banking book exposures across DE, FR, IT, NL, ES",
       "analysis_conducted_year": 2024,
       "methodology_notes": "NGFS v4 Current Policies (hot house world) scenario used as the adverse baseline. Physical risk parameters sourced from NGFS chronic and acute hazard layers, downscaled to counterparty postcode and collateral location. RCP 8.5 physical risk projections used for 2050 horizon analysis.",
-      "resilience_assessment": "Under hot house world scenarios, physical risk losses represent the dominant long-term resilience challenge. Collateral revaluation risk in flood-exposed mortgage books and agricultural borrower default risk from chronic heat stress are identified as the primary transmission channels. The bank's flood-zone overlay and EPC-based collateral monitoring are resilience mechanisms deployed for the 2050 horizon."
+      "resilience_assessment": "Under hot house world scenarios, physical risk losses represent the dominant long-term resilience challenge. Collateral revaluation risk in flood-exposed mortgage books and agricultural borrower default risk from chronic heat stress are identified as the primary transmission channels. The bank's flood-zone overlay and EPC-based collateral monitoring are resilience mechanisms deployed for the 2050 horizon.",
+      "scenario_magnitude_adjusted_flag": true
     }
   ],
   "climate_risk_register": [
@@ -1315,9 +1848,9 @@
       "time_horizon": "short_0_2yr",
       "likelihood_score": 2,
       "severity_score": 2,
-      "risk_rating": "low",
+      "risk_rating": "medium",
       "financial_impact_meur": 3.1,
-      "mitigation_actions": "Climate scenario stress testing integrated into ICAAP",
+      "mitigation_actions": "Collateral revaluation, flood-zone mapping overlay and updated mortgage underwriting criteria",
       "erm_integrated_flag": false,
       "scenario_analysis_link": null,
       "monitoring_frequency": "annual",
@@ -1334,9 +1867,9 @@
       "time_horizon": "short_0_2yr",
       "likelihood_score": 2,
       "severity_score": 2,
-      "risk_rating": "low",
+      "risk_rating": "medium",
       "financial_impact_meur": 5.8,
-      "mitigation_actions": "Green retrofit financing incentives",
+      "mitigation_actions": "Sector exposure limits, enhanced due diligence and portfolio decarbonisation glide-path monitoring",
       "erm_integrated_flag": false,
       "scenario_analysis_link": null,
       "monitoring_frequency": "annual",
@@ -1353,9 +1886,9 @@
       "time_horizon": "medium_2_5yr",
       "likelihood_score": 4,
       "severity_score": 4,
-      "risk_rating": "high",
+      "risk_rating": "critical",
       "financial_impact_meur": 131.5,
-      "mitigation_actions": "Portfolio decarbonisation glide-path monitoring",
+      "mitigation_actions": "Enhanced financed-emissions disclosure controls and client engagement on transition plans",
       "erm_integrated_flag": true,
       "scenario_analysis_link": "SCN0074",
       "monitoring_frequency": "quarterly",
@@ -1372,9 +1905,9 @@
       "time_horizon": "short_0_2yr",
       "likelihood_score": 4,
       "severity_score": 4,
-      "risk_rating": "high",
+      "risk_rating": "critical",
       "financial_impact_meur": 162.6,
-      "mitigation_actions": "Sector exposure limits and enhanced due diligence",
+      "mitigation_actions": "Wildfire hazard mapping, collateral revaluation and borrower resilience engagement",
       "erm_integrated_flag": true,
       "scenario_analysis_link": null,
       "monitoring_frequency": "quarterly",
@@ -1391,9 +1924,9 @@
       "time_horizon": "short_0_2yr",
       "likelihood_score": 4,
       "severity_score": 3,
-      "risk_rating": "medium",
+      "risk_rating": "high",
       "financial_impact_meur": 31.3,
-      "mitigation_actions": "Portfolio decarbonisation glide-path monitoring",
+      "mitigation_actions": "Technology transition monitoring, sector concentration limits and client transition-plan engagement",
       "erm_integrated_flag": false,
       "scenario_analysis_link": "SCN0083",
       "monitoring_frequency": "semi_annual",
@@ -1410,9 +1943,9 @@
       "time_horizon": "medium_2_5yr",
       "likelihood_score": 4,
       "severity_score": 2,
-      "risk_rating": "medium",
+      "risk_rating": "high",
       "financial_impact_meur": 9.3,
-      "mitigation_actions": "Sector exposure limits and enhanced due diligence",
+      "mitigation_actions": "Climate scenario stress testing, sector monitoring and borrower adaptation engagement",
       "erm_integrated_flag": true,
       "scenario_analysis_link": "SCN0078",
       "monitoring_frequency": "semi_annual",
@@ -1429,9 +1962,9 @@
       "time_horizon": "long_5yr_plus",
       "likelihood_score": 3,
       "severity_score": 4,
-      "risk_rating": "medium",
+      "risk_rating": "high",
       "financial_impact_meur": 81.3,
-      "mitigation_actions": "Sector exposure limits and enhanced due diligence",
+      "mitigation_actions": "Sector exposure limits, carbon-cost sensitivity analysis and enhanced due diligence",
       "erm_integrated_flag": true,
       "scenario_analysis_link": "SCN0084",
       "monitoring_frequency": "semi_annual",
@@ -1448,9 +1981,9 @@
       "time_horizon": "long_5yr_plus",
       "likelihood_score": 3,
       "severity_score": 4,
-      "risk_rating": "medium",
+      "risk_rating": "high",
       "financial_impact_meur": 131.0,
-      "mitigation_actions": "Climate scenario stress testing integrated into ICAAP",
+      "mitigation_actions": "Sector exposure limits, carbon-cost sensitivity analysis and enhanced due diligence",
       "erm_integrated_flag": true,
       "scenario_analysis_link": null,
       "monitoring_frequency": "semi_annual",
@@ -1467,9 +2000,9 @@
       "time_horizon": "medium_2_5yr",
       "likelihood_score": 4,
       "severity_score": 4,
-      "risk_rating": "high",
+      "risk_rating": "critical",
       "financial_impact_meur": 88.9,
-      "mitigation_actions": "Climate scenario stress testing integrated into ICAAP",
+      "mitigation_actions": "Wildfire hazard mapping, collateral revaluation and borrower resilience engagement",
       "erm_integrated_flag": true,
       "scenario_analysis_link": "SCN0084",
       "monitoring_frequency": "quarterly",
@@ -1486,9 +2019,9 @@
       "time_horizon": "medium_2_5yr",
       "likelihood_score": 3,
       "severity_score": 2,
-      "risk_rating": "low",
+      "risk_rating": "medium",
       "financial_impact_meur": 13.7,
-      "mitigation_actions": "Engagement and transition-plan covenants with borrowers",
+      "mitigation_actions": "Sector exposure limits, carbon-cost sensitivity analysis and enhanced due diligence",
       "erm_integrated_flag": false,
       "scenario_analysis_link": "SCN0082",
       "monitoring_frequency": "annual",
@@ -1505,9 +2038,9 @@
       "time_horizon": "short_0_2yr",
       "likelihood_score": 4,
       "severity_score": 2,
-      "risk_rating": "medium",
+      "risk_rating": "high",
       "financial_impact_meur": 8.2,
-      "mitigation_actions": "Climate scenario stress testing integrated into ICAAP",
+      "mitigation_actions": "Enhanced financed-emissions disclosure controls and client engagement on transition plans",
       "erm_integrated_flag": true,
       "scenario_analysis_link": null,
       "monitoring_frequency": "semi_annual",
@@ -1524,9 +2057,9 @@
       "time_horizon": "short_0_2yr",
       "likelihood_score": 2,
       "severity_score": 2,
-      "risk_rating": "low",
+      "risk_rating": "medium",
       "financial_impact_meur": 8.8,
-      "mitigation_actions": "Green retrofit financing incentives",
+      "mitigation_actions": "Collateral revaluation, flood-zone mapping overlay and updated mortgage underwriting criteria",
       "erm_integrated_flag": false,
       "scenario_analysis_link": null,
       "monitoring_frequency": "annual",
@@ -1543,9 +2076,9 @@
       "time_horizon": "short_0_2yr",
       "likelihood_score": 3,
       "severity_score": 4,
-      "risk_rating": "medium",
+      "risk_rating": "high",
       "financial_impact_meur": 77.5,
-      "mitigation_actions": "Green retrofit financing incentives",
+      "mitigation_actions": "Sector exposure limits, carbon-cost sensitivity analysis and enhanced due diligence",
       "erm_integrated_flag": true,
       "scenario_analysis_link": "SCN0081",
       "monitoring_frequency": "semi_annual",
@@ -1562,9 +2095,9 @@
       "time_horizon": "medium_2_5yr",
       "likelihood_score": 3,
       "severity_score": 4,
-      "risk_rating": "medium",
+      "risk_rating": "high",
       "financial_impact_meur": 118.1,
-      "mitigation_actions": "Collateral revaluation and flood mapping overlay",
+      "mitigation_actions": "Technology transition monitoring, sector concentration limits and client transition-plan engagement",
       "erm_integrated_flag": false,
       "scenario_analysis_link": "SCN0077",
       "monitoring_frequency": "semi_annual",
@@ -1581,9 +2114,9 @@
       "time_horizon": "medium_2_5yr",
       "likelihood_score": 3,
       "severity_score": 3,
-      "risk_rating": "medium",
+      "risk_rating": "high",
       "financial_impact_meur": 19.1,
-      "mitigation_actions": "Sector exposure limits and enhanced due diligence",
+      "mitigation_actions": "Sector exposure limits, enhanced due diligence and portfolio decarbonisation glide-path monitoring",
       "erm_integrated_flag": true,
       "scenario_analysis_link": "SCN0079",
       "monitoring_frequency": "semi_annual",
@@ -1600,9 +2133,9 @@
       "time_horizon": "medium_2_5yr",
       "likelihood_score": 3,
       "severity_score": 3,
-      "risk_rating": "medium",
+      "risk_rating": "high",
       "financial_impact_meur": 25.7,
-      "mitigation_actions": "Climate scenario stress testing integrated into ICAAP",
+      "mitigation_actions": "Climate scenario stress testing, sector monitoring and borrower adaptation engagement",
       "erm_integrated_flag": true,
       "scenario_analysis_link": "SCN0073",
       "monitoring_frequency": "semi_annual",
