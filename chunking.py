@@ -1,194 +1,231 @@
 # ============================================================
-# STYLE ARTIFACT VALIDATION — NO COPYING / NO CONTENT LEAKAGE
-# Updated version: excludes control files that intentionally
-# contain forbidden reference terms.
+# FINAL STYLE SYSTEM ORGANIZATION FOR GENERATION PIPELINE
+# Creates:
+# - authoring/  -> used by section generation and restyle agents
+# - judging/    -> used by style judge
+# - rendering/  -> used only by PDF assembly stage
 # ============================================================
 
-import re
 import json
+import shutil
 from pathlib import Path
 
-import pandas as pd
+
+# ------------------------------------------------------------
+# 1. Final organized folders
+# ------------------------------------------------------------
+
+AUTHORING_DIR = STYLE_OUTPUT_DIR / "authoring"
+JUDGING_DIR = STYLE_OUTPUT_DIR / "judging"
+RENDERING_DIR = STYLE_OUTPUT_DIR / "rendering"
+
+AUTHORING_SECTION_STYLE_DIR = AUTHORING_DIR / "section_style_guides"
+AUTHORING_SECTION_BLUEPRINT_DIR = AUTHORING_DIR / "section_blueprints"
+AUTHORING_LANGUAGE_RULES_DIR = AUTHORING_DIR / "language_rules"
+AUTHORING_TABLE_PATTERNS_DIR = AUTHORING_DIR / "table_patterns"
+
+for folder in [
+    AUTHORING_DIR,
+    JUDGING_DIR,
+    RENDERING_DIR,
+    AUTHORING_SECTION_STYLE_DIR,
+    AUTHORING_SECTION_BLUEPRINT_DIR,
+    AUTHORING_LANGUAGE_RULES_DIR,
+    AUTHORING_TABLE_PATTERNS_DIR,
+]:
+    folder.mkdir(parents=True, exist_ok=True)
 
 
 # ------------------------------------------------------------
-# 1. Terms from the reference report that must NOT appear
-#    in reusable style artifacts.
+# 2. Copy authoring artifacts
 # ------------------------------------------------------------
 
-FORBIDDEN_REFERENCE_TERMS = [
-    "Emirates NBD",
-    "Emirates NBD Group",
-    "DenizBank",
-    "Emirates Islamic",
-    "Emirates NBD Capital",
-    "Emirates NBD Asset Management",
-    "Vijay Bains",
-    "Manoj Chawla",
-    "Patrick Sullivan",
-    "BNRESGC",
-    "Board Nomination, Remuneration and Environmental Social Governance Committee",
-    "BRC",
-    "Board Risk Committee",
-    "GRC",
-    "Group Risk Committee",
-    "EXCO",
-    "Group Executive Committee",
-    "Sustainable Finance Forum",
-    "Group Model Oversight Committee",
-    "Management Credit Committee",
-    "Responsible Investment Committee",
-    "AED",
-    "USD",
-    "Dubai",
-    "UAE",
-    "MENA",
-    "MENAT",
-    "CBUAE",
-    "KPMG",
-    "Sustainalytics",
-    "Microsoft Sustainability Manager",
-]
+def copy_if_exists(src: Path, dst: Path):
+    if src.exists():
+        dst.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(src, dst)
+        print("Copied:", src, "->", dst)
+    else:
+        print("Missing, skipped:", src)
+
+
+copy_if_exists(
+    STYLE_OUTPUT_DIR / "global_style_guide.json",
+    AUTHORING_DIR / "global_style_guide.json"
+)
+
+copy_if_exists(
+    TABLE_PATTERN_DIR / "table_patterns.json",
+    AUTHORING_TABLE_PATTERNS_DIR / "table_patterns.json"
+)
+
+copy_if_exists(
+    LANGUAGE_RULES_DIR / "no_copying_rules.md",
+    AUTHORING_LANGUAGE_RULES_DIR / "no_copying_rules.md"
+)
+
+for path in SECTION_STYLE_DIR.glob("*.json"):
+    copy_if_exists(path, AUTHORING_SECTION_STYLE_DIR / path.name)
+
+for path in SECTION_BLUEPRINT_DIR.glob("*.json"):
+    copy_if_exists(path, AUTHORING_SECTION_BLUEPRINT_DIR / path.name)
 
 
 # ------------------------------------------------------------
-# 2. Regex for suspicious hard-coded metrics, dates, currencies.
+# 3. Copy rendering artifact
+# layout_style_guide.json must NOT be injected into drafting prompts.
 # ------------------------------------------------------------
 
-AMOUNT_OR_METRIC_PATTERN = re.compile(
-    r"("
-    r"\b\d+(\.\d+)?\s?%"              # percentages
-    r"|\bUSD\b"                       # USD
-    r"|\bAED\b"                       # AED
-    r"|\b\d+(\.\d+)?\s?(million|billion|mn|bn)\b"
-    r"|\b20\d{2}\b"                   # years like 2024, 2025, 2030
-    r")",
-    flags=re.IGNORECASE,
+copy_if_exists(
+    STYLE_OUTPUT_DIR / "layout_style_guide.json",
+    RENDERING_DIR / "layout_style_guide.json"
 )
 
 
 # ------------------------------------------------------------
-# 3. Files to exclude from validation.
+# 4. Create numeric style compliance rubric for stable judging
 # ------------------------------------------------------------
 
-# These files are expected to contain reference terms or raw reference notes.
-# They should NOT be used directly by generation agents.
-VALIDATION_EXCLUDE_FILENAMES = {
-    "forbidden_reference_terms.json",   # intentionally contains blocked terms
-    "style_chunk_notes.json",           # raw extraction notes, intermediate only
-    "global_style_result.json",         # combined raw object; optional, not direct generation input
-}
-
-VALIDATION_EXCLUDE_DIR_PARTS = {
-    "_intermediate",                    # raw/intermediate extraction files
-}
-
-
-# ------------------------------------------------------------
-# 4. Helpers
-# ------------------------------------------------------------
-
-def read_text_file(path: Path) -> str:
-    return path.read_text(encoding="utf-8", errors="replace")
-
-
-def should_validate_artifact(path: Path) -> bool:
-    path_parts = set(path.parts)
-
-    if path.name in VALIDATION_EXCLUDE_FILENAMES:
-        return False
-
-    if path_parts.intersection(VALIDATION_EXCLUDE_DIR_PARTS):
-        return False
-
-    return path.suffix.lower() in {".json", ".md"}
-
-
-def validate_artifact_file(path: Path) -> dict:
-    text = read_text_file(path)
-
-    forbidden_hits = [
-        term for term in FORBIDDEN_REFERENCE_TERMS
-        if term.lower() in text.lower()
-    ]
-
-    metric_hits = [
-        match[0]
-        for match in AMOUNT_OR_METRIC_PATTERN.findall(text)
-    ]
-
-    return {
-        "file": str(path),
-        "filename": path.name,
-        "forbidden_reference_terms": forbidden_hits,
-        "amount_or_metric_like_patterns": metric_hits[:30],
-        "forbidden_reference_term_count": len(forbidden_hits),
-        "amount_or_metric_like_pattern_count": len(metric_hits),
-        "has_copying_risk": bool(forbidden_hits or metric_hits),
+style_compliance_rubric = {
+    "purpose": "Stable numeric rubric for judging whether generated IFRS S1/S2 report sections follow the approved authoring style.",
+    "scoring_scale": {
+        "5": "Excellent / fully aligned",
+        "4": "Good / minor issues",
+        "3": "Acceptable but needs revision",
+        "2": "Weak / major revision required",
+        "1": "Fail / not suitable for report generation"
+    },
+    "checks": {
+        "voice_consistency": {
+            "score_5": "Consistent report voice throughout. First-person plural used only for target-company actions; passive or third-person used for externally defined IFRS requirements.",
+            "score_3": "Mostly consistent voice with occasional shifts between 'we', 'the Group', and passive constructions.",
+            "score_1": "Frequent uncontrolled switching of voice that makes the section inconsistent."
+        },
+        "paragraph_length": {
+            "ideal": "2-5 sentences per paragraph",
+            "warning": "6-7 sentences",
+            "fail": "8 or more sentences",
+            "score_5": "Most paragraphs are 2-5 sentences and single-idea.",
+            "score_3": "Several paragraphs are long or multi-topic.",
+            "score_1": "Paragraphs are dense, long, and difficult to scan."
+        },
+        "sentence_length": {
+            "ideal": "18-34 words",
+            "warning": "35-45 words",
+            "fail": "46 or more words",
+            "score_5": "Sentences are mostly short-to-medium and clear.",
+            "score_3": "Several sentences are long but still understandable.",
+            "score_1": "Many sentences are overloaded or unclear."
+        },
+        "bullet_and_list_usage": {
+            "score_5": "Bullets are used for lists of three or more items, process steps, principles, criteria, and controls.",
+            "score_3": "Some lists are placed inside long paragraphs.",
+            "score_1": "Lists are hard to read or inconsistently formatted."
+        },
+        "table_and_figure_captioning": {
+            "score_5": "Every table and figure has a number, clear caption, and is referenced in nearby narrative.",
+            "score_3": "Most tables/figures have captions, but some are weak or not referenced.",
+            "score_1": "Tables/figures are uncaptained or disconnected from the text."
+        },
+        "ifrs_style_alignment": {
+            "score_5": "Uses standards-oriented verbs and distinguishes current facts, estimates, judgements, and forward-looking intentions.",
+            "score_3": "Mostly IFRS-aligned but some vague or generic language remains.",
+            "score_1": "Reads like a generic ESG marketing text rather than IFRS S1/S2 disclosure."
+        },
+        "missing_data_protocol": {
+            "score_5": "Missing data is clearly labelled with what is missing, why, interim approach, limitation, and improvement direction.",
+            "score_3": "Missing data is mentioned but lacks one or more required elements.",
+            "score_1": "Missing data is hidden, ignored, or replaced by unsupported assumptions."
+        },
+        "no_reference_content": {
+            "score_5": "No reference-company names, facts, claims, numbers, committees, images, tools, vendors, or copied phrasing.",
+            "score_3": "No obvious copying, but some phrasing or structure feels too close.",
+            "score_1": "Reference-company content or near-copying is present."
+        },
+        "evidence_discipline": {
+            "score_5": "Every material claim is supported by target payload data, IFRS requirement, or an explicit data-gap statement.",
+            "score_3": "Most claims are supported, but some broad claims need evidence.",
+            "score_1": "Unsupported claims or invented maturity statements are present."
+        }
+    },
+    "approval_thresholds": {
+        "approve": {
+            "minimum_average_score": 4.2,
+            "required": [
+                "no_reference_content score must be 5",
+                "evidence_discipline score must be at least 4",
+                "missing_data_protocol score must be at least 4"
+            ]
+        },
+        "revise": {
+            "average_score_range": "3.0-4.19"
+        },
+        "reject": {
+            "average_score_below": 3.0
+        }
     }
+}
+
+style_rubric_path = JUDGING_DIR / "style_compliance_rubric.json"
+
+with open(style_rubric_path, "w", encoding="utf-8") as f:
+    json.dump(style_compliance_rubric, f, ensure_ascii=False, indent=2)
+
+print("Saved style compliance rubric:", style_rubric_path)
 
 
 # ------------------------------------------------------------
-# 5. Collect artifacts to validate
+# 5. Final usage manifest
 # ------------------------------------------------------------
 
-artifact_paths = [
-    path
-    for path in STYLE_OUTPUT_DIR.rglob("*")
-    if path.is_file() and should_validate_artifact(path)
-]
+style_usage_manifest = {
+    "authoring_stage": {
+        "used_by": [
+            "section generation agents",
+            "restyle agents"
+        ],
+        "files": [
+            "authoring/global_style_guide.json",
+            "authoring/section_style_guides/<section>_style.json",
+            "authoring/section_blueprints/<section>_blueprint.json",
+            "authoring/table_patterns/table_patterns.json",
+            "authoring/language_rules/no_copying_rules.md"
+        ],
+        "do_not_include": [
+            "rendering/layout_style_guide.json",
+            "reference report text",
+            "raw style_chunk_notes.json"
+        ]
+    },
+    "judging_stage": {
+        "used_by": [
+            "style compliance judge"
+        ],
+        "files": [
+            "judging/style_compliance_rubric.json",
+            "authoring/global_style_guide.json",
+            "authoring/section_style_guides/<section>_style.json",
+            "authoring/language_rules/no_copying_rules.md"
+        ]
+    },
+    "rendering_stage": {
+        "used_by": [
+            "PDF assembly script",
+            "report formatter"
+        ],
+        "files": [
+            "rendering/layout_style_guide.json",
+            "approved section markdown",
+            "approved tables and figures",
+            "brand/theme settings"
+        ],
+        "important_rule": "layout_style_guide.json is not passed to drafting agents."
+    }
+}
 
-print("Files selected for validation:", len(artifact_paths))
+manifest_path = STYLE_OUTPUT_DIR / "style_usage_manifest.json"
 
-for path in artifact_paths:
-    print("-", path.relative_to(STYLE_OUTPUT_DIR))
+with open(manifest_path, "w", encoding="utf-8") as f:
+    json.dump(style_usage_manifest, f, ensure_ascii=False, indent=2)
 
-
-# ------------------------------------------------------------
-# 6. Run validation
-# ------------------------------------------------------------
-
-validation_rows = [
-    validate_artifact_file(path)
-    for path in artifact_paths
-]
-
-validation_df = pd.DataFrame(validation_rows)
-
-validation_path = STYLE_OUTPUT_DIR / "style_artifact_validation.csv"
-validation_df.to_csv(validation_path, index=False, encoding="utf-8-sig")
-
-display(validation_df)
-
-
-# ------------------------------------------------------------
-# 7. Report risky files
-# ------------------------------------------------------------
-
-risky = validation_df[validation_df["has_copying_risk"] == True].copy()
-
-if len(risky):
-    print("WARNING: Some reusable style artifacts may contain reference-specific terms or hard-coded metrics.")
-    print("Review these files manually before using them in generation:")
-    display(risky[[
-        "file",
-        "forbidden_reference_terms",
-        "amount_or_metric_like_patterns",
-    ]])
-else:
-    print("Validation passed: no obvious reference-specific leakage detected.")
-
-
-# ------------------------------------------------------------
-# 8. Save forbidden reference terms as a control file
-#    This file is intentionally excluded from validation.
-# ------------------------------------------------------------
-
-forbidden_terms_path = LANGUAGE_RULES_DIR / "forbidden_reference_terms.json"
-
-with open(forbidden_terms_path, "w", encoding="utf-8") as f:
-    json.dump(FORBIDDEN_REFERENCE_TERMS, f, ensure_ascii=False, indent=2)
-
-print("Saved validation:", validation_path)
-print("Saved forbidden terms control file:", forbidden_terms_path)
-print("Note: forbidden_reference_terms.json is intentionally excluded from leakage validation.")
+print("Saved style usage manifest:", manifest_path)
