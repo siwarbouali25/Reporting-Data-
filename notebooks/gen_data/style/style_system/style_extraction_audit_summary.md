@@ -27,12 +27,8 @@
 
 ## Validation
 
-- Files checked: 16
-- Files with possible copying/content leakage risk: 1
-
-### Files requiring review
-
-- `C:\Users\BV426BP\Documents\IFRS Data\Reporting-Data-\notebooks\gen_data\style\style_system\language_rules\forbidden_reference_terms.json`
+- Files checked: 15
+- Files with possible copying/content leakage risk: 0
 
 ## Usage rule
 
