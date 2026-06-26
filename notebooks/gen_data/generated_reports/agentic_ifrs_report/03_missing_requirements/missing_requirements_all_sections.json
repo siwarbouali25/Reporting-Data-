@@ -1,13 +1,29 @@
 {
   "pipeline_mode": "synthetic_demo",
-  "policy": "The report contains only evidence-supported disclosures. Missing requirements are stored here, not in the report.",
+  "policy": "The report contains only evidence-supported disclosures. Missing requirements are stored here, used for scoring/flagging, and never included in report prose.",
+  "total_missing_requirements": 26,
   "sections": {
     "General Requirements": {
       "section_name": "General Requirements",
       "pipeline_mode": "synthetic_demo",
       "policy": "Missing requirements are recorded here and are excluded from report prose.",
+      "missing_requirements_count": 10,
+      "missing_requirement_ids": [
+        "IFRS_S1_5_C01",
+        "IFRS_S1_7_C01",
+        "IFRS_S1_60_C01",
+        "IFRS_S1_72_C01",
+        "IFRS_S1_73_C01",
+        "IFRS_S1_77_C01",
+        "IFRS_S1_78_C04",
+        "IFRS_S1_B37_C01",
+        "IFRS_S1_B41_C04",
+        "IFRS_S1_B46_C01"
+      ],
+      "section_readiness_score_0_to_100": 73.15,
       "missing_requirements": [
         {
+          "flag_type": "missing_requirement",
           "requirement_id": "IFRS_S1_5_C01",
           "standard": "IFRS S1",
           "paragraph_id": "5",
@@ -15,11 +31,12 @@
           "mandatory": true,
           "requirement_text": "An entity shall apply this Standard in preparing and reporting sustainability-related financial disclosures in accordance with IFRS Sustainability Disclosure Standards.",
           "coverage_status": "not_available_in_payload",
-          "reason": "No sufficiently relevant payload evidence was identified for this requirement.",
-          "action_needed": "Add evidence for this requirement to the section payload or map an existing payload field manually.",
-          "report_instruction": "Do not mention this missing requirement in the generated report."
+          "reason": "No sufficiently strong, non-null, non-generic payload evidence was identified for this requirement under strict V8 coverage rules.",
+          "action_needed": "Add real evidence to the section payload, improve deterministic routing, or manually map an existing evidence path after review.",
+          "report_instruction": "Do not mention this missing requirement or missing data in the generated report. Keep it only in audit outputs."
         },
         {
+          "flag_type": "missing_requirement",
           "requirement_id": "IFRS_S1_7_C01",
           "standard": "IFRS S1",
           "paragraph_id": "7",
@@ -27,71 +44,12 @@
           "mandatory": true,
           "requirement_text": "Other IFRS Sustainability Disclosure Standards specify information an entity is required to disclose about specific sustainability-related risks and opportunities.",
           "coverage_status": "not_available_in_payload",
-          "reason": "No sufficiently relevant payload evidence was identified for this requirement.",
-          "action_needed": "Add evidence for this requirement to the section payload or map an existing payload field manually.",
-          "report_instruction": "Do not mention this missing requirement in the generated report."
+          "reason": "No sufficiently strong, non-null, non-generic payload evidence was identified for this requirement under strict V8 coverage rules.",
+          "action_needed": "Add real evidence to the section payload, improve deterministic routing, or manually map an existing evidence path after review.",
+          "report_instruction": "Do not mention this missing requirement or missing data in the generated report. Keep it only in audit outputs."
         },
         {
-          "requirement_id": "IFRS_S1_11_C01",
-          "standard": "IFRS S1",
-          "paragraph_id": "11",
-          "report_section": "General Requirements",
-          "mandatory": true,
-          "requirement_text": "A complete set of sustainability-related financial disclosures shall present fairly all sustainability-related risks and opportunities that could reasonably be expected to affect an entity’s prospects.",
-          "coverage_status": "not_available_in_payload",
-          "reason": "No sufficiently relevant payload evidence was identified for this requirement.",
-          "action_needed": "Add evidence for this requirement to the section payload or map an existing payload field manually.",
-          "report_instruction": "Do not mention this missing requirement in the generated report."
-        },
-        {
-          "requirement_id": "IFRS_S1_13_C01",
-          "standard": "IFRS S1",
-          "paragraph_id": "13",
-          "report_section": "General Requirements",
-          "mandatory": true,
-          "requirement_text": "Fair presentation requires disclosure of relevant information about sustainability-related risks and opportunities that could reasonably be expected to affect the entity’s prospects, and their faithful representation in accordance with the principles set out in this Standard. To achieve faithful representation, an entity shall provide a complete, neutral and accurate depiction of those sustainability-related risks and opportunities.",
-          "coverage_status": "not_available_in_payload",
-          "reason": "No sufficiently relevant payload evidence was identified for this requirement.",
-          "action_needed": "Add evidence for this requirement to the section payload or map an existing payload field manually.",
-          "report_instruction": "Do not mention this missing requirement in the generated report."
-        },
-        {
-          "requirement_id": "IFRS_S1_15_C01",
-          "standard": "IFRS S1",
-          "paragraph_id": "15",
-          "report_section": "General Requirements",
-          "mandatory": true,
-          "requirement_text": "Fair presentation also requires an entity — (a) to disclose information that is comparable, verifiable, timely and understandable",
-          "coverage_status": "not_available_in_payload",
-          "reason": "No sufficiently relevant payload evidence was identified for this requirement.",
-          "action_needed": "Add evidence for this requirement to the section payload or map an existing payload field manually.",
-          "report_instruction": "Do not mention this missing requirement in the generated report."
-        },
-        {
-          "requirement_id": "IFRS_S1_21_C01",
-          "standard": "IFRS S1",
-          "paragraph_id": "21",
-          "report_section": "General Requirements",
-          "mandatory": true,
-          "requirement_text": "An entity shall provide information in a manner that enables users of general purpose financial reports to understand the following types of connections — (a) the connections between the items to which the information relates —such as connections between various sustainability-related risks and opportunities that could reasonably be expected to affect the entity’s prospects",
-          "coverage_status": "not_available_in_payload",
-          "reason": "No sufficiently relevant payload evidence was identified for this requirement.",
-          "action_needed": "Add evidence for this requirement to the section payload or map an existing payload field manually.",
-          "report_instruction": "Do not mention this missing requirement in the generated report."
-        },
-        {
-          "requirement_id": "IFRS_S1_25_C02",
-          "standard": "IFRS S1",
-          "paragraph_id": "25",
-          "report_section": "General Requirements",
-          "mandatory": true,
-          "requirement_text": "Unless another IFRS Sustainability Disclosure Standard permits or requires otherwise in specified circumstances, an entity shall provide disclosures about — (b) strategy—the approach the entity uses to manage sustainability-related risks and opportunities (see paragraphs 28–42)",
-          "coverage_status": "not_available_in_payload",
-          "reason": "No sufficiently relevant payload evidence was identified for this requirement.",
-          "action_needed": "Add evidence for this requirement to the section payload or map an existing payload field manually.",
-          "report_instruction": "Do not mention this missing requirement in the generated report."
-        },
-        {
+          "flag_type": "missing_requirement",
           "requirement_id": "IFRS_S1_60_C01",
           "standard": "IFRS S1",
           "paragraph_id": "60",
@@ -99,11 +57,12 @@
           "mandatory": true,
           "requirement_text": "An entity is required to provide disclosures required by IFRS Sustainability Disclosure Standards as part of its general purpose financial reports.",
           "coverage_status": "not_available_in_payload",
-          "reason": "No sufficiently relevant payload evidence was identified for this requirement.",
-          "action_needed": "Add evidence for this requirement to the section payload or map an existing payload field manually.",
-          "report_instruction": "Do not mention this missing requirement in the generated report."
+          "reason": "No sufficiently strong, non-null, non-generic payload evidence was identified for this requirement under strict V8 coverage rules.",
+          "action_needed": "Add real evidence to the section payload, improve deterministic routing, or manually map an existing evidence path after review.",
+          "report_instruction": "Do not mention this missing requirement or missing data in the generated report. Keep it only in audit outputs."
         },
         {
+          "flag_type": "missing_requirement",
           "requirement_id": "IFRS_S1_72_C01",
           "standard": "IFRS S1",
           "paragraph_id": "72",
@@ -111,11 +70,12 @@
           "mandatory": true,
           "requirement_text": "An entity whose sustainability-related financial disclosures comply with all the requirements of IFRS Sustainability Disclosure Standards shall make an explicit and unreserved statement of compliance. An entity shall not describe sustainability-related financial disclosures as complying with IFRS Sustainability Disclosure Standards unless they comply with all the requirements of IFRS Sustainability Disclosure Standards.",
           "coverage_status": "not_available_in_payload",
-          "reason": "No sufficiently relevant payload evidence was identified for this requirement.",
-          "action_needed": "Add evidence for this requirement to the section payload or map an existing payload field manually.",
-          "report_instruction": "Do not mention this missing requirement in the generated report."
+          "reason": "No sufficiently strong, non-null, non-generic payload evidence was identified for this requirement under strict V8 coverage rules.",
+          "action_needed": "Add real evidence to the section payload, improve deterministic routing, or manually map an existing evidence path after review.",
+          "report_instruction": "Do not mention this missing requirement or missing data in the generated report. Keep it only in audit outputs."
         },
         {
+          "flag_type": "missing_requirement",
           "requirement_id": "IFRS_S1_73_C01",
           "standard": "IFRS S1",
           "paragraph_id": "73",
@@ -123,11 +83,12 @@
           "mandatory": true,
           "requirement_text": "This Standard relieves an entity from disclosing information otherwise required by an IFRS Sustainability Disclosure Standard if law or regulation prohibits the entity from disclosing that information (see paragraph B33). This Standard also relieves an entity from disclosing information about a sustainability-related opportunity otherwise required by an IFRS Sustainability Disclosure Standard if that information is commercially sensitive as described in this Standard (see paragraphs B34–B37). An entity using these exemptions is not prevented from asserting compliance with IFRS Sustainability Disclosure Standards.",
           "coverage_status": "not_available_in_payload",
-          "reason": "No sufficiently relevant payload evidence was identified for this requirement.",
-          "action_needed": "Add evidence for this requirement to the section payload or map an existing payload field manually.",
-          "report_instruction": "Do not mention this missing requirement in the generated report."
+          "reason": "No sufficiently strong, non-null, non-generic payload evidence was identified for this requirement under strict V8 coverage rules.",
+          "action_needed": "Add real evidence to the section payload, improve deterministic routing, or manually map an existing evidence path after review.",
+          "report_instruction": "Do not mention this missing requirement or missing data in the generated report. Keep it only in audit outputs."
         },
         {
+          "flag_type": "missing_requirement",
           "requirement_id": "IFRS_S1_77_C01",
           "standard": "IFRS S1",
           "paragraph_id": "77",
@@ -135,11 +96,12 @@
           "mandatory": true,
           "requirement_text": "An entity shall disclose information to enable users of general purpose financial reports to understand the most significant uncertainties affecting the amounts reported in its sustainability-related financial disclosures.",
           "coverage_status": "not_available_in_payload",
-          "reason": "No sufficiently relevant payload evidence was identified for this requirement.",
-          "action_needed": "Add evidence for this requirement to the section payload or map an existing payload field manually.",
-          "report_instruction": "Do not mention this missing requirement in the generated report."
+          "reason": "No sufficiently strong, non-null, non-generic payload evidence was identified for this requirement under strict V8 coverage rules.",
+          "action_needed": "Add real evidence to the section payload, improve deterministic routing, or manually map an existing evidence path after review.",
+          "report_instruction": "Do not mention this missing requirement or missing data in the generated report. Keep it only in audit outputs."
         },
         {
+          "flag_type": "missing_requirement",
           "requirement_id": "IFRS_S1_78_C04",
           "standard": "IFRS S1",
           "paragraph_id": "78",
@@ -147,11 +109,12 @@
           "mandatory": true,
           "requirement_text": "An entity shall — (b) in relation to each amount identified in paragraph 78(a), disclose information about: — (ii) the assumptions, approximations and judgements the entity has made in measuring the amount.",
           "coverage_status": "not_available_in_payload",
-          "reason": "No sufficiently relevant payload evidence was identified for this requirement.",
-          "action_needed": "Add evidence for this requirement to the section payload or map an existing payload field manually.",
-          "report_instruction": "Do not mention this missing requirement in the generated report."
+          "reason": "No sufficiently strong, non-null, non-generic payload evidence was identified for this requirement under strict V8 coverage rules.",
+          "action_needed": "Add real evidence to the section payload, improve deterministic routing, or manually map an existing evidence path after review.",
+          "report_instruction": "Do not mention this missing requirement or missing data in the generated report. Keep it only in audit outputs."
         },
         {
+          "flag_type": "missing_requirement",
           "requirement_id": "IFRS_S1_B37_C01",
           "standard": "IFRS S1",
           "paragraph_id": "B37",
@@ -159,21 +122,35 @@
           "mandatory": true,
           "requirement_text": "An entity is prohibited from using the exemption specified in paragraph B34 in relation to a sustainability-related risk or as a basis for broad non-disclosure of sustainability-related financial information.",
           "coverage_status": "not_available_in_payload",
-          "reason": "No sufficiently relevant payload evidence was identified for this requirement.",
-          "action_needed": "Add evidence for this requirement to the section payload or map an existing payload field manually.",
-          "report_instruction": "Do not mention this missing requirement in the generated report."
+          "reason": "No sufficiently strong, non-null, non-generic payload evidence was identified for this requirement under strict V8 coverage rules.",
+          "action_needed": "Add real evidence to the section payload, improve deterministic routing, or manually map an existing evidence path after review.",
+          "report_instruction": "Do not mention this missing requirement or missing data in the generated report. Keep it only in audit outputs."
         },
         {
-          "requirement_id": "IFRS_S1_B39_C01",
+          "flag_type": "missing_requirement",
+          "requirement_id": "IFRS_S1_B41_C04",
           "standard": "IFRS S1",
-          "paragraph_id": "B39",
+          "paragraph_id": "B41",
           "report_section": "General Requirements",
           "mandatory": true,
-          "requirement_text": "Paragraph 21 requires an entity to provide information in a manner that enables users of general purpose financial reports to understand connections both between the items to which the information relates and between disclosures provided by the entity in its general purpose financial reports.",
+          "requirement_text": "Connected information includes — (b) connections between disclosures about various sustainability-related risks and opportunities. For example, if an entity integrates its oversight of sustainability-related risks and opportunities, the entity shall integrate the disclosures on governance instead of providing separate disclosures on governance for each sustainability-related risk and opportunity.",
           "coverage_status": "not_available_in_payload",
-          "reason": "No sufficiently relevant payload evidence was identified for this requirement.",
-          "action_needed": "Add evidence for this requirement to the section payload or map an existing payload field manually.",
-          "report_instruction": "Do not mention this missing requirement in the generated report."
+          "reason": "No sufficiently strong, non-null, non-generic payload evidence was identified for this requirement under strict V8 coverage rules.",
+          "action_needed": "Add real evidence to the section payload, improve deterministic routing, or manually map an existing evidence path after review.",
+          "report_instruction": "Do not mention this missing requirement or missing data in the generated report. Keep it only in audit outputs."
+        },
+        {
+          "flag_type": "missing_requirement",
+          "requirement_id": "IFRS_S1_B46_C01",
+          "standard": "IFRS S1",
+          "paragraph_id": "B46",
+          "report_section": "General Requirements",
+          "mandatory": true,
+          "requirement_text": "Information included by cross-reference becomes part of the complete set of sustainability-related financial disclosures and shall comply with the requirements of IFRS Sustainability Disclosure Standards. For example, it needs to be relevant, representationally faithful, comparable, verifiable, timely and understandable. The body(s) or individual(s) that authorises the general purpose financial reports takes the same responsibility for the information included by cross-reference as it does for the information included directly.",
+          "coverage_status": "not_available_in_payload",
+          "reason": "No sufficiently strong, non-null, non-generic payload evidence was identified for this requirement under strict V8 coverage rules.",
+          "action_needed": "Add real evidence to the section payload, improve deterministic routing, or manually map an existing evidence path after review.",
+          "report_instruction": "Do not mention this missing requirement or missing data in the generated report. Keep it only in audit outputs."
         }
       ]
     },
@@ -181,75 +158,225 @@
       "section_name": "Governance",
       "pipeline_mode": "synthetic_demo",
       "policy": "Missing requirements are recorded here and are excluded from report prose.",
+      "missing_requirements_count": 0,
+      "missing_requirement_ids": [],
+      "section_readiness_score_0_to_100": 96.67,
       "missing_requirements": []
     },
     "Strategy": {
       "section_name": "Strategy",
       "pipeline_mode": "synthetic_demo",
       "policy": "Missing requirements are recorded here and are excluded from report prose.",
-      "missing_requirements": [
-        {
-          "requirement_id": "IFRS_S1_29_C01",
-          "standard": "IFRS S1",
-          "paragraph_id": "29",
-          "report_section": "Strategy",
-          "mandatory": true,
-          "requirement_text": "Specifically, an entity shall disclose information to enable users of general purpose financial reports to understand — (a) the sustainability-related risks and opportunities that could reasonably be expected to affect the entity’s prospects (see paragraphs 30–31)",
-          "coverage_status": "not_available_in_payload",
-          "reason": "No sufficiently relevant payload evidence was identified for this requirement.",
-          "action_needed": "Add evidence for this requirement to the section payload or map an existing payload field manually.",
-          "report_instruction": "Do not mention this missing requirement in the generated report."
-        },
-        {
-          "requirement_id": "IFRS_S1_29_C03",
-          "standard": "IFRS S1",
-          "paragraph_id": "29",
-          "report_section": "Strategy",
-          "mandatory": true,
-          "requirement_text": "Specifically, an entity shall disclose information to enable users of general purpose financial reports to understand — (c) the effects of those sustainability-related risks and opportunities on the entity’s strategy and decision-making (see paragraph 33)",
-          "coverage_status": "not_available_in_payload",
-          "reason": "No sufficiently relevant payload evidence was identified for this requirement.",
-          "action_needed": "Add evidence for this requirement to the section payload or map an existing payload field manually.",
-          "report_instruction": "Do not mention this missing requirement in the generated report."
-        },
-        {
-          "requirement_id": "IFRS_S1_30_C01",
-          "standard": "IFRS S1",
-          "paragraph_id": "30",
-          "report_section": "Strategy",
-          "mandatory": true,
-          "requirement_text": "An entity shall disclose information that enables users of general purpose financial reports to understand the sustainability-related risks and opportunities that could reasonably be expected to affect the entity’s prospects. Specifically, the entity shall — (a) describe sustainability-related risks and opportunities that could reasonably be expected to affect the entity’s prospects",
-          "coverage_status": "not_available_in_payload",
-          "reason": "No sufficiently relevant payload evidence was identified for this requirement.",
-          "action_needed": "Add evidence for this requirement to the section payload or map an existing payload field manually.",
-          "report_instruction": "Do not mention this missing requirement in the generated report."
-        },
-        {
-          "requirement_id": "IFRS_S1_33_C01",
-          "standard": "IFRS S1",
-          "paragraph_id": "33",
-          "report_section": "Strategy",
-          "mandatory": true,
-          "requirement_text": "An entity shall disclose information that enables users of general purpose financial reports to understand the effects of sustainability-related risks and opportunities on its strategy and decision-making. Specifically, the entity shall disclose information about — (a) how the entity has responded to, and plans to respond to, sustainability-related risks and opportunities in its strategy and decision-making",
-          "coverage_status": "not_available_in_payload",
-          "reason": "No sufficiently relevant payload evidence was identified for this requirement.",
-          "action_needed": "Add evidence for this requirement to the section payload or map an existing payload field manually.",
-          "report_instruction": "Do not mention this missing requirement in the generated report."
-        }
-      ]
+      "missing_requirements_count": 0,
+      "missing_requirement_ids": [],
+      "section_readiness_score_0_to_100": 92.86,
+      "missing_requirements": []
     },
     "Risk Management": {
       "section_name": "Risk Management",
       "pipeline_mode": "synthetic_demo",
       "policy": "Missing requirements are recorded here and are excluded from report prose.",
+      "missing_requirements_count": 0,
+      "missing_requirement_ids": [],
+      "section_readiness_score_0_to_100": 79.41,
       "missing_requirements": []
     },
     "Metrics and Targets": {
       "section_name": "Metrics and Targets",
       "pipeline_mode": "synthetic_demo",
       "policy": "Missing requirements are recorded here and are excluded from report prose.",
+      "missing_requirements_count": 16,
+      "missing_requirement_ids": [
+        "IFRS_S2_B47_C01",
+        "IFRS_S2_B53_C01",
+        "IFRS_S2_B60_C01",
+        "IFRS_S2_B62_C06",
+        "IFRS_S2_B62_C07",
+        "IFRS_S2_B62A_C05",
+        "IFRS_S2_B62A_C06",
+        "IFRS_S2_B63_C06",
+        "IFRS_S2_B63A_C05",
+        "IFRS_S2_B63A_C06",
+        "IFRS_S2_B64_C01",
+        "IFRS_S2_B65_C01",
+        "IFRS_S2_B65_C02",
+        "IFRS_S2_B65_C03",
+        "IFRS_S2_B65_C05",
+        "IFRS_S2_B65_C06"
+      ],
+      "section_readiness_score_0_to_100": 87.75,
       "missing_requirements": [
         {
+          "flag_type": "missing_requirement",
+          "requirement_id": "IFRS_S2_B47_C01",
+          "standard": "IFRS S2",
+          "paragraph_id": "B47",
+          "report_section": "Metrics and Targets",
+          "mandatory": true,
+          "requirement_text": "In measuring an entity’s Scope 3 greenhouse gas emissions, primary data is more likely to be representative of the entity’s value chain activity and its greenhouse gas emissions than secondary data. Therefore, the entity shall prioritise—with all else being equal—the use of primary data.",
+          "coverage_status": "not_available_in_payload",
+          "reason": "No sufficiently strong, non-null, non-generic payload evidence was identified for this requirement under strict V8 coverage rules.",
+          "action_needed": "Add real evidence to the section payload, improve deterministic routing, or manually map an existing evidence path after review.",
+          "report_instruction": "Do not mention this missing requirement or missing data in the generated report. Keep it only in audit outputs."
+        },
+        {
+          "flag_type": "missing_requirement",
+          "requirement_id": "IFRS_S2_B53_C01",
+          "standard": "IFRS S2",
+          "paragraph_id": "B53",
+          "report_section": "Metrics and Targets",
+          "mandatory": true,
+          "requirement_text": "An entity shall prioritise Scope 3 greenhouse gas emissions data that is verified. Verification can provide users of general purpose financial reports with confidence that the information is complete, neutral and accurate.",
+          "coverage_status": "not_available_in_payload",
+          "reason": "No sufficiently strong, non-null, non-generic payload evidence was identified for this requirement under strict V8 coverage rules.",
+          "action_needed": "Add real evidence to the section payload, improve deterministic routing, or manually map an existing evidence path after review.",
+          "report_instruction": "Do not mention this missing requirement or missing data in the generated report. Keep it only in audit outputs."
+        },
+        {
+          "flag_type": "missing_requirement",
+          "requirement_id": "IFRS_S2_B60_C01",
+          "standard": "IFRS S2",
+          "paragraph_id": "B60",
+          "report_section": "Metrics and Targets",
+          "mandatory": true,
+          "requirement_text": "An entity shall apply the requirements for disclosing greenhouse gas emissions in accordance with paragraph 29(a) when disclosing information about its financed emissions.",
+          "coverage_status": "not_available_in_payload",
+          "reason": "No sufficiently strong, non-null, non-generic payload evidence was identified for this requirement under strict V8 coverage rules.",
+          "action_needed": "Add real evidence to the section payload, improve deterministic routing, or manually map an existing evidence path after review.",
+          "report_instruction": "Do not mention this missing requirement or missing data in the generated report. Keep it only in audit outputs."
+        },
+        {
+          "flag_type": "missing_requirement",
+          "requirement_id": "IFRS_S2_B62_C06",
+          "standard": "IFRS S2",
+          "paragraph_id": "B62",
+          "report_section": "Metrics and Targets",
+          "mandatory": true,
+          "requirement_text": "An entity that participates in commercial banking activities shall disclose — (c) the percentage of the entity’s gross exposure included in the financed emissions calculation. The entity shall: — (i) if the percentage of the entity’s gross exposure included in the financed emissions calculation is less than 100%, disclose information that explains the exclusions, including the type of assets excluded.",
+          "coverage_status": "not_available_in_payload",
+          "reason": "No sufficiently strong, non-null, non-generic payload evidence was identified for this requirement under strict V8 coverage rules.",
+          "action_needed": "Add real evidence to the section payload, improve deterministic routing, or manually map an existing evidence path after review.",
+          "report_instruction": "Do not mention this missing requirement or missing data in the generated report. Keep it only in audit outputs."
+        },
+        {
+          "flag_type": "missing_requirement",
+          "requirement_id": "IFRS_S2_B62_C07",
+          "standard": "IFRS S2",
+          "paragraph_id": "B62",
+          "report_section": "Metrics and Targets",
+          "mandatory": true,
+          "requirement_text": "An entity that participates in commercial banking activities shall disclose — (c) the percentage of the entity’s gross exposure included in the financed emissions calculation. The entity shall: — (ii) for funded amounts, exclude from gross exposure all impacts of risk mitigants, if applicable.",
+          "coverage_status": "not_available_in_payload",
+          "reason": "No sufficiently strong, non-null, non-generic payload evidence was identified for this requirement under strict V8 coverage rules.",
+          "action_needed": "Add real evidence to the section payload, improve deterministic routing, or manually map an existing evidence path after review.",
+          "report_instruction": "Do not mention this missing requirement or missing data in the generated report. Keep it only in audit outputs."
+        },
+        {
+          "flag_type": "missing_requirement",
+          "requirement_id": "IFRS_S2_B62A_C05",
+          "standard": "IFRS S2",
+          "paragraph_id": "B62A",
+          "report_section": "Metrics and Targets",
+          "mandatory": true,
+          "requirement_text": "When disaggregating information disclosed in accordance with paragraph B62(a)– — (a) industry—an entity shall: — (ii) disclose: — (1) the industry-classification system it used to classify investees or counterparties",
+          "coverage_status": "not_available_in_payload",
+          "reason": "No sufficiently strong, non-null, non-generic payload evidence was identified for this requirement under strict V8 coverage rules.",
+          "action_needed": "Add real evidence to the section payload, improve deterministic routing, or manually map an existing evidence path after review.",
+          "report_instruction": "Do not mention this missing requirement or missing data in the generated report. Keep it only in audit outputs."
+        },
+        {
+          "flag_type": "missing_requirement",
+          "requirement_id": "IFRS_S2_B62A_C06",
+          "standard": "IFRS S2",
+          "paragraph_id": "B62A",
+          "report_section": "Metrics and Targets",
+          "mandatory": true,
+          "requirement_text": "When disaggregating information disclosed in accordance with paragraph B62(a)– — (a) industry—an entity shall: — (ii) disclose: — (2) information that enables users of general purpose financial reports to understand how the entity’s selection of that system fulfils the requirements in paragraph B62A(a)(i).",
+          "coverage_status": "not_available_in_payload",
+          "reason": "No sufficiently strong, non-null, non-generic payload evidence was identified for this requirement under strict V8 coverage rules.",
+          "action_needed": "Add real evidence to the section payload, improve deterministic routing, or manually map an existing evidence path after review.",
+          "report_instruction": "Do not mention this missing requirement or missing data in the generated report. Keep it only in audit outputs."
+        },
+        {
+          "flag_type": "missing_requirement",
+          "requirement_id": "IFRS_S2_B63_C06",
+          "standard": "IFRS S2",
+          "paragraph_id": "B63",
+          "report_section": "Metrics and Targets",
+          "mandatory": true,
+          "requirement_text": "An entity that participates in financial activities associated with the insurance industry shall disclose — (c) the percentage of the entity’s gross exposure included in the financed emissions calculation. The entity shall: — (i) if the percentage of the entity’s gross exposure included in the financed emissions calculation is less than 100%, disclose information that explains the exclusions, including type of assets excluded.",
+          "coverage_status": "not_available_in_payload",
+          "reason": "No sufficiently strong, non-null, non-generic payload evidence was identified for this requirement under strict V8 coverage rules.",
+          "action_needed": "Add real evidence to the section payload, improve deterministic routing, or manually map an existing evidence path after review.",
+          "report_instruction": "Do not mention this missing requirement or missing data in the generated report. Keep it only in audit outputs."
+        },
+        {
+          "flag_type": "missing_requirement",
+          "requirement_id": "IFRS_S2_B63A_C05",
+          "standard": "IFRS S2",
+          "paragraph_id": "B63A",
+          "report_section": "Metrics and Targets",
+          "mandatory": true,
+          "requirement_text": "When disaggregating information disclosed in accordance with paragraph B63(a)– — (a) industry—an entity shall: — (ii) disclose: — (1) the industry-classification system it used to classify investees or counterparties",
+          "coverage_status": "not_available_in_payload",
+          "reason": "No sufficiently strong, non-null, non-generic payload evidence was identified for this requirement under strict V8 coverage rules.",
+          "action_needed": "Add real evidence to the section payload, improve deterministic routing, or manually map an existing evidence path after review.",
+          "report_instruction": "Do not mention this missing requirement or missing data in the generated report. Keep it only in audit outputs."
+        },
+        {
+          "flag_type": "missing_requirement",
+          "requirement_id": "IFRS_S2_B63A_C06",
+          "standard": "IFRS S2",
+          "paragraph_id": "B63A",
+          "report_section": "Metrics and Targets",
+          "mandatory": true,
+          "requirement_text": "When disaggregating information disclosed in accordance with paragraph B63(a)– — (a) industry—an entity shall: — (ii) disclose: — (2) information that enables users of general purpose financial reports to understand how the entity’s selection of that system fulfils the requirements in paragraph B63A(a)(i).",
+          "coverage_status": "not_available_in_payload",
+          "reason": "No sufficiently strong, non-null, non-generic payload evidence was identified for this requirement under strict V8 coverage rules.",
+          "action_needed": "Add real evidence to the section payload, improve deterministic routing, or manually map an existing evidence path after review.",
+          "report_instruction": "Do not mention this missing requirement or missing data in the generated report. Keep it only in audit outputs."
+        },
+        {
+          "flag_type": "missing_requirement",
+          "requirement_id": "IFRS_S2_B64_C01",
+          "standard": "IFRS S2",
+          "paragraph_id": "B64",
+          "report_section": "Metrics and Targets",
+          "mandatory": true,
+          "requirement_text": "In addition to information about an entity’s greenhouse gas emissions, the entity is required to disclose information relevant to the cross-industry metric categories set out in paragraph 29(b)–(g).",
+          "coverage_status": "not_available_in_payload",
+          "reason": "No sufficiently strong, non-null, non-generic payload evidence was identified for this requirement under strict V8 coverage rules.",
+          "action_needed": "Add real evidence to the section payload, improve deterministic routing, or manually map an existing evidence path after review.",
+          "report_instruction": "Do not mention this missing requirement or missing data in the generated report. Keep it only in audit outputs."
+        },
+        {
+          "flag_type": "missing_requirement",
+          "requirement_id": "IFRS_S2_B65_C01",
+          "standard": "IFRS S2",
+          "paragraph_id": "B65",
+          "report_section": "Metrics and Targets",
+          "mandatory": true,
+          "requirement_text": "In preparing disclosures to fulfil the requirements in paragraph 29(b)–(g), an entity shall — (a) consider the time horizons over which the effects of climate-related risks and opportunities could reasonably be expected to occur, described in accordance with paragraph 10.",
+          "coverage_status": "not_available_in_payload",
+          "reason": "No sufficiently strong, non-null, non-generic payload evidence was identified for this requirement under strict V8 coverage rules.",
+          "action_needed": "Add real evidence to the section payload, improve deterministic routing, or manually map an existing evidence path after review.",
+          "report_instruction": "Do not mention this missing requirement or missing data in the generated report. Keep it only in audit outputs."
+        },
+        {
+          "flag_type": "missing_requirement",
+          "requirement_id": "IFRS_S2_B65_C02",
+          "standard": "IFRS S2",
+          "paragraph_id": "B65",
+          "report_section": "Metrics and Targets",
+          "mandatory": true,
+          "requirement_text": "In preparing disclosures to fulfil the requirements in paragraph 29(b)–(g), an entity shall — (b) consider where in the entity’s business model and value chain climate-related risks and opportunities are concentrated (for example, geographical areas, facilities or types of assets) (see paragraph 13).",
+          "coverage_status": "not_available_in_payload",
+          "reason": "No sufficiently strong, non-null, non-generic payload evidence was identified for this requirement under strict V8 coverage rules.",
+          "action_needed": "Add real evidence to the section payload, improve deterministic routing, or manually map an existing evidence path after review.",
+          "report_instruction": "Do not mention this missing requirement or missing data in the generated report. Keep it only in audit outputs."
+        },
+        {
+          "flag_type": "missing_requirement",
           "requirement_id": "IFRS_S2_B65_C03",
           "standard": "IFRS S2",
           "paragraph_id": "B65",
@@ -257,11 +384,25 @@
           "mandatory": true,
           "requirement_text": "In preparing disclosures to fulfil the requirements in paragraph 29(b)–(g), an entity shall — (c) consider the information disclosed in accordance with paragraph 16(a)–",
           "coverage_status": "not_available_in_payload",
-          "reason": "No sufficiently relevant payload evidence was identified for this requirement.",
-          "action_needed": "Add evidence for this requirement to the section payload or map an existing payload field manually.",
-          "report_instruction": "Do not mention this missing requirement in the generated report."
+          "reason": "No sufficiently strong, non-null, non-generic payload evidence was identified for this requirement under strict V8 coverage rules.",
+          "action_needed": "Add real evidence to the section payload, improve deterministic routing, or manually map an existing evidence path after review.",
+          "report_instruction": "Do not mention this missing requirement or missing data in the generated report. Keep it only in audit outputs."
         },
         {
+          "flag_type": "missing_requirement",
+          "requirement_id": "IFRS_S2_B65_C05",
+          "standard": "IFRS S2",
+          "paragraph_id": "B65",
+          "report_section": "Metrics and Targets",
+          "mandatory": true,
+          "requirement_text": "In preparing disclosures to fulfil the requirements in paragraph 29(b)–(g), an entity shall — (d) consider whether industry-based metrics, as described in paragraph 32 —including those defined in an applicable IFRS Sustainability Disclosure Standard or those that otherwise satisfy the requirements in IFRS S1—could be used to satisfy the requirements in whole or in part.",
+          "coverage_status": "not_available_in_payload",
+          "reason": "No sufficiently strong, non-null, non-generic payload evidence was identified for this requirement under strict V8 coverage rules.",
+          "action_needed": "Add real evidence to the section payload, improve deterministic routing, or manually map an existing evidence path after review.",
+          "report_instruction": "Do not mention this missing requirement or missing data in the generated report. Keep it only in audit outputs."
+        },
+        {
+          "flag_type": "missing_requirement",
           "requirement_id": "IFRS_S2_B65_C06",
           "standard": "IFRS S2",
           "paragraph_id": "B65",
@@ -269,9 +410,9 @@
           "mandatory": true,
           "requirement_text": "In preparing disclosures to fulfil the requirements in paragraph 29(b)–(g), an entity shall — (e) consider the connections between the information disclosed to fulfil the requirements in paragraph 29(b)–",
           "coverage_status": "not_available_in_payload",
-          "reason": "No sufficiently relevant payload evidence was identified for this requirement.",
-          "action_needed": "Add evidence for this requirement to the section payload or map an existing payload field manually.",
-          "report_instruction": "Do not mention this missing requirement in the generated report."
+          "reason": "No sufficiently strong, non-null, non-generic payload evidence was identified for this requirement under strict V8 coverage rules.",
+          "action_needed": "Add real evidence to the section payload, improve deterministic routing, or manually map an existing evidence path after review.",
+          "report_instruction": "Do not mention this missing requirement or missing data in the generated report. Keep it only in audit outputs."
         }
       ]
     }

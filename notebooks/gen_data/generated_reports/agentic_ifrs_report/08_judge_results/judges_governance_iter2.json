@@ -1,0 +1,167 @@
+{
+  "section_name": "Governance",
+  "ifrs_coverage_judge": {
+    "approved": false,
+    "ifrs_coverage_score_0_to_10": 1,
+    "missing_supported_requirements": [
+      {
+        "requirement_id": "IFRS_S1_27_C02",
+        "reason": "Draft explicitly states the governance body(ies)/individual(s) are not identified; however evidence is available in the payload indicating governance structures/attributes exist (e.g., board/ESG committee meeting frequency, board size). The section should identify the responsible body(ies)/individual(s) and describe how responsibilities are reflected in mandates/terms/policies."
+      },
+      {
+        "requirement_id": "IFRS_S1_27_C03",
+        "reason": "Draft provides no disclosure; payload evidence indicates skills/competency information exists (skills development programme; board climate expertise %)."
+      },
+      {
+        "requirement_id": "IFRS_S1_27_C04",
+        "reason": "Draft provides no disclosure; payload evidence indicates reporting cadence/agenda information exists (climate risk reporting to board; board meeting frequency; climate on board agenda %)."
+      },
+      {
+        "requirement_id": "IFRS_S1_27_C05",
+        "reason": "Draft provides no disclosure; payload evidence indicates processes exist for considering climate in major transactions and governance structures (major_transactions_climate_check; management committee name)."
+      },
+      {
+        "requirement_id": "IFRS_S1_27_C06",
+        "reason": "Draft provides no disclosure; payload evidence indicates board oversight of climate topics and remuneration linkage exists (board minutes climate topics; all_exec_climate_remuneration_pct)."
+      },
+      {
+        "requirement_id": "IFRS_S1_27_C08",
+        "reason": "Draft states management’s role is not described; payload evidence indicates a management committee exists and delegation could be described (management_committee_name; ESG committee existence/meetings)."
+      },
+      {
+        "requirement_id": "IFRS_S1_27_C09",
+        "reason": "Draft states management’s role/controls are not described; payload evidence indicates ERM integration exists (erm_integration_flag)."
+      },
+      {
+        "requirement_id": "IFRS_S2_6_C02",
+        "reason": "Same gap as IFRS_S1_27_C02 but for climate-related governance oversight; draft says not identified despite available governance evidence."
+      },
+      {
+        "requirement_id": "IFRS_S2_6_C03",
+        "reason": "Same gap as IFRS_S1_27_C03 but for climate-related skills/competencies; evidence exists (skills development programme; board climate expertise %)."
+      },
+      {
+        "requirement_id": "IFRS_S2_6_C04",
+        "reason": "Same gap as IFRS_S1_27_C04 but for climate-related information flow/frequency; evidence exists (climate risk reporting to board; meeting frequency; agenda %)."
+      },
+      {
+        "requirement_id": "IFRS_S2_6_C05",
+        "reason": "Same gap as IFRS_S1_27_C05 but for climate-related oversight of strategy/transactions/risk management; evidence exists (major_transactions_climate_check; management committee name)."
+      },
+      {
+        "requirement_id": "IFRS_S2_6_C06",
+        "reason": "Same gap as IFRS_S1_27_C06 but for climate-related targets/monitoring/remuneration; evidence exists (board minutes climate topics; all_exec_climate_remuneration_pct)."
+      },
+      {
+        "requirement_id": "IFRS_S2_6_C08",
+        "reason": "Same gap as IFRS_S1_27_C08 but for climate-related management role; evidence exists (management_committee_name)."
+      },
+      {
+        "requirement_id": "IFRS_S2_6_C09",
+        "reason": "Same gap as IFRS_S1_27_C09 but for climate-related controls/procedures integration; evidence exists (erm_integration_flag)."
+      },
+      {
+        "requirement_id": "IFRS_S2_7_C01",
+        "reason": "Draft does not address avoiding unnecessary duplication / integrated governance disclosures; payload suggests integration with ERM that could support an integrated disclosure approach (erm_integration_flag), but the section is silent."
+      }
+    ],
+    "invented_missing_requirements": [],
+    "missing_data_language_found": true,
+    "required_fixes": [
+      "Remove missing-data/absence-of-disclosure statements (e.g., 'are not identified in this section', 'is not described in this section') and replace with actual disclosures supported by the available payload evidence.",
+      "Identify the governance body(ies)/individual(s) responsible for oversight of sustainability-related and climate-related risks and opportunities, and describe how responsibilities are reflected in mandates/terms of reference/role descriptions/policies.",
+      "Disclose how the governance body ensures appropriate skills/competencies (e.g., skills development programme; board climate expertise %).",
+      "Disclose how and how often the governance body is informed (e.g., climate risk reporting to board; board/committee meeting frequency; climate agenda %).",
+      "Disclose how the governance body considers these matters in strategy, major transactions and risk management (e.g., major_transactions_climate_check; linkage to management committee).",
+      "Disclose oversight of target-setting and monitoring, including remuneration linkage (e.g., all_exec_climate_remuneration_pct; board minutes climate topics).",
+      "Describe management’s role, delegation to management committee/position, oversight mechanisms, and integration of controls/procedures with internal functions (e.g., ERM integration flag).",
+      "Add a statement/structure showing integrated governance disclosures to avoid unnecessary duplication between sustainability-related and climate-related governance (IFRS S2.7), if applicable."
+    ],
+    "summary": "Not approved. The draft contains explicit absence-of-disclosure/missing-data language and fails to provide required IFRS S1/S2 governance disclosures, despite the coverage matrix indicating relevant supporting evidence is available in the payload for all listed requirements. The section must be rewritten to include the actual governance and management-role disclosures and remove the 'not identified/not described' statements."
+  },
+  "evidence_judge": {
+    "approved": false,
+    "evidence_score_0_to_10": 6,
+    "unsupported_claims": [
+      {
+        "claim_id": "GOV-001",
+        "claim_text": "This section describes the governance arrangements for oversight of sustainability-related risks and opportunities, including climate-related risks and opportunities.",
+        "reason": "The draft does not actually describe governance arrangements; it only states that key governance information is not identified/not described. This is a misleading positive assertion not supported by the section content.",
+        "evidence_checked": [
+          "draft_markdown"
+        ]
+      }
+    ],
+    "questionable_claims": [
+      {
+        "claim_id": "GOV-002",
+        "claim_text": "The governance body(ies) or individual(s) responsible for oversight of sustainability-related risks and opportunities, including climate-related risks and opportunities, are not identified in this section.",
+        "reason": "Supported as a statement about the draft section’s content, but potentially misleading in the broader report context because provided payload evidence indicates governance structures exist (e.g., ESG committee, management committee names, board climate reporting cadence). If the report uses this section as the primary governance disclosure, it conflicts with available evidence that could be disclosed here.",
+        "evidence_checked": [
+          "draft_markdown",
+          "evidence_items: governance[*].esg_committee_exists",
+          "evidence_items: governance[*].management_committee_name",
+          "evidence_items: governance[*].climate_risk_reporting_to_board",
+          "evidence_items: board_minutes[*].climate_topics_discussed"
+        ]
+      },
+      {
+        "claim_id": "GOV-003",
+        "claim_text": "Management’s role in the governance processes, controls and procedures used to monitor, manage and oversee sustainability-related risks and opportunities, including climate-related risks and opportunities, is not described in this section.",
+        "reason": "Supported as a statement about the draft section’s content, but potentially misleading given payload evidence suggests management governance mechanisms exist (management committee names; ERM integration flag; major transactions climate check).",
+        "evidence_checked": [
+          "draft_markdown",
+          "evidence_items: governance[*].management_committee_name",
+          "evidence_items: governance[*].erm_integration_flag",
+          "evidence_items: governance[*].major_transactions_climate_check"
+        ]
+      }
+    ],
+    "required_fixes": [
+      "Revise or remove GOV-001. If the intent is a placeholder, change to: \"This section is intended to describe...\" or \"This section does not yet describe...\"",
+      "If this section is meant to be the governance disclosure, incorporate available evidence-backed details (e.g., existence of ESG committee, management committee name(s), climate risk reporting cadence, ERM integration, board agenda coverage) instead of stating they are not identified/not described.",
+      "If the information is disclosed elsewhere, explicitly cross-reference where the governance body and management role are described to avoid a misleading impression of non-disclosure."
+    ],
+    "summary": "One claim (GOV-001) is unsupported because the section does not actually describe governance arrangements. The two 'not identified/not described' statements are accurate about the draft text but are questionable because the provided payload contains governance evidence that could/should be reflected or cross-referenced."
+  },
+  "style_judge": {
+    "approved": false,
+    "style_score_0_to_10": 5.0,
+    "voice_issues": [
+      "Voice is neutral and non-promotional, but it is purely template-like and does not use standards-oriented verbs (e.g., disclose, describe, explain) to frame the governance disclosure.",
+      "The section does not clearly adopt or demonstrate a consistent point of view (first-person plural vs third-person) for accountability statements; it avoids 'we' entirely, which is acceptable but not aligned with the preference for first-person plural in accountability contexts."
+    ],
+    "structure_issues": [
+      "Section heading is unnumbered ('## Governance') and does not follow the prescribed numbered hierarchy (e.g., '1 Governance', '1.1 Oversight...').",
+      "Subsections lack one-sentence purpose statements that explain what the subsection covers and why it matters before stating the data gap.",
+      "Paragraphs are extremely short and only state absence of information; they do not follow the layered structure (overview → structured bullets/tables → brief interpretation and cross-references).",
+      "No role blocks, tables, or figures are used to map governance responsibilities, contrary to the preferred evidence style and table/figure usage guidance.",
+      "The section does not close with a connectivity sentence linking governance to related sections (e.g., Strategy, Risk Management) or financial statements.",
+      "The section opener does not provide a high-level framing paragraph linking sustainability/climate governance to the business model and operations; it only states that the section describes governance arrangements in generic terms."
+    ],
+    "wording_issues": [
+      "Missing data is acknowledged but only with generic statements ('are not identified in this section', 'is not described in this section') that do not meet the required missing-data protocol (what is missing, why, interim approach, limitations, planned enhancement).",
+      "Language does not use preferred governance verbs (oversees, reviews, approves, monitors, escalates, etc.) to describe responsibilities or processes, even in noting their absence.",
+      "Sentences are declarative and clear but overly minimal, providing no distinction between current facts, estimates, judgements, and forward-looking intentions.",
+      "The overview sentence is generic and does not clearly distinguish between sustainability-related and climate-related governance dimensions or reference IFRS S1/S2 expectations."
+    ],
+    "table_figure_issues": [
+      "No tables or figures are included, despite the style guide’s preference for a governance structure diagram and role-to-responsibility mapping table.",
+      "Because there are no tables or figures, there are no captions, numbering, or narrative references, which is inconsistent with the evidence and traceability rules.",
+      "The absence of visual anchors makes the section text-only and does not follow the guidance to alternate narrative blocks with tables/figures in major sections."
+    ],
+    "required_fixes": [
+      "Introduce a numbered main heading and subsections aligned to IFRS pillars and the formatting rules (e.g., '1 Governance', '1.1 Oversight by governance bodies', '1.2 Management’s role').",
+      "Add a high-level framing paragraph that explains how sustainability- and climate-related governance connects to the business model, operations, and enterprise risk management, using formal, assurance-oriented language.",
+      "For each subsection, add a one-sentence purpose statement before details (e.g., 'This subsection describes the governance bodies responsible for oversight of sustainability-related risks and opportunities.') to align with paragraph rules.",
+      "Apply the missing-data protocol explicitly: for each identified gap (oversight bodies, management’s role), state what is missing, why it is not currently available or disclosed, any interim governance arrangements or proxies, limitations and potential materiality considerations, and a qualitative description of planned enhancements.",
+      "Use standards-oriented and governance-specific verbs (disclose, identify, oversee, monitor, review, report, escalate) to describe both existing governance mechanics and the status of their documentation, even when noting gaps.",
+      "Introduce at least one governance table (e.g., a generic governance body/role-to-responsibility mapping) with a numbered caption and reference it in the narrative, marking cells with standardized status labels such as 'under development' or 'not currently available' where information is missing.",
+      "Add a descriptive placeholder for a governance structure figure (e.g., board-level, management-level, operational-level oversight) with a caption explaining its scope and relevance, even if detailed content is noted as 'under development'.",
+      "Close the section or major subsections with short connectivity sentences that link governance disclosures to related sections (Strategy, Risk Management, Metrics and Targets) using generic cross-reference placeholders (e.g., 'Refer to [Section: Strategy]').",
+      "Clarify the point of view and maintain consistency (prefer first-person plural for accountability statements such as 'we disclose', 'we assess', while using third-person for externally defined requirements).",
+      "Ensure that all missing or incomplete governance information is labelled using standardized status terms ('not currently available', 'under development', 'not applicable', 'not material') rather than generic phrases like 'not described in this section'."
+    ],
+    "summary": "The section is neutral and non-promotional but is too minimal and does not follow the approved authoring style. It lacks numbered headings, layered structure, governance mechanics, tables/figures, and full missing-data protocol. It should be revised to add a framing overview, structured subsections with purpose statements, explicit and detailed data-gap explanations, governance-focused wording, and at least one governance table and figure with proper captions and cross-references."
+  }
+}
