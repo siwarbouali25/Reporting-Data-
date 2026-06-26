@@ -1,0 +1,52 @@
+{
+  "section_name": "Governance",
+  "passed": false,
+  "gates": [
+    {
+      "gate_name": "claims_integrity",
+      "passed": true,
+      "failures": [],
+      "claim_count": 10
+    },
+    {
+      "gate_name": "factlock_numbers_entities",
+      "passed": false,
+      "failures": [
+        {
+          "type": "number_not_in_payload_or_claims",
+          "value": "33.5%"
+        },
+        {
+          "type": "number_not_in_payload_or_claims",
+          "value": "69.8%"
+        }
+      ],
+      "draft_numbers": [
+        "1",
+        "1.1",
+        "1.2",
+        "1.3",
+        "10",
+        "33.5%",
+        "4",
+        "5",
+        "6",
+        "69.8%"
+      ],
+      "draft_entities": [
+        "Group Sustainability Committee",
+        "IFRS S2"
+      ]
+    },
+    {
+      "gate_name": "reference_firewall",
+      "passed": true,
+      "forbidden_term_hits": []
+    },
+    {
+      "gate_name": "report_cleanliness_no_missing_payload_language",
+      "passed": true,
+      "blocked_phrase_hits": []
+    }
+  ]
+}

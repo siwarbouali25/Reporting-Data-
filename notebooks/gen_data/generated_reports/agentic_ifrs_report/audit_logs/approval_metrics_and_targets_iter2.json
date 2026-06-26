@@ -1,0 +1,55 @@
+{
+  "section_name": "Metrics and Targets",
+  "approved": false,
+  "reason": "deterministic_gates_failed",
+  "required_fixes": {
+    "section_name": "Metrics and Targets",
+    "passed": false,
+    "gates": [
+      {
+        "gate_name": "claims_integrity",
+        "passed": false,
+        "failures": [
+          {
+            "claim_id": "MT-001",
+            "issue": "claim_marked_unsupported",
+            "claim": "The section is titled \"Metrics and Targets\"."
+          },
+          {
+            "claim_id": "MT-001",
+            "issue": "no_evidence_source",
+            "claim": "The section is titled \"Metrics and Targets\"."
+          }
+        ],
+        "claim_count": 6
+      },
+      {
+        "gate_name": "factlock_numbers_entities",
+        "passed": true,
+        "failures": [],
+        "draft_numbers": [
+          "1",
+          "120000.0",
+          "137849.0",
+          "2",
+          "20.0",
+          "2024",
+          "3",
+          "40.0",
+          "42"
+        ],
+        "draft_entities": []
+      },
+      {
+        "gate_name": "reference_firewall",
+        "passed": true,
+        "forbidden_term_hits": []
+      },
+      {
+        "gate_name": "report_cleanliness_no_missing_payload_language",
+        "passed": true,
+        "blocked_phrase_hits": []
+      }
+    ]
+  }
+}

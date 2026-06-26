@@ -1,0 +1,44 @@
+{
+  "authoring_stage": {
+    "used_by": [
+      "section generation agents",
+      "restyle agents"
+    ],
+    "files": [
+      "authoring/global_style_guide.json",
+      "authoring/section_style_guides/<section>_style.json",
+      "authoring/section_blueprints/<section>_blueprint.json",
+      "authoring/table_patterns/table_patterns.json",
+      "authoring/language_rules/no_copying_rules.md"
+    ],
+    "do_not_include": [
+      "rendering/layout_style_guide.json",
+      "reference report text",
+      "raw style_chunk_notes.json"
+    ]
+  },
+  "judging_stage": {
+    "used_by": [
+      "style compliance judge"
+    ],
+    "files": [
+      "judging/style_compliance_rubric.json",
+      "authoring/global_style_guide.json",
+      "authoring/section_style_guides/<section>_style.json",
+      "authoring/language_rules/no_copying_rules.md"
+    ]
+  },
+  "rendering_stage": {
+    "used_by": [
+      "PDF assembly script",
+      "report formatter"
+    ],
+    "files": [
+      "rendering/layout_style_guide.json",
+      "approved section markdown",
+      "approved tables and figures",
+      "brand/theme settings"
+    ],
+    "important_rule": "layout_style_guide.json is not passed to drafting agents."
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "section_name": "Metrics and Targets",
+  "approved": false,
+  "reason": "deterministic_gates_failed",
+  "required_fixes": {
+    "section_name": "Metrics and Targets",
+    "passed": false,
+    "gates": [
+      {
+        "gate_name": "claims_integrity",
+        "passed": false,
+        "failures": [
+          {
+            "claim_id": "MT-001",
+            "issue": "claim_marked_unsupported",
+            "claim": "The section presents targets and related progress metrics supported by underlying evidence."
+          },
+          {
+            "claim_id": "MT-001",
+            "issue": "no_evidence_source",
+            "claim": "The section presents targets and related progress metrics supported by underlying evidence."
+          },
+          {
+            "claim_id": "MT-006",
+            "issue": "claim_marked_unsupported",
+            "claim": "For progress metric `tco2e_per_meur`, the target definition is not reported."
+          },
+          {
+            "claim_id": "MT-007",
+            "issue": "claim_marked_unsupported",
+            "claim": "For progress metric `tco2e_per_meur`, reported progress for 2024 is not reported."
+          },
+          {
+            "claim_id": "MT-009",
+            "issue": "claim_marked_unsupported",
+            "claim": "For progress metric `pct_reduction_vs_baseline`, the target definition is not reported."
+          },
+          {
+            "claim_id": "MT-010",
+            "issue": "claim_marked_unsupported",
+            "claim": "For progress metric `pct_reduction_vs_baseline`, reported progress for 2024 is not reported."
+          }
+        ],
+        "claim_count": 10
+      },
+      {
+        "gate_name": "factlock_numbers_entities",
+        "passed": false,
+        "failures": [
+          {
+            "type": "number_not_in_payload_or_claims",
+            "value": "120,000.0"
+          },
+          {
+            "type": "number_not_in_payload_or_claims",
+            "value": "137,849.0"
+          },
+          {
+            "type": "number_not_in_payload_or_claims",
+            "value": "40.0%"
+          },
+          {
+            "type": "number_not_in_payload_or_claims",
+            "value": "42%"
+          }
+        ],
+        "draft_numbers": [
+          "1",
+          "120,000.0",
+          "137,849.0",
+          "2",
+          "20.0",
+          "2024",
+          "3",
+          "40.0%",
+          "42%"
+        ],
+        "draft_entities": []
+      },
+      {
+        "gate_name": "reference_firewall",
+        "passed": true,
+        "forbidden_term_hits": []
+      },
+      {
+        "gate_name": "report_cleanliness_no_missing_payload_language",
+        "passed": true,
+        "blocked_phrase_hits": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "section_name": "General Requirements",
+  "passed": false,
+  "gates": [
+    {
+      "gate_name": "claims_integrity",
+      "passed": false,
+      "failures": [
+        {
+          "claim_id": "GR-001",
+          "issue": "claim_marked_unsupported",
+          "claim": "The sustainability-related financial disclosures in this report package have been prepared and presented on the basis set out in this section."
+        },
+        {
+          "claim_id": "GR-001",
+          "issue": "no_evidence_source",
+          "claim": "The sustainability-related financial disclosures in this report package have been prepared and presented on the basis set out in this section."
+        },
+        {
+          "claim_id": "GR-007",
+          "issue": "claim_marked_unsupported",
+          "claim": "Governance-related alignment and oversight context is addressed through governance disclosures within this report package."
+        },
+        {
+          "claim_id": "GR-007",
+          "issue": "no_evidence_source",
+          "claim": "Governance-related alignment and oversight context is addressed through governance disclosures within this report package."
+        },
+        {
+          "claim_id": "GR-008",
+          "issue": "claim_marked_unsupported",
+          "claim": "The Governance section contains detailed roles, responsibilities, and processes."
+        },
+        {
+          "claim_id": "GR-008",
+          "issue": "no_evidence_source",
+          "claim": "The Governance section contains detailed roles, responsibilities, and processes."
+        }
+      ],
+      "claim_count": 8
+    },
+    {
+      "gate_name": "factlock_numbers_entities",
+      "passed": false,
+      "failures": [
+        {
+          "type": "entity_not_in_payload_or_claims",
+          "value": "IFRS Sustainability Disclosure Standards\nThe"
+        }
+      ],
+      "draft_numbers": [
+        "1",
+        "1.1",
+        "1.2",
+        "1.3",
+        "6"
+      ],
+      "draft_entities": [
+        "IFRS S2",
+        "IFRS Sustainability Disclosure Standards",
+        "IFRS Sustainability Disclosure Standards\nThe"
+      ]
+    },
+    {
+      "gate_name": "reference_firewall",
+      "passed": true,
+      "forbidden_term_hits": []
+    },
+    {
+      "gate_name": "report_cleanliness_no_missing_payload_language",
+      "passed": true,
+      "blocked_phrase_hits": []
+    }
+  ]
+}
