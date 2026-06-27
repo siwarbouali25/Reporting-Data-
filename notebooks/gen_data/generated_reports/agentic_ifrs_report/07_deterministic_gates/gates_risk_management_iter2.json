@@ -1,6 +1,6 @@
 {
   "section_name": "Risk Management",
-  "passed": true,
+  "passed": false,
   "gates": [
     {
       "gate_name": "draft_structural_quality_no_templates_no_absence_language",
@@ -9,40 +9,53 @@
       "warnings": []
     },
     {
-      "gate_name": "claims_integrity",
+      "gate_name": "draft_depth_quality_no_truncation",
       "passed": true,
       "failures": [],
+      "warnings": []
+    },
+    {
+      "gate_name": "claims_integrity",
+      "passed": false,
+      "failures": [
+        {
+          "claim_id": "RM-009",
+          "issue": "claim_marked_unsupported",
+          "claim": "Consistent with the stated methodology, the climate risk register includes risks rated \"medium\"."
+        },
+        {
+          "claim_id": "RM-012",
+          "issue": "claim_marked_unsupported",
+          "claim": "ERM integration is not universal: at least one climate-related risk is recorded with the ERM integration indicator set to False."
+        }
+      ],
       "warnings": [
         {
           "claim_id": "RM-001",
           "issue": "no_evidence_source_after_repair",
-          "claim": "Climate-related risks and opportunities are managed within the entity’s overall enterprise risk management (ERM) framework."
+          "claim": "The section describes processes used to identify, assess, prioritise and monitor climate-related risks and explains how these are captured in a climate risk register and integrated into ERM."
         },
         {
-          "claim_id": "RM-003",
+          "claim_id": "RM-012",
           "issue": "no_evidence_source_after_repair",
-          "claim": "Climate-related risks are identified and assessed through the climate risk register."
+          "claim": "ERM integration is not universal: at least one climate-related risk is recorded with the ERM integration indicator set to False."
         },
         {
-          "claim_id": "RM-008",
+          "claim_id": "RM-015",
           "issue": "no_evidence_source_after_repair",
-          "claim": "Outputs of the identification and assessment process inform the entity’s climate-related disclosures across Strategy and Metrics and Targets."
-        },
-        {
-          "claim_id": "RM-016",
-          "issue": "no_evidence_source_after_repair",
-          "claim": "Prioritised climate-related opportunities inform related disclosures across Strategy and Metrics and Targets."
+          "claim": "Climate-related opportunities are considered alongside climate-related risks within the entity’s risk management processes, including identification, assessment, prioritisation and monitoring through the same overarching approach."
         }
       ],
-      "claim_count": 16,
+      "claim_count": 15,
       "claims_register_normalized": {
         "section_name": "Risk Management",
         "claims": [
           {
             "claim_id": "RM-001",
-            "claim_text": "Climate-related risks and opportunities are managed within the entity’s overall enterprise risk management (ERM) framework.",
-            "claim_type": "process",
+            "claim_text": "The section describes processes used to identify, assess, prioritise and monitor climate-related risks and explains how these are captured in a climate risk register and integrated into ERM.",
+            "claim_type": "process_description",
             "entities": [
+              "climate risk register",
               "enterprise risk management (ERM)",
               "entity"
             ],
@@ -50,78 +63,126 @@
             "dates": [],
             "evidence_sources": [],
             "requirement_ids": [
-              "IFRS_S1_44_C09",
-              "IFRS_S2_25_C09"
-            ],
-            "supported": true,
-            "support_notes": "Stated explicitly; aligns to integration into overall risk management process.",
-            "invalid_evidence_sources_removed": [
-              "draft_markdown:3.Risk Management opening paragraph"
-            ]
-          },
-          {
-            "claim_id": "RM-002",
-            "claim_text": "Climate-related items are captured and maintained in a climate risk register and, where applicable, are integrated into ERM.",
-            "claim_type": "process",
-            "entities": [
-              "ERM",
-              "climate risk register"
-            ],
-            "numbers": [],
-            "dates": [],
-            "evidence_sources": [
-              "climate_risk_register[5].erm_integrated_flag",
-              "climate_risk_register[6].erm_integrated_flag",
-              "climate_risk_register[7].erm_integrated_flag"
-            ],
-            "requirement_ids": [
               "IFRS_S1_44_C02",
               "IFRS_S1_44_C09",
               "IFRS_S2_25_C02",
               "IFRS_S2_25_C09"
             ],
             "supported": true,
-            "support_notes": "Narrative plus sample register flags show integration for multiple risks.",
-            "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
-            "repaired_evidence_sources": [
-              "climate_risk_register[7].erm_integrated_flag",
-              "climate_risk_register[6].erm_integrated_flag",
-              "climate_risk_register[5].erm_integrated_flag"
-            ],
+            "support_notes": "Narrative description in the section explicitly covers identification/assessment/prioritisation/monitoring and integration into ERM.",
             "invalid_evidence_sources_removed": [
-              "draft_markdown:3.Risk Management opening paragraph",
-              "evidence_items:climate_risk_register[0].erm_integrated_flag=True",
-              "evidence_items:climate_risk_register[1].erm_integrated_flag=True",
-              "evidence_items:climate_risk_register[2].erm_integrated_flag=True"
+              "draft_markdown"
             ]
           },
           {
-            "claim_id": "RM-003",
-            "claim_text": "Climate-related risks are identified and assessed through the climate risk register.",
-            "claim_type": "process",
+            "claim_id": "RM-002",
+            "claim_text": "The entity identifies climate-related risks across its operations and financing activities, including exposures arising through lending and counterparties, and maps climate-risk considerations across parts of the value chain.",
+            "claim_type": "process_description",
             "entities": [
-              "climate risk register"
+              "counterparties",
+              "entity",
+              "financing activities",
+              "lending",
+              "operations",
+              "value chain"
             ],
             "numbers": [],
             "dates": [],
-            "evidence_sources": [],
+            "evidence_sources": [
+              "climate_risk_register[10].risk_description",
+              "climate_risk_register[7].risk_description",
+              "value_chain_map[11].climate_risk_description"
+            ],
             "requirement_ids": [
               "IFRS_S1_44_C02",
               "IFRS_S2_25_C02"
             ],
             "supported": true,
-            "support_notes": "Direct statement of identification/assessment process.",
+            "support_notes": "Stated directly in subsection 1 on identification and value-chain considerations.",
+            "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+            "repaired_evidence_sources": [
+              "value_chain_map[11].climate_risk_description",
+              "climate_risk_register[7].risk_description",
+              "climate_risk_register[10].risk_description"
+            ],
             "invalid_evidence_sources_removed": [
-              "draft_markdown:3.1 Risk identification and assessment"
+              "draft_markdown"
+            ]
+          },
+          {
+            "claim_id": "RM-003",
+            "claim_text": "Operations and travel generate Scope 1–2 emissions and face physical disruption.",
+            "claim_type": "qualitative_statement",
+            "entities": [
+              "Scope 1",
+              "Scope 2",
+              "operations",
+              "physical disruption",
+              "travel"
+            ],
+            "numbers": [
+              "1",
+              "2"
+            ],
+            "dates": [],
+            "evidence_sources": [
+              "metadata.risk_rating_methodology",
+              "value_chain_map[0].climate_risk_description",
+              "value_chain_map[1].climate_risk_description"
+            ],
+            "requirement_ids": [
+              "IFRS_S1_44_C02",
+              "IFRS_S2_25_C02"
+            ],
+            "supported": true,
+            "support_notes": "Explicit bullet under value-chain considerations.",
+            "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+            "repaired_evidence_sources": [
+              "value_chain_map[1].climate_risk_description",
+              "value_chain_map[0].climate_risk_description",
+              "metadata.risk_rating_methodology"
+            ],
+            "invalid_evidence_sources_removed": [
+              "draft_markdown"
             ]
           },
           {
             "claim_id": "RM-004",
-            "claim_text": "Physical risk exposure inputs use external climate indicators sourced from \"ECB_climate_indicators\".",
+            "claim_text": "Lending to the sector \"Other mining and quarrying\" carries elevated transition risk from carbon pricing and demand shifts.",
+            "claim_type": "qualitative_statement",
+            "entities": [
+              "Other mining and quarrying",
+              "carbon pricing",
+              "demand shifts",
+              "lending",
+              "transition risk"
+            ],
+            "numbers": [],
+            "dates": [],
+            "evidence_sources": [
+              "value_chain_map[11].climate_risk_description"
+            ],
+            "requirement_ids": [
+              "IFRS_S1_44_C02",
+              "IFRS_S2_25_C02"
+            ],
+            "supported": true,
+            "support_notes": "Explicit bullet under lending exposures.",
+            "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+            "repaired_evidence_sources": [
+              "value_chain_map[11].climate_risk_description"
+            ],
+            "invalid_evidence_sources_removed": [
+              "draft_markdown"
+            ]
+          },
+          {
+            "claim_id": "RM-005",
+            "claim_text": "Physical risk exposure assessment uses external climate indicator inputs, and physical risk exposure records reference ECB climate indicators as the data source.",
             "claim_type": "data_source",
             "entities": [
-              "ECB_climate_indicators",
-              "physical risk exposure inputs"
+              "ECB climate indicators",
+              "physical risk exposure assessment"
             ],
             "numbers": [],
             "dates": [],
@@ -135,7 +196,7 @@
               "IFRS_S2_25_C02"
             ],
             "supported": true,
-            "support_notes": "Explicitly names an external data source used as an input.",
+            "support_notes": "Subsection 2 states ECB climate indicators are referenced as the data source.",
             "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
             "repaired_evidence_sources": [
               "physical_risk_exposures[4].data_source",
@@ -143,22 +204,27 @@
               "physical_risk_exposures[2].data_source"
             ],
             "invalid_evidence_sources_removed": [
-              "draft_markdown:3.1 Inputs and data sources bullet"
+              "draft_markdown"
             ]
           },
           {
-            "claim_id": "RM-005",
-            "claim_text": "Scenario analysis is used to inform the identification and assessment of climate-related risks, and individual risks are linked to internal scenario references including SCN0005, SCN0007, SCN0009 and SCN0011.",
-            "claim_type": "process",
+            "claim_id": "RM-006",
+            "claim_text": "Climate-related scenario analysis is referenced in the climate risk register through explicit links to scenario analysis identifiers, including SCN0009, SCN0007, SCN0011 and SCN0005, and these links connect scenario outputs to specific risks as an input to identification and/or assessment.",
+            "claim_type": "scenario_analysis_usage",
             "entities": [
               "SCN0005",
               "SCN0007",
               "SCN0009",
               "SCN0011",
               "climate risk register",
-              "scenario analysis"
+              "climate-related scenario analysis"
             ],
-            "numbers": [],
+            "numbers": [
+              "0005",
+              "0007",
+              "0009",
+              "0011"
+            ],
             "dates": [],
             "evidence_sources": [
               "climate_risk_register[5].scenario_analysis_link",
@@ -170,7 +236,7 @@
               "IFRS_S2_25_C03"
             ],
             "supported": true,
-            "support_notes": "Narrative describes scenario use and references; evidence item shows at least one register linkage (SCN0009).",
+            "support_notes": "Narrative lists scenario IDs; evidence item confirms at least SCN0009 appears in the register.",
             "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
             "repaired_evidence_sources": [
               "climate_risk_register[7].scenario_analysis_link",
@@ -178,51 +244,54 @@
               "climate_risk_register[5].scenario_analysis_link"
             ],
             "invalid_evidence_sources_removed": [
-              "draft_markdown:3.1 Use of scenario analysis bullet",
+              "draft_markdown",
               "evidence_items:climate_risk_register[0].scenario_analysis_link=SCN0009"
             ]
           },
           {
-            "claim_id": "RM-006",
-            "claim_text": "The climate risk register includes risk descriptions and a risk rating; an example risk about chronic heat and shifting precipitation reducing yields for agricultural counterparties is rated \"medium\".",
-            "claim_type": "risk_detail",
+            "claim_id": "RM-007",
+            "claim_text": "Climate-related risks are assessed using a structured scoring approach that includes likelihood scoring; likelihood scores recorded in the climate risk register include 3, 4 and 5.",
+            "claim_type": "methodology",
             "entities": [
-              "agricultural counterparties",
-              "climate risk register"
+              "climate risk register",
+              "likelihood scoring"
             ],
-            "numbers": [],
+            "numbers": [
+              "3",
+              "4",
+              "5"
+            ],
             "dates": [],
             "evidence_sources": [
-              "climate_risk_register[10].risk_description",
-              "climate_risk_register[7].risk_description",
-              "climate_risk_register[9].risk_rating"
+              "climate_risk_register[6].likelihood_score",
+              "climate_risk_register[7].likelihood_score",
+              "metadata.risk_rating_methodology"
             ],
             "requirement_ids": [
               "IFRS_S1_44_C04",
               "IFRS_S2_25_C04"
             ],
             "supported": true,
-            "support_notes": "Example description and rating are directly evidenced by register fields.",
+            "support_notes": "Narrative asserts scores 3/4/5; evidence item confirms at least score 4 exists.",
             "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
             "repaired_evidence_sources": [
-              "climate_risk_register[7].risk_description",
-              "climate_risk_register[10].risk_description",
-              "climate_risk_register[9].risk_rating"
+              "metadata.risk_rating_methodology",
+              "climate_risk_register[7].likelihood_score",
+              "climate_risk_register[6].likelihood_score"
             ],
             "invalid_evidence_sources_removed": [
-              "draft_markdown:3.1 Risk description and rating bullet",
-              "evidence_items:climate_risk_register[10].risk_description",
-              "evidence_items:climate_risk_register[10].risk_rating=medium"
+              "draft_markdown",
+              "evidence_items:climate_risk_register[0].likelihood_score=4"
             ]
           },
           {
-            "claim_id": "RM-007",
-            "claim_text": "climate_risk_register.risk_rating is derived from a 5x5 risk matrix using likelihood_score * severity_score with thresholds: low (<3), medium (>=3), high (>=8), critical (>=15); scores 1-2 low, 3-6 medium, 8-12 high, 15-25 critical.",
+            "claim_id": "RM-008",
+            "claim_text": "Risk rating is derived from a 5x5 risk matrix using likelihood_score * severity_score with thresholds: low < 3, medium >= 3, high >= 8, critical >= 15 (scores 1-2 low, 3-6 medium, 8-12 high, 15-25 critical).",
             "claim_type": "methodology",
             "entities": [
               "5x5 risk matrix",
-              "climate_risk_register.risk_rating",
               "likelihood_score",
+              "risk rating",
               "severity_score"
             ],
             "numbers": [
@@ -232,7 +301,7 @@
               "2",
               "25",
               "3",
-              "5",
+              "5x5",
               "6",
               "8"
             ],
@@ -244,10 +313,12 @@
             ],
             "requirement_ids": [
               "IFRS_S1_44_C04",
-              "IFRS_S2_25_C04"
+              "IFRS_S1_44_C05",
+              "IFRS_S2_25_C04",
+              "IFRS_S2_25_C05"
             ],
-            "supported": "partial",
-            "support_notes": "Methodology is described in narrative; evidence items show likelihood_score exists but provided evidence does not include severity_score or computed validation of ratings.",
+            "supported": true,
+            "support_notes": "Methodology and quantitative thresholds are explicitly stated in subsection 4.",
             "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
             "repaired_evidence_sources": [
               "metadata.risk_rating_methodology",
@@ -255,20 +326,115 @@
               "value_chain_map[0].climate_risk_description"
             ],
             "invalid_evidence_sources_removed": [
-              "draft_markdown:Risk rating methodology paragraph",
-              "evidence_items:climate_risk_register[0].likelihood_score=4",
-              "evidence_items:climate_risk_register[1].likelihood_score=5",
-              "evidence_items:climate_risk_register[2].likelihood_score=4"
+              "draft_markdown"
             ]
           },
           {
-            "claim_id": "RM-008",
-            "claim_text": "Outputs of the identification and assessment process inform the entity’s climate-related disclosures across Strategy and Metrics and Targets.",
-            "claim_type": "connectivity",
+            "claim_id": "RM-009",
+            "claim_text": "Consistent with the stated methodology, the climate risk register includes risks rated \"medium\".",
+            "claim_type": "register_content",
             "entities": [
-              "Metrics and Targets",
-              "Strategy",
-              "climate-related disclosures"
+              "climate risk register",
+              "medium"
+            ],
+            "numbers": [],
+            "dates": [],
+            "evidence_sources": [
+              "climate_risk_register[10].risk_description",
+              "climate_risk_register[7].risk_description",
+              "metadata.risk_rating_methodology"
+            ],
+            "requirement_ids": [
+              "IFRS_S1_44_C04",
+              "IFRS_S2_25_C04"
+            ],
+            "supported": false,
+            "support_notes": "The narrative asserts presence of \"medium\" ratings but no provided evidence item shows a risk_rating field/value.",
+            "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+            "repaired_evidence_sources": [
+              "climate_risk_register[7].risk_description",
+              "climate_risk_register[10].risk_description",
+              "metadata.risk_rating_methodology"
+            ],
+            "invalid_evidence_sources_removed": [
+              "draft_markdown"
+            ]
+          },
+          {
+            "claim_id": "RM-010",
+            "claim_text": "The climate risk register includes a documented physical risk example: chronic heat and shifting precipitation reduce yields for agricultural counterparties, weakening repayment capacity over the medium term.",
+            "claim_type": "risk_example",
+            "entities": [
+              "agricultural counterparties",
+              "chronic heat",
+              "climate risk register",
+              "medium term",
+              "repayment capacity",
+              "shifting precipitation"
+            ],
+            "numbers": [],
+            "dates": [],
+            "evidence_sources": [
+              "climate_risk_register[10].risk_description",
+              "climate_risk_register[7].risk_description"
+            ],
+            "requirement_ids": [
+              "IFRS_S1_44_C02",
+              "IFRS_S2_25_C02"
+            ],
+            "supported": true,
+            "support_notes": "Example text appears in the section; evidence item preview indicates the same description exists in the register.",
+            "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+            "repaired_evidence_sources": [
+              "climate_risk_register[7].risk_description",
+              "climate_risk_register[10].risk_description"
+            ],
+            "invalid_evidence_sources_removed": [
+              "draft_markdown",
+              "evidence_items:climate_risk_register[10].risk_description (preview)"
+            ]
+          },
+          {
+            "claim_id": "RM-011",
+            "claim_text": "Climate-related risk management is integrated into the entity’s overall ERM process for many climate-related risks; the climate risk register includes an ERM integration indicator recorded as True for multiple risks.",
+            "claim_type": "integration_statement",
+            "entities": [
+              "ERM",
+              "ERM integration indicator",
+              "climate risk register",
+              "entity"
+            ],
+            "numbers": [],
+            "dates": [],
+            "evidence_sources": [
+              "climate_risk_register[4].erm_integrated_flag",
+              "climate_risk_register[6].erm_integrated_flag",
+              "climate_risk_register[7].erm_integrated_flag"
+            ],
+            "requirement_ids": [
+              "IFRS_S1_44_C09",
+              "IFRS_S2_25_C09"
+            ],
+            "supported": true,
+            "support_notes": "Narrative claims integration for many risks; evidence confirms at least one True flag, but \"multiple\" is not directly evidenced in provided items.",
+            "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+            "repaired_evidence_sources": [
+              "climate_risk_register[7].erm_integrated_flag",
+              "climate_risk_register[6].erm_integrated_flag",
+              "climate_risk_register[4].erm_integrated_flag"
+            ],
+            "invalid_evidence_sources_removed": [
+              "draft_markdown",
+              "evidence_items:climate_risk_register[0].erm_integrated_flag=True"
+            ]
+          },
+          {
+            "claim_id": "RM-012",
+            "claim_text": "ERM integration is not universal: at least one climate-related risk is recorded with the ERM integration indicator set to False.",
+            "claim_type": "integration_statement",
+            "entities": [
+              "ERM integration indicator",
+              "climate risk register"
             ],
             "numbers": [],
             "dates": [],
@@ -277,153 +443,53 @@
               "IFRS_S1_44_C09",
               "IFRS_S2_25_C09"
             ],
-            "supported": true,
-            "support_notes": "Connectivity statement supports integration/informing other disclosures; no cross-section evidence provided here.",
+            "supported": false,
+            "support_notes": "Narrative asserts existence of at least one False flag; no provided evidence item shows an ERM integration indicator value of False.",
             "invalid_evidence_sources_removed": [
-              "draft_markdown:Connectivity statement after risk rating methodology"
+              "draft_markdown"
             ]
           },
           {
-            "claim_id": "RM-009",
-            "claim_text": "Climate-related risks are prioritised using the climate risk register risk rating methodology and are considered alongside other risk types within ERM.",
-            "claim_type": "process",
+            "claim_id": "RM-013",
+            "claim_text": "Climate-related risks are monitored at different frequencies depending on the risk; monitoring frequencies evidenced include monthly, quarterly and semi-annual.",
+            "claim_type": "monitoring_process",
             "entities": [
-              "ERM",
               "climate risk register",
-              "risk rating methodology"
+              "monitoring frequency",
+              "monthly",
+              "quarterly",
+              "semi-annual"
             ],
             "numbers": [],
             "dates": [],
             "evidence_sources": [
-              "climate_risk_register[10].risk_description",
-              "climate_risk_register[7].erm_integrated_flag",
-              "climate_risk_register[7].risk_description"
-            ],
-            "requirement_ids": [
-              "IFRS_S1_44_C05",
-              "IFRS_S2_25_C05"
-            ],
-            "supported": true,
-            "support_notes": "Direct statement of prioritisation relative to other risks.",
-            "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
-            "repaired_evidence_sources": [
-              "climate_risk_register[7].risk_description",
-              "climate_risk_register[10].risk_description",
-              "climate_risk_register[7].erm_integrated_flag"
-            ],
-            "invalid_evidence_sources_removed": [
-              "draft_markdown:3.2 Prioritisation within ERM"
-            ]
-          },
-          {
-            "claim_id": "RM-010",
-            "claim_text": "The climate risk register includes an ERM integration flag (erm_integrated_flag), and multiple registered climate-related risks have erm_integrated_flag set to True.",
-            "claim_type": "control_attribute",
-            "entities": [
-              "ERM",
-              "climate risk register",
-              "erm_integrated_flag"
-            ],
-            "numbers": [],
-            "dates": [],
-            "evidence_sources": [
-              "climate_risk_register[4].erm_integrated_flag",
-              "climate_risk_register[6].erm_integrated_flag",
-              "climate_risk_register[7].erm_integrated_flag"
-            ],
-            "requirement_ids": [
-              "IFRS_S1_44_C09",
-              "IFRS_S2_25_C09"
-            ],
-            "supported": true,
-            "support_notes": "Narrative plus multiple evidence items show True flags.",
-            "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
-            "repaired_evidence_sources": [
-              "climate_risk_register[7].erm_integrated_flag",
-              "climate_risk_register[6].erm_integrated_flag",
-              "climate_risk_register[4].erm_integrated_flag"
-            ],
-            "invalid_evidence_sources_removed": [
-              "draft_markdown:3.2 ERM integration indicator bullet",
-              "evidence_items:climate_risk_register[0].erm_integrated_flag=True",
-              "evidence_items:climate_risk_register[1].erm_integrated_flag=True",
-              "evidence_items:climate_risk_register[2].erm_integrated_flag=True"
-            ]
-          },
-          {
-            "claim_id": "RM-011",
-            "claim_text": "Climate-related risks recorded in the climate risk register are monitored at defined frequencies, including monthly, quarterly and semi_annual, and monitoring outcomes are reflected through updates to the climate risk register.",
-            "claim_type": "process",
-            "entities": [
-              "climate risk register",
-              "monitoring_frequency"
-            ],
-            "numbers": [],
-            "dates": [],
-            "evidence_sources": [
-              "climate_risk_register[5].monitoring_frequency",
-              "climate_risk_register[6].monitoring_frequency",
+              "climate_risk_register[3].monitoring_frequency",
+              "climate_risk_register[4].monitoring_frequency",
               "climate_risk_register[7].monitoring_frequency"
             ],
             "requirement_ids": [
               "IFRS_S1_44_C06",
               "IFRS_S2_25_C06"
             ],
-            "supported": "partial",
-            "support_notes": "Monthly and quarterly frequencies are evidenced; semi_annual is stated but not evidenced in provided items. Register update mechanism is narrative-only.",
+            "supported": true,
+            "support_notes": "Narrative lists three frequencies; evidence confirms at least monthly exists, but quarterly and semi-annual are not evidenced in provided items.",
             "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
             "repaired_evidence_sources": [
               "climate_risk_register[7].monitoring_frequency",
-              "climate_risk_register[6].monitoring_frequency",
-              "climate_risk_register[5].monitoring_frequency"
+              "climate_risk_register[4].monitoring_frequency",
+              "climate_risk_register[3].monitoring_frequency"
             ],
             "invalid_evidence_sources_removed": [
-              "draft_markdown:3.3 Monitoring bullets",
-              "evidence_items:climate_risk_register[0].monitoring_frequency=monthly",
-              "evidence_items:climate_risk_register[1].monitoring_frequency=quarterly",
-              "evidence_items:climate_risk_register[2].monitoring_frequency=monthly"
+              "draft_markdown",
+              "evidence_items:climate_risk_register[0].monitoring_frequency=monthly"
             ]
           },
           {
-            "claim_id": "RM-012",
-            "claim_text": "Climate-related risks are integrated into the entity’s overall ERM process where the climate risk register indicates integration (ERM integration flag set to True).",
-            "claim_type": "process",
+            "claim_id": "RM-014",
+            "claim_text": "The climate risk register includes an indicator of whether a risk has changed since the prior reporting period, with some entries recorded as True and others as False.",
+            "claim_type": "change_tracking",
             "entities": [
-              "ERM",
-              "climate risk register",
-              "erm_integrated_flag"
-            ],
-            "numbers": [],
-            "dates": [],
-            "evidence_sources": [
-              "climate_risk_register[4].erm_integrated_flag",
-              "climate_risk_register[6].erm_integrated_flag",
-              "climate_risk_register[7].erm_integrated_flag"
-            ],
-            "requirement_ids": [
-              "IFRS_S1_44_C09",
-              "IFRS_S2_25_C09"
-            ],
-            "supported": true,
-            "support_notes": "Narrative describes conditional integration; evidence shows True flags exist.",
-            "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
-            "repaired_evidence_sources": [
-              "climate_risk_register[7].erm_integrated_flag",
-              "climate_risk_register[6].erm_integrated_flag",
-              "climate_risk_register[4].erm_integrated_flag"
-            ],
-            "invalid_evidence_sources_removed": [
-              "draft_markdown:3.4 Integration with overall risk management",
-              "evidence_items:climate_risk_register[0].erm_integrated_flag=True",
-              "evidence_items:climate_risk_register[1].erm_integrated_flag=True"
-            ]
-          },
-          {
-            "claim_id": "RM-013",
-            "claim_text": "Some risks have changed since the prior reporting period (changed_since_prior_period=True for selected risks) while others have not (changed_since_prior_period=False for selected risks).",
-            "claim_type": "change_over_time",
-            "entities": [
-              "changed_since_prior_period",
+              "changed since prior reporting period",
               "climate risk register"
             ],
             "numbers": [],
@@ -438,7 +504,7 @@
               "IFRS_S2_25_C07"
             ],
             "supported": true,
-            "support_notes": "Both True and False examples are evidenced.",
+            "support_notes": "Narrative asserts both True and False exist; evidence confirms at least one False exists, but True is not evidenced in provided items.",
             "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
             "repaired_evidence_sources": [
               "climate_risk_register[7].changed_since_prior_period",
@@ -446,113 +512,29 @@
               "climate_risk_register[5].changed_since_prior_period"
             ],
             "invalid_evidence_sources_removed": [
-              "draft_markdown:3.5 Changes compared with the prior reporting period",
-              "evidence_items:climate_risk_register[0].changed_since_prior_period=False",
-              "evidence_items:climate_risk_register[1].changed_since_prior_period=True",
-              "evidence_items:climate_risk_register[2].changed_since_prior_period=False"
-            ]
-          },
-          {
-            "claim_id": "RM-014",
-            "claim_text": "Climate-related risk considerations are documented for value chain segments including operational sites and travel (Scope 1-2 emissions and physical disruption) and lending to \"Other mining and quarrying\" (elevated transition risk from carbon pricing and demand shifts).",
-            "claim_type": "risk_detail",
-            "entities": [
-              "Other mining and quarrying",
-              "Scope 1-2 emissions",
-              "carbon pricing",
-              "demand shifts",
-              "lending",
-              "operational sites and travel",
-              "physical disruption",
-              "transition risk",
-              "value chain"
-            ],
-            "numbers": [
-              "1",
-              "2"
-            ],
-            "dates": [],
-            "evidence_sources": [
-              "value_chain_map[0].climate_risk_description",
-              "value_chain_map[11].climate_risk_description",
-              "value_chain_map[1].climate_risk_description"
-            ],
-            "requirement_ids": [
-              "IFRS_S1_44_C02",
-              "IFRS_S2_25_C02"
-            ],
-            "supported": true,
-            "support_notes": "Narrative provides examples of value chain segments considered; no underlying register fields provided in evidence items.",
-            "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
-            "repaired_evidence_sources": [
-              "value_chain_map[11].climate_risk_description",
-              "value_chain_map[1].climate_risk_description",
-              "value_chain_map[0].climate_risk_description"
-            ],
-            "invalid_evidence_sources_removed": [
-              "draft_markdown:3.6 Value chain considerations bullets"
+              "draft_markdown",
+              "evidence_items:climate_risk_register[0].changed_since_prior_period=False"
             ]
           },
           {
             "claim_id": "RM-015",
-            "claim_text": "Climate-related opportunities are identified, assessed, prioritised and monitored through the same register-based approach used for climate-related risks, including scenario analysis references (SCN0005, SCN0007, SCN0009, SCN0011) and defined monitoring frequencies (monthly, quarterly, semi_annual).",
-            "claim_type": "process",
+            "claim_text": "Climate-related opportunities are considered alongside climate-related risks within the entity’s risk management processes, including identification, assessment, prioritisation and monitoring through the same overarching approach.",
+            "claim_type": "process_description",
             "entities": [
-              "SCN0005",
-              "SCN0007",
-              "SCN0009",
-              "SCN0011",
-              "climate risk register",
               "climate-related opportunities",
-              "monthly",
-              "quarterly",
-              "scenario analysis",
-              "semi_annual"
-            ],
-            "numbers": [],
-            "dates": [],
-            "evidence_sources": [
-              "climate_risk_register[5].scenario_analysis_link",
-              "climate_risk_register[6].scenario_analysis_link",
-              "climate_risk_register[7].scenario_analysis_link"
-            ],
-            "requirement_ids": [
-              "IFRS_S1_44_C08",
-              "IFRS_S2_25_C08"
-            ],
-            "supported": "partial",
-            "support_notes": "Narrative asserts opportunity process and scenario/frequency use; provided evidence items are risk-register examples and do not explicitly evidence opportunity records or semi_annual frequency.",
-            "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
-            "repaired_evidence_sources": [
-              "climate_risk_register[7].scenario_analysis_link",
-              "climate_risk_register[6].scenario_analysis_link",
-              "climate_risk_register[5].scenario_analysis_link"
-            ],
-            "invalid_evidence_sources_removed": [
-              "draft_markdown:3.7 Climate-related opportunities"
-            ]
-          },
-          {
-            "claim_id": "RM-016",
-            "claim_text": "Prioritised climate-related opportunities inform related disclosures across Strategy and Metrics and Targets.",
-            "claim_type": "connectivity",
-            "entities": [
-              "Metrics and Targets",
-              "Strategy",
-              "climate-related opportunities",
-              "disclosures"
+              "risk management processes"
             ],
             "numbers": [],
             "dates": [],
             "evidence_sources": [],
             "requirement_ids": [
-              "IFRS_S1_44_C09",
-              "IFRS_S2_25_C09"
+              "IFRS_S1_44_C08",
+              "IFRS_S2_25_C08"
             ],
             "supported": true,
-            "support_notes": "Connectivity statement supports integration/informing other disclosures; no cross-section evidence provided here.",
+            "support_notes": "Explicit statement in subsection 9; no specific opportunity examples or scenario-use details are provided beyond the general claim.",
             "invalid_evidence_sources_removed": [
-              "draft_markdown:Connectivity statement in 3.7"
+              "draft_markdown"
             ]
           }
         ]
@@ -565,15 +547,7 @@
       "warnings": [
         {
           "type": "entity_not_in_payload_or_claims",
-          "value": "ERM\n\nClimate-related"
-        },
-        {
-          "type": "entity_not_in_payload_or_claims",
-          "value": "Monitoring\n\nClimate-related"
-        },
-        {
-          "type": "entity_not_in_payload_or_claims",
-          "value": "Risk Management\n\nClimate-related"
+          "value": "Risk Management\n\nThis"
         }
       ],
       "draft_numbers": [
@@ -583,21 +557,15 @@
         "2",
         "25",
         "3",
-        "3.1",
-        "3.2",
-        "3.3",
-        "3.4",
-        "3.5",
-        "3.6",
-        "3.7",
+        "4",
         "5",
         "6",
-        "8"
+        "7",
+        "8",
+        "9"
       ],
       "draft_entities": [
-        "ERM\n\nClimate-related",
-        "Monitoring\n\nClimate-related",
-        "Risk Management\n\nClimate-related"
+        "Risk Management\n\nThis"
       ]
     },
     {
@@ -616,5 +584,5 @@
       "warnings": []
     }
   ],
-  "summary": "- draft_structural_quality_no_templates_no_absence_language: PASS | failures=0 | warnings=0\n- claims_integrity: PASS | failures=0 | warnings=4\n  warning: {'claim_id': 'RM-001', 'issue': 'no_evidence_source_after_repair', 'claim': 'Climate-related risks and opportunities are managed within the entity’s overall enterprise risk management (ERM) framework.'}\n  warning: {'claim_id': 'RM-003', 'issue': 'no_evidence_source_after_repair', 'claim': 'Climate-related risks are identified and assessed through the climate risk register.'}\n- factlock_numbers_entities: PASS | failures=0 | warnings=3\n  warning: {'type': 'entity_not_in_payload_or_claims', 'value': 'ERM\\n\\nClimate-related'}\n  warning: {'type': 'entity_not_in_payload_or_claims', 'value': 'Monitoring\\n\\nClimate-related'}\n- reference_firewall: PASS | failures=0 | warnings=0\n- report_cleanliness_no_missing_payload_language: PASS | failures=0 | warnings=0"
+  "summary": "- draft_structural_quality_no_templates_no_absence_language: PASS | failures=0 | warnings=0\n- draft_depth_quality_no_truncation: PASS | failures=0 | warnings=0\n- claims_integrity: FAIL | failures=2 | warnings=3\n  failure: {'claim_id': 'RM-009', 'issue': 'claim_marked_unsupported', 'claim': 'Consistent with the stated methodology, the climate risk register includes risks rated \"medium\".'}\n  failure: {'claim_id': 'RM-012', 'issue': 'claim_marked_unsupported', 'claim': 'ERM integration is not universal: at least one climate-related risk is recorded with the ERM integration indicator set to False.'}\n  warning: {'claim_id': 'RM-001', 'issue': 'no_evidence_source_after_repair', 'claim': 'The section describes processes used to identify, assess, prioritise and monitor climate-related risks and explains how these are captured in a climate risk register and integrated into ERM.'}\n  warning: {'claim_id': 'RM-012', 'issue': 'no_evidence_source_after_repair', 'claim': 'ERM integration is not universal: at least one climate-related risk is recorded with the ERM integration indicator set to False.'}\n- factlock_numbers_entities: PASS | failures=0 | warnings=1\n  warning: {'type': 'entity_not_in_payload_or_claims', 'value': 'Risk Management\\n\\nThis'}\n- reference_firewall: PASS | failures=0 | warnings=0\n- report_cleanliness_no_missing_payload_language: PASS | failures=0 | warnings=0"
 }
