@@ -1,71 +1,51 @@
 ## Metrics and targets
 
-The entity shall disclose, for each sustainability-related risk and opportunity that could reasonably be expected to affect the entity’s prospects:
+The entity discloses metrics and targets used to measure and monitor sustainability-related risks and opportunities that could reasonably be expected to affect the entity’s prospects, including:
 
-- **Metrics required by an applicable IFRS Sustainability Disclosure Standard**.
-- **Metrics the entity uses to measure and monitor**:
+- metrics required by applicable IFRS Sustainability Disclosure Standards; and
+- metrics the entity uses to measure and monitor:
   - the sustainability-related risk or opportunity; and
-  - the entity’s performance in relation to that sustainability-related risk or opportunity, including progress towards any targets the entity has set, and any targets it is required to meet by law or regulation.
+  - performance in relation to that sustainability-related risk or opportunity, including progress towards any targets the entity has set and any targets it is required to meet by law or regulation.
 
-In the absence of an IFRS Sustainability Disclosure Standard that specifically applies to a sustainability-related risk or opportunity, the entity shall apply paragraphs 57–58 to identify applicable metrics.
+### Identification and sourcing of metrics
 
-Metrics disclosed shall include metrics associated with particular business models, activities or other common features that characterise participation in an industry.
-
-### Use of metrics from sources other than IFRS Sustainability Disclosure Standards
-
-If the entity discloses a metric taken from a source other than IFRS Sustainability Disclosure Standards, the entity shall identify:
-
-- the **source**; and
-- the **metric taken**.
+- When a metric is taken from a source other than IFRS Sustainability Disclosure Standards, the entity identifies the source and the metric taken.
+- In the absence of an IFRS Sustainability Disclosure Standard that specifically applies to a sustainability-related risk or opportunity, the entity applies the relevant IFRS S1 requirements to identify applicable metrics.
+- Metrics disclosed include metrics associated with particular business models, activities or other common features that characterise participation in an industry.
 
 ### Entity-developed metrics
 
-If a metric has been developed by the entity, the entity shall disclose information about:
+If a metric has been developed by the entity, the entity discloses information about:
 
-- **How the metric is defined**, including whether it is derived by adjusting a metric taken from a source other than IFRS Sustainability Disclosure Standards and, if so, which source and how the metric disclosed differs from the metric specified in that source.
-- **Whether the metric is** an absolute measure, a measure expressed in relation to another metric, or a qualitative measure (such as a red, amber, green—or RAG—status).
-- **Whether the metric is validated by a third party** and, if so, which party.
-- **The method used to calculate the metric and the inputs to the calculation**, including the limitations of the method used and the significant assumptions made.
+- **Definition**: how the metric is defined, including whether it is derived by adjusting a metric taken from a source other than IFRS Sustainability Disclosure Standards and, if so, which source and how the metric differs from the metric specified in that source.
+- **Type of measure**: whether the metric is an absolute measure, a measure expressed in relation to another metric, or a qualitative measure.
+- **Third-party validation**: whether the metric is validated by a third party and, if so, which party.
+- **Calculation method**: the method used to calculate the metric and the inputs to the calculation, including the limitations of the method used and the significant assumptions made.
 
 ### Targets
 
-The entity shall disclose information about:
+The entity discloses information about:
 
-- the targets it has set to monitor progress towards achieving its strategic goals; and
+- targets it has set to monitor progress towards achieving its strategic goals; and
 - any targets it is required to meet by law or regulation.
 
-For each target, the entity shall disclose:
+For each target, the entity discloses:
 
-- the **metric used** to set the target and to monitor progress towards reaching the target;
-- the **specific quantitative or qualitative target** the entity has set or is required to meet;
-- the **period** over which the target applies;
-- the **base period** from which progress is measured;
-- any **milestones and interim targets**;
-- **performance against each target** and an analysis of trends or changes in the entity’s performance; and
-- any **revisions to the target** and an explanation for those revisions.
+- the metric used to set the target and to monitor progress towards reaching the target;
+- the specific quantitative or qualitative target the entity has set or is required to meet;
+- the period over which the target applies;
+- the base period from which progress is measured;
+- any milestones and interim targets;
+- performance against each target and an analysis of trends or changes in performance; and
+- any revisions to the target and an explanation for those revisions.
 
-### Consistency of definitions and calculations
+### Consistency and comparability of metrics over time
 
-The definition and calculation of metrics, including metrics used to set targets and monitor progress towards reaching them, shall be consistent over time. If a metric is redefined or replaced, the entity shall apply paragraph B52.
+- The definition and calculation of metrics (including metrics used to set targets and monitor progress) are applied consistently over time.
+- If a metric is redefined or replaced in the reporting period, the entity discloses a revised comparative amount (unless impracticable), explains the changes, and explains the reasons for those changes.
+- If the entity introduces a new metric in the reporting period, it discloses a comparative amount for that metric unless impracticable.
+- If new information is identified in relation to an estimated amount disclosed in the preceding period and that new information provides evidence of circumstances that existed in that period, the entity discloses a revised comparative amount, the difference between the previously disclosed amount and the revised comparative amount, and the reasons for revising the comparative amount.
 
-The entity shall label and define metrics and targets using meaningful, clear and precise names and descriptions.
+### Labelling and definitions
 
-### Comparative information and revisions to comparative amounts
-
-Comparative information is required in respect of the preceding period for all amounts disclosed in the reporting period.
-
-In some cases, the amount disclosed for a metric is an estimate. Except as specified in paragraph B51, if the entity identifies new information in relation to the estimated amount disclosed in the preceding period and the new information provides evidence of circumstances that existed in that period, the entity shall:
-
-- disclose a **revised comparative amount** that reflects that new information;
-- disclose the **difference** between the amount disclosed in the preceding period and the revised comparative amount; and
-- **explain the reasons** for revising the comparative amount.
-
-If the entity redefines or replaces a metric in the reporting period, the entity shall:
-
-- disclose a **revised comparative amount**, unless it is impracticable to do so;
-- **explain the changes**; and
-- **explain the reasons** for those changes, including why the redefined or replacement metric provides more useful information.
-
-If the entity introduces a new metric in the reporting period, it shall disclose a comparative amount for that metric unless it is impracticable to do so.
-
-Sometimes, it is impracticable to revise a comparative amount to achieve comparability with the reporting period. If it is impracticable to revise a comparative amount for the preceding period, the entity shall disclose that fact.
+The entity labels and defines metrics and targets using meaningful, clear and precise names and descriptions.

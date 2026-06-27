@@ -1,48 +1,35 @@
 ## Risk Management
 
-### Risk identification, assessment, prioritisation and monitoring (sustainability-related and climate-related)
+### Overview
+The entity’s sustainability-related and climate-related risks are managed through processes that include identification, assessment, prioritisation and monitoring. Climate-related risks are recorded in a climate risk register that includes risk descriptions, risk ratings, likelihood scores, monitoring frequency, and indicators of integration with enterprise risk management (ERM).
 
-The entity’s processes to identify, assess, prioritise and monitor sustainability-related risks and opportunities include climate-related risks and opportunities.
+### Inputs and parameters used to identify and assess risks
+The processes use defined inputs and parameters, including:
 
-#### Inputs and parameters used
+- **Risk rating methodology** (used to support consistent assessment and prioritisation of risks).
+- **Physical risk exposure data sources** used in assessing physical climate risk exposures.
+- **Value chain risk mapping** that captures climate risk descriptions across value chain segments.
 
-Inputs and parameters used in the identification and assessment processes include:
+### Scenario analysis
+Scenario analysis is used to inform the identification of climate-related risks and opportunities. The climate risk register includes references linking specific risks to scenario analysis.
 
-- **Data sources for physical risk exposure assessment**, as recorded for physical risk exposures (for example, third-party or internal sources as specified in the physical risk exposure records).
-- **Risk rating methodology**, as documented in the entity’s risk rating methodology.
-- **Value chain risk descriptions**, as captured in the value chain mapping (for example, climate risk descriptions by value chain segment).
+### Assessing the nature, likelihood and magnitude of effects
+Sustainability-related and climate-related risks are assessed using structured attributes captured in the climate risk register, including:
 
-#### Scenario analysis
+- **Likelihood score** (to support assessment of the probability of occurrence).
+- **Risk rating** (to support assessment of overall risk level).
 
-The entity links scenario analysis to the identification of climate-related risks and opportunities through scenario analysis references recorded in the climate risk register.
+### Prioritisation relative to other risks
+Climate-related risks are prioritised using the entity’s risk rating methodology and recorded risk ratings. The climate risk register includes an **ERM integration flag**, indicating that climate-related risks are considered within the broader risk management context.
 
-#### Assessment of nature, likelihood and magnitude
+### Monitoring
+Climate-related risks are monitored using defined **monitoring frequencies** recorded in the climate risk register.
 
-The entity assesses climate-related risks using recorded assessment attributes in the climate risk register, including:
+### Changes compared with the previous reporting period
+The climate risk register includes an indicator of whether each recorded climate-related risk has **changed since the prior reporting period**.
 
-- **Likelihood scoring** (likelihood score recorded per risk).
-- **Risk rating** (risk rating recorded per risk).
-
-#### Prioritisation relative to other risks
-
-Climate-related risks are prioritised using the entity’s risk rating approach as documented in the risk rating methodology and applied through risk ratings recorded in the climate risk register.
-
-#### Monitoring
-
-Climate-related risks are monitored in accordance with monitoring attributes recorded in the climate risk register, including:
-
-- **Monitoring frequency** (monitoring frequency recorded per risk).
-
-#### Changes compared with the previous reporting period
-
-Changes to climate-related risk management processes compared with the previous reporting period are tracked through the **“changed since prior period”** indicator recorded in the climate risk register.
-
-### Sustainability-related and climate-related opportunities
-
-The entity’s processes to identify, assess, prioritise and monitor sustainability-related opportunities include climate-related opportunities. Scenario analysis linkages to climate-related opportunities are recorded through scenario analysis references in the climate risk register.
+### Processes for identifying, assessing, prioritising and monitoring opportunities
+The entity applies processes to identify, assess, prioritise and monitor sustainability-related and climate-related opportunities. For climate-related opportunities, scenario analysis is used to inform identification, as reflected through scenario analysis references in the climate risk register.
 
 ### Integration with overall risk management
-
-Integration of climate-related risk and opportunity processes into the entity’s overall risk management process is reflected through the **ERM integration flag** recorded in the climate risk register.
-
-Consistent with the approach to avoid unnecessary duplication, where sustainability-related and climate-related risks and opportunities are managed on an integrated basis, the entity provides integrated risk management disclosures rather than separate disclosures for each sustainability-related risk and opportunity.
+Climate-related risks and opportunities are managed on an integrated basis with overall risk management, as indicated by the ERM integration flags recorded in the climate risk register. Consistent with this integrated approach, the entity provides integrated risk management disclosures for climate-related matters.

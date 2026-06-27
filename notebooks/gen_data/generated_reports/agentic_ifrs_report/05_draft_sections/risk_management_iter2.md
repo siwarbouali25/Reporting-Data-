@@ -1,56 +1,28 @@
-## 3 Risk Management
+## Risk Management
 
-### 3.1 Integration with overall risk management
+### Overview
+The entity manages sustainability-related and climate-related risks through processes that include identification, assessment, prioritisation and monitoring. Climate-related risks are recorded in a climate risk register.
 
-Climate-related risks and opportunities are incorporated into the entity’s overall risk management process. Integration is tracked through the **ERM integration flag** recorded in the climate risk register.
+### Inputs and parameters used to identify and assess risks
+Inputs and parameters used in the identification and assessment of climate-related risks include:
 
-Refer to [Section: Governance] and [Section: Strategy].
+- the entity’s documented risk rating methodology; and
+- physical risk exposure data sources used in assessing physical climate risk exposures.
 
-### 3.2 Risk identification, assessment, prioritisation and monitoring (climate-related)
+### Scenario analysis
+Scenario analysis is used to inform the identification of climate-related risks. The climate risk register includes references linking specific risks to scenario analysis.
 
-This subsection describes the entity’s end-to-end process to **identify → assess → prioritise → monitor → update** climate-related risks.
+### Assessing the nature, likelihood and magnitude of effects
+Climate-related risks are assessed using structured attributes captured in the climate risk register, including likelihood scores and risk ratings.
 
-#### Inputs, parameters and scope of operations/value chain covered
+### Prioritisation relative to other risks
+Climate-related risks are prioritised using the entity’s risk rating methodology.
 
-Inputs and parameters used in the identification and assessment processes include:
+### Monitoring
+Climate-related risks are monitored using defined monitoring frequencies recorded in the climate risk register.
 
-- **Data sources for physical risk exposure assessment**—captured in physical risk exposure records.
-- **Risk rating approach (risk matrix)**—as set out in the entity’s risk rating methodology.
-- **Value chain risk descriptions**—captured in the value chain mapping.
+### Changes compared with the previous reporting period
+The climate risk register includes an indicator of whether each recorded climate-related risk has changed since the prior reporting period.
 
-The scope of operations and value chain covered by these processes is reflected in the entity’s physical risk exposure records and value chain mapping.
-
-#### Scenario analysis
-
-Where applicable, the entity links scenario analysis to the identification of climate-related risks through scenario analysis references recorded in the climate risk register.
-
-#### Assessment of nature, likelihood and magnitude
-
-The entity assesses climate-related risks using assessment attributes recorded in the climate risk register, including:
-
-- **Likelihood scoring**—used to estimate the probability of occurrence.
-- **Risk rating**—used to summarise the assessed level of risk.
-
-#### Prioritisation relative to other risks
-
-Climate-related risks are prioritised based on their **risk rating** recorded in the climate risk register.
-
-#### Monitoring
-
-Climate-related risks are monitored using monitoring attributes recorded in the climate risk register, including:
-
-- **Monitoring frequency**—used to determine how often each risk is reviewed and updated.
-
-#### Changes compared with the previous reporting period
-
-Changes to climate-related risk management processes compared with the previous reporting period are reflected through the **“changed since prior period”** indicator recorded in the climate risk register.
-
-See [Section: Metrics and Targets].
-
-### 3.3 Climate-related opportunities
-
-This subsection describes how the entity identifies, assesses, prioritises and monitors climate-related opportunities.
-
-Where applicable, scenario analysis linkages are captured through scenario analysis references recorded in the climate risk register.
-
-Refer to [Section: Strategy].
+### Integration with overall risk management
+The climate risk register includes an indicator of whether a climate-related risk is integrated with enterprise risk management (ERM).

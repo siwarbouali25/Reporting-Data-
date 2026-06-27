@@ -1,3 +1,3 @@
 ## Governance
 
-This section describes governance arrangements for sustainability-related and climate-related risks and opportunities. The disclosures in this section are limited to information available in the reporting dataset.
+This section is intentionally omitted in this synthetic demo because no entity-specific, evidence-supported information has been provided to identify the relevant governance bodies/individuals, describe their responsibilities, reporting cadence, skills/competency approach, oversight of strategy/transactions/risk management, target-setting oversight, or management’s role, controls and procedures for sustainability- or climate-related risks and opportunities.

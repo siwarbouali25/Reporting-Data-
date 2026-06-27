@@ -6,36 +6,46 @@
 
 ## Policy
 
-The report contains only evidence-supported disclosures. Requirements not available in the synthetic payload are recorded in JSON audit files and are not mentioned in report prose.
+The report contains only evidence-supported disclosures. Missing requirements and missing-data explanations are recorded in audit files only and must not appear in report prose.
 
 ## Section summary
 
 ### General Requirements
 - Requirements total: 108
-- Coverage counts: `{'covered': 79, 'not_available_in_payload': 14, 'partially_covered': 15}`
-- Missing requirements count: 14
+- Coverage counts: `{'partially_covered': 45, 'not_available_in_payload': 10, 'covered': 53}`
+- Missing requirements count: 10
+- Section readiness score: 69.91
+- Section generation score: None
 - Approved markdown exists: False
 
 ### Governance
 - Requirements total: 15
-- Coverage counts: `{'covered': 15}`
+- Coverage counts: `{'covered': 14, 'partially_covered': 1}`
 - Missing requirements count: 0
+- Section readiness score: 96.67
+- Section generation score: None
 - Approved markdown exists: False
 
 ### Strategy
 - Requirements total: 70
-- Coverage counts: `{'not_available_in_payload': 4, 'covered': 57, 'partially_covered': 9}`
-- Missing requirements count: 4
+- Coverage counts: `{'covered': 54, 'partially_covered': 16}`
+- Missing requirements count: 0
+- Section readiness score: 88.57
+- Section generation score: None
 - Approved markdown exists: False
 
 ### Risk Management
 - Requirements total: 17
-- Coverage counts: `{'covered': 17}`
+- Coverage counts: `{'covered': 10, 'partially_covered': 7}`
 - Missing requirements count: 0
+- Section readiness score: 79.41
+- Section generation score: None
 - Approved markdown exists: False
 
 ### Metrics and Targets
 - Requirements total: 151
-- Coverage counts: `{'covered': 142, 'partially_covered': 7, 'not_available_in_payload': 2}`
-- Missing requirements count: 2
+- Coverage counts: `{'partially_covered': 10, 'covered': 125, 'not_available_in_payload': 16}`
+- Missing requirements count: 16
+- Section readiness score: 86.09
+- Section generation score: None
 - Approved markdown exists: False

@@ -8,44 +8,20 @@
       "failures": [],
       "warnings": [
         {
-          "claim_id": "GOV-001",
+          "claim_id": "GOV_CLAIM_001",
           "issue": "no_evidence_source_after_repair",
-          "claim": "This section describes the governance arrangements for oversight of sustainability-related risks and opportunities, including climate-related risks and opportunities."
-        },
-        {
-          "claim_id": "GOV-002",
-          "issue": "no_evidence_source_after_repair",
-          "claim": "The governance body(ies) or individual(s) responsible for oversight of sustainability-related risks and opportunities, including climate-related risks and opportunities, are not identified in this section."
+          "claim": "Governance disclosures are not presented in this report."
         }
       ],
-      "claim_count": 3,
+      "claim_count": 1,
       "claims_register_normalized": {
         "section_name": "Governance",
         "claims": [
           {
-            "claim_id": "GOV-001",
-            "claim_text": "This section describes the governance arrangements for oversight of sustainability-related risks and opportunities, including climate-related risks and opportunities.",
-            "claim_type": "descriptive",
-            "entities": [
-              "governance arrangements"
-            ],
-            "numbers": [],
-            "dates": [],
-            "evidence_sources": [],
-            "requirement_ids": [],
-            "supported": true,
-            "support_notes": "Statement is present as an introductory description; no specific governance details are provided elsewhere in the section.",
-            "invalid_evidence_sources_removed": [
-              "draft_markdown"
-            ]
-          },
-          {
-            "claim_id": "GOV-002",
-            "claim_text": "The governance body(ies) or individual(s) responsible for oversight of sustainability-related risks and opportunities, including climate-related risks and opportunities, are not identified in this section.",
-            "claim_type": "absence_of_disclosure",
-            "entities": [
-              "governance body(ies) or individual(s)"
-            ],
+            "claim_id": "GOV_CLAIM_001",
+            "claim_text": "Governance disclosures are not presented in this report.",
+            "claim_type": "disclosure_absence",
+            "entities": [],
             "numbers": [],
             "dates": [],
             "evidence_sources": [],
@@ -55,49 +31,18 @@
               "IFRS_S1_27_C04",
               "IFRS_S1_27_C05",
               "IFRS_S1_27_C06",
+              "IFRS_S1_27_C08",
+              "IFRS_S1_27_C09",
               "IFRS_S2_6_C02",
               "IFRS_S2_6_C03",
               "IFRS_S2_6_C04",
               "IFRS_S2_6_C05",
-              "IFRS_S2_6_C06"
-            ],
-            "supported": true,
-            "support_notes": "The section explicitly states the oversight body/individuals are not identified; therefore the related governance-body disclosure requirements are not met by this section.",
-            "invalid_evidence_sources_removed": [
-              "draft_markdown"
-            ]
-          },
-          {
-            "claim_id": "GOV-003",
-            "claim_text": "Management’s role in the governance processes, controls and procedures used to monitor, manage and oversee sustainability-related risks and opportunities, including climate-related risks and opportunities, is not described in this section.",
-            "claim_type": "absence_of_disclosure",
-            "entities": [
-              "controls",
-              "governance processes",
-              "management",
-              "procedures"
-            ],
-            "numbers": [],
-            "dates": [],
-            "evidence_sources": [
-              "governance[0].management_committee_name",
-              "governance[1].management_committee_name",
-              "governance[2].management_committee_name"
-            ],
-            "requirement_ids": [
-              "IFRS_S1_27_C08",
-              "IFRS_S1_27_C09",
+              "IFRS_S2_6_C06",
               "IFRS_S2_6_C08",
               "IFRS_S2_6_C09"
             ],
             "supported": true,
-            "support_notes": "The section explicitly states management’s role is not described; therefore the related management-role disclosure requirements are not met by this section.",
-            "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
-            "repaired_evidence_sources": [
-              "governance[2].management_committee_name",
-              "governance[1].management_committee_name",
-              "governance[0].management_committee_name"
-            ],
+            "support_notes": "The section explicitly states governance disclosures are not presented; this supports a non-disclosure statement but indicates non-compliance with the listed mandatory governance disclosure requirements.",
             "invalid_evidence_sources_removed": [
               "draft_markdown"
             ]
@@ -112,12 +57,12 @@
       "warnings": [
         {
           "type": "entity_not_in_payload_or_claims",
-          "value": "Governance\n\nThis"
+          "value": "Governance\n\nGovernance"
         }
       ],
       "draft_numbers": [],
       "draft_entities": [
-        "Governance\n\nThis"
+        "Governance\n\nGovernance"
       ]
     },
     {
@@ -136,5 +81,5 @@
       "warnings": []
     }
   ],
-  "summary": "- claims_integrity: PASS | failures=0 | warnings=2\n  warning: {'claim_id': 'GOV-001', 'issue': 'no_evidence_source_after_repair', 'claim': 'This section describes the governance arrangements for oversight of sustainability-related risks and opportunities, including climate-related risks and opportunities.'}\n  warning: {'claim_id': 'GOV-002', 'issue': 'no_evidence_source_after_repair', 'claim': 'The governance body(ies) or individual(s) responsible for oversight of sustainability-related risks and opportunities, including climate-related risks and opportunities, are not identified in this section.'}\n- factlock_numbers_entities: PASS | failures=0 | warnings=1\n  warning: {'type': 'entity_not_in_payload_or_claims', 'value': 'Governance\\n\\nThis'}\n- reference_firewall: PASS | failures=0 | warnings=0\n- report_cleanliness_no_missing_payload_language: PASS | failures=0 | warnings=0"
+  "summary": "- claims_integrity: PASS | failures=0 | warnings=1\n  warning: {'claim_id': 'GOV_CLAIM_001', 'issue': 'no_evidence_source_after_repair', 'claim': 'Governance disclosures are not presented in this report.'}\n- factlock_numbers_entities: PASS | failures=0 | warnings=1\n  warning: {'type': 'entity_not_in_payload_or_claims', 'value': 'Governance\\n\\nGovernance'}\n- reference_firewall: PASS | failures=0 | warnings=0\n- report_cleanliness_no_missing_payload_language: PASS | failures=0 | warnings=0"
 }
