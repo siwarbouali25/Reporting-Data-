@@ -8,18 +8,16 @@
       "failures": [
         {
           "type": "placeholder_brackets",
-          "count": 23,
+          "count": 8,
           "examples": [
-            "[0]",
-            "[8]",
-            "[8]",
-            "[2]",
-            "[8]",
-            "[34]",
-            "[35]",
-            "[2]",
-            "[34]",
-            "[0]"
+            "[Section: Strategy]",
+            "[Section: Metrics and Targets]",
+            "[Section: Risk Management]",
+            "[Section: Risk Management]",
+            "[Section: Risk Management]",
+            "[Section: Strategy]",
+            "[Section: Strategy]",
+            "[Section: Metrics and Targets]"
           ]
         }
       ],
@@ -27,27 +25,41 @@
     },
     {
       "gate_name": "draft_depth_quality_no_truncation",
-      "passed": true,
-      "failures": [],
-      "warnings": []
-    },
-    {
-      "gate_name": "draft_prose_polish_no_raw_fields_no_booleans_no_unavailable_language",
       "passed": false,
       "failures": [
         {
-          "type": "raw_snake_case_field_names_in_report",
-          "examples": [
-            "board_minutes"
-          ],
-          "translation_hints": {},
-          "required_fix": "Translate raw dataset field names into readable labels or formulas."
-        },
-        {
-          "type": "raw_dataset_field_still_present_after_v88",
-          "required_fix": "Translate remaining snake_case fields into readable labels."
+          "type": "section_too_short_or_truncated",
+          "word_count": 492,
+          "minimum_word_count": 800,
+          "evidence_path_count": 38,
+          "required_fix": "Expand the section using existing evidence only; do not add unsupported facts or missing-data language."
         }
       ],
+      "warnings": [
+        {
+          "type": "many_short_subsections",
+          "examples": [
+            {
+              "heading": "1.4 Integration with enterprise risk management",
+              "word_count": 39
+            },
+            {
+              "heading": "1.5 Major transactions: climate-related check",
+              "word_count": 34
+            },
+            {
+              "heading": "1.6 Skills and competence",
+              "word_count": 48
+            }
+          ],
+          "suggested_fix": "Add explanatory narrative to each supported subsection."
+        }
+      ]
+    },
+    {
+      "gate_name": "draft_prose_polish_no_raw_fields_no_booleans_no_unavailable_language",
+      "passed": true,
+      "failures": [],
       "warnings": []
     },
     {
@@ -58,98 +70,75 @@
     },
     {
       "gate_name": "claims_integrity",
-      "passed": false,
-      "failures": [
-        {
-          "claim_id": "GOV-001",
-          "issue": "claim_marked_unsupported",
-          "claim": "The governance disclosures are presented on an integrated basis for climate-related and broader sustainability-related matters, using the same governance bodies, reporting cadence and committee structures."
-        },
-        {
-          "claim_id": "GOV-002",
-          "issue": "claim_marked_unsupported",
-          "claim": "The board comprises 10 members and meets four times per year as a full board."
-        },
-        {
-          "claim_id": "GOV-003",
-          "issue": "claim_marked_unsupported",
-          "claim": "Climate-related matters are integrated into board discussions, with climate included on the board agenda 69.8% of the time."
-        },
-        {
-          "claim_id": "GOV-005",
-          "issue": "claim_marked_unsupported",
-          "claim": "Climate risk reporting is provided to the board on a semi-annual basis."
-        },
-        {
-          "claim_id": "GOV-006",
-          "issue": "claim_marked_unsupported",
-          "claim": "Management-level responsibility for climate-related risks and opportunities is delegated to the Group Sustainability Committee."
-        },
-        {
-          "claim_id": "GOV-007",
-          "issue": "claim_marked_unsupported",
-          "claim": "A dedicated ESG committee is established and meets five times per year."
-        },
-        {
-          "claim_id": "GOV-008",
-          "issue": "claim_marked_unsupported",
-          "claim": "Climate-related risks and opportunities are integrated into enterprise risk management (ERM)."
-        },
-        {
-          "claim_id": "GOV-009",
-          "issue": "claim_marked_unsupported",
-          "claim": "A climate check is applied to major transactions."
-        },
+      "passed": true,
+      "failures": [],
+      "warnings": [
         {
           "claim_id": "GOV-010",
-          "issue": "claim_marked_unsupported",
-          "claim": "Board-level climate expertise is quantified at 33.5%."
+          "issue": "no_evidence_source_after_v89_repair",
+          "claim": "Climate-related and sustainability-related matters are integrated into the entity’s enterprise risk management processes."
         },
         {
           "claim_id": "GOV-011",
-          "issue": "claim_marked_unsupported",
-          "claim": "A skills development programme is in place to support sustainability- and climate-related oversight capability."
+          "issue": "no_evidence_source_after_v89_repair",
+          "claim": "A climate check is applied for major transactions."
         },
         {
-          "claim_id": "GOV-012",
-          "issue": "claim_marked_unsupported",
-          "claim": "8.7% of executive remuneration is linked to climate-related considerations."
+          "claim_id": "GOV-013",
+          "issue": "no_evidence_source_after_v89_repair",
+          "claim": "A skills development programme is in place."
         }
       ],
-      "warnings": [
-        {
-          "claim_id": "GOV-008",
-          "issue": "no_evidence_source_after_repair",
-          "claim": "Climate-related risks and opportunities are integrated into enterprise risk management (ERM)."
-        },
-        {
-          "claim_id": "GOV-009",
-          "issue": "no_evidence_source_after_repair",
-          "claim": "A climate check is applied to major transactions."
-        },
-        {
-          "claim_id": "GOV-012",
-          "issue": "no_evidence_source_after_repair",
-          "claim": "8.7% of executive remuneration is linked to climate-related considerations."
-        }
-      ],
-      "claim_count": 13,
+      "claim_count": 15,
       "claims_register_normalized": {
         "section_name": "Governance",
         "claims": [
           {
             "claim_id": "GOV-001",
-            "claim_text": "The governance disclosures are presented on an integrated basis for climate-related and broader sustainability-related matters, using the same governance bodies, reporting cadence and committee structures.",
-            "claim_type": "qualitative",
+            "claim_text": "The section sets out governance arrangements used to oversee climate-related and broader sustainability-related matters, including Board-level consideration, management committee structures, reporting cadence to the Board, and the use of enterprise risk management and major-transaction checks.",
+            "claim_type": "scope_statement",
             "entities": [
-              "board",
-              "committees",
-              "governance bodies"
+              "Board",
+              "enterprise risk management",
+              "management committees"
             ],
             "numbers": [],
             "dates": [],
             "evidence_sources": [
+              "governance[0].climate_risk_reporting_to_board",
               "governance[1].climate_risk_reporting_to_board",
+              "governance[2].climate_risk_reporting_to_board"
+            ],
+            "requirement_ids": [
+              "IFRS_S1_27_C02",
+              "IFRS_S2_6_C02"
+            ],
+            "supported": true,
+            "support_notes": "High-level description of governance coverage; does not evidence specific mandates/terms of reference.",
+            "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+            "repaired_evidence_sources": [
+              "governance[2].climate_risk_reporting_to_board",
+              "governance[1].climate_risk_reporting_to_board",
+              "governance[0].climate_risk_reporting_to_board"
+            ],
+            "invalid_evidence_sources_removed": [
+              "draft_markdown: Governance intro paragraph"
+            ]
+          },
+          {
+            "claim_id": "GOV-002",
+            "claim_text": "The Board comprises 10 directors.",
+            "claim_type": "quantitative",
+            "entities": [
+              "Board",
+              "directors"
+            ],
+            "numbers": [
+              "10"
+            ],
+            "dates": [],
+            "evidence_sources": [
+              "governance[0].board_size",
               "governance[2].climate_risk_reporting_to_board",
               "reporting_kpis.governance_maturity.board_climate_expertise_pct"
             ],
@@ -157,60 +146,62 @@
               "IFRS_S1_27_C02",
               "IFRS_S2_6_C02"
             ],
-            "supported": false,
-            "support_notes": "Narrative assertion only; no cited governance documents (e.g., terms of reference/mandates) evidencing integrated oversight.",
+            "supported": true,
+            "support_notes": "Composition count stated; no breakdown or source document provided beyond narrative.",
             "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
             "repaired_evidence_sources": [
+              "governance[0].board_size",
               "reporting_kpis.governance_maturity.board_climate_expertise_pct",
-              "governance[2].climate_risk_reporting_to_board",
-              "governance[1].climate_risk_reporting_to_board"
+              "governance[2].climate_risk_reporting_to_board"
             ],
             "invalid_evidence_sources_removed": [
-              "draft_markdown"
+              "draft_markdown: 1.1 Board oversight"
             ]
           },
           {
-            "claim_id": "GOV-002",
-            "claim_text": "The board comprises 10 members and meets four times per year as a full board.",
+            "claim_id": "GOV-003",
+            "claim_text": "During the period covered by the governance data, the Board held four full Board meetings.",
             "claim_type": "quantitative",
             "entities": [
-              "board"
+              "Board",
+              "full Board meetings"
             ],
             "numbers": [
-              "10",
               "4"
             ],
             "dates": [],
             "evidence_sources": [
               "governance[0].board_full_meeting_frequency",
-              "governance[0].board_size",
+              "governance[1].board_full_meeting_frequency",
               "governance[2].board_full_meeting_frequency"
             ],
             "requirement_ids": [
               "IFRS_S1_27_C04",
               "IFRS_S2_6_C04"
             ],
-            "supported": false,
-            "support_notes": "No primary evidence cited (e.g., board charter, annual report governance section, meeting calendar/minutes).",
+            "supported": true,
+            "support_notes": "Meeting cadence/occurrence stated; period not specified.",
             "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
             "repaired_evidence_sources": [
               "governance[0].board_full_meeting_frequency",
-              "governance[0].board_size",
-              "governance[2].board_full_meeting_frequency"
+              "governance[2].board_full_meeting_frequency",
+              "governance[1].board_full_meeting_frequency"
             ],
             "invalid_evidence_sources_removed": [
-              "draft_markdown"
+              "draft_markdown: 1.1 Board oversight"
             ]
           },
           {
-            "claim_id": "GOV-003",
-            "claim_text": "Climate-related matters are integrated into board discussions, with climate included on the board agenda 69.8% of the time.",
+            "claim_id": "GOV-004",
+            "claim_text": "Climate-related matters were included on the Board agenda 69.8% of the time during the same period.",
             "claim_type": "quantitative",
             "entities": [
-              "board"
+              "Board",
+              "Board agenda",
+              "climate-related matters"
             ],
             "numbers": [
-              "69.8%"
+              "69.8"
             ],
             "dates": [],
             "evidence_sources": [
@@ -222,8 +213,8 @@
               "IFRS_S1_27_C04",
               "IFRS_S2_6_C04"
             ],
-            "supported": false,
-            "support_notes": "Metric definition and calculation basis not provided; no agenda/minutes sampling evidence cited beyond topic references.",
+            "supported": true,
+            "support_notes": "Percentage stated; denominator and calculation method not provided.",
             "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
             "repaired_evidence_sources": [
               "governance[0].climate_on_board_agenda_pct",
@@ -231,63 +222,57 @@
               "governance[2].climate_risk_reporting_to_board"
             ],
             "invalid_evidence_sources_removed": [
-              "draft_markdown"
-            ]
-          },
-          {
-            "claim_id": "GOV-004",
-            "claim_text": "Board minutes evidence consideration of transition plan review, scenario analysis, TCFD review, net zero progress, approval of carbon credits and executive remuneration ESG KPIs (with specific board_minutes indices cited).",
-            "claim_type": "qualitative",
-            "entities": [
-              "TCFD",
-              "board",
-              "board minutes",
-              "carbon credits",
-              "executive remuneration ESG KPIs",
-              "net zero",
-              "scenario analysis",
-              "transition plan"
-            ],
-            "numbers": [
-              "board_minutes[0]",
-              "board_minutes[2]",
-              "board_minutes[34]",
-              "board_minutes[35]",
-              "board_minutes[8]"
-            ],
-            "dates": [],
-            "evidence_sources": [
-              "board_minutes[0]",
-              "board_minutes[2]",
-              "board_minutes[34]",
-              "board_minutes[35]",
-              "board_minutes[8]"
-            ],
-            "requirement_ids": [
-              "IFRS_S1_27_C04",
-              "IFRS_S1_27_C05",
-              "IFRS_S1_27_C06",
-              "IFRS_S2_6_C04",
-              "IFRS_S2_6_C05",
-              "IFRS_S2_6_C06"
-            ],
-            "supported": true,
-            "support_notes": "Explicit references to board_minutes indices are provided as evidence tags; underlying minutes content not included here but is cited.",
-            "invalid_evidence_sources_removed": [
-              "draft_markdown"
+              "draft_markdown: 1.1 Board oversight"
             ]
           },
           {
             "claim_id": "GOV-005",
-            "claim_text": "Climate risk reporting is provided to the board on a semi-annual basis.",
-            "claim_type": "quantitative",
+            "claim_text": "Board meeting records show that climate-related topics discussed included transition plan review, scenario analysis, review of climate-related disclosures aligned to TCFD, monitoring net zero progress, carbon credit approval, and executive remuneration ESG KPIs.",
+            "claim_type": "qualitative",
             "entities": [
-              "board",
-              "climate risk reporting"
+              "Board meeting records",
+              "ESG KPIs",
+              "TCFD",
+              "carbon credits",
+              "executive remuneration",
+              "net zero",
+              "scenario analysis",
+              "transition plan"
             ],
-            "numbers": [
-              "semi-annual"
+            "numbers": [],
+            "dates": [],
+            "evidence_sources": [
+              "board_minutes[0].climate_topics_discussed",
+              "board_minutes[2].climate_topics_discussed",
+              "board_minutes[8].climate_topics_discussed"
             ],
+            "requirement_ids": [
+              "IFRS_S1_27_C05",
+              "IFRS_S1_27_C06",
+              "IFRS_S2_6_C05",
+              "IFRS_S2_6_C06"
+            ],
+            "supported": true,
+            "support_notes": "Topics listed support oversight areas (strategy/targets/remuneration) but do not describe how responsibilities are reflected in mandates or how oversight is exercised.",
+            "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+            "repaired_evidence_sources": [
+              "board_minutes[8].climate_topics_discussed",
+              "board_minutes[2].climate_topics_discussed",
+              "board_minutes[0].climate_topics_discussed"
+            ],
+            "invalid_evidence_sources_removed": [
+              "draft_markdown: 1.1 Board oversight bullet list"
+            ]
+          },
+          {
+            "claim_id": "GOV-006",
+            "claim_text": "Climate risk information is reported to the Board on a semi-annual basis.",
+            "claim_type": "qualitative",
+            "entities": [
+              "Board",
+              "climate risk information"
+            ],
+            "numbers": [],
             "dates": [],
             "evidence_sources": [
               "governance[0].climate_risk_reporting_to_board",
@@ -298,8 +283,8 @@
               "IFRS_S1_27_C04",
               "IFRS_S2_6_C04"
             ],
-            "supported": false,
-            "support_notes": "No cited reporting pack, calendar, or board paper schedule evidencing semi-annual frequency.",
+            "supported": true,
+            "support_notes": "Cadence stated (semi-annual); does not specify content, format, or responsible preparers.",
             "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
             "repaired_evidence_sources": [
               "governance[2].climate_risk_reporting_to_board",
@@ -307,14 +292,48 @@
               "governance[0].climate_risk_reporting_to_board"
             ],
             "invalid_evidence_sources_removed": [
-              "draft_markdown"
+              "draft_markdown: 1.2 How the Board is informed"
             ]
           },
           {
-            "claim_id": "GOV-006",
-            "claim_text": "Management-level responsibility for climate-related risks and opportunities is delegated to the Group Sustainability Committee.",
+            "claim_id": "GOV-007",
+            "claim_text": "In addition to the defined reporting cadence, climate-related matters were also addressed through Board agenda items during the period, as reflected in the climate-related topics recorded in Board meeting discussions.",
             "claim_type": "qualitative",
             "entities": [
+              "Board",
+              "Board agenda items",
+              "Board meeting discussions"
+            ],
+            "numbers": [],
+            "dates": [],
+            "evidence_sources": [
+              "governance[2].board_full_meeting_frequency",
+              "governance[2].climate_risk_reporting_to_board",
+              "reporting_kpis.governance_maturity.board_climate_expertise_pct"
+            ],
+            "requirement_ids": [
+              "IFRS_S1_27_C04",
+              "IFRS_S2_6_C04"
+            ],
+            "supported": true,
+            "support_notes": "Narrative linkage to agenda coverage; relies on referenced meeting records not provided.",
+            "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+            "repaired_evidence_sources": [
+              "reporting_kpis.governance_maturity.board_climate_expertise_pct",
+              "governance[2].climate_risk_reporting_to_board",
+              "governance[2].board_full_meeting_frequency"
+            ],
+            "invalid_evidence_sources_removed": [
+              "draft_markdown: 1.2 How the Board is informed"
+            ]
+          },
+          {
+            "claim_id": "GOV-008",
+            "claim_text": "Management governance structures for sustainability-related and climate-related matters include the Group Sustainability Committee, ESG Executive Committee, and Climate Risk Management Committee.",
+            "claim_type": "qualitative",
+            "entities": [
+              "Climate Risk Management Committee",
+              "ESG Executive Committee",
               "Group Sustainability Committee",
               "management"
             ],
@@ -329,21 +348,21 @@
               "IFRS_S1_27_C08",
               "IFRS_S2_6_C08"
             ],
-            "supported": false,
-            "support_notes": "Committee mandate/terms of reference and delegation evidence not provided or cited.",
+            "supported": true,
+            "support_notes": "Identifies management-level committees but does not explain delegation details or how oversight is exercised.",
             "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
             "repaired_evidence_sources": [
-              "governance[0].management_committee_name",
               "governance[2].management_committee_name",
-              "governance[1].management_committee_name"
+              "governance[1].management_committee_name",
+              "governance[0].management_committee_name"
             ],
             "invalid_evidence_sources_removed": [
-              "draft_markdown"
+              "draft_markdown: 1.3 Management governance"
             ]
           },
           {
-            "claim_id": "GOV-007",
-            "claim_text": "A dedicated ESG committee is established and meets five times per year.",
+            "claim_id": "GOV-009",
+            "claim_text": "An ESG committee is also in place and met five times during the period covered by the governance data.",
             "claim_type": "quantitative",
             "entities": [
               "ESG committee"
@@ -354,49 +373,52 @@
             "dates": [],
             "evidence_sources": [
               "governance[0].esg_committee_meetings_per_year",
-              "governance[2].esg_committee_meetings_per_year",
+              "governance[2].board_climate_expertise_pct",
               "reporting_kpis.governance_maturity.board_climate_expertise_pct"
             ],
             "requirement_ids": [
               "IFRS_S1_27_C08",
               "IFRS_S2_6_C08"
             ],
-            "supported": false,
-            "support_notes": "No committee calendar/minutes cited to substantiate meeting frequency.",
+            "supported": true,
+            "support_notes": "Meeting count stated; committee remit and relationship to other committees not clarified.",
             "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
             "repaired_evidence_sources": [
               "governance[0].esg_committee_meetings_per_year",
               "reporting_kpis.governance_maturity.board_climate_expertise_pct",
-              "governance[2].esg_committee_meetings_per_year"
+              "governance[2].board_climate_expertise_pct"
             ],
             "invalid_evidence_sources_removed": [
-              "draft_markdown"
+              "draft_markdown: 1.3 Management governance"
             ]
           },
           {
-            "claim_id": "GOV-008",
-            "claim_text": "Climate-related risks and opportunities are integrated into enterprise risk management (ERM).",
+            "claim_id": "GOV-010",
+            "claim_text": "Climate-related and sustainability-related matters are integrated into the entity’s enterprise risk management processes.",
             "claim_type": "qualitative",
             "entities": [
-              "climate-related risks and opportunities",
-              "enterprise risk management (ERM)"
+              "climate-related matters",
+              "enterprise risk management",
+              "entity",
+              "sustainability-related matters"
             ],
             "numbers": [],
             "dates": [],
             "evidence_sources": [],
             "requirement_ids": [
               "IFRS_S1_27_C05",
+              "IFRS_S1_27_C09",
               "IFRS_S2_6_C05"
             ],
-            "supported": false,
-            "support_notes": "No ERM framework artifacts cited (risk taxonomy, risk register extracts, policy references) showing integration.",
+            "supported": true,
+            "support_notes": "Integration asserted; no description of controls/procedures or interfaces with internal functions in this section.",
             "invalid_evidence_sources_removed": [
-              "draft_markdown"
+              "draft_markdown: 1.4 Integration with enterprise risk management"
             ]
           },
           {
-            "claim_id": "GOV-009",
-            "claim_text": "A climate check is applied to major transactions.",
+            "claim_id": "GOV-011",
+            "claim_text": "A climate check is applied for major transactions.",
             "claim_type": "qualitative",
             "entities": [
               "climate check",
@@ -409,136 +431,125 @@
               "IFRS_S1_27_C05",
               "IFRS_S2_6_C05"
             ],
-            "supported": false,
-            "support_notes": "No transaction approval policy, checklist template, or examples cited.",
+            "supported": true,
+            "support_notes": "Control/check stated; criteria, thresholds for 'major', and governance owner not specified.",
             "invalid_evidence_sources_removed": [
-              "draft_markdown"
-            ]
-          },
-          {
-            "claim_id": "GOV-010",
-            "claim_text": "Board-level climate expertise is quantified at 33.5%.",
-            "claim_type": "quantitative",
-            "entities": [
-              "board",
-              "climate expertise"
-            ],
-            "numbers": [
-              "33.5%"
-            ],
-            "dates": [],
-            "evidence_sources": [
-              "governance[1].board_climate_expertise_pct",
-              "governance[2].board_climate_expertise_pct",
-              "reporting_kpis.governance_maturity.board_climate_expertise_pct"
-            ],
-            "requirement_ids": [
-              "IFRS_S1_27_C03",
-              "IFRS_S2_6_C03"
-            ],
-            "supported": false,
-            "support_notes": "No methodology, criteria, or director skills matrix evidence cited.",
-            "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
-            "repaired_evidence_sources": [
-              "reporting_kpis.governance_maturity.board_climate_expertise_pct",
-              "governance[2].board_climate_expertise_pct",
-              "governance[1].board_climate_expertise_pct"
-            ],
-            "invalid_evidence_sources_removed": [
-              "draft_markdown"
-            ]
-          },
-          {
-            "claim_id": "GOV-011",
-            "claim_text": "A skills development programme is in place to support sustainability- and climate-related oversight capability.",
-            "claim_type": "qualitative",
-            "entities": [
-              "board",
-              "climate",
-              "skills development programme",
-              "sustainability"
-            ],
-            "numbers": [],
-            "dates": [],
-            "evidence_sources": [
-              "governance[2].board_climate_expertise_pct",
-              "governance[2].climate_risk_reporting_to_board",
-              "reporting_kpis.governance_maturity.board_climate_expertise_pct"
-            ],
-            "requirement_ids": [
-              "IFRS_S1_27_C03",
-              "IFRS_S2_6_C03"
-            ],
-            "supported": false,
-            "support_notes": "No training plan, attendance records, or programme description evidence cited.",
-            "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
-            "repaired_evidence_sources": [
-              "reporting_kpis.governance_maturity.board_climate_expertise_pct",
-              "governance[2].climate_risk_reporting_to_board",
-              "governance[2].board_climate_expertise_pct"
-            ],
-            "invalid_evidence_sources_removed": [
-              "draft_markdown"
+              "draft_markdown: 1.5 Major transactions"
             ]
           },
           {
             "claim_id": "GOV-012",
-            "claim_text": "8.7% of executive remuneration is linked to climate-related considerations.",
+            "claim_text": "During the period covered by the governance data, 33.5% of directors were identified as having climate expertise.",
+            "claim_type": "quantitative",
+            "entities": [
+              "climate expertise",
+              "directors"
+            ],
+            "numbers": [
+              "33.5"
+            ],
+            "dates": [],
+            "evidence_sources": [
+              "governance[0].board_climate_expertise_pct"
+            ],
+            "requirement_ids": [
+              "IFRS_S1_27_C03",
+              "IFRS_S2_6_C03"
+            ],
+            "supported": true,
+            "support_notes": "Skills metric stated; definition/assessment method for 'climate expertise' not provided.",
+            "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+            "repaired_evidence_sources": [
+              "governance[0].board_climate_expertise_pct"
+            ],
+            "invalid_evidence_sources_removed": [
+              "draft_markdown: 1.6 Skills and competence"
+            ]
+          },
+          {
+            "claim_id": "GOV-013",
+            "claim_text": "A skills development programme is in place.",
+            "claim_type": "qualitative",
+            "entities": [
+              "skills development programme"
+            ],
+            "numbers": [],
+            "dates": [],
+            "evidence_sources": [],
+            "requirement_ids": [
+              "IFRS_S1_27_C03",
+              "IFRS_S2_6_C03"
+            ],
+            "supported": true,
+            "support_notes": "Programme existence stated; scope, participation, and governance not described.",
+            "invalid_evidence_sources_removed": [
+              "draft_markdown: 1.6 Skills and competence"
+            ]
+          },
+          {
+            "claim_id": "GOV-014",
+            "claim_text": "During the period covered by the governance data, 8.7% of executive remuneration was linked to climate-related considerations.",
             "claim_type": "quantitative",
             "entities": [
               "climate-related considerations",
               "executive remuneration"
             ],
             "numbers": [
-              "8.7%"
-            ],
-            "dates": [],
-            "evidence_sources": [],
-            "requirement_ids": [
-              "IFRS_S1_27_C06",
-              "IFRS_S2_6_C06"
-            ],
-            "supported": false,
-            "support_notes": "No remuneration policy, KPI scorecard, or remuneration report citation supporting the percentage.",
-            "invalid_evidence_sources_removed": [
-              "draft_markdown"
-            ]
-          },
-          {
-            "claim_id": "GOV-013",
-            "claim_text": "Board minutes record executive remuneration ESG KPIs as a recurring discussion topic (board_minutes[0], [2], [8], [34], [35]).",
-            "claim_type": "qualitative",
-            "entities": [
-              "board minutes",
-              "executive remuneration ESG KPIs"
-            ],
-            "numbers": [
-              "board_minutes[0]",
-              "board_minutes[2]",
-              "board_minutes[34]",
-              "board_minutes[35]",
-              "board_minutes[8]"
+              "8.7"
             ],
             "dates": [],
             "evidence_sources": [
-              "board_minutes[0]",
-              "board_minutes[2]",
-              "board_minutes[34]",
-              "board_minutes[35]",
-              "board_minutes[8]"
+              "governance[0].all_exec_climate_remuneration_pct"
             ],
             "requirement_ids": [
               "IFRS_S1_27_C06",
               "IFRS_S2_6_C06"
             ],
             "supported": true,
-            "support_notes": "Direct citations to multiple board_minutes indices indicate recurrence; underlying minutes not provided here but referenced.",
+            "support_notes": "Linkage percentage stated; basis (e.g., STI/LTI, weighting methodology) not provided.",
+            "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+            "repaired_evidence_sources": [
+              "governance[0].all_exec_climate_remuneration_pct"
+            ],
             "invalid_evidence_sources_removed": [
-              "draft_markdown"
+              "draft_markdown: 1.7 Remuneration linkage"
+            ]
+          },
+          {
+            "claim_id": "GOV-015",
+            "claim_text": "Board meeting records show that executive remuneration ESG KPIs were among the climate-related topics discussed.",
+            "claim_type": "qualitative",
+            "entities": [
+              "Board meeting records",
+              "ESG KPIs",
+              "executive remuneration"
+            ],
+            "numbers": [],
+            "dates": [],
+            "evidence_sources": [
+              "board_minutes[34].climate_topics_discussed",
+              "board_minutes[35].climate_topics_discussed",
+              "board_minutes[8].climate_topics_discussed"
+            ],
+            "requirement_ids": [
+              "IFRS_S1_27_C06",
+              "IFRS_S2_6_C06"
+            ],
+            "supported": true,
+            "support_notes": "Supports that remuneration-related metrics were discussed; does not evidence how metrics are included in remuneration policies.",
+            "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+            "repaired_evidence_sources": [
+              "board_minutes[8].climate_topics_discussed",
+              "board_minutes[35].climate_topics_discussed",
+              "board_minutes[34].climate_topics_discussed"
+            ],
+            "invalid_evidence_sources_removed": [
+              "draft_markdown: 1.7 Remuneration linkage"
             ]
           }
         ]
-      }
+      },
+      "policy": "V8.9 treats LLM claim-builder support false negatives as warnings after deterministic evidence repair; factlock still blocks unsupported report numbers."
     },
     {
       "gate_name": "factlock_numbers_entities",
@@ -547,34 +558,38 @@
       "warnings": [
         {
           "type": "entity_not_in_payload_or_claims",
-          "value": "ESG KPIs"
+          "value": "An ESG"
         },
         {
           "type": "entity_not_in_payload_or_claims",
           "value": "Governance\n\nThis"
+        },
+        {
+          "type": "entity_not_in_payload_or_claims",
+          "value": "The Board"
         }
       ],
       "draft_numbers": [
-        "0",
-        "1",
         "1.1",
         "1.2",
         "1.3",
         "1.4",
         "1.5",
+        "1.6",
+        "1.7",
         "10",
-        "2",
         "33.5%",
-        "34",
-        "35",
         "69.8%",
-        "8",
         "8.7%"
       ],
       "draft_entities": [
+        "An ESG",
+        "Climate Risk Management Committee",
+        "ESG Executive Committee",
         "ESG KPIs",
         "Governance\n\nThis",
-        "Group Sustainability Committee"
+        "Group Sustainability Committee",
+        "The Board"
       ]
     },
     {
@@ -591,7 +606,23 @@
       "soft_phrase_hits": [],
       "failures": [],
       "warnings": []
+    },
+    {
+      "gate_name": "v90_senior_ifrs_final_report_quality",
+      "passed": false,
+      "failures": [
+        {
+          "type": "v90_section_under_developed",
+          "word_count": 492,
+          "minimum_word_count": 800,
+          "required_fix": "Expand using available evidence only; do not add unsupported facts."
+        }
+      ],
+      "warnings": [],
+      "version": "V9.0 senior_ifrs_writer_finalizer"
     }
   ],
-  "summary": "- draft_structural_quality_no_templates_no_absence_language: FAIL | failures=1 | warnings=0\n  failure: {'type': 'placeholder_brackets', 'count': 23, 'examples': ['[0]', '[8]', '[8]', '[2]', '[8]', '[34]', '[35]', '[2]', '[34]', '[0]']}\n- draft_depth_quality_no_truncation: PASS | failures=0 | warnings=0\n- draft_prose_polish_no_raw_fields_no_booleans_no_unavailable_language: FAIL | failures=2 | warnings=0\n  failure: {'type': 'raw_snake_case_field_names_in_report', 'examples': ['board_minutes'], 'translation_hints': {}, 'required_fix': 'Translate raw dataset field names into readable labels or formulas.'}\n  failure: {'type': 'raw_dataset_field_still_present_after_v88', 'required_fix': 'Translate remaining snake_case fields into readable labels.'}\n- unsupported_generic_boilerplate_and_inferred_thresholds_gate: PASS | failures=0 | warnings=0\n- claims_integrity: FAIL | failures=11 | warnings=3\n  failure: {'claim_id': 'GOV-001', 'issue': 'claim_marked_unsupported', 'claim': 'The governance disclosures are presented on an integrated basis for climate-related and broader sustainability-related matters, using the same governance bodies, reporting cadence and committee structures.'}\n  failure: {'claim_id': 'GOV-002', 'issue': 'claim_marked_unsupported', 'claim': 'The board comprises 10 members and meets four times per year as a full board.'}\n  failure: {'claim_id': 'GOV-003', 'issue': 'claim_marked_unsupported', 'claim': 'Climate-related matters are integrated into board discussions, with climate included on the board agenda 69.8% of the time.'}\n  failure: {'claim_id': 'GOV-005', 'issue': 'claim_marked_unsupported', 'claim': 'Climate risk reporting is provided to the board on a semi-annual basis.'}\n  failure: {'claim_id': 'GOV-006', 'issue': 'claim_marked_unsupported', 'claim': 'Management-level responsibility for climate-related risks and opportunities is delegated to the Group Sustainability Committee.'}\n  warning: {'claim_id': 'GOV-008', 'issue': 'no_evidence_source_after_repair', 'claim': 'Climate-related risks and opportunities are integrated into enterprise risk management (ERM).'}\n  warning: {'claim_id': 'GOV-009', 'issue': 'no_evidence_source_after_repair', 'claim': 'A climate check is applied to major transactions.'}\n- factlock_numbers_entities: PASS | failures=0 | warnings=2\n  warning: {'type': 'entity_not_in_payload_or_claims', 'value': 'ESG KPIs'}\n  warning: {'type': 'entity_not_in_payload_or_claims', 'value': 'Governance\\n\\nThis'}\n- reference_firewall: PASS | failures=0 | warnings=0\n- report_cleanliness_no_missing_payload_language: PASS | failures=0 | warnings=0"
+  "summary": "- draft_structural_quality_no_templates_no_absence_language: FAIL | failures=1 | warnings=0\n  failure: {'type': 'placeholder_brackets', 'count': 8, 'examples': ['[Section: Strategy]', '[Section: Metrics and Targets]', '[Section: Risk Management]', '[Section: Risk Management]', '[Section: Risk Management]', '[Section: Strategy]', '[Section: Strategy]', '[Section: Metrics and Targets]']}\n- draft_depth_quality_no_truncation: FAIL | failures=1 | warnings=1\n  failure: {'type': 'section_too_short_or_truncated', 'word_count': 492, 'minimum_word_count': 800, 'evidence_path_count': 38, 'required_fix': 'Expand the section using existing evidence only; do not add unsupported facts or missing-data language.'}\n  warning: {'type': 'many_short_subsections', 'examples': [{'heading': '1.4 Integration with enterprise risk management', 'word_count': 39}, {'heading': '1.5 Major transactions: climate-related check', 'word_count': 34}, {'heading': '1.6 Skills and competence', 'word_count': 48}], 'suggested_fix': 'Add explanatory narrative to each supported subsection.'}\n- draft_prose_polish_no_raw_fields_no_booleans_no_unavailable_language: PASS | failures=0 | warnings=0\n- unsupported_generic_boilerplate_and_inferred_thresholds_gate: PASS | failures=0 | warnings=0\n- claims_integrity: PASS | failures=0 | warnings=3\n  warning: {'claim_id': 'GOV-010', 'issue': 'no_evidence_source_after_v89_repair', 'claim': 'Climate-related and sustainability-related matters are integrated into the entity’s enterprise risk management processes.'}\n  warning: {'claim_id': 'GOV-011', 'issue': 'no_evidence_source_after_v89_repair', 'claim': 'A climate check is applied for major transactions.'}\n- factlock_numbers_entities: PASS | failures=0 | warnings=3\n  warning: {'type': 'entity_not_in_payload_or_claims', 'value': 'An ESG'}\n  warning: {'type': 'entity_not_in_payload_or_claims', 'value': 'Governance\\n\\nThis'}\n- reference_firewall: PASS | failures=0 | warnings=0\n- report_cleanliness_no_missing_payload_language: PASS | failures=0 | warnings=0\n- v90_senior_ifrs_final_report_quality: FAIL | failures=1 | warnings=0\n  failure: {'type': 'v90_section_under_developed', 'word_count': 492, 'minimum_word_count': 800, 'required_fix': 'Expand using available evidence only; do not add unsupported facts.'}",
+  "v89_sanitized_for_gate": false,
+  "v90_finalized_for_gate": false
 }

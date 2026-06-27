@@ -17,159 +17,193 @@
 
 ### General Requirements
 
-#### Understanding the Bank’s approach towards implementing IFRS S1 and IFRS S2 requirements
+#### Understanding the Bank’s approach towards implementing IFRS S1 and IFRS S2 requirements 
 
-This report sets out Eurolux Universal Bank AG’s climate- and sustainability-related financial disclosures for the Bank’s current reporting period. The disclosures are structured in line with the core pillars commonly used in IFRS S1 and IFRS S2, namely Governance, Strategy, Risk management, and Metrics and targets, and focus on sustainability-related and climate-related risks and opportunities that could reasonably be expected to affect the Bank’s prospects.
+This report sets out Eurolux Universal Bank AG’s sustainability-related and climate-related financial disclosures in an IFRS S1 and IFRS S2‑style structure. The disclosures are intended to be read as a dedicated chapter of a bank‑focused sustainability report. 
 
-The primary objective of this report is to provide decision-useful information to investors, lenders and other capital providers on how sustainability-related and climate-related factors may influence the Bank’s cash flows, access to finance and cost of capital over the short, medium and long term. The report focuses in particular on:
+The primary purpose of these disclosures is to provide decision‑useful information on sustainability-related and climate-related risks and opportunities that could reasonably be expected to affect the Bank’s cash flows, access to finance or cost of capital over the short, medium and long term. 
 
-- climate-related transition and physical risks and opportunities in the Bank’s lending and financing activities, including exposures to sectors such as mining, energy-intensive manufacturing, transport and social infrastructure; 
-- climate-related risks and opportunities in the Bank’s own operations, including buildings, corporate fleet and business travel; and 
-- the governance, strategy, risk management processes, and metrics and targets that the Bank uses to identify, assess, manage and monitor these risks and opportunities, as described in the respective sections of this report.
+The report is organised around the four core disclosure pillars: 
 
-The report follows an IFRS S1/S2-style structure and terminology. It is intended to be aligned with the principles and disclosure objectives of IFRS S1 and IFRS S2, but it does not constitute a formal statement of full legal compliance with those Standards or with any specific jurisdictional sustainability reporting regime. The Bank is headquartered in Germany (country code DE) and is mindful of the evolving European sustainability reporting environment, including sustainability reporting requirements that may apply to banks operating in Europe.
+- Governance – how the Board and management oversee and manage sustainability-related and climate-related risks and opportunities. 
+- Strategy – how these risks and opportunities are integrated into the Bank’s business model, portfolio strategy and planning. 
+- Risk management – how the Bank identifies, assesses, prioritises and monitors sustainability-related and climate-related risks, including through a climate risk register and scenario analysis. 
+- Metrics and targets – how the Bank measures and tracks performance, including financed emissions, portfolio exposures to climate‑sensitive sectors and climate-related targets. 
 
-Parts of the report rely on modelled estimates and third-party data, particularly for climate scenario analysis and financed emissions, as described in the Strategy and Metrics and targets sections. In addition, some information in this report is based on constructed or model-based representations where underlying primary data are limited, especially in relation to portfolio-level climate metrics and scenario outputs. Certain scenario analysis outputs and portfolio metrics also draw on internally developed analytical representations rather than solely on historical observations. The Bank will continue to refine its methodologies, data coverage and governance over sustainability-related information as practices, regulatory expectations and IFRS Sustainability Disclosure Standards evolve.
+The Bank applies the concepts and structure of IFRS S1 and IFRS S2 as the primary framing for these disclosures. The report is intended to be consistent with the direction of sustainability reporting requirements that may apply to banks operating in Europe, including the evolving requirements under the Corporate Sustainability Reporting Directive, without asserting full legal compliance with any specific jurisdictional regime or with IFRS Sustainability Disclosure Standards. 
 
-#### Fair presentation
+Parts of the report rely on internal estimates and models and on the data currently available to the Bank, particularly for climate scenario analysis, financed emissions and sector‑level portfolio views. The Bank currently uses modelled estimates and proxies for these areas, and these will be refined as its data, systems and methodologies develop. 
 
-The Bank aims to prepare this report in a transparent, balanced and decision-useful manner. The disclosures are intended to reflect, in a structured way, the sustainability-related and climate-related risks and opportunities that could reasonably be expected to affect the Bank’s prospects, and the associated governance, strategy, risk management and performance.
+#### Fair presentation 
 
-In doing so, the Bank seeks to:
+This section explains the Bank’s basis of preparation and the qualitative characteristics that guide the sustainability-related financial disclosures. 
 
-- describe material sustainability-related and climate-related risks and opportunities in a way that is clear, specific and relevant to a commercial bank; 
-- use quantitative metrics where these are available and sufficiently reliable, and complement them with qualitative information where data are still developing; 
-- explain key assumptions, limitations and boundaries where these may affect interpretation of the information; and 
-- provide information that is, to the extent practicable, comparable, verifiable, timely and understandable.
+The Bank prepares these disclosures with the intention that they: 
 
-The Bank recognises that sustainability-related and climate-related reporting is an evolving area and that data availability, methodologies and market practices are still developing, particularly for financed emissions and climate scenario analysis. In several areas, including financed emissions, climate risk quantification and certain portfolio-level metrics, the Bank relies on third-party data, sectoral proxies and modelled approaches, as described in the Strategy, Risk management and Metrics and targets sections. Detailed calculation methodologies, data quality assessments and assumptions for all metrics are not yet comprehensively described in this report.
+- focus on sustainability-related and climate-related risks and opportunities that could reasonably be expected to affect the Bank’s prospects; 
+- use the same reporting currency as the Bank’s general purpose financial statements; 
+- are structured and described in a way that is understandable and decision‑useful for users of general purpose financial reports; and 
+- are prepared using processes and controls that are proportionate to the current maturity of sustainability reporting within the Bank. 
 
-Governance disclosures are based on the Bank’s current governance arrangements and on the information collated for this purpose, and are subject to the boundaries described in the Governance section. The Bank does not claim that the information in this report is exhaustive, nor does it assert that all sustainability-related and climate-related information is free from potential misstatement. The Bank will continue to strengthen internal controls, data governance and review processes over sustainability-related information over time.
+The Bank has not yet confirmed alignment of the sustainability reporting boundary with the consolidation boundary used in the financial statements. As a result, this report does not assert that all entities included in the financial statements are fully covered by the sustainability-related and climate-related disclosures. 
 
-#### Connected information
+In applying these principles, the Bank: 
 
-The report is designed to show the connections between the Bank’s governance, strategy, risk management, and metrics and targets for sustainability-related and climate-related matters.
+- uses quantitative data where it is available and sufficiently reliable, and supplements it with qualitative explanations where data is incomplete or still under development; 
+- distinguishes, where relevant, between historical information, current‑period performance, and forward‑looking analysis or scenario‑based assessments; 
+- highlights where information is subject to significant estimation uncertainty, particularly in relation to climate scenario analysis, financed emissions and sector‑level portfolio exposures; and 
+- provides additional narrative explanations where this is needed to understand the potential effects of sustainability-related and climate-related risks and opportunities on the Bank’s cash flows, access to finance and cost of capital. 
 
-- Governance: The Governance section describes the roles of the Board and management in overseeing sustainability-related and climate-related risks and opportunities, including how climate-related topics are brought to Board and committee discussions, how oversight is exercised, and how climate-related information is used in decision-making. Governance trend metrics, such as the number of ESG-related committee meetings and the proportion of Board members with climate expertise, are used to illustrate how oversight is evolving over time.
+Certain disclosures, including elements of the climate scenario analysis, financed emissions and sector‑level portfolio views, are derived from internal models and modelled estimates rather than from fully mature internal reporting systems. These disclosures may therefore be subject to change as methodologies and data sources are enhanced. 
 
-- Strategy: The Strategy section explains how sustainability-related and climate-related risks and opportunities are considered in the Bank’s business model, portfolio composition and strategic planning. This includes the use of climate scenario analysis and a climate risk register, as described in that section, to identify sectors and counterparties with elevated transition or physical risk, such as mining of coal and lignite, manufacture of coke and refined petroleum, air transport, and selected manufacturing and infrastructure sectors.
+The Bank does not claim that this report is exhaustive of all possible sustainability-related information. Certain data sets, methodologies and controls are still being developed, and some disclosures are therefore subject to limitations in data coverage, granularity or historical time series. Where relevant, these limitations are described in the respective Governance, Strategy, Risk management, and Metrics and targets sections. 
 
-- Risk management: The Risk management section sets out how climate-related risks are integrated into the Bank’s broader risk management framework, including the identification, assessment, monitoring and management of climate-related risks across the value chain. This includes the use of sectoral exposure mapping, climate risk registers and scenario outputs, as described in that section, to inform risk appetite, credit policies and portfolio steering.
+The Bank does not claim external assurance over the report as a whole. Any external assurance activities that the Bank undertakes in relation to environmental metrics are limited in scope and, where applicable, relate to selected Scope 1 and Scope 2 greenhouse gas emissions only. Financed emissions and other portfolio‑level climate metrics are not currently subject to external assurance. 
 
-- Metrics and targets: The Metrics and targets section provides quantitative indicators and targets that the Bank uses to monitor its performance and progress, including financed emissions, exposure to high-carbon sectors, green finance metrics, climate-related capital expenditure and operating expenditure, and climate-related targets. These metrics are linked to the risk and opportunity profile described in the Strategy and Risk management sections and are overseen through the governance structures described in the Governance section.
+#### Connected information 
 
-The Bank aims to ensure that the data and assumptions used in preparing sustainability-related financial disclosures are, to the extent possible, consistent with those used in preparing the related financial statements, particularly in relation to exposure amounts, sector classifications and currency. The reporting currency used in this report is the euro (EUR), which is also the presentation currency of the Bank’s financial statements.
+The Bank aims to present sustainability-related and climate-related information in a connected manner so that users can understand how governance, strategy, risk management, and metrics and targets interact. 
 
-The Bank also aims to highlight connections between sustainability-related and climate-related risks and opportunities and potential impacts on its financial position and performance, including areas where there may be a significant risk of material adjustment to the carrying amounts of assets and liabilities within the next annual reporting period. Where such connections are identified, they are discussed in the Strategy, Risk management and Metrics and targets sections.
+Key connectivity principles applied in this report are: 
 
-#### Comparative information
+- Governance–Strategy linkage: Board and management oversight of climate-related matters is described in the Governance section, including the use of a climate risk register and reporting on climate‑related topics. These governance arrangements inform strategic decisions on portfolio positioning, sectoral exposures and climate‑related opportunities, which are described in the Strategy section. 
+- Strategy–Risk management linkage: The Strategy section explains how climate-related risks and opportunities are considered in the Bank’s business and portfolio strategy, including exposures to sectors such as mining, energy‑intensive manufacturing and transport. The Risk management section describes how these exposures are identified, assessed and monitored through risk registers, scenario analysis and sector‑level exposure mapping. 
+- Risk management–Metrics and targets linkage: The Risk management section outlines the processes used to prioritise climate-related risks, including transition and physical risks across the value chain. The Metrics and targets section then discloses quantitative indicators, such as financed emissions and exposures to climate‑sensitive sectors, which are used to monitor these risks and track progress against climate‑related targets. 
+- Governance–Metrics linkage: Governance disclosures are based on the Bank’s current governance arrangements and reporting practices. Trend metrics on Board and committee activity, climate expertise and climate‑linked remuneration are intended to provide insight into how governance structures support the Bank’s climate‑related metrics and targets. 
 
-Where trend information is available and relevant, the Bank includes comparative information to enable users to understand changes over time. This is particularly the case for governance-related indicators and selected climate-related metrics.
+Where relevant, the report also explains how sustainability-related and climate-related risks and opportunities may affect key financial statement areas, such as credit risk, expected credit losses, funding costs and capital allocation. These linkages are described qualitatively in the Strategy and Risk management sections and are intended to support users in connecting the sustainability-related disclosures with the Bank’s financial statements. 
 
-For governance, trend metrics are available for:
+#### Comparative information 
 
-- the number of ESG- or climate-related committee meetings; 
-- the percentage of Board members with climate-related expertise; 
-- the percentage of the Chief Executive Officer’s variable remuneration linked to ESG or climate-related performance; 
-- the percentage of executive management with climate-related elements in remuneration; 
-- the percentage of Board meetings at which climate-related topics are on the agenda; and 
-- the frequency of full Board meetings.
+The Bank provides comparative information where it is currently available and sufficiently reliable to support meaningful analysis of trends. 
 
-These trend metrics are discussed in the Governance section and illustrate how oversight of sustainability-related and climate-related matters is evolving.
+For governance‑related indicators, trend information may be provided for: 
 
-For portfolio exposure and climate-related quantitative metrics, including financed emissions and certain sectoral exposure indicators, consistent historical data are not yet available for all years. As a result, comparative information for these metrics is not provided in all cases. Where comparative information is not available, this is due to the development of methodologies, data coverage and systems, rather than a change in the Bank’s underlying risk profile.
+- the number of Board and relevant committee meetings at which climate or broader environmental, social and governance topics were discussed; 
+- the proportion of Board members with climate‑related or sustainability‑related expertise; 
+- the proportion of the Chief Executive Officer’s and other executives’ variable remuneration that is linked to climate‑related or sustainability‑related performance; and 
+- the frequency with which climate‑related topics appear on the Board agenda. 
 
-The Bank intends to expand the scope and consistency of comparative information over time as data quality improves and methodologies stabilise.
+These trend indicators, where disclosed, are discussed in the Governance and Metrics and targets sections. 
 
-#### Timing and location of disclosure
+For portfolio‑level climate metrics, including financed emissions, sectoral exposures to climate‑sensitive industries and climate‑related targets, the Bank is in the process of building consistent time series. Comparative information for these metrics may not yet be available on a basis that the Bank considers sufficiently consistent and reliable for inclusion in this report. 
 
-This report covers Eurolux Universal Bank AG’s current reporting period. The sustainability-related and climate-related financial disclosures contained in this General Requirements section, and in the accompanying Governance, Strategy, Risk management, and Metrics and targets sections, relate to that reporting period unless otherwise stated.
+Where methodologies, data sources or boundaries for specific metrics change in future periods, the Bank intends, where practicable, to explain the nature of the change and its effect on trend information in the relevant sections. 
 
-The disclosures form part of Eurolux Universal Bank AG’s dedicated sustainability and climate-related financial reporting for the period. They are intended to complement, and should be read alongside, the Bank’s general purpose financial statements for the same period in order to obtain a more comprehensive understanding of the Bank’s overall performance, position and prospects.
+#### Timing and location of disclosure 
 
-This section does not specify the external publication date, filing location or whether the disclosures are integrated into any other report.
+This General Requirements section forms part of Eurolux Universal Bank AG’s dedicated sustainability-related and climate-related financial disclosure report. 
 
-#### Reporting entity, business model and value chain
+The report is designed to complement, and be read alongside, the Bank’s general purpose financial statements. The Bank does not, in this section, specify the publication date, filing location or whether the report is integrated with other reporting documents. Users should refer to the Bank’s main reporting channels for information on how this report is made available together with the financial statements and other regulatory disclosures. 
 
-The reporting entity for this report is Eurolux Universal Bank AG. The Bank is based in Germany (country code DE). The reporting currency is the euro (EUR). Total assets amount to 850,000 million euro and total loans amount to 31,150.64 million euro.
+#### Reporting entity, business model and value chain 
 
-The Bank operates as a universal bank. While a detailed business model description is not provided in this section, the Bank’s activities include lending and financing to a range of corporate sectors, as reflected in the value chain and portfolio exposure information. The Bank’s sustainability-related and climate-related risk profile is influenced by both its own operations and its financing activities.
+This subsection describes the reporting entity, the high‑level business profile and the value chain elements that are relevant for sustainability-related and climate-related disclosures. 
 
-The Bank’s value chain, as relevant to climate-related risks and opportunities, includes:
+Reporting entity and currency 
 
-- Own operations: 
- - Own banking operations — buildings: Operational sites and related activities generate Scope 1 and Scope 2 emissions and are exposed to physical disruption and physical chronic risk. 
- - Corporate fleet and business travel: These activities contribute to Scope 1, Scope 2 and selected Scope 3 emissions and are exposed to transition market risk, including potential changes in regulation, technology and customer expectations.
+- The reporting entity for this report is Eurolux Universal Bank AG. 
+- The Bank is headquartered in Germany. 
+- The reporting currency used for monetary amounts in this report is euro (EUR), consistent with the Bank’s financial reporting currency. 
 
-- Upstream suppliers: 
- - IT infrastructure and cloud providers: These suppliers support the Bank’s digital and operational capabilities and are associated with environmental impacts captured in upstream Scope 3 categories. The Bank’s exposure to these suppliers is approximately 223.85 million euro. 
- - Office space landlords: The Bank leases office space, which contributes to upstream environmental impacts and may influence the Bank’s operational resilience and energy profile. The Bank’s exposure to these landlords is approximately 445.41 million euro. 
- - Professional services suppliers: These suppliers provide advisory and other services and are associated with upstream environmental impacts. The Bank’s exposure to these suppliers is approximately 120.73 million euro. These upstream nodes are mapped for completeness but are not currently considered material for detailed climate-related disclosure in this report.
+Total assets and loans 
 
-- Downstream and financing counterparties: 
- - Corporate borrowers in sectors with elevated transition risk, including: 
+- The Bank’s total assets amount to approximately EUR 850,000 million. 
+- The Bank’s total loans amount to approximately EUR 31,150.64 million. 
+
+These figures provide context for the scale of the Bank’s balance sheet and the relative significance of climate‑sensitive exposures discussed in the Strategy, Risk management, and Metrics and targets sections. 
+
+Consolidation boundary 
+
+The Bank’s consolidation boundary and the list of subsidiaries included in the financial statements are not described in this section. The Bank has not yet confirmed alignment of the sustainability reporting boundary with the consolidation boundary used in the financial statements. Accordingly, this report does not specify whether all subsidiaries or branches are fully covered by the sustainability-related and climate-related disclosures. Where relevant, individual sections may indicate if a metric or process applies to a subset of the Bank’s activities. 
+
+Business model and value chain 
+
+The Bank operates as a universal bank. Detailed segmental descriptions of the business model are not provided in this section; instead, the focus is on value chain elements that are relevant for sustainability-related and climate-related risks and opportunities. 
+
+The Bank’s value chain, as considered for this report, includes: 
+
+- Own operations 
+ - Own banking operations – buildings: The Bank’s operational sites and related activities generate Scope 1 and Scope 2 emissions and are exposed to potential physical disruption. 
+ - Corporate fleet and business travel: These activities contribute to the Bank’s operational emissions and are exposed to transition‑related considerations, such as evolving market expectations and potential policy changes affecting transport. 
+
+- Upstream suppliers 
+ - IT infrastructure and cloud providers: The Bank relies on external providers for technology and data services. While these relationships are not currently assessed as climate‑material for the Bank’s financial prospects, they are recognised as part of the broader environmental footprint. 
+ - Office space landlords: The Bank leases office space from third‑party landlords. These arrangements influence the Bank’s indirect environmental impacts but are not currently assessed as climate‑material for financial prospects. 
+ - Professional services suppliers: The Bank engages a range of professional services providers. These relationships are not currently assessed as climate‑material for the Bank’s financial prospects. 
+
+- Downstream and financing activities 
+ The Bank’s lending and financing activities represent the most significant channel through which climate-related risks and opportunities may affect its prospects. Key climate‑sensitive sectors in the corporate lending portfolio include, among others: 
+ - Manufacture of coke and refined petroleum products; 
  - Mining of coal and lignite; 
- - Manufacture of coke and refined petroleum; 
- - Mining of metal ores; 
- - Other mining and quarrying; and 
- - Air transport. 
- Lending to these sectors carries elevated transition risk from potential carbon pricing, regulatory changes and shifts in demand. 
- - Corporate borrowers in sectors with notable physical and transition risk, including: 
+ - Mining of metal ores and other mining and quarrying; 
+ - Air transport; 
  - Manufacture of motor vehicles; 
  - Manufacture of electrical equipment; 
  - Manufacture of food products; 
- - Civil engineering; 
+ - Civil engineering; and 
  - Education. 
- These sectors are subject to moderate physical chronic risk and transition risk, which may affect counterparties’ creditworthiness and the value of collateral over time.
 
-The Bank’s total assets and total loans figures provide context for the scale of its balance sheet and the relative significance of the exposures described above. A detailed portfolio summary and a full description of the Bank’s business model and value chain are not included in this section and may be addressed in other parts of the Bank’s reporting.
+For several of these sectors, the Bank has identified elevated transition risk, particularly where activities are sensitive to carbon pricing, regulatory change and shifts in demand. For others, the Bank has identified exposure to physical chronic risk and moderate transition risk. These sectoral exposures are central to the Bank’s climate-related risk assessment and financed emissions metrics and are discussed further in the Strategy, Risk management, and Metrics and targets sections. 
 
-Information on consolidation boundaries, subsidiaries included in the reporting scope and the alignment of sustainability-related reporting boundaries with those of the financial statements is not specified in this section. The Bank does not, therefore, state that the sustainability-related reporting boundary is fully aligned with the financial statement consolidation boundary. Where relevant, boundary considerations are discussed in the thematic sections of this report.
+Certain downstream activities, such as employee commuting, are recognised as part of the Bank’s broader environmental footprint but are not currently assessed as climate‑material for the Bank’s financial prospects and are therefore not a primary focus of this report. 
 
-#### Sources of guidance
+#### Sources of guidance 
 
-This report is structured with reference to IFRS S1 General Requirements for Disclosure of Sustainability-related Financial Information and IFRS S2 Climate-related Disclosures, which the Bank uses as the main framing for organising information under the Governance, Strategy, Risk management, and Metrics and targets pillars and for focusing on information that is material to users of general purpose financial reports.
+This subsection explains the main sources of guidance used to frame the Bank’s sustainability-related and climate-related financial disclosures. 
 
-Beyond this reference to IFRS S1 and IFRS S2, the Bank does not identify or describe other specific external standards, pronouncements, industry practices or guidance sources applied in preparing the sustainability-related and climate-related financial disclosures in this report. Any references to external climate-target frameworks or initiatives are made, where relevant, in the specific sections in which they arise.
+The basis of preparation for this report is an IFRS S1 and IFRS S2‑style approach, specifically: 
 
-The Bank recognises that the European sustainability reporting environment, including sustainability reporting requirements that may apply to banks operating in Europe, is evolving. The Bank will continue to monitor developments in IFRS Sustainability Disclosure Standards and other relevant regulatory or market guidance and will adapt its reporting approach as appropriate.
+- IFRS S1, which sets out general requirements for sustainability-related financial disclosures; and 
+- IFRS S2, which sets out specific requirements for climate-related disclosures. 
 
-#### Statement of compliance
+These standards inform the Bank’s focus on: 
 
-This report is prepared with reference to, and is intended to be aligned with, the disclosure objectives and core concepts of IFRS S1 and IFRS S2. The Bank has used these Standards as the primary framework for structuring its sustainability-related and climate-related financial disclosures and for determining the types of information to be included.
+- sustainability-related and climate-related risks and opportunities that could reasonably be expected to affect the Bank’s cash flows, access to finance or cost of capital; 
+- the four‑pillar structure of Governance, Strategy, Risk management, and Metrics and targets; and 
+- the need to explain connections between sustainability-related disclosures and the Bank’s financial prospects. 
 
-At this stage, the Bank does not assert full compliance with IFRS S1 and IFRS S2 as formally adopted in any specific jurisdiction. In particular:
+In developing this report, the Bank has not yet systematically applied the disclosure topics and metrics from the SASB Standards. The Bank is considering how such industry‑specific topics and metrics could be used in future to complement the IFRS Sustainability Disclosure Standards, particularly for selected lending and financing portfolios. 
 
-- the Bank does not state that all disclosure requirements of IFRS S1 and IFRS S2 have been addressed in full; 
-- certain methodological details, data quality assessments and boundary descriptions are still being developed; and 
-- comparative information for all metrics is not yet available.
+No other formal disclosure frameworks or report‑preparation standards are described as having been applied in the preparation of this report. 
 
-The Bank does not claim external assurance over the full content of this report. Scope 1 and Scope 2 emissions are subject to limited external assurance (see Metrics and targets). Financed emissions and other portfolio-level climate metrics have not been subject to external assurance unless explicitly stated.
+#### Statement of compliance 
 
-The Bank intends to enhance the scope, depth and robustness of its sustainability-related and climate-related financial disclosures over time, with the aim of progressively increasing alignment with IFRS Sustainability Disclosure Standards and with applicable sustainability reporting requirements that may apply to banks operating in Europe.
+This subsection sets out the Bank’s position on alignment with IFRS Sustainability Disclosure Standards. 
 
-#### Materiality assessment
+The Bank has prepared this report with the intention of aligning its sustainability-related and climate-related financial disclosures with the structure and key concepts of IFRS S1 and IFRS S2. This includes: 
 
-The Bank’s sustainability-related and climate-related disclosures in this report focus on risks and opportunities that could reasonably be expected to affect the Bank’s prospects, including its cash flows, access to finance and cost of capital over the short, medium and long term.
+- focusing on sustainability-related and climate-related risks and opportunities that could reasonably be expected to affect the Bank’s prospects; 
+- using the four‑pillar structure of Governance, Strategy, Risk management, and Metrics and targets; 
+- seeking to provide information that is relevant, comparable, understandable and presented on a timely basis; and 
+- explaining, where possible, how sustainability-related and climate-related matters may affect the Bank’s cash flows, access to finance and cost of capital over different time horizons. 
 
-The Bank applies a risk- and portfolio-driven approach to determining which topics are included in this report. This approach is grounded in:
+The Bank does not assert full compliance with IFRS S1 or IFRS S2. Certain elements that would be required for a formal statement of compliance, such as a comprehensive mapping of all applicable disclosure requirements, detailed methodology descriptions for all metrics, and explicit confirmation of alignment of all data and assumptions with the financial statements, are not included in this report. 
 
-- climate and sustainability risk registers that identify key transition and physical risk drivers relevant to the Bank’s activities, as described in the Strategy and Risk management sections; 
-- portfolio exposure mapping by sector and activity, including identification of sectors with elevated transition risk (such as mining of coal and lignite, manufacture of coke and refined petroleum, mining of metal ores, other mining and quarrying, and air transport) and sectors with notable physical chronic risk and transition risk (such as manufacture of motor vehicles, manufacture of electrical equipment, manufacture of food products, civil engineering and education); 
-- value chain mapping that distinguishes between own operations, upstream suppliers and downstream financing counterparties, and highlights where climate-related risks and opportunities are most significant; and 
-- climate scenario analysis and related analytical outputs, as described in the Strategy and Risk management sections, that inform the potential magnitude and timing of impacts on counterparties, sectors and the Bank’s portfolio.
+The Bank intends to continue developing its sustainability reporting capabilities and may refine its alignment with IFRS Sustainability Disclosure Standards in future reporting periods. 
 
-Using this risk- and portfolio-driven screening, the Bank identifies sustainability-related and climate-related topics that are considered material for disclosure in this report. These include, among others:
+#### Materiality assessment 
 
-- climate-related transition and physical risks in the lending and financing portfolio; 
-- climate-related risks and opportunities in own operations, including buildings and business travel; 
-- financed emissions and exposure to high-carbon sectors; 
-- green and transition finance activities; and 
-- governance, risk management and strategic responses to these risks and opportunities.
+This subsection explains how the Bank determines which sustainability-related and climate-related topics and disclosures are included in this report. 
 
-No documented IFRS S1 materiality process artefact, such as a formal, standardised materiality methodology or matrix, is presented in this report. The Bank does not describe or rely on a formal stakeholder materiality survey or stakeholder-engagement-based materiality process for the purposes of this General Requirements section.
+The Bank applies a financial materiality lens consistent with the concepts underlying IFRS S1 and IFRS S2. Sustainability-related and climate-related risks and opportunities are considered material for this report if they could reasonably be expected to affect the Bank’s cash flows, access to finance or cost of capital over the short, medium or long term. 
 
-The Bank recognises that its approach to materiality for sustainability-related and climate-related reporting will continue to evolve. Over time, the Bank intends to further refine its materiality assessment, including by enhancing the integration of climate-related and other sustainability-related risks into enterprise risk management, expanding quantitative analysis of potential financial effects, and improving the transparency of judgements and assumptions used in determining which topics are material for disclosure.
+The Bank’s approach to identifying material topics for this report is risk‑ and portfolio‑driven and is based on: 
+
+- Risk registers and climate risk mapping: The Bank maintains a climate risk register and related risk mapping that identify key transition and physical risks across its activities and value chain, including own operations and financing activities. 
+- Portfolio exposure analysis: The Bank analyses its lending and financing exposures by sector, with particular attention to sectors with elevated transition risk (such as fossil fuel extraction, energy‑intensive industries and carbon‑intensive transport) and sectors with notable physical chronic risk. 
+- Scenario analysis and sectoral sensitivity: Climate scenario analysis and sector‑level sensitivity assessments are used to explore how different climate pathways could affect credit risk, portfolio quality and access to finance. These analyses inform the prioritisation of sectors and risk types for disclosure. 
+- Value chain considerations: The Bank considers where in its value chain sustainability-related and climate-related risks and opportunities are most likely to affect its financial prospects, with a primary focus on downstream financing activities and a secondary focus on own operations. 
+
+No formal, stand‑alone materiality matrix is presented in this report. Instead, the selection of topics and metrics reflects the Bank’s current risk register, value‑chain mapping, portfolio exposures and climate‑related analytical work. 
+
+Within this framework: 
+
+- Own operations are considered material where they give rise to greenhouse gas emissions, potential physical disruption to operations, or reputational and regulatory considerations that could indirectly affect the Bank’s prospects. 
+- Upstream suppliers are considered material where service disruption or changes in cost or availability could affect the Bank’s operations or its ability to deliver products and services. 
+- Downstream financing activities are considered material where sectoral transition or physical risks could affect borrowers’ creditworthiness, collateral values, or demand for financial products, thereby affecting the Bank’s credit risk profile, capital requirements and funding costs. 
+
+The Bank recognises that its materiality assessment approach will continue to evolve as data quality improves, methodologies mature and regulatory expectations develop. Future reports may expand or refine the set of topics, metrics and sectors covered as the Bank’s understanding of sustainability-related and climate-related risks and opportunities deepens.
 
 ---
 
@@ -177,80 +211,78 @@ The Bank recognises that its approach to materiality for sustainability-related 
 
 #### Overview
 
-Eurolux Universal Bank AG has governance arrangements that include Board oversight, ESG & Sustainability Committee activity, executive management responsibility, semi-annual Board reporting, integration indicators within the enterprise risk framework, climate checks for major transactions and a climate risk register.
+This section describes how Eurolux Universal Bank AG governs climate-related risks and opportunities in 2024.
 
-In 2024, the Board of Directors comprised 10 members, of whom 68.5% were independent. The Board met eight times during the year, with climate-related topics on the agenda at 72.6% of meetings. Climate-related oversight is further supported by an ESG & Sustainability Committee, which met seven times in 2024, and by documented climate-related decisions taken by the Board and its committees during the year.
+Climate-related governance is reflected in Board oversight, ESG & Sustainability Committee activity, executive management responsibility, semi-annual Board reporting, ERM integration indicators, climate checks for major transactions and a climate risk register. Governance indicators the Bank reports include the percentage of Board meetings with climate on the agenda, the proportion of Board members with climate expertise and the proportion of executive remuneration linked to climate or broader environmental, social and governance (ESG) objectives. Documented climate-related decisions in 2024 complement these indicators and reporting flows.
 
-Management oversight for climate-related risks and opportunities is exercised through the Climate Risk Management Committee. Management provides climate risk reporting to the Board on a semi-annual basis, drawing on a climate risk register that, in 2024, recorded 8 climate-related risks. Six of these 8 recorded climate-related risks carry an indicator that they are integrated into the enterprise risk management framework; enterprise-wide integration into the enterprise risk management framework is not evidenced. In addition, the Bank performed climate checks for major transactions in 2024.
-
-Climate-related skills and incentives are reflected in the proportion of Board members with climate expertise, the existence of a skills development programme, and the inclusion of ESG and climate-related components in executive remuneration. Governance indicators the Bank reports (climate-on-agenda %, board climate-expertise %, climate-linked remuneration %) are used to track aspects of climate-related governance over time.
+These governance arrangements support the oversight of climate-related risks and opportunities described in the strategy, risk management and metrics and targets sections of this report.
 
 #### The role of the Board of Directors
 
-The Board of Directors of Eurolux Universal Bank AG oversees climate-related risks and opportunities as part of its overall oversight of the Bank’s business and risk profile. In 2024, the Board comprised 10 members, with 68.5% classified as independent. The Board met eight times during the year ended 31 December 2024, compared with seven meetings in 2023 and four meetings in 2022.
+The Board of Directors has overall oversight of climate-related risks and opportunities as part of its governance of the Bank.
 
-Climate-related topics featured regularly on the Board agenda. Climate-related items were included at 72.6% of Board meetings in 2024, compared with 73.1% in 2023 and 69.8% in 2022. Climate risk reporting is provided to the Board on a semi-annual basis and gives an overview of material climate-related risks drawn from the climate risk register.
+In 2024, the Board comprised 10 members, with 68.5% classified as independent. The Board met eight times during the year, compared with seven meetings in 2023 and four meetings in 2022. Climate-related topics were on the Board agenda for 72.6% of meetings in 2024, compared with 73.1% in 2023 and 69.8% in 2022. These indicators show that climate-related matters were regularly considered at Board level.
 
-Through its consideration of management reports, its interaction with the ESG & Sustainability Committee and its climate-related decisions in 2024, the Board oversees the setting and monitoring of climate-related targets and the treatment of climate-related risks and opportunities in the Bank’s strategy and major decisions. The Board’s climate-related decisions do not currently describe specific trade-offs such as profitability, capital allocation, implementation cost, risk appetite or competing strategic priorities.
+Climate risk reporting is provided to the Board on a semi-annual basis. This reporting gives an overview of material climate-related risks and informs the Board’s oversight of climate-related risks and opportunities. Board oversight of climate-related matters is further reflected in the governance indicators the Bank reports and in documented climate-related decisions taken during 2024, which are described in the Governance decisions, controls and evidence boundaries subsection.
 
 #### Board committees and climate-related oversight
 
-The Board is supported in its climate-related oversight by the ESG & Sustainability Committee. This committee provides a forum for more detailed consideration of climate-related matters before they are brought to the full Board where relevant.
+Board-level oversight of climate-related matters is supported by an ESG & Sustainability Committee.
 
-The ESG & Sustainability Committee met seven times in 2024, compared with six meetings in 2023 and five meetings in 2022. The committee reports to the Board and, together with the Board, took climate-related decisions in 2024. Committee activity in 2024 included consideration of climate-related topics that were subsequently the subject of Board decisions, as set out in the Governance decisions, controls and evidence boundaries subsection.
+The ESG & Sustainability Committee met seven times in 2024, compared with six meetings in 2023 and five meetings in 2022. Committee activity in 2024 included consideration of climate-related topics and discussion of related management proposals. The committee reports to the Board, providing for more detailed discussion of climate-related risks, opportunities and related management proposals alongside Board consideration.
 
-Committee activity and meeting frequency are disclosed for 2022–2024. The Bank does not currently disclose the committee charter or terms of reference for the ESG & Sustainability Committee.
+The Bank does not disclose a separate ESG & Sustainability Committee charter or terms of reference in this report. The committee’s role in climate-related oversight is therefore described on the basis of its meeting frequency and recorded climate-related agenda coverage.
+
+Committee oversight of climate-related matters is reflected in the frequency of meetings, the coverage of climate-related topics and documented climate-related decisions in 2024, which are set out in the Governance decisions, controls and evidence boundaries subsection.
 
 #### Management responsibility for climate-related risks and opportunities
 
-Management-level responsibility for climate-related risks and opportunities in 2024 was held by the Climate Risk Management Committee. This committee oversees and coordinates climate risk reporting and use of the climate risk register and provides climate risk reporting to the Board on a semi-annual basis.
+Management responsibility for climate-related risks and opportunities is assigned to the Climate Risk Management Committee.
 
-The Bank uses a climate risk register that, in 2024, recorded 8 climate-related risks. These risks are identified and recorded in the register and are classified by:
+In 2024, the Climate Risk Management Committee coordinated climate risk management activities and provided climate risk reporting to the Board on a semi-annual basis. The Bank performed climate checks for major transactions in 2024, reflecting the consideration of climate-related factors in significant business decisions. ERM integration indicators show that climate-related risks are linked to the Bank’s enterprise risk management processes for a subset of recorded risks.
 
-- risk category, including physical acute, physical chronic, transition market, transition policy, transition reputational and transition technology;
-- time horizon, including short (0–2 years), medium (2–5 years) and long (5 years plus);
-- risk rating, including high and medium.
-
-The register records monitoring frequencies for climate-related risks, with quarterly and semi-annual monitoring frequencies in 2024. Scenario analysis identifiers are recorded for selected risks, linking them to specific climate scenarios. Mitigation actions are recorded in the register for individual risks. Examples of mitigation actions recorded in the register include:
+The Bank uses a climate risk register that, in 2024, recorded 8 climate-related risks. These risks cover physical acute, physical chronic, transition market, transition policy, transition reputational and transition technology categories. Risks are classified by rating (high or medium) and by time horizon (short, medium or long). Monitoring frequencies recorded in the register are quarterly and semi-annual. For example, the register includes a high-rated transition technology risk related to the shift to electric vehicles in auto lending, with a short-term time horizon of up to two years, monitored quarterly and associated with an estimated potential financial impact of EUR 165.2 million. Scenario analysis identifiers are linked to several risks, and mitigation actions are recorded in the register, including:
 
 - climate scenario stress testing integrated into the Internal Capital Adequacy Assessment Process (ICAAP);
 - collateral revaluation and flood mapping overlay;
 - engagement and transition-plan covenants with borrowers;
 - green retrofit financing incentives;
-- portfolio decarbonisation glide-path monitoring;
+- portfolio decarbonisation glide-path monitoring; and
 - sector exposure limits and enhanced due diligence.
 
-As an illustration, the register includes a high-rated physical risk related to mortgage book flood exposure, assessed over a long-term horizon and monitored quarterly, with a recorded financial impact of 24.8 million euros and mitigation actions that include engagement and transition-plan covenants with borrowers.
+ERM integration indicators show that 6 of 8 recorded climate-related risks carry an ERM-integration flag; enterprise-wide integration into the enterprise risk management framework is not evidenced. Four of the eight climate-related risks changed since the prior period. Formal escalation thresholds or trigger-based escalation mechanics are not evidenced in the climate risk register.
 
-Six of 8 recorded climate-related risks carry an indicator that they are integrated into the enterprise risk management framework; enterprise-wide integration into the enterprise risk management framework is not evidenced. Four of the eight climate-related risks changed since the prior period. The Bank performed climate checks for major transactions in 2024. Formal escalation thresholds or trigger-based escalation mechanics for climate-related risks are not evidenced in the risk register.
-
-The management committee names recorded for prior years differ from 2024 (Group Sustainability Committee in 2022 and ESG Executive Committee in 2023). The Bank does not currently disclose whether these committees represent a continuous or renamed structure.
+Management’s role in climate-related governance is therefore reflected in the operation of the Climate Risk Management Committee, the use of the climate risk register, ERM integration indicators, semi-annual reporting to the Board and climate checks for major transactions.
 
 #### Skills, competencies and remuneration
 
-Climate-related skills and competencies at Board level are reflected in the proportion of Board members with climate expertise and in the Bank’s skills development activities. In 2024, 37.5% of Board members were recorded as having climate-related expertise, compared with 35.5% in 2023 and 33.5% in 2022. The Bank operates a skills development programme that includes climate-related topics for Board members and senior management. The Bank does not currently disclose a formal process for assessing the adequacy of Board climate-related skills and competencies.
+The Bank considers Board and executive skills, competencies and remuneration as part of its climate-related governance.
 
-Climate-related performance is incorporated into executive remuneration. The Chief Executive Officer’s remuneration included an ESG-linked component of 9.3% in 2024, compared with 7.8% in 2023 and 6.3% in 2022. For all executives, climate-linked remuneration represented 15.1% in 2024, compared with 15.3% in 2023 and 8.7% in 2022. These governance indicators the Bank reports (climate-on-agenda %, board climate-expertise %, climate-linked remuneration %) provide insight into how climate-related considerations are reflected in leadership incentives.
+Board-level climate expertise is tracked as a governance indicator. The proportion of Board members with climate expertise was 37.5% in 2024, compared with 35.5% in 2023 and 33.5% in 2022. The Bank operates a skills development programme that includes climate-related topics. The Bank does not currently describe a separate formal process for assessing the adequacy of Board climate skills in this report.
+
+Remuneration structures incorporate ESG and climate-related elements. The Chief Executive Officer’s compensation included an ESG-linked component of 9.3% in 2024, compared with 7.8% in 2023 and 6.3% in 2022. For all executives, climate-linked remuneration represented 15.1% of total remuneration in 2024, compared with 15.3% in 2023 and 8.7% in 2022. These indicators show that climate-related and broader ESG objectives are reflected in executive remuneration.
+
+Skills, competencies and remuneration arrangements described in this subsection form part of the governance context for the climate-related strategy, risk management and metrics and targets set out elsewhere in this report.
 
 #### Governance decisions, controls and evidence boundaries
 
-In 2024, the Board and its committees took a number of specific climate-related decisions:
+This subsection summarises key climate-related governance decisions and controls in 2024 and sets out relevant evidence boundaries.
 
-- On 24 January 2024, the full Board approved the 2024 ESG report for publication. The topics discussed in connection with this decision included carbon credit approval and transition plan review.
-- On 15 April 2024, the ESG & Sustainability Committee and the full Board approved the climate scenario analysis methodology. Topics discussed in the meetings associated with this decision included executive remuneration ESG key performance indicators, net-zero progress, physical risk updates, TCFD review and transition plan review.
-- On 15 April, 20 May, 19 July and 26 November 2024, the ESG & Sustainability Committee and the full Board approved the carbon credit procurement budget. Topics discussed in the meetings associated with this decision included executive remuneration ESG key performance indicators, net-zero progress, physical risk updates, scenario analysis, TCFD review and transition plan review.
-- On 7 October 2024, the full Board endorsed an updated transition plan. Topics discussed included green finance growth and TCFD review.
-- On 1 November 2024, the full Board endorsed a net-zero interim target revision. Topics discussed included net-zero progress.
+In 2024, documented Board and committee decisions on climate-related matters included:
 
-These decisions, together with semi-annual climate risk reporting to the Board and the operation of the climate risk register, form key elements of the Bank’s climate-related governance for 2024.
+- On 24 January 2024, the Full Board approved the 2024 ESG report for publication, following discussion of topics including carbon credit approval and transition plan review.
+- On 15 April 2024, the ESG & Sustainability Committee and the Full Board approved the climate scenario analysis methodology, following a series of meetings during 2024 at which topics such as executive remuneration ESG key performance indicators, net-zero progress, physical risk updates, Task Force on Climate-related Financial Disclosures (TCFD) review and transition plan review were discussed.
+- On 15 April, 20 May, 19 July and 26 November 2024, the ESG & Sustainability Committee and the Full Board approved the carbon credit procurement budget, in the context of discussions covering executive remuneration ESG key performance indicators, net-zero progress, physical risk updates, scenario analysis, TCFD review and transition plan review.
+- On 7 October 2024, the Full Board endorsed an updated transition plan, following discussion of green finance growth and TCFD-related topics.
+- On 1 November 2024, the Full Board endorsed a revision to interim net-zero targets, following discussion of net-zero progress.
 
-The Bank obtained limited external assurance from EY over its Scope 1 and Scope 2 greenhouse gas emissions for 2024, in accordance with ISAE 3000. Assurance covers only Scope 1 and Scope 2 emissions. Financed emissions and other Scope 3 categories, including the Bank’s 2024 financed emissions of 35,973,168 tCO₂e, are outside the stated assurance scope.
+These decisions, together with semi-annual climate risk reporting to the Board and the operation of the climate risk register, are key documented elements of climate-related governance for 2024.
 
-The Bank’s climate risk register and indicators of integration into the enterprise risk management framework provide important internal mechanisms for monitoring climate-related risks. As noted above, 6 of 8 recorded climate-related risks carry an indicator that they are integrated into the enterprise risk management framework; enterprise-wide integration into the enterprise risk management framework is not evidenced. The Bank performed climate checks for major transactions in 2024.
+External assurance over climate-related metrics is limited to Scope 1 and Scope 2 greenhouse gas emissions. In 2024, EY provided limited assurance in accordance with ISAE 3000 over the Bank’s Scope 1 and Scope 2 emissions. Financed emissions and other Scope 3 categories, including the Bank’s 2024 financed emissions of 35,973,168 tonnes of CO₂ equivalent, are outside the stated assurance scope.
 
-The Bank reports internal alignment indicators for its climate disclosures with the recommendations of the Task Force on Climate-related Financial Disclosures and with IFRS S2. These are alignment indicators and do not constitute a separate governance control process designed specifically to verify or assure that alignment beyond the Board and committee oversight, management processes and external assurance scope described above.
+The Bank’s governance indicators include climate-on-agenda percentage, Board climate-expertise percentage and climate-linked remuneration percentages. Board decision evidence identifies climate-related decisions but does not describe quantified or specific Board-level trade-offs such as profitability, capital allocation, implementation cost, risk appetite or competing strategic priorities.
 
-The Bank does not currently disclose a climate-specific charter, terms of reference or formal mandate for the Board or its committees, nor formal escalation thresholds for climate-related risks. Board and committee decision records identify climate-related decisions but do not describe quantified or specific Board-level trade-offs.
+The Bank reports that its climate-related disclosures are aligned with TCFD and IFRS S2 as an alignment indicator. This report does not describe a separate governance control process designed specifically to verify or assure that alignment.
 
 #### Supporting data and exhibits
 
@@ -277,83 +309,151 @@ The Bank does not currently disclose a climate-specific charter, terms of refere
 
 #### Overview
 
-Eurolux Universal Bank AG integrates climate-related considerations into its overall business strategy through a structured approach that links value-chain risk assessment, portfolio steering, transition planning, climate-related opportunities, resource allocation and scenario analysis. The Bank focuses on the impact of climate risks and opportunities on its lending activities, capital allocation and risk appetite, and on how these factors influence strategic planning over short-, medium- and long-term horizons.
+This Strategy section explains how Eurolux Universal Bank AG integrates climate-related risks and opportunities into its overall business strategy, value chain, risk management and financial planning.
 
-Climate-related risks and opportunities are assessed across the Bank’s upstream funding base, own operations and downstream financing counterparties. These assessments inform credit policies, sector exposure management, product development and client engagement. Scenario analysis using NGFS v4 pathways is used to test the resilience of the Bank’s strategy and to quantify modelled financial impacts, including transition and physical risk losses, stranded assets and revenue at risk. Climate-related capital expenditure and operating expenditure are used as indicators of resource allocation to support this strategy. Targets for emissions reduction and net zero, described in the Metrics and targets section, provide directional guidance for the Bank’s transition pathway.
+Our climate-related strategy is structured around: (i) identifying material physical and transition risks across our lending and operational footprint; (ii) steering the portfolio, including high‑carbon and fossil‑fuel exposures, in line with our climate-related targets; (iii) capturing climate-related business opportunities, particularly in green and transition finance; (iv) allocating resources, including climate-related capital and operating expenditure; and (v) assessing climate resilience through scenario analysis.
+
+We use short‑, medium‑ and long‑term time horizons consistent with our risk register and scenario analysis, and we link these to our planning and capital management processes. Climate-related targets, including a net‑zero ambition, guide our direction of travel and are monitored through progress indicators. Scenario analysis under the NGFS v4 framework informs our understanding of potential financial effects and supports incorporation of climate considerations into strategic decision-making. Cross‑references to the Risk Management and Metrics and targets sections provide further detail on governance, methodologies and target metrics.
 
 #### Sustainability risks and opportunities across the value chain
 
-The Bank’s climate-related risk profile comprises both physical and transition risks across its value chain. The risk register for 2024 identifies eight material climate-related risks, including three physical and five transition risks, with ratings ranging from medium to high and time horizons spanning short term (0–2 years), medium term (2–5 years) and long term (beyond 5 years).
+This subsection describes where climate-related risks and opportunities arise across our value chain and over different time horizons.
 
-Physical risks arise primarily in the downstream lending portfolio. Key examples include high flood exposure in the mortgage book and wildfire exposure in southern portfolios, with modelled financial impacts of EUR 24.8 million and EUR 22.7 million respectively. These risks affect collateral values and borrower creditworthiness over medium- to long-term horizons. Own operations, including buildings and corporate travel, are also exposed to chronic physical risks and contribute to Scope 1 and 2 emissions.
+We identify both physical and transition risks in our climate risk register:
 
-Transition risks are concentrated in high-carbon and fossil-fuel-related sectors. High-carbon sector exposure represents 35.5% of the loan book (EUR 11,059.49 million), and fossil fuel exposure represents 22.15% (EUR 6,899.59 million). Material transition risks include stranded assets in fossil fuel sector exposures (EUR 136.5 million potential impact), technology-driven shifts such as the move to electric vehicles in auto lending (EUR 165.2 million), carbon pricing on industrial loans (EUR 67.5 million) and reputational risk from scrutiny of financed emissions (EUR 65.5 million). The Bank’s financed emissions are estimated at around 36 million tonnes of CO₂ equivalent, with a carbon intensity of approximately 1,155 tonnes of CO₂ equivalent per million euro of exposure, which informs both the reputational risk assessment and portfolio steering.
+- Physical risks (acute and chronic) include:
+ - Flood risk in the mortgage portfolio, rated high with a long‑term (5+ years) horizon and an estimated financial impact of EUR 24.8 million.
+ - Wildfire exposure in parts of the southern portfolio, rated medium with a short‑term (0–2 years) horizon and an estimated financial impact of EUR 22.7 million.
+- Transition risks include:
+ - Technology risk from the shift to electric vehicles in auto lending, rated high in the short term with an estimated impact of EUR 165.2 million.
+ - Market risk from potential stranded assets in fossil fuel sector exposure, rated high in the long term with an estimated impact of EUR 136.5 million.
+ - Policy risk from carbon pricing on industrial loans, rated high in the medium term with an estimated impact of EUR 67.5 million.
+ - Reputational risk from scrutiny of financed emissions, rated medium in the medium term with an estimated impact of EUR 65.5 million.
 
-The value-chain map shows that the most material exposures are downstream corporate borrowers in sectors such as manufacture of coke and refined petroleum (EUR 3,903.65 million), mining of coal and lignite (EUR 3,547.58 million), mining of metal ores (EUR 2,749.58 million) and other mining and quarrying (EUR 2,102.44 million), all of which face elevated transition policy risk. Other sectors such as manufacture of motor vehicles and education (EUR 3,871.6 million and EUR 2,962.25 million respectively) are subject to moderate physical and transition risk. Upstream suppliers and some qualitative value-chain nodes are assessed qualitatively where financial exposure data are not available.
+Across the value chain, the most material exposures are concentrated in downstream financing counterparties. High‑carbon sector exposure represents 35.5% of the loan book (EUR 11,059.49 million), and fossil‑fuel exposure represents 22.15% (EUR 6,899.59 million). Material nodes include lending to manufacture of coke and refined petroleum, mining of coal and lignite, mining of metal ores and other mining and quarrying, all of which are subject to elevated transition policy risk from carbon pricing and demand shifts. Other significant nodes, such as manufacture of motor vehicles and education, are exposed to moderate physical and transition risk.
 
-Climate-related opportunities are identified mainly in downstream products and services. The Bank has a green loan portfolio of EUR 3,335.75 million, representing 10.71% of total loans, and has identified estimated revenue opportunities of EUR 465.0 million across green loan growth, sustainable bond underwriting, transition advisory, renewable energy project finance and operational energy efficiency. These opportunity figures are modelled estimates with medium confidence and are subject to uncertainty; they do not represent assured future revenue.
+Own operations, including buildings and the corporate fleet, contribute to Scope 1 and 2 emissions and face physical disruption risk. Upstream suppliers are in scope qualitatively, although not all nodes have quantified financial exposure.
+
+Climate-related opportunities arise primarily in downstream products and services. We identify estimated revenue opportunities from green loan growth, sustainable bond underwriting, transition advisory and renewable energy project finance, as well as operational energy efficiency in our own facilities. These are described in more detail below and are treated as potential, not assured, revenue streams.
 
 #### Strategic management of climate-related risks and opportunities
 
-The Bank manages climate-related risks and opportunities through a combination of portfolio steering, credit risk management, client engagement and product development. Climate-related factors are incorporated into credit analysis and sector strategies, particularly for high-carbon and fossil-fuel-related exposures.
+This subsection explains how we manage identified climate-related risks and opportunities through our strategic approach.
 
-For transition risks, the Bank applies sector exposure limits and enhanced due diligence for industrial borrowers exposed to carbon pricing, and monitors a portfolio decarbonisation glide path in response to reputational risk from financed emissions and the level of financed emissions and portfolio carbon intensity. Technology transition risk in auto lending, including the shift to electric vehicles, is assessed through climate scenario stress testing integrated into the Internal Capital Adequacy Assessment Process (ICAAP). Stranded asset risk in fossil fuel sector exposures is managed through measures such as collateral revaluation and the use of mapping overlays, and through active monitoring of sectoral transition dynamics.
+Our strategy combines portfolio steering, risk management tools and product development:
 
-Physical risks in the mortgage and southern portfolios are addressed through engagement with borrowers and collateral-focused tools such as flood-zone overlays. Own operations risks are managed through energy-efficiency initiatives and emissions reduction measures, which are linked to the Bank’s Scope 1 and 2 reduction target set using a 1.5°C-oriented framework.
+- Portfolio steering and targets:
+ - We have adopted climate-related targets, including an absolute reduction target for Scope 1 and 2 emissions aligned with an SBTi 1.5°C pathway by 2030, an intensity reduction target for financed emissions (Scope 3 category 15) by 2030 under a net‑zero banking framework, and a net‑zero target across all scopes by 2050. All three targets are currently assessed as on track, with progress of 40.0%, 25.0% and 13.3% respectively in 2024.
+ - These targets inform our approach to high‑carbon and fossil‑fuel sector exposures and support the growth of green and sustainability‑linked lending.
 
-On the opportunity side, the Bank is expanding green and sustainability-linked lending informed by the EU Taxonomy, growing sustainable bond underwriting and distribution, and developing transition advisory and ESG due diligence services for corporate clients. Renewable energy project finance is a strategic focus area, informed by European energy transition policies. Operational energy-efficiency initiatives, including building performance upgrades and renewable energy certificate procurement, are intended to reduce operating costs and emissions.
+- Risk management mechanisms:
+ - Climate scenario stress testing is integrated into our internal capital adequacy assessment process to assess transition technology risk, including the shift to electric vehicles in auto lending.
+ - Collateral revaluation and flood mapping overlays are used to assess physical risk in flood‑ and wildfire‑exposed portfolios and to inform risk‑based pricing and credit decisions.
+ - Sector exposure limits and enhanced due diligence are applied to industrial sectors sensitive to carbon pricing, such as mining and heavy manufacturing.
+ - Portfolio decarbonisation glide‑path monitoring is used to track financed emissions and manage reputational risk from emissions scrutiny.
 
-The Bank has set climate-related targets, including an absolute Scope 1 and 2 reduction target to 2030, a Scope 3 category 15 intensity reduction target to 2030 and a net-zero target for all scopes by 2050, using frameworks such as a 1.5°C pathway and the Net-Zero Banking Alliance as references. Only target summary information is used in this Strategy section; detailed assumptions and dependencies underlying the Bank’s transition plan are not specified here.
+- Opportunity management:
+ - We are expanding our green and sustainability‑linked loan book, which currently stands at EUR 3,335.75 million (10.71% of total loans), and we are developing sustainable capital markets and advisory offerings to respond to client transition needs.
+
+We have not yet published a standalone, fully specified climate transition plan. The Bank does not currently disclose the detailed assumptions or dependencies that would underpin such a plan; these will be further developed and described where relevant in future reporting and in the Metrics and targets section.
 
 #### Climate-related effects on business model, value chain and decision-making
 
-Climate-related risks and opportunities influence the Bank’s business model primarily through their impact on lending activities, sectoral portfolio composition and client engagement. The concentration of transition risk in high-carbon and fossil-fuel-related sectors, and of physical risk in mortgage and geographically concentrated portfolios, informs the Bank’s risk appetite, sector strategies and credit underwriting standards.
+This subsection outlines how climate-related risks and opportunities affect our business model, value chain and decision-making.
 
-In the downstream value chain, the Bank is progressively steering its portfolio towards lower-carbon activities by growing green and sustainability-linked lending and renewable energy project finance, while applying sector exposure limits and enhanced due diligence in carbon-intensive sectors. This affects the mix of products and services offered to corporate borrowers, including increased emphasis on transition advisory and ESG-related services.
+Our core business model as a universal bank exposes us primarily to climate-related risks and opportunities through our lending and capital markets activities. The concentration of high‑carbon and fossil‑fuel exposures in specific corporate sectors influences our sectoral risk appetite, credit underwriting standards and client engagement priorities. For example, lending to manufacture of coke and refined petroleum, mining of coal and lignite, and other mining activities is subject to enhanced scrutiny due to elevated transition policy risk. Exposure to sectors such as motor vehicles and education is assessed for both physical and transition risk, influencing collateral requirements and pricing.
 
-In own operations, climate considerations influence decisions on building management, energy procurement and travel policies, reflecting both cost and emissions considerations. Upstream, the Bank’s engagement with suppliers is informed by environmental and climate criteria where relevant, although quantitative exposure data are not available for all supplier categories.
+Green and sustainability‑linked lending, sustainable bond underwriting, transition advisory and renewable energy project finance are becoming more prominent components of our product offering. These activities are intended to support clients’ transition plans and to diversify our revenue base towards lower‑carbon activities.
 
-Climate-related scenario analysis and risk assessments are integrated into strategic planning horizons, with short-term (to 2025), medium-term (to 2030) and long-term (to 2050) perspectives informing capital planning and risk appetite. However, the Bank does not currently disclose a separate, detailed business-model impact assessment that isolates climate-related effects from other strategic drivers, and quantified trade-off analysis between climate-related and other strategic objectives has not been documented in this Strategy section.
+Climate-related considerations are integrated into decision-making through the use of climate risk metrics (including financed emissions and carbon intensity), scenario analysis outputs and target progress indicators. These inputs inform strategic discussions on portfolio composition, sector limits and the pace of green loan growth.
+
+The Bank does not currently disclose a separate, detailed business‑model impact assessment that quantifies how climate-related factors may reshape the overall business model beyond the portfolio and product effects described above. The Bank also does not currently disclose quantified or documented trade‑off analysis for strategy decisions, such as explicit trade‑offs between exiting high‑carbon sectors and maintaining client relationships.
 
 #### Financial effects and resource allocation
 
-Climate-related risks and opportunities affect the Bank’s financial position and performance primarily through credit risk, capital allocation and fee income potential. High-carbon sector exposure of EUR 11,059.49 million and fossil fuel exposure of EUR 6,899.59 million create potential for increased expected credit losses and capital consumption under adverse transition scenarios, particularly where stranded asset risk is material. Physical risks in mortgage and regional portfolios may affect collateral values and default rates over time.
+This subsection describes how climate-related risks and opportunities influence our financial position, performance and resource allocation.
 
-The Bank has allocated EUR 476.95 million of climate-related capital expenditure and EUR 219.32 million of climate-related operating expenditure in 2024. These amounts are indicators of resource allocation to climate-related initiatives, including portfolio steering, risk management capabilities, operational energy efficiency and green product development. They are not presented as separate line items in the primary financial statements; rather, they are embedded within existing categories such as property and equipment, technology investments, staff costs and administrative expenses. An activity-level breakdown of climate capex and opex is not currently disclosed.
+We use climate-related capital and operating expenditure as indicators of resource allocation to climate priorities. In 2024, climate-related capital expenditure amounted to EUR 476.95 million and climate-related operating expenditure amounted to EUR 219.32 million. These amounts relate to activities such as facility energy efficiency upgrades, systems and data enhancements for climate risk management, and development of green and sustainable finance capabilities. They are indicators of strategic resource allocation and are not presented as separate line items in the primary financial statements; they are expected to affect depreciation, operating expenses and, over time, net interest income and fee income.
 
-On the opportunity side, the Bank has identified estimated revenue impacts of EUR 465.0 million from climate-related products and services. This includes medium-confidence estimates of EUR 180.0 million from green and sustainability-linked loan growth, EUR 95.0 million from sustainable bond underwriting, EUR 42.0 million from transition advisory services, EUR 130.0 million from renewable energy project finance and EUR 18.0 million from operational energy-efficiency gains. These figures are modelled estimates with medium confidence and should not be interpreted as assured future revenue.
+Our portfolio metrics show that high‑carbon sector exposure is EUR 11,059.49 million (35.5% of the loan book) and fossil‑fuel exposure is EUR 6,899.59 million (22.15%). These exposures, together with financed emissions of 35,973,167.69 tonnes of CO₂ equivalent and a carbon intensity of 1,154.81 tonnes of CO₂ equivalent per million euro of exposure, indicate areas where climate-related risks may affect expected credit losses, risk‑weighted assets and funding costs over time.
 
-Scenario analysis provides additional insight into potential financial effects. Modelled estimates indicate that, under specific NGFS v4 scenarios, transition risk losses could reach up to 23.1% of capital in the short term and physical risk losses up to 32.0% of capital in the long term, with stranded assets and revenue at risk also quantified. These are not realised losses but inform capital planning and risk appetite. The Bank does not currently quantify the specific current-period effects of climate-related risks and opportunities on its financial position, financial performance and cash flows, and does not provide a granular mapping of these effects to individual financial statement line items. Management expects that the most relevant line items over time are likely to include expected credit losses and impairments, collateral valuations, and risk-weighted assets and capital requirements.
+Climate-related opportunities are associated with estimated revenue impacts. We estimate potential revenue of EUR 180.0 million from green and sustainability‑linked loan growth, EUR 95.0 million from sustainable bond underwriting, EUR 42.0 million from transition advisory, EUR 130.0 million from renewable energy project finance and EUR 18.0 million from operational energy efficiency. These figures are modelled estimates with medium confidence and should not be interpreted as assured future revenue.
+
+We also use climate scenario analysis to estimate potential financial effects. Modelled outputs include transition risk loss and physical risk loss as percentages of capital, stranded asset estimates and revenue at risk. These are described in the next subsection and are not actual realised losses. The Bank does not currently disclose a granular mapping of climate-related financial effects to specific financial statement line items or a breakdown of climate capex and opex by activity.
+
+The Bank does not currently disclose planned sources of funding specifically earmarked to implement its climate strategy; funding is managed within the overall capital and liquidity planning framework.
 
 #### Climate resilience and scenario analysis
 
-The Bank conducts climate-related scenario analysis using NGFS v4 scenarios across orderly, disorderly and hot house world pathways. The scenario set includes Net Zero 2050, Below 2°C, Divergent Net Zero, Delayed Transition, Nationally Determined Contributions and Current Policies. Analysis is performed over short-term (2025), medium-term (2030) and long-term (2050) horizons, primarily on the lending book across Germany, France, Italy, the Netherlands and Spain.
+This subsection explains how we assess the resilience of our strategy and business model using climate scenario analysis.
 
-The overall scenario framework applies a top-down sector-pathway approach for orderly scenarios, a sub-portfolio focus for disorderly scenarios and a revenue-at-risk method for hot house world scenarios. For orderly scenarios, the Bank applies the NGFS v4 Net Zero 2050 pathway using a sector-pathway approach. Carbon price assumptions are informed by a Net Zero 2050 trajectory and mapped to counterparty sectors. Stranded asset estimates are derived from sector-level fossil fuel capital expenditure exposure. Under this scenario, modelled stranded assets in 2050 are estimated at EUR 33,575.2 million. Temperature outcomes in orderly scenarios are in the 1.5–1.8°C range, with technology readiness generally high and a rising share of renewable energy in the power mix.
+Scenario framework, types and scope
 
-For disorderly scenarios, such as Divergent Net Zero, the Bank focuses on technology pathway uncertainty and uneven policy implementation in selected sub-portfolios, notably automotive and energy manufacturing. Carbon prices vary by country based on national emissions trading schemes and carbon tax trajectories, and technology readiness is mixed across sectors (low, medium and high). These scenarios are used to stress-test technology transition risk in the targeted portfolios. Modelled estimates indicate that maximum transition risk losses could reach 23.1% of capital in 2025 under a Divergent Net Zero scenario. Under these conditions, near-term resilience is acceptable, but medium-term capital consumption from stranded asset impairments is material, and additional capital buffers may be required after 2030.
+We use the NGFS v4 scenario framework, covering orderly, disorderly and hot house world scenarios. Named scenarios include Net Zero 2050, Below 2°C, Divergent Net Zero, Delayed Transition, Nationally Determined Contributions and Current Policies. We assess short‑term (2025), medium‑term (2030) and long‑term (2050) horizons.
 
-Hot house world scenarios, including Current Policies and Nationally Determined Contributions, assume delayed or insufficient policy action, leading to higher temperature outcomes, up to around 3.0°C. Carbon pricing ramps up later and is less effective in constraining emissions, with carbon price assumptions across scenarios ranging from approximately EUR 1.2 to EUR 287.1 per tonne of CO₂ equivalent. In these scenarios, physical risks dominate. For example, under a Current Policies scenario in 2050, modelled physical risk losses could reach 32.0% of capital, driven by flood and heat-related impacts on mortgage and agricultural portfolios. Under a Nationally Determined Contributions scenario in 2025, modelled revenue at risk is estimated at EUR 35,509.1 million, reflecting sensitivity of sector revenues to carbon prices within the stated range.
+The analysis is applied to our lending book exposures across several European jurisdictions, including Germany, France, Italy, the Netherlands and Spain. We use a top‑down sector‑pathway approach, mapping sectoral transition and physical risk drivers to our counterparties.
 
-Scenario-specific resilience is assessed as follows:
+Key assumptions and methodology
 
-- In orderly scenarios, transition risk losses remain within Pillar 2 capital buffer thresholds, and growth in green lending and client engagement on transition plans is expected to reduce high-carbon sector concentration over the medium term.
-- In disorderly scenarios, resilience is more constrained, with material capital consumption from stranded assets and higher volatility in credit losses; sector exposure limits and portfolio decarbonisation glide-path monitoring are key mechanisms.
-- In hot house world scenarios, resilience is challenged primarily by physical risk, with collateral revaluation in flood-exposed mortgage books and increased default risk in climate-sensitive sectors; flood-zone overlays and energy performance certificate-based collateral monitoring are used to manage these risks.
+Key assumptions include:
 
-The Bank’s adaptation capacity in these scenarios is shaped by its climate-related capex and opex, its capital buffers, and its ability to adjust portfolio composition through sector limits, green loan growth and client engagement. However, the Bank does not currently disclose sufficient detail to assess full operational adaptation capacity across all business lines.
+- Carbon prices ranging from EUR 1.2 to EUR 287.1 per tonne of CO₂ equivalent across scenarios and time horizons, reflecting different policy stringency levels.
+- Temperature outcomes between 1.5°C and 3.0°C by 2100, depending on the scenario.
+- Technology readiness levels that vary by scenario and sector, ranging from low to high, particularly for low‑carbon technologies in energy, transport and industry.
+- Macroeconomic and energy system assumptions consistent with NGFS v4 and related reference pathways, including changes in GDP growth, energy demand and the share of renewable energy in the power mix.
+- For the orderly Net Zero 2050 scenario, we apply a sector‑pathway methodology with carbon prices aligned to an international net‑zero energy trajectory and derive stranded asset estimates from sector‑level fossil fuel capital expenditure exposure.
+- For disorderly scenarios, such as Divergent Net Zero and Delayed Transition, we model abrupt policy changes, heterogeneous carbon prices and uneven technology deployment.
+- For hot house scenarios, including Current Policies and Nationally Determined Contributions, we focus on physical risk intensification and delayed policy action.
+
+Key modelled financial outputs
+
+Modelled outputs include:
+
+- Maximum physical risk loss: under the Current Policies hot house scenario in 2050, modelled physical risk losses reach 32.0% of capital.
+- Maximum transition risk loss: under the Divergent Net Zero disorderly scenario in 2025, modelled transition risk losses reach 23.1% of capital.
+- Maximum stranded assets estimate: under the Net Zero 2050 orderly scenario in 2050, modelled stranded assets are estimated at EUR 33,575.2 million, derived from sector‑level fossil fuel capital expenditure exposure.
+- Maximum revenue at risk: under the Nationally Determined Contributions hot house scenario in 2025, modelled revenue at risk is EUR 35,509.1 million.
+
+These figures are modelled estimates and not realised losses or impairments.
+
+Scenario‑specific resilience
+
+- Orderly scenarios (e.g. Net Zero 2050, Below 2°C):
+ - Under orderly transition scenarios, transition risk losses remain within our internal capital buffer thresholds. Green loan growth and client engagement on transition plans are expected to reduce high‑carbon sector concentration over the medium term. Our climate-related targets and portfolio steering mechanisms are intended to support this trajectory.
+
+- Disorderly scenarios (e.g. Divergent Net Zero, Delayed Transition):
+ - Under disorderly scenarios, near‑term resilience is acceptable but medium‑term capital consumption from stranded asset impairments is material. Sector exposure limits and portfolio decarbonisation glide‑path monitoring are key mechanisms to manage these risks. Additional capital buffers may be required after 2030 under the most adverse assumptions.
+
+- Hot house scenarios (e.g. Current Policies, Nationally Determined Contributions):
+ - Under hot house world scenarios, physical risk losses become the dominant long‑term challenge. Collateral revaluation risk in flood‑exposed mortgage books and increased default risk among agricultural and other climate‑sensitive borrowers are key transmission channels. Flood‑zone overlays and energy performance certificate‑based collateral monitoring are used to manage these risks over the 2050 horizon.
+
+Adaptation capacity
+
+Our adaptation capacity is informed by:
+
+- Financial resources: climate-related capital expenditure of EUR 476.95 million and operating expenditure of EUR 219.32 million, which are directed towards risk management capabilities, data and systems, and green product development.
+- Portfolio flexibility: sector exposure limits, green loan growth (currently 10.71% of the loan book), decarbonisation glide‑path monitoring and client engagement on transition plans, which provide mechanisms to adjust portfolio composition over time.
+- Current and planned investment effects: investments in renewable energy project finance, green and sustainability‑linked loans and operational energy efficiency are intended to support both risk mitigation and opportunity capture.
+
+The evidence does not provide enough detail to assess full operational adaptation capacity at the level of individual assets or business lines. Resilience observations are therefore scenario‑specific and focused on capital and portfolio metrics rather than operational continuity.
 
 #### Strategy limitations and evidence boundaries
 
-This Strategy section is prepared using the Bank’s current climate risk, opportunity, value-chain, scenario and target information. While it describes how climate-related risks and opportunities affect the Bank’s portfolio and value chain, the Bank does not currently disclose a separate, detailed business-model impact assessment that isolates climate-related effects from other strategic drivers.
+This subsection summarises key limitations and boundaries of the Strategy disclosures.
 
-The Bank’s strategy disclosures do not include quantified or documented trade-off analysis for climate-related strategy decisions, such as explicit trade-offs between climate objectives and other financial or operational priorities. Only target summary information is used in this section; detailed target assumptions, baselines, milestones, validation evidence and any use of carbon credits are not described here.
+Business model: The Bank’s disclosures describe climate-related risks and opportunities, portfolio exposures and value‑chain effects. The Bank does not currently disclose a separate, detailed business‑model impact assessment that quantifies how climate-related factors may reshape the overall business model beyond these portfolio and product effects.
 
-Transition-plan governance decisions and net-zero targets are described at a high level, but the Bank acknowledges that key assumptions and dependencies underlying the transition plan, including policy, technology and customer-behaviour assumptions, are not specified in this Strategy section.
+Trade‑offs: The Bank does not currently disclose quantified or documented trade‑off analysis for strategy decisions, such as explicit trade‑offs between exiting high‑carbon sectors and maintaining client relationships or between short‑term profitability and long‑term decarbonisation.
 
-Scenario financial outputs, including transition and physical risk losses, stranded asset estimates and revenue at risk, are modelled estimates and should not be interpreted as realised or forecast losses. They are subject to uncertainty in scenario design, input data and modelling methodologies. Similarly, climate-related opportunity revenue impacts are estimates with associated uncertainty and should not be interpreted as assured future revenue.
+Targets: Only target summary information is used in this section. Detailed target assumptions and dependencies, including any validation and methodological aspects, are described only where available in the Metrics and targets section.
 
-Resilience observations in this section are scenario-specific and relate to the particular NGFS v4 pathways, assumptions and time horizons described. They do not constitute a general statement of overall bank-wide resilience to all climate-related risks. The Bank expects its methodologies, data coverage and disclosures to evolve over time as regulatory expectations, market practices and internal capabilities develop.
+Transition plan: The Bank has not yet published a standalone, fully specified climate transition plan. Available evidence identifies climate-related targets and governance decisions but does not specify the key assumptions or dependencies that would underpin a comprehensive transition plan.
+
+Financial effects: Climate-related financial effects from scenario analysis are modelled estimates and should not be interpreted as realised losses, impairments or capital requirements. Climate-related capital and operating expenditure figures are indicators of resource allocation and not separate financial statement line items. The Bank does not currently disclose a granular mapping of climate-related financial effects to specific financial statement captions or a breakdown of climate capex and opex by activity.
+
+Opportunities: Revenue impacts associated with climate-related opportunities are modelled estimates with stated confidence levels and should not be interpreted as assured future revenue or profit.
+
+Scenarios and resilience: Scenario outputs, including physical and transition risk losses, stranded asset estimates and revenue at risk, are modelled estimates subject to uncertainty in assumptions such as carbon prices, technology readiness and policy developments. Resilience observations are scenario‑specific and do not constitute a general statement of overall bank‑wide resilience to all climate-related risks.
 
 ---
 
@@ -361,145 +461,182 @@ Resilience observations in this section are scenario-specific and relate to the 
 
 #### Sustainability-related risk management overview
 
-Eurolux Universal Bank AG identifies, assesses and monitors climate-related risks primarily through a dedicated climate risk register. For the financial year 2024, the register contains eight climate-related risks, comprising three physical risks and five transition risks. These risks are classified into the following categories: acute physical, chronic physical, transition market, transition policy, transition reputational and transition technology. Each risk is assigned a rating (high or medium), a time horizon (short term: 0–2 years; medium term: 2–5 years; long term: more than 5 years), a monitoring frequency (quarterly or semi-annual), and an indicative financial impact expressed in million euro.
+This section explains how Eurolux Universal Bank AG identifies, assesses, monitors and manages climate-related risks as a subset of its overall risk universe.
 
-The climate risk register is the central tool through which the Bank organises its climate-related risk management processes. It supports:
+In 2024, we maintained and used a climate risk register to record and monitor climate-related risks with potential financial effects. The 2024 register contains eight climate-related risks, comprising three physical risks and five transition risks. These risks are classified into the following categories: acute physical, chronic physical, transition market, transition policy, transition reputational and transition technology.
 
-- identification and categorisation of material physical and transition risks;
-- assessment of indicative financial impact and time horizon;
-- prioritisation through risk ratings and monitoring frequency; and
-- recording of mitigation actions and links to selected climate scenarios.
+Each risk in the register is characterised by:
 
-Six of the eight climate-related risks recorded for 2024 are flagged as integrated into the Bank’s enterprise risk management processes, corresponding to 75% of the registered climate risks. This integration flag indicates that these climate-related risks are considered within the broader risk management activities of the Bank, alongside traditional financial and non-financial risks. Two climate-related risks are not yet flagged as integrated.
+- a qualitative risk rating (high or medium);
+- an assigned time horizon (short term: 0–2 years; medium term: 2–5 years; long term: more than 5 years);
+- an indicative financial impact expressed in millions of euros;
+- a monitoring frequency (quarterly or semi-annual);
+- a flag indicating whether the risk is integrated into our enterprise risk management processes; and
+- any link to climate-related scenario analysis.
 
-The Bank uses climate-related scenario analysis as a forward-looking input for selected risks. Five of the eight risks are linked to scenario references, which in turn draw on a subset of the Bank’s scenario library. These scenario-linked risks reference four distinct scenario identifiers. The Bank’s scenario library for climate risk analysis comprises 18 scenarios, based on the NGFS v4 framework and covering orderly, disorderly and hot-house world pathways, with key horizon years of 2025, 2030 and 2050. Scenario names used in the library include, among others, Below 2°C, Current Policies, Delayed Transition, Divergent Net Zero, Nationally Determined Contributions and Net Zero 2050. Scenario analysis is used as a forward-looking assessment input and the scenario outputs are modelled estimates rather than realised losses.
+Six of the eight recorded climate-related risks are flagged as integrated into our enterprise risk management processes. Four of the eight risks were updated compared with the prior period, indicating that our assessment of climate-related risks evolves as new information becomes available.
 
-The Bank’s climate-related risk management processes are connected to its broader sustainability and climate strategy through the focus on lending portfolios, sector exposures and financed emissions. Reported climate-related key performance indicators, including total financed emissions of 35,973,167.69 tCO₂e, a carbon intensity of 1,154.81 tCO₂e per million euro, high-carbon sector exposure of 35.5% and fossil fuel exposure of 22.15%, provide contextual information for transition and reputational risks recorded in the register, particularly those related to financed emissions scrutiny and fossil fuel sector exposure. The Bank does not currently disclose formal climate risk appetite thresholds, detailed risk policies or escalation triggers in this report.
+We use climate-related scenario analysis as a forward-looking input for selected risks. Five of the eight risks in the 2024 register reference scenario identifiers, which in turn draw on a set of 18 climate scenarios based on the NGFS v4 framework that covers orderly, disorderly and higher-temperature (“hot house”) transition pathways and time horizons to 2025, 2030 and 2050. Several risks may reference the same scenario, so the number of scenario-linked risks is higher than the number of distinct scenarios used. Scenario analysis is used to inform our forward-looking assessment of those specific risks, rather than to represent actual or realised losses.
+
+Mitigation actions are recorded for the risks disclosed in this report. For 2024, these actions include:
+
+- “Climate scenario stress testing integrated into ICAAP”;
+- “Collateral revaluation and flood mapping overlay”;
+- “Engagement and transition-plan covenants with borrowers”;
+- “Green retrofit financing incentives”;
+- “Portfolio decarbonisation glide-path monitoring”; and
+- “Sector exposure limits and enhanced due diligence”.
+
+These actions are used to manage specific risks and are not presented as a complete set of controls for all climate-related risks.
+
+We also monitor selected climate-related key performance indicators, including financed emissions, carbon intensity, high-carbon sector exposure and fossil-fuel exposure. In 2024, our reported financed emissions were approximately 36.0 million tonnes of carbon dioxide equivalent, with a portfolio carbon intensity of around 1,155 tonnes of carbon dioxide equivalent per million euros of exposure. Exposures to high-carbon sectors represented 35.5% of the portfolio, and exposures to fossil-fuel-related activities represented 22.15%. These indicators provide additional context for transition and reputational risks, particularly those related to financed emissions scrutiny and exposure to high-carbon sectors. They are not used as formal risk appetite thresholds in this report.
+
+Climate-related opportunities are not recorded in the 2024 climate risk register, and we do not currently disclose separate processes for identifying, assessing or monitoring climate-related opportunities.
 
 #### Upstream sustainability risks
 
-For Eurolux Universal Bank AG, upstream sustainability-related risks would typically relate to dependencies on funding markets, suppliers and other external service providers. In the current reporting period, the Bank’s climate-related risk management disclosures are centred on the climate risk register, which focuses on risks arising from lending portfolios, collateral and counterparties. The 2024 climate risk register does not include specific upstream climate-related risks linked to suppliers, procurement or funding counterparties, nor does it set out a distinct upstream climate risk process.
+This subsection describes how we consider sustainability-related risks in relation to upstream dependencies such as funding, suppliers and access to capital.
 
-As a result, this report does not provide a separate taxonomy or process description for upstream sustainability-related risks. Any climate-related effects on the Bank’s access to capital or on key suppliers have not yet been quantified and are outside the scope of the 2024 climate risk register.
+Our 2024 climate risk register is focused on risks arising from our lending and credit portfolios and does not separately classify upstream sustainability-related risks. The recorded climate-related risks primarily relate to borrower creditworthiness, collateral values and sectoral transition dynamics, rather than to our own funding structure, suppliers or other upstream dependencies.
+
+As a result, we do not currently disclose a distinct upstream sustainability risk management process or separate upstream climate risk taxonomy. Any upstream implications of climate-related risks, such as potential effects on funding costs or investor sentiment, are considered indirectly through the transition and reputational risks recorded in the climate risk register, including the risk described as “Reputational risk — financed emissions scrutiny”.
 
 #### Risk management across internal operations
 
-Internal operational climate risks for a commercial bank may include physical risks to branches and offices, data centres and other facilities, as well as transition-related impacts on internal processes, systems and staff capabilities. In 2024, the Bank’s climate risk register is focused on risks that primarily affect lending portfolios and counterparties, including mortgage, auto, industrial and agricultural exposures.
+This subsection explains how climate-related risks are considered in relation to our own operations.
 
-The 2024 register does not contain distinct entries for climate-related risks that are limited to internal operations, such as physical damage to own premises or disruption to internal processes. It also does not describe specific internal operational controls or procedures related to climate risk, such as climate-related checks in major internal projects or dedicated operational resilience measures. Accordingly, this report does not present a separate internal operations climate risk management framework, and internal operational climate risks have not yet been quantified in the climate risk register.
+The 2024 climate risk register does not include separate entries for climate-related risks that arise solely from our internal operations, such as our own facilities, data centres or business continuity arrangements. The physical risks recorded in the register relate to exposures in our lending portfolios, including:
+
+- “Physical risk — mortgage book flood exposure” (acute physical risk, high rating, long-term horizon, monitored quarterly);
+- “Physical risk — wildfire exposure in southern portfolio” (acute physical risk, medium rating, short-term horizon, monitored semi-annually); and
+- “Physical risk — heat stress on agricultural borrowers” (chronic physical risk, medium rating, short-term horizon, monitored semi-annually).
+
+These risks are assessed in terms of their potential impact on borrowers and collateral, rather than on our own operational sites or internal processes. We do not currently disclose dedicated internal operational climate risk controls, data governance procedures or major-transaction climate checks beyond the risk-specific mitigation actions recorded in the register.
+
+Accordingly, climate-related risk management across our internal operations is not separately described in this report and remains outside the scope of the 2024 climate risk register.
 
 #### Downstream sustainability risks
 
-Downstream sustainability-related risks are most material for Eurolux Universal Bank AG through its lending activities, financed emissions, sectoral exposures and the quality and location of collateral. The 2024 climate risk register reflects this focus and records both physical and transition risks that arise from the Bank’s credit portfolios and client relationships.
+This subsection focuses on downstream sustainability-related risks, which for a commercial bank arise primarily through lending, counterparties, collateral and sector exposures.
 
-Key downstream physical risks include:
+The 2024 climate risk register indicates that our material climate-related risks are predominantly downstream and relate to our credit portfolios. The key themes are:
 
-- Physical risk — mortgage book flood exposure: an acute physical risk with a high rating and a long-term time horizon of more than five years, monitored quarterly. This risk reflects potential flood-related impacts on the mortgage portfolio and associated collateral values. It is integrated into the Bank’s enterprise risk management processes and is linked to a specific climate scenario reference. Mitigation actions recorded for this risk include engagement and transition-plan covenants with borrowers.
+- Transition technology risk: “Transition risk — EV shift in auto lending” is rated high, with a short-term horizon and the largest indicative financial impact in the register (EUR 165.2 million). It is monitored quarterly and is integrated into our enterprise risk management processes. The recorded mitigation action is “Climate scenario stress testing integrated into ICAAP”, and the risk references a climate scenario identifier.
+- Transition market risk: “Stranded assets — fossil fuel sector exposure” is rated high, with a long-term horizon and a significant indicative financial impact (EUR 136.5 million). It is monitored quarterly and integrated into enterprise risk management. The recorded mitigation action is “Collateral revaluation and flood mapping overlay”.
+- Transition policy risk: Two risks are recorded:
+ - “Transition risk — carbon pricing on industrial loans” (high rating, medium-term horizon, indicative financial impact of EUR 67.5 million, quarterly monitoring, integrated into enterprise risk management), with the mitigation action “Sector exposure limits and enhanced due diligence”; and
+ - “Transition risk — building energy performance regulation” (medium rating, long-term horizon, indicative financial impact of EUR 21.6 million, semi-annual monitoring, not flagged as integrated into enterprise risk management), with the mitigation action “Green retrofit financing incentives”.
+- Transition reputational risk: “Reputational risk — financed emissions scrutiny” is rated medium, with a medium-term horizon and an indicative financial impact of EUR 65.5 million. It is monitored semi-annually, integrated into enterprise risk management and linked to a climate scenario identifier. The recorded mitigation action is “Portfolio decarbonisation glide-path monitoring”.
+- Physical credit risk: The three physical risks noted above relate to flood, wildfire and heat stress exposures in our mortgage and agricultural portfolios. These risks are associated with potential changes in default rates and collateral values in affected regions and sectors. Mitigation actions recorded for these risks include “Collateral revaluation and flood mapping overlay” for wildfire exposure, “Engagement and transition-plan covenants with borrowers” for mortgage book flood exposure, and “Climate scenario stress testing integrated into ICAAP” for heat stress on agricultural borrowers.
 
-- Physical risk — wildfire exposure in southern portfolio: an acute physical risk with a medium rating and a short-term time horizon of 0–2 years, monitored on a semi-annual basis. This risk is not yet flagged as integrated into enterprise risk management. The mitigation actions recorded include “Collateral revaluation and flood mapping overlay”.
+These downstream risks are assessed using qualitative ratings (high or medium), time horizons and indicative financial impacts. Monitoring frequencies are set at quarterly or semi-annual intervals, depending on the risk. Scenario analysis is used as a forward-looking input for selected downstream risks, particularly those related to the electric vehicle transition in auto lending, physical flood and heat stress exposures, and reputational risks linked to financed emissions.
 
-- Physical risk — heat stress on agricultural borrowers: a chronic physical risk with a medium rating and a short-term time horizon of 0–2 years, monitored semi-annually. This risk is integrated into enterprise risk management and is linked to a climate scenario reference. The mitigation actions recorded include “Climate scenario stress testing integrated into ICAAP”.
+Our reported climate-related key performance indicators provide additional context for these downstream risks. In 2024, we reported financed emissions of approximately 36.0 million tonnes of carbon dioxide equivalent, a portfolio carbon intensity of around 1,155 tonnes of carbon dioxide equivalent per million euros of exposure, exposure to high-carbon sectors of 35.5% and exposure to fossil-fuel-related activities of 22.15%. These indicators are used to monitor the overall context in which transition and reputational risks may evolve, but they are not presented as formal limits or thresholds in this section.
 
-Key downstream transition risks include:
-
-- Transition risk — EV shift in auto lending: a transition technology risk with a high rating and a short-term time horizon of 0–2 years, monitored quarterly. This risk captures potential impacts on the auto lending portfolio from the shift towards electric vehicles. It is integrated into enterprise risk management and linked to a climate scenario reference. The mitigation actions recorded include “Climate scenario stress testing integrated into ICAAP”.
-
-- Stranded assets — fossil fuel sector exposure: a transition market risk with a high rating and a long-term time horizon of more than five years, monitored quarterly. This risk reflects potential devaluation of exposures to fossil fuel sectors. It is integrated into enterprise risk management. The mitigation actions recorded include “Collateral revaluation and flood mapping overlay”.
-
-- Transition risk — carbon pricing on industrial loans: a transition policy risk with a high rating and a medium-term time horizon of 2–5 years, monitored quarterly. This risk addresses potential impacts of carbon pricing on industrial borrowers. It is integrated into enterprise risk management. The mitigation actions recorded include “Sector exposure limits and enhanced due diligence”.
-
-- Transition risk — building energy performance regulation: a transition policy risk with a medium rating and a long-term time horizon of more than five years, monitored semi-annually. This risk is not yet flagged as integrated into enterprise risk management. The mitigation actions recorded include “Green retrofit financing incentives”.
-
-- Reputational risk — financed emissions scrutiny: a transition reputational risk with a medium rating and a medium-term time horizon of 2–5 years, monitored semi-annually. This risk is integrated into enterprise risk management and linked to a climate scenario reference. The mitigation actions recorded include “Portfolio decarbonisation glide-path monitoring”.
-
-These downstream risks are closely connected to the Bank’s reported climate-related key performance indicators. High-carbon sector exposure of 35.5%, fossil fuel exposure of 22.15%, total financed emissions of 35,973,167.69 tCO₂e and a carbon intensity of 1,154.81 tCO₂e per million euro provide context for the transition market, policy and reputational risks described above. These indicators are used as monitoring context and are not presented as formal risk appetite limits in this report.
+We do not currently disclose separate processes for identifying or managing downstream climate-related opportunities, such as green lending growth, beyond the risk-focused mitigation actions recorded in the register (for example, “Green retrofit financing incentives”).
 
 #### Climate risk management
 
-The climate risk register is the primary instrument through which Eurolux Universal Bank AG organises its climate risk management processes across identification, assessment, prioritisation, monitoring and mitigation.
+This subsection provides a detailed description of our climate risk management approach as reflected in the 2024 climate risk register.
 
-Identification and categorisation
+Risk identification and classification
 
-The Bank identifies climate-related risks by mapping exposures across its lending portfolios and collateral to physical and transition risk drivers. In 2024, eight climate-related risks are recorded:
+We identify climate-related risks through our risk register process, which records eight climate-related risks for 2024. These are classified into:
 
-- three physical risks, classified as acute (flood and wildfire) and chronic (heat stress); and
-- five transition risks, classified as market, policy, reputational and technology risks.
+- Physical risks:
+ - Acute physical risks, including flood and wildfire exposure in lending portfolios;
+ - Chronic physical risks, including heat stress affecting agricultural borrowers.
+- Transition risks:
+ - Market risks, including potential stranded assets in fossil fuel sector exposures;
+ - Policy risks, including carbon pricing on industrial loans and building energy performance regulation;
+ - Reputational risks, including scrutiny of financed emissions;
+ - Technology risks, including the shift to electric vehicles in auto lending.
 
-Each risk is assigned to one of the following categories: physical acute, physical chronic, transition market, transition policy, transition reputational or transition technology. The register also records whether a risk has changed since the prior period; four of the eight risks are marked as changed, indicating updates in assessment, financial impact or mitigation approach during 2024.
+Each risk is assigned a time horizon (short term: 0–2 years; medium term: 2–5 years; long term: more than 5 years) and a qualitative risk rating (high or medium). These attributes provide a structured way to distinguish near-term from longer-term risks and to highlight those with higher potential financial impact.
 
-Assessment, prioritisation and time horizons
+Risk assessment and prioritisation
 
-The Bank assesses each climate-related risk using:
+We assess the potential financial effects of each climate-related risk using indicative financial impact estimates expressed in millions of euros. The top risks by indicative financial impact in 2024 are:
 
-- a risk rating of high or medium;
-- a time horizon, defined as short term (0–2 years), medium term (2–5 years) or long term (more than 5 years); and
-- an indicative financial impact expressed in million euro.
+- “Transition risk — EV shift in auto lending” (EUR 165.2 million, high rating, short-term horizon);
+- “Stranded assets — fossil fuel sector exposure” (EUR 136.5 million, high rating, long-term horizon);
+- “Transition risk — carbon pricing on industrial loans” (EUR 67.5 million, high rating, medium-term horizon);
+- “Reputational risk — financed emissions scrutiny” (EUR 65.5 million, medium rating, medium-term horizon);
+- “Physical risk — mortgage book flood exposure” (EUR 24.8 million, high rating, long-term horizon);
+- “Physical risk — wildfire exposure in southern portfolio” (EUR 22.7 million, medium rating, short-term horizon);
+- “Transition risk — building energy performance regulation” (EUR 21.6 million, medium rating, long-term horizon);
+- “Physical risk — heat stress on agricultural borrowers” (EUR 20.6 million, medium rating, short-term horizon).
 
-The top risks by indicative financial impact in 2024 include:
+These indicative financial impacts, together with the qualitative ratings and time horizons, are used to prioritise climate-related risks relative to one another and to other material risks. Four of the eight risks were updated compared with the prior period, reflecting changes in our assessment of their potential financial impact, time horizon or other attributes.
 
-- Transition risk — EV shift in auto lending (high rating, short term, 165.2 million euro);
-- Stranded assets — fossil fuel sector exposure (high rating, long term, 136.5 million euro);
-- Transition risk — carbon pricing on industrial loans (high rating, medium term, 67.5 million euro);
-- Reputational risk — financed emissions scrutiny (medium rating, medium term, 65.5 million euro);
-- Physical risk — mortgage book flood exposure (high rating, long term, 24.8 million euro);
-- Physical risk — wildfire exposure in southern portfolio (medium rating, short term, 22.7 million euro);
-- Transition risk — building energy performance regulation (medium rating, long term, 21.6 million euro); and
-- Physical risk — heat stress on agricultural borrowers (medium rating, short term, 20.6 million euro).
+We do not currently disclose quantitative probability scores, formal risk appetite thresholds or detailed prioritisation methodologies for climate-related risks.
 
-These assessments provide a basis for prioritising management attention and monitoring intensity, with higher-rated and higher-impact risks generally monitored more frequently.
+Risk monitoring
 
-Monitoring processes
+Monitoring frequencies are recorded for each risk in the register and are set at either quarterly or semi-annual intervals. In general:
 
-Monitoring frequencies recorded in the register are quarterly and semi-annual. In 2024:
+- High-rated risks with larger indicative financial impacts, such as the electric vehicle transition in auto lending, stranded fossil fuel exposures, carbon pricing on industrial loans and mortgage book flood exposure, are monitored quarterly.
+- Medium-rated risks, including reputational risk from financed emissions scrutiny, wildfire exposure, building energy performance regulation and heat stress on agricultural borrowers, are monitored semi-annually.
 
-- high-rated risks with larger indicative financial impacts, such as the EV shift in auto lending, fossil fuel sector exposure, carbon pricing on industrial loans and mortgage book flood exposure, are monitored quarterly; and
-- medium-rated risks, including wildfire exposure, building energy performance regulation, heat stress on agricultural borrowers and financed emissions scrutiny, are monitored on a semi-annual basis.
-
-The register also records whether risks have changed since the prior period, providing a mechanism to track the evolution of climate-related risk assessments over time. Four of the eight risks are marked as changed in 2024.
+These monitoring frequencies are used to schedule periodic reviews of risk assessments, including updates to indicative financial impacts, time horizons and mitigation actions where appropriate.
 
 Scenario analysis
 
-Climate-related scenario analysis is used as a forward-looking input for selected risks. Five of the eight registered risks are linked to scenario references, which collectively use four distinct scenario identifiers. These identifiers are drawn from the Bank’s library of 18 climate scenarios, which are based on the NGFS v4 framework and include orderly, disorderly and hot-house world pathways, with horizon years of 2025, 2030 and 2050. Scenario names in the library include Below 2°C, Current Policies, Delayed Transition, Divergent Net Zero, Nationally Determined Contributions and Net Zero 2050.
+We use climate-related scenario analysis as a forward-looking input for selected risks. In 2024:
 
-Selected risks are linked to these scenarios as follows:
+- Five of the eight recorded risks reference scenario identifiers;
+- These identifiers are drawn from a set of 18 climate scenarios that cover different transition pathways (including orderly, disorderly and higher-temperature outcomes) and time horizons (2025, 2030 and 2050), based on the NGFS v4 framework;
+- The scenario-linked risks include:
+ - “Transition risk — EV shift in auto lending”;
+ - “Reputational risk — financed emissions scrutiny”;
+ - “Physical risk — mortgage book flood exposure”;
+ - “Physical risk — wildfire exposure in southern portfolio”; and
+ - “Physical risk — heat stress on agricultural borrowers”.
 
-- Transition risk — EV shift in auto lending and Physical risk — heat stress on agricultural borrowers reference the same scenario identifier;
-- Physical risk — mortgage book flood exposure references a separate scenario identifier;
-- Physical risk — wildfire exposure in southern portfolio references another scenario identifier; and
-- Reputational risk — financed emissions scrutiny references a further scenario identifier.
+Several risks may reference the same scenario, so the number of scenario-linked risks is greater than the number of distinct scenarios used. Scenario analysis is used to explore how different climate and policy pathways could affect the profile of specific climate-related risks over time. Scenario outputs are modelled estimates and are not treated as forecasts or as evidence of actual losses.
 
-These scenario links are used to inform the forward-looking assessment of risk magnitude and timing. Scenario outputs are modelled estimates and are not treated as actual losses.
+Risk mitigation and management actions
 
-Mitigation actions
+Mitigation actions are recorded for the risks disclosed in this report. Across the eight risks, the following actions are used:
 
-The climate risk register records mitigation actions for each risk. Across the eight risks, the following mitigation actions are recorded:
+- “Climate scenario stress testing integrated into ICAAP”;
+- “Collateral revaluation and flood mapping overlay”;
+- “Engagement and transition-plan covenants with borrowers”;
+- “Green retrofit financing incentives”;
+- “Portfolio decarbonisation glide-path monitoring”; and
+- “Sector exposure limits and enhanced due diligence”.
 
-- Climate scenario stress testing integrated into ICAAP;
-- Collateral revaluation and flood mapping overlay;
-- Engagement and transition-plan covenants with borrowers;
-- Green retrofit financing incentives;
-- Portfolio decarbonisation glide-path monitoring; and
-- Sector exposure limits and enhanced due diligence.
+These actions are applied to specific risks as recorded in the register. For example, “Climate scenario stress testing integrated into ICAAP” is used for selected transition and physical risks, “Collateral revaluation and flood mapping overlay” is used for certain market and physical risks, and “Sector exposure limits and enhanced due diligence” is used for transition policy risks related to carbon pricing. “Engagement and transition-plan covenants with borrowers” and “Green retrofit financing incentives” are used in relation to mortgage and building-related risks, while “Portfolio decarbonisation glide-path monitoring” is associated with reputational risk from financed emissions scrutiny.
 
-These actions are recorded at the level of individual risks. For example, “Climate scenario stress testing integrated into ICAAP” is recorded for the EV shift in auto lending and heat stress on agricultural borrowers; “Collateral revaluation and flood mapping overlay” is recorded for fossil fuel sector exposure and wildfire exposure; “Engagement and transition-plan covenants with borrowers” is recorded for mortgage book flood exposure; “Green retrofit financing incentives” is recorded for building energy performance regulation; “Portfolio decarbonisation glide-path monitoring” is recorded for financed emissions scrutiny; and “Sector exposure limits and enhanced due diligence” is recorded for carbon pricing on industrial loans. Mitigation actions are recorded in the risk register and are not presented in this report as guarantees of risk reduction.
+We do not present these mitigation actions as a complete set of controls for all climate-related risks, and we do not claim that they eliminate the underlying risks. Rather, they represent the specific management responses recorded for the identified risks in 2024.
 
-Integration into enterprise risk management
+Integration with enterprise risk management
 
-The climate risk register records whether each risk is integrated into the Bank’s enterprise risk management processes. In 2024, six of the eight climate-related risks (75%) are flagged as integrated. These include the EV shift in auto lending, fossil fuel sector exposure, carbon pricing on industrial loans, financed emissions scrutiny, mortgage book flood exposure and heat stress on agricultural borrowers. Wildfire exposure and building energy performance regulation are not yet flagged as integrated. The integration flag indicates that these climate-related risks are considered within the Bank’s broader risk management activities; however, this report does not describe detailed enterprise risk management policies or control frameworks for climate risk.
+Six of the eight climate-related risks in the 2024 register are flagged as integrated into our enterprise risk management processes. These include the high-impact transition risks (electric vehicle shift in auto lending, stranded fossil fuel exposures, carbon pricing on industrial loans), the reputational risk from financed emissions scrutiny, the mortgage book flood exposure and the chronic physical risk related to heat stress on agricultural borrowers.
+
+We do not currently disclose detailed descriptions of how climate-related risks are embedded into specific enterprise risk management processes beyond the integration flags and the recorded mitigation actions.
+
+Climate-related opportunities
+
+The 2024 climate risk register does not include separate entries for climate-related opportunities, and we do not currently disclose processes for identifying, assessing, prioritising or monitoring such opportunities. Where mitigation actions may have opportunity elements, such as “Green retrofit financing incentives”, they are recorded in the register in the context of managing specific risks rather than as standalone opportunity management processes.
+
+Process changes compared with the prior period
+
+Four of the eight recorded risks are marked as having changed since the prior period. This indicates that our climate risk assessments are updated over time, but we do not currently disclose a detailed narrative of process changes, such as methodological revisions or governance enhancements, beyond the changed-since-prior-period flags in the register.
 
 #### Risk management limitations and evidence boundaries
 
-The climate-related risk management disclosures in this section are based on the 2024 climate risk register, the associated scenario analysis framework and selected climate-related key performance indicators. While the register provides structured information on risk categories, ratings, time horizons, monitoring frequencies, indicative financial impacts, mitigation actions, scenario links and enterprise risk management integration flags, there are important limitations and boundaries to the disclosures presented.
+This subsection summarises the main limitations and boundaries of our 2024 climate-related risk management disclosures.
 
-First, the Bank does not currently disclose formal climate risk appetite thresholds, including quantitative limits or tolerance levels for specific climate-related risk categories, sectors or portfolios. As a result, this report does not describe how climate-related risks are constrained by explicit risk appetite metrics.
+- Formal risk appetite: We do not currently disclose formal climate-specific risk appetite thresholds or limits, including quantitative tolerances for financed emissions, sector exposures or climate-related loss levels.
+- Policies and controls: We do not currently disclose detailed climate risk policies, formal control procedures or internal standards that may apply to climate-related risk management beyond the mitigation actions recorded in the climate risk register.
+- Escalation thresholds: We do not currently disclose formal escalation thresholds or triggers for climate-related risks, such as defined criteria for management escalation or governance committee review.
+- Upstream and internal operations: Our 2024 climate risk register is focused on risks arising from lending portfolios and does not provide a separate taxonomy or process description for upstream sustainability-related risks (for example, suppliers or funding) or for climate-related risks arising solely from our own operations. As a result, upstream and internal operational climate risk management processes are outside the scope of this report.
+- Opportunities: We do not currently disclose dedicated processes for identifying, assessing, prioritising or monitoring climate-related opportunities. Any opportunity elements embedded in mitigation actions are presented in the context of risk management.
+- Scenario analysis: Climate-related scenario analysis is used as a forward-looking input for selected risks and is based on modelled estimates. Scenario outputs are subject to uncertainty and are not treated as forecasts or as evidence of actual or realised losses.
+- Methodological detail: We do not disclose detailed probability models, quantitative scoring methodologies or the internal mechanics of scenario models, nor do we provide a full description of how climate-related risks are prioritised relative to all other risk types beyond the qualitative ratings, time horizons and indicative financial impacts recorded in the register.
 
-Second, the Bank does not currently disclose detailed climate risk policies, formal control procedures or process descriptions that would specify roles, responsibilities, approval workflows or lines of defence for climate risk management. The mitigation actions described are recorded at the level of individual risks in the register and should not be interpreted as a complete set of formal controls.
-
-Third, the Bank does not currently disclose formal escalation thresholds or triggers for climate-related risks, such as defined criteria for escalation to senior management or governance bodies. Consequently, this report does not describe escalation routes or decision thresholds for climate-related risk events.
-
-Fourth, the climate risk register is focused on downstream risks arising from lending portfolios, collateral and counterparties. Upstream climate-related risks linked to suppliers, procurement and funding markets, as well as internal operational climate risks affecting the Bank’s own facilities and processes, are not separately identified or quantified in the 2024 register. These areas are therefore outside the scope of the current climate risk management disclosures.
-
-Finally, climate-related scenario analysis is used as a forward-looking assessment input for selected risks and is based on modelled estimates using NGFS v4 scenarios. The Bank recognises that scenario design, input data and modelling assumptions are subject to uncertainty and may evolve over time. The Bank will continue to refine its climate risk management approach and may expand its disclosures on formal policies, risk appetite, escalation mechanisms and value chain coverage in future reporting periods as practices and regulatory expectations develop.
+Within these boundaries, the 2024 climate risk register, together with the associated scenario links, monitoring frequencies, mitigation actions and enterprise risk management integration flags, provides the primary basis for our climate-related risk management disclosures in this report.
 
 #### Supporting data and exhibits
 
@@ -523,142 +660,165 @@ Finally, climate-related scenario analysis is used as a forward-looking assessme
 
 #### Overview
 
-Eurolux Universal Bank AG uses a suite of climate-related metrics and targets to monitor and manage material climate-related risks and opportunities across its balance sheet and operations. For the year ended 31 December 2024, the Bank’s metrics focus on: portfolio-financed emissions and carbon intensity; exposure to high-carbon and fossil-fuel sectors; green lending and climate-related capital and operating expenditure; and medium- and long-term climate targets covering operational and financed emissions.
+This section presents the key metrics and targets Eurolux Universal Bank AG uses to measure and manage climate-related risks and opportunities for the year ended 31 December 2024. It covers portfolio emissions, exposure to high-carbon and fossil-fuel activities, green lending, climate-related capital and operating expenditure, and the Bank’s climate-related targets. The disclosures are prepared with reference to IFRS S1 and IFRS S2 and focus on information that could reasonably be expected to affect the Bank’s prospects.
 
-Operational Scope 1, Scope 2 and Scope 3 greenhouse gas emissions for 2024 are not available as detailed records and are therefore outside the scope of this Metrics and targets section. The Bank instead uses portfolio-financed emissions and related intensity indicators as its primary quantitative measures of climate transition risk in the lending book.
+The Bank distinguishes between:
+- sustainability-related metrics used to monitor broader environmental and climate-related risks and opportunities; 
+- greenhouse gas emissions metrics, including financed emissions; and 
+- climate-related financial metrics and targets that inform strategic planning and risk management.
 
-The climate-related metrics and targets disclosed in this section are integrated into the Bank’s broader risk management and strategic planning processes, as described in the Governance, Strategy and Risk management sections of this report.
+Oversight of climate-related targets by the Board and the ESG and Sustainability Committee is described in the Governance section of this report.
 
 #### Sustainability-related metrics and targets
 
-The Bank monitors a set of key performance indicators to assess its exposure to climate-related risks and to track progress against its climate-related strategic objectives. For 2024, the principal sustainability-related metrics are:
+This subsection summarises the principal sustainability-related metrics that the Bank uses to assess and manage climate-related risks and opportunities in its core banking activities.
 
-- Total assets: EUR 850,000 million.
-- Total loans: EUR 31,150.64 million.
+Key portfolio and exposure metrics for 2024 are:
 
-High-carbon and fossil-fuel exposure metrics:
+- Total assets: EUR 850,000 million. 
+- Total loans and advances to customers: EUR 31,150.64 million.
 
-- Exposure to high-carbon sectors: EUR 11,059.49 million, representing 35.5% of the total loan portfolio.
-- Exposure to fossil-fuel-related activities: EUR 6,899.59 million, representing 22.15% of the total loan portfolio.
+Within this loan portfolio, the Bank monitors the following climate-related indicators:
 
-Green finance and transition-support metrics:
+- High-carbon sector exposure: 
+ - EUR 11,059.49 million, representing 35.5% of the total loan portfolio. 
+- Fossil-fuel exposure: 
+ - EUR 6,899.59 million, representing 22.15% of the total loan portfolio. 
+- Green loans: 
+ - EUR 3,335.75 million, representing 10.71% of the total loan portfolio.
 
-- Green loans: EUR 3,335.75 million, representing 10.71% of the total loan portfolio.
-- Climate-related capital expenditure: EUR 476.95 million in 2024.
-- Climate-related operating expenditure: EUR 219.32 million in 2024.
+These metrics are used to monitor the Bank’s exposure to sectors with elevated transition risk, as well as the scale of lending that supports climate-related opportunities through green financing. They also provide the basis for monitoring progress against the Bank’s climate-related targets described below.
 
-These metrics are used by management to:
-
-- Monitor concentration risk in sectors with elevated transition and physical climate risk.
-- Track the growth of green lending as a proportion of the overall loan book.
-- Assess the scale of financial resources allocated to climate-related initiatives, including decarbonisation of operations, product development and risk management capabilities.
-- Inform the setting and review of climate-related targets, including those relating to financed emissions and net-zero commitments.
-
-The Bank’s climate-related targets, described in the “Climate targets and progress” subsection, are linked to these metrics through absolute and intensity-based indicators, which are used internally to monitor progress over time.
+The Bank’s climate-related targets, including operational emissions reduction, financed emissions intensity reduction and a long-term net-zero objective, are presented in the “Climate targets and progress” subsection.
 
 #### Greenhouse gas emissions
 
-Detailed 2024 operational Scope 1, Scope 2 and Scope 3 greenhouse gas emissions records for Eurolux Universal Bank AG are unavailable. As a result, operational emissions are not disclosed in this report and are outside the scope of the Metrics and targets section for the reporting year.
+This subsection addresses the Bank’s own operational greenhouse gas emissions.
+
+For the 2024 reporting period, detailed records of operational Scope 1, Scope 2 and Scope 3 greenhouse gas emissions are unavailable. As a result, the Bank does not currently disclose quantified operational emissions for 2024 in this report. The Bank intends to enhance its operational emissions data collection and reporting processes over time.
 
 #### Managing exposure towards financed emissions
 
-Financed emissions represent a key metric for assessing the climate-related risk profile of the Bank’s lending activities. For the year ended 31 December 2024, the Bank reports the following portfolio-level financed emissions metrics for its loan book:
+This subsection presents the Bank’s 2024 financed emissions metrics and related portfolio indicators, which are key measures of climate-related risk in the lending book.
 
-- Total financed emissions from loans: 35,973,167.69 tCO₂e.
-- Carbon intensity of the loan portfolio: 1,154.81 tCO₂e per EUR million of lending, calculated using total loans of EUR 31,150.64 million.
+For 2024, the Bank reports the following financed emissions metrics for its loan portfolio:
 
-These metrics are used to:
+- Financed emissions from loans: 
+ - 35,973,167.69 tonnes of CO₂ equivalent associated with the loan portfolio. 
+- Carbon intensity of lending: 
+ - 1,154.81 tonnes of CO₂ equivalent per EUR million of lending, calculated using total loans of EUR 31,150.64 million.
 
-- Provide a quantitative view of the greenhouse gas emissions associated with the Bank’s lending activities.
-- Support the monitoring of transition risk in sectors with higher emissions profiles.
-- Track progress against the Bank’s financed emissions intensity reduction target, as described in the “Climate targets and progress” subsection.
+These metrics are used internally to monitor the emissions profile of the Bank’s financing activities and to inform risk management, client engagement and strategic planning. The basis of the financed-emissions perimeter (for example, by asset class or sector) is not separately disclosed in this report.
 
-The Bank does not currently disclose the basis for the perimeter of the financed emissions calculation (for example, by asset class or sector) in this report. Detailed calculation methodology, including data sources, estimation techniques and any data quality assessments, is not described in this section and is therefore a limitation on the interpretability and comparability of the financed emissions metrics. No external verification of the 2024 financed emissions and carbon intensity metrics has been performed.
+The Bank also monitors portfolio exposure to sectors with elevated transition risk, as set out in the sustainability-related metrics above:
+
+- High-carbon sector exposure: EUR 11,059.49 million (35.5% of total loans). 
+- Fossil-fuel exposure: EUR 6,899.59 million (22.15% of total loans).
+
+These exposure metrics are used alongside financed emissions and carbon intensity to manage the Bank’s transition risk profile. The financed emissions and exposure metrics disclosed for 2024 have not been independently verified.
 
 #### Climate-related financial metrics and resource allocation
 
-The Bank uses climate-related financial metrics to assess how climate-related risks and opportunities are reflected in its financial position and resource allocation decisions. For 2024, the key climate-related financial metrics are:
+This subsection presents climate-related financial metrics that indicate how the Bank allocates financial resources in response to climate-related risks and opportunities.
 
-- Green lending: Green loans amounted to EUR 3,335.75 million, representing 10.71% of the total loan portfolio. This metric is used to monitor the Bank’s support for clients’ transition and sustainable activities.
-- High-carbon sector exposure: Loans to high-carbon sectors totalled EUR 11,059.49 million, or 35.5% of the total loan portfolio. This metric is used to assess concentration risk in sectors that may be more exposed to transition risk.
-- Fossil-fuel exposure: Loans to fossil-fuel-related activities amounted to EUR 6,899.59 million, or 22.15% of the total loan portfolio. This metric informs risk appetite, credit decisioning and engagement strategies with clients in fossil-fuel-intensive sectors.
-- Climate-related capital expenditure: The Bank invested EUR 476.95 million in climate-related capital projects in 2024. This includes investments intended to support the decarbonisation of operations, enhancement of climate risk management capabilities and development of climate-related products and services.
-- Climate-related operating expenditure: The Bank incurred EUR 219.32 million of climate-related operating expenditure in 2024, reflecting ongoing costs associated with climate risk management, data and analytics, staff training and other operational initiatives.
+For 2024, the Bank reports the following climate-related financial indicators:
 
-These financial metrics are used in internal planning and budgeting processes to:
+- Green loans: 
+ - EUR 3,335.75 million of green loans outstanding, representing 10.71% of the total loan portfolio of EUR 31,150.64 million. 
+- Climate-related capital expenditure: 
+ - EUR 476.95 million of capital expenditure directed towards climate-related initiatives, including investments intended to improve energy efficiency, support low-carbon technologies and enhance climate-related risk management capabilities. 
+- Climate-related operating expenditure: 
+ - EUR 219.32 million of operating expenditure related to climate initiatives, including activities such as climate risk analysis, data and systems enhancements, and internal capability building.
 
-- Assess the financial implications of climate-related risks and opportunities on the Bank’s balance sheet and income statement.
-- Inform capital allocation decisions, including investments in systems, data and capabilities required to manage climate-related risks.
-- Monitor the reallocation of capital towards lower-carbon and green activities over time.
-
-No external verification of these climate-related financial metrics has been performed for the 2024 reporting year.
+These metrics are used to monitor the scale of the Bank’s financial commitment to climate-related initiatives and to support assessment of the Bank’s response to transition and physical climate-related risks. The Bank’s approach to classifying green loans and climate-related expenditure is based on internal definitions and governance processes; detailed calculation methodologies and data quality assessments are not described in this report. The climate-related financial metrics disclosed for 2024 have not been independently verified.
 
 #### Climate targets and progress
 
-Eurolux Universal Bank AG has established climate-related targets that cover its operational emissions, financed emissions and long-term net-zero ambition. These targets are used to guide strategic decision-making, portfolio steering and engagement with clients. Oversight of climate-related targets by the Board and the relevant Board-level committee is described in the Governance section of this report. Target-level internal owner roles are not separately detailed in this section.
+This subsection describes the Bank’s climate-related targets and reported progress for 2024. All quantitative parameters, including baselines, target values and interim milestones, are target-record parameters and do not represent current-year operational emissions or independently verified performance.
 
-For transparency, the Bank summarises its principal climate-related targets as follows. All baseline values, target values and interim milestones are parameters recorded in the Bank’s internal target records and are not current-year operational emissions:
+The Bank has three principal climate-related targets:
 
-1. Operational Scope 1 and 2 emissions reduction target
+1. Operational Scope 1 and 2 emissions reduction target (TGT001) 
+2. Financed emissions intensity reduction target (TGT002) 
+3. Long-term net-zero greenhouse gas target (TGT003)
 
-- Target: Reduce absolute Scope 1 and Scope 2 greenhouse gas emissions.
-- Scope: Scope 1 and Scope 2 emissions across the whole entity.
-- Metric: Absolute emissions in tonnes of CO₂ equivalent.
-- Baseline year and value: 2020, with a baseline parameter of 137,849 tCO₂e recorded in the target record.
-- Target year and reduction level: 2030, with a 42% reduction from the 2020 baseline recorded in the target record.
-- Gases covered: All seven Kyoto greenhouse gases.
-- Basis: The target record indicates that this target is set on a gross emissions basis.
-- Framework: The target record identifies a science-based 1.5°C pathway as the target framework.
-- Interim milestones: The target record includes interim milestone parameters of 120,480 tCO₂e for 2025 and 97,321.4 tCO₂e for 2028.
-- Progress indicator: The target record reports 40.0% progress towards the 2030 reduction objective as at 2024, using absolute tCO₂e as the progress metric. This progress indicator has not been externally verified.
-- Third-party validation: The target record indicates that external validation is recorded, with the Science Based Targets initiative identified in a validation field. This reference does not extend to current-year emissions metrics, progress indicators or the likelihood of future target achievement.
+A summary of these targets is set out below, followed by narrative explanations.
 
-2. Financed emissions intensity reduction target
+Summary of climate-related targets (target-record parameters)
 
-- Target: Reduce the carbon intensity of financed emissions associated with the loan portfolio.
-- Scope: Scope 3, category 15 (financed emissions) across the whole entity.
-- Metric: Emissions intensity in tCO₂e per EUR million of lending.
-- Baseline year and value: 2022, with a baseline parameter of 20.0 tCO₂e per EUR million of lending recorded in the target record.
-- Target year and reduction level: 2030, with a 30% reduction from the 2022 baseline recorded in the target record.
-- Gases covered: All seven Kyoto greenhouse gases.
-- Basis: The target record indicates that this target is set on a gross emissions basis.
-- Framework: The target record identifies the Net-Zero Banking Alliance as the target framework.
-- Sectoral approach: The target record indicates that a sectoral decarbonisation approach is applied.
-- Interim milestones: The target record includes interim milestone parameters of 18.2 tCO₂e per EUR million of lending for 2025 and 15.8 tCO₂e per EUR million of lending for 2028.
-- Progress indicator: The target record reports 25.0% progress towards the 2030 intensity reduction objective as at 2024, using tCO₂e per EUR million as the progress metric. This progress indicator has not been externally verified.
-- Third-party validation: The target record includes a field that lists UNEP FI in connection with this target. This listing does not constitute external verification of current-year financed emissions metrics, progress indicators or future achievement of the target.
+- Operational Scope 1 and 2 emissions reduction target 
+ - Scope and metric: Scope 1 and Scope 2 greenhouse gas emissions, measured in tonnes of CO₂ equivalent. 
+ - Baseline: 2020 baseline year with a baseline value of 137,849 tonnes of CO₂ equivalent (target-record parameter). 
+ - Target: 42% reduction in absolute Scope 1 and 2 emissions by 2030 relative to the 2020 baseline. 
+ - Interim milestones: 
+ - 2025 milestone of 120,480 tonnes of CO₂ equivalent. 
+ - 2028 milestone of 97,321.4 tonnes of CO₂ equivalent. 
+ These values are recorded as interim milestones in the target record and are not reported as actual or forecast emissions. 
+ - Coverage: Whole entity, covering all Kyoto greenhouse gases within Scope 1 and Scope 2. 
+ - Framework: The target record identifies the SBTi 1.5°C pathway as the target framework. 
+ - Third-party validation: The target record indicates that third-party validation is recorded, with SBTi identified as the validation body. 
+ - Progress indicator: The target record reports 40.0% progress against the target as at 2024, expressed as a percentage reduction versus the baseline according to the internal progress metric. This progress indicator has not been independently verified.
 
-3. Long-term net-zero greenhouse gas emissions target
+- Financed emissions intensity reduction target (TGT002) 
+ - Scope and metric: Financed emissions associated with Scope 3 category 15 (financed emissions), measured as tonnes of CO₂ equivalent per EUR million of lending. 
+ - Baseline: 2022 baseline year with a baseline value of 20.0 tonnes of CO₂ equivalent per EUR million of lending (target-record parameter). 
+ - Target: 30% reduction in financed emissions intensity by 2030 relative to the 2022 baseline. 
+ - Interim milestones: 
+ - 2025 milestone of 18.2 tonnes of CO₂ equivalent per EUR million of lending. 
+ - 2028 milestone of 15.8 tonnes of CO₂ equivalent per EUR million of lending. 
+ These values are recorded as interim milestones in the target record and are not reported as actual portfolio intensities. 
+ - Coverage: Whole entity, covering all Kyoto greenhouse gases within Scope 3 category 15. 
+ - Framework: The target record identifies the Net-Zero Banking Alliance (NZBA) as the target framework. 
+ - Third-party validation: The target record indicates that third-party validation is recorded, with UNEP FI identified as the validation body. 
+ - Sectoral approach: The target record notes that a sectoral decarbonisation approach is used. 
+ - Progress indicator: The target record reports 25.0% progress against the target as at 2024, expressed as a percentage reduction versus the baseline according to the internal progress metric. This progress indicator has not been independently verified.
 
-- Target: Achieve net-zero greenhouse gas emissions across all scopes.
-- Scope: All scopes across the whole entity.
-- Metric: Emissions in tonnes of CO₂ equivalent, expressed as a percentage reduction versus baseline.
-- Baseline year and value: 2020, with a baseline parameter of 120,000 tCO₂e recorded in the target record.
-- Target year and reduction level: 2050, with a 100% reduction from the 2020 baseline recorded in the target record.
-- Gases covered: All seven Kyoto greenhouse gases.
-- Basis: The target record indicates that this is a net emissions target and references an associated gross target for operational emissions.
-- Framework: The target record identifies the Net-Zero Banking Alliance as the target framework.
-- Planned use of carbon credits: The target record includes a parameter indicating that up to 8.2% of the reduction at the target date may be met through carbon credits, with a focus on technology-based removal projects. This parameter is a planning assumption in the target record and does not represent a current commitment to specific projects.
-- Progress indicator: The target record reports 13.3% progress towards the 2050 net-zero objective as at 2024, expressed as a percentage reduction versus the baseline. This progress indicator has not been externally verified.
-- Third-party validation: The target record includes a field that lists UNEP FI in connection with this target. This listing does not constitute external verification of current-year emissions metrics, progress indicators or future achievement of the target.
+- Long-term net-zero greenhouse gas target (TGT003) 
+ - Scope and metric: All scopes (Scope 1, Scope 2 and relevant Scope 3 categories), measured in tonnes of CO₂ equivalent. 
+ - Baseline: 2020 baseline year with a baseline value of 120,000 tonnes of CO₂ equivalent (target-record parameter). 
+ - Target: 100% reduction in net greenhouse gas emissions by 2050 relative to the 2020 baseline, representing a net-zero objective. 
+ - Relationship to gross target: The target record identifies TGT001 as the associated gross emissions reduction target. 
+ - Coverage: Whole entity, covering all Kyoto greenhouse gases across all scopes. 
+ - Framework: The target record identifies the Net-Zero Banking Alliance (NZBA) as the target framework. 
+ - Third-party validation: The target record indicates that third-party validation is recorded, with UNEP FI identified as the validation body. 
+ - Planned use of carbon credits: The target record notes a planned use of carbon credits equivalent to 8.2% of the baseline emissions, with a focus on technology-based removal credits. This parameter is a target-record assumption and does not represent a current or committed volume of carbon credits. 
+ - Progress indicator: The target record reports 13.3% progress against the target as at 2024, expressed as a percentage reduction versus the baseline according to the internal progress metric. This progress indicator has not been independently verified.
 
-The target records also indicate review frequencies of triennial for the Scope 1 and 2 target, annual for the financed emissions intensity target and biennial for the net-zero target. These review frequencies are used internally to schedule reassessments of target parameters and progress.
+For all three targets:
 
-References in this subsection to external initiatives and organisations describe the frameworks and fields recorded in the Bank’s internal target records. They do not constitute confirmation that current-year emissions, financed emissions, progress indicators or future achievement of the targets have been externally verified.
+- The targets apply to the whole entity and cover all Kyoto greenhouse gases within the stated scopes. 
+- The target records indicate review frequencies of triennial (TGT001), annual (TGT002) and biennial (TGT003) respectively. 
+- The target records include internal labels relating to consistency with global temperature pathways; these labels are not used in this report as evidence of pathway alignment. 
+- The target records do not separately detail internal owner roles at the target level; governance oversight of climate-related targets by the Board and the ESG and Sustainability Committee is described in the Governance section.
+
+The Bank uses these targets and associated metrics to guide strategic planning, risk management and engagement with clients. All baseline values, target values, interim milestones and progress percentages disclosed in this subsection are parameters recorded in the Bank’s internal target records. They do not constitute current-year operational emissions, do not verify the Bank’s 2024 emissions or financed emissions metrics, and do not provide assurance that the targets will be met.
 
 #### Metrics and targets limitations and evidence boundaries
 
-The Bank recognises several limitations and boundaries in its current climate-related metrics and targets disclosures for the year ended 31 December 2024:
+This subsection summarises key limitations and boundaries relating to the metrics and targets disclosed above.
 
-- Operational greenhouse gas emissions: Detailed 2024 Scope 1, Scope 2 and Scope 3 operational emissions records are unavailable. As a result, operational emissions are not disclosed in this report, and the Bank relies primarily on financed emissions and related intensity metrics to assess its climate-related emissions profile.
-- Financed emissions methodology: While total financed emissions and portfolio carbon intensity are disclosed, the Bank does not currently disclose the detailed calculation methodology, including data sources, estimation techniques, data quality assessments, or the precise perimeter of assets and sectors included in the financed emissions calculation. This limits comparability with other institutions and may affect the interpretation of year-on-year changes.
-- Disaggregation of financed emissions: The Bank does not currently disclose financed emissions by asset class, sector, geography or client segment in this report. Financed emissions are therefore presented only as a portfolio-level aggregate for the loan book.
-- Climate-related financial metrics: The Bank discloses aggregate figures for green loans, high-carbon sector exposure, fossil-fuel exposure, climate-related capital expenditure and climate-related operating expenditure. Further breakdowns by business line, sector or geography are not provided in this section.
-- Target records and progress indicators: All baseline values, target values, interim milestones, progress percentages, framework references and third-party validation details are parameters recorded in the Bank’s internal target records. These parameters do not constitute verification of current-year emissions, financed emissions, progress towards the targets, consistency with any specific climate pathway, or future achievement of the targets. No external verification of the 2024 progress indicators reported for each target has been performed.
-- Third-party validation references: References to external organisations such as the Science Based Targets initiative and UNEP FI in this section relate solely to fields recorded in the Bank’s target records. These references do not extend to current-year emissions metrics, financed emissions calculations, portfolio alignment assessments or the likelihood of future target achievement.
-- Verification and validation status: The climate-related metrics and targets disclosed in this section, including financed emissions, carbon intensity, exposure metrics, green lending, climate-related capital and operating expenditure, and target progress indicators, have not been externally verified for the 2024 reporting year.
+- Operational greenhouse gas emissions 
+ - Detailed records of operational Scope 1, Scope 2 and Scope 3 emissions for 2024 are unavailable. The Bank therefore does not disclose quantified operational emissions for the reporting year. This limits the ability to compare the operational emissions reduction target parameters with actual 2024 operational emissions.
 
-The Bank intends to enhance the scope, granularity and methodological transparency of its climate-related metrics and targets over time, including the development of more detailed operational emissions records, expanded financed emissions coverage and further disaggregation of climate-related financial metrics, subject to data availability, methodological developments and regulatory requirements.
+- Financed emissions and portfolio metrics 
+ - The Bank discloses a single financed emissions figure for loans and a corresponding carbon intensity metric for 2024. The basis of the financed-emissions perimeter, including any exclusions by asset class or product type, is not separately disclosed. 
+ - No disaggregation by sector, geography, asset class or methodology is provided in this report. 
+ - The financed emissions and carbon intensity metrics have not been independently verified.
+
+- Methodologies, data quality and assumptions 
+ - Detailed calculation methodologies, data quality assessments and key assumptions for the reported metrics (including financed emissions, carbon intensity, high-carbon and fossil-fuel exposure, green loans, and climate-related capital and operating expenditure) are not described in this report. 
+ - As a result, users of this report should treat the metrics as subject to estimation uncertainty and potential future refinement.
+
+- Targets and progress indicators 
+ - All baseline values, target values, interim milestones, progress percentages, framework references and third-party validation references are parameters recorded in the Bank’s internal target records. 
+ - References to third-party validation indicate that the target record lists a third-party validation field as true and identifies a validation body (for example, SBTi or UNEP FI). These references relate only to the target records and do not verify the Bank’s current-year emissions, financed emissions, progress, pathway alignment or the future achievement of any target. 
+ - Progress indicators (expressed as percentages) are internal target-record metrics and have not been independently verified. They should not be interpreted as confirmation that any target has been met or will be met.
+
+- Disaggregation and comparability 
+ - The Bank does not currently disclose disaggregated operational emissions, sectoral financed emissions, or detailed breakdowns of green loans and climate-related expenditure. 
+ - Comparative information for newly introduced metrics or redefined metrics is not presented where it is impracticable to reconstruct prior-period data. Where this is the case, the Bank may enhance comparability in future reporting periods as data quality improves.
+
+The Bank intends to continue developing its climate-related metrics, methodologies and data governance processes over time, with the aim of improving completeness, consistency and decision-usefulness, while recognising that future enhancements are subject to data availability, methodological developments and regulatory expectations.
 
 #### Supporting data and exhibits
 

@@ -2,139 +2,162 @@
 
 #### Overview
 
-Eurolux Universal Bank AG uses a suite of climate-related metrics and targets to monitor and manage material climate-related risks and opportunities across its balance sheet and operations. For the year ended 31 December 2024, the Bank’s metrics focus on: portfolio-financed emissions and carbon intensity; exposure to high-carbon and fossil-fuel sectors; green lending and climate-related capital and operating expenditure; and medium- and long-term climate targets covering operational and financed emissions.
+This section presents the key metrics and targets Eurolux Universal Bank AG uses to measure and manage climate-related risks and opportunities for the year ended 31 December 2024. It covers portfolio emissions, exposure to high-carbon and fossil-fuel activities, green lending, climate-related capital and operating expenditure, and the Bank’s climate-related targets. The disclosures are prepared with reference to IFRS S1 and IFRS S2 and focus on information that could reasonably be expected to affect the Bank’s prospects.
 
-Operational Scope 1, Scope 2 and Scope 3 greenhouse gas emissions for 2024 are not available as detailed records and are therefore outside the scope of this Metrics and targets section. The Bank instead uses portfolio-financed emissions and related intensity indicators as its primary quantitative measures of climate transition risk in the lending book.
+The Bank distinguishes between:
+- sustainability-related metrics used to monitor broader environmental and climate-related risks and opportunities;  
+- greenhouse gas emissions metrics, including financed emissions; and  
+- climate-related financial metrics and targets that inform strategic planning and risk management.
 
-The climate-related metrics and targets disclosed in this section are integrated into the Bank’s broader risk management and strategic planning processes, as described in the Governance, Strategy and Risk management sections of this report.
+Oversight of climate-related targets by the Board and the ESG and Sustainability Committee is described in the Governance section of this report.
 
 #### Sustainability-related metrics and targets
 
-The Bank monitors a set of key performance indicators to assess its exposure to climate-related risks and to track progress against its climate-related strategic objectives. For 2024, the principal sustainability-related metrics are:
+This subsection summarises the principal sustainability-related metrics that the Bank uses to assess and manage climate-related risks and opportunities in its core banking activities.
 
-- Total assets: EUR 850,000 million.
-- Total loans: EUR 31,150.64 million.
+Key portfolio and exposure metrics for 2024 are:
 
-High-carbon and fossil-fuel exposure metrics:
+- Total assets: EUR 850,000 million.  
+- Total loans and advances to customers: EUR 31,150.64 million.
 
-- Exposure to high-carbon sectors: EUR 11,059.49 million, representing 35.5% of the total loan portfolio.
-- Exposure to fossil-fuel-related activities: EUR 6,899.59 million, representing 22.15% of the total loan portfolio.
+Within this loan portfolio, the Bank monitors the following climate-related indicators:
 
-Green finance and transition-support metrics:
+- High-carbon sector exposure:  
+  - EUR 11,059.49 million, representing 35.5% of the total loan portfolio.  
+- Fossil-fuel exposure:  
+  - EUR 6,899.59 million, representing 22.15% of the total loan portfolio.  
+- Green loans:  
+  - EUR 3,335.75 million, representing 10.71% of the total loan portfolio.
 
-- Green loans: EUR 3,335.75 million, representing 10.71% of the total loan portfolio.
-- Climate-related capital expenditure: EUR 476.95 million in 2024.
-- Climate-related operating expenditure: EUR 219.32 million in 2024.
+These metrics are used to monitor the Bank’s exposure to sectors with elevated transition risk, as well as the scale of lending that supports climate-related opportunities through green financing. They also provide the basis for monitoring progress against the Bank’s climate-related targets described below.
 
-These metrics are used by management to:
-
-- Monitor concentration risk in sectors with elevated transition and physical climate risk.
-- Track the growth of green lending as a proportion of the overall loan book.
-- Assess the scale of financial resources allocated to climate-related initiatives, including decarbonisation of operations, product development and risk management capabilities.
-- Inform the setting and review of climate-related targets, including those relating to financed emissions and net-zero commitments.
-
-The Bank’s climate-related targets, described in the “Climate targets and progress” subsection, are linked to these metrics through absolute and intensity-based indicators, which are used internally to monitor progress over time.
+The Bank’s climate-related targets, including operational emissions reduction, financed emissions intensity reduction and a long-term net-zero objective, are presented in the “Climate targets and progress” subsection.
 
 #### Greenhouse gas emissions
 
-Detailed 2024 operational Scope 1, Scope 2 and Scope 3 greenhouse gas emissions records for Eurolux Universal Bank AG are unavailable. As a result, operational emissions are not disclosed in this report and are outside the scope of the Metrics and targets section for the reporting year.
+This subsection addresses the Bank’s own operational greenhouse gas emissions.
+
+For the 2024 reporting period, detailed records of operational Scope 1, Scope 2 and Scope 3 greenhouse gas emissions are unavailable. As a result, the Bank does not currently disclose quantified operational emissions for 2024 in this report. The Bank intends to enhance its operational emissions data collection and reporting processes over time.
 
 #### Managing exposure towards financed emissions
 
-Financed emissions represent a key metric for assessing the climate-related risk profile of the Bank’s lending activities. For the year ended 31 December 2024, the Bank reports the following portfolio-level financed emissions metrics for its loan book:
+This subsection presents the Bank’s 2024 financed emissions metrics and related portfolio indicators, which are key measures of climate-related risk in the lending book.
 
-- Total financed emissions from loans: 35,973,167.69 tCO₂e.
-- Carbon intensity of the loan portfolio: 1,154.81 tCO₂e per EUR million of lending, calculated using total loans of EUR 31,150.64 million.
+For 2024, the Bank reports the following financed emissions metrics for its loan portfolio:
 
-These metrics are used to:
+- Financed emissions from loans:  
+  - 35,973,167.69 tonnes of CO₂ equivalent associated with the loan portfolio.  
+- Carbon intensity of lending:  
+  - 1,154.8131 tonnes of CO₂ equivalent per EUR million of lending, calculated using total loans of EUR 31,150.64 million.
 
-- Provide a quantitative view of the greenhouse gas emissions associated with the Bank’s lending activities.
-- Support the monitoring of transition risk in sectors with higher emissions profiles.
-- Track progress against the Bank’s financed emissions intensity reduction target, as described in the “Climate targets and progress” subsection.
+These metrics are used internally to monitor the emissions profile of the Bank’s financing activities and to inform risk management, client engagement and strategic planning. The basis of the financed-emissions perimeter (for example, by asset class or sector) is not separately disclosed in this report.
 
-The Bank does not currently disclose the basis for the perimeter of the financed emissions calculation (for example, by asset class or sector) in this report. Detailed calculation methodology, including data sources, estimation techniques and any data quality assessments, is not described in this section and is therefore a limitation on the interpretability and comparability of the financed emissions metrics. No external verification of the 2024 financed emissions and carbon intensity metrics has been performed.
+The Bank also monitors portfolio exposure to sectors with elevated transition risk, as set out in the sustainability-related metrics above:
+
+- High-carbon sector exposure: EUR 11,059.49 million (35.5% of total loans).  
+- Fossil-fuel exposure: EUR 6,899.59 million (22.15% of total loans).
+
+These exposure metrics are used alongside financed emissions and carbon intensity to manage the Bank’s transition risk profile. The financed emissions and exposure metrics disclosed for 2024 have not been independently verified.
 
 #### Climate-related financial metrics and resource allocation
 
-The Bank uses climate-related financial metrics to assess how climate-related risks and opportunities are reflected in its financial position and resource allocation decisions. For 2024, the key climate-related financial metrics are:
+This subsection presents climate-related financial metrics that indicate how the Bank allocates financial resources in response to climate-related risks and opportunities.
 
-- Green lending: Green loans amounted to EUR 3,335.75 million, representing 10.71% of the total loan portfolio. This metric is used to monitor the Bank’s support for clients’ transition and sustainable activities.
-- High-carbon sector exposure: Loans to high-carbon sectors totalled EUR 11,059.49 million, or 35.5% of the total loan portfolio. This metric is used to assess concentration risk in sectors that may be more exposed to transition risk.
-- Fossil-fuel exposure: Loans to fossil-fuel-related activities amounted to EUR 6,899.59 million, or 22.15% of the total loan portfolio. This metric informs risk appetite, credit decisioning and engagement strategies with clients in fossil-fuel-intensive sectors.
-- Climate-related capital expenditure: The Bank invested EUR 476.95 million in climate-related capital projects in 2024. This includes investments intended to support the decarbonisation of operations, enhancement of climate risk management capabilities and development of climate-related products and services.
-- Climate-related operating expenditure: The Bank incurred EUR 219.32 million of climate-related operating expenditure in 2024, reflecting ongoing costs associated with climate risk management, data and analytics, staff training and other operational initiatives.
+For 2024, the Bank reports the following climate-related financial indicators:
 
-These financial metrics are used in internal planning and budgeting processes to:
+- Green loans:  
+  - EUR 3,335.75 million of green loans outstanding, representing 10.71% of the total loan portfolio of EUR 31,150.64 million.  
+- Climate-related capital expenditure:  
+  - EUR 476.95 million of capital expenditure directed towards climate-related initiatives, including investments intended to improve energy efficiency, support low-carbon technologies and enhance climate-related risk management capabilities.  
+- Climate-related operating expenditure:  
+  - EUR 219.32 million of operating expenditure related to climate initiatives, including activities such as climate risk analysis, data and systems enhancements, and internal capability building.
 
-- Assess the financial implications of climate-related risks and opportunities on the Bank’s balance sheet and income statement.
-- Inform capital allocation decisions, including investments in systems, data and capabilities required to manage climate-related risks.
-- Monitor the reallocation of capital towards lower-carbon and green activities over time.
-
-No external verification of these climate-related financial metrics has been performed for the 2024 reporting year.
+These metrics are used to monitor the scale of the Bank’s financial commitment to climate-related initiatives and to support assessment of the Bank’s response to transition and physical climate-related risks. The Bank’s approach to classifying green loans and climate-related expenditure is based on internal definitions and governance processes; detailed calculation methodologies and data quality assessments are not described in this report. The climate-related financial metrics disclosed for 2024 have not been independently verified.
 
 #### Climate targets and progress
 
-Eurolux Universal Bank AG has established climate-related targets that cover its operational emissions, financed emissions and long-term net-zero ambition. These targets are used to guide strategic decision-making, portfolio steering and engagement with clients. Oversight of climate-related targets by the Board and the relevant Board-level committee is described in the Governance section of this report. Target-level internal owner roles are not separately detailed in this section.
+This subsection describes the Bank’s climate-related targets and reported progress for 2024. All quantitative parameters, including baselines, target values and interim milestones, are target-record parameters and do not represent current-year operational emissions or independently verified performance.
 
-For transparency, the Bank summarises its principal climate-related targets as follows. All baseline values, target values and interim milestones are parameters recorded in the Bank’s internal target records and are not current-year operational emissions:
+The Bank has three principal climate-related targets:
 
-1. Operational Scope 1 and 2 emissions reduction target
+1. Operational Scope 1 and 2 emissions reduction target (TGT001)  
+2. Financed emissions intensity reduction target (TGT002)  
+3. Long-term net-zero greenhouse gas target (TGT003)
 
-- Target: Reduce absolute Scope 1 and Scope 2 greenhouse gas emissions.
-- Scope: Scope 1 and Scope 2 emissions across the whole entity.
-- Metric: Absolute emissions in tonnes of CO₂ equivalent.
-- Baseline year and value: 2020, with a baseline parameter of 137,849 tCO₂e recorded in the target record.
-- Target year and reduction level: 2030, with a 42% reduction from the 2020 baseline recorded in the target record.
-- Gases covered: All seven Kyoto greenhouse gases.
-- Basis: The target record indicates that this target is set on a gross emissions basis.
-- Framework: The target record identifies a science-based 1.5°C pathway as the target framework.
-- Interim milestones: The target record includes interim milestone parameters of 120,480 tCO₂e for 2025 and 97,321.4 tCO₂e for 2028.
-- Progress indicator: The target record reports 40.0% progress towards the 2030 reduction objective as at 2024, using absolute tCO₂e as the progress metric. This progress indicator has not been externally verified.
-- Third-party validation: The target record indicates that external validation is recorded, with the Science Based Targets initiative identified in a validation field. This reference does not extend to current-year emissions metrics, progress indicators or the likelihood of future target achievement.
+A summary of these targets is set out below, followed by narrative explanations.
 
-2. Financed emissions intensity reduction target
+Summary of climate-related targets (target-record parameters)
 
-- Target: Reduce the carbon intensity of financed emissions associated with the loan portfolio.
-- Scope: Scope 3, category 15 (financed emissions) across the whole entity.
-- Metric: Emissions intensity in tCO₂e per EUR million of lending.
-- Baseline year and value: 2022, with a baseline parameter of 20.0 tCO₂e per EUR million of lending recorded in the target record.
-- Target year and reduction level: 2030, with a 30% reduction from the 2022 baseline recorded in the target record.
-- Gases covered: All seven Kyoto greenhouse gases.
-- Basis: The target record indicates that this target is set on a gross emissions basis.
-- Framework: The target record identifies the Net-Zero Banking Alliance as the target framework.
-- Sectoral approach: The target record indicates that a sectoral decarbonisation approach is applied.
-- Interim milestones: The target record includes interim milestone parameters of 18.2 tCO₂e per EUR million of lending for 2025 and 15.8 tCO₂e per EUR million of lending for 2028.
-- Progress indicator: The target record reports 25.0% progress towards the 2030 intensity reduction objective as at 2024, using tCO₂e per EUR million as the progress metric. This progress indicator has not been externally verified.
-- Third-party validation: The target record includes a field that lists UNEP FI in connection with this target. This listing does not constitute external verification of current-year financed emissions metrics, progress indicators or future achievement of the target.
+- Operational Scope 1 and 2 emissions reduction target  
+  - Scope and metric: Scope 1 and Scope 2 greenhouse gas emissions, measured in tonnes of CO₂ equivalent.  
+  - Baseline: 2020 baseline year with a baseline value of 137,849 tonnes of CO₂ equivalent (target-record parameter).  
+  - Target: 42% reduction in absolute Scope 1 and 2 emissions by 2030 relative to the 2020 baseline.  
+  - Interim milestones:  
+    - 2025 milestone of 120,480 tonnes of CO₂ equivalent.  
+    - 2028 milestone of 97,321.4 tonnes of CO₂ equivalent.  
+    These values are recorded as interim milestones in the target record and are not reported as actual or forecast emissions.  
+  - Coverage: Whole entity, covering all Kyoto greenhouse gases within Scope 1 and Scope 2.  
+  - Framework: The target record identifies the SBTi 1.5°C pathway as the target framework.  
+  - Third-party validation: The target record indicates that third-party validation is recorded, with SBTi identified as the validation body.  
+  - Progress indicator: The target record reports 40.0% progress against the target as at 2024, expressed as a percentage reduction versus the baseline according to the internal progress metric. This progress indicator has not been independently verified.
 
-3. Long-term net-zero greenhouse gas emissions target
+- Financed emissions intensity reduction target (TGT002)  
+  - Scope and metric: Financed emissions associated with Scope 3 category 15 (financed emissions), measured as tonnes of CO₂ equivalent per EUR million of lending.  
+  - Baseline: 2022 baseline year with a baseline value of 20.0 tonnes of CO₂ equivalent per EUR million of lending (target-record parameter).  
+  - Target: 30% reduction in financed emissions intensity by 2030 relative to the 2022 baseline.  
+  - Interim milestones:  
+    - 2025 milestone of 18.2 tonnes of CO₂ equivalent per EUR million of lending.  
+    - 2028 milestone of 15.8 tonnes of CO₂ equivalent per EUR million of lending.  
+    These values are recorded as interim milestones in the target record and are not reported as actual portfolio intensities.  
+  - Coverage: Whole entity, covering all Kyoto greenhouse gases within Scope 3 category 15.  
+  - Framework: The target record identifies the Net-Zero Banking Alliance (NZBA) as the target framework.  
+  - Third-party validation: The target record indicates that third-party validation is recorded, with UNEP FI identified as the validation body.  
+  - Sectoral approach: The target record notes that a sectoral decarbonisation approach is used.  
+  - Progress indicator: The target record reports 25.0% progress against the target as at 2024, expressed as a percentage reduction versus the baseline according to the internal progress metric. This progress indicator has not been independently verified.
 
-- Target: Achieve net-zero greenhouse gas emissions across all scopes.
-- Scope: All scopes across the whole entity.
-- Metric: Emissions in tonnes of CO₂ equivalent, expressed as a percentage reduction versus baseline.
-- Baseline year and value: 2020, with a baseline parameter of 120,000 tCO₂e recorded in the target record.
-- Target year and reduction level: 2050, with a 100% reduction from the 2020 baseline recorded in the target record.
-- Gases covered: All seven Kyoto greenhouse gases.
-- Basis: The target record indicates that this is a net emissions target and references an associated gross target for operational emissions.
-- Framework: The target record identifies the Net-Zero Banking Alliance as the target framework.
-- Planned use of carbon credits: The target record includes a parameter indicating that up to 8.2% of the reduction at the target date may be met through carbon credits, with a focus on technology-based removal projects. This parameter is a planning assumption in the target record and does not represent a current commitment to specific projects.
-- Progress indicator: The target record reports 13.3% progress towards the 2050 net-zero objective as at 2024, expressed as a percentage reduction versus the baseline. This progress indicator has not been externally verified.
-- Third-party validation: The target record includes a field that lists UNEP FI in connection with this target. This listing does not constitute external verification of current-year emissions metrics, progress indicators or future achievement of the target.
+- Long-term net-zero greenhouse gas target (TGT003)  
+  - Scope and metric: All scopes (Scope 1, Scope 2 and relevant Scope 3 categories), measured in tonnes of CO₂ equivalent.  
+  - Baseline: 2020 baseline year with a baseline value of 120,000 tonnes of CO₂ equivalent (target-record parameter).  
+  - Target: 100% reduction in net greenhouse gas emissions by 2050 relative to the 2020 baseline, representing a net-zero objective.  
+  - Relationship to gross target: The target record identifies TGT001 as the associated gross emissions reduction target.  
+  - Coverage: Whole entity, covering all Kyoto greenhouse gases across all scopes.  
+  - Framework: The target record identifies the Net-Zero Banking Alliance (NZBA) as the target framework.  
+  - Third-party validation: The target record indicates that third-party validation is recorded, with UNEP FI identified as the validation body.  
+  - Planned use of carbon credits: The target record notes a planned use of carbon credits equivalent to 8.2% of the baseline emissions, with a focus on technology-based removal credits. This parameter is a target-record assumption and does not represent a current or committed volume of carbon credits.  
+  - Progress indicator: The target record reports 13.3% progress against the target as at 2024, expressed as a percentage reduction versus the baseline according to the internal progress metric. This progress indicator has not been independently verified.
 
-The target records also indicate review frequencies of triennial for the Scope 1 and 2 target, annual for the financed emissions intensity target and biennial for the net-zero target. These review frequencies are used internally to schedule reassessments of target parameters and progress.
+For all three targets:
 
-References in this subsection to external initiatives and organisations describe the frameworks and fields recorded in the Bank’s internal target records. They do not constitute confirmation that current-year emissions, financed emissions, progress indicators or future achievement of the targets have been externally verified.
+- The targets apply to the whole entity and cover all Kyoto greenhouse gases within the stated scopes.  
+- The target records indicate review frequencies of triennial (TGT001), annual (TGT002) and biennial (TGT003) respectively.  
+- The target records include internal labels relating to consistency with global temperature pathways; these labels are not used in this report as evidence of pathway alignment.  
+- The target records do not separately detail internal owner roles at the target level; governance oversight of climate-related targets by the Board and the ESG and Sustainability Committee is described in the Governance section.
+
+The Bank uses these targets and associated metrics to guide strategic planning, risk management and engagement with clients. All baseline values, target values, interim milestones and progress percentages disclosed in this subsection are parameters recorded in the Bank’s internal target records. They do not constitute current-year operational emissions, do not verify the Bank’s 2024 emissions or financed emissions metrics, and do not provide assurance that the targets will be met.
 
 #### Metrics and targets limitations and evidence boundaries
 
-The Bank recognises several limitations and boundaries in its current climate-related metrics and targets disclosures for the year ended 31 December 2024:
+This subsection summarises key limitations and boundaries relating to the metrics and targets disclosed above.
 
-- Operational greenhouse gas emissions: Detailed 2024 Scope 1, Scope 2 and Scope 3 operational emissions records are unavailable. As a result, operational emissions are not disclosed in this report, and the Bank relies primarily on financed emissions and related intensity metrics to assess its climate-related emissions profile.
-- Financed emissions methodology: While total financed emissions and portfolio carbon intensity are disclosed, the Bank does not currently disclose the detailed calculation methodology, including data sources, estimation techniques, data quality assessments, or the precise perimeter of assets and sectors included in the financed emissions calculation. This limits comparability with other institutions and may affect the interpretation of year-on-year changes.
-- Disaggregation of financed emissions: The Bank does not currently disclose financed emissions by asset class, sector, geography or client segment in this report. Financed emissions are therefore presented only as a portfolio-level aggregate for the loan book.
-- Climate-related financial metrics: The Bank discloses aggregate figures for green loans, high-carbon sector exposure, fossil-fuel exposure, climate-related capital expenditure and climate-related operating expenditure. Further breakdowns by business line, sector or geography are not provided in this section.
-- Target records and progress indicators: All baseline values, target values, interim milestones, progress percentages, framework references and third-party validation details are parameters recorded in the Bank’s internal target records. These parameters do not constitute verification of current-year emissions, financed emissions, progress towards the targets, consistency with any specific climate pathway, or future achievement of the targets. No external verification of the 2024 progress indicators reported for each target has been performed.
-- Third-party validation references: References to external organisations such as the Science Based Targets initiative and UNEP FI in this section relate solely to fields recorded in the Bank’s target records. These references do not extend to current-year emissions metrics, financed emissions calculations, portfolio alignment assessments or the likelihood of future target achievement.
-- Verification and validation status: The climate-related metrics and targets disclosed in this section, including financed emissions, carbon intensity, exposure metrics, green lending, climate-related capital and operating expenditure, and target progress indicators, have not been externally verified for the 2024 reporting year.
+- Operational greenhouse gas emissions  
+  - Detailed records of operational Scope 1, Scope 2 and Scope 3 emissions for 2024 are unavailable. The Bank therefore does not disclose quantified operational emissions for the reporting year. This limits the ability to compare the operational emissions reduction target parameters with actual 2024 operational emissions.
 
-The Bank intends to enhance the scope, granularity and methodological transparency of its climate-related metrics and targets over time, including the development of more detailed operational emissions records, expanded financed emissions coverage and further disaggregation of climate-related financial metrics, subject to data availability, methodological developments and regulatory requirements.
+- Financed emissions and portfolio metrics  
+  - The Bank discloses a single financed emissions figure for loans and a corresponding carbon intensity metric for 2024. The basis of the financed-emissions perimeter, including any exclusions by asset class or product type, is not separately disclosed.  
+  - No disaggregation by sector, geography, asset class or methodology is provided in this report.  
+  - The financed emissions and carbon intensity metrics have not been independently verified.
+
+- Methodologies, data quality and assumptions  
+  - Detailed calculation methodologies, data quality assessments and key assumptions for the reported metrics (including financed emissions, carbon intensity, high-carbon and fossil-fuel exposure, green loans, and climate-related capital and operating expenditure) are not described in this report.  
+  - As a result, users of this report should treat the metrics as subject to estimation uncertainty and potential future refinement.
+
+- Targets and progress indicators  
+  - All baseline values, target values, interim milestones, progress percentages, framework references and third-party validation references are parameters recorded in the Bank’s internal target records.  
+  - References to third-party validation indicate that the target record lists a third-party validation field as true and identifies a validation body (for example, SBTi or UNEP FI). These references relate only to the target records and do not verify the Bank’s current-year emissions, financed emissions, progress, pathway alignment or the future achievement of any target.  
+  - Progress indicators (expressed as percentages) are internal target-record metrics and have not been independently verified. They should not be interpreted as confirmation that any target has been met or will be met.
+
+- Disaggregation and comparability  
+  - The Bank does not currently disclose disaggregated operational emissions, sectoral financed emissions, or detailed breakdowns of green loans and climate-related expenditure.  
+  - Comparative information for newly introduced metrics or redefined metrics is not presented where it is impracticable to reconstruct prior-period data. Where this is the case, the Bank may enhance comparability in future reporting periods as data quality improves.
+
+The Bank intends to continue developing its climate-related metrics, methodologies and data governance processes over time, with the aim of improving completeness, consistency and decision-usefulness, while recognising that future enhancements are subject to data availability, methodological developments and regulatory expectations.

@@ -4,139 +4,204 @@
     "approved": false,
     "ifrs_coverage_score_0_to_10": 6,
     "missing_supported_requirements": [
-      "IFRS_S1_20_C01",
-      "IFRS_S1_21_C04",
-      "IFRS_S1_22_C01",
-      "IFRS_S1_23_C01",
-      "IFRS_S1_24_C01",
-      "IFRS_S1_55_C01",
-      "IFRS_S1_58_C01",
-      "IFRS_S1_59_C01",
-      "IFRS_S1_59_C02",
-      "IFRS_S1_63_C01",
-      "IFRS_S1_64_C01",
-      "IFRS_S1_66_C02",
-      "IFRS_S1_66_C03",
-      "IFRS_S1_67_C01",
-      "IFRS_S1_68_C01",
-      "IFRS_S1_69_C01"
+      {
+        "requirement_id": "IFRS_S1_20_C01",
+        "why_missing_despite_evidence": "Draft states reporting year and fiscal year-end but does not state that the sustainability-related financial disclosures are for the same reporting entity as the related financial statements (reporting entity boundary alignment). Evidence in payload indicates reporting-year alignment but not explicit reporting-entity alignment language."
+      },
+      {
+        "requirement_id": "IFRS_S1_21_C04",
+        "why_missing_despite_evidence": "Draft discusses connectivity within sustainability disclosures and includes financial metrics, but does not explicitly explain connections across sustainability disclosures and other general purpose financial reports (e.g., related financial statements) or how users can locate/trace those connections."
+      },
+      {
+        "requirement_id": "IFRS_S1_22_C01",
+        "why_missing_despite_evidence": "Draft does not identify the specific financial statements to which the sustainability-related financial disclosures relate (e.g., consolidated financial statements for year ended 31 Dec 2024)."
+      },
+      {
+        "requirement_id": "IFRS_S1_23_C01",
+        "why_missing_despite_evidence": "Draft provides emissions data-quality composition and assurance but does not state that data and assumptions are consistent (to the extent possible) with those used in the related financial statements (or explain any differences)."
+      },
+      {
+        "requirement_id": "IFRS_S1_24_C01",
+        "why_missing_despite_evidence": "Draft states reporting currency is EUR but does not explicitly state that EUR is the presentation currency of the related financial statements (as required when currency is used as a unit of measure)."
+      },
+      {
+        "requirement_id": "IFRS_S1_55_C01",
+        "why_missing_despite_evidence": "Draft does not state that the entity referred to and considered the applicability of SASB disclosure topics (or concluded they are not applicable)."
+      },
+      {
+        "requirement_id": "IFRS_S1_56_C01",
+        "why_missing_despite_evidence": "Draft does not explicitly state that, for each sustainability-related risk/opportunity, the entity applied the IFRS Sustainability Disclosure Standard that specifically applies (e.g., IFRS S2 for climate)."
+      },
+      {
+        "requirement_id": "IFRS_S1_57_C01",
+        "why_missing_despite_evidence": "Draft discusses judgement/estimates generally but does not address the specific judgement framework required when no specific IFRS Sustainability Disclosure Standard applies (relevance to users’ decisions)."
+      },
+      {
+        "requirement_id": "IFRS_S1_57_C02",
+        "why_missing_despite_evidence": "Draft does not address the specific judgement framework required when no specific IFRS Sustainability Disclosure Standard applies (faithful representation of the risk/opportunity)."
+      },
+      {
+        "requirement_id": "IFRS_S1_58_C01",
+        "why_missing_despite_evidence": "Draft does not state that, when applying judgement under paragraph 57, the entity referred to and considered SASB metrics (or concluded they are not applicable)."
+      },
+      {
+        "requirement_id": "IFRS_S1_59_C01",
+        "why_missing_despite_evidence": "Draft mentions NGFS scenarios and some methodological notes but does not identify the specific standards/pronouncements/industry practice/other guidance applied in preparing the disclosures (including, if applicable, SASB topics)."
+      },
+      {
+        "requirement_id": "IFRS_S1_59_C02",
+        "why_missing_despite_evidence": "Draft does not identify the industry/industries (as specified in IFRS SDS, SASB, or other guidance) applied in preparing disclosures and identifying applicable metrics."
+      },
+      {
+        "requirement_id": "IFRS_S1_63_C01",
+        "why_missing_despite_evidence": "Draft does not describe use of cross-references (if any) nor confirm compliance with cross-referencing requirements (B45–B47)."
+      },
+      {
+        "requirement_id": "IFRS_S1_64_C01",
+        "why_missing_despite_evidence": "Draft states the reporting period and fiscal year-end but does not state that sustainability disclosures are reported at the same time as the related financial statements."
+      }
     ],
     "invented_missing_requirements": [],
-    "missing_data_language_found": false,
+    "missing_data_language_found": true,
     "required_fixes": [
-      "Explicitly identify the related financial statements to which these sustainability-related financial disclosures relate (IFRS_S1_22_C01) and state that the sustainability disclosures are for the same reporting entity as those financial statements (IFRS_S1_20_C01).",
-      "When stating EUR is used, explicitly link it to being the presentation currency of the related financial statements (IFRS_S1_24_C01).",
-      "Add an explicit statement that the sustainability-related financial disclosures cover the same reporting period as the related financial statements and are reported at the same time (IFRS_S1_64_C01).",
-      "Add explicit cross-report connectivity: explain how/where these sustainability disclosures connect to (or are consistent with) items in the general purpose financial reports/financial statements (IFRS_S1_21_C04), beyond merely citing Tier 1 capital figures.",
-      "Add an explicit statement about consistency of data and assumptions with those used in the related financial statements (to the extent possible), rather than only describing emissions data-quality distributions (IFRS_S1_23_C01).",
-      "If SASB (or other sources) were considered/applied, explicitly identify the specific standards/pronouncements/industry practice used and the industry classification applied; if not, state what was considered and the conclusion (without introducing any 'data unavailable' language) (IFRS_S1_55_C01, IFRS_S1_58_C01, IFRS_S1_59_C01, IFRS_S1_59_C02).",
-      "Remove or qualify disclosures that imply requirements about reporting-period change, subsequent events, or interim reporting unless the section explicitly addresses those requirements with entity-specific facts (IFRS_S1_66_C02, IFRS_S1_66_C03, IFRS_S1_67_C01, IFRS_S1_68_C01, IFRS_S1_69_C01). If not applicable, omit them rather than implying partial compliance."
+      "Remove or rephrase 'where available' in the comparatives statement. It is missing-data/unavailability language. If comparatives are not provided for all amounts, handle via the missing_requirements_register rather than report prose.",
+      "Add an explicit statement that the sustainability-related financial disclosures are for the same reporting entity as the related financial statements (IFRS S1.20).",
+      "Identify the specific financial statements to which these sustainability-related financial disclosures relate (IFRS S1.22).",
+      "Add explicit connectivity to other general purpose financial reports/related financial statements (how users can trace links) (IFRS S1.21(b)(ii)).",
+      "State that currency used as a unit of measure (EUR) is the presentation currency of the related financial statements (IFRS S1.24).",
+      "Add a statement on consistency of data and assumptions with the related financial statements (to the extent possible) and note any exceptions (IFRS S1.23).",
+      "Disclose the specific standards/pronouncements/guidance applied (e.g., IFRS S1/S2, SASB consideration, NGFS as scenario source, PCAF if used for financed emissions) and the industry classification applied (IFRS S1.59(a)-(b), S1.55, S1.58).",
+      "Add a statement that the entity applies the IFRS Sustainability Disclosure Standard that specifically applies to each sustainability-related risk/opportunity (e.g., IFRS S2 for climate) (IFRS S1.56).",
+      "Add the 'same time as related financial statements' statement (IFRS S1.64)."
     ],
-    "summary": "The section provides a clear reporting period, currency, comparatives, connected information across governance/strategy/risk/metrics, and measurement approaches, supporting several IFRS S1 general requirements. However, it does not explicitly identify the related financial statements, confirm the same reporting entity, link EUR to the financial statements’ presentation currency, or state same-time/same-period reporting with the financial statements. It also lacks explicit identification of applied standards/guidance (including SASB considerations) and does not clearly address cross-referencing requirements. No invented missing-data/unavailable-data wording was detected."
+    "summary": "The section covers fair presentation concepts, reporting period/currency, connected information within sustainability disclosures, and several methodology/assurance elements. However, multiple supported IFRS S1 general requirements are not explicitly addressed (reporting entity alignment, identification of related financial statements, links to financial statements/other GPFR, consistency with financial statement data/assumptions, presentation currency linkage, SASB consideration and identification of applied guidance/industry, and timing with financial statements). The draft also includes missing-data language ('where available'), which is disallowed under the policy."
   },
   "evidence_judge": {
     "approved": false,
-    "evidence_score_0_to_10": 7,
+    "evidence_score_0_to_10": 6,
     "unsupported_claims": [
       {
-        "claim": "Comparative information is provided for 2022 and 2023 (and related comparative metrics are presented) as part of the sustainability-related financial disclosures.",
-        "location_in_section": "Basis of preparation, reporting period, currency and comparatives; Comparative consistency",
-        "why_unsupported": "The section states this, but the provided evidence items do not include the actual comparative disclosures package/pages—only metadata.comparative_years and financial_summary rows. This supports that data exists in the payload, but not that it is actually disclosed as comparatives in the published sustainability-related financial disclosures."
+        "claim_or_excerpt": "The reporting year is 2024 with a fiscal year-end of 31 December 2024, and comparative information is presented for 2022 and 2023 where available and relevant.",
+        "why_unsupported": "Evidence provided in the register points to climate_risk_register[*].reporting_year values that preview as 2023, not 2024; comparatives (2022/2023) presentation is not evidenced by any comparative disclosure artifact in the provided evidence list.",
+        "evidence_gap": [
+          "Need an evidence item showing reporting_year=2024 for this report (e.g., bank.reporting_year or report metadata).",
+          "Need evidence that 2022 and 2023 comparatives are actually presented (e.g., financial_summary entries for 2022/2023 tied to this report, or a comparative table reference)."
+        ]
       },
       {
-        "claim": "The entity reports green loans as 10.71% of the loan book in 2024.",
-        "location_in_section": "Material sustainability-related information and why it matters to prospects",
-        "why_unsupported": "No evidence item provided for green loan percentage / loan book composition. The claims register marks it supported based only on the draft text, but there is no underlying data payload path corroborating 10.71%."
+        "claim_or_excerpt": "Scope 1 emissions are also tracked across 2022, 2023 and 2024.",
+        "why_unsupported": "No Scope 1 emissions values or a time-series evidence item is shown in the provided evidence previews; cited evidence paths are scenario resilience text, which does not substantiate Scope 1 tracking.",
+        "evidence_gap": [
+          "Provide emissions dataset/table showing Scope 1 for 2022–2024 or a metadata flag indicating multi-year tracking."
+        ]
       },
       {
-        "claim": "Targets/progress: target TGT001 (2020 baseline, Scope 1&2, absolute reduction) with 40.0% progress in 2024; additional progress indicators 25.0% and 13.3%.",
-        "location_in_section": "Metrics and targets connectivity",
-        "why_unsupported": "No evidence items provided for targets (e.g., target registry, baseline year, scope coverage, progress values). The claims are asserted in text but not corroborated by the evidence payload."
+        "claim_or_excerpt": "Stakeholder scrutiny of financed emissions is linked to the bank’s financed emissions metric for 2024 (35,973,167.6878965 tCO₂e).",
+        "why_unsupported": "The evidence preview shows financed emissions for loans in 2022 (financial_summary[0].financed_em_loans_tco2e = 36,550,177.696...), but does not show the stated 2024 financed emissions value (35,973,167.6878965) nor a 2024 financed emissions metric. Scenario resilience text does not contain the number.",
+        "evidence_gap": [
+          "Provide the 2024 financed emissions metric evidence item (path/value) matching 35,973,167.6878965 tCO₂e and clarify scope (loans vs total financed emissions)."
+        ]
+      },
+      {
+        "claim_or_excerpt": "Climate risk reporting to the board occurs semi-annually, and an ESG committee exists with 5 meetings per year; ... climate topics represent 69.8% of the board agenda.",
+        "why_unsupported": "Evidence previews include board_size and board_climate_expertise_pct and climate_risk_reporting_to_board, but no evidence item is shown for 'ESG committee exists with 5 meetings per year' or '69.8% of the board agenda'.",
+        "evidence_gap": [
+          "Provide governance KPI/evidence for ESG committee meeting frequency (5/year).",
+          "Provide board agenda coverage metric evidence for 69.8%."
+        ]
+      },
+      {
+        "claim_or_excerpt": "Climate-related capital expenditure is presented for 2022–2024 (2022: €322.2m; 2023: €373.91m; 2024: €476.95m) and Tier 1 capital is presented for 2022–2024 (2022: €95,149.4m; 2023: €143,979.2m; 2024: €151,208.6m).",
+        "why_unsupported": "The evidence previews show financial_summary values for 2022 and 2023 and climate_capex_meur for 2024, but the claims register cites scenario resilience text as evidence. Also, the 2024 Tier 1 capital value is not visible in the provided evidence preview (truncated).",
+        "evidence_gap": [
+          "Cite financial_summary[2] (2024) tier1_capital_meur explicitly (path/value) and ensure evidence references point to financial_summary rather than scenario text.",
+          "Provide the missing/truncated evidence item showing 2024 tier1_capital_meur = 151,208.6."
+        ]
+      },
+      {
+        "claim_or_excerpt": "\"Physical risk — mortgage book flood exposure\" has likelihood 4 and severity 5, resulting in a score of 20 and a critical risk rating.",
+        "why_unsupported": "Likelihood=4 and severity=5 and rating=critical are evidenced in climate_risk_register[0], but the evidence sources cited in the claims register are climate_scenarios[*].methodology_notes, which do not support the numeric scoring example. The score=20 is not shown as a stored field in evidence previews (only derivable).",
+        "evidence_gap": [
+          "Update evidence citation to climate_risk_register[0].likelihood_score and .severity_score and .risk_rating; optionally add an explicit stored 'risk_score' field or show calculation note as evidence."
+        ]
+      },
+      {
+        "claim_or_excerpt": "External assurance over sustainability information is described as limited.",
+        "why_unsupported": "Evidence path is referenced (reporting_kpis.governance_maturity.external_assurance) but no value preview is shown in the provided evidence list excerpt; cannot verify from supplied evidence snippet.",
+        "evidence_gap": [
+          "Provide the evidence item preview/value for reporting_kpis.governance_maturity.external_assurance showing 'limited'."
+        ]
+      },
+      {
+        "claim_or_excerpt": "Scope 3 travel emissions for 2024 (289.8833 tCO₂e).",
+        "why_unsupported": "Value chain node evidence is shown (value_chain_map[1].node_name), but no emissions evidence item preview is shown for Scope 3 travel emissions = 289.8833 tCO₂e.",
+        "evidence_gap": [
+          "Provide emissions evidence item for 2024 Scope 3 travel emissions with the stated value and unit."
+        ]
       }
     ],
     "questionable_claims": [
       {
-        "claim": "Board climate expertise is 33.5%, while a separate governance maturity indicator reports 37.5% board climate expertise.",
-        "location_in_section": "Governance connectivity",
-        "why_questionable": "Both figures appear in evidence (governance[0].board_climate_expertise_pct = 33.5; reporting_kpis.governance_maturity.board_climate_expertise_pct = 37.5), but the section does not explain the definitional difference (e.g., different denominator, time point, criteria). This is an internal consistency/clarity issue rather than missing evidence."
+        "claim_or_excerpt": "Fair presentation is supported through a complete, neutral and accurate depiction ... comparable, verifiable, timely and understandable.",
+        "why_questionable": "This is a self-assertion of qualitative characteristics; it is not falsifiable without describing controls/processes (e.g., governance, internal controls, assurance scope). Acceptable as policy language but weakly evidenced."
       },
       {
-        "claim": "Market-based Scope 2 emissions are prepared using utility invoice data that already reflects market-based accounting ... approach is designed to avoid double-counting.",
-        "location_in_section": "Market-based Scope 2 approach",
-        "why_questionable": "Supported by metadata.scope2_rec_reconciliation narrative, but still largely self-asserted without showing the control/reconciliation steps or references to the underlying invoice dataset; could be strengthened with a brief control description or reference."
+        "claim_or_excerpt": "Under orderly transition scenarios, the portfolio demonstrates adequate resilience with transition risk losses remaining within Pillar 2 capital buffer thresholds.",
+        "why_questionable": "Evidence is qualitative narrative only; no thresholds, quantified losses, or Pillar 2 buffer amounts are provided to substantiate 'within thresholds'."
       },
       {
-        "claim": "Scenario resilience conclusions (adequate resilience; losses within Pillar 2 thresholds; ‘material’ capital consumption; buffers may be required post-2030).",
-        "location_in_section": "Strategy and resilience connectivity",
-        "why_questionable": "Evidence items include resilience_assessment text, but there are no quantitative outputs, threshold values, or definitions for ‘adequate’, ‘acceptable’, ‘material’, or the Pillar 2 threshold referenced. This makes the claims hard to verify and potentially subjective."
+        "claim_or_excerpt": "Scope 2 market-based emissions are sourced directly from utility invoice data that already reflects market-based accounting ... avoiding double-counting.",
+        "why_questionable": "Method description is plausible and referenced, but would typically require clearer evidence of the reconciliation control (e.g., documented procedure, sample reconciliation, or audit trail)."
       }
     ],
     "required_fixes": [
-      {
-        "fix": "Add a data/evidence reference (table, KPI source, or payload path) for green loans = 10.71% of loan book (2024), including definition of ‘green loans’ and denominator.",
-        "applies_to": "Green loans claim"
-      },
-      {
-        "fix": "Add evidence references for targets: include a target table/registry excerpt or payload paths showing TGT001 baseline year (2020), scopes covered, target type, and the progress values (40.0%, 25.0%, 13.3%), plus how progress is calculated.",
-        "applies_to": "Targets/progress claims"
-      },
-      {
-        "fix": "Clarify why board climate expertise is reported as both 33.5% and 37.5% (different methodology, timing, population, or criteria) and label each metric accordingly.",
-        "applies_to": "Governance expertise percentages"
-      },
-      {
-        "fix": "For scenario resilience statements, either (a) provide quantitative results and the Pillar 2 threshold values used, or (b) explicitly label the statements as qualitative management assessments and define the terms (‘adequate’, ‘material’) and the basis for those judgements.",
-        "applies_to": "Scenario resilience claims"
-      },
-      {
-        "fix": "If asserting comparatives are ‘provided’ in the disclosures, add a cross-reference to where the comparative tables appear (or include them in this section) to substantiate that they are actually disclosed, not just available in internal data.",
-        "applies_to": "Comparatives provided claim"
-      }
+      "Correct evidence mappings: replace scenario-text evidence sources with the actual metric sources (e.g., financial_summary for capex/Tier 1; climate_risk_register for likelihood/severity/rating).",
+      "Add/attach explicit evidence items for: reporting year 2024 and fiscal year-end; presentation of 2022/2023 comparatives; 2024 financed emissions value 35,973,167.6878965 tCO₂e; ESG committee meeting frequency (5/year); board agenda climate topic share (69.8%); assurance level 'limited'; Scope 1 multi-year tracking; Scope 3 travel emissions 2024 value.",
+      "For resilience/Pillar 2 statements, either (a) provide quantitative support (buffer size, modeled losses) or (b) soften wording to clearly indicate qualitative judgement and remove 'within thresholds' unless evidenced."
     ],
-    "summary": "Most numeric items (reporting year/currency, capex, Tier 1 capital, carbon intensity, financed emissions, risk register ratings/methodology, scenario methodology notes, emissions data-quality split) are corroborated by the provided evidence payloads. However, several key disclosure claims lack supporting evidence items (green loan share; targets/progress details; and, to a lesser extent, the assertion that comparatives are actually presented in the disclosures). There is also a notable internal inconsistency/ambiguity in board climate expertise percentages and limited verifiability of qualitative scenario resilience conclusions without quantitative thresholds/results."
+    "summary": "Section contains multiple numeric and process claims whose cited evidence is missing, mismatched, or only qualitative. Several governance and emissions metrics (2024 financed emissions, Scope 1 trend, Scope 3 travel, assurance level, ESG committee meetings, board agenda %) are not substantiated by the provided evidence previews, and some claims cite incorrect evidence paths (scenario notes instead of underlying datasets)."
   },
   "style_judge": {
     "approved": false,
-    "style_score_0_to_10": 3.6,
+    "style_score_0_to_10": 3.8,
     "voice_issues": [
-      "Voice is generally neutral and formal but does not consistently follow the first-person plural vs third-person guidance; it defaults to impersonal third-person without clarifying the reporting entity perspective.",
-      "Some phrasing leans toward explanatory narrative rather than assurance-like disclosure language (e.g., 'This section explains', 'These methodological disclosures are intended to make...'), which is acceptable but could be more standards-oriented and concise.",
-      "Forward-looking and judgemental content mostly uses cautious modality, but a few statements sound more definitive than intended (e.g., 'The portfolio is assessed as demonstrating adequate resilience' without explicit caveat language)."
+      "Voice is generally neutral and formal, but it does not consistently use the preferred standards-oriented verbs and framing (e.g., limited use of 'disclose', 'prepare', 'assess', 'cross-reference').",
+      "The section sometimes reads as descriptive narrative rather than an explicit basis-of-preparation statement (e.g., 'This section explains...' instead of 'The disclosures are prepared...').",
+      "Forward-looking and judgemental content is mostly cautious, but some phrasing could be more clearly framed as estimates or assessments (e.g., 'the portfolio is assessed as demonstrating adequate resilience' could explicitly reference that this is based on scenario assumptions)."
     ],
     "structure_issues": [
-      "The section does not follow the requested numbered hierarchy (e.g., 1, 1.1, 1.2) and instead uses unnumbered '###' headings.",
-      "The required layered structure (overview paragraph → bulleted principles → brief interpretation and cross-references) is not consistently applied; many subsections move directly into detailed narrative and examples.",
-      "Paragraphs are often multi-topic and long, combining principles, mechanics, and examples in single blocks rather than separating 'what' from 'how'.",
-      "IFRS pillars (Governance, Strategy, Risk Management, Metrics and Targets) are discussed but not clearly separated under explicit subheadings aligned to the global style guide; connectivity is described narratively instead.",
-      "Cross-references to other sections or appendices are mentioned conceptually but not formatted using the prescribed placeholder style (e.g., 'Refer to [Section: X]').",
-      "The section includes extensive entity-specific metrics and scenario details that go beyond the high-level basis-of-preparation focus expected for this General Requirements section, reducing scanability and creating overlap with detailed pillar sections."
+      "Headings are not numbered and do not follow the requested two-level numbered hierarchy (e.g., '1, 1.1, 1.2').",
+      "The section does not consistently follow the layered structure of overview paragraph → bullets/tables → brief interpretation; many subsections are long narrative blocks without an initial bullet summary.",
+      "Paragraphs often combine multiple topics (e.g., scenario methodology, resilience outcomes, and capital implications in one block) rather than keeping single-idea paragraphs.",
+      "There are no explicit cross-reference placeholders (e.g., 'Refer to [Section: Strategy]') linking this basis-of-preparation content to detailed pillar sections.",
+      "IFRS pillars (Governance, Strategy, Risk Management, Metrics and Targets) are discussed implicitly but not clearly structured under explicit subheadings or a mapping table as suggested by the style guide.",
+      "The section does not open with a concise, high-level basis-of-preparation statement followed by a bulleted list of qualitative characteristics and preparation principles, as required for this section type."
     ],
     "wording_issues": [
-      "Several sentences are long and complex, containing multiple clauses that could be split for clarity and to better match the short-to-medium sentence guidance.",
-      "Some wording is more descriptive than standards-oriented, using phrases like 'helps users understand' instead of verbs such as 'discloses', 'explains', or 'presents'.",
-      "The section includes highly granular numeric precision (e.g., many decimal places) that is not necessary for a basis-of-preparation narrative and may distract from the methodological focus.",
-      "There is limited explicit distinction between current-period facts, estimates/judgements, and forward-looking intentions; these are often blended in the same sentences without clear labelling.",
-      "The section uses specific scenario names and external frameworks (e.g., NGFS v4, IEA Net Zero, REMIND-MAgPIE) as if they are fixed, rather than clearly configurable elements, which conflicts with the 'what to avoid' guidance for template-style content."
+      "The section hard-codes specific reporting year, dates, and currency (e.g., 'reporting year 2024', '31 December 2024', 'EUR'), which conflicts with the section_style 'what_to_avoid' guidance for reusable templates.",
+      "Extensive use of detailed numeric examples (e.g., exact capital expenditure, Tier 1 capital, financed emissions values, board composition percentages) goes beyond the 'high-level principles plus practical mechanics' expectation and makes the basis-of-preparation section overly data-heavy.",
+      "Some sentences are long and multi-clause, reducing scanability (e.g., scenario descriptions and resilience assessments with multiple embedded conditions).",
+      "The narrative sometimes blends 'what' and 'how' without clear separation (e.g., risk rating methodology description mixed with specific risk example and rating outcome in one block).",
+      "The section does not consistently distinguish between current-period facts, estimates, and forward-looking intentions with explicit labels; while implied, this could be clearer for an audit-ready style.",
+      "There is limited explicit use of the preferred disclosure verbs (prepare, present, disclose, align, apply, assess, determine, cross-reference, reconcile)."
     ],
     "table_figure_issues": [
-      "No tables or figures are used, even where compact tables could improve scanability (e.g., summarising key metrics, data-quality breakdown, or mapping general requirements topics to other sections).",
-      "Because there are no tables or figures, there are no captions or numbering; this is inconsistent with the global style guidance that any tables/figures should be numbered and captioned when used.",
-      "Long metric lists and methodological descriptions are presented only in narrative and bullet form, which may reduce readability in a PDF layout where visual anchors are recommended."
+      "No tables or figures are used, even where a compact table could improve scanability (e.g., summarising reporting period, currency, comparatives, and assurance; mapping general requirements topics to sections).",
+      "Because there are no tables or figures, there are no captions or numbering; this is not a direct violation but does not follow the guidance to use visual anchors in long sections.",
+      "Lists are present and generally well formatted, but some dense narrative blocks (e.g., scenario methodology and resilience) could benefit from structured bullets or a simple table to align with the style guide."
     ],
     "required_fixes": [
-      "Introduce a numbered heading structure aligned to the overall report (e.g., '1. General Requirements', '1.1 Basis of preparation, reporting period, currency and comparatives', '1.2 Material sustainability-related information and financial materiality', etc.).",
-      "Reorganize paragraphs to follow the layered structure: start each subsection with a concise purpose statement, then provide bulleted principles or mechanics, followed by a short interpretive or connectivity sentence with explicit cross-reference placeholders (e.g., 'Refer to [Section: Governance]' ).",
-      "Shorten and split long, multi-topic paragraphs into single-idea blocks; ensure most paragraphs are 2–5 sentences and focus either on principles ('what') or mechanics ('how'), not both together.",
-      "Tighten sentence length and complexity by splitting long sentences into two or more, especially where multiple conditions, examples, or clauses are combined.",
-      "Clarify the point of view and maintain it consistently: use first-person plural ('we') for the entity’s actions and processes (e.g., 'We prepare these disclosures...') and third-person or passive voice for externally defined requirements; avoid impersonal constructions where accountability is relevant.",
-      "Reframe wording to use standards-oriented verbs and clearer categorisation of information types, explicitly distinguishing current-period facts, estimates/judgements, and forward-looking assessments (e.g., 'We estimate', 'We assess', 'We expect that...').",
-      "Reduce unnecessary numeric precision in the narrative (e.g., limit decimals to a decision-useful level) and move highly granular metrics to the relevant Metrics and Targets section, leaving only illustrative or high-level references in General Requirements.",
-      "Remove or generalise fixed, template-breaking specifics that the style guide flags as 'what to avoid' for this section, such as hard-coded reporting years, exact dates, specific currencies, and detailed scenario names; instead, describe these as configurable elements or refer to them generically (e.g., 'applicable climate transition scenarios').",
-      "Add at least one compact table where it improves scanability, such as a summary of key general requirements topics and where they are addressed in the report, or a concise data-quality breakdown; ensure any table is numbered, captioned, and referenced in the narrative.",
-      "Introduce explicit cross-reference statements that follow the prescribed placeholder format (e.g., 'Refer to [Section: Strategy]' or 'See [Appendix: Methodologies]') to reinforce connectivity without duplicating detailed disclosures.",
-      "Ensure that any mention of missing, estimated, or proxy data follows the missing-data protocol: state what is estimated, why estimation is used, the approach, limitations, and planned enhancements; currently, the data-quality section notes estimation but does not fully describe limitations or improvement direction.",
-      "Trim or relocate detailed scenario methodology and risk register examples that belong more naturally in Strategy or Risk Management sections, keeping this General Requirements section focused on how such analyses are prepared and referenced rather than on their substantive content."
+      "Introduce a clear, numbered heading structure aligned with the style guide (e.g., '1. General Requirements', '1.1 Purpose and basis of preparation', '1.2 Reporting period, fiscal year-end and comparatives', etc.).",
+      "Add an opening basis-of-preparation paragraph followed by a concise bulleted list of key qualitative characteristics and preparation principles (e.g., completeness, neutrality, accuracy, comparability, timeliness, understandability).",
+      "Remove or generalise hard-coded reporting years, specific dates, and currency references where they are part of template-style text; keep such specifics only where this section is explicitly intended to be entity- and period-specific rather than reusable.",
+      "Reduce the volume of detailed numeric examples (e.g., exact capital expenditure, Tier 1 capital, financed emissions values, board composition percentages) and instead describe the types of metrics disclosed and how comparatives are used; keep detailed numbers in the relevant Metrics and Targets or Strategy sections and cross-reference them.",
+      "Shorten and split long, multi-clause sentences, especially in the scenario analysis and resilience sections, to improve clarity and align with the short-to-medium sentence length guidance.",
+      "Reorganise paragraphs to keep them single-idea and topic-led; separate principles ('what') from mechanics ('how') using subheadings and short paragraphs (e.g., 'Risk rating principles' vs 'Risk rating application example').",
+      "Introduce explicit cross-reference placeholders to other sections (e.g., 'Refer to [Section: Governance]' for board oversight, 'Refer to [Section: Strategy]' for scenario analysis, 'Refer to [Section: Metrics and Targets]' for financed emissions and capital metrics).",
+      "Add at least one compact table where it clearly improves scanability, such as a summary of general requirements topics and where they are addressed, or a table summarising reporting period, boundary, currency, and assurance status, with proper numbering and captions.",
+      "Clarify the distinction between current-period facts, estimates, and forward-looking assessments by explicitly labelling estimates and judgements (e.g., 'These resilience conclusions are based on scenario analysis and involve significant judgement regarding transition pathways.').",
+      "Increase the use of standards-oriented verbs and IFRS-style phrasing (e.g., 'The Group prepares and presents these disclosures...', 'We assess and monitor...', 'The disclosures are aligned with...') while maintaining third-person or first-person plural consistently across the section."
     ],
-    "summary": "The draft is formal, neutral, and technically detailed, and it broadly reflects an IFRS-style disclosure mindset. However, it does not fully follow the approved authoring style for a General Requirements section. Structural issues include lack of numbered headings, limited layering, and multi-topic paragraphs. Wording is sometimes overly detailed, with long sentences, excessive numeric precision, and fixed scenario references that conflict with the template-style guidance. The section also concentrates too much substantive content (metrics, scenarios, risk examples) that should sit under the pillar sections, rather than focusing on basis-of-preparation principles, connectivity, and cross-references. With restructuring, clearer POV, more standards-oriented language, and some generalisation of entity-specific details, the section could be brought into alignment, but in its current form it should be revised rather than approved."
+    "summary": "The section is formal, neutral, and technically detailed, and it broadly reflects an IFRS-style basis-of-preparation narrative. However, it does not fully follow the approved authoring style. Key gaps include the absence of numbered headings and layered structure, overuse of period-specific numeric detail in what should be a principles-focused section, some long multi-topic paragraphs and sentences, and limited explicit cross-referencing and standards-oriented verbs. With structural refinements, reduced numeric density, clearer separation of principles from mechanics, and better alignment with the numbering and cross-reference conventions, the section could be brought into full compliance with the style guide."
   }
 }

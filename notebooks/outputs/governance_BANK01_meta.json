@@ -17,7 +17,7 @@
     "board_decisions_used_correctly": true,
     "formal_mandate_handled_according_to_availability": true,
     "board_tradeoffs_handled_according_to_availability": true,
-    "management_evidence_handled_according_to_availability": true,
+    "management_evidence_handled_according_to_availability": false,
     "risk_register_used_if_available_or_not_invented_if_absent": true,
     "escalation_handled_according_to_availability": true,
     "skills_handled_according_to_availability": true,
@@ -29,95 +29,78 @@
     "no_unsupported_strong_claims": false
   },
   "issues": [
-    "One material over-claim risk: the opening statement that the Bank has \"established climate-related governance\" is broader than the specific evidenced mechanisms and could be read as asserting a formalised governance framework.",
-    "A few places use expansive wording (e.g., \"resource allocations\", mitigation actions) that could be interpreted as broader than the evidenced decisions/labels unless narrowed."
+    "Management/risk-register content is generally well used, but several mitigation-action statements read like confirmed, operating controls rather than ‘actions recorded in the register’, creating over-claim risk.",
+    "One risk-register numeric example is framed with an ‘estimated potential’ qualifier that is not evidenced as the register’s defined measure.",
+    "Some governance/control phrasing implies a more formalised ERM linkage and governance-control system than is evidenced (beyond the ERM-integration flag and semi-annual reporting)."
   ],
-  "available_evidence_omitted": [],
+  "available_evidence_omitted": [
+    "2024 governance alignment flags (TCFD aligned = true; IFRS S2 aligned = true) are not explicitly stated as indicators in the final boundaries subsection (draft states them, but not clearly as indicator flags and includes an over-strong implication elsewhere)."
+  ],
   "unsupported_claims": [
-    "Overview: \"Eurolux Universal Bank AG has established climate-related governance\" — broad conclusory statement that can imply a formalised governance framework beyond the evidenced mechanisms.",
-    "Board committees: \"These decisions cover areas such as climate-related methodologies, plans and resource allocations\" — the decisions list supports methodology (scenario analysis), plans (transition plan), and a budget (carbon credits), but the broader phrasing could be read as wider resource allocation decisions beyond what is evidenced.",
-    "Management controls: mitigation bullet \"Engagement and transition-plan covenants with borrowers\" is presented as a general mitigation action; evidence supports it as a mitigation label in the risk register, but the draft does not clarify whether this is implemented bank-wide or limited to specific risks/portfolios."
+    "“ERM integration indicators show that climate-related risks are linked to the Bank’s enterprise risk management processes for a subset of recorded risks.” (partly supported by ERM-integration flags, but ‘linked to ERM processes’ is stronger than evidenced)",
+    "“Governance arrangements support the oversight of climate-related risks and opportunities described in the strategy, risk management and metrics and targets sections…” (generic linkage; not directly evidenced in the compact governance evidence)"
   ],
   "material_unsupported_claims": [
-    "Overview: \"Eurolux Universal Bank AG has established climate-related governance\" — should be reframed to describe the specific evidenced governance arrangements (Board oversight, ESG & Sustainability Committee activity, Climate Risk Management Committee, semi-annual reporting, climate risk register, transaction climate checks) without implying a broader formal governance framework."
+    "Risk register example: “...associated with an estimated potential financial impact of EUR 165.2 million.” Evidence supports EUR 165.2 million, but the draft labels it “estimated potential financial impact” without confirming the register uses that exact definition; should be stated neutrally as “financial impact of EUR 165.2 million (as recorded in the register)” or similar.",
+    "Mitigation actions list includes items that are evidenced as labels in the register, but the draft presents them as implemented controls (e.g., “engagement and transition-plan covenants with borrowers”, “sector exposure limits and enhanced due diligence”). Without additional control-design/operating-effectiveness evidence, these should be framed as “recorded mitigation actions” rather than implying they are fully implemented bank-wide controls.",
+    "Overview: “climate checks for major transactions” is supported as an activity indicator, but the surrounding phrasing implies a more formalised control framework (“ERM integration indicators”, “climate checks”, “risk register” presented as a cohesive governance-control system). Needs tightening to avoid implying a formal control system beyond what is evidenced."
   ],
   "ifrs_required_but_missing_in_data": [
     {
-      "requirement_id": "190da01296",
-      "standard": "S1",
-      "paragraph": "27(a)(i)",
-      "requirement_text": "Specifically, the entity shall identify that body(s) or individual(s) and disclose information about: (i) how responsibilities for sustainability-related risks and opportunities are reflected in the terms of reference, mandates, role descriptions and other related policies applicable to that body(s) or individual(s);",
+      "requirement_id": "IFRS_S1_27_C02",
+      "standard": "IFRS S1",
+      "paragraph": "27",
+      "requirement_text": "To achieve this objective, an entity shall disclose information about — (a) the governance body(s) (which can include a board, committee or equivalent body charged with governance) or individual(s) responsible for oversight of sustainability-related risks and opportunities. Specifically, the entity shall identify that body(s) or individual(s) and disclose information about: — (i) how responsibilities for sustainability-related risks and opportunities are reflected in the terms of reference, mandates, role descriptions and other related policies applicable to that body(s) or individual(s)",
       "reason": "required by IFRS but not present in source data"
     },
     {
-      "requirement_id": "d4ae55275c",
-      "standard": "S1",
-      "paragraph": "8(a)(i)",
-      "requirement_text": "how responsibilities for sustainability-related risks and opportunities are reflected in the terms of reference, mandates, role descriptions and other related policies applicable to that body(s) or individual(s);",
+      "requirement_id": "IFRS_S1_27_C03",
+      "standard": "IFRS S1",
+      "paragraph": "27",
+      "requirement_text": "To achieve this objective, an entity shall disclose information about — (a) the governance body(s) (which can include a board, committee or equivalent body charged with governance) or individual(s) responsible for oversight of sustainability-related risks and opportunities. Specifically, the entity shall identify that body(s) or individual(s) and disclose information about: — (ii) how the body(s) or individual(s) determines whether appropriate skills and competencies are available or will be developed to oversee strategies designed to respond to sustainability-related risks and opportunities",
       "reason": "required by IFRS but not present in source data"
     },
     {
-      "requirement_id": "dc436efc67",
-      "standard": "S1",
-      "paragraph": "8(a)(ii)",
-      "requirement_text": "how the body(s) or individual(s) determines whether appropriate skills and competencies are available or will be developed to oversee strategies designed to respond to sustainability-related risks and opportunities;",
+      "requirement_id": "IFRS_S1_27_C05",
+      "standard": "IFRS S1",
+      "paragraph": "27",
+      "requirement_text": "To achieve this objective, an entity shall disclose information about — (a) the governance body(s) (which can include a board, committee or equivalent body charged with governance) or individual(s) responsible for oversight of sustainability-related risks and opportunities. Specifically, the entity shall identify that body(s) or individual(s) and disclose information about: — (iv) how the body(s) or individual(s) takes into account sustainability-related risks and opportunities when overseeing the entity’s strategy, its decisions on major transactions and its risk management processes and related policies, including whether the body(s) or individual(s) has considered trade-offs associated with those risks and opportunities",
       "reason": "required by IFRS but not present in source data"
     },
     {
-      "requirement_id": "f3677a63cc",
-      "standard": "S1",
-      "paragraph": "8(a)(iv)",
-      "requirement_text": "how the body(s) or individual(s) takes into account sustainability-related risks and opportunities when overseeing the entity’s strategy, its decisions on major transactions and its risk management processes and related policies, including whether the body(s) or individual(s) has considered trade-offs associated with those risks and opportunities; and",
+      "requirement_id": "IFRS_S2_6_C02",
+      "standard": "IFRS S2",
+      "paragraph": "6",
+      "requirement_text": "To achieve this objective, an entity shall disclose information about — (a) the governance body(s) (which can include a board, committee or equivalent body charged with governance) or individual(s) responsible for oversight of climate-related risks and opportunities. Specifically, the entity shall identify that body(s) or individual(s) and disclose information about: — (i) how responsibilities for climate-related risks and opportunities are reflected in the terms of reference, mandates, role descriptions and other related policies applicable to that body(s) or individual(s)",
       "reason": "required by IFRS but not present in source data"
     },
     {
-      "requirement_id": "98d3977b63",
-      "standard": "S1",
-      "paragraph": "S1(ii)",
-      "requirement_text": "(ii) how the body(s) or individual(s) determines whether appropriate skills and competencies are available or will be developed to oversee strategies designed to respond to sustainability-related risks and opportunities;",
+      "requirement_id": "IFRS_S2_6_C03",
+      "standard": "IFRS S2",
+      "paragraph": "6",
+      "requirement_text": "To achieve this objective, an entity shall disclose information about — (a) the governance body(s) (which can include a board, committee or equivalent body charged with governance) or individual(s) responsible for oversight of climate-related risks and opportunities. Specifically, the entity shall identify that body(s) or individual(s) and disclose information about: — (ii) how the body(s) or individual(s) determines whether appropriate skills and competencies are available or will be developed to oversee strategies designed to respond to climate-related risks and opportunities",
       "reason": "required by IFRS but not present in source data"
     },
     {
-      "requirement_id": "80e6a2bb2a",
-      "standard": "S1",
-      "paragraph": "S1(iv)",
-      "requirement_text": "(iv) how the body(s) or individual(s) takes into account sustainability-related risks and opportunities when overseeing the entity’s strategy, its decisions on major transactions and its risk management processes and related policies, including whether the body(s) or individual(s) has considered trade-offs associated with those risks and opportunities;",
-      "reason": "required by IFRS but not present in source data"
-    },
-    {
-      "requirement_id": "e9b8aa1332",
-      "standard": "S2",
-      "paragraph": "6(i)",
-      "requirement_text": "how responsibilities for climate-related risks and opportunities are reflected in the terms of reference, mandates, role descriptions and other related policies applicable to that body(s) or individual(s);",
-      "reason": "required by IFRS but not present in source data"
-    },
-    {
-      "requirement_id": "e31d553621",
-      "standard": "S2",
-      "paragraph": "6(ii)",
-      "requirement_text": "how the body(s) or individual(s) determines whether appropriate skills and competencies are available or will be developed to oversee strategies designed to respond to climate- related risks and opportunities;",
-      "reason": "required by IFRS but not present in source data"
-    },
-    {
-      "requirement_id": "fc1fb5f77a",
-      "standard": "S2",
-      "paragraph": "6(iv)",
-      "requirement_text": "how the body(s) or individual(s) takes into account climate- related risks and opportunities when overseeing the entity ’s strategy, its decisions on major transactions and its risk management processes and related policies, including whether the body(s) or individual(s) has considered trade-offs associated with those risks and opportunities; and",
+      "requirement_id": "IFRS_S2_6_C05",
+      "standard": "IFRS S2",
+      "paragraph": "6",
+      "requirement_text": "To achieve this objective, an entity shall disclose information about — (a) the governance body(s) (which can include a board, committee or equivalent body charged with governance) or individual(s) responsible for oversight of climate-related risks and opportunities. Specifically, the entity shall identify that body(s) or individual(s) and disclose information about: — (iv) how the body(s) or individual(s) takes into account climate-related risks and opportunities when overseeing the entity’s strategy, its decisions on major transactions and its risk management processes and related policies, including whether the body(s) or individual(s) has considered trade-offs associated with those risks and opportunities",
       "reason": "required by IFRS but not present in source data"
     }
   ],
   "minor_wording_to_tighten": [
-    "\"reflected in documented climate-related decisions\" / \"recorded in the Board and committee minutes\" — acceptable, but keep phrasing consistently factual (e.g., \"In 2024, the Board and ESG & Sustainability Committee made the following climate-related decisions\") and avoid implying completeness beyond the selected decisions presented.",
-    "\"connect to the strategy, risk management, and metrics and targets sections\" — acceptable cross-referencing, but avoid implying that governance processes ensure outcomes in those sections."
+    "“These indicators show that climate-related matters were regularly considered at Board level.” (reasonable inference from agenda coverage; could be softened to “indicate”)",
+    "“The committee’s role in climate-related oversight is therefore described on the basis of its meeting frequency and recorded climate-related agenda coverage.” (acceptable, but could be simplified to avoid sounding methodological)",
+    "“The Bank operates a skills development programme that includes climate-related topics.” (supported as programme existence; could clarify it is a programme including climate topics, without implying breadth/mandatory coverage)"
   ],
   "correctly_disclosed_evidence_boundaries": [
-    "ERM integration: \"6 of 8 recorded climate-related risks carry an ERM-integration flag; enterprise-wide integration into the enterprise risk management framework is not evidenced.\"",
-    "Escalation: \"Formal escalation thresholds or trigger-based escalation mechanics ... are not evidenced\" / \"not evidenced in the climate risk register.\"",
-    "Skills adequacy: \"The Bank does not currently disclose a formal process for assessing the adequacy of climate-related skills at Board level.\"",
-    "Mandates/charters: \"The Bank does not currently disclose a separate climate-specific charter, terms of reference or formal mandate for the Board or its committees.\"",
-    "Trade-offs: \"...does not describe specific quantified trade-offs such as profitability, capital allocation, implementation cost, risk appetite or competing strategic priorities.\"",
-    "Assurance: limited assurance over Scope 1 and Scope 2 only; financed emissions and other Scope 3 categories are outside scope.",
-    "Alignment control boundary: \"The Bank does not currently describe a separate governance control process designed specifically to verify or assure such alignment...\""
+    "“The Bank does not disclose a separate ESG & Sustainability Committee charter or terms of reference in this report.”",
+    "“The Bank does not currently describe a separate formal process for assessing the adequacy of Board climate skills in this report.”",
+    "“ERM integration indicators show that 6 of 8 recorded climate-related risks carry an ERM-integration flag; enterprise-wide integration into the enterprise risk management framework is not evidenced.”",
+    "“Formal escalation thresholds or trigger-based escalation mechanics are not evidenced in the climate risk register.”",
+    "“Board decision evidence identifies climate-related decisions but does not describe quantified or specific Board-level trade-offs…”",
+    "Assurance boundary: limited assurance by EY under ISAE 3000 over Scope 1 and Scope 2 only; financed emissions and other Scope 3 outside scope."
   ],
   "raw_governance_payload_path": "outputs\\payload_BANK01_governance_raw.json",
   "compact_governance_evidence_path": "outputs\\compact_governance_evidence_BANK01.json"

@@ -2,280 +2,178 @@
   "section_name": "Strategy",
   "ifrs_coverage_judge": {
     "approved": false,
-    "ifrs_coverage_score_0_to_10": 0,
+    "ifrs_coverage_score_0_to_10": 6,
     "missing_supported_requirements": [
       {
-        "requirement_id": "IFRS_S1_29_C01",
-        "reason": "Draft explicitly states no entity-specific sustainability-related risks and opportunities are described, despite evidence being available per coverage matrix."
-      },
-      {
-        "requirement_id": "IFRS_S1_29_C02",
-        "reason": "Draft states no business model/value chain impacts are described, despite evidence being available per coverage matrix."
-      },
-      {
-        "requirement_id": "IFRS_S1_29_C03",
-        "reason": "Draft states no strategic responses/decision-making effects are described, despite evidence being available per coverage matrix."
-      },
-      {
         "requirement_id": "IFRS_S1_29_C04",
-        "reason": "Draft states no current/anticipated financial effects are described; coverage matrix indicates at least partial evidence exists and the requirement is mandatory."
-      },
-      {
-        "requirement_id": "IFRS_S1_29_C05",
-        "reason": "Draft states no resilience is described, despite evidence being available per coverage matrix."
-      },
-      {
-        "requirement_id": "IFRS_S1_30_C01",
-        "reason": "Draft does not describe sustainability-related risks/opportunities affecting prospects, despite evidence being available."
-      },
-      {
-        "requirement_id": "IFRS_S1_30_C02",
-        "reason": "Draft states no time horizons are described, despite evidence being available."
-      },
-      {
-        "requirement_id": "IFRS_S1_30_C03",
-        "reason": "Draft does not explain definitions of short/medium/long term or linkage to planning horizons; requirement is mandatory and evidence is indicated as partially available."
-      },
-      {
-        "requirement_id": "IFRS_S1_32_C01",
-        "reason": "Draft states no business model/value chain effects are described, despite evidence being available."
-      },
-      {
-        "requirement_id": "IFRS_S1_32_C02",
-        "reason": "Draft does not describe where risks/opportunities are concentrated in the business model/value chain, despite evidence being available."
-      },
-      {
-        "requirement_id": "IFRS_S1_33_C01",
-        "reason": "Draft states no strategic responses are described, despite evidence being available."
-      },
-      {
-        "requirement_id": "IFRS_S1_33_C02",
-        "reason": "Draft states no progress is described, despite evidence being available."
-      },
-      {
-        "requirement_id": "IFRS_S1_33_C03",
-        "reason": "Draft states no trade-offs are described, despite evidence being available."
-      },
-      {
-        "requirement_id": "IFRS_S1_34_C01",
-        "reason": "Draft states no current financial effects are described; requirement is mandatory and evidence is indicated as partially available."
-      },
-      {
-        "requirement_id": "IFRS_S1_34_C02",
-        "reason": "Draft states no anticipated financial effects are described, despite evidence being available."
-      },
-      {
-        "requirement_id": "IFRS_S1_35_C01",
-        "reason": "Draft provides no quantitative/qualitative information on how sustainability-related risks/opportunities affected financial position/performance/cash flows for the period; evidence is indicated as partially available."
-      },
-      {
-        "requirement_id": "IFRS_S1_35_C02",
-        "reason": "Draft does not identify risks/opportunities with significant risk of material adjustment to carrying amounts within next annual reporting period, despite evidence being available."
-      },
-      {
-        "requirement_id": "IFRS_S1_35_C04",
-        "reason": "Draft does not discuss expected changes in financial position over time considering investment/disposal plans, despite evidence being available."
-      },
-      {
-        "requirement_id": "IFRS_S1_35_C05",
-        "reason": "Draft does not describe planned sources of funding to implement strategy; evidence is indicated as partially available."
-      },
-      {
-        "requirement_id": "IFRS_S1_35_C06",
-        "reason": "Draft does not discuss expected changes in financial performance/cash flows over time, despite evidence being available."
-      },
-      {
-        "requirement_id": "IFRS_S1_37_C01",
-        "reason": "Draft does not state use of reasonable and supportable information available at reporting date for anticipated financial effects; evidence is indicated as partially available."
-      },
-      {
-        "requirement_id": "IFRS_S1_37_C02",
-        "reason": "Draft does not describe that the approach is commensurate with skills/capabilities/resources; evidence is indicated as partially available."
-      },
-      {
-        "requirement_id": "IFRS_S1_42_C01",
-        "reason": "Draft does not address resilience disclosure preparation/scenario analysis context; evidence is indicated as available."
-      },
-      {
-        "requirement_id": "IFRS_S2_9_C01",
-        "reason": "Draft does not describe climate-related risks/opportunities affecting prospects, despite evidence being available."
-      },
-      {
-        "requirement_id": "IFRS_S2_9_C02",
-        "reason": "Draft states no business model/value chain effects are described, despite evidence being available."
-      },
-      {
-        "requirement_id": "IFRS_S2_9_C03",
-        "reason": "Draft states no strategy/decision-making effects or transition plan information is described, despite evidence being available."
+        "gap_summary": "Does not disclose current-period effects of climate-related risks/opportunities on financial position, financial performance and cash flows, nor anticipated effects across short/medium/long term in a way that is clearly tied to financial planning (only scenario revenue-at-risk and qualitative statements; no linkage to FS line items/cash flows for the reporting period).",
+        "evidence_expected_from_payload": [
+          "financial_summary[*].total_revenue_meur",
+          "financial_summary[*].net_profit_meur",
+          "financial_summary[*].total_assets_meur",
+          "financial_summary[*].climate_capex_meur",
+          "financial_summary[*].climate_opex_meur",
+          "financial_summary[*].tier1_capital_meur"
+        ]
       },
       {
         "requirement_id": "IFRS_S2_9_C04",
-        "reason": "Draft states no current/anticipated financial effects are described; requirement is mandatory and evidence is indicated as partially available."
+        "gap_summary": "Same gap as IFRS_S1_29_C04 but for climate-specific requirement: missing clear disclosure of effects on financial position/performance/cash flows for the reporting period and anticipated effects over short/medium/long term considering financial planning.",
+        "evidence_expected_from_payload": [
+          "financial_summary[*].total_revenue_meur",
+          "financial_summary[*].net_profit_meur",
+          "financial_summary[*].total_assets_meur",
+          "financial_summary[*].climate_capex_meur",
+          "financial_summary[*].climate_opex_meur",
+          "financial_summary[*].tier1_capital_meur"
+        ]
       },
       {
-        "requirement_id": "IFRS_S2_9_C05",
-        "reason": "Draft states no climate resilience is described, despite evidence being available."
+        "requirement_id": "IFRS_S1_34_C01",
+        "gap_summary": "Missing disclosure of current financial effects for the reporting period attributable to sustainability/climate risks and opportunities (no quantified or clearly attributable impacts on financial position/performance/cash flows for the period).",
+        "evidence_expected_from_payload": [
+          "financial_summary[*].reporting_year",
+          "financial_summary[*].total_revenue_meur",
+          "financial_summary[*].net_profit_meur",
+          "financial_summary[*].total_assets_meur"
+        ]
       },
       {
-        "requirement_id": "IFRS_S2_10_C01",
-        "reason": "Draft does not describe climate-related risks/opportunities affecting prospects, despite evidence being available."
+        "requirement_id": "IFRS_S1_35_C01",
+        "gap_summary": "Missing quantitative and qualitative information about how sustainability-related risks/opportunities affected financial position, financial performance and cash flows for the reporting period (section provides scenario metrics but not reporting-period effects).",
+        "evidence_expected_from_payload": [
+          "financial_summary[*].total_revenue_meur",
+          "financial_summary[*].net_profit_meur",
+          "financial_summary[*].total_assets_meur"
+        ]
       },
       {
-        "requirement_id": "IFRS_S2_10_C02",
-        "reason": "Draft does not classify climate-related risks as physical vs transition, despite evidence being available."
-      },
-      {
-        "requirement_id": "IFRS_S2_10_C03",
-        "reason": "Draft states no time horizons are described, despite evidence being available."
+        "requirement_id": "IFRS_S1_30_C03",
+        "gap_summary": "Uses 'short/medium/long term' labels but does not define them (e.g., years) nor link definitions to planning horizons used for strategic decision-making.",
+        "evidence_expected_from_payload": [
+          "climate_scenarios[*].horizon",
+          "climate_scenarios[*].resilience_assessment"
+        ]
       },
       {
         "requirement_id": "IFRS_S2_10_C04",
-        "reason": "Draft does not explain definitions of short/medium/long term or linkage to planning horizons; evidence is indicated as partially available."
+        "gap_summary": "Same as IFRS_S1_30_C03: missing definitions of short/medium/long term and linkage to planning horizons.",
+        "evidence_expected_from_payload": [
+          "climate_scenarios[*].horizon",
+          "climate_scenarios[*].resilience_assessment"
+        ]
       },
       {
-        "requirement_id": "IFRS_S2_11_C01",
-        "reason": "Draft does not describe use of reasonable and supportable information (past events/current conditions/forecasts) in identifying climate-related risks/opportunities, despite evidence being available."
+        "requirement_id": "IFRS_S1_35_C05",
+        "gap_summary": "Does not describe planned sources of funding to implement the climate strategy (no funding mix, instruments, or internal/external funding sources).",
+        "evidence_expected_from_payload": [
+          "financial_summary[*].total_revenue_meur",
+          "financial_summary[*].net_profit_meur",
+          "metadata.pcaf_methodology.sovereign_bonds_note"
+        ]
       },
       {
-        "requirement_id": "IFRS_S2_12_C01",
-        "reason": "Draft does not mention considering applicability of industry-based guidance topics when identifying climate-related risks/opportunities, despite evidence being available."
-      },
-      {
-        "requirement_id": "IFRS_S2_13_C01",
-        "reason": "Draft states no business model/value chain effects are described, despite evidence being available."
-      },
-      {
-        "requirement_id": "IFRS_S2_13_C02",
-        "reason": "Draft does not describe where climate-related risks/opportunities are concentrated, despite evidence being available."
-      },
-      {
-        "requirement_id": "IFRS_S2_14_C02",
-        "reason": "Draft states no strategic response/business model changes are described, despite evidence being available."
-      },
-      {
-        "requirement_id": "IFRS_S2_14_C03",
-        "reason": "Draft states no direct mitigation/adaptation efforts are described, despite evidence being available."
-      },
-      {
-        "requirement_id": "IFRS_S2_14_C04",
-        "reason": "Draft states no indirect mitigation/adaptation efforts are described, despite evidence being available."
-      },
-      {
-        "requirement_id": "IFRS_S2_14_C05",
-        "reason": "Draft states no transition plan (assumptions/dependencies) is described, despite evidence being available."
-      },
-      {
-        "requirement_id": "IFRS_S2_14_C06",
-        "reason": "Draft states no information on how targets will be achieved is described, despite evidence being available."
-      },
-      {
-        "requirement_id": "IFRS_S2_14_C07",
-        "reason": "Draft states no resourcing of activities is described; evidence is indicated as partially available."
+        "requirement_id": "IFRS_S1_33_C02",
+        "gap_summary": "Requirement expects progress against plans disclosed in previous periods; the section does not provide prior-period plan references or progress metrics (despite payload indicating target progress fields exist).",
+        "evidence_expected_from_payload": [
+          "reporting_kpis.target_summary[*].target_progress_pct_2024",
+          "climate_risk_register[*].changed_since_prior_period"
+        ]
       }
     ],
-    "invented_missing_requirements": [
-      "The draft includes broad 'no X is described in the provided source content' assertions (risks/opportunities, time horizons, value chain impacts, strategic responses, progress, trade-offs, financial effects). Given the coverage matrix indicates evidence exists for many of these topics, these statements function as invented unavailability/missingness claims relative to the available evidence."
-    ],
-    "missing_data_language_found": true,
+    "invented_missing_requirements": [],
+    "missing_data_language_found": false,
     "required_fixes": [
-      "Remove all missing-data/unavailable-data/disclaimer language (eg, 'intentionally limited to evidence-supported information' and 'No ... are described in the provided source content').",
-      "Replace the disclaimer-only section with actual disclosures supported by the evidence indicated in the coverage matrix, including: identified sustainability/climate risks and opportunities; time horizons and definitions; business model and value chain effects and concentrations; strategy/decision-making responses including transition plan elements; progress against prior plans; trade-offs; resilience/scenario analysis; and current and anticipated financial effects (to the extent supported).",
-      "Ensure any remaining gaps are handled via the missing_requirements_register (outside report prose), not by stating that information is unavailable or not provided."
+      "Add explicit definitions of short, medium and long term (e.g., year ranges) and explain how these align with internal strategic planning horizons (budget cycle, ICAAP/ILAAP, credit planning, etc.).",
+      "Disclose current-period (reporting period) financial effects of climate-related risks and opportunities on financial position, financial performance and cash flows, using quantitative and qualitative information and clearly attributing impacts (or explaining why attribution is not possible without using 'missing/unavailable data' language).",
+      "Strengthen anticipated financial effects across short/medium/long term by linking scenario outputs (e.g., revenue-at-risk, capital consumption) to expected impacts on financial statements/cash flows and describing how these are incorporated into financial planning (capital planning, provisioning, pricing, portfolio rebalancing).",
+      "Include planned sources of funding to implement the strategy (e.g., internal capital generation, wholesale funding, green/sustainability-linked issuance, reallocations) and how funding supports planned actions.",
+      "Add progress against previously disclosed plans/targets (quantitative and qualitative), using the available target progress and 'changed since prior period' evidence indicated in the payload."
     ],
-    "summary": "Not approved. The Strategy section is comprised almost entirely of missing/unavailable-data disclaimers and fails to provide mandatory IFRS S1/S2 Strategy disclosures, despite the coverage matrix indicating evidence is available for many requirements. The section must be rewritten to include evidence-supported disclosures and remove all missing-data language."
+    "summary": "The section provides a robust qualitative description of climate-related risks/opportunities, transmission channels, strategic responses, trade-offs and scenario analysis/resilience. However, it falls short on several supported IFRS S1/S2 Strategy requirements that are expected to be evidenced by the payload: (i) defining short/medium/long term and linking to planning horizons; (ii) disclosing current-period financial effects; (iii) clearly connecting anticipated effects to financial planning; (iv) planned sources of funding; and (v) progress against prior-period plans/targets. No invented 'missing data' statements were found."
   },
   "evidence_judge": {
     "approved": false,
-    "evidence_score_0_to_10": 2,
+    "evidence_score_0_to_10": 6,
     "unsupported_claims": [
       {
-        "claim_id": "STR-002",
-        "claim_text": "No entity-specific sustainability-related risks and opportunities are described in the provided source content.",
-        "why_unsupported": "Payload evidence includes entity-specific climate risks (e.g., mortgage flood exposure, stranded assets, EU ETS transition risk) and climate opportunities (e.g., green loan growth, sustainable bond underwriting, transition advisory). This directly contradicts the claim of absence."
-      },
-      {
-        "claim_id": "STR-003",
-        "claim_text": "No time horizons are described in the provided source content.",
-        "why_unsupported": "Payload evidence includes explicit time horizons such as climate_opportunities[*].time_horizon (short_term, medium_term) and climate_scenarios[1].horizon (medium_term), plus references to 2050 horizon in scenario notes."
-      },
-      {
-        "claim_id": "STR-004",
-        "claim_text": "No business model/value chain impacts are described in the provided source content.",
-        "why_unsupported": "Payload evidence includes a value_chain_map with climate risk descriptions across nodes (own operations, upstream/downstream, financing counterparties), indicating value chain impacts are described."
-      },
-      {
-        "claim_id": "STR-005",
-        "claim_text": "No strategic responses are described in the provided source content.",
-        "why_unsupported": "Payload evidence includes described mechanisms/actions such as 'sector exposure limits', 'active portfolio decarbonisation glide-path monitoring', 'flood-zone overlay', and 'EPC-based collateral monitoring' in climate_scenarios[*].resilience_assessment."
-      },
-      {
-        "claim_id": "STR-008",
-        "claim_text": "No current or anticipated financial effects are described in the provided source content.",
-        "why_unsupported": "Payload evidence includes quantified financial metrics and effects such as climate_scenarios[0].revenue_at_risk_meur (e.g., 9689.2) and financial_summary climate_capex_meur/climate_opex_meur across years."
+        "claim_text": "Our strategic response focuses on managing the identified risk transmission channels and pursuing climate-related opportunities that are relevant to our financing and advisory activities.",
+        "issue": "No evidence sources are provided in the claims register for this statement (STR-013). It is a strategic-intent assertion that is not tied to documented actions, plans, or governance artifacts in the provided evidence items."
       }
     ],
     "questionable_claims": [
       {
-        "claim_id": "STR-001",
-        "claim_text": "This section is intentionally limited to evidence-supported information.",
-        "why_questionable": "While it is a scope statement, the section then asserts multiple 'no X is described' statements that are contradicted by the provided payload evidence, undermining the credibility of the methodology claim."
+        "claim_text": "Under orderly transition scenarios, the portfolio demonstrates adequate resilience.",
+        "issue": "Conclusory qualitative judgement ('adequate') without defined criteria/thresholds or supporting metrics in the section; evidence paths cited are scenario assessments but the draft does not disclose what 'adequate' means."
       },
       {
-        "claim_id": "STR-006",
-        "claim_text": "No progress against previously disclosed plans is described in the provided source content.",
-        "why_questionable": "Payload includes target progress percentages (reporting_kpis.target_summary[*].target_progress_pct_2024), which may constitute progress disclosure depending on interpretation. The claim may be false or at least ambiguous without clearer definition of 'previously disclosed plans'."
+        "claim_text": "Under disorderly transition scenarios, near-term resilience is acceptable but medium-term capital consumption from stranded asset impairments is material; under the most adverse disorderly assumptions, additional capital buffers may be required post-2030.",
+        "issue": "Uses undefined qualitative terms ('acceptable', 'material') and implies capital planning impacts without quantification or linkage to capital metrics; 'post-2030' timing is asserted without disclosed assumptions/results."
       },
       {
-        "claim_id": "STR-007",
-        "claim_text": "No trade-offs are described in the provided source content.",
-        "why_questionable": "Not directly contradicted by the provided payload excerpts, but scenario resilience narratives imply balancing mechanisms/capital buffers; absence cannot be confidently asserted without comprehensive source review."
+        "claim_text": "Under hot house world scenarios, physical risk losses represent the dominant long-term resilience challenge.",
+        "issue": "Dominance claim is comparative but no quantified physical loss estimates or comparison versus transition losses are provided in the section."
+      },
+      {
+        "claim_text": "Revenue-at-risk is quantified as EUR 9,689.2 million (NGFS v4 Net Zero 2050) and EUR 9,214.0 million (medium-term horizon application).",
+        "issue": "Quantitative outputs are presented without sufficient definition (period, baseline, scope, confidence/uncertainty, and clear scenario/horizon linkage for the 'medium-term' figure)."
+      },
+      {
+        "claim_text": "We use a target intensity of 20.0 tCO2e per EUR million as an orientation point for portfolio monitoring.",
+        "issue": "Metric is stated but scope (which portfolio), calculation methodology, and baseline are not disclosed in the section."
+      },
+      {
+        "claim_text": "Time horizons are referenced as short term, medium term and long term across risks and opportunities.",
+        "issue": "Horizon labels are used but not defined (what time ranges they correspond to), reducing interpretability."
       }
     ],
     "required_fixes": [
-      "Remove or rewrite STR-002 to acknowledge that entity-specific sustainability-related risks and opportunities are present in the source payload (cite climate_risk_register and climate_opportunities).",
-      "Remove or rewrite STR-003 to acknowledge disclosed time horizons (cite climate_opportunities[*].time_horizon, climate_scenarios[*].horizon, and 2050 horizon references).",
-      "Remove or rewrite STR-004 to acknowledge value chain/business model impacts are described (cite value_chain_map entries).",
-      "Remove or rewrite STR-005 to acknowledge strategic responses/resilience mechanisms are described (cite climate_scenarios[*].resilience_assessment mechanisms such as sector exposure limits, glide-path monitoring, flood-zone overlay, EPC monitoring).",
-      "Remove or rewrite STR-008 to acknowledge financial effects/metrics are present (cite revenue_at_risk_meur and financial_summary climate capex/opex).",
-      "If keeping STR-006, define 'previously disclosed plans' and reconcile with target progress disclosures; otherwise remove the absolute 'no progress' statement.",
-      "Avoid absolute 'no X is described' statements unless you can demonstrate absence against the full provided source content; otherwise qualify (e.g., 'not covered in this section' rather than 'not in source content')."
+      "For the strategic-response statement (STR-013), either (a) add specific, evidenced actions/commitments (e.g., named policies, limits, monitoring processes, resource allocation) and cite supporting evidence, or (b) rephrase as an aspiration and clearly label it as forward-looking without implying implemented capability.",
+      "Define 'short term', 'medium term', and 'long term' (e.g., year ranges) and align them to planning horizons used in strategy and scenario analysis.",
+      "For resilience conclusions ('adequate', 'acceptable', 'material', 'dominant'), add objective criteria/thresholds and/or supporting quantitative indicators (e.g., loss ranges, capital impact, concentration metrics) or soften language to reflect uncertainty.",
+      "For revenue-at-risk figures, disclose at minimum: measurement period, baseline/reference case, scope (portfolio/geographies), key assumptions, and explicitly link each figure to a named scenario and horizon.",
+      "For the financed-emissions intensity orientation (20.0 tCO2e/EURm), specify scope (which exposures), calculation method (e.g., PCAF approach), and baseline/reference year."
     ],
-    "summary": "The section makes multiple absolute absence-of-disclosure claims that are contradicted by the provided payload evidence, which contains entity-specific climate risks/opportunities, time horizons, value chain impacts, strategic/resilience mechanisms, and quantified financial effects. As written, the section contains unsupported/incorrect claims and should be revised to align with the evidence."
+    "summary": "The section is largely consistent with the provided risk/opportunity and scenario-methodology evidence, but it contains at least one unsupported strategic-intent claim (STR-013) with no evidence sources. Several other statements are not strictly unsupported but are questionable due to undefined qualitative terms, missing horizon definitions, and insufficient context for quantitative metrics (revenue-at-risk and intensity target)."
   },
   "style_judge": {
     "approved": false,
-    "style_score_0_to_10": 4.0,
+    "style_score_0_to_10": 7.4,
     "voice_issues": [
-      "The voice is neutral and formal but overly meta-descriptive (explaining what is not included) rather than disclosing processes or data gaps in a standards-oriented way.",
-      "The section does not use the preferred standards-oriented verbs (e.g., describe, explain, assess) to frame what is done or not done; instead it states that nothing is described.",
-      "The text reads more like a disclaimer than an IFRS S1/S2-aligned strategy disclosure."
+      "Voice is generally consistent first-person plural and neutral, but some phrasing is more narrative than standards-oriented (e.g., 'We identify wildfire exposure in parts of the portfolio.' could be reframed with disclosure verbs such as 'assess' or 'monitor').",
+      "Forward-looking elements are mostly cautious, but some statements could more clearly distinguish current state vs. forward-looking intent (e.g., 'Green loan growth and client engagement on transition plans are expected to progressively reduce high-carbon sector concentration' could explicitly label this as an expectation or scenario-based outcome)."
     ],
     "structure_issues": [
-      "The section consists of a single short paragraph and does not follow the required layered structure (overview → structured bullets/tables → brief interpretation and cross-references).",
-      "There is no one-sentence purpose statement explaining what the Strategy section is intended to cover before going into details.",
-      "No subheadings are used to separate principles/what from mechanics/how, and IFRS pillar subheadings are absent within the Strategy section.",
-      "There are no lead-in sentences to bullets or tables, and no bullets, tables, or figures are provided despite the guidance that Strategy should be table/figure anchored.",
-      "The section does not close with a connectivity sentence linking to related sections or financial statements."
+      "Headings are not numbered and are not explicitly aligned to the IFRS pillar numbering convention requested in the global style guide (e.g., '2. Strategy', '2.1 Strategic context and boundary').",
+      "Subsections generally lack one-sentence purpose statements at the start explaining what is being disclosed and why it matters (e.g., 'Climate-related risks and opportunities', 'Scenario analysis and resilience').",
+      "The layered structure is only partially followed: there is narrative and some bullets, but no central organizing table or matrix (e.g., topic-by-topic mapping of risks/opportunities to value chain, time horizons, and financial statement areas).",
+      "Paragraphs are mostly single-idea but some blocks combine multiple mechanisms (e.g., 'Effects on the business model and value chain' paragraphs mix several risk channels and time horizons in one block).",
+      "Major subsections do not consistently close with connectivity sentences linking to other sections (e.g., Governance, Risk Management, Metrics and Targets) or to financial statements.",
+      "Scenario analysis content is highly detailed and methodology-heavy for a Strategy section; some of this belongs in a dedicated methodology appendix or Risk Management section, with Strategy focusing more on how results inform decisions and resource allocation."
     ],
     "wording_issues": [
-      "The wording focuses on the absence of content rather than clearly labelling items as 'not available', 'not applicable', or 'under development' in line with missing data language rules.",
-      "The phrase 'No entity-specific sustainability-related risks and opportunities ... are described in the provided source content' is process/meta language rather than report-ready disclosure language.",
-      "The section does not distinguish between current-period facts, estimates, and forward-looking intentions; it simply states that none are described.",
-      "Preferred disclosure verbs (describe, explain, outline, assess, integrate, monitor, review) are not used to frame what the entity does or does not yet disclose."
+      "Some sentences are relatively long and multi-clause, which reduces scanability (e.g., 'Technology transition risk in automotive value chains can arise where rapid electrification strands internal-combustion vehicle manufacturers and suppliers in the lending book.').",
+      "The section uses several technical references (e.g., 'NGFS v4', 'RCP 8.5', 'REMIND-MAgPIE') without brief definitional context, which may not align with the guidance to define key terms before first use.",
+      "A few phrases are closer to narrative than standards-oriented disclosure language (e.g., 'We identify the following opportunities as relevant to our strategy' could be 'We identify and monitor the following climate-related opportunities as relevant to our strategy').",
+      "The section does not clearly separate current-period facts, estimates/judgements, and forward-looking intentions with explicit labels; for example, scenario loss figures are presented without clarifying that they are modelled estimates under specific assumptions.",
+      "Some repetition could be streamlined (e.g., physical and transition risk descriptions appear both under 'Principal climate-related risks' and again under 'Effects on the business model and value chain' with similar wording)."
     ],
     "table_figure_issues": [
-      "No tables or figures are included, even though the Strategy section is expected to use tables as primary organizing devices (e.g., strategy-at-a-glance matrix, topic-by-topic materiality mapping).",
-      "Because there are no tables or figures, there are no captions, numbering, or narrative references, which is inconsistent with the style guide."
+      "No tables or figures are used, despite the style guide preference for central matrices and mapping tables in Strategy sections.",
+      "Because there are no tables or figures, there are no captions or references; this does not meet the guidance that tables/figures should be numbered and referenced where used.",
+      "Opportunities, risks, and scenario outputs would benefit from at-a-glance tabular presentation (e.g., risk/opportunity by value-chain segment, time horizon, and financial statement linkage), which is currently missing."
     ],
     "required_fixes": [
-      "Replace the meta-statement about the absence of content with a Strategy section that follows the layered structure: (1) concise overview of how sustainability-related risks and opportunities are integrated into strategy and the business model, (2) structured artifacts such as a strategy-at-a-glance matrix or topic-by-topic mapping table, and (3) short interpretive paragraphs and cross-references.",
-      "Introduce the section with a one-sentence purpose statement (e.g., 'This section explains how sustainability-related risks and opportunities are integrated into the entity’s strategy and business model across the value chain.').",
-      "Use standards-oriented, IFRS-aligned verbs and controlled vocabulary to describe processes, even where data is incomplete (e.g., 'We identify and assess sustainability-related risks and opportunities...', 'Sustainability-related risks and opportunities are mapped to the business model and value chain segments...').",
-      "If underlying source content truly does not provide entity-specific strategy information, apply the missing data protocol explicitly: specify what strategic information is not currently available (e.g., value-chain mapping, time horizons, financial effects), why it is not available (reason category), any interim qualitative approach, limitations, and planned enhancement direction, using labels such as 'not currently available' or 'under development' rather than generic negatives.",
-      "Add at least one organizing table (for example, a placeholder strategy themes matrix or a mapping of sustainability-related risks and opportunities to value-chain segments and time horizons) with a numbered caption and a brief narrative reference explaining its purpose.",
-      "Introduce subheadings and short paragraphs that separate 'strategic framing and themes' from 'operationalisation and monitoring', and close the section with a connectivity sentence linking to Governance, Risk Management, and Metrics and Targets sections using generic cross-reference placeholders.",
-      "Ensure the tone remains formal, neutral, and decision-useful, avoiding purely disclaimer-style language and instead providing either substantive strategic content or clearly structured data-gap disclosures."
+      "Introduce numbered headings aligned to IFRS pillars and subsections (e.g., '2. Strategy', '2.1 Strategic context and boundary', '2.2 Climate-related risks and opportunities', '2.3 Effects on the business model and value chain', '2.4 Scenario analysis and resilience', '2.5 Financial planning, resource allocation and monitoring indicators').",
+      "Add a one-sentence purpose statement at the start of each subsection explaining what is being disclosed and how it supports understanding of strategy and financial effects.",
+      "Rebalance the 'Scenario analysis and resilience' subsection to focus on how scenario results inform strategic decisions, risk appetite, and resource allocation, and move or summarise highly technical methodology details to a separate methodology or Risk Management section.",
+      "Introduce at least one central table or matrix that maps principal climate-related risks and opportunities to: (a) value-chain segments, (b) time horizons, and (c) potential financial statement areas/line items, with concise cell text and a numbered caption referenced in the narrative.",
+      "Clarify the distinction between current-period facts, modelled estimates, and forward-looking intentions, especially where scenario results and resilience assessments are discussed; use cautious modality and explicit labels (e.g., 'modelled estimate', 'scenario-based projection').",
+      "Tighten and split longer sentences into shorter, single-idea statements, and ensure parallel structure in lists and bullets.",
+      "Add brief definitional context for technical scenario and model references (e.g., NGFS, RCP, integrated assessment models) or cross-reference to a definitions/methodology section.",
+      "Close major subsections with short connectivity sentences that link to related sections (e.g., Governance, Risk Management, Metrics and Targets) and to financial statement disclosures via generic placeholders.",
+      "Ensure wording consistently uses standards-oriented verbs (e.g., 'assess', 'monitor', 'manage', 'integrate') and avoids narrative or promotional phrasing, while keeping the existing neutral tone."
     ],
-    "summary": "The current Strategy section is formally worded but functions as a disclaimer that no strategy-related information is provided, rather than as an IFRS S1/S2-aligned disclosure. It does not follow the required layered structure, lacks tables/figures, does not use preferred disclosure verbs, and does not apply the missing data protocol to explain gaps. Substantial revision is required to introduce a purpose-led, structured Strategy narrative with appropriate tables and explicit, standardized treatment of any missing or unavailable information."
+    "summary": "The section is broadly aligned with the desired formal, neutral, and analytical voice and uses first-person plural consistently. It clearly identifies climate-related risks, opportunities, and scenario-based resilience themes, and it avoids promotional language. However, it does not fully follow the prescribed layered structure: headings are not numbered, subsections lack explicit purpose and connectivity sentences, and there are no organizing tables or figures. Scenario analysis content is detailed but not always clearly distinguished as modelled estimates, and some methodology detail may be better placed elsewhere. With structural refinements, clearer labelling of current vs. forward-looking content, and the addition of at-a-glance tables, the section can be brought into full compliance with the approved authoring style."
   }
 }

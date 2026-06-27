@@ -2,142 +2,179 @@
 
 #### Sustainability-related risk management overview
 
-Eurolux Universal Bank AG identifies, assesses and monitors climate-related risks primarily through a dedicated climate risk register. For the financial year 2024, the register contains eight climate-related risks, comprising three physical risks and five transition risks. These risks are classified into the following categories: acute physical, chronic physical, transition market, transition policy, transition reputational and transition technology. Each risk is assigned a rating (high or medium), a time horizon (short term: 0–2 years; medium term: 2–5 years; long term: more than 5 years), a monitoring frequency (quarterly or semi-annual), and an indicative financial impact expressed in million euro.
+This section explains how Eurolux Universal Bank AG identifies, assesses, monitors and manages climate-related risks as a subset of its overall risk universe.
 
-The climate risk register is the central tool through which the Bank organises its climate-related risk management processes. It supports:
+In 2024, we maintained and used a climate risk register to record and monitor climate-related risks with potential financial effects. The 2024 register contains eight climate-related risks, comprising three physical risks and five transition risks. These risks are classified into the following categories: acute physical, chronic physical, transition market, transition policy, transition reputational and transition technology.
 
-- identification and categorisation of material physical and transition risks;
-- assessment of indicative financial impact and time horizon;
-- prioritisation through risk ratings and monitoring frequency; and
-- recording of mitigation actions and links to selected climate scenarios.
+Each risk in the register is characterised by:
 
-Six of the eight climate-related risks recorded for 2024 are flagged as integrated into the Bank’s enterprise risk management processes, corresponding to 75% of the registered climate risks. This integration flag indicates that these climate-related risks are considered within the broader risk management activities of the Bank, alongside traditional financial and non-financial risks. Two climate-related risks are not yet flagged as integrated.
+- a qualitative risk rating (high or medium);
+- an assigned time horizon (short term: 0–2 years; medium term: 2–5 years; long term: more than 5 years);
+- an indicative financial impact expressed in millions of euros;
+- a monitoring frequency (quarterly or semi-annual);
+- a flag indicating whether the risk is integrated into our enterprise risk management processes; and
+- any link to climate-related scenario analysis.
 
-The Bank uses climate-related scenario analysis as a forward-looking input for selected risks. Five of the eight risks are linked to scenario references, which in turn draw on a subset of the Bank’s scenario library. These scenario-linked risks reference four distinct scenario identifiers. The Bank’s scenario library for climate risk analysis comprises 18 scenarios, based on the NGFS v4 framework and covering orderly, disorderly and hot-house world pathways, with key horizon years of 2025, 2030 and 2050. Scenario names used in the library include, among others, Below 2°C, Current Policies, Delayed Transition, Divergent Net Zero, Nationally Determined Contributions and Net Zero 2050. Scenario analysis is used as a forward-looking assessment input and the scenario outputs are modelled estimates rather than realised losses.
+Six of the eight recorded climate-related risks are flagged as integrated into our enterprise risk management processes. Four of the eight risks were updated compared with the prior period, indicating that our assessment of climate-related risks evolves as new information becomes available.
 
-The Bank’s climate-related risk management processes are connected to its broader sustainability and climate strategy through the focus on lending portfolios, sector exposures and financed emissions. Reported climate-related key performance indicators, including total financed emissions of 35,973,167.69 tCO₂e, a carbon intensity of 1,154.81 tCO₂e per million euro, high-carbon sector exposure of 35.5% and fossil fuel exposure of 22.15%, provide contextual information for transition and reputational risks recorded in the register, particularly those related to financed emissions scrutiny and fossil fuel sector exposure. The Bank does not currently disclose formal climate risk appetite thresholds, detailed risk policies or escalation triggers in this report.
+We use climate-related scenario analysis as a forward-looking input for selected risks. Five of the eight risks in the 2024 register reference scenario identifiers, which in turn draw on a set of 18 climate scenarios based on the NGFS v4 framework that covers orderly, disorderly and higher-temperature (“hot house”) transition pathways and time horizons to 2025, 2030 and 2050. Several risks may reference the same scenario, so the number of scenario-linked risks is higher than the number of distinct scenarios used. Scenario analysis is used to inform our forward-looking assessment of those specific risks, rather than to represent actual or realised losses.
+
+Mitigation actions are recorded for the risks disclosed in this report. For 2024, these actions include:
+
+- “Climate scenario stress testing integrated into ICAAP”;
+- “Collateral revaluation and flood mapping overlay”;
+- “Engagement and transition-plan covenants with borrowers”;
+- “Green retrofit financing incentives”;
+- “Portfolio decarbonisation glide-path monitoring”; and
+- “Sector exposure limits and enhanced due diligence”.
+
+These actions are used to manage specific risks and are not presented as a complete set of controls for all climate-related risks.
+
+We also monitor selected climate-related key performance indicators, including financed emissions, carbon intensity, high-carbon sector exposure and fossil-fuel exposure. In 2024, our reported financed emissions were approximately 36.0 million tonnes of carbon dioxide equivalent, with a portfolio carbon intensity of around 1,155 tonnes of carbon dioxide equivalent per million euros of exposure. Exposures to high-carbon sectors represented 35.5% of the portfolio, and exposures to fossil-fuel-related activities represented 22.15%. These indicators provide additional context for transition and reputational risks, particularly those related to financed emissions scrutiny and exposure to high-carbon sectors. They are not used as formal risk appetite thresholds in this report.
+
+Climate-related opportunities are not recorded in the 2024 climate risk register, and we do not currently disclose separate processes for identifying, assessing or monitoring climate-related opportunities.
 
 #### Upstream sustainability risks
 
-For Eurolux Universal Bank AG, upstream sustainability-related risks would typically relate to dependencies on funding markets, suppliers and other external service providers. In the current reporting period, the Bank’s climate-related risk management disclosures are centred on the climate risk register, which focuses on risks arising from lending portfolios, collateral and counterparties. The 2024 climate risk register does not include specific upstream climate-related risks linked to suppliers, procurement or funding counterparties, nor does it set out a distinct upstream climate risk process.
+This subsection describes how we consider sustainability-related risks in relation to upstream dependencies such as funding, suppliers and access to capital.
 
-As a result, this report does not provide a separate taxonomy or process description for upstream sustainability-related risks. Any climate-related effects on the Bank’s access to capital or on key suppliers have not yet been quantified and are outside the scope of the 2024 climate risk register.
+Our 2024 climate risk register is focused on risks arising from our lending and credit portfolios and does not separately classify upstream sustainability-related risks. The recorded climate-related risks primarily relate to borrower creditworthiness, collateral values and sectoral transition dynamics, rather than to our own funding structure, suppliers or other upstream dependencies.
+
+As a result, we do not currently disclose a distinct upstream sustainability risk management process or separate upstream climate risk taxonomy. Any upstream implications of climate-related risks, such as potential effects on funding costs or investor sentiment, are considered indirectly through the transition and reputational risks recorded in the climate risk register, including the risk described as “Reputational risk — financed emissions scrutiny”.
 
 #### Risk management across internal operations
 
-Internal operational climate risks for a commercial bank may include physical risks to branches and offices, data centres and other facilities, as well as transition-related impacts on internal processes, systems and staff capabilities. In 2024, the Bank’s climate risk register is focused on risks that primarily affect lending portfolios and counterparties, including mortgage, auto, industrial and agricultural exposures.
+This subsection explains how climate-related risks are considered in relation to our own operations.
 
-The 2024 register does not contain distinct entries for climate-related risks that are limited to internal operations, such as physical damage to own premises or disruption to internal processes. It also does not describe specific internal operational controls or procedures related to climate risk, such as climate-related checks in major internal projects or dedicated operational resilience measures. Accordingly, this report does not present a separate internal operations climate risk management framework, and internal operational climate risks have not yet been quantified in the climate risk register.
+The 2024 climate risk register does not include separate entries for climate-related risks that arise solely from our internal operations, such as our own facilities, data centres or business continuity arrangements. The physical risks recorded in the register relate to exposures in our lending portfolios, including:
+
+- “Physical risk — mortgage book flood exposure” (acute physical risk, high rating, long-term horizon, monitored quarterly);
+- “Physical risk — wildfire exposure in southern portfolio” (acute physical risk, medium rating, short-term horizon, monitored semi-annually); and
+- “Physical risk — heat stress on agricultural borrowers” (chronic physical risk, medium rating, short-term horizon, monitored semi-annually).
+
+These risks are assessed in terms of their potential impact on borrowers and collateral, rather than on our own operational sites or internal processes. We do not currently disclose dedicated internal operational climate risk controls, data governance procedures or major-transaction climate checks beyond the risk-specific mitigation actions recorded in the register.
+
+Accordingly, climate-related risk management across our internal operations is not separately described in this report and remains outside the scope of the 2024 climate risk register.
 
 #### Downstream sustainability risks
 
-Downstream sustainability-related risks are most material for Eurolux Universal Bank AG through its lending activities, financed emissions, sectoral exposures and the quality and location of collateral. The 2024 climate risk register reflects this focus and records both physical and transition risks that arise from the Bank’s credit portfolios and client relationships.
+This subsection focuses on downstream sustainability-related risks, which for a commercial bank arise primarily through lending, counterparties, collateral and sector exposures.
 
-Key downstream physical risks include:
+The 2024 climate risk register indicates that our material climate-related risks are predominantly downstream and relate to our credit portfolios. The key themes are:
 
-- Physical risk — mortgage book flood exposure: an acute physical risk with a high rating and a long-term time horizon of more than five years, monitored quarterly. This risk reflects potential flood-related impacts on the mortgage portfolio and associated collateral values. It is integrated into the Bank’s enterprise risk management processes and is linked to a specific climate scenario reference. Mitigation actions recorded for this risk include engagement and transition-plan covenants with borrowers.
+- Transition technology risk: “Transition risk — EV shift in auto lending” is rated high, with a short-term horizon and the largest indicative financial impact in the register (EUR 165.2 million). It is monitored quarterly and is integrated into our enterprise risk management processes. The recorded mitigation action is “Climate scenario stress testing integrated into ICAAP”, and the risk references a climate scenario identifier.
+- Transition market risk: “Stranded assets — fossil fuel sector exposure” is rated high, with a long-term horizon and a significant indicative financial impact (EUR 136.5 million). It is monitored quarterly and integrated into enterprise risk management. The recorded mitigation action is “Collateral revaluation and flood mapping overlay”.
+- Transition policy risk: Two risks are recorded:
+  - “Transition risk — carbon pricing on industrial loans” (high rating, medium-term horizon, indicative financial impact of EUR 67.5 million, quarterly monitoring, integrated into enterprise risk management), with the mitigation action “Sector exposure limits and enhanced due diligence”; and
+  - “Transition risk — building energy performance regulation” (medium rating, long-term horizon, indicative financial impact of EUR 21.6 million, semi-annual monitoring, not flagged as integrated into enterprise risk management), with the mitigation action “Green retrofit financing incentives”.
+- Transition reputational risk: “Reputational risk — financed emissions scrutiny” is rated medium, with a medium-term horizon and an indicative financial impact of EUR 65.5 million. It is monitored semi-annually, integrated into enterprise risk management and linked to a climate scenario identifier. The recorded mitigation action is “Portfolio decarbonisation glide-path monitoring”.
+- Physical credit risk: The three physical risks noted above relate to flood, wildfire and heat stress exposures in our mortgage and agricultural portfolios. These risks are associated with potential changes in default rates and collateral values in affected regions and sectors. Mitigation actions recorded for these risks include “Collateral revaluation and flood mapping overlay” for wildfire exposure, “Engagement and transition-plan covenants with borrowers” for mortgage book flood exposure, and “Climate scenario stress testing integrated into ICAAP” for heat stress on agricultural borrowers.
 
-- Physical risk — wildfire exposure in southern portfolio: an acute physical risk with a medium rating and a short-term time horizon of 0–2 years, monitored on a semi-annual basis. This risk is not yet flagged as integrated into enterprise risk management. The mitigation actions recorded include “Collateral revaluation and flood mapping overlay”.
+These downstream risks are assessed using qualitative ratings (high or medium), time horizons and indicative financial impacts. Monitoring frequencies are set at quarterly or semi-annual intervals, depending on the risk. Scenario analysis is used as a forward-looking input for selected downstream risks, particularly those related to the electric vehicle transition in auto lending, physical flood and heat stress exposures, and reputational risks linked to financed emissions.
 
-- Physical risk — heat stress on agricultural borrowers: a chronic physical risk with a medium rating and a short-term time horizon of 0–2 years, monitored semi-annually. This risk is integrated into enterprise risk management and is linked to a climate scenario reference. The mitigation actions recorded include “Climate scenario stress testing integrated into ICAAP”.
+Our reported climate-related key performance indicators provide additional context for these downstream risks. In 2024, we reported financed emissions of approximately 36.0 million tonnes of carbon dioxide equivalent, a portfolio carbon intensity of around 1,155 tonnes of carbon dioxide equivalent per million euros of exposure, exposure to high-carbon sectors of 35.5% and exposure to fossil-fuel-related activities of 22.15%. These indicators are used to monitor the overall context in which transition and reputational risks may evolve, but they are not presented as formal limits or thresholds in this section.
 
-Key downstream transition risks include:
-
-- Transition risk — EV shift in auto lending: a transition technology risk with a high rating and a short-term time horizon of 0–2 years, monitored quarterly. This risk captures potential impacts on the auto lending portfolio from the shift towards electric vehicles. It is integrated into enterprise risk management and linked to a climate scenario reference. The mitigation actions recorded include “Climate scenario stress testing integrated into ICAAP”.
-
-- Stranded assets — fossil fuel sector exposure: a transition market risk with a high rating and a long-term time horizon of more than five years, monitored quarterly. This risk reflects potential devaluation of exposures to fossil fuel sectors. It is integrated into enterprise risk management. The mitigation actions recorded include “Collateral revaluation and flood mapping overlay”.
-
-- Transition risk — carbon pricing on industrial loans: a transition policy risk with a high rating and a medium-term time horizon of 2–5 years, monitored quarterly. This risk addresses potential impacts of carbon pricing on industrial borrowers. It is integrated into enterprise risk management. The mitigation actions recorded include “Sector exposure limits and enhanced due diligence”.
-
-- Transition risk — building energy performance regulation: a transition policy risk with a medium rating and a long-term time horizon of more than five years, monitored semi-annually. This risk is not yet flagged as integrated into enterprise risk management. The mitigation actions recorded include “Green retrofit financing incentives”.
-
-- Reputational risk — financed emissions scrutiny: a transition reputational risk with a medium rating and a medium-term time horizon of 2–5 years, monitored semi-annually. This risk is integrated into enterprise risk management and linked to a climate scenario reference. The mitigation actions recorded include “Portfolio decarbonisation glide-path monitoring”.
-
-These downstream risks are closely connected to the Bank’s reported climate-related key performance indicators. High-carbon sector exposure of 35.5%, fossil fuel exposure of 22.15%, total financed emissions of 35,973,167.69 tCO₂e and a carbon intensity of 1,154.81 tCO₂e per million euro provide context for the transition market, policy and reputational risks described above. These indicators are used as monitoring context and are not presented as formal risk appetite limits in this report.
+We do not currently disclose separate processes for identifying or managing downstream climate-related opportunities, such as green lending growth, beyond the risk-focused mitigation actions recorded in the register (for example, “Green retrofit financing incentives”).
 
 #### Climate risk management
 
-The climate risk register is the primary instrument through which Eurolux Universal Bank AG organises its climate risk management processes across identification, assessment, prioritisation, monitoring and mitigation.
+This subsection provides a detailed description of our climate risk management approach as reflected in the 2024 climate risk register.
 
-Identification and categorisation
+Risk identification and classification
 
-The Bank identifies climate-related risks by mapping exposures across its lending portfolios and collateral to physical and transition risk drivers. In 2024, eight climate-related risks are recorded:
+We identify climate-related risks through our risk register process, which records eight climate-related risks for 2024. These are classified into:
 
-- three physical risks, classified as acute (flood and wildfire) and chronic (heat stress); and
-- five transition risks, classified as market, policy, reputational and technology risks.
+- Physical risks:
+  - Acute physical risks, including flood and wildfire exposure in lending portfolios;
+  - Chronic physical risks, including heat stress affecting agricultural borrowers.
+- Transition risks:
+  - Market risks, including potential stranded assets in fossil fuel sector exposures;
+  - Policy risks, including carbon pricing on industrial loans and building energy performance regulation;
+  - Reputational risks, including scrutiny of financed emissions;
+  - Technology risks, including the shift to electric vehicles in auto lending.
 
-Each risk is assigned to one of the following categories: physical acute, physical chronic, transition market, transition policy, transition reputational or transition technology. The register also records whether a risk has changed since the prior period; four of the eight risks are marked as changed, indicating updates in assessment, financial impact or mitigation approach during 2024.
+Each risk is assigned a time horizon (short term: 0–2 years; medium term: 2–5 years; long term: more than 5 years) and a qualitative risk rating (high or medium). These attributes provide a structured way to distinguish near-term from longer-term risks and to highlight those with higher potential financial impact.
 
-Assessment, prioritisation and time horizons
+Risk assessment and prioritisation
 
-The Bank assesses each climate-related risk using:
+We assess the potential financial effects of each climate-related risk using indicative financial impact estimates expressed in millions of euros. The top risks by indicative financial impact in 2024 are:
 
-- a risk rating of high or medium;
-- a time horizon, defined as short term (0–2 years), medium term (2–5 years) or long term (more than 5 years); and
-- an indicative financial impact expressed in million euro.
+- “Transition risk — EV shift in auto lending” (EUR 165.2 million, high rating, short-term horizon);
+- “Stranded assets — fossil fuel sector exposure” (EUR 136.5 million, high rating, long-term horizon);
+- “Transition risk — carbon pricing on industrial loans” (EUR 67.5 million, high rating, medium-term horizon);
+- “Reputational risk — financed emissions scrutiny” (EUR 65.5 million, medium rating, medium-term horizon);
+- “Physical risk — mortgage book flood exposure” (EUR 24.8 million, high rating, long-term horizon);
+- “Physical risk — wildfire exposure in southern portfolio” (EUR 22.7 million, medium rating, short-term horizon);
+- “Transition risk — building energy performance regulation” (EUR 21.6 million, medium rating, long-term horizon);
+- “Physical risk — heat stress on agricultural borrowers” (EUR 20.6 million, medium rating, short-term horizon).
 
-The top risks by indicative financial impact in 2024 include:
+These indicative financial impacts, together with the qualitative ratings and time horizons, are used to prioritise climate-related risks relative to one another and to other material risks. Four of the eight risks were updated compared with the prior period, reflecting changes in our assessment of their potential financial impact, time horizon or other attributes.
 
-- Transition risk — EV shift in auto lending (high rating, short term, 165.2 million euro);
-- Stranded assets — fossil fuel sector exposure (high rating, long term, 136.5 million euro);
-- Transition risk — carbon pricing on industrial loans (high rating, medium term, 67.5 million euro);
-- Reputational risk — financed emissions scrutiny (medium rating, medium term, 65.5 million euro);
-- Physical risk — mortgage book flood exposure (high rating, long term, 24.8 million euro);
-- Physical risk — wildfire exposure in southern portfolio (medium rating, short term, 22.7 million euro);
-- Transition risk — building energy performance regulation (medium rating, long term, 21.6 million euro); and
-- Physical risk — heat stress on agricultural borrowers (medium rating, short term, 20.6 million euro).
+We do not currently disclose quantitative probability scores, formal risk appetite thresholds or detailed prioritisation methodologies for climate-related risks.
 
-These assessments provide a basis for prioritising management attention and monitoring intensity, with higher-rated and higher-impact risks generally monitored more frequently.
+Risk monitoring
 
-Monitoring processes
+Monitoring frequencies are recorded for each risk in the register and are set at either quarterly or semi-annual intervals. In general:
 
-Monitoring frequencies recorded in the register are quarterly and semi-annual. In 2024:
+- High-rated risks with larger indicative financial impacts, such as the electric vehicle transition in auto lending, stranded fossil fuel exposures, carbon pricing on industrial loans and mortgage book flood exposure, are monitored quarterly.
+- Medium-rated risks, including reputational risk from financed emissions scrutiny, wildfire exposure, building energy performance regulation and heat stress on agricultural borrowers, are monitored semi-annually.
 
-- high-rated risks with larger indicative financial impacts, such as the EV shift in auto lending, fossil fuel sector exposure, carbon pricing on industrial loans and mortgage book flood exposure, are monitored quarterly; and
-- medium-rated risks, including wildfire exposure, building energy performance regulation, heat stress on agricultural borrowers and financed emissions scrutiny, are monitored on a semi-annual basis.
-
-The register also records whether risks have changed since the prior period, providing a mechanism to track the evolution of climate-related risk assessments over time. Four of the eight risks are marked as changed in 2024.
+These monitoring frequencies are used to schedule periodic reviews of risk assessments, including updates to indicative financial impacts, time horizons and mitigation actions where appropriate.
 
 Scenario analysis
 
-Climate-related scenario analysis is used as a forward-looking input for selected risks. Five of the eight registered risks are linked to scenario references, which collectively use four distinct scenario identifiers. These identifiers are drawn from the Bank’s library of 18 climate scenarios, which are based on the NGFS v4 framework and include orderly, disorderly and hot-house world pathways, with horizon years of 2025, 2030 and 2050. Scenario names in the library include Below 2°C, Current Policies, Delayed Transition, Divergent Net Zero, Nationally Determined Contributions and Net Zero 2050.
+We use climate-related scenario analysis as a forward-looking input for selected risks. In 2024:
 
-Selected risks are linked to these scenarios as follows:
+- Five of the eight recorded risks reference scenario identifiers;
+- These identifiers are drawn from a set of 18 climate scenarios that cover different transition pathways (including orderly, disorderly and higher-temperature outcomes) and time horizons (2025, 2030 and 2050), based on the NGFS v4 framework;
+- The scenario-linked risks include:
+  - “Transition risk — EV shift in auto lending”;
+  - “Reputational risk — financed emissions scrutiny”;
+  - “Physical risk — mortgage book flood exposure”;
+  - “Physical risk — wildfire exposure in southern portfolio”; and
+  - “Physical risk — heat stress on agricultural borrowers”.
 
-- Transition risk — EV shift in auto lending and Physical risk — heat stress on agricultural borrowers reference the same scenario identifier;
-- Physical risk — mortgage book flood exposure references a separate scenario identifier;
-- Physical risk — wildfire exposure in southern portfolio references another scenario identifier; and
-- Reputational risk — financed emissions scrutiny references a further scenario identifier.
+Several risks may reference the same scenario, so the number of scenario-linked risks is greater than the number of distinct scenarios used. Scenario analysis is used to explore how different climate and policy pathways could affect the profile of specific climate-related risks over time. Scenario outputs are modelled estimates and are not treated as forecasts or as evidence of actual losses.
 
-These scenario links are used to inform the forward-looking assessment of risk magnitude and timing. Scenario outputs are modelled estimates and are not treated as actual losses.
+Risk mitigation and management actions
 
-Mitigation actions
+Mitigation actions are recorded for the risks disclosed in this report. Across the eight risks, the following actions are used:
 
-The climate risk register records mitigation actions for each risk. Across the eight risks, the following mitigation actions are recorded:
+- “Climate scenario stress testing integrated into ICAAP”;
+- “Collateral revaluation and flood mapping overlay”;
+- “Engagement and transition-plan covenants with borrowers”;
+- “Green retrofit financing incentives”;
+- “Portfolio decarbonisation glide-path monitoring”; and
+- “Sector exposure limits and enhanced due diligence”.
 
-- Climate scenario stress testing integrated into ICAAP;
-- Collateral revaluation and flood mapping overlay;
-- Engagement and transition-plan covenants with borrowers;
-- Green retrofit financing incentives;
-- Portfolio decarbonisation glide-path monitoring; and
-- Sector exposure limits and enhanced due diligence.
+These actions are applied to specific risks as recorded in the register. For example, “Climate scenario stress testing integrated into ICAAP” is used for selected transition and physical risks, “Collateral revaluation and flood mapping overlay” is used for certain market and physical risks, and “Sector exposure limits and enhanced due diligence” is used for transition policy risks related to carbon pricing. “Engagement and transition-plan covenants with borrowers” and “Green retrofit financing incentives” are used in relation to mortgage and building-related risks, while “Portfolio decarbonisation glide-path monitoring” is associated with reputational risk from financed emissions scrutiny.
 
-These actions are recorded at the level of individual risks. For example, “Climate scenario stress testing integrated into ICAAP” is recorded for the EV shift in auto lending and heat stress on agricultural borrowers; “Collateral revaluation and flood mapping overlay” is recorded for fossil fuel sector exposure and wildfire exposure; “Engagement and transition-plan covenants with borrowers” is recorded for mortgage book flood exposure; “Green retrofit financing incentives” is recorded for building energy performance regulation; “Portfolio decarbonisation glide-path monitoring” is recorded for financed emissions scrutiny; and “Sector exposure limits and enhanced due diligence” is recorded for carbon pricing on industrial loans. Mitigation actions are recorded in the risk register and are not presented in this report as guarantees of risk reduction.
+We do not present these mitigation actions as a complete set of controls for all climate-related risks, and we do not claim that they eliminate the underlying risks. Rather, they represent the specific management responses recorded for the identified risks in 2024.
 
-Integration into enterprise risk management
+Integration with enterprise risk management
 
-The climate risk register records whether each risk is integrated into the Bank’s enterprise risk management processes. In 2024, six of the eight climate-related risks (75%) are flagged as integrated. These include the EV shift in auto lending, fossil fuel sector exposure, carbon pricing on industrial loans, financed emissions scrutiny, mortgage book flood exposure and heat stress on agricultural borrowers. Wildfire exposure and building energy performance regulation are not yet flagged as integrated. The integration flag indicates that these climate-related risks are considered within the Bank’s broader risk management activities; however, this report does not describe detailed enterprise risk management policies or control frameworks for climate risk.
+Six of the eight climate-related risks in the 2024 register are flagged as integrated into our enterprise risk management processes. These include the high-impact transition risks (electric vehicle shift in auto lending, stranded fossil fuel exposures, carbon pricing on industrial loans), the reputational risk from financed emissions scrutiny, the mortgage book flood exposure and the chronic physical risk related to heat stress on agricultural borrowers.
+
+We do not currently disclose detailed descriptions of how climate-related risks are embedded into specific enterprise risk management processes beyond the integration flags and the recorded mitigation actions.
+
+Climate-related opportunities
+
+The 2024 climate risk register does not include separate entries for climate-related opportunities, and we do not currently disclose processes for identifying, assessing, prioritising or monitoring such opportunities. Where mitigation actions may have opportunity elements, such as “Green retrofit financing incentives”, they are recorded in the register in the context of managing specific risks rather than as standalone opportunity management processes.
+
+Process changes compared with the prior period
+
+Four of the eight recorded risks are marked as having changed since the prior period. This indicates that our climate risk assessments are updated over time, but we do not currently disclose a detailed narrative of process changes, such as methodological revisions or governance enhancements, beyond the changed-since-prior-period flags in the register.
 
 #### Risk management limitations and evidence boundaries
 
-The climate-related risk management disclosures in this section are based on the 2024 climate risk register, the associated scenario analysis framework and selected climate-related key performance indicators. While the register provides structured information on risk categories, ratings, time horizons, monitoring frequencies, indicative financial impacts, mitigation actions, scenario links and enterprise risk management integration flags, there are important limitations and boundaries to the disclosures presented.
+This subsection summarises the main limitations and boundaries of our 2024 climate-related risk management disclosures.
 
-First, the Bank does not currently disclose formal climate risk appetite thresholds, including quantitative limits or tolerance levels for specific climate-related risk categories, sectors or portfolios. As a result, this report does not describe how climate-related risks are constrained by explicit risk appetite metrics.
+- Formal risk appetite: We do not currently disclose formal climate-specific risk appetite thresholds or limits, including quantitative tolerances for financed emissions, sector exposures or climate-related loss levels.
+- Policies and controls: We do not currently disclose detailed climate risk policies, formal control procedures or internal standards that may apply to climate-related risk management beyond the mitigation actions recorded in the climate risk register.
+- Escalation thresholds: We do not currently disclose formal escalation thresholds or triggers for climate-related risks, such as defined criteria for management escalation or governance committee review.
+- Upstream and internal operations: Our 2024 climate risk register is focused on risks arising from lending portfolios and does not provide a separate taxonomy or process description for upstream sustainability-related risks (for example, suppliers or funding) or for climate-related risks arising solely from our own operations. As a result, upstream and internal operational climate risk management processes are outside the scope of this report.
+- Opportunities: We do not currently disclose dedicated processes for identifying, assessing, prioritising or monitoring climate-related opportunities. Any opportunity elements embedded in mitigation actions are presented in the context of risk management.
+- Scenario analysis: Climate-related scenario analysis is used as a forward-looking input for selected risks and is based on modelled estimates. Scenario outputs are subject to uncertainty and are not treated as forecasts or as evidence of actual or realised losses.
+- Methodological detail: We do not disclose detailed probability models, quantitative scoring methodologies or the internal mechanics of scenario models, nor do we provide a full description of how climate-related risks are prioritised relative to all other risk types beyond the qualitative ratings, time horizons and indicative financial impacts recorded in the register.
 
-Second, the Bank does not currently disclose detailed climate risk policies, formal control procedures or process descriptions that would specify roles, responsibilities, approval workflows or lines of defence for climate risk management. The mitigation actions described are recorded at the level of individual risks in the register and should not be interpreted as a complete set of formal controls.
-
-Third, the Bank does not currently disclose formal escalation thresholds or triggers for climate-related risks, such as defined criteria for escalation to senior management or governance bodies. Consequently, this report does not describe escalation routes or decision thresholds for climate-related risk events.
-
-Fourth, the climate risk register is focused on downstream risks arising from lending portfolios, collateral and counterparties. Upstream climate-related risks linked to suppliers, procurement and funding markets, as well as internal operational climate risks affecting the Bank’s own facilities and processes, are not separately identified or quantified in the 2024 register. These areas are therefore outside the scope of the current climate risk management disclosures.
-
-Finally, climate-related scenario analysis is used as a forward-looking assessment input for selected risks and is based on modelled estimates using NGFS v4 scenarios. The Bank recognises that scenario design, input data and modelling assumptions are subject to uncertainty and may evolve over time. The Bank will continue to refine its climate risk management approach and may expand its disclosures on formal policies, risk appetite, escalation mechanisms and value chain coverage in future reporting periods as practices and regulatory expectations develop.
+Within these boundaries, the 2024 climate risk register, together with the associated scenario links, monitoring frequencies, mitigation actions and enterprise risk management integration flags, provides the primary basis for our climate-related risk management disclosures in this report.

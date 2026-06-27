@@ -3,104 +3,788 @@
   "claims": [
     {
       "claim_id": "GR-001",
-      "claim_text": "The sustainability-related financial disclosures are prepared for the reporting year 2024 with a fiscal year end of 31 December 2024.",
+      "claim_text": "These sustainability-related financial disclosures are prepared for the reporting year 2024.",
       "claim_type": "reporting_period",
       "entities": [
+        "bank",
         "sustainability-related financial disclosures"
       ],
       "numbers": [
-        "2024",
-        "31"
+        "2024"
       ],
       "dates": [
-        "2024-12-31"
+        "2024"
       ],
       "evidence_sources": [
-        "draft_markdown: Basis of preparation, reporting period, currency and comparatives"
+        "bank.fiscal_year_end",
+        "financial_summary[2].reporting_year",
+        "scope1[2].reporting_year"
       ],
-      "requirement_ids": [],
+      "requirement_ids": [
+        "IFRS_S1_11_C01",
+        "IFRS_S1_17_C01"
+      ],
       "supported": true,
-      "support_notes": "Explicitly stated reporting year and fiscal year end date."
+      "support_notes": "Explicitly states reporting year 2024.",
+      "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+      "repaired_evidence_sources": [
+        "bank.fiscal_year_end",
+        "financial_summary[2].reporting_year",
+        "scope1[2].reporting_year"
+      ],
+      "invalid_evidence_sources_removed": [
+        "draft_markdown: 1.1 Purpose and basis of preparation"
+      ]
     },
     {
       "claim_id": "GR-002",
-      "claim_text": "Amounts presented in currency are reported in euros (EUR).",
-      "claim_type": "currency",
+      "claim_text": "The disclosures are prepared to provide information about sustainability-related risks and opportunities that could reasonably be expected to affect the bank’s prospects.",
+      "claim_type": "objective_purpose",
       "entities": [
-        "EUR",
-        "euros"
+        "bank",
+        "sustainability-related opportunities",
+        "sustainability-related risks"
       ],
       "numbers": [],
       "dates": [],
       "evidence_sources": [
-        "draft_markdown: Basis of preparation, reporting period, currency and comparatives"
+        "climate_scenarios[7].resilience_assessment",
+        "climate_scenarios[8].resilience_assessment",
+        "climate_scenarios[9].resilience_assessment"
       ],
       "requirement_ids": [
-        "IFRS_S1_24_C01"
+        "IFRS_S1_11_C01",
+        "IFRS_S1_13_C01",
+        "IFRS_S1_17_C01",
+        "IFRS_S1_3_C01"
       ],
       "supported": true,
-      "support_notes": "Currency unit of measure is specified as EUR; linkage to presentation currency requirement cannot be verified from this section alone."
+      "support_notes": "Matches IFRS S1 objective/fair presentation framing; statement is high-level (no completeness test possible from excerpt).",
+      "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+      "repaired_evidence_sources": [
+        "climate_scenarios[9].resilience_assessment",
+        "climate_scenarios[8].resilience_assessment",
+        "climate_scenarios[7].resilience_assessment"
+      ],
+      "invalid_evidence_sources_removed": [
+        "draft_markdown: 1.1 Purpose and basis of preparation"
+      ]
     },
     {
       "claim_id": "GR-003",
-      "claim_text": "Where comparative information is presented, the comparative years are 2022 and 2023.",
+      "claim_text": "The reporting year is 2024 and the fiscal year-end is 31 December 2024.",
+      "claim_type": "reporting_period",
+      "entities": [
+        "bank"
+      ],
+      "numbers": [
+        "2024"
+      ],
+      "dates": [
+        "31 December 2024"
+      ],
+      "evidence_sources": [
+        "bank.fiscal_year_end",
+        "metadata.reporting_year",
+        "scope1[2].reporting_year"
+      ],
+      "requirement_ids": [
+        "IFRS_S1_11_C01"
+      ],
+      "supported": true,
+      "support_notes": "Explicitly stated.",
+      "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+      "repaired_evidence_sources": [
+        "bank.fiscal_year_end",
+        "scope1[2].reporting_year",
+        "metadata.reporting_year"
+      ],
+      "invalid_evidence_sources_removed": [
+        "draft_markdown: 1.2 Reporting period, fiscal year-end and comparative information"
+      ]
+    },
+    {
+      "claim_id": "GR-004",
+      "claim_text": "Comparative information is presented for 2022 and 2023.",
       "claim_type": "comparatives",
       "entities": [
-        "comparative information"
+        "bank"
       ],
       "numbers": [
         "2022",
         "2023"
       ],
-      "dates": [],
-      "evidence_sources": [
-        "draft_markdown: Basis of preparation, reporting period, currency and comparatives"
-      ],
-      "requirement_ids": [
-        "IFRS_S1_15_C01"
-      ],
-      "supported": true,
-      "support_notes": "Comparative years are explicitly stated; supports comparability objective."
-    },
-    {
-      "claim_id": "GR-004",
-      "claim_text": "Climate-related capital expenditure (climate capex) is presented for 2022 (EUR 322.2 million), 2023 (EUR 373.91 million) and 2024 (EUR 476.95 million).",
-      "claim_type": "metric_disclosure",
-      "entities": [
-        "EUR",
-        "climate capex",
-        "climate-related capital expenditure"
-      ],
-      "numbers": [
-        "322.2",
-        "373.91",
-        "476.95"
-      ],
       "dates": [
         "2022",
-        "2023",
-        "2024"
+        "2023"
       ],
       "evidence_sources": [
-        "draft_markdown: Basis of preparation, reporting period, currency and comparatives"
+        "metadata.comparative_years[0]",
+        "metadata.comparative_years[1]",
+        "scope1[1].reporting_year"
       ],
       "requirement_ids": [
         "IFRS_S1_15_C01"
       ],
       "supported": true,
-      "support_notes": "Multi-year metric values are explicitly provided to support trend analysis."
+      "support_notes": "Supports comparability characteristic; does not evidence full comparability across all metrics.",
+      "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+      "repaired_evidence_sources": [
+        "metadata.comparative_years[1]",
+        "metadata.comparative_years[0]",
+        "scope1[1].reporting_year"
+      ],
+      "invalid_evidence_sources_removed": [
+        "draft_markdown: 1.2 Reporting period, fiscal year-end and comparative information"
+      ]
     },
     {
       "claim_id": "GR-005",
-      "claim_text": "Tier 1 capital is presented for 2022 (EUR 95,149.4 million), 2023 (EUR 143,979.2 million) and 2024 (EUR 151,208.6 million).",
+      "claim_text": "The reporting currency is EUR and amounts are presented in euros where currency is used as a unit of measure.",
+      "claim_type": "currency",
+      "entities": [
+        "EUR",
+        "bank",
+        "sustainability-related financial disclosures"
+      ],
+      "numbers": [],
+      "dates": [],
+      "evidence_sources": [
+        "bank.reporting_currency",
+        "climate_scenarios[8].resilience_assessment",
+        "climate_scenarios[9].resilience_assessment"
+      ],
+      "requirement_ids": [
+        "IFRS_S1_24_C01"
+      ],
+      "supported": true,
+      "support_notes": "Directly addresses presentation currency requirement.",
+      "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+      "repaired_evidence_sources": [
+        "bank.reporting_currency",
+        "climate_scenarios[9].resilience_assessment",
+        "climate_scenarios[8].resilience_assessment"
+      ],
+      "invalid_evidence_sources_removed": [
+        "draft_markdown: 1.3 Reporting currency"
+      ]
+    },
+    {
+      "claim_id": "GR-006",
+      "claim_text": "The disclosures are prepared to provide connected information explaining how climate-related risks and opportunities are identified, assessed, monitored and managed, and how these matters relate to performance.",
+      "claim_type": "connected_information",
+      "entities": [
+        "bank",
+        "climate-related opportunities",
+        "climate-related risks"
+      ],
+      "numbers": [],
+      "dates": [],
+      "evidence_sources": [
+        "climate_scenarios[7].resilience_assessment",
+        "climate_scenarios[8].resilience_assessment",
+        "climate_scenarios[9].resilience_assessment"
+      ],
+      "requirement_ids": [
+        "IFRS_S1_21_C01",
+        "IFRS_S1_21_C03"
+      ],
+      "supported": true,
+      "support_notes": "Explicit intent statement; excerpt provides examples of connections.",
+      "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+      "repaired_evidence_sources": [
+        "climate_scenarios[9].resilience_assessment",
+        "climate_scenarios[8].resilience_assessment",
+        "climate_scenarios[7].resilience_assessment"
+      ],
+      "invalid_evidence_sources_removed": [
+        "draft_markdown: 1.4 Connected information"
+      ]
+    },
+    {
+      "claim_id": "GR-007",
+      "claim_text": "The climate risk register includes risks spanning physical and transition drivers, including acute physical flood exposure for mortgage collateral, chronic physical risk for agricultural counterparties, transition risk from electrification, reputational risk from stakeholder/NGO scrutiny, and policy/standards risk from minimum energy performance standards.",
+      "claim_type": "risk_identification",
+      "entities": [
+        "EPC",
+        "NGOs",
+        "agricultural counterparties",
+        "climate risk register",
+        "internal-combustion vehicle manufacturers and suppliers",
+        "minimum energy performance standards",
+        "mortgage collateral"
+      ],
+      "numbers": [],
+      "dates": [],
+      "evidence_sources": [
+        "climate_risk_register[6].risk_description",
+        "climate_risk_register[8].risk_description",
+        "climate_risk_register[9].risk_description"
+      ],
+      "requirement_ids": [
+        "IFRS_S1_11_C01",
+        "IFRS_S1_17_C01",
+        "IFRS_S1_21_C01"
+      ],
+      "supported": true,
+      "support_notes": "List of risk types is explicitly provided; materiality/completeness not assessable from excerpt.",
+      "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+      "repaired_evidence_sources": [
+        "climate_risk_register[9].risk_description",
+        "climate_risk_register[6].risk_description",
+        "climate_risk_register[8].risk_description"
+      ],
+      "invalid_evidence_sources_removed": [
+        "draft_markdown: 1.4 Connected information (Connections between risks and opportunities)"
+      ]
+    },
+    {
+      "claim_id": "GR-008",
+      "claim_text": "For 2024, the bank discloses financed emissions of 35,973,167.6878965 tCO2e.",
+      "claim_type": "metric_disclosure",
+      "entities": [
+        "bank",
+        "financed emissions",
+        "tCO2e"
+      ],
+      "numbers": [
+        "35973167.6878965"
+      ],
+      "dates": [
+        "2024"
+      ],
+      "evidence_sources": [
+        "climate_risk_register[14].risk_description",
+        "climate_risk_register[1].risk_description",
+        "reporting_kpis.financed_emissions_2024_tco2e"
+      ],
+      "requirement_ids": [
+        "IFRS_S1_21_C03",
+        "IFRS_S1_25_C04"
+      ],
+      "supported": true,
+      "support_notes": "Numeric metric disclosed; methodology details not fully evidenced here.",
+      "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+      "repaired_evidence_sources": [
+        "reporting_kpis.financed_emissions_2024_tco2e",
+        "climate_risk_register[1].risk_description",
+        "climate_risk_register[14].risk_description"
+      ],
+      "invalid_evidence_sources_removed": [
+        "draft_markdown: 1.4 Connected information (financed emissions statement)"
+      ]
+    },
+    {
+      "claim_id": "GR-009",
+      "claim_text": "Climate risk reporting to the board occurs semi-annually.",
+      "claim_type": "governance",
+      "entities": [
+        "bank",
+        "board"
+      ],
+      "numbers": [],
+      "dates": [],
+      "evidence_sources": [
+        "governance[0].climate_on_board_agenda_pct",
+        "governance[0].climate_risk_reporting_to_board",
+        "reporting_kpis.governance_maturity.board_climate_expertise_pct"
+      ],
+      "requirement_ids": [
+        "IFRS_S1_21_C03",
+        "IFRS_S1_25_C01"
+      ],
+      "supported": true,
+      "support_notes": "Governance cadence explicitly stated.",
+      "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+      "repaired_evidence_sources": [
+        "governance[0].climate_risk_reporting_to_board",
+        "reporting_kpis.governance_maturity.board_climate_expertise_pct",
+        "governance[0].climate_on_board_agenda_pct"
+      ],
+      "invalid_evidence_sources_removed": [
+        "draft_markdown: 1.4 Connected information (Connections across governance, risk management and strategy)"
+      ]
+    },
+    {
+      "claim_id": "GR-010",
+      "claim_text": "The board has a size of 10, with 33.5% board climate expertise, and climate topics represent 69.8% of the board agenda.",
+      "claim_type": "governance",
+      "entities": [
+        "bank",
+        "board"
+      ],
+      "numbers": [
+        "10",
+        "33.5%",
+        "69.8%"
+      ],
+      "dates": [],
+      "evidence_sources": [
+        "governance[0].board_size",
+        "governance[0].climate_on_board_agenda_pct",
+        "reporting_kpis.governance_maturity.board_climate_expertise_pct"
+      ],
+      "requirement_ids": [
+        "IFRS_S1_25_C01",
+        "IFRS_S1_25_C04"
+      ],
+      "supported": true,
+      "support_notes": "Quantitative governance indicators disclosed; basis for percentages not provided in excerpt.",
+      "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+      "repaired_evidence_sources": [
+        "governance[0].board_size",
+        "reporting_kpis.governance_maturity.board_climate_expertise_pct",
+        "governance[0].climate_on_board_agenda_pct"
+      ],
+      "invalid_evidence_sources_removed": [
+        "draft_markdown: 1.4 Connected information (board metrics)"
+      ]
+    },
+    {
+      "claim_id": "GR-011",
+      "claim_text": "An ESG committee exists and meets 5 times per year.",
+      "claim_type": "governance",
+      "entities": [
+        "ESG committee",
+        "bank"
+      ],
+      "numbers": [
+        "5"
+      ],
+      "dates": [],
+      "evidence_sources": [
+        "climate_scenarios[1].methodology_notes",
+        "climate_scenarios[2].methodology_notes",
+        "governance[0].esg_committee_meetings_per_year"
+      ],
+      "requirement_ids": [
+        "IFRS_S1_25_C01"
+      ],
+      "supported": true,
+      "support_notes": "Committee existence and meeting frequency explicitly stated.",
+      "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+      "repaired_evidence_sources": [
+        "governance[0].esg_committee_meetings_per_year",
+        "climate_scenarios[2].methodology_notes",
+        "climate_scenarios[1].methodology_notes"
+      ],
+      "invalid_evidence_sources_removed": [
+        "draft_markdown: 1.4 Connected information (committee cadence)"
+      ]
+    },
+    {
+      "claim_id": "GR-012",
+      "claim_text": "Management-level governance structures include the Group Sustainability Committee, ESG Executive Committee, and Climate Risk Management Committee.",
+      "claim_type": "governance",
+      "entities": [
+        "Climate Risk Management Committee",
+        "ESG Executive Committee",
+        "Group Sustainability Committee"
+      ],
+      "numbers": [],
+      "dates": [],
+      "evidence_sources": [
+        "governance[0].management_committee_name",
+        "governance[1].management_committee_name",
+        "governance[2].management_committee_name"
+      ],
+      "requirement_ids": [
+        "IFRS_S1_25_C01"
+      ],
+      "supported": true,
+      "support_notes": "Named structures explicitly listed.",
+      "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+      "repaired_evidence_sources": [
+        "governance[2].management_committee_name",
+        "governance[1].management_committee_name",
+        "governance[0].management_committee_name"
+      ],
+      "invalid_evidence_sources_removed": [
+        "draft_markdown: 1.4 Connected information (management-level governance structures)"
+      ]
+    },
+    {
+      "claim_id": "GR-013",
+      "claim_text": "Risk monitoring is operationalised through the climate risk register with monitoring frequencies such as monthly, quarterly, and semi-annual; the physical risk mortgage book flood exposure risk is monitored monthly.",
+      "claim_type": "risk_management_process",
+      "entities": [
+        "Physical risk — mortgage book flood exposure",
+        "climate risk register"
+      ],
+      "numbers": [],
+      "dates": [],
+      "evidence_sources": [
+        "climate_risk_register[0].risk_description",
+        "climate_risk_register[0].risk_name",
+        "climate_risk_register[8].risk_description"
+      ],
+      "requirement_ids": [
+        "IFRS_S1_21_C03",
+        "IFRS_S1_25_C03"
+      ],
+      "supported": true,
+      "support_notes": "Process and example frequency explicitly stated.",
+      "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+      "repaired_evidence_sources": [
+        "climate_risk_register[0].risk_name",
+        "climate_risk_register[8].risk_description",
+        "climate_risk_register[0].risk_description"
+      ],
+      "invalid_evidence_sources_removed": [
+        "draft_markdown: 1.4 Connected information (risk monitoring)"
+      ]
+    },
+    {
+      "claim_id": "GR-014",
+      "claim_text": "Scenario analysis uses NGFS v4 scenarios applied to the banking book, including NGFS v4 Net Zero 2050 and NGFS v4 Below 2°C (orderly).",
+      "claim_type": "methodology",
+      "entities": [
+        "Below 2°C (orderly)",
+        "NGFS v4",
+        "Net Zero 2050",
+        "banking book"
+      ],
+      "numbers": [],
+      "dates": [],
+      "evidence_sources": [
+        "climate_scenarios[0].methodology_notes",
+        "climate_scenarios[1].methodology_notes",
+        "climate_scenarios[2].methodology_notes"
+      ],
+      "requirement_ids": [
+        "IFRS_S1_21_C03",
+        "IFRS_S1_25_C02"
+      ],
+      "supported": true,
+      "support_notes": "Methodology and scenario set explicitly described.",
+      "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+      "repaired_evidence_sources": [
+        "climate_scenarios[2].methodology_notes",
+        "climate_scenarios[1].methodology_notes",
+        "climate_scenarios[0].methodology_notes"
+      ],
+      "invalid_evidence_sources_removed": [
+        "draft_markdown: 1.4 Connected information (Scenario methodology notes)",
+        "draft_markdown: 1.5 Scenario analysis methodology"
+      ]
+    },
+    {
+      "claim_id": "GR-015",
+      "claim_text": "Net Zero 2050 scenario: carbon price assumptions from the IEA NZE 2050 trajectory are mapped to counterparty NACE sectors; stranded asset estimates are derived from sector-level fossil fuel capex exposure; scope covers all lending book exposures across DE, FR, IT, NL and ES jurisdictions.",
+      "claim_type": "methodology",
+      "entities": [
+        "DE",
+        "ES",
+        "FR",
+        "IEA NZE 2050",
+        "IT",
+        "NACE sectors",
+        "NGFS v4 Net Zero 2050",
+        "NL"
+      ],
+      "numbers": [
+        "2050"
+      ],
+      "dates": [],
+      "evidence_sources": [
+        "climate_scenarios[0].methodology_notes",
+        "climate_scenarios[1].methodology_notes",
+        "climate_scenarios[2].methodology_notes"
+      ],
+      "requirement_ids": [
+        "IFRS_S1_25_C02"
+      ],
+      "supported": true,
+      "support_notes": "Detailed methodological steps and geographic scope explicitly stated.",
+      "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+      "repaired_evidence_sources": [
+        "climate_scenarios[2].methodology_notes",
+        "climate_scenarios[1].methodology_notes",
+        "climate_scenarios[0].methodology_notes"
+      ],
+      "invalid_evidence_sources_removed": [
+        "draft_markdown: 1.4 Connected information (NGFS v4 Net Zero 2050 bullet)",
+        "draft_markdown: 1.5 Scenario analysis methodology"
+      ]
+    },
+    {
+      "claim_id": "GR-016",
+      "claim_text": "Below 2°C (orderly) scenario: aligned to a 1.8°C median temperature pathway; carbon price trajectory from the REMIND-MAgPIE model; financial impact assessed through loan-level probability of default sensitivity to carbon cost pass-through by sector carbon intensity tier.",
+      "claim_type": "methodology",
+      "entities": [
+        "NGFS v4 Below 2°C (orderly)",
+        "REMIND-MAgPIE",
+        "probability of default",
+        "sector carbon intensity tier"
+      ],
+      "numbers": [
+        "1.8°C",
+        "2°C"
+      ],
+      "dates": [],
+      "evidence_sources": [
+        "climate_scenarios[3].methodology_notes",
+        "climate_scenarios[4].methodology_notes",
+        "climate_scenarios[5].methodology_notes"
+      ],
+      "requirement_ids": [
+        "IFRS_S1_25_C02"
+      ],
+      "supported": true,
+      "support_notes": "Explicitly states pathway and modelling approach.",
+      "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+      "repaired_evidence_sources": [
+        "climate_scenarios[5].methodology_notes",
+        "climate_scenarios[4].methodology_notes",
+        "climate_scenarios[3].methodology_notes"
+      ],
+      "invalid_evidence_sources_removed": [
+        "draft_markdown: 1.4 Connected information (NGFS v4 Below 2°C bullet)",
+        "draft_markdown: 1.5 Scenario analysis methodology"
+      ]
+    },
+    {
+      "claim_id": "GR-017",
+      "claim_text": "Resilience assessments are presented for orderly and disorderly transition scenarios; under orderly scenarios transition risk losses remain within Pillar 2 capital buffer thresholds; under disorderly scenarios medium-term capital consumption from stranded asset impairments is described as material and additional capital buffers may be required post-2030 under the most adverse assumptions.",
+      "claim_type": "forward_looking_assessment",
+      "entities": [
+        "Pillar 2 capital buffer",
+        "bank",
+        "disorderly transition",
+        "orderly transition",
+        "stranded asset impairments"
+      ],
+      "numbers": [],
+      "dates": [
+        "post-2030"
+      ],
+      "evidence_sources": [
+        "climate_scenarios[7].resilience_assessment",
+        "climate_scenarios[8].resilience_assessment",
+        "climate_scenarios[9].resilience_assessment"
+      ],
+      "requirement_ids": [
+        "IFRS_S1_15_C02",
+        "IFRS_S1_25_C02",
+        "IFRS_S1_3_C01"
+      ],
+      "supported": true,
+      "support_notes": "Narrative assertions provided; no quantitative thresholds disclosed in excerpt.",
+      "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+      "repaired_evidence_sources": [
+        "climate_scenarios[9].resilience_assessment",
+        "climate_scenarios[8].resilience_assessment",
+        "climate_scenarios[7].resilience_assessment"
+      ],
+      "invalid_evidence_sources_removed": [
+        "draft_markdown: 1.4 Connected information (Resilience assessments paragraph)"
+      ]
+    },
+    {
+      "claim_id": "GR-018",
+      "claim_text": "Climate risk ratings are derived from a 5×5 risk matrix based on the product of likelihood and severity scores, mapped to bands: Low 1–2, Medium 3–6, High 8–12, Critical 15–25.",
+      "claim_type": "methodology",
+      "entities": [
+        "5×5 risk matrix",
+        "climate risk register"
+      ],
+      "numbers": [
+        "15–25",
+        "1–2",
+        "3–6",
+        "5×5",
+        "8–12"
+      ],
+      "dates": [],
+      "evidence_sources": [
+        "climate_scenarios[4].resilience_assessment",
+        "climate_scenarios[5].resilience_assessment",
+        "metadata.risk_rating_methodology"
+      ],
+      "requirement_ids": [
+        "IFRS_S1_25_C03"
+      ],
+      "supported": true,
+      "support_notes": "Methodology and thresholds explicitly stated.",
+      "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+      "repaired_evidence_sources": [
+        "metadata.risk_rating_methodology",
+        "climate_scenarios[5].resilience_assessment",
+        "climate_scenarios[4].resilience_assessment"
+      ],
+      "invalid_evidence_sources_removed": [
+        "draft_markdown: 1.5 Risk rating methodology (climate risk register)"
+      ]
+    },
+    {
+      "claim_id": "GR-019",
+      "claim_text": "The risk \"Physical risk — mortgage book flood exposure\" has likelihood 4 and severity 5, resulting in a critical risk rating.",
+      "claim_type": "risk_assessment_result",
+      "entities": [
+        "Physical risk — mortgage book flood exposure",
+        "climate risk register"
+      ],
+      "numbers": [
+        "4",
+        "5"
+      ],
+      "dates": [],
+      "evidence_sources": [
+        "climate_scenarios[0].methodology_notes",
+        "climate_scenarios[1].methodology_notes",
+        "climate_scenarios[2].methodology_notes"
+      ],
+      "requirement_ids": [
+        "IFRS_S1_25_C03"
+      ],
+      "supported": true,
+      "support_notes": "Example calculation consistent with stated matrix (4*5=20 within 15–25 critical).",
+      "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+      "repaired_evidence_sources": [
+        "climate_scenarios[2].methodology_notes",
+        "climate_scenarios[1].methodology_notes",
+        "climate_scenarios[0].methodology_notes"
+      ],
+      "invalid_evidence_sources_removed": [
+        "draft_markdown: 1.5 Risk rating methodology example"
+      ]
+    },
+    {
+      "claim_id": "GR-020",
+      "claim_text": "Scope 2 market-based emissions are sourced from utility invoice data reflecting market-based accounting with grid emission factors adjusted for renewable energy certificates and power purchase agreements; renewable certificate registry data is used for narrative and is not subtracted again.",
+      "claim_type": "methodology",
+      "entities": [
+        "Scope 2 market-based",
+        "power purchase agreements",
+        "renewable certificate registry data",
+        "renewable energy certificates",
+        "utility invoice data"
+      ],
+      "numbers": [],
+      "dates": [],
+      "evidence_sources": [
+        "metadata.scope2_rec_reconciliation"
+      ],
+      "requirement_ids": [
+        "IFRS_S1_13_C01",
+        "IFRS_S1_15_C01"
+      ],
+      "supported": true,
+      "support_notes": "Describes measurement approach and avoids double counting; verifiability depends on underlying records not shown.",
+      "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+      "repaired_evidence_sources": [
+        "metadata.scope2_rec_reconciliation"
+      ],
+      "invalid_evidence_sources_removed": [
+        "draft_markdown: 1.5 Scope 2 market-based accounting and renewable instruments"
+      ]
+    },
+    {
+      "claim_id": "GR-021",
+      "claim_text": "For sovereign bonds, issuer EVIC and issuer revenue are treated as not applicable and are not used for sovereigns.",
+      "claim_type": "methodology",
+      "entities": [
+        "EVIC",
+        "issuer revenue",
+        "sovereign bonds"
+      ],
+      "numbers": [],
+      "dates": [],
+      "evidence_sources": [
+        "metadata.pcaf_methodology.sovereign_bonds_note"
+      ],
+      "requirement_ids": [
+        "IFRS_S1_13_C01"
+      ],
+      "supported": true,
+      "support_notes": "Methodology note explicitly stated; alignment with any specific financed emissions standard not evidenced here.",
+      "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+      "repaired_evidence_sources": [
+        "metadata.pcaf_methodology.sovereign_bonds_note"
+      ],
+      "invalid_evidence_sources_removed": [
+        "draft_markdown: 1.5 Financed emissions methodology note (sovereign bonds)"
+      ]
+    },
+    {
+      "claim_id": "GR-022",
+      "claim_text": "Emissions data quality input composition is: Estimated (economic) 47.5%, CDP disclosure 35.5%, Proxy model 16.3%, Audited report 0.7%.",
+      "claim_type": "data_quality",
+      "entities": [
+        "CDP",
+        "bank",
+        "emissions-related information"
+      ],
+      "numbers": [
+        "0.7%",
+        "16.3%",
+        "35.5%",
+        "47.5%"
+      ],
+      "dates": [],
+      "evidence_sources": [
+        "climate_scenarios[8].resilience_assessment",
+        "climate_scenarios[9].resilience_assessment",
+        "reporting_kpis.emissions_data_quality_summary.cdp_disclosure"
+      ],
+      "requirement_ids": [
+        "IFRS_S1_13_C01",
+        "IFRS_S1_15_C01"
+      ],
+      "supported": true,
+      "support_notes": "Quantitative breakdown explicitly provided.",
+      "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+      "repaired_evidence_sources": [
+        "reporting_kpis.emissions_data_quality_summary.cdp_disclosure",
+        "climate_scenarios[9].resilience_assessment",
+        "climate_scenarios[8].resilience_assessment"
+      ],
+      "invalid_evidence_sources_removed": [
+        "draft_markdown: 1.7 Data quality characteristics and assurance"
+      ]
+    },
+    {
+      "claim_id": "GR-023",
+      "claim_text": "External assurance over sustainability information is limited.",
+      "claim_type": "assurance",
+      "entities": [
+        "external assurance",
+        "sustainability information"
+      ],
+      "numbers": [],
+      "dates": [],
+      "evidence_sources": [
+        "reporting_kpis.governance_maturity.external_assurance"
+      ],
+      "requirement_ids": [
+        "IFRS_S1_15_C01"
+      ],
+      "supported": true,
+      "support_notes": "Assurance level stated; no assurer identity/scope provided in excerpt.",
+      "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+      "repaired_evidence_sources": [
+        "reporting_kpis.governance_maturity.external_assurance"
+      ],
+      "invalid_evidence_sources_removed": [
+        "draft_markdown: 1.7 Data quality characteristics and assurance"
+      ]
+    },
+    {
+      "claim_id": "GR-024",
+      "claim_text": "Climate-related capital expenditure is presented for 2022–2024 as €322.2 million, €373.91 million, and €476.95 million, respectively; Tier 1 capital is presented for 2022–2024 as €95,149.4 million, €143,979.2 million, and €151,208.6 million, respectively.",
       "claim_type": "metric_disclosure",
       "entities": [
         "EUR",
-        "Tier 1 capital"
+        "Tier 1 capital",
+        "bank",
+        "climate-related capital expenditure"
       ],
       "numbers": [
         "143979.2",
         "151208.6",
+        "322.2",
+        "373.91",
+        "476.95",
         "95149.4"
       ],
       "dates": [
@@ -109,303 +793,76 @@
         "2024"
       ],
       "evidence_sources": [
-        "draft_markdown: Basis of preparation, reporting period, currency and comparatives"
-      ],
-      "requirement_ids": [
-        "IFRS_S1_15_C01"
-      ],
-      "supported": true,
-      "support_notes": "Multi-year capital measure values are explicitly provided."
-    },
-    {
-      "claim_id": "GR-006",
-      "claim_text": "For 2024, financed emissions are 35,973,167.6878965 tCO2e and carbon intensity is 1,154.8131 tCO2e per EUR million.",
-      "claim_type": "metric_disclosure",
-      "entities": [
-        "EUR",
-        "carbon intensity",
-        "financed emissions",
-        "tCO2e"
-      ],
-      "numbers": [
-        "1154.8131",
-        "35973167.6878965"
-      ],
-      "dates": [
-        "2024"
-      ],
-      "evidence_sources": [
-        "draft_markdown: Basis of preparation, reporting period, currency and comparatives",
-        "draft_markdown: Material sustainability-related information and why it matters to prospects"
+        "financial_summary[0].tier1_capital_meur",
+        "financial_summary[1].tier1_capital_meur",
+        "financial_summary[2].tier1_capital_meur"
       ],
       "requirement_ids": [
         "IFRS_S1_15_C01",
         "IFRS_S1_25_C04"
       ],
       "supported": true,
-      "support_notes": "Metric values and units are explicitly stated; repeated later in the section."
+      "support_notes": "Multi-year metrics support comparability/trend understanding; definitions/boundaries not included in excerpt.",
+      "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+      "repaired_evidence_sources": [
+        "financial_summary[2].tier1_capital_meur",
+        "financial_summary[1].tier1_capital_meur",
+        "financial_summary[0].tier1_capital_meur"
+      ],
+      "invalid_evidence_sources_removed": [
+        "draft_markdown: 1.8 Consistency, comparability and change monitoring"
+      ]
     },
     {
-      "claim_id": "GR-007",
-      "claim_text": "The objective of the disclosures is to present material sustainability-related risks and opportunities that could reasonably be expected to affect the entity’s prospects, including effects on cash flows, access to finance and cost of capital over the short, medium and long term.",
-      "claim_type": "objective_statement",
+      "claim_id": "GR-025",
+      "claim_text": "Value chain mapping identifies material nodes within own operations including \"Corporate fleet & business travel\" and this is connected to operational emissions disclosures including Scope 3 travel emissions for 2024 of 289.8833 tCO2e.",
+      "claim_type": "boundary_value_chain",
       "entities": [
-        "access to finance",
-        "cash flows",
-        "cost of capital",
-        "entity",
-        "prospects"
-      ],
-      "numbers": [],
-      "dates": [],
-      "evidence_sources": [
-        "draft_markdown: Material sustainability-related information and why it matters to prospects"
-      ],
-      "requirement_ids": [
-        "IFRS_S1_11_C01",
-        "IFRS_S1_17_C01",
-        "IFRS_S1_3_C01"
-      ],
-      "supported": true,
-      "support_notes": "Aligns with IFRS S1 objective and material information requirement; does not evidence completeness/fairness by itself."
-    },
-    {
-      "claim_id": "GR-008",
-      "claim_text": "The entity’s climate-related risk register identifies a risk titled \"Physical risk — mortgage book flood exposure\", categorised as acute physical risk and rated critical.",
-      "claim_type": "risk_disclosure",
-      "entities": [
-        "Physical risk — mortgage book flood exposure",
-        "acute physical risk",
-        "climate-related risk register",
-        "critical"
-      ],
-      "numbers": [],
-      "dates": [],
-      "evidence_sources": [
-        "draft_markdown: Material sustainability-related information and why it matters to prospects"
-      ],
-      "requirement_ids": [
-        "IFRS_S1_17_C01",
-        "IFRS_S1_25_C03"
-      ],
-      "supported": true,
-      "support_notes": "Risk name, category and rating are explicitly stated."
-    },
-    {
-      "claim_id": "GR-009",
-      "claim_text": "The mortgage flood exposure risk is monitored monthly.",
-      "claim_type": "risk_process",
-      "entities": [
-        "monitoring frequency",
-        "mortgage flood exposure risk"
-      ],
-      "numbers": [],
-      "dates": [],
-      "evidence_sources": [
-        "draft_markdown: Risk management connectivity"
-      ],
-      "requirement_ids": [
-        "IFRS_S1_21_C03",
-        "IFRS_S1_25_C03"
-      ],
-      "supported": true,
-      "support_notes": "Monitoring frequency is explicitly stated as monthly."
-    },
-    {
-      "claim_id": "GR-010",
-      "claim_text": "The risk rating approach uses a 5×5 risk matrix based on likelihood score × severity score, with thresholds classifying risks as low, medium, high or critical.",
-      "claim_type": "methodology",
-      "entities": [
-        "5×5 risk matrix",
-        "critical",
-        "high",
-        "likelihood score",
-        "low",
-        "medium",
-        "risk rating approach",
-        "severity score"
+        "Corporate fleet & business travel",
+        "Scope 3 travel emissions",
+        "bank",
+        "value chain mapping"
       ],
       "numbers": [
-        "5x5"
+        "289.8833"
       ],
-      "dates": [],
-      "evidence_sources": [
-        "draft_markdown: Risk management connectivity",
-        "draft_markdown: Risk rating methodology"
-      ],
-      "requirement_ids": [
-        "IFRS_S1_13_C01",
-        "IFRS_S1_15_C01"
-      ],
-      "supported": true,
-      "support_notes": "Method description is explicitly stated; supports understandability/verifiability."
-    },
-    {
-      "claim_id": "GR-011",
-      "claim_text": "For the mortgage flood exposure risk, the likelihood score is 4 and the severity score is 5, consistent with a critical rating under the stated methodology.",
-      "claim_type": "risk_rating",
-      "entities": [
-        "critical",
-        "likelihood score",
-        "mortgage flood exposure risk",
-        "severity score"
-      ],
-      "numbers": [
-        "4",
-        "5"
-      ],
-      "dates": [],
-      "evidence_sources": [
-        "draft_markdown: Risk management connectivity"
-      ],
-      "requirement_ids": [
-        "IFRS_S1_13_C01",
-        "IFRS_S1_25_C03"
-      ],
-      "supported": true,
-      "support_notes": "Scores and conclusion are explicitly stated; consistency with matrix thresholds is asserted but thresholds are not numerically detailed here."
-    },
-    {
-      "claim_id": "GR-012",
-      "claim_text": "The board has a size of 10; 33.5% board climate expertise is reported; climate topics appear on the board agenda 69.8% of the time; the board meets 4 times per year; climate risk reporting is provided to the board on a semi-annual basis.",
-      "claim_type": "governance_metrics",
-      "entities": [
-        "board",
-        "board agenda",
-        "board climate expertise",
-        "climate risk reporting"
-      ],
-      "numbers": [
-        "10",
-        "33.5",
-        "4",
-        "69.8"
-      ],
-      "dates": [],
-      "evidence_sources": [
-        "draft_markdown: Governance connectivity"
-      ],
-      "requirement_ids": [
-        "IFRS_S1_21_C03",
-        "IFRS_S1_25_C01"
-      ],
-      "supported": true,
-      "support_notes": "Governance quantitative descriptors are explicitly stated."
-    },
-    {
-      "claim_id": "GR-013",
-      "claim_text": "An ESG committee is in place and meets 5 times per year; management-level governance structures include the Group Sustainability Committee, the ESG Executive Committee, and the Climate Risk Management Committee.",
-      "claim_type": "governance_structure",
-      "entities": [
-        "Climate Risk Management Committee",
-        "ESG Executive Committee",
-        "ESG committee",
-        "Group Sustainability Committee"
-      ],
-      "numbers": [
-        "5"
-      ],
-      "dates": [],
-      "evidence_sources": [
-        "draft_markdown: Governance connectivity"
-      ],
-      "requirement_ids": [
-        "IFRS_S1_25_C01"
-      ],
-      "supported": true,
-      "support_notes": "Committee existence and meeting frequency are explicitly stated."
-    },
-    {
-      "claim_id": "GR-014",
-      "claim_text": "The entity applies NGFS v4 Net Zero 2050 using a top-down sector-pathway approach, mapping carbon price assumptions from the IEA NZE 2050 trajectory to counterparty NACE sectors and deriving stranded asset estimates from sector-level fossil fuel capex exposure.",
-      "claim_type": "scenario_methodology",
-      "entities": [
-        "IEA NZE 2050",
-        "NACE sectors",
-        "NGFS v4 Net Zero 2050",
-        "fossil fuel capex exposure",
-        "stranded assets"
-      ],
-      "numbers": [],
       "dates": [
-        "2050"
+        "2024"
       ],
       "evidence_sources": [
-        "draft_markdown: Scenario analysis methods and assumptions",
-        "draft_markdown: Strategy and resilience connectivity"
+        "climate_scenarios[9].resilience_assessment",
+        "reporting_kpis.scope3_travel_2024_tco2e",
+        "value_chain_map[1].node_name"
       ],
       "requirement_ids": [
-        "IFRS_S1_13_C01",
-        "IFRS_S1_25_C02"
+        "IFRS_S1_21_C03",
+        "IFRS_S1_25_C04"
       ],
       "supported": true,
-      "support_notes": "Methodology components are explicitly described; no quantitative outputs provided in this section."
+      "support_notes": "Explicitly links value chain node to disclosed metric.",
+      "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+      "repaired_evidence_sources": [
+        "value_chain_map[1].node_name",
+        "reporting_kpis.scope3_travel_2024_tco2e",
+        "climate_scenarios[9].resilience_assessment"
+      ],
+      "invalid_evidence_sources_removed": [
+        "draft_markdown: 1.9 Value chain boundary considerations"
+      ]
     },
     {
-      "claim_id": "GR-015",
-      "claim_text": "The scenario analysis scope covers all lending book exposures across DE, FR, IT, NL and ES jurisdictions.",
-      "claim_type": "scope_statement",
-      "entities": [
-        "DE",
-        "ES",
-        "FR",
-        "IT",
-        "NL",
-        "lending book exposures",
-        "scenario analysis"
-      ],
-      "numbers": [],
-      "dates": [],
-      "evidence_sources": [
-        "draft_markdown: Strategy and resilience connectivity"
-      ],
-      "requirement_ids": [
-        "IFRS_S1_13_C01",
-        "IFRS_S1_25_C02"
-      ],
-      "supported": true,
-      "support_notes": "Scope statement is explicit; \"all\" is asserted without supporting inventory detail in this section."
-    },
-    {
-      "claim_id": "GR-016",
-      "claim_text": "For NGFS v4 Below 2°C (orderly), the scenario is aligned to a 1.8°C median temperature pathway with a carbon price trajectory from the REMIND-MAgPIE model; financial impact is assessed through loan-level probability of default sensitivity to carbon cost pass-through segmented by sector carbon intensity tier.",
-      "claim_type": "scenario_methodology",
-      "entities": [
-        "NGFS v4 Below 2°C",
-        "REMIND-MAgPIE model",
-        "carbon cost pass-through",
-        "probability of default",
-        "sector carbon intensity tier"
-      ],
-      "numbers": [
-        "1.8",
-        "2"
-      ],
-      "dates": [],
-      "evidence_sources": [
-        "draft_markdown: Scenario analysis methods and assumptions"
-      ],
-      "requirement_ids": [
-        "IFRS_S1_13_C01",
-        "IFRS_S1_25_C02"
-      ],
-      "supported": true,
-      "support_notes": "Scenario alignment and modelling approach are explicitly described."
-    },
-    {
-      "claim_id": "GR-017",
-      "claim_text": "Operational emissions metrics for 2024 include Scope 1 emissions of 2,634.908317 tCO2e; Scope 2 emissions of 6,963.4977 tCO2e (location-based) and 3,060.5382 tCO2e (market-based); and Scope 3 business travel emissions of 289.8833 tCO2e.",
+      "claim_id": "GR-026",
+      "claim_text": "For 2024, the bank discloses Scope 1 emissions of 2,634.908317 tCO2e (fleet included), Scope 2 location-based emissions of 6,963.4977 tCO2e, and Scope 2 market-based emissions of 3,060.5382 tCO2e.",
       "claim_type": "metric_disclosure",
       "entities": [
         "Scope 1",
-        "Scope 2",
-        "Scope 3",
-        "business travel",
+        "Scope 2 location-based",
+        "Scope 2 market-based",
+        "bank",
         "tCO2e"
       ],
       "numbers": [
         "2634.908317",
-        "289.8833",
         "3060.5382",
         "6963.4977"
       ],
@@ -413,140 +870,25 @@
         "2024"
       ],
       "evidence_sources": [
-        "draft_markdown: Metrics connectivity"
-      ],
-      "requirement_ids": [
-        "IFRS_S1_15_C01",
-        "IFRS_S1_25_C04"
-      ],
-      "supported": true,
-      "support_notes": "Explicit values, scopes, bases and year are provided."
-    },
-    {
-      "claim_id": "GR-018",
-      "claim_text": "Scope 2 emissions are disclosed on both a location-based and a market-based basis; the market-based figure reflects contractual instruments for electricity supply (e.g., renewable energy certificates and power purchase agreements) and associated emission factors.",
-      "claim_type": "measurement_approach",
-      "entities": [
-        "Scope 2",
-        "emission factors",
-        "location-based",
-        "market-based",
-        "power purchase agreements",
-        "renewable energy certificates"
-      ],
-      "numbers": [],
-      "dates": [],
-      "evidence_sources": [
-        "draft_markdown: Emissions measurement and market-based Scope 2"
+        "reporting_kpis.scope1_2024_tco2e",
+        "reporting_kpis.scope2_location_2024_tco2e",
+        "reporting_kpis.scope2_market_2024_tco2e"
       ],
       "requirement_ids": [
         "IFRS_S1_13_C01",
-        "IFRS_S1_15_C01"
-      ],
-      "supported": true,
-      "support_notes": "Measurement basis and key drivers are described qualitatively."
-    },
-    {
-      "claim_id": "GR-019",
-      "claim_text": "Target TGT001 is an absolute reduction target for Scope 1 and Scope 2 with a baseline year of 2020; progress in 2024 is 40.0% measured as absolute tCO2e; additional progress measures include tCO2e per EUR million (25.0%) and percentage reduction versus baseline (13.3%).",
-      "claim_type": "target_disclosure",
-      "entities": [
-        "EUR",
-        "Scope 1",
-        "Scope 2",
-        "TGT001",
-        "baseline year",
-        "tCO2e"
-      ],
-      "numbers": [
-        "13.3",
-        "2020",
-        "25.0",
-        "40.0"
-      ],
-      "dates": [
-        "2024"
-      ],
-      "evidence_sources": [
-        "draft_markdown: Metrics connectivity"
-      ],
-      "requirement_ids": [
-        "IFRS_S1_21_C03",
         "IFRS_S1_25_C04"
       ],
       "supported": true,
-      "support_notes": "Target identifier, baseline year, and progress metrics are explicitly stated."
-    },
-    {
-      "claim_id": "GR-020",
-      "claim_text": "The financed emissions data-quality distribution is 0.7% audited report, 35.5% CDP disclosure, 47.5% estimated using economic data, and 16.3% proxy model.",
-      "claim_type": "data_quality",
-      "entities": [
-        "CDP disclosure",
-        "audited report",
-        "economic data",
-        "financed emissions",
-        "proxy model"
+      "support_notes": "Explicit numeric disclosures; assurance/method boundaries for these figures not fully detailed in excerpt.",
+      "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+      "repaired_evidence_sources": [
+        "reporting_kpis.scope2_market_2024_tco2e",
+        "reporting_kpis.scope2_location_2024_tco2e",
+        "reporting_kpis.scope1_2024_tco2e"
       ],
-      "numbers": [
-        "0.7",
-        "16.3",
-        "35.5",
-        "47.5"
-      ],
-      "dates": [],
-      "evidence_sources": [
-        "draft_markdown: Data-quality characteristics and proxy basis"
-      ],
-      "requirement_ids": [
-        "IFRS_S1_13_C01",
-        "IFRS_S1_15_C01"
-      ],
-      "supported": true,
-      "support_notes": "Percent breakdown is explicitly stated; totals sum to 100.0%."
-    },
-    {
-      "claim_id": "GR-021",
-      "claim_text": "The risk register includes a \"changed since prior period\" indicator and defined monitoring frequencies (monthly, quarterly, semi-annual) to support change monitoring and consistent tracking of risk status.",
-      "claim_type": "risk_process",
-      "entities": [
-        "changed since prior period",
-        "monitoring frequencies",
-        "risk register"
-      ],
-      "numbers": [],
-      "dates": [],
-      "evidence_sources": [
-        "draft_markdown: Comparative consistency and change monitoring",
-        "draft_markdown: Risk management connectivity"
-      ],
-      "requirement_ids": [
-        "IFRS_S1_15_C01",
-        "IFRS_S1_25_C03"
-      ],
-      "supported": true,
-      "support_notes": "Process features are described; no examples of specific risks changed are enumerated beyond general statements."
-    },
-    {
-      "claim_id": "GR-022",
-      "claim_text": "Carbon intensity is expressed as tCO2e per EUR million and risk ratings are derived from a consistent likelihood–severity scoring approach to support comparability, verifiability and understandability.",
-      "claim_type": "comparability_statement",
-      "entities": [
-        "carbon intensity",
-        "likelihood–severity scoring",
-        "risk ratings",
-        "tCO2e per EUR million"
-      ],
-      "numbers": [],
-      "dates": [],
-      "evidence_sources": [
-        "draft_markdown: Comparative consistency and change monitoring"
-      ],
-      "requirement_ids": [
-        "IFRS_S1_15_C01"
-      ],
-      "supported": true,
-      "support_notes": "Units and consistent approach are stated; the conclusion about supporting qualitative characteristics is an assertion."
+      "invalid_evidence_sources_removed": [
+        "draft_markdown: 1.9 Value chain boundary considerations"
+      ]
     }
   ]
 }
