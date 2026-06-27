@@ -3,10 +3,10 @@
   "claims": [
     {
       "claim_id": "RM-001",
-      "claim_text": "Climate-related risks are monitored at defined frequencies (for example, monthly, quarterly or semi-annual) as recorded in the climate risk register.",
+      "claim_text": "Climate-related risks are monitored at defined frequencies (e.g., monthly, quarterly, semi-annual) as recorded in the climate risk register.",
       "claim_type": "process",
       "entities": [
-        "climate_risk_register"
+        "climate risk register"
       ],
       "numbers": [],
       "dates": [],
@@ -25,14 +25,15 @@
         "IFRS_S2_25_C06"
       ],
       "supported": true,
-      "support_notes": "Multiple register entries include explicit monitoring_frequency values, evidencing a monitoring process."
+      "support_notes": "Multiple register entries include explicit monitoring_frequency values, evidencing an established monitoring cadence for climate-related risks."
     },
     {
       "claim_id": "RM-002",
-      "claim_text": "The organisation uses climate-related scenario analysis to inform identification of climate-related risks, with scenario references captured in the climate risk register.",
+      "claim_text": "The entity uses climate-related scenario analysis to inform identification/assessment of climate-related risks, with scenario references captured in the climate risk register (e.g., SCN0005, SCN0007, SCN0009, SCN0011).",
       "claim_type": "process",
       "entities": [
-        "climate_risk_register"
+        "climate risk register",
+        "scenario analysis"
       ],
       "numbers": [],
       "dates": [],
@@ -49,14 +50,14 @@
         "IFRS_S2_25_C03"
       ],
       "supported": true,
-      "support_notes": "Presence of scenario_analysis_link fields indicates scenario analysis is used/linked for risk identification; narrative detail of 'how' is not provided in the evidence items."
+      "support_notes": "Presence of scenario_analysis_link fields across multiple risks supports that scenario analysis is used and referenced in the risk process (at least for climate-related risks)."
     },
     {
       "claim_id": "RM-003",
-      "claim_text": "Climate-related risks are assessed using a likelihood scoring approach on a 1–5 scale, with likelihood scores recorded in the climate risk register.",
+      "claim_text": "Climate-related risks are assessed using a likelihood scoring approach (e.g., likelihood_score values of 3, 4, and 5 are recorded in the climate risk register).",
       "claim_type": "methodology",
       "entities": [
-        "climate_risk_register"
+        "climate risk register"
       ],
       "numbers": [
         "3",
@@ -79,15 +80,15 @@
         "IFRS_S2_25_C04"
       ],
       "supported": true,
-      "support_notes": "Likelihood scores are present; evidence does not describe severity scoring or full assessment of magnitude beyond likelihood."
+      "support_notes": "Likelihood scoring is evidenced directly by numeric likelihood_score fields; severity_score is referenced in methodology evidence but not shown in provided items."
     },
     {
       "claim_id": "RM-004",
-      "claim_text": "Climate risk ratings are derived from a 5x5 risk matrix using the formula likelihood_score * severity_score, with thresholds: low < 3, medium >= 3, high >= 8, critical >= 15.",
+      "claim_text": "Climate risk ratings are derived from a 5x5 risk matrix using likelihood_score multiplied by severity_score, with thresholds: low < 3, medium >= 3, high >= 8, critical >= 15 (scores 1-2 low, 3-6 medium, 8-12 high, 15-25 critical).",
       "claim_type": "methodology",
       "entities": [
-        "climate_risk_register",
-        "metadata"
+        "climate risk register",
+        "risk matrix"
       ],
       "numbers": [
         "1",
@@ -109,14 +110,14 @@
         "IFRS_S2_25_C04"
       ],
       "supported": true,
-      "support_notes": "Methodology text explicitly defines inputs, parameters and thresholds; severity_score values are not shown in provided evidence items."
+      "support_notes": "Methodology is explicitly stated in metadata; however, severity_score values are not included in the provided evidence excerpt, so full reproducibility from the excerpt alone is partial."
     },
     {
       "claim_id": "RM-005",
-      "claim_text": "Some climate-related risks have changed since the prior reporting period, as indicated by the changed_since_prior_period flag in the climate risk register.",
+      "claim_text": "Some climate-related risks have changed since the prior reporting period, as indicated by changed_since_prior_period flags in the climate risk register.",
       "claim_type": "change_over_time",
       "entities": [
-        "climate_risk_register"
+        "climate risk register"
       ],
       "numbers": [],
       "dates": [],
@@ -135,15 +136,15 @@
         "IFRS_S2_25_C07"
       ],
       "supported": true,
-      "support_notes": "Flags indicate whether items changed; evidence does not explain what changed or how processes changed."
+      "support_notes": "At least two entries show True, evidencing that changes are tracked and occurred for some risks versus the prior period."
     },
     {
       "claim_id": "RM-006",
-      "claim_text": "Climate-related risk management is integrated into the organisation's overall enterprise risk management process for many risks, as indicated by the erm_integrated_flag in the climate risk register.",
-      "claim_type": "governance_process",
+      "claim_text": "Climate-related risk management is integrated into the entity's overall enterprise risk management (ERM) process for many risks, as indicated by erm_integrated_flag=True in the climate risk register.",
+      "claim_type": "governance",
       "entities": [
-        "ERM",
-        "climate_risk_register"
+        "climate risk register",
+        "enterprise risk management (ERM)"
       ],
       "numbers": [],
       "dates": [],
@@ -159,15 +160,14 @@
       ],
       "requirement_ids": [
         "IFRS_S1_44_C09",
-        "IFRS_S2_25_C09",
-        "IFRS_S2_26_C01"
+        "IFRS_S2_25_C09"
       ],
       "supported": true,
-      "support_notes": "Integration is evidenced by flags; one entry shows not integrated, so integration is not universal. Supports integrated disclosure approach (avoid duplication) but does not itself demonstrate disclosure design."
+      "support_notes": "Multiple True flags support integration; at least one False indicates integration may not be universal across all risks."
     },
     {
       "claim_id": "RM-007",
-      "claim_text": "Physical risk exposure data sources include ECB climate indicators.",
+      "claim_text": "Physical risk exposure data sources include ECB climate indicators (\"ECB_climate_indicators\").",
       "claim_type": "data_source",
       "entities": [
         "ECB_climate_indicators",
@@ -185,47 +185,7 @@
         "IFRS_S2_25_C02"
       ],
       "supported": true,
-      "support_notes": "Evidence explicitly names a data source; scope of operations/coverage is not evidenced in provided items."
-    },
-    {
-      "claim_id": "RM-008",
-      "claim_text": "An example climate-related physical risk described is that chronic heat and shifting precipitation reduce yields for agricultural counterparties, weakening repayment capacity over the medium term.",
-      "claim_type": "risk_description",
-      "entities": [
-        "agricultural counterparties"
-      ],
-      "numbers": [],
-      "dates": [],
-      "evidence_sources": [
-        "climate_risk_register[10].risk_description",
-        "climate_risk_register[7].risk_description"
-      ],
-      "requirement_ids": [],
-      "supported": true,
-      "support_notes": "This is a descriptive risk statement; it does not, by itself, evidence the required process disclosures."
-    },
-    {
-      "claim_id": "RM-009",
-      "claim_text": "Some climate-related risks are rated \"medium\" in the climate risk register.",
-      "claim_type": "metric",
-      "entities": [
-        "climate_risk_register"
-      ],
-      "numbers": [],
-      "dates": [],
-      "evidence_sources": [
-        "climate_risk_register[10].risk_rating=medium",
-        "climate_risk_register[11].risk_rating=medium",
-        "climate_risk_register[5].risk_rating=medium",
-        "climate_risk_register[6].risk_rating=medium",
-        "climate_risk_register[9].risk_rating=medium"
-      ],
-      "requirement_ids": [
-        "IFRS_S1_44_C04",
-        "IFRS_S2_25_C04"
-      ],
-      "supported": true,
-      "support_notes": "Ratings are present; linkage to full assessment criteria depends on the stated methodology (see RM-004)."
+      "support_notes": "Explicit data_source fields provide evidence of inputs/data sources used in risk processes (at least for physical risk exposures)."
     }
   ]
 }

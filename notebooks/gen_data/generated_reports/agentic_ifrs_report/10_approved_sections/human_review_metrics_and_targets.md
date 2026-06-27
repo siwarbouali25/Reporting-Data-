@@ -1,155 +1,152 @@
-## Metrics and Targets
+## Reporting boundary and reporting period
 
-This section sets out the climate-related metrics and targets used to monitor performance and progress, and explains how those measures are defined and prepared for the reporting period ended **31 December 2024**. The reporting boundary for the metrics in this section is based on **financial control**.
+This section presents the climate-related metrics used to measure and monitor performance and progress against targets, prepared for the reporting year **2024** and aligned to the entity’s financial reporting cycle.
 
-### Reporting period, boundary and connectivity
+The reporting period is anchored to the entity’s fiscal year end of **31 December 2024**. Metrics are prepared using a **financial control** boundary, meaning the disclosures reflect operations and activities within the group over which the entity has financial control. This boundary is applied consistently across operational greenhouse gas (GHG) emissions metrics (Scopes 1 and 2) and the climate-related metrics used to monitor performance.
 
-The metrics disclosed below are prepared for the reporting year **2024** and, where available, include comparative information for **2022** and **2023** to support trend analysis. The Bank uses these metrics to monitor operational emissions (Scopes 1–3 where measured), financed emissions (Scope 3 Category 15), and exposure to higher-carbon sectors. These measures are also used in decision-making through the application of internal carbon prices to lending and investment decisions.
+Where relevant, the disclosures connect to governance and decision-making through the use of an internal carbon price in investment and lending decisions, and through the monitoring of progress against targets that are validated by third parties.
 
-### Operational greenhouse gas (GHG) emissions metrics
+## Operational GHG emissions (Scopes 1 and 2) and Scope 2 treatment
 
-The Bank monitors operational GHG emissions across Scope 1 and Scope 2, and a measured Scope 3 category for business travel.
+Operational GHG emissions provide a baseline for understanding the entity’s direct and energy-related emissions profile and for tracking progress against operational decarbonisation targets.
 
-**Scope 1 (direct) emissions (tCO₂e)**
+### Scope 1 (direct) emissions
 
-For **2024**, Scope 1 emissions were **2,634.908317 tCO₂e**. The Scope 1 inventory includes fleet emissions.
+For the reporting year **2024**, the entity’s **Scope 1 GHG emissions** were **2,634.908317 tCO₂e** (absolute gross emissions). Scope 1 includes emissions from the entity’s fleet; fleet emissions are **included** in Scope 1.
 
-A correction was made to the pre-computed Scope 1 figure for 2024 because the pre-computed value contained errors, including non-zero values for electric vehicles. The corrected Scope 1 value above is the figure used for performance monitoring.
+During preparation of the 2024 Scope 1 figure, the entity identified errors in a pre-computed Scope 1 dataset (including non-zero values for electric vehicles). The dataset was corrected before finalising the 2024 Scope 1 metric. The correction did not result in a restatement of previously issued comparative period disclosures in this section.
 
-**Scope 2 (energy indirect) emissions (tCO₂e)**
+### Scope 2 (indirect electricity) emissions—location-based and market-based
 
-The Bank discloses Scope 2 emissions using both location-based and market-based approaches:
+For the reporting year **2024**, the entity discloses Scope 2 emissions using both location-based and market-based approaches:
 
-- **Scope 2 (location-based) 2024:** **6,963.4977 tCO₂e**
-- **Scope 2 (market-based) 2024:** **3,060.5382 tCO₂e**
+- **Scope 2 (location-based): 6,963.4977 tCO₂e**
+- **Scope 2 (market-based): 3,060.5382 tCO₂e**
 
-Market-based Scope 2 emissions are sourced directly from utility invoice data and already reflect market-based accounting with grid emission factors adjusted for renewable energy certificates and power purchase agreements. Renewable energy certificate registry information is used for disclosure narrative only and is not subtracted again during preparation; accordingly, the Bank’s preparation approach is designed to avoid double-counting.
+The market-based Scope 2 figure is sourced directly from utility invoice data and reflects market-based accounting with grid emission factors adjusted for renewable energy certificates and power purchase agreements (PPAs). Renewable energy certificate registry information is used to support disclosure narrative (for example, certificate type, volume and registry), and is not subtracted again during preparation. This approach is designed to avoid double-counting and to provide users with a clear understanding of how contractual instruments are reflected in the market-based Scope 2 metric.
 
-**Scope 3 (business travel) emissions (tCO₂e)**
+### Selected Scope 3 category—business travel
 
-For **2024**, Scope 3 business travel emissions were **289.8833 tCO₂e**.
+For the reporting year **2024**, the entity reports **Scope 3 business travel emissions of 289.8833 tCO₂e**. Travel data is available and used in the calculation.
 
-### Financed emissions (Scope 3 Category 15) metrics
+## Financed emissions metrics (Scope 3 Category 15) and methodology
 
-The Bank measures financed emissions associated with its financing activities and uses these metrics to monitor transition exposure and progress against financed-emissions targets.
+For a financial institution, financed emissions are a decision-useful metric for understanding exposure to transition risk and for monitoring progress toward portfolio decarbonisation objectives. The entity measures financed emissions using methodologies aligned to the **Partnership for Carbon Accounting Financials (PCAF)** Standard, with asset-class-specific allocation approaches.
 
-#### Corporate loans financed emissions
+### Corporate loans—absolute financed emissions and portfolio denominator
 
-Financed emissions for corporate loans are disclosed in absolute terms (tCO₂e) and alongside the associated loan exposure (EUR million). For the years presented, total loans are **31,150.64 EUR million**.
+The entity discloses financed emissions associated with loans (Scope 3 Category 15 financed emissions) for three reporting years, enabling trend analysis:
 
-- **2022:** **36,550,177.696418606 tCO₂e** (total loans: **31,150.64 EUR million**)
-- **2023:** **37,427,593.16354951 tCO₂e** (total loans: **31,150.64 EUR million**)
-- **2024:** **35,973,167.6878965 tCO₂e** (total loans: **31,150.64 EUR million**)
+- **2022 financed emissions (loans): 36,550,177.696418606 tCO₂e**
+- **2023 financed emissions (loans): 37,427,593.16354951 tCO₂e**
+- **2024 financed emissions (loans): 35,973,167.6878965 tCO₂e**
 
-**Methodology (corporate loans).** Financed emissions for corporate loans are calculated using the following approach: **outstanding_amount_meur / evic_meur × total_ghg_tco2e (PCAF Standard §B62)**.
+For each of these years, the **total loans included** in the financed emissions calculation are **31,150.64 EUR million**.
 
-#### Listed equity financed emissions (proxy-based approach)
+The entity also reports a 2024 financed emissions KPI consistent with the 2024 loans financed emissions figure: **35,973,167.6878965 tCO₂e**.
 
-For listed equity holdings, the Bank applies a PCAF proxy approach where direct issuer emissions are not available in investment records. The proxy basis used is **issuer revenue (EUR million)**.
+**Methodology (corporate loans).** The financed emissions for corporate loans are calculated using the PCAF allocation approach described as:
 
-**Methodology (listed equity).** Financed emissions for listed equity are calculated using: **market_value_meur / issuer_evic_meur × issuer_revenue_meur (PCAF Standard §B61 proxy — revenue substituted for direct issuer emissions due to absence of counterparty-level emission data in investment records)**.
+- **outstanding amount (EUR million) / EVIC (EUR million) × total GHG (tCO₂e)** (PCAF Standard §B62)
 
-For the listed equity positions disclosed for **2024**, the Bank reports the following attributes used in the financed-emissions preparation process:
+This approach attributes a share of a counterparty’s total GHG emissions to the entity based on the proportion of financing provided relative to the counterparty’s enterprise value including cash (EVIC). The use of outstanding amount as the exposure measure and EVIC as the allocation denominator is intended to provide a consistent basis for attribution across counterparties.
 
-- Asset class: **listed equity**
-- Currency: **EUR**
-- Market values (EUR million): **23.93**, **556.4**, **35.36**, **79.11**, **25.57**, **1,886.33**, **2,564.65**, **288.08**
-- Nominal amounts (EUR million) where available: **27.98**, **636.77**
-- Proxy basis: **issuer_revenue_meur**
+### Listed equity—market value allocation and proxy basis
 
-Where the proxy approach is applied, the stated reason is: **Direct issuer emissions unavailable. Revenue used as PCAF B61 proxy. Do not treat as verified emissions.**
+For listed equity holdings reported for **2024**, the entity applies a PCAF-based approach that allocates emissions using market value and issuer EVIC. Where counterparty-level emissions are not used in the investment records, the calculation uses a **proxy basis**.
 
-#### Sovereign exposure (national Scope 1 reference metric)
+**Methodology (listed equity).** The disclosed approach is:
 
-For certain sovereign positions, the Bank uses national Scope 1 emissions as a reference metric in its financed-emissions dataset. National Scope 1 values included in the dataset are:
+- **market value (EUR million) / issuer EVIC (EUR million) × issuer revenue (EUR million)** (PCAF Standard §B61 proxy)
 
-- **675,000,000.0 tCO₂e**
-- **290,000,000.0 tCO₂e**
-- **330,000,000.0 tCO₂e**
-- **150,000,000.0 tCO₂e**
+The proxy basis is explicitly described as **issuer revenue (EUR million)**, used as a proxy in place of direct issuer emissions within the investment records. The stated rationale is that revenue is used as a PCAF §B61 proxy, and the resulting estimate is not presented as verified emissions.
 
-Purchase dates recorded for sovereign positions include **2022-01-30**, **2022-03-18**, **2022-08-22**, **2022-11-15**, **2023-05-14**, **2023-12-26**, **2024-04-16**, and **2024-11-16**.
+**Illustrative 2024 listed equity positions (market value).** The entity reports multiple listed equity positions in EUR, including market values of **23.93 EUR million**, **556.4 EUR million**, **35.36 EUR million**, **79.11 EUR million**, **25.57 EUR million**, **1,886.33 EUR million**, **2,564.65 EUR million**, and **288.08 EUR million**. For at least some positions, nominal amount (EUR million) is also disclosed (for example, **27.98 EUR million** and **636.77 EUR million**). One disclosed purchase date is **26 May 2019**.
 
-### Financed-emissions intensity metric
+### Sovereign exposures—national Scope 1 reference metric
 
-The Bank uses a financed-emissions intensity metric expressed as **tCO₂e per EUR million**. The Bank’s target intensity metric is **20.0 tCO₂e per EUR million**.
+For sovereign-related financed emissions inputs, the entity discloses national Scope 1 emissions values used in the dataset, including **675,000,000 tCO₂e**, **290,000,000 tCO₂e**, **330,000,000 tCO₂e**, and **150,000,000 tCO₂e**, alongside selected purchase dates (for example, **30 January 2022**, **18 March 2022**, **22 August 2022**, **15 November 2022**, **14 May 2023**, **26 December 2023**, **16 April 2024**, and **16 November 2024**). These values provide context for the sovereign emissions reference points used in the financed emissions-related dataset.
 
-### Exposure to higher-carbon sectors
+### Portfolio exposure metric linked to transition risk
 
-To monitor transition exposure within the lending portfolio, the Bank tracks exposure to higher-carbon sectors in both absolute and relative terms:
+In addition to financed emissions, the entity discloses exposure to high-carbon sectors as a metric relevant to transition risk:
 
-- High-carbon sector exposure: **11,059.49 EUR million**
-- High-carbon sector exposure (share of total loans): **35.5%**
+- **High-carbon sector exposure: 11,059.49 EUR million**, representing **35.5%**.
 
-These metrics are used alongside financed-emissions measures to support portfolio monitoring and to inform lending and investment decisions.
+This metric complements financed emissions by indicating the scale of exposure to sectors that may be more vulnerable to climate-related transition risks.
 
-### Internal carbon pricing
+## Targets, milestones, progress, validation and carbon credits
 
-The Bank applies internal carbon prices (EUR per tCO₂e) in decision-making. The internal carbon prices disclosed below are differentiated by application scope and whether they apply to financed emissions and/or lending decisions.
+Targets translate the entity’s climate-related objectives into measurable outcomes and provide a basis for monitoring progress over time. The entity discloses targets covering operational emissions (Scopes 1 and 2), financed emissions (Scope 3 Category 15), and an all-scopes target.
 
-- **Investment decisions:** **EUR 42.73 per tCO₂e** (applies to financed emissions; applies to lending decisions)
-- **Product pricing:** **EUR 48.73 per tCO₂e** (does not apply to financed emissions; does not apply to lending decisions)
-- **Investment decisions:** **EUR 54.73 per tCO₂e** (does not apply to financed emissions; applies to lending decisions)
+### Target TGT001—Scopes 1 and 2 absolute reduction (validated)
 
-### Climate-related targets
+The entity has set an entity-wide target (**Target ID: TGT001**) covering **Scope 1 and Scope 2** emissions. This is an **absolute reduction** target measured in **tCO₂e** and covers **all Kyoto 7 gases**.
 
-The Bank has established climate-related targets covering operational emissions (Scopes 1 and 2), financed emissions (Scope 3 Category 15), and an all-scopes target. Progress against targets is monitored using the metrics described above.
+- **Baseline year:** 2020
+- **Baseline value:** 137,849.0 tCO₂e
+- **Target value:** **42% reduction** (absolute reduction target)
+- **Interim milestones:**
+  - **2025:** 120,480.0 tCO₂e
+  - **2028:** 97,321.4 tCO₂e
+- **Progress metric:** absolute tCO₂e
+- **2024 progress:** **40.0%**
+- **Status:** **on track**
+- **Third-party validation:** applies; validated by **SBTi**
 
-#### Target TGT001 — Scope 1 and Scope 2 absolute reduction
+This target is monitored using absolute emissions performance, and progress is tracked as a percentage toward the target as of 2024.
 
-**Purpose.** This target is intended to reduce the Bank’s operational emissions under its financial control boundary.
+### Scope 3 Category 15 financed emissions intensity target (validated; sectoral decarbonisation approach)
 
-- Target ID: **TGT001**
-- Scope coverage: **Scope 1 and Scope 2** (whole entity)
-- Target type: **absolute reduction**
-- GHG gases covered: **all Kyoto 7**
-- Baseline year: **2020**
-- Baseline value: **137,849.0 tCO₂e**
-- Target value: **42% reduction**
-- Interim milestones:
-  - **2025:** **120,480.0 tCO₂e**
-  - **2028:** **97,321.4 tCO₂e**
-- Status: **on track**
-- Progress in 2024: **40.0%**
-- Third-party validation: validated by **SBTi**
+The entity has set an entity-wide target covering **Scope 3 Category 15 financed emissions**, expressed as an intensity metric: **tCO₂e per EUR million of lending**.
 
-#### Financed emissions target — Scope 3 Category 15 (intensity)
+- **Baseline year:** 2022
+- **Baseline value:** 20.0 tCO₂e per EUR million of lending
+- **Target value:** **30% reduction**
+- **Interim milestones:**
+  - **2025:** 18.2 tCO₂e per EUR million of lending
+  - **2028:** 15.8 tCO₂e per EUR million of lending
+- **Progress metric:** tCO₂e per EUR million
+- **2024 progress:** **25.0%**
+- **Sectoral decarbonisation approach:** applies
+- **Third-party validation:** applies; validated by **UNEP FI**
 
-**Purpose.** This target is intended to reduce financed-emissions intensity associated with the Bank’s financing activities.
+This target links directly to the financed emissions measurement approach described above and provides a structured pathway (via interim milestones) for reducing financed emissions intensity over time.
 
-- Scope coverage: **Scope 3 Category 15 (financed emissions)** (whole entity)
-- Metric: **tCO₂e per EUR million lending**
-- Baseline year: **2022**
-- Baseline value: **20.0 tCO₂e per EUR million lending**
-- Target value: **30% reduction**
-- Sectoral decarbonisation: **yes**
-- Interim milestones:
-  - **2025:** **18.2 tCO₂e per EUR million lending**
-  - **2028:** **15.8 tCO₂e per EUR million lending**
-- Progress in 2024: **25.0%**
-- Third-party validation: validated by **UNEP FI**
+### All-scopes target and planned use of carbon credits
 
-#### All-scopes target (including planned use of carbon credits)
+The entity also discloses an entity-wide target covering **all scopes** (Scope 1, Scope 2 and Scope 3), measured as **percentage reduction versus baseline**.
 
-**Purpose.** This target is intended to track progress across the Bank’s full emissions profile.
+- **Baseline value:** 120,000.0 (all Kyoto 7 gases covered)
+- **Progress metric:** percentage reduction versus baseline
+- **2024 progress:** **13.3%**
+- **Planned use of carbon credits:** the target includes a planned reliance on carbon credits of **8.2%**.
+- **Planned credit type:** **technology removal**
+- **Associated gross target reference:** associated gross target ID **TGT001**
 
-- Scope coverage: **all scopes** (whole entity)
-- Baseline value: **120,000.0**
-- Progress metric: **percentage reduction versus baseline**
-- Progress in 2024: **13.3%**
-- Planned use of carbon credits: **8.2%** of the target plan
-- Planned credit type: **technology removal**
-- Third-party validation: **third-party validated**
+The entity has not specified the baseline year, the target end date, or the name of the third-party validator for this all-scopes target in this section.
 
-The Bank also discloses a carbon credit volume metric used for monitoring: **21,080 tCO₂e** of total credits.
+In addition, the entity discloses a carbon credit summary of **21,080 tCO₂e** (total credits). The planned credit type indicates an intention to use technological carbon removals as part of the approach to achieving the all-scopes target.
 
-### Data quality and estimation approach for emissions metrics
+## Internal carbon price—application in decision-making
 
-To support transparency over the preparation of emissions metrics—particularly financed emissions—the Bank summarises the mix of data sources and estimation approaches used in its emissions dataset:
+Internal carbon pricing is used to embed climate-related costs into decision-making and to support consistent evaluation of investments and lending activities.
 
-- Audited report: **0.7%**
-- CDP disclosure: **35.5%**
-- Estimated (economic): **47.5%**
-- Proxy model: **16.3%**
+The entity discloses internal carbon prices (EUR per tCO₂e) applied in different decision contexts:
 
-This data-quality mix is relevant to the interpretation of financed-emissions results and the use of proxy-based approaches (including the listed equity proxy methodology described above).
+- For **investment decisions**, an internal carbon price of **EUR 42.73 per tCO₂e** is applied, and it **applies to financed emissions** and **applies to lending decisions**.
+- For **product pricing**, an internal carbon price of **EUR 48.73 per tCO₂e** is applied; it **does not apply to financed emissions** and **does not apply to lending decisions**.
+- For **investment decisions** (additional application), an internal carbon price of **EUR 54.73 per tCO₂e** is applied; it **does not apply to financed emissions** and **applies to lending decisions**.
+
+These disclosures indicate that internal carbon pricing is used in multiple decision pathways, with explicit differentiation regarding whether financed emissions and lending decisions are within scope for each application.
+
+## Financed-emissions data-quality mix and use of estimates
+
+Financed emissions measurement typically relies on a mix of data sources and estimation techniques. To support transparency about the characteristics of inputs used in emissions measurement, the entity discloses an emissions data-quality summary expressed as a percentage mix across data types:
+
+- **Estimated (economic): 47.5%**
+- **CDP disclosure: 35.5%**
+- **Proxy model: 16.3%**
+- **Audited report: 0.7%**
+
+This mix provides users with insight into the extent to which financed emissions and related metrics are informed by estimated economic data, disclosure-based inputs, proxy modelling, and audited sources. The listed equity methodology further clarifies that, for certain holdings, the estimate is prepared on a **proxy basis** using issuer revenue as the proxy input under the PCAF §B61 approach.
