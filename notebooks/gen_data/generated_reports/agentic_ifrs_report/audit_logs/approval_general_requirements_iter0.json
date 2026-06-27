@@ -3,42 +3,49 @@
   "approved": false,
   "scores": {
     "ifrs_coverage": 6.0,
-    "evidence": 9.0,
-    "style": 3.8
+    "evidence": 6.0,
+    "style": 6.8
   },
   "failures": [
     {
       "judge": "ifrs_coverage_judge",
       "score": 6.0,
       "required_fixes": [
-        "Convert purely generic restatements into entity-specific disclosures where evidence exists: explicitly identify the reporting entity, the related financial statements (which statements and period), and confirm the sustainability disclosures cover the same period and are reported at the same time (IFRS S1.20, .22, .64).",
-        "State the presentation currency used in sustainability-related financial disclosures and confirm it matches the financial statements’ presentation currency (IFRS S1.24).",
-        "Add an entity-specific explanation of how the entity assessed whether additional information beyond specifically applicable IFRS SDS was necessary, and what was done (IFRS S1.15(b)).",
-        "Disclose the specific standards/pronouncements/other guidance applied (e.g., SASB topics/metrics considered, other methodologies used) and identify the industry(s) applied for selecting topics/metrics (IFRS S1.55, .58, .59(a), .59(b)).",
-        "If cross-referencing is used, specify what information is incorporated by cross-reference, to which report/location, and confirm compliance with B45–B47; if not used, state that cross-referencing is not used (IFRS S1.63).",
-        "State whether comparative information is provided for all amounts and, where useful, for narrative/descriptive information (IFRS S1.70).",
-        "Disclose the most significant non-measurement judgements made in preparing the sustainability-related financial disclosures (IFRS S1.74).",
-        "Tie the IFRS S1 objective to the entity’s identified sustainability-related risks/opportunities and their expected effects on cash flows/access to finance/cost of capital, using available scenario/capital/financial summary evidence (IFRS S1.3)."
+        "Add an explicit statement that disclosures cover all material sustainability-related risks and opportunities that could reasonably be expected to affect prospects (cash flows/access to finance/cost of capital) across short, medium and long term; if scope is limited to climate in this section, state where other sustainability topics/opportunities are addressed.",
+        "State that the sustainability-related financial disclosures are for the same reporting entity as the related financial statements, and identify the specific financial statements they relate to.",
+        "Add a consistency statement that data and assumptions used are consistent (to the extent possible) with those used in the related financial statements, and confirm EUR is the presentation currency of those financial statements.",
+        "Explain (or cross-reference) how sustainability disclosures connect to the financial statements/other GPFR information (eg, where climate-related financial effects are reflected), and whether any information is incorporated by cross-reference to other reports.",
+        "Add disclosures on significant judgements (non-estimation) made in preparing the sustainability disclosures.",
+        "Identify which disclosed amounts/metrics are subject to high measurement uncertainty and describe key sources/assumptions driving that uncertainty (beyond general data-quality percentages).",
+        "If claiming comparative information, clarify that comparative information is provided for the preceding period for all amounts disclosed (and narrative where useful), or narrow the claim to what is actually provided."
+      ]
+    },
+    {
+      "judge": "evidence_judge",
+      "score": 6.0,
+      "required_fixes": [
+        "For GR-017: add quantified transition risk loss outputs for the orderly scenarios and disclose the applicable Pillar 2 buffer threshold(s) (or the internal threshold used), plus a clear comparison/reconciliation showing losses are within thresholds.",
+        "For GR-018: quantify 'near-term resilience' and 'medium-term capital consumption' (amounts, ratios, time horizons), and evidence the stated resilience mechanisms by disclosing sector exposure limit values (or ranges), governance/approval, and the glide-path monitoring metric(s) and frequency.",
+        "Resolve the internal inconsistency on board climate expertise percentage (33.5% vs 37.5%) by selecting the correct source, aligning datasets, and adding a definition for 'climate expertise' and how the percentage is computed.",
+        "Clarify metric boundaries for financed emissions and carbon intensity (e.g., which asset classes included, whether loans-only vs total financed emissions) and align narrative with the specific payload fields used.",
+        "For 'no double-counting' in Scope 2: add a brief reconciliation/control description (e.g., how invoice totals are adjusted, how RECs/PPAs are applied once, and what checks prevent double subtraction).",
+        "For data quality composition: define each category and specify the denominator/basis for the percentages."
       ]
     },
     {
       "judge": "style_judge",
-      "score": 3.8,
+      "score": 6.8,
       "required_fixes": [
-        "Reframe the section from a generic restatement of IFRS S1 into a basis-of-preparation narrative that explains how the reporting entity prepares and presents its sustainability-related financial disclosures in alignment with IFRS S1 and S2.",
-        "Introduce a short opening paragraph that states the scope and purpose of the section (e.g., that it sets out the basis of preparation, reporting boundary, connectivity to financial statements, and use of estimates and judgements).",
-        "Adopt a consistent numbered heading structure (e.g., 1. General requirements; 1.1 Objective and scope; 1.2 Fair presentation; 1.3 Materiality; 1.4 Reporting entity; 1.5 Connected information; 1.6 Core content; 1.7 Sources of guidance; 1.8 Location of disclosures).",
-        "For each subsection, add a one-sentence purpose statement that explains why the topic matters for reading this report (e.g., \"This subsection describes how we determine which sustainability-related risks and opportunities are material for these disclosures.\").",
-        "Shift the voice so that externally defined requirements are described in neutral third-person (\"IFRS S1 requires...\") but are immediately followed by first-person plural statements describing how the entity applies them (e.g., \"We apply these requirements by...\").",
-        "Avoid copying or closely paraphrasing IFRS S1 clause wording; instead, summarize requirements in your own words while maintaining technical accuracy and referencing the standard in parentheses where needed.",
-        "Introduce bullets that describe the entity’s qualitative characteristics and preparation principles (e.g., completeness, neutrality, accuracy, comparability, verifiability, timeliness, understandability) and how they are operationalized in the report.",
-        "Add explicit cross-reference placeholders to related sections (e.g., \"Refer to [Section: Governance]\" for governance disclosures, \"Refer to [Section: Strategy]\" for strategy, etc.) to support connectivity and navigability.",
-        "Include a short explanation of how the reporting boundary for sustainability-related financial disclosures aligns with the financial statements, including treatment of value chain information where relevant.",
-        "Add content on estimates, judgements, and data limitations consistent with the missing data protocol: explain where information may be incomplete or under development, why, what interim approaches are used, and the planned direction of enhancement, using standardized labels such as \"not applicable\", \"not material\", or \"not currently available\" where appropriate.",
-        "Clarify how the entity uses sources of guidance such as IFRS Sustainability Disclosure Standards and SASB Standards in practice (e.g., how topics and metrics are identified and when topics/metrics are deemed not applicable), rather than only stating that the standards may be referred to.",
-        "Where lists of requirements or characteristics are presented, ensure parallel grammar and use of standards-oriented verbs (e.g., \"identify\", \"assess\", \"measure\", \"monitor\", \"disclose\").",
-        "Consider adding a compact mapping table that links each general requirement topic (e.g., fair presentation, materiality, connected information) to the relevant sections of the report, with a clear caption and reference in the narrative.",
-        "Close the section with a brief connectivity statement summarizing how these general requirements link to the detailed disclosures under Governance, Strategy, Risk Management, and Metrics and Targets, using generic cross-reference placeholders."
+        "Remove or generalize hard-coded reporting years, specific dates, and currency references in the basis-of-preparation text so that the section can function as a reusable template (e.g., refer to 'the reporting period' and 'the presentation currency' without fixed values).",
+        "Refocus the section on principles and mechanics of preparation: move or significantly condense detailed risk examples, scenario outcomes, and specific metrics into their respective pillar sections (Governance, Strategy, Risk Management, Metrics and Targets) and replace them here with high-level descriptions of how such information is prepared and connected.",
+        "Introduce a short opening paragraph that clearly states the scope and basis of preparation for the sustainability-related financial disclosures, followed by a bulleted list of qualitative characteristics and preparation principles (e.g., completeness, neutrality, accuracy, freedom from material error, consistency with financial reporting boundary).",
+        "Add numbered or clearly structured subsections for key general requirement topics (e.g., '1.1 Reporting period and presentation currency', '1.2 Fair presentation and materiality', '1.3 Connected information', '1.4 Measurement approaches and estimates', '1.5 Comparatives and changes'), each starting with a one-sentence purpose statement.",
+        "Align headings and narrative more explicitly with IFRS S1/S2 terminology and pillars, and include connectivity sentences with generic cross-references (e.g., 'Refer to [Section: Governance]' for governance mechanics, 'Refer to [Section: Strategy]' for scenario analysis details).",
+        "Replace outcome- or performance-style wording with standards-oriented, process-focused verbs (e.g., 'we assess portfolio resilience under multiple climate-related scenarios' instead of 'the portfolio demonstrates adequate resilience').",
+        "Define or generalize specialized acronyms and external frameworks (e.g., NGFS, NACE, EPC) and frame them as configurable inputs rather than fixed elements; avoid jurisdiction-specific lists unless clearly presented as examples that can be adapted.",
+        "Consider adding at least one compact table summarizing key general requirement topics and where they are addressed in the report (e.g., mapping connected information, comparatives, measurement uncertainty to other sections), with a clear caption and narrative reference.",
+        "Ensure sentences describing methodologies and risk ratings are concise and, where necessary, split into two sentences to avoid overly long multi-clause constructions.",
+        "Clarify that any specific percentages or composition figures (e.g., data quality breakdown) are illustrative or ensure they are moved to methodological appendices; in this general requirements section, emphasize the approach to data quality and uncertainty rather than detailed numeric breakdowns."
       ]
     }
   ],

@@ -1,0 +1,117 @@
+{
+  "section_name": "Risk Management",
+  "ifrs_coverage_judge": {
+    "approved": false,
+    "ifrs_coverage_score_0_to_10": 7,
+    "missing_supported_requirements": [
+      {
+        "requirement_id": "IFRS_S1_44_C04",
+        "standard": "IFRS S1",
+        "paragraph_id": "44",
+        "issue": "The section describes a risk matrix and mentions likelihood and severity, but does not clearly explain how the entity assesses the nature and magnitude of effects (eg, what severity represents, whether qualitative/quantitative criteria or thresholds are used beyond the matrix bands). Evidence indicates likelihood_score exists, but severity/magnitude assessment criteria are not clearly articulated.",
+        "why_it_matters": "IFRS S1.44(a)(iii) requires disclosure of how nature, likelihood and magnitude are assessed, including criteria/thresholds."
+      },
+      {
+        "requirement_id": "IFRS_S2_25_C04",
+        "standard": "IFRS S2",
+        "paragraph_id": "25",
+        "issue": "Same gap as IFRS S1_44_C04: magnitude/nature assessment criteria are not sufficiently described (severity definition/criteria not explained).",
+        "why_it_matters": "IFRS S2.25(a)(iii) mirrors the requirement for climate-related risks."
+      }
+    ],
+    "invented_missing_requirements": [],
+    "missing_data_language_found": {
+      "found": false,
+      "snippets": []
+    },
+    "required_fixes": [
+      "Strengthen the description of how the entity assesses (1) nature, (2) likelihood, and (3) magnitude of effects for climate-related risks. At minimum, define what 'severity_score' represents (eg, financial impact, operational disruption, credit loss, etc.), whether assessment uses qualitative factors and/or quantitative thresholds, and how magnitude is determined (not just the banding of the matrix).",
+      "Ensure the risk assessment methodology narrative aligns with available evidence (eg, if severity_score is used, describe it in a way that is supportable by underlying data/process documentation; avoid implying specific quantitative thresholds beyond what is actually used)."
+    ],
+    "summary": "Most IFRS S1/S2 risk management process disclosures are addressed: register-based identification, inputs/data source, scenario analysis use, prioritisation relative to other risks, monitoring frequencies, integration into ERM, and change vs prior period. However, the section does not adequately explain how the entity assesses the nature and magnitude of effects (severity/magnitude criteria), which is required by IFRS S1.44(a)(iii) and IFRS S2.25(a)(iii). No invented 'missing data' statements were found."
+  },
+  "evidence_judge": {
+    "approved": false,
+    "evidence_score_0_to_10": 7,
+    "unsupported_claims": [
+      {
+        "claim_text": "Monitoring frequencies used include monthly, quarterly and semi_annual.",
+        "location": "3.3 Monitoring",
+        "why_unsupported": "The claims register marks semi_annual as not evidenced, but payload evidence_items include semi_annual monitoring_frequency values (climate_risk_register[5] and [6]). This is actually supported by payload; the issue is the claims register support_notes are incorrect, not the draft text."
+      }
+    ],
+    "questionable_claims": [
+      {
+        "claim_text": "climate_risk_register.risk_rating is derived from a 5x5 risk matrix using likelihood_score * severity_score with thresholds (low/medium/high/critical).",
+        "location": "Risk rating methodology",
+        "why_questionable": "Methodology text is supported by metadata.risk_rating_methodology, and likelihood_score exists in the register, but no severity_score fields or examples demonstrating the multiplication and thresholding are provided in payload evidence. This makes the operational application of the methodology only partially evidenced."
+      },
+      {
+        "claim_text": "Monitoring outcomes are reflected through updates to the climate risk register.",
+        "location": "3.3 Monitoring",
+        "why_questionable": "No payload evidence shows update logs, timestamps, versioning, or fields demonstrating that monitoring results drove register updates."
+      },
+      {
+        "claim_text": "Climate-related opportunities are identified, assessed, prioritised and monitored through the same register-based approach used for climate-related risks (including scenario references and monitoring frequencies).",
+        "location": "3.7 Climate-related opportunities",
+        "why_questionable": "Payload evidence provided is for climate_risk_register risk entries and does not show opportunity records/fields or an opportunities register. Scenario links and frequencies are evidenced for risks, not explicitly for opportunities."
+      },
+      {
+        "claim_text": "Outputs of the identification and assessment process inform the entity’s climate-related disclosures across Strategy and Metrics and Targets.",
+        "location": "Connectivity statement after risk rating methodology",
+        "why_questionable": "This is a cross-section linkage claim; no payload evidence demonstrates traceability from register outputs to Strategy / Metrics & Targets disclosures."
+      },
+      {
+        "claim_text": "Prioritised climate-related risks/opportunities are used to support risk-focused decision-making and related disclosures.",
+        "location": "Connectivity statements in 3.2 and 3.7",
+        "why_questionable": "No payload evidence of decisions, escalation records, or disclosure mapping is provided."
+      }
+    ],
+    "required_fixes": [
+      "For the risk rating methodology, add payload evidence fields for severity_score and (ideally) a computed risk_matrix_score per entry, or provide at least one worked example tying likelihood_score * severity_score to the stated risk_rating thresholds.",
+      "For monitoring updates, add evidence of register maintenance (e.g., last_reviewed_date, last_updated_date, update_reason, monitoring_outcome fields) or remove/soften the claim to a policy/intended process statement.",
+      "For opportunities, provide evidence that opportunities exist in the register (e.g., opportunity_flag/type field, opportunity entries, or a separate opportunities register) including scenario links and monitoring frequencies; otherwise rephrase to state only that the entity intends to use the same approach.",
+      "For connectivity claims (informing Strategy / Metrics & Targets and decision-making), provide traceability evidence (e.g., mapping table from register items to disclosure sections/metrics, governance minutes, escalation workflow records) or qualify as a narrative intention without asserting actual use."
+    ],
+    "summary": "Most descriptive statements about the climate risk register, scenario links, ERM integration flags, value chain examples, and data sources are supported by payload evidence. However, several operational/process-effectiveness claims (risk rating computation details, monitoring-driven updates, opportunities handled in the same register-based system, and cross-section connectivity to Strategy/Metrics & Targets and decision-making) lack direct payload evidence and should be evidenced or softened. Note: semi_annual monitoring frequency is actually evidenced in payload, despite the claims register indicating otherwise."
+  },
+  "style_judge": {
+    "approved": false,
+    "style_score_0_to_10": 7.6,
+    "voice_issues": [
+      "Overall voice is formal, neutral, and process-focused, which aligns with the guide, but it is slightly more template-like than assurance-oriented and governance-led.",
+      "Point of view is consistently third-person; this is acceptable, but the style guide prefers first-person plural for accountability statements, which are largely absent.",
+      "Some phrasing (e.g., repeated 'Connectivity:' one-liners) feels mechanical and could be reframed as more explicit cross-references (e.g., 'Refer to [Section: Strategy]')."
+    ],
+    "structure_issues": [
+      "The section uses numbered subsections and bullets effectively, but it does not follow the requested layered structure of: (1) overall ERM, (2) sustainability-related risks, (3) climate-related risks as a subset. It jumps directly into climate-related risks without situating them within broader sustainability-related risk management.",
+      "Subsection 3.1 lacks an explicit one-sentence purpose statement before describing the process (e.g., 'This subsection describes how climate-related risks are identified and assessed.'). Similar purpose statements are missing in other subsections.",
+      "Connectivity sentences are present but generic and not formatted as explicit cross-references (e.g., 'Connectivity: ...' without 'Refer to [Section: X]').",
+      "There is no mini table-of-contents or brief section overview at the start of Section 3, as suggested by the section_style guidance.",
+      "The 'Risk rating methodology' block is presented as a bold inline heading but not clearly separated into 'principles/what' vs 'mechanics/how' as recommended."
+    ],
+    "wording_issues": [
+      "The language is generally declarative and neutral, but it underuses the preferred standards-oriented verbs such as 'review', 'approve', 'escalate', 'oversee', and 'align'; the focus is mostly on 'identified', 'assessed', 'prioritised', and 'monitored'.",
+      "Some sentences could be made clearer and more IFRS-aligned by explicitly distinguishing current-period facts from methodology (e.g., 'Climate-related risks are identified and assessed through the climate risk register.' could specify that this is the current-period process and not a forward-looking intention).",
+      "The example risk description uses quotation marks and narrative phrasing; it is acceptable but could be reframed more succinctly as a defined risk type rather than a quasi-story quote.",
+      "The risk rating methodology sentence is dense and slightly repetitive ('scores 1-2 = low, 3-6 = medium, 8-12 = high, 15-25 = critical. Specifically: likelihood_score * severity_score; critical >= 15, high >= 8, medium >= 3, low < 3.'). This could be simplified and structured for clarity.",
+      "Use of specific external dataset name '**ECB_climate_indicators**' may conflict with the 'what_to_avoid' guidance against named vendors/data providers; it should be generalized (e.g., 'external climate indicators from relevant data providers').",
+      "Scenario references such as **SCN0005** etc. are acceptable as internal references, but the style guide cautions against named external scenario pathways; ensure these are clearly internal identifiers (could be clarified in wording)."
+    ],
+    "table_figure_issues": [
+      "No tables or figures are used, which is acceptable given the guidance that tables are optional and should be used sparingly. However, the relatively long methodological explanation (e.g., risk rating matrix) could benefit from a compact table for scanability.",
+      "There are no table or figure captions, but this is only an issue if tables/figures are added later; currently, the rubric item on captioning is not applicable."
+    ],
+    "required_fixes": [
+      "Add a short framing paragraph at the start of Section 3 that (a) states the purpose of the Risk Management section, and (b) explains how sustainability-related risks and climate-related risks fit within the overall ERM framework, in line with the specified layered structure.",
+      "Introduce explicit one-sentence purpose statements at the start of each major subsection (3.1–3.7), clarifying what the subsection describes (e.g., 'This subsection explains how climate-related risks are identified and assessed through the climate risk register.').",
+      "Reframe the 'Connectivity:' lines into more explicit cross-reference sentences using the agreed placeholder format (e.g., 'These outputs inform climate-related disclosures in [Section: Strategy] and [Section: Metrics and Targets].') and remove the label-style 'Connectivity:' prefix if it is not used consistently across the report.",
+      "Adjust references to external data sources to comply with the 'what_to_avoid' rules: replace '**ECB_climate_indicators**' with a generic description such as 'external climate indicators from relevant data providers or public sources', unless the specific name is explicitly allowed in the broader report rules.",
+      "Clarify that scenario identifiers (e.g., **SCN0005**, **SCN0007**) are internal scenario references, and ensure they are not presented as named external scenario pathways that could conflict with the 'what_to_avoid' guidance.",
+      "Refine the risk rating methodology description for clarity and structure. For example, separate the definition of the 5x5 matrix from the mapping of score ranges to rating categories, and consider using a short bullet list or a simple table if allowed.",
+      "Where appropriate, incorporate more of the preferred standards-oriented verbs (e.g., 'review', 'escalate', 'oversee', 'align', 'update') to describe how risks are managed, escalated, and overseen, not only identified and monitored.",
+      "If the broader report uses first-person plural for accountability, consider adding at least one accountability-oriented statement in this section (e.g., 'We identify and assess climate-related risks through...') or confirm that a consistent third-person voice is used across all sections."
+    ],
+    "summary": "The section is largely aligned with the approved authoring style: it is formal, neutral, process-focused, and uses clear headings and bullets. It describes climate-related risk identification, assessment, prioritisation, monitoring, and integration in a structured way and avoids promotional language. However, it does not fully implement the requested layered structure (overall ERM → sustainability-related risks → climate-related risks), lacks explicit purpose statements for subsections, and uses generic 'Connectivity:' lines instead of explicit cross-references. There are minor wording issues around external data naming and a dense risk rating methodology paragraph. With these structural and wording refinements, the section would be suitable for approval under the style rubric."
+  }
+}

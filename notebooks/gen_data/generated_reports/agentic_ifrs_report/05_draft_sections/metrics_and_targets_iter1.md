@@ -1,50 +1,95 @@
-## Metrics and targets
+## Metrics and Targets
 
-The entity discloses metrics and targets used to measure and monitor sustainability-related risks and opportunities that could reasonably be expected to affect the entity’s prospects, including:
+### Reporting boundary and period
 
-- metrics required by applicable IFRS Sustainability Disclosure Standards; and
-- metrics the entity uses to measure and monitor:
-  - the sustainability-related risk or opportunity; and
-  - performance in relation to that sustainability-related risk or opportunity, including progress towards any targets the entity has set and any targets it is required to meet by law or regulation.
+Unless stated otherwise, metrics in this section are prepared on a **financial control** boundary. The reporting period ends **31 December 2024**.
 
-### Identification and sourcing of metrics
+### Climate-related metrics
 
-- When a metric is taken from a source other than IFRS Sustainability Disclosure Standards, the entity identifies the source and the metric taken.
-- In the absence of an IFRS Sustainability Disclosure Standard that specifically applies to a sustainability-related risk or opportunity, the entity applies the relevant IFRS S1 requirements to identify applicable metrics.
-- Metrics disclosed include metrics associated with particular business models, activities or other common features that characterise participation in an industry.
+#### Financed emissions — corporate loans (Scope 3 Category 15)
 
-### Entity-developed metrics
+We measure financed emissions associated with the corporate loan portfolio in **tCO₂e** and report the associated portfolio exposure in **EUR million (MEUR)**.
 
-If a metric has been developed by the entity, the entity discloses information about:
+- **Financed emissions (loans)**
+  - 2022: **36,550,177.70 tCO₂e**
+  - 2023: **37,427,593.16 tCO₂e**
+  - 2024: **35,973,167.69 tCO₂e**
 
-- **Definition**: how the metric is defined, including whether it is derived by adjusting a metric taken from a source other than IFRS Sustainability Disclosure Standards and, if so, which source and how the metric differs from the metric specified in that source.
-- **Type of measure**: whether the metric is an absolute measure, a measure expressed in relation to another metric, or a qualitative measure.
-- **Third-party validation**: whether the metric is validated by a third party and, if so, which party.
-- **Calculation method**: the method used to calculate the metric and the inputs to the calculation, including the limitations of the method used and the significant assumptions made.
+- **Total loans (portfolio exposure)**
+  - 2022: **31,150.64 MEUR**
+  - 2023: **31,150.64 MEUR**
+  - 2024: **31,150.64 MEUR**
+
+**Methodology (corporate loans):** financed emissions are calculated using the following approach: **outstanding_amount_meur / evic_meur * total_ghg_tco2e (PCAF Standard §B62)**.
+
+#### Financed emissions — listed equity (Scope 3 Category 15)
+
+For listed equity holdings, financed emissions are estimated using a proxy approach where direct issuer emissions are not available in investment records.
+
+**Methodology (listed equity):** **market_value_meur / issuer_evic_meur * issuer_revenue_meur (PCAF Standard §B61 proxy — revenue substituted for direct issuer emissions due to absence of counterparty-level emission data in investment records)**.
+
+For certain holdings, the proxy basis is **issuer_revenue_meur** and the proxy rationale is: **Direct issuer emissions unavailable. Revenue used as PCAF B61 proxy. Do not treat as verified emissions.**
+
+#### Operational greenhouse gas emissions
+
+We report operational greenhouse gas emissions in **tCO₂e** for the reporting year **2024**:
+
+- **Scope 1 (2024): 2,634.91 tCO₂e** (fleet included)
+- **Scope 2, location-based (2024): 6,963.50 tCO₂e**
+- **Scope 2, market-based (2024): 3,060.54 tCO₂e**
+- **Scope 3 — business travel (2024): 289.88 tCO₂e**
+
+**Scope 2 market-based accounting:** scope2_market_tco2e is sourced directly from utility invoices and already reflects market-based accounting with grid emission factors adjusted for renewable energy certificates and PPAs; certificate registry data is used for disclosure narrative only and is not subtracted again.
 
 ### Targets
 
-The entity discloses information about:
+#### Target TGT001 — Scope 1 and Scope 2 absolute reduction
 
-- targets it has set to monitor progress towards achieving its strategic goals; and
-- any targets it is required to meet by law or regulation.
+- **Target type:** absolute reduction
+- **Scope coverage:** Scope 1 and Scope 2 (whole entity)
+- **Baseline:** **137,849.0 tCO₂e (2020)**
+- **Target value:** **42% reduction**
+- **Interim milestones:**
+  - **2025:** **120,480.0 tCO₂e**
+  - **2028:** **97,321.4 tCO₂e**
+- **Progress (2024):** **40.0%**
+- **Status:** on track
+- **Third-party validation:** **SBTi**
 
-For each target, the entity discloses:
+#### Scope 3 Category 15 financed emissions intensity target
 
-- the metric used to set the target and to monitor progress towards reaching the target;
-- the specific quantitative or qualitative target the entity has set or is required to meet;
-- the period over which the target applies;
-- the base period from which progress is measured;
-- any milestones and interim targets;
-- performance against each target and an analysis of trends or changes in performance; and
-- any revisions to the target and an explanation for those revisions.
+- **Metric:** tCO₂e per MEUR lending (tCO₂e_per_meur_lending)
+- **Baseline:** **20.0 (2022)**
+- **Target value:** **30% reduction**
+- **Interim milestones:**
+  - **2025:** **18.2 tCO₂e per MEUR lending**
+  - **2028:** **15.8 tCO₂e per MEUR lending**
+- **2024 intensity reference value:** **20.0 tCO₂e per MEUR**
+- **Progress (2024):** **25.0%**
+- **Sectoral decarbonisation:** true
+- **Third-party validation:** **UNEP FI**
 
-### Consistency and comparability of metrics over time
+#### All-scopes target (including planned carbon credits)
 
-- The definition and calculation of metrics (including metrics used to set targets and monitor progress) are applied consistently over time.
-- If a metric is redefined or replaced in the reporting period, the entity discloses a revised comparative amount (unless impracticable), explains the changes, and explains the reasons for those changes.
-- If new information is identified in relation to an estimated amount disclosed in the preceding period and that new information provides evidence of circumstances that existed in that period, the entity discloses a revised comparative amount, the difference between the previously disclosed amount and the revised comparative amount, and the reasons for revising the comparative amount.
+- **Scope coverage:** all scopes (whole entity)
+- **Baseline value:** **120,000.0**
+- **Progress metric:** percentage reduction versus baseline
+- **Progress (2024):** **13.3%**
+- **Planned use of carbon credits:** **8.2%** of the target is planned to be met using **technology removal** credits.
 
-### Labelling and definitions
+### Internal carbon price
 
-The entity labels and defines metrics and targets using meaningful, clear and precise names and descriptions.
+We use internal carbon prices (EUR per tCO₂e) in decision-making as follows:
+
+- **Investment decisions:** **EUR 42.73/tCO₂e** (applies to financed emissions and lending decisions)
+- **Product pricing:** **EUR 48.73/tCO₂e**
+- **Investment decisions:** **EUR 54.73/tCO₂e** (applies to lending decisions)
+
+### Data quality indicator (financed emissions)
+
+For financed emissions, the data-quality mix used in preparation is:
+
+- **Estimated economic:** **47.5%**
+- **CDP disclosure:** **35.5%**
+- **Proxy model:** **16.3%**
+- **Audited report:** **0.7%**

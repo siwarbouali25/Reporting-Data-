@@ -1,81 +1,41 @@
-## 1. General requirements (IFRS S1)
+## General Requirements
 
-This section describes the basis on which the entity prepares and presents its sustainability-related financial disclosures in accordance with IFRS S1, including how we apply the general requirements on fair presentation, materiality, reporting boundary and connected information.
+### Basis of preparation
 
-### 1.1 Objective and scope
-**Purpose:** To explain what these sustainability-related financial disclosures are designed to achieve.
+These sustainability-related financial disclosures are prepared for the reporting period ending **31 December 2024** and are presented in **EUR**.
 
-IFRS S1 requires an entity to disclose information about sustainability-related risks and opportunities that could reasonably be expected to affect the entity’s cash flows, access to finance or cost of capital over the short, medium or long term (IFRS S1.3).
+### Reporting period and comparative information
 
-We apply this objective by identifying sustainability-related risks and opportunities that could reasonably be expected to affect the entity’s prospects and by organising the disclosures so users can understand the expected effects on cash flows, access to finance and cost of capital over the short, medium and long term (IFRS S1.3).
+Comparative information is provided for **2022** and **2023**.
 
-### 1.2 Fair presentation
-**Purpose:** To explain how we aim to provide decision-useful information that is complete and faithfully represented.
+### Fair presentation and material sustainability-related information
 
-IFRS S1 requires a complete set of sustainability-related financial disclosures to present fairly all sustainability-related risks and opportunities that could reasonably be expected to affect the entity’s prospects (IFRS S1.11).
+The disclosures present sustainability-related information that could reasonably be expected to affect the bank’s prospects. This includes climate-related risks identified in the climate risk register, such as:
 
-We apply this requirement by:
+- **Physical risk — mortgage book flood exposure** (risk category: **physical_acute**): residential and commercial mortgage collateral located in flood-prone zones faces rising acute physical risk. Property damage and devaluation could impair collateral coverage. The risk is rated **critical**, based on a likelihood score of **4** and a severity score of **5**.
+- **Chronic physical risk affecting agricultural counterparties**: chronic heat and shifting precipitation reduce yields for agricultural counterparties, weakening repayment capacity over the medium term.
+- **Transition risk in the lending book**: rapid electrification could strand internal-combustion vehicle manufacturers and suppliers in the lending book.
+- **Reputational risk**: stakeholder and NGO scrutiny of financed emissions and fossil financing could damage brand and trigger client attrition.
+- **Policy and regulatory transition risk affecting mortgage collateral**: minimum energy performance standards may require costly retrofits for low-EPC mortgage collateral, reducing values and increasing LTV.
 
-- identifying sustainability-related risks and opportunities using the application guidance in paragraphs B1–B12 (IFRS S1.12);
-- disclosing information that is relevant and faithfully represented, including ensuring the depiction is complete, neutral and accurate (IFRS S1.13);
-- preparing disclosures to be comparable, verifiable, timely and understandable (IFRS S1.15(a)); and
-- assessing whether compliance with specifically applicable IFRS Sustainability Disclosure Standards is sufficient for users to understand the effects of sustainability-related risks and opportunities on cash flows, access to finance and cost of capital over the short, medium and long term, and providing additional information when needed (IFRS S1.15(b)).
+### Connected information across governance, strategy, risk management, and metrics
 
-### 1.3 Materiality
-**Purpose:** To explain how we determine which information is required to be disclosed.
+The disclosures are prepared to enable users to understand connections between governance, strategy, risk management, and metrics and targets.
 
-IFRS S1 requires disclosure of material information about sustainability-related risks and opportunities that could reasonably be expected to affect the entity’s prospects (IFRS S1.17).
+- **Governance and oversight**: climate risk reporting to the board is **semi-annual**. The board has **10** members, with **33.5%** climate expertise.
+- **Risk management and monitoring**: climate risks are monitored at defined frequencies, including **monthly**, **quarterly**, and **semi-annual** monitoring in the climate risk register.
+- **Strategy and resilience**: scenario analysis applies **NGFS v4** scenarios to the banking book. Methodology includes a top-down sector-pathway approach with carbon price assumptions mapped to counterparty **NACE** sectors, and stranded asset estimates derived from sector-level fossil fuel capex exposure. The analysis scope covers lending book exposures across **DE, FR, IT, NL, ES** jurisdictions. Resilience assessments are performed under orderly and disorderly transition scenarios.
+- **Metrics and targets**: selected metrics include financed emissions (loans) and climate capex.
 
-We apply this requirement by identifying and disclosing material information using the application guidance in paragraphs B13–B37 (IFRS S1.19).
+### Measurement approaches and key methodologies
 
-### 1.4 Reporting entity
-**Purpose:** To explain the reporting boundary used for these sustainability-related financial disclosures.
+- **Risk rating methodology**: climate risk ratings are derived from a **5x5 risk matrix** using **likelihood_score × severity_score**, with thresholds: scores **1–2 = low**, **3–6 = medium**, **8–12 = high**, and **15–25 = critical**.
+- **Financed emissions (loans)**: financed emissions for loans are measured and disclosed in **tCO₂e**.
 
-IFRS S1 requires the sustainability-related financial disclosures to be for the same reporting entity as the related financial statements (IFRS S1.20).
+### Measurement uncertainty and data quality characteristics
 
-We apply this requirement by preparing these sustainability-related financial disclosures for the same reporting entity as the related financial statements (IFRS S1.20).
+For financed emissions, the emissions data quality summary indicates the following composition: **0.7% audited report**, **35.5% CDP disclosure**, **47.5% estimated economic**, and **16.3% proxy model**.
 
-### 1.5 Connected information
-**Purpose:** To explain how we connect sustainability-related information within these disclosures and to the related financial statements.
+### Comparative consistency and change monitoring
 
-IFRS S1 requires an entity to provide information in a manner that enables users of general purpose financial reports to understand:
-
-- connections between the items to which the information relates (including connections between sustainability-related risks and opportunities) (IFRS S1.21(a));
-- connections between disclosures within the sustainability-related financial disclosures (including governance, strategy, risk management, and metrics and targets) (IFRS S1.21(b)(i)); and
-- connections across the sustainability-related financial disclosures and other general purpose financial reports published by the entity, such as the related financial statements (IFRS S1.21(b)(ii)).
-
-We apply these requirements by:
-
-- identifying the financial statements to which these sustainability-related financial disclosures relate (IFRS S1.22);
-- using data and assumptions that are consistent, to the extent possible (considering IFRS Accounting Standards or other applicable GAAP), with the corresponding data and assumptions used in preparing the related financial statements (IFRS S1.23); and
-- using the presentation currency of the related financial statements when currency is specified as the unit of measure in these sustainability-related financial disclosures (IFRS S1.24).
-
-### 1.6 Core content
-**Purpose:** To explain how the disclosures are structured.
-
-Unless another IFRS Sustainability Disclosure Standard permits or requires otherwise in specified circumstances, IFRS S1 requires disclosures about:
-
-- **Governance**—governance processes, controls and procedures used to monitor and manage sustainability-related risks and opportunities (IFRS S1.25(a));
-- **Strategy**—the approach used to manage sustainability-related risks and opportunities (IFRS S1.25(b));
-- **Risk management**—processes used to identify, assess, prioritise and monitor sustainability-related risks and opportunities (IFRS S1.25(c)); and
-- **Metrics and targets**—performance in relation to sustainability-related risks and opportunities, including progress towards targets set by the entity or required by law or regulation (IFRS S1.25(d)).
-
-We apply this structure by presenting our sustainability-related financial disclosures under these four pillars and by linking related information across the report to support connected information (IFRS S1.21(b)(i), IFRS S1.25).
-
-### 1.7 Sources of guidance
-**Purpose:** To explain the sources we use to identify relevant topics, metrics and disclosure requirements.
-
-IFRS S1 requires an entity, in identifying sustainability-related risks and opportunities that could reasonably be expected to affect the entity’s prospects, to apply IFRS Sustainability Disclosure Standards (IFRS S1.54).
-
-In addition, IFRS S1 requires an entity to refer to and consider the applicability of the disclosure topics in the SASB Standards and permits an entity to conclude that those topics are not applicable in its circumstances (IFRS S1.55(a)).
-
-IFRS S1 also requires that, in identifying applicable disclosure requirements about a sustainability-related risk or opportunity, an entity applies the IFRS Sustainability Disclosure Standard that specifically applies to that risk or opportunity (IFRS S1.56).
-
-When no IFRS Sustainability Disclosure Standard specifically applies to a sustainability-related risk or opportunity, IFRS S1 requires an entity to use judgement to identify information that is relevant to users’ decision-making and faithfully represents the risk or opportunity (IFRS S1.57(a)–(b)). In making that judgement, IFRS S1 requires an entity to refer to and consider the applicability of the metrics associated with the disclosure topics included in the SASB Standards and permits an entity to conclude those metrics are not applicable in its circumstances (IFRS S1.58(a)).
-
-### 1.8 Location of disclosures
-**Purpose:** To explain how information is presented and whether cross-referencing is used.
-
-IFRS S1 permits information required by an IFRS Sustainability Disclosure Standard to be included in sustainability-related financial disclosures by cross-reference to another report published by the entity, subject to the requirements in paragraphs B45–B47 (IFRS S1.63).
-
-We apply this requirement by using cross-referencing only when the conditions in paragraphs B45–B47 are met (IFRS S1.63).
+The climate risk register includes an indicator of whether a risk has changed since the prior period, supporting comparability over time. For the **2023** reporting year, the flood exposure risk is marked as **unchanged**, while the reputational scrutiny risk is marked as **changed**.

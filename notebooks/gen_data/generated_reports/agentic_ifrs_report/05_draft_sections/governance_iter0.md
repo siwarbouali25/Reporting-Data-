@@ -1,35 +1,36 @@
 ## Governance
 
-### Oversight of sustainability-related risks and opportunities
+### Governance oversight of climate-related risks and opportunities
 
-The entity identifies the governance body(ies) or individual(s) responsible for oversight of sustainability-related risks and opportunities and discloses how:
+The Board provides oversight of climate-related risks and opportunities. The Board comprises **10** directors and holds **4** full Board meetings per year. Climate-related matters are included on the Board agenda **69.8%** of the time.
 
-- responsibilities for sustainability-related risks and opportunities are reflected in the terms of reference, mandates, role descriptions and other related policies applicable to that body(ies) or individual(s);
-- the body(ies) or individual(s) determines whether appropriate skills and competencies are available or will be developed to oversee strategies designed to respond to sustainability-related risks and opportunities;
-- and how often the body(ies) or individual(s) is informed about sustainability-related risks and opportunities;
-- the body(ies) or individual(s) takes sustainability-related risks and opportunities into account when overseeing the entity’s strategy, decisions on major transactions, and risk management processes and related policies, including consideration of trade-offs associated with those risks and opportunities; and
-- the body(ies) or individual(s) oversees the setting of targets related to sustainability-related risks and opportunities and monitors progress towards those targets, including whether and how related performance metrics are included in remuneration policies.
+Board discussions captured in Board minutes include:
 
-### Management’s role in governance processes, controls and procedures (sustainability-related)
+- **Transition plan review**
+- **Scenario analysis**
+- **TCFD review**
+- **Net zero progress**
+- **Carbon credit approval**
+- **Executive remuneration ESG KPIs**
 
-The entity discloses management’s role in the governance processes, controls and procedures used to monitor, manage and oversee sustainability-related risks and opportunities, including:
+Climate risk reporting is provided to the Board on a **semi-annual** basis.
 
-- whether the role is delegated to a specific management-level position or management-level committee and how oversight is exercised over that position or committee; and
-- whether management uses controls and procedures to support the oversight of sustainability-related risks and opportunities and, if so, how these controls and procedures are integrated with other internal functions.
+An **ESG committee** is in place and met **5**, **6** and **7** times per year (across the reported governance records).
 
-### Oversight of climate-related risks and opportunities
+The Board’s oversight of climate-related performance is linked to remuneration through climate-related components of executive remuneration. The proportion of executive remuneration linked to climate-related factors is **8.7%**, **15.3%** and **15.1%** (across the reported governance records). Board minutes also reflect discussion of **executive remuneration ESG KPIs**.
 
-The entity identifies the governance body(ies) or individual(s) responsible for oversight of climate-related risks and opportunities and discloses how:
+Climate-related considerations are incorporated into decisions on major transactions through a **climate check for major transactions**.
 
-- responsibilities for climate-related risks and opportunities are reflected in the terms of reference, mandates, role descriptions and other related policies applicable to that body(ies) or individual(s);
-- the body(ies) or individual(s) determines whether appropriate skills and competencies are available or will be developed to oversee strategies designed to respond to climate-related risks and opportunities;
-- and how often the body(ies) or individual(s) is informed about climate-related risks and opportunities;
-- the body(ies) or individual(s) takes climate-related risks and opportunities into account when overseeing the entity’s strategy, decisions on major transactions, and risk management processes and related policies, including consideration of trade-offs associated with those risks and opportunities; and
-- the body(ies) or individual(s) oversees the setting of targets related to climate-related risks and opportunities and monitors progress towards those targets, including whether and how related performance metrics are included in remuneration policies.
+### Management’s role, controls and procedures
 
-### Management’s role in governance processes, controls and procedures (climate-related)
+Management oversight is delegated to a management-level committee. The management committee identified for this purpose is recorded as:
 
-The entity discloses management’s role in the governance processes, controls and procedures used to monitor, manage and oversee climate-related risks and opportunities, including:
+- **Group Sustainability Committee**
+- **ESG Executive Committee**
+- **Climate Risk Management Committee**
 
-- whether the role is delegated to a specific management-level position or management-level committee and how oversight is exercised over that position or committee; and
-- whether management uses controls and procedures to support the oversight of climate-related risks and opportunities and, if so, how these controls and procedures are integrated with other internal functions.
+Climate-related risk management is integrated into enterprise risk management (**ERM integration: True**).
+
+### Skills and competencies
+
+Board climate expertise is tracked, with **33.5%**, **35.5%** and **37.5%** of the Board identified as having climate expertise (across the reported governance records). A **skills development programme** is in place (**True**).
