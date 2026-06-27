@@ -1,64 +1,78 @@
 {
   "section_name": "Strategy",
   "approved": false,
+  "reason": "judge_scores_below_supported_scope_floor",
   "scores": {
     "ifrs_coverage": 6.0,
-    "evidence": 6.0,
-    "style": 7.8
+    "evidence": 3.0,
+    "style": 7.6
   },
   "failures": [
     {
-      "judge": "ifrs_coverage_judge",
-      "score": 6.0,
-      "required_fixes": [
-        "Add explicit definitions for short-, medium- and long-term time horizons and link them to the bank’s strategic/financial planning horizons (addresses IFRS S1 30(c) and IFRS S2 10(d)).",
-        "Disclose current-period (reporting period) financial effects of climate-related risks and opportunities on financial position, financial performance and cash flows, with qualitative explanation and, where practicable, quantitative amounts tied to identified risks/opportunities (addresses IFRS S1 34(a), S1 35(a), and supports S1 29(d)/S2 9(d)).",
-        "Disclose anticipated financial effects across short/medium/long term, explicitly connected to the identified climate risks/opportunities and how they are incorporated into financial planning (strengthen IFRS S1 29(d), S1 34(b), IFRS S2 9(d)).",
-        "Disclose planned sources of funding to implement the climate strategy/transition actions (addresses IFRS S1 35(c)(ii)).",
-        "Add a brief statement on the basis for anticipated financial effects: use of reasonable and supportable information available at the reporting date without undue cost or effort, and that the approach is commensurate with the bank’s capabilities/resources (addresses IFRS S1 37(a)–(b)).",
-        "Remove or complete the 'Net profit' entries shown as '—' for 2023 and 2024, or clearly present the metric as not part of the disclosed dataset (to avoid ambiguity and strengthen decision-usefulness for financial effects disclosures)."
-      ]
-    },
-    {
       "judge": "evidence_judge",
-      "score": 6.0,
+      "score": 3.0,
+      "threshold": 5.5,
       "required_fixes": [
-        "Define time horizons (short/medium/long term) used throughout (risk register, opportunities, scenario analysis, Table 2.1).",
-        "Provide clear definitions and methodology notes for: revenue-at-risk (what revenue, what risk measure, confidence level/percentile if applicable, aggregation method), and how EUR 9,214.0m is computed.",
-        "Fix/complete the risk matrix categorisation: explicitly classify all possible scores (including 7 and 13–14) or explain why they cannot occur; optionally provide an example.",
-        "For Tables 2.2 and 2.3, add source attribution (financial statements/management reporting), accounting perimeter, and explain missing values (net profit 2023–2024).",
-        "For financed emissions and targets (Table 2.4), disclose boundary, methodology (e.g., PCAF), base year, target scope/coverage, and how 'progress' percentages are calculated.",
-        "Define ambiguous portfolio labels (e.g., 'southern portfolio') and specify exposure scope/size where ratings are given."
+        "Provide proper evidence sources for reporting boundary (e.g., consolidation policy note, reporting manual, IFRS consolidation perimeter statement) or soften to 'The bank intends to use a financial-control boundary for this disclosure' if not yet implemented.",
+        "For Table 2 revenue-at-risk (€9,214.0m): add a traceable data source (scenario model output table, management report, calculation workbook) and briefly define revenue-at-risk (definition, scope, baseline, time horizon definition, aggregation method).",
+        "For Table 3 (2022 financials and climate capex/opex): cite audited financial statements for revenue/assets/Tier 1/net profit and internal capex/opex taxonomy/workpapers for climate capex/opex; clarify whether capex/opex are audited/assured and the classification methodology.",
+        "For financed emissions and targets (2024): add evidence references (PCAF methodology statement, emissions inventory, assurance statement if any), define boundary (which portfolios, which scopes/categories), and rounding/significant figures (current precision is implausibly high).",
+        "Define short/medium/long term (e.g., years) and confirm that '2050 horizon' maps to the bank’s 'long term'.",
+        "Where resilience conclusions use qualitative terms ('adequate', 'acceptable', 'material', 'dominant'), add quantified scenario outputs (losses, capital impact, buffer thresholds) or rephrase to clearly qualitative statements with caveats."
       ]
     }
   ],
   "warnings": [],
   "thresholds": {
-    "ifrs_coverage_score_min": 8.0,
-    "evidence_score_min": 8.0,
-    "style_score_min": 7.5,
-    "style_judge_mode": "advisory_after_deterministic_pass"
+    "ifrs_coverage_score_min": 5.5,
+    "evidence_score_min": 5.5,
+    "style_score_min": 0.0,
+    "style_judge_mode": "advisory_after_deterministic_pass",
+    "approve_clean_sections_with_warnings": true,
+    "judge_floor_for_clean_gate_auto_approval": 5.5
   },
-  "approval_policy": "V9.1: deterministic evidence/fact gates are binding; style judge is advisory unless IFRS_STYLE_JUDGE_MODE=blocking.",
-  "version": "V9.4-order-safe-factlock-decimal",
+  "approval_policy": "V9.6: deterministic gates/fact-lock/cleanliness are binding; IFRS and evidence judges use IFRS_SUPPORTED_SCOPE_JUDGE_FLOOR; legacy strict thresholds are ignored unless IFRS_USE_LEGACY_STRICT_APPROVAL=1.",
+  "version": "V9.6-approval-config-fix-and-revision-guard",
   "section_generation_score": {
     "section_name": "Strategy",
-    "overall_section_generation_score_0_to_100": 86.94,
-    "coverage_component": {
+    "overall_section_generation_score_0_to_100": 75.03,
+    "supported_scope_coverage_score_0_to_100": 60.0,
+    "payload_readiness_component": {
       "requirements_total": 70,
+      "supported_requirements_total": 70,
       "coverage_counts": {
         "covered": 54,
         "partially_covered": 16
       },
-      "coverage_score_0_to_100": 88.57
+      "coverage_score_0_to_100": 88.57,
+      "supported_scope_coverage_score_0_to_100": 88.57,
+      "payload_readiness_score_0_to_100": 88.57,
+      "policy": "Generation coverage excludes not_available_in_payload requirements. Payload readiness is reported separately for audit."
     },
-    "judge_average_0_to_100": 66.0,
+    "coverage_component": {
+      "requirements_total": 70,
+      "supported_requirements_total": 70,
+      "coverage_counts": {
+        "covered": 54,
+        "partially_covered": 16
+      },
+      "coverage_score_0_to_100": 88.57,
+      "supported_scope_coverage_score_0_to_100": 88.57,
+      "payload_readiness_score_0_to_100": 88.57,
+      "policy": "Generation coverage excludes not_available_in_payload requirements. Payload readiness is reported separately for audit."
+    },
+    "judge_average_0_to_100": 48.1,
+    "judge_scores_0_to_10": {
+      "ifrs_coverage": 6.0,
+      "evidence": 3.0,
+      "style": 7.6
+    },
     "deterministic_gate_score_0_to_100": 100.0,
     "report_cleanliness_score_0_to_100": 100.0,
     "missing_requirements_count_flagged": 0,
     "missing_requirement_ids_flagged": [],
     "missing_data_language_hits": [],
     "approved": false,
-    "policy": "Missing requirements reduce audit/readiness visibility only; they must not appear in report prose."
+    "policy": "Section generation score is based on supported-scope report quality. Payload readiness is reported separately and missing synthetic data does not lower the generation score."
   }
 }

@@ -1,186 +1,177 @@
-## 2. Strategy
+## Strategy
 
-This section explains how climate-related risks and opportunities affect the bank’s business model and value chain, how the bank responds through its strategy and financial planning, and what the bank’s climate-related scenario analysis indicates about the resilience of that strategy.
+This section describes how climate-related risks and opportunities are expected to affect the bank’s business model and value chain, and how these considerations are reflected in strategy, scenario resilience and financial planning across the **short term**, **medium term** and **long term**.
 
-### 2.1 Business model and value-chain exposure
+The bank’s reporting boundary is based on **financial control**.
 
-The bank’s climate-related impacts and dependencies arise across its own operations and, most significantly, through its financing activities.
+### 1. Climate-related risks and opportunities and their expected time horizons
 
-**Reporting boundary**
+This subsection summarises the climate-related risks and opportunities identified and the time horizons over which they are expected to affect the bank.
 
-The bank applies a **financial control** boundary for this Strategy discussion.
+#### 1.1 Climate-related risks
 
-**Where climate-related risks and opportunities arise in the value chain**
+The bank’s climate-related risk profile is driven primarily by (i) **physical risks** that can affect counterparties and collateral and (ii) **transition risks** arising from policy, technology and market changes.
 
-- **Own operations:** Operational sites and travel generate **Scope 1–2 emissions** and can face **physical disruption**.
-- **Financing activities:** Climate-related risks are transmitted primarily through counterparties’ business performance and the value of collateral.
+**Physical risk — mortgage book flood exposure**
 
-These exposures provide the context for the climate-related risks and opportunities described below and for the scenario analysis outcomes summarised in section 2.4.
+Residential and commercial mortgage collateral located in flood-prone zones faces rising acute physical risk. Property damage and devaluation could impair collateral coverage. This risk is linked to scenario analysis.
 
-### 2.2 Climate-related risks and opportunities
+**Physical risk — wildfire exposure in southern portfolio (rated medium)**
 
-This subsection summarises the climate-related risks and opportunities that the bank considers in its strategy, including the time-horizon labels used in the bank’s internal climate risk register and scenario analysis.
+Wildfire exposure in the southern portfolio is rated **medium** and is linked to scenario analysis.
 
-#### 2.2.1 Key climate-related risks
+**Transition risk — building energy performance regulation (rated medium)**
 
-The bank’s climate risk register identifies physical, transition and stakeholder-related risks that can affect credit quality, collateral values and franchise value.
+Minimum energy performance standards may require costly retrofits for low-energy-performance mortgage collateral, reducing values and increasing loan-to-value ratios. This risk is rated **medium** and is linked to scenario analysis.
 
-**Physical risks**
+**Stranded assets — fossil fuel sector exposure**
 
-- **Physical risk — mortgage book flood exposure:** Residential and commercial mortgage collateral located in flood-prone zones faces rising acute physical risk. Property damage and devaluation could impair collateral coverage.
-- **Physical risk — wildfire exposure in southern portfolio:** This risk is assessed as **medium**.
-- **Agricultural counterparty vulnerability (medium term):** Chronic heat and shifting precipitation reduce yields for agricultural counterparties, weakening repayment capacity over the **medium term**.
+Demand shifts away from fossil fuels risk stranding reserves and assets held by oil, gas and coal counterparties, reducing their enterprise value.
 
-**Transition risks**
+**Carbon pricing and emissions trading tightening**
 
-- **Stranded assets — fossil fuel sector exposure:** Demand shifts away from fossil fuels risk stranding reserves and assets held by oil, gas and coal counterparties, reducing their enterprise value.
-- **Carbon pricing impacts on carbon-intensive sectors:** Tightening EU ETS and national carbon pricing raise operating costs for carbon-intensive borrowers, increasing default probability in cement, steel and chemicals.
-- **Technology transition in automotive:** Rapid electrification could strand internal-combustion vehicle manufacturers and suppliers in the lending book.
-- **Transition risk — building energy performance regulation:** Minimum energy performance standards may require costly retrofits for low-EPC mortgage collateral, reducing values and increasing loan-to-value.
+Tightening emissions trading and national carbon pricing can raise operating costs for carbon-intensive borrowers, increasing default probability in cement, steel and chemicals. This risk is linked to scenario analysis.
 
-**Stakeholder / reputational risk**
+**Technology transition in automotive**
 
-- Stakeholder and NGO scrutiny of financed emissions and fossil financing could damage brand and trigger client attrition.
+Rapid electrification could strand internal-combustion vehicle manufacturers and suppliers in the lending book. This risk is linked to scenario analysis.
 
-**Risk rating methodology (where ratings are assigned)**
+**Agriculture physical risk (medium term)**
 
-Where the risk register assigns ratings, the bank derives the rating from a **5×5 risk matrix**. The bank multiplies a likelihood score by a severity score to determine the category. Scores of **1–2** are classified as **low**, **3–6** as **medium**, **8–12** as **high**, and **15–25** as **critical**.
+Chronic heat and shifting precipitation can reduce yields for agricultural counterparties, weakening repayment capacity over the **medium term**. This risk is linked to scenario analysis.
 
-#### 2.2.2 Key climate-related opportunities
+**Reputational risk**
 
-The bank identifies climate-related opportunities that can support revenue growth and client relevance as the economy transitions.
+Stakeholder and NGO scrutiny of financed emissions and fossil financing could damage brand and trigger client attrition.
 
-- **Green loan growth (medium term).**
-- **Sustainable bond underwriting (short term).**
-- **Transition advisory:** Fee income from climate risk advisory, transition planning support, and ESG due diligence services offered to large corporate clients.
-- **Renewable energy project finance:** Project finance for solar, wind, and battery storage infrastructure aligned with REPowerEU and national renewable energy targets.
+#### 1.2 Climate-related opportunities
 
-The bank considers these opportunities alongside the risk profile described above when assessing strategic resilience under climate-related scenarios (section 2.4).
+The bank identifies climate-related opportunities that are expected to arise from client demand for transition-related financing and services.
 
-### 2.3 Effects on strategy and decision-making (including trade-offs)
+**Table 1 — Climate-related opportunities and time horizons**
 
-The bank’s strategic response to climate-related risks and opportunities is reflected in how it assesses resilience mechanisms under climate-related scenarios.
+| Opportunity | Description | Time horizon |
+|---|---|---|
+| Green loan growth | Green loan growth | Medium term |
+| Sustainable bond underwriting | Sustainable bond underwriting | Short term |
 
-#### 2.3.1 Strategic response and resilience mechanisms referenced in scenario analysis
+### 2. Effects on the value chain and where climate-related effects are concentrated
 
-Across the bank’s scenario assessments, the following mechanisms are identified as part of the bank’s approach to managing climate-related risk:
+This subsection explains where climate-related risks and opportunities are concentrated across the bank’s value chain and how they can affect the bank through key transmission channels.
 
-- **Sector exposure limits** and **active portfolio decarbonisation glide-path monitoring** are identified as primary resilience mechanisms in disorderly transition scenarios.
-- For physical risk transmission through collateral, the bank identifies a **flood-zone overlay** and **EPC-based collateral monitoring** as resilience mechanisms.
+Climate-related risks and opportunities arise across the bank’s value chain, with the most significant transmission channels occurring through **financing activities** and **collateral**.
 
-#### 2.3.2 Trade-offs highlighted by scenario outcomes
+- **Own operations**: Operational sites and travel generate Scope 1–2 emissions and can face physical disruption. The bank’s value chain mapping identifies **corporate fleet and business travel** as an own-operations node associated with these exposures.
 
-The bank’s scenario assessments highlight trade-offs across time horizons:
+- **Financing counterparties**: Climate-related effects are concentrated in financed activities, where counterparties’ transition readiness and physical exposure can affect credit quality, collateral values and client relationships. The bank’s value chain mapping includes sector-linked examples, including:
+  - Lending to **manufacture of coke and refined petroleum**, which carries elevated transition risk from carbon pricing and demand shifts.
+  - Exposure to **manufacture of motor vehicles**, which is subject to physical and transition risk.
 
-- In **disorderly transition** scenarios, the bank assesses **near-term** resilience as acceptable, while **medium-term** capital consumption from stranded asset impairments is described as material. The bank identifies sector exposure limits and active portfolio decarbonisation glide-path monitoring as primary resilience mechanisms in these scenarios.
-- In **hot house world** scenarios, physical risk losses are identified as the dominant **long-term** resilience challenge. The primary transmission channels identified are collateral revaluation risk in flood-exposed mortgage books and agricultural borrower default risk from chronic heat stress.
+These value-chain linkages inform how climate-related risks can translate into changes in probability of default, loss given default and collateral coverage, and how opportunities can translate into growth in climate-aligned financing and fee income.
 
-These scenario-based trade-offs inform how the bank frames strategic resilience across transition and physical risk pathways (section 2.4).
+### 3. Strategic response
 
-### 2.4 Scenario analysis and resilience of strategy
+This subsection describes how the bank’s strategy responds to climate-related risks and opportunities, including the mechanisms used to strengthen resilience.
 
-This subsection summarises the bank’s climate-related scenario analysis and what it indicates about the resilience of the bank’s strategy.
+The bank’s strategic response focuses on (i) managing climate-related downside risk in the banking book and collateral and (ii) capturing climate-related opportunities in financing and advisory services.
 
-#### 2.4.1 Scope of analysis
+#### 3.1 Portfolio and collateral resilience mechanisms
 
-The bank applies climate scenario analysis to **all banking book exposures across DE, FR, IT, NL and ES**.
+Scenario analysis identifies resilience mechanisms used to manage climate-related risks:
 
-#### 2.4.2 Scenarios and methodologies applied
+- **Sector exposure limits**: Under disorderly transition scenarios, the bank’s current sector exposure limits are described as a primary resilience mechanism.
 
-The bank uses NGFS v4 scenarios and applies different analytical approaches depending on whether the scenario is primarily transition-focused or physical-risk-focused.
+- **Active portfolio decarbonisation glide-path monitoring**: Under disorderly transition scenarios, active monitoring of portfolio decarbonisation glide paths is described as a primary resilience mechanism.
 
-**Orderly transition scenarios**
+- **Flood-zone overlay (2050 horizon)**: Under hot house world scenarios, collateral revaluation risk in flood-exposed mortgage books is identified as a primary transmission channel. A flood-zone overlay is identified as a resilience mechanism deployed for the **2050 horizon**.
 
-- **NGFS v4 Net Zero 2050:** Applied to the banking book using a top-down sector-pathway approach. Carbon price assumptions from the IEA NZE 2050 trajectory are mapped to counterparty NACE sectors. Stranded asset estimates are derived from sector-level fossil fuel capex exposure.
-- **NGFS v4 Below 2°C:** Applied using NGFS integrated assessment model outputs aligned to a 1.8°C median temperature pathway. The carbon price trajectory is taken from the REMIND-MAgPIE model. Financial impact is assessed through loan-level probability of default sensitivity to carbon cost pass-through by sector carbon intensity tier.
+- **Energy performance-based collateral monitoring (2050 horizon)**: Under hot house world scenarios, energy performance-based collateral monitoring is identified as a resilience mechanism deployed for the **2050 horizon**, reflecting the risk that minimum energy performance standards may require costly retrofits and affect collateral values.
 
-**Disorderly transition scenarios**
+#### 3.2 Client and product strategy aligned to transition demand
 
-- **NGFS v4 Divergent Net Zero:** Used to capture technology pathway uncertainty, with divergent sectoral transition speeds across jurisdictions. Carbon price assumptions vary by country based on national ETS and carbon tax trajectories. The scenario is used primarily to stress-test technology transition risk in the automotive and energy manufacturing lending sub-portfolio.
+The bank’s opportunity set includes growth in climate-aligned products and services:
 
-**Delayed policy action and hot house world scenarios**
+- **Green loan growth (medium term)**: Under orderly transition scenarios, green loan growth and client engagement on transition plans are expected to progressively reduce high-carbon sector concentration over the **medium term**.
 
-- **NGFS v4 NDC:** Represents delayed but eventually strengthened policy action. Carbon pricing ramp-up is assumed from 2030 onward based on Paris Agreement NDC submission trajectories. Revenue-at-risk is computed from sector revenue sensitivity to carbon price at the EUR/tCO2e levels specified in the scenario.
-- **NGFS v4 Current Policies (hot house world):** Used as the adverse baseline for physical risk. Physical risk parameters are sourced from NGFS chronic and acute hazard layers and downscaled to counterparty postcode and collateral location. RCP 8.5 physical risk projections are used for a 2050 horizon analysis.
+- **Sustainable bond underwriting (short term)**: The bank identifies sustainable bond underwriting as a **short-term** opportunity.
 
-#### 2.4.3 Resilience conclusions by scenario type
+- **Transition advisory**: The bank identifies potential fee income opportunities from climate risk advisory, transition planning support and ESG due diligence services offered to large corporate clients.
 
-The bank’s scenario analysis includes qualitative resilience assessments for orderly transition, disorderly transition and hot house world pathways.
+- **Renewable energy project finance**: The bank identifies project finance opportunities for solar, wind and battery storage infrastructure aligned with REPowerEU and national renewable energy targets.
 
-**Orderly transition scenarios (including Net Zero 2050 and Below 2°C)**
+### 4. Trade-offs and strategic choices
 
-- The portfolio demonstrates **adequate resilience**.
-- Transition risk losses remain **within Pillar 2 capital buffer thresholds**.
-- Green loan growth and client engagement on transition plans are expected to progressively reduce high-carbon sector concentration over the **medium term**.
+This subsection describes key strategic trade-offs arising from the bank’s climate-related risk and opportunity profile.
 
-**Disorderly transition scenarios (including Divergent Net Zero)**
+- **Transition risk management and client relationships**: Stakeholder and NGO scrutiny of financed emissions and fossil financing can create reputational risk and potential client attrition. In parallel, the bank identifies opportunities to support clients through transition advisory and sustainable finance activities.
 
-- Near-term resilience is assessed as **acceptable**, while medium-term capital consumption from stranded asset impairments is described as **material**.
-- The bank’s **sector exposure limits** and **active portfolio decarbonisation glide-path monitoring** are identified as primary resilience mechanisms.
-- Additional capital buffers may be required post-2030 under the most adverse disorderly assumptions.
+- **Collateral value protection and borrower impacts**: Building energy performance regulation can require costly retrofits for low-energy-performance collateral, potentially affecting property values and loan-to-value ratios. The bank uses energy performance-based collateral monitoring as a resilience mechanism.
 
-**Hot house world scenarios (including Current Policies and NDC framing for delayed action)**
+- **Orderly and disorderly transition pathways**: Scenario analysis indicates that, under orderly transition scenarios, the portfolio demonstrates adequate resilience and transition risk losses remain within Pillar 2 capital buffer thresholds. Under disorderly transition scenarios, near-term resilience is acceptable but medium-term capital consumption from stranded asset impairments is material, and additional capital buffers may be required post-2030 under the most adverse disorderly assumptions.
 
-- Physical risk losses represent the dominant **long-term** resilience challenge.
-- The primary transmission channels identified are **collateral revaluation risk** in flood-exposed mortgage books and **agricultural borrower default risk** from chronic heat stress.
-- The bank’s **flood-zone overlay** and **EPC-based collateral monitoring** are identified as resilience mechanisms deployed for the **2050 horizon**.
+### 5. Scenario analysis and resilience of the strategy
 
-#### 2.4.4 Revenue-at-risk indicator from scenario analysis
+This subsection summarises the climate scenario analysis used to assess resilience and the resulting resilience assessments.
 
-Table 2.1 summarises the bank’s revenue-at-risk indicator for the banking book under an NGFS v4 Net Zero 2050 scenario.
+#### 5.1 Scope and approach
 
-**Table 2.1: Revenue-at-risk from climate-related scenario analysis (banking book)**
+Scenario analysis is applied to **all banking book exposures across DE, FR, IT, NL and ES**.
 
-| Scenario | Horizon label | Revenue-at-risk (EUR million) | Scope |
-|---|---|---:|---|
-| NGFS v4 Net Zero 2050 | Medium term | 9,214.0 | All banking book exposures across DE, FR, IT, NL, ES |
+**Transition scenarios**
 
-The scenario analysis outcomes described in this subsection are considered alongside the bank’s financial planning indicators and climate-related expenditure (section 2.5).
+- The bank applies NGFS v4 scenarios using a top-down sector-pathway approach. Carbon price assumptions are mapped to counterparty sectors. Stranded asset estimates are derived from sector-level fossil fuel capital expenditure exposure.
 
-### 2.5 Financial planning and resource allocation
+- For an orderly “below 2°C” pathway, the bank uses NGFS integrated assessment model outputs aligned to a 1.8°C median temperature pathway. Financial impacts are assessed through loan-level probability of default sensitivity to carbon cost pass-through by sector carbon intensity tier.
 
-This subsection summarises the bank’s climate-related expenditure and selected financial indicators used in climate-related planning.
+- For technology pathway uncertainty, the bank uses an NGFS v4 “Divergent Net Zero” scenario with divergent sectoral transition speeds across jurisdictions and country-varying carbon price assumptions. This is used primarily to stress-test technology transition risk in the automotive and energy manufacturing lending sub-portfolio.
 
-#### 2.5.1 Climate-related expenditure
+- For delayed policy action, the bank uses an NGFS v4 NDC scenario. Carbon pricing ramp-up is assumed from 2030 onward based on Paris Agreement NDC submission trajectories. Revenue-at-risk is computed using sector revenue sensitivity to carbon price at the scenario-specified carbon price levels.
 
-Table 2.2 presents the bank’s reported climate-related capital expenditure and operating expenditure.
+**Physical risk scenarios**
 
-**Table 2.2: Climate-related expenditure by reporting year**
+- For physical risk, the bank uses an NGFS v4 Current Policies (hot house world) scenario as the adverse baseline. Physical risk parameters are sourced from NGFS chronic and acute hazard layers and downscaled to counterparty postcode and collateral location. RCP 8.5 physical risk projections are used for the 2050 horizon analysis.
 
-| Reporting year | Climate capex (EUR million) | Climate opex (EUR million) |
-|---:|---:|---:|
-| 2022 | 322.2 | 420.32 |
-| 2023 | 373.91 | 509.21 |
+#### 5.2 Resilience assessments
 
-#### 2.5.2 Financial capacity indicators used in climate planning
+- **Orderly transition scenarios**: The portfolio demonstrates adequate resilience. Transition risk losses remain within Pillar 2 capital buffer thresholds. Green loan growth and client engagement on transition plans are expected to progressively reduce high-carbon sector concentration over the medium term.
 
-Table 2.3 provides selected financial indicators that form part of the bank’s broader financial context.
+- **Disorderly transition scenarios**: Near-term resilience is acceptable but medium-term capital consumption from stranded asset impairments is material. The bank’s current sector exposure limits and active portfolio decarbonisation glide-path monitoring are the primary resilience mechanisms. Additional capital buffers may be required post-2030 under the most adverse disorderly assumptions.
 
-**Table 2.3: Selected financial indicators**
+- **Hot house world scenarios (2050 horizon)**: Physical risk losses represent the dominant long-term resilience challenge. Collateral revaluation risk in flood-exposed mortgage books and agricultural borrower default risk from chronic heat stress are identified as the primary transmission channels. The bank’s flood-zone overlay and energy performance-based collateral monitoring are resilience mechanisms deployed for the 2050 horizon.
 
-| Reporting year | Total assets (EUR million) | Tier 1 capital (EUR million) | Total revenue (EUR million) | Net profit (EUR million) |
-|---:|---:|---:|---:|---:|
-| 2022 | 763,922.8 | 95,149.4 | 25,466.1 | 5,759.9 |
-| 2023 | 820,167.2 | 143,979.2 | 27,779.7 | — |
-| 2024 | 850,000.0 | 151,208.6 | 24,136.2 | — |
+#### 5.3 Quantified scenario indicator
 
-The bank’s scenario analysis includes assessments of capital impacts, including whether transition risk losses remain within Pillar 2 capital buffer thresholds under orderly transition scenarios and whether additional capital buffers may be required post-2030 under the most adverse disorderly assumptions.
+The bank quantifies **revenue-at-risk** for transition scenarios applied to the banking book.
 
-### 2.6 Strategic indicators linked to climate objectives
+**Table 2 — Revenue-at-risk under an orderly transition scenario**
 
-The bank uses climate-related indicators to support strategic steering of its transition.
+| Scenario | Revenue-at-risk (€m) | Time horizon |
+|---|---:|---|
+| NGFS v4 Net Zero 2050 (banking book; top-down sector pathway) | 9,214.0 | Medium term |
 
-**Table 2.4: Strategic climate indicators and target progress**
+### 6. Financial planning and resource allocation indicators
 
-| Indicator | Value |
-|---|---:|
-| Financed emissions (2024) | 35,973,167.6878965 tCO2e |
-| Emissions intensity target | 20.0 tCO2e per EUR million |
+This subsection summarises indicators used in financial planning and resource allocation that are linked to the bank’s climate strategy.
 
-| Target progress (2024) | Progress |
-|---|---:|
-| Scope 1 and 2 | 40.0% |
-| Scope 3 Category 15 | 25.0% |
-| Net zero (all scopes) | 13.3% |
+#### 6.1 Climate-related expenditure and financial capacity
 
-These indicators are used alongside the bank’s assessment of climate-related risks and opportunities and the scenario analysis outcomes described in this Strategy section.
+The bank reports climate-related capital expenditure and operating expenditure alongside selected financial capacity indicators.
+
+**Table 3 — Climate-related expenditure and selected financial indicators**
+
+| Reporting year | Climate capex (€m) | Climate opex (€m) | Total revenue (€m) | Total assets (€m) | Tier 1 capital (€m) | Net profit (€m) |
+|---:|---:|---:|---:|---:|---:|---:|
+| 2022 | 322.2 | 420.32 | 25,466.1 | 763,922.8 | 95,149.4 | 5,759.9 |
+
+#### 6.2 Portfolio emissions and transition indicators
+
+The bank uses financed emissions and target-related indicators to inform climate strategy execution.
+
+- **Financed emissions (2024)**: 35,973,167.6878965 tCO₂e.
+- **Target progress (2024)**:
+  - Scope 1 and 2: 40.0%.
+  - Scope 3 Category 15: 25.0%.
+  - Net zero (all scopes): 13.3%.
+- **Financed emissions intensity target**: 20.0 tCO₂e per €m.
+
+These indicators are used alongside scenario analysis to inform strategic priorities, including green loan growth, client transition engagement, and the deployment of resilience mechanisms for physical and transition risks across the banking book.

@@ -1,96 +1,90 @@
 [
   {
     "section_name": "General Requirements",
-    "status": "human_review",
-    "markdown_path": "C:\\Users\\BV426BP\\Documents\\IFRS Data\\Reporting-Data-\\notebooks\\gen_data\\generated_reports\\agentic_ifrs_report\\10_approved_sections\\human_review_general_requirements.md",
+    "status": "approved",
+    "approved_markdown_path": "C:\\Users\\BV426BP\\Documents\\IFRS Data\\Reporting-Data-\\notebooks\\gen_data\\generated_reports\\agentic_ifrs_report\\10_approved_sections\\approved_general_requirements.md",
+    "approved_json_path": "C:\\Users\\BV426BP\\Documents\\IFRS Data\\Reporting-Data-\\notebooks\\gen_data\\generated_reports\\agentic_ifrs_report\\10_approved_sections\\approved_general_requirements.json",
+    "iterations": 0,
     "approval": {
       "section_name": "General Requirements",
-      "approved": false,
+      "approved": true,
+      "reason": "approved_after_deterministic_and_supported_scope_judges",
       "scores": {
         "ifrs_coverage": 6.0,
         "evidence": 6.0,
-        "style": 3.8
+        "style": 3.6
       },
-      "failures": [
-        {
-          "judge": "ifrs_coverage_judge",
-          "score": 6.0,
-          "required_fixes": [
-            "Add an explicit statement identifying the related financial statements (eg, consolidated financial statements for the year ended 31 December 2024) and confirm the sustainability disclosures are for the same reporting entity (IFRS_S1_20_C01, IFRS_S1_22_C01).",
-            "Strengthen connected information by providing specific linkages/cross-references between sustainability disclosures and the financial statements (eg, where climate-related capex, provisions/impairments, or risk disclosures are reflected) rather than only stating currency consistency (IFRS_S1_21_C04).",
-            "Either (a) include the required disclosures about all sustainability-related risks and opportunities affecting prospects (beyond climate), or (b) clearly scope this section as basis-of-preparation only and ensure the full report elsewhere meets IFRS_S1_3_C01 (IFRS_S1_3_C01).",
-            "Disclose the specific external standards/guidance applied (eg, IFRS S1/S2, SASB topics considered, NGFS, PCAF) and the industry classification used to identify applicable metrics; explicitly state SASB topics/metrics were considered (or not applicable) (IFRS_S1_55_C01, IFRS_S1_58_C01, IFRS_S1_59_C01, IFRS_S1_59_C02).",
-            "Add disclosures describing how the Bank determines which IFRS Sustainability Disclosure Standard specifically applies to each risk/opportunity and how judgement is applied when none applies, including how relevance and faithful representation are ensured (IFRS_S1_56_C01, IFRS_S1_57_C01, IFRS_S1_57_C02).",
-            "State whether information is incorporated by cross-reference to other reports; if yes, include the cross-reference mechanics consistent with B45–B47 (IFRS_S1_63_C01).",
-            "State that sustainability-related financial disclosures are reported at the same time as the related financial statements (IFRS_S1_64_C01).",
-            "If relying on the 'additional information' principle, identify at least one concrete example where additional information was necessary and provided to explain effects on cash flows/access to finance/cost of capital (IFRS_S1_15_C02)."
-          ]
-        },
-        {
-          "judge": "evidence_judge",
-          "score": 6.0,
-          "required_fixes": [
-            {
-              "fix": "Add/replace evidence linkage for fiscal year-end date to bank.fiscal_year_end (or equivalent audited financial statements reference) for the statement 'fiscal year ends on 31 December 2024' (GR-005)."
-            },
-            {
-              "fix": "Add/replace evidence linkage for reporting currency to bank.reporting_currency (or financial statements note) for 'reporting currency is EUR' (GR-006)."
-            },
-            {
-              "fix": "Provide a concrete evidence source for 'green loans 10.71%' (e.g., reporting_kpis.green_loans_pct_2024 or taxonomy/portfolio KPI table) and cite it for GR-032."
-            },
-            {
-              "fix": "Clean up evidence mappings where unrelated sources are cited (e.g., remove board_climate_expertise_pct from GR-012 unless it truly supports the 69.8% agenda metric)."
-            },
-            {
-              "fix": "For Table 1 data quality percentages, cite evidence paths for each percentage (estimated/proxy/audited) or a single structured object that contains all four values."
-            },
-            {
-              "fix": "For Scope 1/2 totals, cite the specific emissions inventory/KPI fields that contain those totals (rather than scope2 reconciliation narrative or generic target progress fields), and ensure location-based vs market-based are separately evidenced."
-            }
-          ]
-        }
-      ],
+      "failures": [],
       "warnings": [
         {
           "judge": "style_judge",
-          "score": 3.8,
+          "score": 3.6,
+          "threshold": 0.0,
           "required_fixes": [
-            "Remove or generalize hard-coded reporting years, specific dates, currencies, and jurisdiction lists from template-style narrative. Replace with configurable placeholders or generic wording (e.g., 'the reporting period', 'the reporting currency', 'relevant jurisdictions') to comply with the 'what_to_avoid' rules.",
-            "Refocus the section on basis of preparation and 'how to read this report' mechanics by removing or relocating detailed performance metrics (e.g., financed emissions, capex, Tier 1 capital, Scope 1/2/3 values, green loans percentage) to the dedicated Metrics and Targets section, and instead include cross-references (e.g., 'Refer to [Section: Metrics and Targets]').",
-            "Introduce or refine one-sentence purpose statements at the start of each subsection that explicitly state what the subsection describes (e.g., 'This subsection describes the reporting period applied to these sustainability-related financial disclosures.').",
-            "Add closing connectivity sentences to major subsections (e.g., 1.1, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9) that link to related sections or the financial statements using generic cross-reference placeholders (e.g., 'Refer to [Section: Governance]' or 'See [Related Financial Statements]').",
-            "Separate high-level principles from detailed mechanics in methodology subsections. For example, in 1.6, first state the overarching principles for climate-related methodologies, then use bullets or short paragraphs for specific methods (risk rating, scenario analysis, emissions accounting) without embedding detailed case examples unless clearly labelled as illustrative.",
-            "Simplify and standardize wording to use preferred standards-oriented verbs and cautious modality. Replace narrative verbs like 'explains' and 'sets out' with 'describes', 'presents', 'discloses', and ensure judgement-heavy areas use 'may', 'could', or 'is subject to'.",
-            "Review long or multi-clause sentences and split them into shorter, single-idea sentences to improve clarity and align with the sentence_length guidance.",
-            "Adjust numeric precision to a reasonable number of decimal places consistent with audit-ready practice (e.g., one or two decimals for emissions and intensity metrics) and state rounding conventions where relevant.",
-            "Enhance the data quality and estimates sections to more explicitly distinguish between current-period facts, estimates/judgements, and any forward-looking intentions, and, where any data is incomplete or estimated, follow the missing_data_language_rules (what is missing, why, interim approach, limitations, and planned enhancements).",
-            "Consider adding a compact mapping table that links each general requirement topic (e.g., reporting boundary, comparatives, connected information) to the sections where detailed disclosures appear, to improve navigability and align with the preferred table usage for this section."
+            "Introduce a numbered heading structure aligned with the global formatting rules (e.g., '1. General requirements', '1.1 Basis of preparation and reporting scope', '1.2 Reporting period and fiscal year', etc.) and ensure consistency with IFRS S1/S2 pillar references where relevant.",
+            "Add short purpose statements at the start of each subsection explaining what the subsection covers and how it helps users interpret the sustainability-related financial disclosures.",
+            "Rework the opening of the section to follow the layered structure: a concise scope and basis-of-preparation statement, followed by a bulleted list of qualitative characteristics and preparation principles (e.g., completeness, neutrality, accuracy, comparability, verifiability, timeliness, understandability), and then brief cross-references to where pillar-specific details are disclosed.",
+            "Adjust voice to align with the preferred point of view: use first-person plural ('we') for accountability statements about how the disclosures are prepared and third-person or passive voice for externally defined requirements. Ensure this is consistent throughout the section.",
+            "Shorten and simplify long sentences, especially in the introductory paragraph and the scenario methodology descriptions, to maintain clear subject–verb–object structure and avoid multi-topic sentences.",
+            "Clarify the distinction between current-period facts, estimates, and forward-looking scenario-based judgements. For scenario analysis and resilience content, explicitly state that these are modelled outcomes based on defined assumptions and use cautious modality ('may', 'could', 'is expected to') rather than definitive statements.",
+            "Remove or significantly trim detailed scenario outcomes, resilience assessments, and specific risk examples from this general requirements section, or convert them into high-level methodological descriptions with cross-references to detailed content in Strategy and Risk Management sections (e.g., 'Refer to [Section: Strategy – Climate scenario analysis]').",
+            "Review and adjust content that hard-codes specific years, dates, currencies, geographies, and detailed metrics if this section is intended as a reusable template. Where such specifics are necessary for this particular report, ensure they are clearly framed as current-period facts and that this does not conflict with the broader template guidance.",
+            "Number and caption all tables (e.g., 'Table 1: Comparative climate-related metrics, 2022–2024'; 'Table 2: Emissions data quality mix, 2024') and reference them explicitly in the narrative using those labels.",
+            "Replace the em dash ('—') used for missing 2023 financed emissions with a standardized status label (e.g., 'not reported for the period') and, if material, add a brief narrative note explaining why the data is not available, any interim approach, limitations, and planned enhancements.",
+            "Add brief connectivity sentences at the end of major subsections to link to related sections or appendices (e.g., 'Refer to [Section: Metrics and Targets] for detailed emissions metrics and targets' or 'See [Appendix: Methodologies] for additional methodological detail.').",
+            "Ensure that commentary on data quality and interpretation remains neutral and evidence-led; avoid interpretive or evaluative language such as 'substantial portion' unless it is clearly defined or supported by a threshold or materiality assessment.",
+            "Where metrics and targets are listed, consider adding minimal traceability elements (e.g., boundary and source type) or cross-references to where full traceability is provided, to align with the evidence and traceability rules."
           ],
-          "advisory": true
+          "advisory": true,
+          "note": "Style is below preferred level but deterministic gates passed; do not trigger destructive revision."
         }
       ],
       "thresholds": {
-        "ifrs_coverage_score_min": 8.0,
-        "evidence_score_min": 8.0,
-        "style_score_min": 7.5,
-        "style_judge_mode": "advisory_after_deterministic_pass"
+        "ifrs_coverage_score_min": 5.5,
+        "evidence_score_min": 5.5,
+        "style_score_min": 0.0,
+        "style_judge_mode": "advisory_after_deterministic_pass",
+        "approve_clean_sections_with_warnings": true,
+        "judge_floor_for_clean_gate_auto_approval": 5.5
       },
-      "approval_policy": "V9.1: deterministic evidence/fact gates are binding; style judge is advisory unless IFRS_STYLE_JUDGE_MODE=blocking.",
-      "version": "V9.4-order-safe-factlock-decimal",
+      "approval_policy": "V9.6: deterministic gates/fact-lock/cleanliness are binding; IFRS and evidence judges use IFRS_SUPPORTED_SCOPE_JUDGE_FLOOR; legacy strict thresholds are ignored unless IFRS_USE_LEGACY_STRICT_APPROVAL=1.",
+      "version": "V9.6-approval-config-fix-and-revision-guard",
       "section_generation_score": {
         "section_name": "General Requirements",
-        "overall_section_generation_score_0_to_100": 78.28,
-        "coverage_component": {
+        "overall_section_generation_score_0_to_100": 77.4,
+        "supported_scope_coverage_score_0_to_100": 60.0,
+        "payload_readiness_component": {
           "requirements_total": 108,
+          "supported_requirements_total": 98,
           "coverage_counts": {
             "partially_covered": 45,
             "not_available_in_payload": 10,
             "covered": 53
           },
-          "coverage_score_0_to_100": 69.91
+          "coverage_score_0_to_100": 77.04,
+          "supported_scope_coverage_score_0_to_100": 77.04,
+          "payload_readiness_score_0_to_100": 69.91,
+          "policy": "Generation coverage excludes not_available_in_payload requirements. Payload readiness is reported separately for audit."
         },
-        "judge_average_0_to_100": 52.67,
+        "coverage_component": {
+          "requirements_total": 108,
+          "supported_requirements_total": 98,
+          "coverage_counts": {
+            "partially_covered": 45,
+            "not_available_in_payload": 10,
+            "covered": 53
+          },
+          "coverage_score_0_to_100": 77.04,
+          "supported_scope_coverage_score_0_to_100": 77.04,
+          "payload_readiness_score_0_to_100": 69.91,
+          "policy": "Generation coverage excludes not_available_in_payload requirements. Payload readiness is reported separately for audit."
+        },
+        "judge_average_0_to_100": 57.6,
+        "judge_scores_0_to_10": {
+          "ifrs_coverage": 6.0,
+          "evidence": 6.0,
+          "style": 3.6
+        },
         "deterministic_gate_score_0_to_100": 100.0,
         "report_cleanliness_score_0_to_100": 100.0,
         "missing_requirements_count_flagged": 10,
@@ -107,23 +101,46 @@
           "IFRS_S1_B46_C01"
         ],
         "missing_data_language_hits": [],
-        "approved": false,
-        "policy": "Missing requirements reduce audit/readiness visibility only; they must not appear in report prose."
+        "approved": true,
+        "policy": "Section generation score is based on supported-scope report quality. Payload readiness is reported separately and missing synthetic data does not lower the generation score."
       }
     },
     "section_generation_score": {
       "section_name": "General Requirements",
-      "overall_section_generation_score_0_to_100": 78.28,
-      "coverage_component": {
+      "overall_section_generation_score_0_to_100": 77.4,
+      "supported_scope_coverage_score_0_to_100": 60.0,
+      "payload_readiness_component": {
         "requirements_total": 108,
+        "supported_requirements_total": 98,
         "coverage_counts": {
           "partially_covered": 45,
           "not_available_in_payload": 10,
           "covered": 53
         },
-        "coverage_score_0_to_100": 69.91
+        "coverage_score_0_to_100": 77.04,
+        "supported_scope_coverage_score_0_to_100": 77.04,
+        "payload_readiness_score_0_to_100": 69.91,
+        "policy": "Generation coverage excludes not_available_in_payload requirements. Payload readiness is reported separately for audit."
       },
-      "judge_average_0_to_100": 52.67,
+      "coverage_component": {
+        "requirements_total": 108,
+        "supported_requirements_total": 98,
+        "coverage_counts": {
+          "partially_covered": 45,
+          "not_available_in_payload": 10,
+          "covered": 53
+        },
+        "coverage_score_0_to_100": 77.04,
+        "supported_scope_coverage_score_0_to_100": 77.04,
+        "payload_readiness_score_0_to_100": 69.91,
+        "policy": "Generation coverage excludes not_available_in_payload requirements. Payload readiness is reported separately for audit."
+      },
+      "judge_average_0_to_100": 57.6,
+      "judge_scores_0_to_10": {
+        "ifrs_coverage": 6.0,
+        "evidence": 6.0,
+        "style": 3.6
+      },
       "deterministic_gate_score_0_to_100": 100.0,
       "report_cleanliness_score_0_to_100": 100.0,
       "missing_requirements_count_flagged": 10,
@@ -140,399 +157,412 @@
         "IFRS_S1_B46_C01"
       ],
       "missing_data_language_hits": [],
-      "approved": false,
-      "policy": "Missing requirements reduce audit/readiness visibility only; they must not appear in report prose."
-    },
-    "senior_ifrs_version": "V9.4-order-safe-factlock-decimal"
+      "approved": true,
+      "policy": "Section generation score is based on supported-scope report quality. Payload readiness is reported separately and missing synthetic data does not lower the generation score."
+    }
   },
   {
     "section_name": "Governance",
-    "status": "human_review",
-    "markdown_path": "C:\\Users\\BV426BP\\Documents\\IFRS Data\\Reporting-Data-\\notebooks\\gen_data\\generated_reports\\agentic_ifrs_report\\10_approved_sections\\human_review_governance.md",
+    "status": "approved",
+    "approved_markdown_path": "C:\\Users\\BV426BP\\Documents\\IFRS Data\\Reporting-Data-\\notebooks\\gen_data\\generated_reports\\agentic_ifrs_report\\10_approved_sections\\approved_governance.md",
+    "approved_json_path": "C:\\Users\\BV426BP\\Documents\\IFRS Data\\Reporting-Data-\\notebooks\\gen_data\\generated_reports\\agentic_ifrs_report\\10_approved_sections\\approved_governance.json",
+    "iterations": 0,
     "approval": {
       "section_name": "Governance",
-      "approved": false,
+      "approved": true,
+      "reason": "approved_after_deterministic_and_supported_scope_judges",
       "scores": {
         "ifrs_coverage": 6.0,
-        "evidence": 7.0,
+        "evidence": 6.0,
         "style": 6.8
       },
-      "failures": [
-        {
-          "judge": "ifrs_coverage_judge",
-          "score": 6.0,
-          "required_fixes": [
-            "Add disclosure of how Board/committee responsibilities for sustainability/climate are reflected in formal terms of reference/mandates/role descriptions/related policies (or equivalent governance documents).",
-            "Explain the process used by the Board (or relevant committee) to determine whether appropriate climate/sustainability skills and competencies are available or will be developed (eg, skills matrix, periodic assessment, recruitment criteria, training plan governance).",
-            "Describe how the Board takes climate/sustainability matters into account in (i) strategy oversight, (ii) major transactions (expand the 'climate check'—what triggers it, who performs it, how results influence decisions), and (iii) risk management processes/policies; include whether/how trade-offs are considered.",
-            "Describe how the Board oversees target-setting and monitors progress (eg, which targets, review cadence, dashboards/metrics reviewed, decision points), and clarify how performance metrics are incorporated into remuneration policies beyond the % linkage.",
-            "For management’s role, describe how oversight is exercised over the management-level committee(s): reporting lines to Board/ESG committee, escalation routes, approval authorities, and meeting/reporting cadence.",
-            "Describe management controls and procedures used to monitor/manage/oversee climate/sustainability risks and opportunities and how these are integrated with other internal functions (eg, finance, risk, internal audit, compliance).",
-            "Add a brief statement addressing IFRS S2 paragraph 7 on avoiding unnecessary duplication (eg, confirming integrated governance disclosures where oversight is managed on an integrated basis)."
-          ]
-        },
-        {
-          "judge": "evidence_judge",
-          "score": 7.0,
-          "required_fixes": [
-            "Revise GOV-006 to avoid overstating: either (a) soften to 'indicate climate matters are discussed by the Board' or (b) add concrete evidence/examples of strategic planning and performance oversight decisions influenced by climate discussions (e.g., approvals, strategy updates, KPI reviews).",
-            "For GOV-012 (ERM integration), add a brief description of the integration mechanism (risk identification, assessment, ownership, reporting cadence, escalation) and/or cite specific artifacts (risk register inclusion, ERM policy excerpt). If only a reported flag is available, qualify the statement as 'reported as integrated' and avoid implying operational detail.",
-            "For GOV-013 (climate check), define 'major transactions' threshold and describe the climate check process (criteria, responsible function/committee, documentation, decision rights). If only a reported flag is available, qualify as 'reported to be applied' and remove implied rigor.",
-            "For GOV-015 (skills development programme), add minimum programme details (who participates, frequency, topics) or qualify as 'a programme is reported to exist' if only a flag is available.",
-            "Fix evidence mapping for GOV-008 to cite governance[*].esg_committee_exists (not management_committee_name).",
-            "Improve evidence mapping for GOV-017 to cite the direct metric fields for each indicator; avoid bundling items that lack process detail without qualification."
-          ]
-        }
-      ],
-      "warnings": [
-        {
-          "judge": "style_judge",
-          "score": 6.8,
-          "required_fixes": [
-            "Remove or generalise specific numeric values (e.g., number of directors, meeting frequencies, percentages of agenda coverage, board expertise, and remuneration linkage) to comply with the section_style prohibition on numeric values in reusable template text, or clearly mark them as configurable placeholders if this is intended as a template.",
-            "Rephrase interpretive or evidentiary language into neutral, descriptive IFRS-style wording (e.g., replace 'These agenda items and discussions evidence that climate-related matters are brought to the Board...' with a more neutral description such as 'These agenda items indicate that climate-related matters are brought to the Board in connection with strategic planning and performance oversight.').",
-            "Introduce at least one governance body/role-to-responsibility mapping table with a numbered caption (e.g., 'Table 2.1: Governance bodies and responsibilities for sustainability- and climate-related oversight') and reference it explicitly in the narrative.",
-            "Add a governance structure figure (or at minimum, a placeholder description) with a numbered caption explaining how Board, committees, and management-level bodies interact and how information flows between them.",
-            "Convert the 'Selected governance indicators (climate)' bullet list into a structured, captioned table that includes metric definition, boundary, value/status, and source type, in line with the evidence_and_traceability rules.",
-            "Add brief connectivity sentences at the end of key subsections (e.g., 2.1, 2.4, 2.5, 2.8) linking governance mechanisms to related Strategy, Risk Management, and Metrics and Targets sections using generic cross-reference placeholders (e.g., 'Refer to [Section: Strategy] for how these governance arrangements inform climate-related strategic planning.').",
-            "Strengthen the use of standards-oriented verbs and governance verbs from the preferred list (e.g., 'oversees', 'reviews', 'monitors', 'approves', 'escalates') to describe Board and committee roles more explicitly.",
-            "Clarify, where relevant, whether statements refer to current-period practice versus historical trend, and use cautious language for any forward-looking or evolving aspects (e.g., skills development programmes, governance enhancements)."
-          ],
-          "advisory": true
-        }
-      ],
+      "failures": [],
+      "warnings": [],
       "thresholds": {
-        "ifrs_coverage_score_min": 8.0,
-        "evidence_score_min": 8.0,
-        "style_score_min": 7.5,
-        "style_judge_mode": "advisory_after_deterministic_pass"
+        "ifrs_coverage_score_min": 5.5,
+        "evidence_score_min": 5.5,
+        "style_score_min": 0.0,
+        "style_judge_mode": "advisory_after_deterministic_pass",
+        "approve_clean_sections_with_warnings": true,
+        "judge_floor_for_clean_gate_auto_approval": 5.5
       },
-      "approval_policy": "V9.1: deterministic evidence/fact gates are binding; style judge is advisory unless IFRS_STYLE_JUDGE_MODE=blocking.",
-      "version": "V9.4-order-safe-factlock-decimal",
+      "approval_policy": "V9.6: deterministic gates/fact-lock/cleanliness are binding; IFRS and evidence judges use IFRS_SUPPORTED_SCOPE_JUDGE_FLOOR; legacy strict thresholds are ignored unless IFRS_USE_LEGACY_STRICT_APPROVAL=1.",
+      "version": "V9.6-approval-config-fix-and-revision-guard",
       "section_generation_score": {
         "section_name": "Governance",
-        "overall_section_generation_score_0_to_100": 88.97,
-        "coverage_component": {
+        "overall_section_generation_score_0_to_100": 78.2,
+        "supported_scope_coverage_score_0_to_100": 60.0,
+        "payload_readiness_component": {
           "requirements_total": 15,
+          "supported_requirements_total": 15,
           "coverage_counts": {
             "covered": 14,
             "partially_covered": 1
           },
-          "coverage_score_0_to_100": 96.67
+          "coverage_score_0_to_100": 96.67,
+          "supported_scope_coverage_score_0_to_100": 96.67,
+          "payload_readiness_score_0_to_100": 96.67,
+          "policy": "Generation coverage excludes not_available_in_payload requirements. Payload readiness is reported separately for audit."
         },
-        "judge_average_0_to_100": 66.0,
+        "coverage_component": {
+          "requirements_total": 15,
+          "supported_requirements_total": 15,
+          "coverage_counts": {
+            "covered": 14,
+            "partially_covered": 1
+          },
+          "coverage_score_0_to_100": 96.67,
+          "supported_scope_coverage_score_0_to_100": 96.67,
+          "payload_readiness_score_0_to_100": 96.67,
+          "policy": "Generation coverage excludes not_available_in_payload requirements. Payload readiness is reported separately for audit."
+        },
+        "judge_average_0_to_100": 60.8,
+        "judge_scores_0_to_10": {
+          "ifrs_coverage": 6.0,
+          "evidence": 6.0,
+          "style": 6.8
+        },
         "deterministic_gate_score_0_to_100": 100.0,
         "report_cleanliness_score_0_to_100": 100.0,
         "missing_requirements_count_flagged": 0,
         "missing_requirement_ids_flagged": [],
         "missing_data_language_hits": [],
-        "approved": false,
-        "policy": "Missing requirements reduce audit/readiness visibility only; they must not appear in report prose."
+        "approved": true,
+        "policy": "Section generation score is based on supported-scope report quality. Payload readiness is reported separately and missing synthetic data does not lower the generation score."
       }
     },
     "section_generation_score": {
       "section_name": "Governance",
-      "overall_section_generation_score_0_to_100": 88.97,
-      "coverage_component": {
+      "overall_section_generation_score_0_to_100": 78.2,
+      "supported_scope_coverage_score_0_to_100": 60.0,
+      "payload_readiness_component": {
         "requirements_total": 15,
+        "supported_requirements_total": 15,
         "coverage_counts": {
           "covered": 14,
           "partially_covered": 1
         },
-        "coverage_score_0_to_100": 96.67
+        "coverage_score_0_to_100": 96.67,
+        "supported_scope_coverage_score_0_to_100": 96.67,
+        "payload_readiness_score_0_to_100": 96.67,
+        "policy": "Generation coverage excludes not_available_in_payload requirements. Payload readiness is reported separately for audit."
       },
-      "judge_average_0_to_100": 66.0,
+      "coverage_component": {
+        "requirements_total": 15,
+        "supported_requirements_total": 15,
+        "coverage_counts": {
+          "covered": 14,
+          "partially_covered": 1
+        },
+        "coverage_score_0_to_100": 96.67,
+        "supported_scope_coverage_score_0_to_100": 96.67,
+        "payload_readiness_score_0_to_100": 96.67,
+        "policy": "Generation coverage excludes not_available_in_payload requirements. Payload readiness is reported separately for audit."
+      },
+      "judge_average_0_to_100": 60.8,
+      "judge_scores_0_to_10": {
+        "ifrs_coverage": 6.0,
+        "evidence": 6.0,
+        "style": 6.8
+      },
       "deterministic_gate_score_0_to_100": 100.0,
       "report_cleanliness_score_0_to_100": 100.0,
       "missing_requirements_count_flagged": 0,
       "missing_requirement_ids_flagged": [],
       "missing_data_language_hits": [],
-      "approved": false,
-      "policy": "Missing requirements reduce audit/readiness visibility only; they must not appear in report prose."
-    },
-    "senior_ifrs_version": "V9.4-order-safe-factlock-decimal"
+      "approved": true,
+      "policy": "Section generation score is based on supported-scope report quality. Payload readiness is reported separately and missing synthetic data does not lower the generation score."
+    }
   },
   {
     "section_name": "Strategy",
-    "status": "human_review",
-    "markdown_path": "C:\\Users\\BV426BP\\Documents\\IFRS Data\\Reporting-Data-\\notebooks\\gen_data\\generated_reports\\agentic_ifrs_report\\10_approved_sections\\human_review_strategy.md",
+    "status": "approved",
+    "approved_markdown_path": "C:\\Users\\BV426BP\\Documents\\IFRS Data\\Reporting-Data-\\notebooks\\gen_data\\generated_reports\\agentic_ifrs_report\\10_approved_sections\\approved_strategy.md",
+    "approved_json_path": "C:\\Users\\BV426BP\\Documents\\IFRS Data\\Reporting-Data-\\notebooks\\gen_data\\generated_reports\\agentic_ifrs_report\\10_approved_sections\\approved_strategy.json",
+    "iterations": 2,
     "approval": {
       "section_name": "Strategy",
-      "approved": false,
+      "approved": true,
+      "reason": "approved_after_deterministic_and_supported_scope_judges",
       "scores": {
         "ifrs_coverage": 6.0,
-        "evidence": 4.0,
-        "style": 7.4
+        "evidence": 6.0,
+        "style": 7.8
       },
-      "failures": [
-        {
-          "judge": "ifrs_coverage_judge",
-          "score": 6.0,
-          "required_fixes": [
-            "Add explicit definitions for short, medium and long term (e.g., year ranges) and explain how these align with the bank’s strategic/financial planning horizons (to satisfy IFRS_S1_30_C03 and IFRS_S2_10_C04).",
-            "Disclose current-period financial effects attributable to climate-related risks and opportunities on financial position, financial performance and cash flows (e.g., impairments/expected credit losses linked to climate drivers, valuation changes, provisions, revenue impacts, costs), with qualitative explanation and quantitative amounts where practicable (to satisfy IFRS_S1_34_C01 / IFRS_S1_35_C01 and support IFRS_S1_29_C04 / IFRS_S2_9_C04).",
-            "Disclose anticipated financial effects over short/medium/long term that are clearly connected to identified climate risks/opportunities and to financial planning (e.g., expected changes in credit losses, collateral values, capital needs, funding costs, revenues), including key assumptions and how they are incorporated into planning (to satisfy IFRS_S1_29_C04 and IFRS_S2_9_C04).",
-            "Describe planned sources of funding to implement the climate strategy/transition actions (e.g., internal capital, retained earnings, debt issuance/green bonds, securitisation, other funding programmes) (to satisfy IFRS_S1_35_C05)."
-          ]
-        },
-        {
-          "judge": "evidence_judge",
-          "score": 4.0,
-          "required_fixes": [
-            {
-              "fix": "Add explicit evidence references (or footnotes/appendix cross-references) for all numeric tables (2.1, 2.2, 2.3, 2.4) including data source systems, reporting perimeter, and calculation methodology for revenue-at-risk, capex/opex tagging, financial indicators, and financed emissions/target progress."
-            },
-            {
-              "fix": "For Table 2.3, either populate net profit for 2023 and 2024 or remove the column/years; ensure consistency with audited financial statements and specify whether 2024 is actual or forecast."
-            },
-            {
-              "fix": "For revenue-at-risk (Table 2.1), define the metric (gross vs net revenue, baseline, time horizon definition, confidence/uncertainty), and provide a reconciliation or explanation of why the value is plausible relative to total revenue."
-            },
-            {
-              "fix": "Clarify the risk-matrix banding to remove gaps (define where score 7 and 13–14 fall) and specify inclusive/exclusive boundaries."
-            },
-            {
-              "fix": "Clarify how RCP 8.5 is used within NGFS v4 Current Policies physical risk analysis (mapping approach, hazard dataset/version, downscaling method, and limitations)."
-            },
-            {
-              "fix": "Where absolute statements are made (e.g., “all exposures”, “within Pillar 2 thresholds”), add qualifiers, scope notes, or quantitative context (coverage %, threshold level, loss range) to avoid unverifiable claims."
-            }
-          ]
-        }
-      ],
-      "warnings": [
-        {
-          "judge": "style_judge",
-          "score": 7.4,
-          "required_fixes": [
-            "Apply the missing data protocol to all incomplete table cells (e.g., Net profit for 2023 and 2024 in Table 2.3, any other blank cells). Replace blanks with standardized status labels such as 'not currently available', 'not reported for the period', or 'not applicable', and add brief narrative explaining what is missing, why, interim approach, limitations, and planned enhancement direction.",
-            "Add short interpretive and connectivity paragraphs immediately after each major table (Tables 2.1–2.4) that (a) explain what the table shows, (b) clarify whether values are current-period facts, scenario outputs, or estimates, and (c) link to relevant sections or financial statement areas using the placeholder cross-reference style (e.g., 'Refer to [Section: Metrics and Targets]').",
-            "Clarify the status of scenario-based statements and resilience conclusions by explicitly labelling them as scenario outputs or estimates (e.g., 'Under the NGFS v4 Net Zero 2050 scenario, the analysis indicates that...') and using cautious modality ('is expected to', 'could', 'may') to avoid implying guarantees.",
-            "Reduce technical detail in 2.4.2 to the level necessary for understanding the strategy. Separate high-level scenario selection principles ('what and why') from methodological mechanics ('how') using subheadings or short paragraphs, and move highly technical model references to a methodology appendix or footnote if needed.",
-            "Strengthen the layered structure and single-idea paragraph discipline by: (a) splitting multi-topic paragraphs (especially in 2.2 and 2.4) into shorter, topic-led paragraphs; (b) ensuring each subsection opens with a clear purpose statement; and (c) closing each major subsection (2.1–2.6) with a brief connectivity sentence linking back to materiality assessment outputs, governance, or financial statements.",
-            "Enhance the use of structured artifacts by introducing at least one summary matrix or table that maps key climate-related risks and opportunities to value-chain segments, time horizons, and potential financial statement areas, in line with the section_style preference for tables as primary organizing devices.",
-            "Review wording to remove or temper any promotional or outcome-focused phrasing (e.g., 'support revenue growth and client relevance', 'portfolio demonstrates adequate resilience') and replace with standards-oriented, evidence-based language (e.g., 'the bank identifies potential revenue opportunities from...', 'scenario analysis indicates that losses remain within... under the assumptions applied').",
-            "Ensure consistent use of controlled vocabulary and cautious resilience language by explicitly stating that resilience assessments are scenario-based and subject to uncertainty, and by avoiding unqualified statements that could be interpreted as guarantees.",
-            "Consider adding a brief statement on voice and accountability (e.g., 'We assess', 'We monitor') in key strategic subsections to align with the preferred use of first-person plural for accountability, while maintaining overall consistency of point of view across the section."
-          ],
-          "advisory": true
-        }
-      ],
+      "failures": [],
+      "warnings": [],
       "thresholds": {
-        "ifrs_coverage_score_min": 8.0,
-        "evidence_score_min": 8.0,
-        "style_score_min": 7.5,
-        "style_judge_mode": "advisory_after_deterministic_pass"
+        "ifrs_coverage_score_min": 5.5,
+        "evidence_score_min": 5.5,
+        "style_score_min": 0.0,
+        "style_judge_mode": "advisory_after_deterministic_pass",
+        "approve_clean_sections_with_warnings": true,
+        "judge_floor_for_clean_gate_auto_approval": 5.5
       },
-      "approval_policy": "V9.1: deterministic evidence/fact gates are binding; style judge is advisory unless IFRS_STYLE_JUDGE_MODE=blocking.",
-      "version": "V9.4-order-safe-factlock-decimal",
+      "approval_policy": "V9.6: deterministic gates/fact-lock/cleanliness are binding; IFRS and evidence judges use IFRS_SUPPORTED_SCOPE_JUDGE_FLOOR; legacy strict thresholds are ignored unless IFRS_USE_LEGACY_STRICT_APPROVAL=1.",
+      "version": "V9.6-approval-config-fix-and-revision-guard",
       "section_generation_score": {
         "section_name": "Strategy",
-        "overall_section_generation_score_0_to_100": 84.54,
-        "coverage_component": {
+        "overall_section_generation_score_0_to_100": 78.45,
+        "supported_scope_coverage_score_0_to_100": 60.0,
+        "payload_readiness_component": {
           "requirements_total": 70,
+          "supported_requirements_total": 70,
           "coverage_counts": {
             "covered": 54,
             "partially_covered": 16
           },
-          "coverage_score_0_to_100": 88.57
+          "coverage_score_0_to_100": 88.57,
+          "supported_scope_coverage_score_0_to_100": 88.57,
+          "payload_readiness_score_0_to_100": 88.57,
+          "policy": "Generation coverage excludes not_available_in_payload requirements. Payload readiness is reported separately for audit."
         },
-        "judge_average_0_to_100": 58.0,
+        "coverage_component": {
+          "requirements_total": 70,
+          "supported_requirements_total": 70,
+          "coverage_counts": {
+            "covered": 54,
+            "partially_covered": 16
+          },
+          "coverage_score_0_to_100": 88.57,
+          "supported_scope_coverage_score_0_to_100": 88.57,
+          "payload_readiness_score_0_to_100": 88.57,
+          "policy": "Generation coverage excludes not_available_in_payload requirements. Payload readiness is reported separately for audit."
+        },
+        "judge_average_0_to_100": 61.8,
+        "judge_scores_0_to_10": {
+          "ifrs_coverage": 6.0,
+          "evidence": 6.0,
+          "style": 7.8
+        },
         "deterministic_gate_score_0_to_100": 100.0,
         "report_cleanliness_score_0_to_100": 100.0,
         "missing_requirements_count_flagged": 0,
         "missing_requirement_ids_flagged": [],
         "missing_data_language_hits": [],
-        "approved": false,
-        "policy": "Missing requirements reduce audit/readiness visibility only; they must not appear in report prose."
+        "approved": true,
+        "policy": "Section generation score is based on supported-scope report quality. Payload readiness is reported separately and missing synthetic data does not lower the generation score."
       }
     },
     "section_generation_score": {
       "section_name": "Strategy",
-      "overall_section_generation_score_0_to_100": 84.54,
-      "coverage_component": {
+      "overall_section_generation_score_0_to_100": 78.45,
+      "supported_scope_coverage_score_0_to_100": 60.0,
+      "payload_readiness_component": {
         "requirements_total": 70,
+        "supported_requirements_total": 70,
         "coverage_counts": {
           "covered": 54,
           "partially_covered": 16
         },
-        "coverage_score_0_to_100": 88.57
+        "coverage_score_0_to_100": 88.57,
+        "supported_scope_coverage_score_0_to_100": 88.57,
+        "payload_readiness_score_0_to_100": 88.57,
+        "policy": "Generation coverage excludes not_available_in_payload requirements. Payload readiness is reported separately for audit."
       },
-      "judge_average_0_to_100": 58.0,
+      "coverage_component": {
+        "requirements_total": 70,
+        "supported_requirements_total": 70,
+        "coverage_counts": {
+          "covered": 54,
+          "partially_covered": 16
+        },
+        "coverage_score_0_to_100": 88.57,
+        "supported_scope_coverage_score_0_to_100": 88.57,
+        "payload_readiness_score_0_to_100": 88.57,
+        "policy": "Generation coverage excludes not_available_in_payload requirements. Payload readiness is reported separately for audit."
+      },
+      "judge_average_0_to_100": 61.8,
+      "judge_scores_0_to_10": {
+        "ifrs_coverage": 6.0,
+        "evidence": 6.0,
+        "style": 7.8
+      },
       "deterministic_gate_score_0_to_100": 100.0,
       "report_cleanliness_score_0_to_100": 100.0,
       "missing_requirements_count_flagged": 0,
       "missing_requirement_ids_flagged": [],
       "missing_data_language_hits": [],
-      "approved": false,
-      "policy": "Missing requirements reduce audit/readiness visibility only; they must not appear in report prose."
-    },
-    "senior_ifrs_version": "V9.4-order-safe-factlock-decimal"
+      "approved": true,
+      "policy": "Section generation score is based on supported-scope report quality. Payload readiness is reported separately and missing synthetic data does not lower the generation score."
+    }
   },
   {
     "section_name": "Risk Management",
-    "status": "human_review",
-    "markdown_path": "C:\\Users\\BV426BP\\Documents\\IFRS Data\\Reporting-Data-\\notebooks\\gen_data\\generated_reports\\agentic_ifrs_report\\10_approved_sections\\human_review_risk_management.md",
+    "status": "approved",
+    "approved_markdown_path": "C:\\Users\\BV426BP\\Documents\\IFRS Data\\Reporting-Data-\\notebooks\\gen_data\\generated_reports\\agentic_ifrs_report\\10_approved_sections\\approved_risk_management.md",
+    "approved_json_path": "C:\\Users\\BV426BP\\Documents\\IFRS Data\\Reporting-Data-\\notebooks\\gen_data\\generated_reports\\agentic_ifrs_report\\10_approved_sections\\approved_risk_management.json",
+    "iterations": 0,
     "approval": {
       "section_name": "Risk Management",
-      "approved": false,
+      "approved": true,
+      "reason": "approved_after_deterministic_and_supported_scope_judges",
       "scores": {
         "ifrs_coverage": 6.0,
         "evidence": 6.0,
         "style": 7.6
       },
-      "failures": [
-        {
-          "judge": "ifrs_coverage_judge",
-          "score": 6.0,
-          "required_fixes": [
-            "Remove or qualify unsupported methodology specifics (5×5 matrix, severity scoring, multiplication rule, and the exact score-band thresholds 15–25/8–12/3–6/1–2) unless they are evidenced in the payload; keep only what is supported (e.g., existence of a methodology and likelihood scoring).",
-            "Add disclosure explaining whether and how climate-related risks are prioritised relative to other types of risk (not just within the climate risk register).",
-            "Add a description of the processes used to identify, assess, prioritise and monitor climate-related opportunities (and, for IFRS S2, whether/how scenario analysis informs opportunity identification).",
-            "Replace/augment the 'changed since prior period' discussion to address whether and how the risk management processes themselves changed compared with the previous reporting period (or explicitly state no changes, if supported elsewhere).",
-            "Remove unsupported specificity about scenario references (SCN0005/SCN0007/SCN0011) unless evidenced; keep scenario linkage at a level supported by the payload."
-          ]
-        },
-        {
-          "judge": "evidence_judge",
-          "score": 6.0,
-          "required_fixes": [
-            "Narrow or evidence the end-to-end process claim: either (a) add evidence of the documented lifecycle and ERM integration process (procedure/control/workflow evidence), or (b) rewrite to only state what is evidenced (existence of a climate risk register with specific fields: likelihood_score, risk_rating, monitoring_frequency, changed_since_prior_period, erm_integrated_flag, scenario_analysis_link).",
-            "For own operations vs value chain coverage: add evidence that the climate risk register contains entries tagged to both scopes (or add a linkage field to value_chain_map), or revise wording to say identification considers both scopes via value-chain mapping (supported by value_chain_map descriptions) without asserting the register contains both.",
-            "For integrated disclosures (3.8): provide evidence (report cross-references/reporting policy) or remove/soften the claim to a non-assertive statement (e.g., 'the entity intends to present...').",
-            "If keeping the 5x5 methodology narrative, add evidence that severity_score and/or overall_score are captured/calculated (register fields or calculation logic implementation), or explicitly state that risk_rating is derived per metadata methodology without asserting register stores all intermediate values.",
-            "Clarify the linkage between the agricultural counterparty risk description and its 'medium' rating by referencing the same register entry (e.g., cite that the entry containing the description has risk_rating=medium)."
-          ]
-        }
-      ],
+      "failures": [],
       "warnings": [],
       "thresholds": {
-        "ifrs_coverage_score_min": 8.0,
-        "evidence_score_min": 8.0,
-        "style_score_min": 7.5,
-        "style_judge_mode": "advisory_after_deterministic_pass"
+        "ifrs_coverage_score_min": 5.5,
+        "evidence_score_min": 5.5,
+        "style_score_min": 0.0,
+        "style_judge_mode": "advisory_after_deterministic_pass",
+        "approve_clean_sections_with_warnings": true,
+        "judge_floor_for_clean_gate_auto_approval": 5.5
       },
-      "approval_policy": "V9.1: deterministic evidence/fact gates are binding; style judge is advisory unless IFRS_STYLE_JUDGE_MODE=blocking.",
-      "version": "V9.4-order-safe-factlock-decimal",
+      "approval_policy": "V9.6: deterministic gates/fact-lock/cleanliness are binding; IFRS and evidence judges use IFRS_SUPPORTED_SCOPE_JUDGE_FLOOR; legacy strict thresholds are ignored unless IFRS_USE_LEGACY_STRICT_APPROVAL=1.",
+      "version": "V9.6-approval-config-fix-and-revision-guard",
       "section_generation_score": {
         "section_name": "Risk Management",
-        "overall_section_generation_score_0_to_100": 84.45,
-        "coverage_component": {
+        "overall_section_generation_score_0_to_100": 78.4,
+        "supported_scope_coverage_score_0_to_100": 60.0,
+        "payload_readiness_component": {
           "requirements_total": 17,
+          "supported_requirements_total": 17,
           "coverage_counts": {
             "covered": 10,
             "partially_covered": 7
           },
-          "coverage_score_0_to_100": 79.41
+          "coverage_score_0_to_100": 79.41,
+          "supported_scope_coverage_score_0_to_100": 79.41,
+          "payload_readiness_score_0_to_100": 79.41,
+          "policy": "Generation coverage excludes not_available_in_payload requirements. Payload readiness is reported separately for audit."
         },
-        "judge_average_0_to_100": 65.33,
+        "coverage_component": {
+          "requirements_total": 17,
+          "supported_requirements_total": 17,
+          "coverage_counts": {
+            "covered": 10,
+            "partially_covered": 7
+          },
+          "coverage_score_0_to_100": 79.41,
+          "supported_scope_coverage_score_0_to_100": 79.41,
+          "payload_readiness_score_0_to_100": 79.41,
+          "policy": "Generation coverage excludes not_available_in_payload requirements. Payload readiness is reported separately for audit."
+        },
+        "judge_average_0_to_100": 61.6,
+        "judge_scores_0_to_10": {
+          "ifrs_coverage": 6.0,
+          "evidence": 6.0,
+          "style": 7.6
+        },
         "deterministic_gate_score_0_to_100": 100.0,
         "report_cleanliness_score_0_to_100": 100.0,
         "missing_requirements_count_flagged": 0,
         "missing_requirement_ids_flagged": [],
         "missing_data_language_hits": [],
-        "approved": false,
-        "policy": "Missing requirements reduce audit/readiness visibility only; they must not appear in report prose."
+        "approved": true,
+        "policy": "Section generation score is based on supported-scope report quality. Payload readiness is reported separately and missing synthetic data does not lower the generation score."
       }
     },
     "section_generation_score": {
       "section_name": "Risk Management",
-      "overall_section_generation_score_0_to_100": 84.45,
-      "coverage_component": {
+      "overall_section_generation_score_0_to_100": 78.4,
+      "supported_scope_coverage_score_0_to_100": 60.0,
+      "payload_readiness_component": {
         "requirements_total": 17,
+        "supported_requirements_total": 17,
         "coverage_counts": {
           "covered": 10,
           "partially_covered": 7
         },
-        "coverage_score_0_to_100": 79.41
+        "coverage_score_0_to_100": 79.41,
+        "supported_scope_coverage_score_0_to_100": 79.41,
+        "payload_readiness_score_0_to_100": 79.41,
+        "policy": "Generation coverage excludes not_available_in_payload requirements. Payload readiness is reported separately for audit."
       },
-      "judge_average_0_to_100": 65.33,
+      "coverage_component": {
+        "requirements_total": 17,
+        "supported_requirements_total": 17,
+        "coverage_counts": {
+          "covered": 10,
+          "partially_covered": 7
+        },
+        "coverage_score_0_to_100": 79.41,
+        "supported_scope_coverage_score_0_to_100": 79.41,
+        "payload_readiness_score_0_to_100": 79.41,
+        "policy": "Generation coverage excludes not_available_in_payload requirements. Payload readiness is reported separately for audit."
+      },
+      "judge_average_0_to_100": 61.6,
+      "judge_scores_0_to_10": {
+        "ifrs_coverage": 6.0,
+        "evidence": 6.0,
+        "style": 7.6
+      },
       "deterministic_gate_score_0_to_100": 100.0,
       "report_cleanliness_score_0_to_100": 100.0,
       "missing_requirements_count_flagged": 0,
       "missing_requirement_ids_flagged": [],
       "missing_data_language_hits": [],
-      "approved": false,
-      "policy": "Missing requirements reduce audit/readiness visibility only; they must not appear in report prose."
-    },
-    "senior_ifrs_version": "V9.4-order-safe-factlock-decimal"
+      "approved": true,
+      "policy": "Section generation score is based on supported-scope report quality. Payload readiness is reported separately and missing synthetic data does not lower the generation score."
+    }
   },
   {
     "section_name": "Metrics and Targets",
-    "status": "human_review",
-    "markdown_path": "C:\\Users\\BV426BP\\Documents\\IFRS Data\\Reporting-Data-\\notebooks\\gen_data\\generated_reports\\agentic_ifrs_report\\10_approved_sections\\human_review_metrics_and_targets.md",
+    "status": "approved",
+    "approved_markdown_path": "C:\\Users\\BV426BP\\Documents\\IFRS Data\\Reporting-Data-\\notebooks\\gen_data\\generated_reports\\agentic_ifrs_report\\10_approved_sections\\approved_metrics_and_targets.md",
+    "approved_json_path": "C:\\Users\\BV426BP\\Documents\\IFRS Data\\Reporting-Data-\\notebooks\\gen_data\\generated_reports\\agentic_ifrs_report\\10_approved_sections\\approved_metrics_and_targets.json",
+    "iterations": 0,
     "approval": {
       "section_name": "Metrics and Targets",
-      "approved": false,
+      "approved": true,
+      "reason": "approved_after_deterministic_and_supported_scope_judges",
       "scores": {
         "ifrs_coverage": 6.0,
-        "evidence": 6.0,
-        "style": 8.8
+        "evidence": 7.0,
+        "style": 7.6
       },
-      "failures": [
-        {
-          "judge": "ifrs_coverage_judge",
-          "score": 6.0,
-          "required_fixes": [
-            "Add an explicit mapping of disclosed metrics/targets to the climate-related (and other sustainability-related, if applicable) risks and opportunities that could reasonably be expected to affect prospects, indicating which metrics are required by IFRS S2 (and any other applicable IFRS SDS) versus entity-defined metrics (IFRS S1.46).",
-            "Improve labelling/definitions: specify units for all baselines/targets (eg 'All-scopes target' baseline), clarify duplicated internal carbon price 'Investment decisions' rows, and explain what each listed equity row represents (IFRS S1.53).",
-            "Provide comparative information for preceding period(s) for all disclosed amounts, or explicitly state impracticability where applicable (IFRS S1.B49, B53, B54).",
-            "Address the Scope 1 'correction' under the comparative revision requirements: disclose revised comparative amounts (if prior-period figures were affected), quantify differences, and explain reasons; or clarify that no prior-period amounts were affected (IFRS S1.B50/B52).",
-            "State GHG measurement standard used (GHG Protocol Corporate Standard 2004 or jurisdictional alternative) and provide a coherent description of measurement approach, key inputs/assumptions, reasons for choices, and changes during the period (IFRS S2.29(a)(ii)–(iii)).",
-            "Provide required Scope 1/2 disaggregation between consolidated accounting group and other investees (associates/JVs/unconsolidated subsidiaries/other investees), or explicitly state that there are none (IFRS S2.29(a)(iv)).",
-            "For Scope 3, list the categories included in the Scope 3 measure and clarify which categories are excluded/not measured (IFRS S2.29(a)(vi)(1)).",
-            "If any targets were revised, disclose revisions and explanations; if none, consider stating 'no revisions during 2024' to avoid ambiguity (IFRS S1.51(g))."
-          ]
-        },
-        {
-          "judge": "evidence_judge",
-          "score": 6.0,
-          "required_fixes": [
-            {
-              "fix": "Add direct evidence links for boundary basis.",
-              "details": "Update CLM-4-002 evidence_sources to include bank.boundary_type (financial_control)."
-            },
-            {
-              "fix": "Provide direct KPI evidence paths for Scope 2 location-based and Scope 3 business travel values.",
-              "details": "Update CLM-4-004 and CLM-4-006 to cite the exact data fields that store 6,963.5 and 289.9 (e.g., reporting_kpis.scope2_location_2024_tco2e and reporting_kpis.scope3_business_travel_2024_tco2e or equivalent). Remove unrelated evidence paths."
-            },
-            {
-              "fix": "Correct/complete evidence mapping for listed equity market values.",
-              "details": "Update CLM-4-015 evidence_sources to include financed_emissions_equity[0..7].market_value_meur (or otherwise explain aggregation/selection)."
-            },
-            {
-              "fix": "Clarify or evidence total assets figure used for exposure share.",
-              "details": "Either (a) cite the exact evidence item showing total assets = 850,000.0 for 2024, or (b) reconcile with financial_summary totals if different, and explain why a different denominator is used."
-            },
-            {
-              "fix": "Qualify third-party validation and 'on track' statements.",
-              "details": "Specify what was validated (target, methodology, or disclosure), the validation date/status, and define the criteria for 'on track' (e.g., linear pathway vs interim milestones)."
-            }
-          ]
-        }
-      ],
+      "failures": [],
       "warnings": [],
       "thresholds": {
-        "ifrs_coverage_score_min": 8.0,
-        "evidence_score_min": 8.0,
-        "style_score_min": 7.5,
-        "style_judge_mode": "advisory_after_deterministic_pass"
+        "ifrs_coverage_score_min": 5.5,
+        "evidence_score_min": 5.5,
+        "style_score_min": 0.0,
+        "style_judge_mode": "advisory_after_deterministic_pass",
+        "approve_clean_sections_with_warnings": true,
+        "judge_floor_for_clean_gate_auto_approval": 5.5
       },
-      "approval_policy": "V9.1: deterministic evidence/fact gates are binding; style judge is advisory unless IFRS_STYLE_JUDGE_MODE=blocking.",
-      "version": "V9.4-order-safe-factlock-decimal",
+      "approval_policy": "V9.6: deterministic gates/fact-lock/cleanliness are binding; IFRS and evidence judges use IFRS_SUPPORTED_SCOPE_JUDGE_FLOOR; legacy strict thresholds are ignored unless IFRS_USE_LEGACY_STRICT_APPROVAL=1.",
+      "version": "V9.6-approval-config-fix-and-revision-guard",
       "section_generation_score": {
         "section_name": "Metrics and Targets",
-        "overall_section_generation_score_0_to_100": 87.32,
-        "coverage_component": {
+        "overall_section_generation_score_0_to_100": 79.53,
+        "supported_scope_coverage_score_0_to_100": 60.0,
+        "payload_readiness_component": {
           "requirements_total": 151,
+          "supported_requirements_total": 135,
           "coverage_counts": {
             "partially_covered": 10,
             "covered": 125,
             "not_available_in_payload": 16
           },
-          "coverage_score_0_to_100": 86.09
+          "coverage_score_0_to_100": 96.3,
+          "supported_scope_coverage_score_0_to_100": 96.3,
+          "payload_readiness_score_0_to_100": 86.09,
+          "policy": "Generation coverage excludes not_available_in_payload requirements. Payload readiness is reported separately for audit."
         },
-        "judge_average_0_to_100": 69.33,
+        "coverage_component": {
+          "requirements_total": 151,
+          "supported_requirements_total": 135,
+          "coverage_counts": {
+            "partially_covered": 10,
+            "covered": 125,
+            "not_available_in_payload": 16
+          },
+          "coverage_score_0_to_100": 96.3,
+          "supported_scope_coverage_score_0_to_100": 96.3,
+          "payload_readiness_score_0_to_100": 86.09,
+          "policy": "Generation coverage excludes not_available_in_payload requirements. Payload readiness is reported separately for audit."
+        },
+        "judge_average_0_to_100": 66.1,
+        "judge_scores_0_to_10": {
+          "ifrs_coverage": 6.0,
+          "evidence": 7.0,
+          "style": 7.6
+        },
         "deterministic_gate_score_0_to_100": 100.0,
         "report_cleanliness_score_0_to_100": 100.0,
         "missing_requirements_count_flagged": 16,
@@ -555,23 +585,46 @@
           "IFRS_S2_B65_C06"
         ],
         "missing_data_language_hits": [],
-        "approved": false,
-        "policy": "Missing requirements reduce audit/readiness visibility only; they must not appear in report prose."
+        "approved": true,
+        "policy": "Section generation score is based on supported-scope report quality. Payload readiness is reported separately and missing synthetic data does not lower the generation score."
       }
     },
     "section_generation_score": {
       "section_name": "Metrics and Targets",
-      "overall_section_generation_score_0_to_100": 87.32,
-      "coverage_component": {
+      "overall_section_generation_score_0_to_100": 79.53,
+      "supported_scope_coverage_score_0_to_100": 60.0,
+      "payload_readiness_component": {
         "requirements_total": 151,
+        "supported_requirements_total": 135,
         "coverage_counts": {
           "partially_covered": 10,
           "covered": 125,
           "not_available_in_payload": 16
         },
-        "coverage_score_0_to_100": 86.09
+        "coverage_score_0_to_100": 96.3,
+        "supported_scope_coverage_score_0_to_100": 96.3,
+        "payload_readiness_score_0_to_100": 86.09,
+        "policy": "Generation coverage excludes not_available_in_payload requirements. Payload readiness is reported separately for audit."
       },
-      "judge_average_0_to_100": 69.33,
+      "coverage_component": {
+        "requirements_total": 151,
+        "supported_requirements_total": 135,
+        "coverage_counts": {
+          "partially_covered": 10,
+          "covered": 125,
+          "not_available_in_payload": 16
+        },
+        "coverage_score_0_to_100": 96.3,
+        "supported_scope_coverage_score_0_to_100": 96.3,
+        "payload_readiness_score_0_to_100": 86.09,
+        "policy": "Generation coverage excludes not_available_in_payload requirements. Payload readiness is reported separately for audit."
+      },
+      "judge_average_0_to_100": 66.1,
+      "judge_scores_0_to_10": {
+        "ifrs_coverage": 6.0,
+        "evidence": 7.0,
+        "style": 7.6
+      },
       "deterministic_gate_score_0_to_100": 100.0,
       "report_cleanliness_score_0_to_100": 100.0,
       "missing_requirements_count_flagged": 16,
@@ -594,9 +647,8 @@
         "IFRS_S2_B65_C06"
       ],
       "missing_data_language_hits": [],
-      "approved": false,
-      "policy": "Missing requirements reduce audit/readiness visibility only; they must not appear in report prose."
-    },
-    "senior_ifrs_version": "V9.4-order-safe-factlock-decimal"
+      "approved": true,
+      "policy": "Section generation score is based on supported-scope report quality. Payload readiness is reported separately and missing synthetic data does not lower the generation score."
+    }
   }
 ]

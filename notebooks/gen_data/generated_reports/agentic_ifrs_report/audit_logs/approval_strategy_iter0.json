@@ -1,77 +1,77 @@
 {
   "section_name": "Strategy",
   "approved": false,
+  "reason": "judge_scores_below_supported_scope_floor",
   "scores": {
     "ifrs_coverage": 6.0,
-    "evidence": 6.0,
-    "style": 7.4
+    "evidence": 4.0,
+    "style": 7.2
   },
   "failures": [
     {
-      "judge": "ifrs_coverage_judge",
-      "score": 6.0,
-      "required_fixes": [
-        "Add explicit definitions for short term, medium term and long term (eg, year ranges) and explain how these align with internal strategic planning and financial planning horizons (budget cycle, ICAAP horizon, portfolio planning, etc.).",
-        "Disclose current-period (reporting period) financial effects attributable to climate-related risks and opportunities on financial position, financial performance and cash flows (qualitative and, where possible, quantitative), rather than only providing general financial metrics.",
-        "Describe planned sources of funding to implement the climate strategy (eg, internal capital generation, funding programmes, green/transition instruments, balance-sheet reallocation).",
-        "Include an explicit statement that the bank referred to and considered the applicability of the IFRS S2 Industry-based Guidance on Implementing IFRS S2 (for the banking industry), and briefly indicate how it informed identification of risks/opportunities."
-      ]
-    },
-    {
       "judge": "evidence_judge",
-      "score": 6.0,
+      "score": 4.0,
+      "threshold": 5.5,
       "required_fixes": [
-        "For the capex/opex paragraph, either (a) provide evidence/traceability showing how the reported climate capex/opex is allocated to the cited mechanisms/products (e.g., breakdown by program, accounting/tagging policy, internal cost codes, reconciliation), or (b) soften the language to avoid attributing those totals to specific initiatives (e.g., 'may support' / 'includes spending on' only if evidenced).",
-        "Define 'short term', 'medium term', and 'long term' (e.g., in years) and apply consistently across risks, opportunities, and scenario conclusions.",
-        "Where resilience conclusions reference Pillar 2 thresholds or capital buffers, disclose the relevant threshold/buffer metric used and the modeled loss/capital impact (or clearly state that the assessment is qualitative and on what basis).",
-        "For claims of alignment with REPowerEU/national targets, add the alignment criteria/method (taxonomy, eligibility rules, mapping) or remove/qualify the alignment statement.",
-        "For qualitative terms like 'material' and 'acceptable', add quantitative context (ranges, impacts, KPIs) or define the qualitative scale used."
+        "Add explicit evidence references (source documents/paths) for STR-014 (sustainable bond underwriting short-term opportunity) or remove the 'evidenced' wording.",
+        "Provide evidence sources for the quantified revenue-at-risk figure (€9,214.0), including scenario definition, calculation method, units, and why it is classified as 'medium term'.",
+        "Cite audited financial statements/management accounts (or equivalent) for the 2022–2024 capex/opex/revenue/assets/Tier 1 capital table, or remove the numbers.",
+        "Cite the financed emissions inventory methodology/output and target-setting documentation for the 2024 financed emissions figure, progress percentages, and intensity target; otherwise remove or qualify them as illustrative.",
+        "For Pillar 2 threshold-related statements, add the relevant threshold values/definitions and the metric being compared, or rephrase to a non-threshold qualitative statement."
       ]
     }
   ],
-  "warnings": [
-    {
-      "judge": "style_judge",
-      "score": 7.4,
-      "required_fixes": [
-        "Introduce numbered headings aligned to IFRS pillars and subsections (e.g., '2. Strategy', '2.1 Business model and value-chain exposure', '2.2 Climate-related risks and opportunities', '2.3 Effects on strategy and decision-making', '2.4 Scenario analysis and resilience of strategy', '2.5 Financial planning and resource allocation', '2.6 Strategic indicators linked to climate objectives').",
-        "Add brief closing connectivity sentences to each major subsection that link the content to related sections (e.g., Governance, Risk Management, Metrics and Targets) and, where relevant, to financial statements using generic cross-reference placeholders.",
-        "Reframe selected sentences to use standards-oriented verbs and clearer responsibility language (e.g., 'the bank assesses', 'the analysis indicates', 'scenario results suggest') and, where appropriate, label forward-looking content explicitly as such.",
-        "Shorten or split the longest sentences in the scenario methodology subsection and other dense areas to improve readability, keeping to short-to-medium length and single-idea sentences.",
-        "Add table numbers and descriptive captions to all tables (e.g., 'Table 2.1: Revenue-at-risk from climate-related scenarios for the banking book', 'Table 2.2: Climate-related expenditure by reporting year', 'Table 2.3: Financial capacity indicators used in climate planning', 'Table 2.4: Strategic climate indicators and target progress') and reference them explicitly in the surrounding narrative.",
-        "Enhance metric and target tables with brief traceability metadata where feasible (e.g., boundary, definition/source notes, and linkage to other report sections) in line with the evidence_and_traceability_rules.",
-        "Add a concise 'strategy-at-a-glance' or value-chain mapping table or figure that links key climate-related risks and opportunities to value-chain segments, time horizons, and financial statement areas, to better align with the preferred table_usage and figure_usage.",
-        "Insert a short paragraph or compact table that explicitly bridges from the materiality assessment outputs (assumed to be in a separate section) to the strategic themes and actions described here, clarifying how material climate topics inform strategic priorities and resource allocation."
-      ],
-      "advisory": true
-    }
-  ],
+  "warnings": [],
   "thresholds": {
-    "ifrs_coverage_score_min": 8.0,
-    "evidence_score_min": 8.0,
-    "style_score_min": 7.5,
-    "style_judge_mode": "advisory_after_deterministic_pass"
+    "ifrs_coverage_score_min": 5.5,
+    "evidence_score_min": 5.5,
+    "style_score_min": 0.0,
+    "style_judge_mode": "advisory_after_deterministic_pass",
+    "approve_clean_sections_with_warnings": true,
+    "judge_floor_for_clean_gate_auto_approval": 5.5
   },
-  "approval_policy": "V9.1: deterministic evidence/fact gates are binding; style judge is advisory unless IFRS_STYLE_JUDGE_MODE=blocking.",
-  "version": "V9.4-order-safe-factlock-decimal",
+  "approval_policy": "V9.6: deterministic gates/fact-lock/cleanliness are binding; IFRS and evidence judges use IFRS_SUPPORTED_SCOPE_JUDGE_FLOOR; legacy strict thresholds are ignored unless IFRS_USE_LEGACY_STRICT_APPROVAL=1.",
+  "version": "V9.6-approval-config-fix-and-revision-guard",
   "section_generation_score": {
     "section_name": "Strategy",
-    "overall_section_generation_score_0_to_100": 86.54,
-    "coverage_component": {
+    "overall_section_generation_score_0_to_100": 76.05,
+    "supported_scope_coverage_score_0_to_100": 60.0,
+    "payload_readiness_component": {
       "requirements_total": 70,
+      "supported_requirements_total": 70,
       "coverage_counts": {
         "covered": 54,
         "partially_covered": 16
       },
-      "coverage_score_0_to_100": 88.57
+      "coverage_score_0_to_100": 88.57,
+      "supported_scope_coverage_score_0_to_100": 88.57,
+      "payload_readiness_score_0_to_100": 88.57,
+      "policy": "Generation coverage excludes not_available_in_payload requirements. Payload readiness is reported separately for audit."
     },
-    "judge_average_0_to_100": 64.67,
+    "coverage_component": {
+      "requirements_total": 70,
+      "supported_requirements_total": 70,
+      "coverage_counts": {
+        "covered": 54,
+        "partially_covered": 16
+      },
+      "coverage_score_0_to_100": 88.57,
+      "supported_scope_coverage_score_0_to_100": 88.57,
+      "payload_readiness_score_0_to_100": 88.57,
+      "policy": "Generation coverage excludes not_available_in_payload requirements. Payload readiness is reported separately for audit."
+    },
+    "judge_average_0_to_100": 52.2,
+    "judge_scores_0_to_10": {
+      "ifrs_coverage": 6.0,
+      "evidence": 4.0,
+      "style": 7.2
+    },
     "deterministic_gate_score_0_to_100": 100.0,
     "report_cleanliness_score_0_to_100": 100.0,
     "missing_requirements_count_flagged": 0,
     "missing_requirement_ids_flagged": [],
     "missing_data_language_hits": [],
     "approved": false,
-    "policy": "Missing requirements reduce audit/readiness visibility only; they must not appear in report prose."
+    "policy": "Section generation score is based on supported-scope report quality. Payload readiness is reported separately and missing synthetic data does not lower the generation score."
   }
 }

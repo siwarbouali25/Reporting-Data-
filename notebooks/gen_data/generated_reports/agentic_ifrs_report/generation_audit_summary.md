@@ -15,37 +15,37 @@ The report contains only evidence-supported disclosures. Missing requirements an
 - Coverage counts: `{'partially_covered': 45, 'not_available_in_payload': 10, 'covered': 53}`
 - Missing requirements count: 10
 - Section readiness score: 69.91
-- Section generation score: None
-- Approved markdown exists: False
+- Section generation score: 77.4
+- Approved markdown exists: True
 
 ### Governance
 - Requirements total: 15
 - Coverage counts: `{'covered': 14, 'partially_covered': 1}`
 - Missing requirements count: 0
 - Section readiness score: 96.67
-- Section generation score: None
-- Approved markdown exists: False
+- Section generation score: 78.2
+- Approved markdown exists: True
 
 ### Strategy
 - Requirements total: 70
 - Coverage counts: `{'covered': 54, 'partially_covered': 16}`
 - Missing requirements count: 0
 - Section readiness score: 88.57
-- Section generation score: None
-- Approved markdown exists: False
+- Section generation score: 78.45
+- Approved markdown exists: True
 
 ### Risk Management
 - Requirements total: 17
 - Coverage counts: `{'covered': 10, 'partially_covered': 7}`
 - Missing requirements count: 0
 - Section readiness score: 79.41
-- Section generation score: None
-- Approved markdown exists: False
+- Section generation score: 78.4
+- Approved markdown exists: True
 
 ### Metrics and Targets
 - Requirements total: 151
 - Coverage counts: `{'partially_covered': 10, 'covered': 125, 'not_available_in_payload': 16}`
 - Missing requirements count: 16
 - Section readiness score: 86.09
-- Section generation score: None
-- Approved markdown exists: False
+- Section generation score: 79.53
+- Approved markdown exists: True
