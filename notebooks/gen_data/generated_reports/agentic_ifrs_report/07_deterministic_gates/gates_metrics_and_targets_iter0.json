@@ -29,6 +29,12 @@
       "warnings": []
     },
     {
+      "gate_name": "draft_prose_polish_no_raw_fields_no_booleans_no_unavailable_language",
+      "passed": true,
+      "failures": [],
+      "warnings": []
+    },
+    {
       "gate_name": "claims_integrity",
       "passed": false,
       "failures": [
@@ -52,7 +58,7 @@
           {
             "claim_id": "MT-001",
             "claim_text": "No report content was provided for the \"Metrics and Targets\" section (draft_markdown is empty), so no section-specific metrics, targets, definitions, calculations, sources, or comparative disclosures can be evidenced.",
-            "claim_type": "meta",
+            "claim_type": "meta/absence-of-evidence",
             "entities": [
               "Metrics and Targets section"
             ],
@@ -91,7 +97,7 @@
               "IFRS_S2_28_C01"
             ],
             "supported": false,
-            "support_notes": "Because the section text is missing, none of the listed IFRS S1/S2 metrics-and-targets disclosure requirements can be mapped to evidenced disclosures in this section. Provide the generated report section text to extract and assess concrete claims.",
+            "support_notes": "Because the section text is empty, none of the listed IFRS S1/S2 metrics-and-targets disclosure requirements can be assessed as met based on this input. Provide the generated report section text to extract and test specific claims (metrics, targets, periods, base years, performance vs targets, sources, calculation methods, third-party validation, and comparative information).",
             "invalid_evidence_sources_removed": [
               "Provided context: draft_markdown is empty for section \"Metrics and Targets\""
             ]
@@ -123,5 +129,5 @@
       "warnings": []
     }
   ],
-  "summary": "- draft_structural_quality_no_templates_no_absence_language: FAIL | failures=1 | warnings=0\n  failure: {'type': 'too_short_given_available_evidence', 'word_count': 0, 'evidence_path_count': 179}\n- draft_depth_quality_no_truncation: FAIL | failures=1 | warnings=0\n  failure: {'type': 'section_too_short_or_truncated', 'word_count': 0, 'minimum_word_count': 900, 'evidence_path_count': 179, 'required_fix': 'Expand the section using existing evidence only; do not add unsupported facts or missing-data language.'}\n- claims_integrity: FAIL | failures=1 | warnings=1\n  failure: {'claim_id': 'MT-001', 'issue': 'claim_marked_unsupported', 'claim': 'No report content was provided for the \"Metrics and Targets\" section (draft_markdown is empty), so no section-specific metrics, targets, definitions, calculations, sources, or comparative disclosures can be evidenced.'}\n  warning: {'claim_id': 'MT-001', 'issue': 'no_evidence_source_after_repair', 'claim': 'No report content was provided for the \"Metrics and Targets\" section (draft_markdown is empty), so no section-specific metrics, targets, definitions, calculations, sources, or comparative disclosures can be evidenced.'}\n- factlock_numbers_entities: PASS | failures=0 | warnings=0\n- reference_firewall: PASS | failures=0 | warnings=0\n- report_cleanliness_no_missing_payload_language: PASS | failures=0 | warnings=0"
+  "summary": "- draft_structural_quality_no_templates_no_absence_language: FAIL | failures=1 | warnings=0\n  failure: {'type': 'too_short_given_available_evidence', 'word_count': 0, 'evidence_path_count': 179}\n- draft_depth_quality_no_truncation: FAIL | failures=1 | warnings=0\n  failure: {'type': 'section_too_short_or_truncated', 'word_count': 0, 'minimum_word_count': 900, 'evidence_path_count': 179, 'required_fix': 'Expand the section using existing evidence only; do not add unsupported facts or missing-data language.'}\n- draft_prose_polish_no_raw_fields_no_booleans_no_unavailable_language: PASS | failures=0 | warnings=0\n- claims_integrity: FAIL | failures=1 | warnings=1\n  failure: {'claim_id': 'MT-001', 'issue': 'claim_marked_unsupported', 'claim': 'No report content was provided for the \"Metrics and Targets\" section (draft_markdown is empty), so no section-specific metrics, targets, definitions, calculations, sources, or comparative disclosures can be evidenced.'}\n  warning: {'claim_id': 'MT-001', 'issue': 'no_evidence_source_after_repair', 'claim': 'No report content was provided for the \"Metrics and Targets\" section (draft_markdown is empty), so no section-specific metrics, targets, definitions, calculations, sources, or comparative disclosures can be evidenced.'}\n- factlock_numbers_entities: PASS | failures=0 | warnings=0\n- reference_firewall: PASS | failures=0 | warnings=0\n- report_cleanliness_no_missing_payload_language: PASS | failures=0 | warnings=0"
 }

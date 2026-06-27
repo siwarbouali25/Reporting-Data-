@@ -1,66 +1,1274 @@
 {
   "section_name": "Strategy",
   "approved": false,
-  "scores": {
-    "ifrs_coverage": 6.0,
-    "evidence": 7.0,
-    "style": 7.6
-  },
-  "failures": [
-    {
-      "judge": "ifrs_coverage_judge",
-      "score": 6.0,
-      "required_fixes": [
-        "Add explicit definitions of short-, medium- and long-term and link them to internal strategic/financial planning horizons (IFRS S1.30(c)).",
-        "Disclose current-period financial effects attributable to climate-related risks/opportunities (qualitative + quantitative), explicitly linking to financial position, financial performance and cash flows (IFRS S1.34(a), S1.35(a); IFRS S2.9(d) current-period component).",
-        "Strengthen anticipated financial effects disclosure across short/medium/long term with clearer linkage to identified climate risks/opportunities and how they are factored into financial planning (IFRS S1.29(d), S1.34(b); IFRS S2.9(d) forward-looking component).",
-        "Disclose planned sources of funding to implement the climate-related strategy/transition actions (IFRS S1.35(c)(ii)).",
-        "Add process statements for anticipated financial effects preparation: (i) use of all reasonable and supportable information available at reporting date without undue cost/effort and (ii) approach commensurate with skills/capabilities/resources (IFRS S1.37(a)–(b))."
-      ]
-    },
-    {
-      "judge": "evidence_judge",
-      "score": 7.0,
-      "required_fixes": [
-        {
-          "fix": "For the ‘changed since prior period’ risk-register statement, add what changed (e.g., rating moved from low→medium, new control, exposure increase), and cite/point to the prior-period baseline (date/report section) or include a brief comparator table."
-        },
-        {
-          "fix": "For the EUR 9,214.0m revenue-at-risk figure, specify the scenario ID/name, time horizon definition (what ‘medium term’ means), scope, and calculation approach consistent with SCN0001 disclosure."
-        },
-        {
-          "fix": "For Pillar 2 threshold claims, disclose the relevant threshold metric(s) and either the modeled loss amount/range or a clear qualitative basis plus cross-reference to where the quantitative comparison is disclosed."
-        },
-        {
-          "fix": "For ‘material’ and ‘material capital consumption’ language, define materiality (quantitative or governance-based) and provide at least ranges/ordering or sensitivity results to support the conclusion."
+  "reason": "deterministic_gates_failed",
+  "required_fixes": {
+    "section_name": "Strategy",
+    "passed": false,
+    "gates": [
+      {
+        "gate_name": "draft_structural_quality_no_templates_no_absence_language",
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      {
+        "gate_name": "draft_depth_quality_no_truncation",
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      {
+        "gate_name": "draft_prose_polish_no_raw_fields_no_booleans_no_unavailable_language",
+        "passed": true,
+        "failures": [],
+        "warnings": []
+      },
+      {
+        "gate_name": "claims_integrity",
+        "passed": false,
+        "failures": [
+          {
+            "claim_id": "STR-034",
+            "issue": "claim_marked_unsupported",
+            "claim": "Time horizons are used to distinguish when effects could reasonably be expected to occur, but the section does not define short, medium and long term or link these definitions to planning horizons."
+          }
+        ],
+        "warnings": [],
+        "claim_count": 34,
+        "claims_register_normalized": {
+          "section_name": "Strategy",
+          "claims": [
+            {
+              "claim_id": "STR-001",
+              "claim_text": "The bank identifies climate-related risks spanning physical and transition drivers that could reasonably be expected to affect its prospects.",
+              "claim_type": "risk_identification",
+              "entities": [
+                "bank"
+              ],
+              "numbers": [],
+              "dates": [],
+              "evidence_sources": [
+                "climate_scenarios[7].resilience_assessment",
+                "climate_scenarios[8].resilience_assessment",
+                "climate_scenarios[9].resilience_assessment"
+              ],
+              "requirement_ids": [
+                "IFRS_S1_29_C01",
+                "IFRS_S1_30_C01"
+              ],
+              "supported": true,
+              "support_notes": "Explicit statement that risks spanning physical and transition drivers are identified and expected to affect prospects.",
+              "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+              "repaired_evidence_sources": [
+                "climate_scenarios[9].resilience_assessment",
+                "climate_scenarios[8].resilience_assessment",
+                "climate_scenarios[7].resilience_assessment"
+              ],
+              "invalid_evidence_sources_removed": [
+                "draft_markdown: 1) Climate-related risks and opportunities and their time horizons; Identified climate-related risks"
+              ]
+            },
+            {
+              "claim_id": "STR-002",
+              "claim_text": "Physical risk: mortgage collateral in flood-prone zones faces rising acute physical risk; property damage and devaluation could impair collateral coverage; linked to scenario SCN0009; unchanged since the prior period.",
+              "claim_type": "risk_detail",
+              "entities": [
+                "bank",
+                "commercial mortgage collateral",
+                "residential mortgage collateral"
+              ],
+              "numbers": [
+                "SCN0009"
+              ],
+              "dates": [],
+              "evidence_sources": [
+                "climate_risk_register[0].risk_description",
+                "climate_risk_register[8].risk_description",
+                "climate_scenarios[17].resilience_assessment"
+              ],
+              "requirement_ids": [
+                "IFRS_S1_29_C01",
+                "IFRS_S1_30_C01"
+              ],
+              "supported": true,
+              "support_notes": "Risk description includes transmission channel, scenario reference, and change vs prior period.",
+              "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+              "repaired_evidence_sources": [
+                "climate_risk_register[8].risk_description",
+                "climate_risk_register[0].risk_description",
+                "climate_scenarios[17].resilience_assessment"
+              ],
+              "invalid_evidence_sources_removed": [
+                "draft_markdown: Identified climate-related risks - Physical risk — mortgage book flood exposure"
+              ]
+            },
+            {
+              "claim_id": "STR-003",
+              "claim_text": "Physical risk: wildfire exposure in the southern portfolio is rated medium and linked to scenario SCN0007; risk rating uses a 5x5 matrix with likelihood×severity and thresholds (1–2 low, 3–6 medium, 8–12 high, 15–25 critical).",
+              "claim_type": "risk_detail",
+              "entities": [
+                "bank",
+                "southern portfolio"
+              ],
+              "numbers": [
+                "1-2",
+                "15-25",
+                "3-6",
+                "5x5",
+                "8-12",
+                "SCN0007"
+              ],
+              "dates": [],
+              "evidence_sources": [
+                "climate_scenarios[16].resilience_assessment",
+                "climate_scenarios[17].resilience_assessment",
+                "metadata.risk_rating_methodology"
+              ],
+              "requirement_ids": [
+                "IFRS_S1_29_C01",
+                "IFRS_S1_30_C01"
+              ],
+              "supported": true,
+              "support_notes": "Contains explicit rating, methodology, and scenario linkage.",
+              "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+              "repaired_evidence_sources": [
+                "metadata.risk_rating_methodology",
+                "climate_scenarios[17].resilience_assessment",
+                "climate_scenarios[16].resilience_assessment"
+              ],
+              "invalid_evidence_sources_removed": [
+                "draft_markdown: Identified climate-related risks - Physical risk — wildfire exposure in southern portfolio"
+              ]
+            },
+            {
+              "claim_id": "STR-004",
+              "claim_text": "Transition risk: building energy performance regulation may require costly retrofits for low-EPC mortgage collateral, reducing values and increasing LTV; rated medium; linked to scenario SCN0011.",
+              "claim_type": "risk_detail",
+              "entities": [
+                "bank",
+                "mortgage collateral"
+              ],
+              "numbers": [
+                "SCN0011"
+              ],
+              "dates": [],
+              "evidence_sources": [
+                "climate_risk_register[6].risk_description",
+                "climate_risk_register[9].risk_description",
+                "climate_scenarios[9].resilience_assessment"
+              ],
+              "requirement_ids": [
+                "IFRS_S1_29_C01",
+                "IFRS_S1_30_C01"
+              ],
+              "supported": true,
+              "support_notes": "Includes mechanism (retrofits/value/LTV), rating, and scenario reference.",
+              "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+              "repaired_evidence_sources": [
+                "climate_risk_register[9].risk_description",
+                "climate_risk_register[6].risk_description",
+                "climate_scenarios[9].resilience_assessment"
+              ],
+              "invalid_evidence_sources_removed": [
+                "draft_markdown: Identified climate-related risks - Transition risk — building energy performance regulation"
+              ]
+            },
+            {
+              "claim_id": "STR-005",
+              "claim_text": "Stranded assets risk: demand shifts away from fossil fuels could strand reserves and assets held by oil, gas and coal counterparties, reducing their enterprise value.",
+              "claim_type": "risk_detail",
+              "entities": [
+                "bank",
+                "coal counterparties",
+                "gas counterparties",
+                "oil counterparties"
+              ],
+              "numbers": [],
+              "dates": [],
+              "evidence_sources": [
+                "climate_risk_register[2].risk_description",
+                "climate_scenarios[8].resilience_assessment",
+                "climate_scenarios[9].resilience_assessment"
+              ],
+              "requirement_ids": [
+                "IFRS_S1_29_C01",
+                "IFRS_S1_30_C01"
+              ],
+              "supported": true,
+              "support_notes": "Clear stranded asset risk narrative affecting counterparties.",
+              "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+              "repaired_evidence_sources": [
+                "climate_risk_register[2].risk_description",
+                "climate_scenarios[9].resilience_assessment",
+                "climate_scenarios[8].resilience_assessment"
+              ],
+              "invalid_evidence_sources_removed": [
+                "draft_markdown: Identified climate-related risks - Stranded assets — fossil fuel sector exposure"
+              ]
+            },
+            {
+              "claim_id": "STR-006",
+              "claim_text": "Carbon pricing and policy tightening (EU ETS and national carbon pricing) raise operating costs for carbon-intensive borrowers, increasing default probability in cement, steel and chemicals; linked to scenario SCN0007; changed since the prior period.",
+              "claim_type": "risk_detail",
+              "entities": [
+                "EU ETS",
+                "bank",
+                "cement",
+                "chemicals",
+                "steel"
+              ],
+              "numbers": [
+                "SCN0007"
+              ],
+              "dates": [],
+              "evidence_sources": [
+                "climate_risk_register[3].risk_description",
+                "climate_scenarios[16].resilience_assessment",
+                "climate_scenarios[17].resilience_assessment"
+              ],
+              "requirement_ids": [
+                "IFRS_S1_29_C01",
+                "IFRS_S1_30_C01"
+              ],
+              "supported": true,
+              "support_notes": "Includes sectors, transmission channel (costs/default probability), scenario link, and change flag.",
+              "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+              "repaired_evidence_sources": [
+                "climate_risk_register[3].risk_description",
+                "climate_scenarios[17].resilience_assessment",
+                "climate_scenarios[16].resilience_assessment"
+              ],
+              "invalid_evidence_sources_removed": [
+                "draft_markdown: Identified climate-related risks - Carbon pricing and policy tightening"
+              ]
+            },
+            {
+              "claim_id": "STR-007",
+              "claim_text": "Technology transition risk: rapid electrification could strand internal-combustion vehicle manufacturers and suppliers in the lending book; linked to scenario SCN0007.",
+              "claim_type": "risk_detail",
+              "entities": [
+                "bank",
+                "internal-combustion vehicle manufacturers",
+                "suppliers"
+              ],
+              "numbers": [
+                "SCN0007"
+              ],
+              "dates": [],
+              "evidence_sources": [
+                "climate_risk_register[13].risk_description",
+                "climate_risk_register[4].risk_description",
+                "climate_scenarios[9].resilience_assessment"
+              ],
+              "requirement_ids": [
+                "IFRS_S1_29_C01",
+                "IFRS_S1_30_C01"
+              ],
+              "supported": true,
+              "support_notes": "Explicit risk statement with scenario linkage.",
+              "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+              "repaired_evidence_sources": [
+                "climate_risk_register[4].risk_description",
+                "climate_risk_register[13].risk_description",
+                "climate_scenarios[9].resilience_assessment"
+              ],
+              "invalid_evidence_sources_removed": [
+                "draft_markdown: Identified climate-related risks - Technology transition risk in automotive"
+              ]
+            },
+            {
+              "claim_id": "STR-008",
+              "claim_text": "Reputational and client franchise risk: stakeholder and NGO scrutiny of financed emissions and fossil financing could damage brand and trigger client attrition; changed since the prior period.",
+              "claim_type": "risk_detail",
+              "entities": [
+                "NGOs",
+                "bank",
+                "stakeholders"
+              ],
+              "numbers": [],
+              "dates": [],
+              "evidence_sources": [
+                "climate_risk_register[14].risk_description",
+                "climate_risk_register[1].risk_description",
+                "climate_scenarios[17].resilience_assessment"
+              ],
+              "requirement_ids": [
+                "IFRS_S1_29_C01",
+                "IFRS_S1_30_C01"
+              ],
+              "supported": true,
+              "support_notes": "Explicit reputational risk and change vs prior period.",
+              "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+              "repaired_evidence_sources": [
+                "climate_risk_register[1].risk_description",
+                "climate_risk_register[14].risk_description",
+                "climate_scenarios[17].resilience_assessment"
+              ],
+              "invalid_evidence_sources_removed": [
+                "draft_markdown: Identified climate-related risks - Reputational and client franchise risk"
+              ]
+            },
+            {
+              "claim_id": "STR-009",
+              "claim_text": "Physical risk affecting agricultural counterparties: chronic heat and shifting precipitation reduce yields and weaken repayment capacity over the medium term; linked to scenario SCN0005.",
+              "claim_type": "risk_detail",
+              "entities": [
+                "agricultural counterparties",
+                "bank"
+              ],
+              "numbers": [
+                "SCN0005"
+              ],
+              "dates": [],
+              "evidence_sources": [
+                "climate_risk_register[10].risk_description",
+                "climate_risk_register[7].risk_description",
+                "climate_scenarios[17].resilience_assessment"
+              ],
+              "requirement_ids": [
+                "IFRS_S1_29_C01",
+                "IFRS_S1_30_C01",
+                "IFRS_S1_30_C02"
+              ],
+              "supported": true,
+              "support_notes": "Includes time horizon (medium term) and scenario linkage.",
+              "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+              "repaired_evidence_sources": [
+                "climate_risk_register[7].risk_description",
+                "climate_risk_register[10].risk_description",
+                "climate_scenarios[17].resilience_assessment"
+              ],
+              "invalid_evidence_sources_removed": [
+                "draft_markdown: Identified climate-related risks - Physical risk affecting agricultural counterparties"
+              ]
+            },
+            {
+              "claim_id": "STR-010",
+              "claim_text": "The bank identifies climate-related opportunities expected to affect prospects through revenue growth and client demand, including green loan growth (OPP-BANK01-01), sustainable bond underwriting (OPP-BANK01-02), transition advisory (OPP-BANK01-03), and renewable energy project finance (OPP-BANK01-04).",
+              "claim_type": "opportunity_identification",
+              "entities": [
+                "bank"
+              ],
+              "numbers": [
+                "OPP-BANK01-01",
+                "OPP-BANK01-02",
+                "OPP-BANK01-03",
+                "OPP-BANK01-04"
+              ],
+              "dates": [],
+              "evidence_sources": [
+                "climate_opportunities[1].opportunity_id",
+                "climate_opportunities[2].opportunity_id",
+                "climate_opportunities[3].opportunity_id"
+              ],
+              "requirement_ids": [
+                "IFRS_S1_29_C01",
+                "IFRS_S1_30_C01"
+              ],
+              "supported": true,
+              "support_notes": "Opportunity list is explicitly provided with IDs and descriptions.",
+              "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+              "repaired_evidence_sources": [
+                "climate_opportunities[3].opportunity_id",
+                "climate_opportunities[2].opportunity_id",
+                "climate_opportunities[1].opportunity_id"
+              ],
+              "invalid_evidence_sources_removed": [
+                "draft_markdown: Identified climate-related opportunities"
+              ]
+            },
+            {
+              "claim_id": "STR-011",
+              "claim_text": "Green loan growth (OPP-BANK01-01) is identified as a medium-term opportunity; sustainable bond underwriting (OPP-BANK01-02) is identified as a short-term opportunity.",
+              "claim_type": "time_horizon",
+              "entities": [
+                "bank"
+              ],
+              "numbers": [
+                "OPP-BANK01-01",
+                "OPP-BANK01-02"
+              ],
+              "dates": [],
+              "evidence_sources": [
+                "climate_opportunities[0].opportunity_id",
+                "climate_opportunities[1].opportunity_id",
+                "climate_scenarios[9].resilience_assessment"
+              ],
+              "requirement_ids": [
+                "IFRS_S1_30_C02"
+              ],
+              "supported": true,
+              "support_notes": "Explicit short-term/medium-term labels are provided for two opportunities.",
+              "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+              "repaired_evidence_sources": [
+                "climate_opportunities[1].opportunity_id",
+                "climate_opportunities[0].opportunity_id",
+                "climate_scenarios[9].resilience_assessment"
+              ],
+              "invalid_evidence_sources_removed": [
+                "draft_markdown: Identified climate-related opportunities - Green loan growth; Sustainable bond underwriting"
+              ]
+            },
+            {
+              "claim_id": "STR-012",
+              "claim_text": "Renewable energy project finance opportunity includes solar, wind and battery storage infrastructure aligned with REPowerEU and national renewable energy targets.",
+              "claim_type": "opportunity_detail",
+              "entities": [
+                "REPowerEU",
+                "bank",
+                "battery storage",
+                "solar",
+                "wind"
+              ],
+              "numbers": [],
+              "dates": [],
+              "evidence_sources": [
+                "bank.target_intensity_tco2e_per_meur",
+                "climate_opportunities[3].description",
+                "climate_scenarios[9].resilience_assessment"
+              ],
+              "requirement_ids": [
+                "IFRS_S1_29_C01",
+                "IFRS_S1_30_C01"
+              ],
+              "supported": true,
+              "support_notes": "Explicit alignment and technology types are stated.",
+              "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+              "repaired_evidence_sources": [
+                "climate_opportunities[3].description",
+                "bank.target_intensity_tco2e_per_meur",
+                "climate_scenarios[9].resilience_assessment"
+              ],
+              "invalid_evidence_sources_removed": [
+                "draft_markdown: Identified climate-related opportunities - Renewable energy project finance"
+              ]
+            },
+            {
+              "claim_id": "STR-013",
+              "claim_text": "Climate-related effects are concentrated predominantly in the financed portfolio and client activities; the bank maps climate-related risk across its value chain distinguishing own operations, upstream suppliers, downstream customers and financing counterparties.",
+              "claim_type": "business_model_value_chain",
+              "entities": [
+                "bank",
+                "financed portfolio",
+                "value chain"
+              ],
+              "numbers": [],
+              "dates": [],
+              "evidence_sources": [
+                "climate_scenarios[7].resilience_assessment",
+                "climate_scenarios[8].resilience_assessment",
+                "climate_scenarios[9].resilience_assessment"
+              ],
+              "requirement_ids": [
+                "IFRS_S1_29_C02",
+                "IFRS_S1_32_C01"
+              ],
+              "supported": true,
+              "support_notes": "Direct statements about concentration and mapping approach.",
+              "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+              "repaired_evidence_sources": [
+                "climate_scenarios[9].resilience_assessment",
+                "climate_scenarios[8].resilience_assessment",
+                "climate_scenarios[7].resilience_assessment"
+              ],
+              "invalid_evidence_sources_removed": [
+                "draft_markdown: 2) Effects on the business model and value chain"
+              ]
+            },
+            {
+              "claim_id": "STR-014",
+              "claim_text": "Value chain mapping flags own operations as material, including a node \"Corporate fleet & business travel\", and highlights financing counterparties as multiple nodes where climate-related risks are concentrated.",
+              "claim_type": "concentration",
+              "entities": [
+                "Corporate fleet & business travel",
+                "bank",
+                "financing counterparties",
+                "own operations"
+              ],
+              "numbers": [],
+              "dates": [],
+              "evidence_sources": [
+                "climate_scenarios[8].resilience_assessment",
+                "climate_scenarios[9].resilience_assessment",
+                "value_chain_map[1].node_name"
+              ],
+              "requirement_ids": [
+                "IFRS_S1_29_C02",
+                "IFRS_S1_32_C02"
+              ],
+              "supported": true,
+              "support_notes": "Explicit concentration locations and materiality flag are stated.",
+              "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+              "repaired_evidence_sources": [
+                "value_chain_map[1].node_name",
+                "climate_scenarios[9].resilience_assessment",
+                "climate_scenarios[8].resilience_assessment"
+              ],
+              "invalid_evidence_sources_removed": [
+                "draft_markdown: Concentration of climate-related risks across the value chain"
+              ]
+            },
+            {
+              "claim_id": "STR-015",
+              "claim_text": "The bank’s reporting boundary for these strategic considerations is aligned to a financial control boundary.",
+              "claim_type": "boundary",
+              "entities": [
+                "bank"
+              ],
+              "numbers": [],
+              "dates": [],
+              "evidence_sources": [
+                "climate_scenarios[15].resilience_assessment",
+                "climate_scenarios[16].resilience_assessment",
+                "climate_scenarios[17].resilience_assessment"
+              ],
+              "requirement_ids": [
+                "IFRS_S1_29_C02"
+              ],
+              "supported": true,
+              "support_notes": "Boundary alignment is explicitly stated, supporting interpretation of business model/value chain scope.",
+              "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+              "repaired_evidence_sources": [
+                "climate_scenarios[17].resilience_assessment",
+                "climate_scenarios[16].resilience_assessment",
+                "climate_scenarios[15].resilience_assessment"
+              ],
+              "invalid_evidence_sources_removed": [
+                "draft_markdown: Effects on the business model - final sentence"
+              ]
+            },
+            {
+              "claim_id": "STR-016",
+              "claim_text": "Strategic response includes portfolio rebalancing through green loan growth and client engagement on transition plans to reduce high-carbon sector concentration over the medium term under orderly transition scenarios.",
+              "claim_type": "strategy_response",
+              "entities": [
+                "bank"
+              ],
+              "numbers": [],
+              "dates": [],
+              "evidence_sources": [
+                "climate_scenarios[3].resilience_assessment",
+                "climate_scenarios[4].resilience_assessment",
+                "climate_scenarios[5].resilience_assessment"
+              ],
+              "requirement_ids": [
+                "IFRS_S1_29_C03",
+                "IFRS_S1_33_C01"
+              ],
+              "supported": true,
+              "support_notes": "Explicit strategic response and time horizon linkage are stated.",
+              "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+              "repaired_evidence_sources": [
+                "climate_scenarios[5].resilience_assessment",
+                "climate_scenarios[4].resilience_assessment",
+                "climate_scenarios[3].resilience_assessment"
+              ],
+              "invalid_evidence_sources_removed": [
+                "draft_markdown: Strategic response themes - Portfolio rebalancing through green loan growth and client engagement"
+              ]
+            },
+            {
+              "claim_id": "STR-017",
+              "claim_text": "Under disorderly transition scenarios, the bank identifies current sector exposure limits and active portfolio decarbonisation glide-path monitoring as primary resilience mechanisms.",
+              "claim_type": "resilience_mechanism",
+              "entities": [
+                "bank"
+              ],
+              "numbers": [],
+              "dates": [],
+              "evidence_sources": [
+                "climate_scenarios[7].resilience_assessment",
+                "climate_scenarios[8].resilience_assessment",
+                "climate_scenarios[9].resilience_assessment"
+              ],
+              "requirement_ids": [
+                "IFRS_S1_29_C05",
+                "IFRS_S1_33_C01"
+              ],
+              "supported": true,
+              "support_notes": "Mechanisms are explicitly described as resilience mechanisms under disorderly scenarios.",
+              "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+              "repaired_evidence_sources": [
+                "climate_scenarios[9].resilience_assessment",
+                "climate_scenarios[8].resilience_assessment",
+                "climate_scenarios[7].resilience_assessment"
+              ],
+              "invalid_evidence_sources_removed": [
+                "draft_markdown: Strategic response themes - Sector exposure limits and portfolio decarbonisation glide-path monitoring"
+              ]
+            },
+            {
+              "claim_id": "STR-018",
+              "claim_text": "Under hot house world scenarios, the bank identifies flood-zone overlay and EPC-based collateral monitoring as resilience mechanisms deployed for the 2050 horizon.",
+              "claim_type": "resilience_mechanism",
+              "entities": [
+                "bank"
+              ],
+              "numbers": [
+                "2050"
+              ],
+              "dates": [],
+              "evidence_sources": [
+                "climate_scenarios[15].resilience_assessment",
+                "climate_scenarios[16].resilience_assessment",
+                "climate_scenarios[17].resilience_assessment"
+              ],
+              "requirement_ids": [
+                "IFRS_S1_29_C05"
+              ],
+              "supported": true,
+              "support_notes": "Explicit mechanisms and horizon are stated.",
+              "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+              "repaired_evidence_sources": [
+                "climate_scenarios[17].resilience_assessment",
+                "climate_scenarios[16].resilience_assessment",
+                "climate_scenarios[15].resilience_assessment"
+              ],
+              "invalid_evidence_sources_removed": [
+                "draft_markdown: Strategic response themes - Physical risk overlays and collateral monitoring"
+              ]
+            },
+            {
+              "claim_id": "STR-019",
+              "claim_text": "The bank discloses trade-offs including: transition risk reduction vs maintaining client/sector exposure; near-term resilience vs medium-term capital consumption under disorderly transition; and growth in climate-aligned financing vs risk controls.",
+              "claim_type": "trade_offs",
+              "entities": [
+                "bank"
+              ],
+              "numbers": [],
+              "dates": [],
+              "evidence_sources": [
+                "climate_scenarios[7].resilience_assessment",
+                "climate_scenarios[8].resilience_assessment",
+                "climate_scenarios[9].resilience_assessment"
+              ],
+              "requirement_ids": [
+                "IFRS_S1_33_C03"
+              ],
+              "supported": true,
+              "support_notes": "Trade-offs are explicitly enumerated.",
+              "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+              "repaired_evidence_sources": [
+                "climate_scenarios[9].resilience_assessment",
+                "climate_scenarios[8].resilience_assessment",
+                "climate_scenarios[7].resilience_assessment"
+              ],
+              "invalid_evidence_sources_removed": [
+                "draft_markdown: Decision-making trade-offs"
+              ]
+            },
+            {
+              "claim_id": "STR-020",
+              "claim_text": "Scenario analysis is used to assess resilience; the bank applies multiple NGFS v4 scenarios to the banking book and links outputs to risk transmission channels.",
+              "claim_type": "scenario_analysis",
+              "entities": [
+                "NGFS v4",
+                "bank",
+                "banking book"
+              ],
+              "numbers": [],
+              "dates": [],
+              "evidence_sources": [
+                "climate_scenarios[0].methodology_notes",
+                "climate_scenarios[1].methodology_notes",
+                "climate_scenarios[2].methodology_notes"
+              ],
+              "requirement_ids": [
+                "IFRS_S1_29_C05"
+              ],
+              "supported": true,
+              "support_notes": "Explicit statement of scenario analysis purpose, scope and linkage to transmission channels.",
+              "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+              "repaired_evidence_sources": [
+                "climate_scenarios[2].methodology_notes",
+                "climate_scenarios[1].methodology_notes",
+                "climate_scenarios[0].methodology_notes"
+              ],
+              "invalid_evidence_sources_removed": [
+                "draft_markdown: 4) Climate resilience and scenario analysis"
+              ]
+            },
+            {
+              "claim_id": "STR-021",
+              "claim_text": "NGFS v4 Net Zero 2050 scenario is applied using a top-down sector-pathway approach; carbon prices mapped from the IEA NZE 2050 trajectory to NACE sectors; stranded asset estimates derived from sector-level fossil fuel capex exposure; scope covers all lending book exposures across DE, FR, IT, NL and ES.",
+              "claim_type": "scenario_methodology",
+              "entities": [
+                "DE",
+                "ES",
+                "FR",
+                "IEA NZE 2050",
+                "IT",
+                "NACE",
+                "NGFS v4 Net Zero 2050",
+                "NL",
+                "bank"
+              ],
+              "numbers": [
+                "2050"
+              ],
+              "dates": [],
+              "evidence_sources": [
+                "climate_scenarios[0].methodology_notes",
+                "climate_scenarios[1].methodology_notes",
+                "climate_scenarios[2].methodology_notes"
+              ],
+              "requirement_ids": [
+                "IFRS_S1_29_C05"
+              ],
+              "supported": true,
+              "support_notes": "Method and geographic scope are explicitly described.",
+              "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+              "repaired_evidence_sources": [
+                "climate_scenarios[2].methodology_notes",
+                "climate_scenarios[1].methodology_notes",
+                "climate_scenarios[0].methodology_notes"
+              ],
+              "invalid_evidence_sources_removed": [
+                "draft_markdown: Scenario analysis approach and scope - NGFS v4 Net Zero 2050 scenario"
+              ]
+            },
+            {
+              "claim_id": "STR-022",
+              "claim_text": "NGFS v4 Below 2°C (orderly) scenario uses a 1.8°C median temperature pathway with carbon price trajectory from the REMIND-MAgPIE model; financial impact assessed via loan-level PD sensitivity to carbon cost pass-through by sector carbon intensity tier.",
+              "claim_type": "scenario_methodology",
+              "entities": [
+                "NGFS v4 Below 2°C",
+                "REMIND-MAgPIE",
+                "bank"
+              ],
+              "numbers": [
+                "1.8",
+                "2"
+              ],
+              "dates": [],
+              "evidence_sources": [
+                "climate_scenarios[3].methodology_notes",
+                "climate_scenarios[4].methodology_notes",
+                "climate_scenarios[5].methodology_notes"
+              ],
+              "requirement_ids": [
+                "IFRS_S1_29_C05"
+              ],
+              "supported": true,
+              "support_notes": "Temperature pathway and modelling approach are explicitly stated.",
+              "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+              "repaired_evidence_sources": [
+                "climate_scenarios[5].methodology_notes",
+                "climate_scenarios[4].methodology_notes",
+                "climate_scenarios[3].methodology_notes"
+              ],
+              "invalid_evidence_sources_removed": [
+                "draft_markdown: Scenario analysis approach and scope - NGFS v4 Below 2°C (orderly) scenario"
+              ]
+            },
+            {
+              "claim_id": "STR-023",
+              "claim_text": "NGFS v4 NDC scenario assumes carbon pricing ramp-up from 2030 onward based on Paris Agreement NDC trajectories; revenue-at-risk is computed from sector revenue sensitivity to carbon price at EUR/tCO2e levels specified in the scenario.",
+              "claim_type": "scenario_methodology",
+              "entities": [
+                "NGFS v4 NDC",
+                "Paris Agreement",
+                "bank"
+              ],
+              "numbers": [
+                "2030",
+                "EUR/tCO2e"
+              ],
+              "dates": [],
+              "evidence_sources": [
+                "climate_scenarios[12].methodology_notes",
+                "climate_scenarios[13].methodology_notes",
+                "climate_scenarios[14].methodology_notes"
+              ],
+              "requirement_ids": [
+                "IFRS_S1_29_C05"
+              ],
+              "supported": true,
+              "support_notes": "Explicit timing assumption and revenue-at-risk computation basis are stated.",
+              "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+              "repaired_evidence_sources": [
+                "climate_scenarios[14].methodology_notes",
+                "climate_scenarios[13].methodology_notes",
+                "climate_scenarios[12].methodology_notes"
+              ],
+              "invalid_evidence_sources_removed": [
+                "draft_markdown: Scenario analysis approach and scope - NGFS v4 NDC scenario"
+              ]
+            },
+            {
+              "claim_id": "STR-024",
+              "claim_text": "NGFS v4 Current Policies (hot house world) scenario uses RCP 8.5 physical risk projections for the 2050 horizon, downscaled to counterparty postcode and collateral location using NGFS hazard layers.",
+              "claim_type": "scenario_methodology",
+              "entities": [
+                "NGFS hazard layers",
+                "NGFS v4 Current Policies",
+                "RCP 8.5",
+                "bank"
+              ],
+              "numbers": [
+                "2050",
+                "8.5"
+              ],
+              "dates": [],
+              "evidence_sources": [
+                "climate_scenarios[15].methodology_notes",
+                "climate_scenarios[16].methodology_notes",
+                "climate_scenarios[17].methodology_notes"
+              ],
+              "requirement_ids": [
+                "IFRS_S1_29_C05"
+              ],
+              "supported": true,
+              "support_notes": "Explicit physical scenario parameters and downscaling approach are stated.",
+              "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+              "repaired_evidence_sources": [
+                "climate_scenarios[17].methodology_notes",
+                "climate_scenarios[16].methodology_notes",
+                "climate_scenarios[15].methodology_notes"
+              ],
+              "invalid_evidence_sources_removed": [
+                "draft_markdown: Scenario analysis approach and scope - NGFS v4 Current Policies (hot house world) scenario"
+              ]
+            },
+            {
+              "claim_id": "STR-025",
+              "claim_text": "Orderly transition scenarios: the bank assesses adequate resilience with transition risk losses remaining within Pillar 2 capital buffer thresholds.",
+              "claim_type": "resilience_finding",
+              "entities": [
+                "Pillar 2 capital buffer thresholds",
+                "bank"
+              ],
+              "numbers": [],
+              "dates": [],
+              "evidence_sources": [
+                "climate_scenarios[3].resilience_assessment",
+                "climate_scenarios[4].resilience_assessment",
+                "climate_scenarios[5].resilience_assessment"
+              ],
+              "requirement_ids": [
+                "IFRS_S1_29_C05"
+              ],
+              "supported": true,
+              "support_notes": "Qualitative resilience conclusion and reference to Pillar 2 thresholds are explicitly stated (no numeric threshold provided).",
+              "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+              "repaired_evidence_sources": [
+                "climate_scenarios[5].resilience_assessment",
+                "climate_scenarios[4].resilience_assessment",
+                "climate_scenarios[3].resilience_assessment"
+              ],
+              "invalid_evidence_sources_removed": [
+                "draft_markdown: Resilience findings and transmission channels - Orderly transition scenarios"
+              ]
+            },
+            {
+              "claim_id": "STR-026",
+              "claim_text": "Disorderly transition scenarios: near-term resilience is acceptable, but medium-term capital consumption from stranded asset impairments is material and additional capital buffers may be required post-2030 under the most adverse assumptions.",
+              "claim_type": "resilience_finding",
+              "entities": [
+                "bank"
+              ],
+              "numbers": [
+                "post-2030"
+              ],
+              "dates": [],
+              "evidence_sources": [
+                "climate_scenarios[7].resilience_assessment",
+                "climate_scenarios[8].resilience_assessment",
+                "climate_scenarios[9].resilience_assessment"
+              ],
+              "requirement_ids": [
+                "IFRS_S1_29_C05",
+                "IFRS_S1_33_C03"
+              ],
+              "supported": true,
+              "support_notes": "Explicit statement of capital consumption materiality and potential need for buffers after 2030.",
+              "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+              "repaired_evidence_sources": [
+                "climate_scenarios[9].resilience_assessment",
+                "climate_scenarios[8].resilience_assessment",
+                "climate_scenarios[7].resilience_assessment"
+              ],
+              "invalid_evidence_sources_removed": [
+                "draft_markdown: Resilience findings and transmission channels - Disorderly transition scenarios"
+              ]
+            },
+            {
+              "claim_id": "STR-027",
+              "claim_text": "Hot house world scenarios: physical risk losses are assessed as the dominant long-term resilience challenge, with primary transmission channels including collateral revaluation risk in flood-exposed mortgage books and agricultural borrower default risk from chronic heat stress.",
+              "claim_type": "resilience_finding",
+              "entities": [
+                "agricultural borrowers",
+                "bank",
+                "mortgage books"
+              ],
+              "numbers": [],
+              "dates": [],
+              "evidence_sources": [
+                "climate_scenarios[15].resilience_assessment",
+                "climate_scenarios[16].resilience_assessment",
+                "climate_scenarios[17].resilience_assessment"
+              ],
+              "requirement_ids": [
+                "IFRS_S1_29_C05"
+              ],
+              "supported": true,
+              "support_notes": "Dominant challenge and two transmission channels are explicitly listed.",
+              "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+              "repaired_evidence_sources": [
+                "climate_scenarios[17].resilience_assessment",
+                "climate_scenarios[16].resilience_assessment",
+                "climate_scenarios[15].resilience_assessment"
+              ],
+              "invalid_evidence_sources_removed": [
+                "draft_markdown: Resilience findings and transmission channels - Hot house world scenarios"
+              ]
+            },
+            {
+              "claim_id": "STR-028",
+              "claim_text": "Quantitative scenario indicator: under scenario SCN0001 (Net Zero 2050 application), revenue at risk is EUR 9,689.2 million; a medium-term horizon application reports revenue at risk of EUR 9,214.0 million.",
+              "claim_type": "quantitative_metric",
+              "entities": [
+                "bank"
+              ],
+              "numbers": [
+                "EUR 9214.0 million",
+                "EUR 9689.2 million",
+                "SCN0001"
+              ],
+              "dates": [],
+              "evidence_sources": [
+                "climate_scenarios[0].scenario_id",
+                "climate_scenarios[1].methodology_notes",
+                "climate_scenarios[2].methodology_notes"
+              ],
+              "requirement_ids": [
+                "IFRS_S1_29_C04",
+                "IFRS_S1_34_C02"
+              ],
+              "supported": true,
+              "support_notes": "Explicit revenue-at-risk figures are provided; medium-term horizon is referenced but not defined.",
+              "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+              "repaired_evidence_sources": [
+                "climate_scenarios[0].scenario_id",
+                "climate_scenarios[2].methodology_notes",
+                "climate_scenarios[1].methodology_notes"
+              ],
+              "invalid_evidence_sources_removed": [
+                "draft_markdown: Quantitative scenario indicator: revenue at risk"
+              ]
+            },
+            {
+              "claim_id": "STR-029",
+              "claim_text": "Climate-related expenditure and financial context: 2022 capex EUR 322.2m and opex EUR 420.32m; total revenue EUR 25,466.1m; net profit EUR 5,759.9m; total assets EUR 763,922.8m; Tier 1 capital EUR 95,149.4m.",
+              "claim_type": "financial_metric",
+              "entities": [
+                "bank"
+              ],
+              "numbers": [
+                "EUR 25466.1 million",
+                "EUR 322.2 million",
+                "EUR 420.32 million",
+                "EUR 5759.9 million",
+                "EUR 763922.8 million",
+                "EUR 95149.4 million"
+              ],
+              "dates": [
+                "2022"
+              ],
+              "evidence_sources": [
+                "climate_scenarios[7].resilience_assessment",
+                "climate_scenarios[8].resilience_assessment",
+                "climate_scenarios[9].resilience_assessment"
+              ],
+              "requirement_ids": [
+                "IFRS_S1_29_C04",
+                "IFRS_S1_34_C01"
+              ],
+              "supported": true,
+              "support_notes": "Explicit year and amounts are stated.",
+              "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+              "repaired_evidence_sources": [
+                "climate_scenarios[9].resilience_assessment",
+                "climate_scenarios[8].resilience_assessment",
+                "climate_scenarios[7].resilience_assessment"
+              ],
+              "invalid_evidence_sources_removed": [
+                "draft_markdown: Climate-related expenditure and financial context - 2022"
+              ]
+            },
+            {
+              "claim_id": "STR-030",
+              "claim_text": "Climate-related expenditure and financial context: 2023 capex EUR 373.91m and opex EUR 509.21m; total revenue EUR 27,779.7m; total assets EUR 820,167.2m; Tier 1 capital EUR 143,979.2m.",
+              "claim_type": "financial_metric",
+              "entities": [
+                "bank"
+              ],
+              "numbers": [
+                "EUR 143979.2 million",
+                "EUR 27779.7 million",
+                "EUR 373.91 million",
+                "EUR 509.21 million",
+                "EUR 820167.2 million"
+              ],
+              "dates": [
+                "2023"
+              ],
+              "evidence_sources": [
+                "climate_scenarios[7].resilience_assessment",
+                "climate_scenarios[8].resilience_assessment",
+                "climate_scenarios[9].resilience_assessment"
+              ],
+              "requirement_ids": [
+                "IFRS_S1_29_C04",
+                "IFRS_S1_34_C01"
+              ],
+              "supported": true,
+              "support_notes": "Explicit year and amounts are stated.",
+              "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+              "repaired_evidence_sources": [
+                "climate_scenarios[9].resilience_assessment",
+                "climate_scenarios[8].resilience_assessment",
+                "climate_scenarios[7].resilience_assessment"
+              ],
+              "invalid_evidence_sources_removed": [
+                "draft_markdown: Climate-related expenditure and financial context - 2023"
+              ]
+            },
+            {
+              "claim_id": "STR-031",
+              "claim_text": "Climate-related expenditure and financial context: 2024 capex EUR 476.95m; total revenue EUR 24,136.2m; total assets EUR 850,000.0m; Tier 1 capital EUR 151,208.6m.",
+              "claim_type": "financial_metric",
+              "entities": [
+                "bank"
+              ],
+              "numbers": [
+                "EUR 151208.6 million",
+                "EUR 24136.2 million",
+                "EUR 476.95 million",
+                "EUR 850000.0 million"
+              ],
+              "dates": [
+                "2024"
+              ],
+              "evidence_sources": [
+                "climate_scenarios[7].resilience_assessment",
+                "climate_scenarios[8].resilience_assessment",
+                "climate_scenarios[9].resilience_assessment"
+              ],
+              "requirement_ids": [
+                "IFRS_S1_29_C04",
+                "IFRS_S1_34_C01"
+              ],
+              "supported": true,
+              "support_notes": "Explicit year and amounts are stated; 2024 opex not provided.",
+              "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+              "repaired_evidence_sources": [
+                "climate_scenarios[9].resilience_assessment",
+                "climate_scenarios[8].resilience_assessment",
+                "climate_scenarios[7].resilience_assessment"
+              ],
+              "invalid_evidence_sources_removed": [
+                "draft_markdown: Climate-related expenditure and financial context - 2024"
+              ]
+            },
+            {
+              "claim_id": "STR-032",
+              "claim_text": "Financed emissions (2024) are 35,973,167.6878965 tCO2e; target progress (2024) is 40.0% for Scope 1 and 2, 25.0% for Scope 3 Category 15, and 13.3% for net zero (all scopes); portfolio intensity target is 20.0 tCO2e per EUR million.",
+              "claim_type": "progress_metric",
+              "entities": [
+                "bank"
+              ],
+              "numbers": [
+                "13.3%",
+                "20.0 tCO2e per EUR million",
+                "25.0%",
+                "35973167.6878965 tCO2e",
+                "40.0%"
+              ],
+              "dates": [
+                "2024"
+              ],
+              "evidence_sources": [
+                "bank.target_intensity_tco2e_per_meur",
+                "climate_scenarios[1].methodology_notes",
+                "climate_scenarios[2].methodology_notes"
+              ],
+              "requirement_ids": [
+                "IFRS_S1_33_C02"
+              ],
+              "supported": true,
+              "support_notes": "Quantitative progress indicators are explicitly disclosed; linkage to prior-period plans is not evidenced in this excerpt.",
+              "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+              "repaired_evidence_sources": [
+                "bank.target_intensity_tco2e_per_meur",
+                "climate_scenarios[2].methodology_notes",
+                "climate_scenarios[1].methodology_notes"
+              ],
+              "invalid_evidence_sources_removed": [
+                "draft_markdown: Monitoring progress: emissions and target progress indicators"
+              ]
+            },
+            {
+              "claim_id": "STR-033",
+              "claim_text": "Emissions data quality inputs are composed of 47.5% estimated using economic data, 35.5% CDP disclosure-based, and 0.7% audited report-based.",
+              "claim_type": "data_quality",
+              "entities": [
+                "CDP",
+                "bank"
+              ],
+              "numbers": [
+                "0.7%",
+                "35.5%",
+                "47.5%"
+              ],
+              "dates": [],
+              "evidence_sources": [
+                "climate_scenarios[8].resilience_assessment",
+                "climate_scenarios[9].resilience_assessment",
+                "reporting_kpis.emissions_data_quality_summary.cdp_disclosure"
+              ],
+              "requirement_ids": [
+                "IFRS_S1_33_C02"
+              ],
+              "supported": true,
+              "support_notes": "Explicit percentages are provided as context for monitoring metrics.",
+              "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+              "repaired_evidence_sources": [
+                "reporting_kpis.emissions_data_quality_summary.cdp_disclosure",
+                "climate_scenarios[9].resilience_assessment",
+                "climate_scenarios[8].resilience_assessment"
+              ],
+              "invalid_evidence_sources_removed": [
+                "draft_markdown: Emissions data quality as an input to monitoring"
+              ]
+            },
+            {
+              "claim_id": "STR-034",
+              "claim_text": "Time horizons are used to distinguish when effects could reasonably be expected to occur, but the section does not define short, medium and long term or link these definitions to planning horizons.",
+              "claim_type": "disclosure_gap",
+              "entities": [
+                "bank"
+              ],
+              "numbers": [],
+              "dates": [],
+              "evidence_sources": [
+                "climate_scenarios[7].resilience_assessment",
+                "climate_scenarios[8].resilience_assessment",
+                "climate_scenarios[9].resilience_assessment"
+              ],
+              "requirement_ids": [
+                "IFRS_S1_30_C03"
+              ],
+              "supported": false,
+              "support_notes": "The text states time horizons are used and labels some items as short/medium term, but provides no explicit definitions or linkage to strategic planning horizons.",
+              "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+              "repaired_evidence_sources": [
+                "climate_scenarios[9].resilience_assessment",
+                "climate_scenarios[8].resilience_assessment",
+                "climate_scenarios[7].resilience_assessment"
+              ],
+              "invalid_evidence_sources_removed": [
+                "draft_markdown: 1) Climate-related risks and opportunities and their time horizons"
+              ]
+            }
+          ]
         }
-      ]
-    },
-    {
-      "judge": "style_judge",
-      "score": 7.6,
-      "required_fixes": [
-        "Restructure the section to follow the layered format: start with a concise Strategy overview paragraph that explicitly links to materiality assessment outputs, then introduce one or more central tables/figures (e.g., a matrix mapping climate-related risks and opportunities to value-chain segments and time horizons), followed by theme-by-theme narrative expansion.",
-        "Align headings with the required numbered hierarchy and IFRS pillars. For example, use a structure such as '2. Strategy', '2.1 Climate-related risks and opportunities and their time horizons', '2.2 Effects on the business model and value chain', etc., and ensure consistent numbering and ordering across the report.",
-        "Introduce at least one strategy-at-a-glance table that: (a) maps key climate-related risks and opportunities to value-chain segments and time horizons, and (b) links them to strategic responses, financial statement areas, and relevant scenario IDs. Caption and number the table (e.g., 'Table 2.1: Climate-related risks and opportunities mapped to value chain and strategic responses') and reference it explicitly in the narrative.",
-        "Add a value-chain mapping table or figure that summarises upstream, own operations, and downstream nodes, including where climate-related risks and opportunities are concentrated. Ensure it has a clear caption and is referenced in the 'Effects on the business model and value chain' subsection.",
-        "Reformat quantitative disclosures (Capex, Opex, Tier 1 capital, total assets, revenue-at-risk metrics, target progress) into one or more compact tables with: metric definition, boundary, value, period, and source/traceability notes. Reference these tables in the narrative instead of embedding long numeric strings in text.",
-        "Shorten or split long sentences, especially in scenario descriptions and risk/opportunity bullets, to improve readability and align with the short-to-medium sentence guidance. Aim for one main idea per sentence and use parallel structure in lists.",
-        "Add explicit closing 'connectivity' sentences at the end of each major subsection, linking to related sections (e.g., Governance, Risk Management, Metrics and Targets) or to financial statement note placeholders using the prescribed cross-reference format (e.g., 'Refer to [Section: Risk Management]' or 'See [Note: Climate-related risks]').",
-        "Clarify the distinction between current-period facts, estimates/judgements, and forward-looking intentions by adding brief labels or phrases (e.g., 'Current state:', 'We estimate that...', 'We intend to...') where appropriate, particularly in the strategic response and scenario resilience subsections.",
-        "Consider modestly adjusting voice to include first-person plural for accountability statements (e.g., 'We identify', 'We monitor', 'We assess') while retaining third-person for externally defined requirements, to better align with the point-of-view guidance.",
-        "Ensure that any future additions of missing or incomplete data follow the missing-data protocol (explicitly stating what is missing, why, interim approach, limitations, and planned enhancements), even though this draft currently does not highlight data gaps."
-      ]
-    }
-  ],
-  "thresholds": {
-    "ifrs_coverage_score_min": 8.0,
-    "evidence_score_min": 8.0,
-    "style_score_min": 7.5
+      },
+      {
+        "gate_name": "factlock_numbers_entities",
+        "passed": true,
+        "failures": [],
+        "warnings": [
+          {
+            "type": "entity_not_in_payload_or_claims",
+            "value": "Strategy\n\nThis Strategy"
+          },
+          {
+            "type": "entity_not_in_payload_or_claims",
+            "value": "Tightening EU Emissions Trading System"
+          }
+        ],
+        "draft_numbers": [
+          "0.7%",
+          "01",
+          "02",
+          "03",
+          "04",
+          "1",
+          "1.8",
+          "12",
+          "13.3%",
+          "143,979.2",
+          "15",
+          "151,208.6",
+          "2",
+          "20.0 tCO2e",
+          "2022",
+          "2023",
+          "2024",
+          "2030",
+          "2050",
+          "24,136.2",
+          "25",
+          "25,466.1",
+          "25.0%",
+          "27,779.7",
+          "3",
+          "322.2",
+          "35,973,167.6878965 tCO2e",
+          "35.5%",
+          "373.91",
+          "4",
+          "40.0%",
+          "420.32",
+          "47.5%",
+          "476.95",
+          "5",
+          "5,759.9",
+          "509.21",
+          "6",
+          "763,922.8",
+          "8",
+          "8.5",
+          "820,167.2",
+          "850,000.0",
+          "9,214.0",
+          "9,689.2",
+          "95,149.4"
+        ],
+        "draft_entities": [
+          "Current Policies",
+          "Divergent Net Zero",
+          "EU ETS",
+          "IEA NZE",
+          "Net Zero",
+          "Paris Agreement NDC",
+          "Strategy\n\nThis Strategy",
+          "Tightening EU Emissions Trading System"
+        ]
+      },
+      {
+        "gate_name": "reference_firewall",
+        "passed": true,
+        "forbidden_term_hits": [],
+        "failures": [],
+        "warnings": []
+      },
+      {
+        "gate_name": "report_cleanliness_no_missing_payload_language",
+        "passed": true,
+        "blocked_phrase_hits": [],
+        "soft_phrase_hits": [],
+        "failures": [],
+        "warnings": []
+      }
+    ],
+    "summary": "- draft_structural_quality_no_templates_no_absence_language: PASS | failures=0 | warnings=0\n- draft_depth_quality_no_truncation: PASS | failures=0 | warnings=0\n- draft_prose_polish_no_raw_fields_no_booleans_no_unavailable_language: PASS | failures=0 | warnings=0\n- claims_integrity: FAIL | failures=1 | warnings=0\n  failure: {'claim_id': 'STR-034', 'issue': 'claim_marked_unsupported', 'claim': 'Time horizons are used to distinguish when effects could reasonably be expected to occur, but the section does not define short, medium and long term or link these definitions to planning horizons.'}\n- factlock_numbers_entities: PASS | failures=0 | warnings=2\n  warning: {'type': 'entity_not_in_payload_or_claims', 'value': 'Strategy\\n\\nThis Strategy'}\n  warning: {'type': 'entity_not_in_payload_or_claims', 'value': 'Tightening EU Emissions Trading System'}\n- reference_firewall: PASS | failures=0 | warnings=0\n- report_cleanliness_no_missing_payload_language: PASS | failures=0 | warnings=0"
   },
   "section_generation_score": {
     "section_name": "Strategy",
-    "overall_section_generation_score_0_to_100": 87.74,
+    "overall_section_generation_score_0_to_100": 42.14,
     "coverage_component": {
       "requirements_total": 70,
       "coverage_counts": {
@@ -69,8 +1277,8 @@
       },
       "coverage_score_0_to_100": 88.57
     },
-    "judge_average_0_to_100": 68.67,
-    "deterministic_gate_score_0_to_100": 100.0,
+    "judge_average_0_to_100": 0.0,
+    "deterministic_gate_score_0_to_100": 0.0,
     "report_cleanliness_score_0_to_100": 100.0,
     "missing_requirements_count_flagged": 0,
     "missing_requirement_ids_flagged": [],

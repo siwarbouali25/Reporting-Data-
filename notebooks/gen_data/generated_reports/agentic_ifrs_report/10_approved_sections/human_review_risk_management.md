@@ -1,73 +1,45 @@
 ## Risk Management
 
-This section describes the processes used to identify, assess, prioritise and monitor climate-related risks. It explains how climate-related risks are captured in a climate risk register, the key inputs used in assessing physical risk exposure, how climate-related scenario analysis is linked to specific risks, how risks are rated using a defined methodology, how monitoring is performed at different frequencies, and how climate-related risk management is integrated into the entity’s overall enterprise risk management (ERM) process.
+### Risk identification and assessment
 
-### 1) Identification of climate-related risks and value-chain considerations
+This section explains how the organisation identifies, assesses, prioritises and monitors climate-related risks, and how these processes are integrated into overall risk management.
 
-The entity identifies climate-related risks across its operations and financing activities, including exposures arising through lending and counterparties. Climate-related risk considerations are mapped across parts of the value chain to support consistent identification of where climate-related risks may arise.
+**Climate risk register as the core record.** Climate-related risks are captured and maintained in a climate risk register. The register is used as the central record to document key attributes of each risk, including links to climate-related scenario analysis where used, the assessment inputs used to derive risk ratings, and the cadence at which each risk is monitored.
 
-Within the value chain, climate-related risk considerations include:
+**Inputs and data sources used in identification and assessment.** External physical risk exposure information is used as an input to the organisation’s climate-related risk processes. Physical risk exposure data sources include **ECB climate indicators**, which support the identification and assessment of physical climate-related risks and are used alongside internal risk documentation recorded in the climate risk register.
 
-- **Operations and travel**: operational sites and travel generate **Scope 1–2 emissions** and face **physical disruption**.
-- **Lending exposures**: lending to **Other mining and quarrying** carries **elevated transition risk** from **carbon pricing** and **demand shifts**.
+**Use of climate-related scenario analysis in risk identification.** Climate-related scenario analysis is used to inform the identification of climate-related risks, and scenario references are captured in the climate risk register. Scenario links recorded in the register include **SCN0009**, **SCN0007**, **SCN0011** and **SCN0005**. Recording these references provides traceability between identified risks and the scenario analysis used to inform their identification.
 
-These value-chain descriptions are used to frame the main channels through which climate-related risks can affect the entity (for example, operational disruption and emissions-related transition drivers, and financed exposures to sectors sensitive to policy and market change).
+**Assessment approach—likelihood scoring and risk rating methodology.** Climate-related risks are assessed using a likelihood scoring approach on a **1–5** scale, with likelihood scores recorded in the climate risk register (examples of recorded likelihood scores include **3**, **4** and **5**).
 
-### 2) Inputs and data sources used in assessing physical risk exposure
+Risk ratings in the climate risk register are derived from a **5x5** risk matrix: **scores 1–2 = low, 3–6 = medium, 8–12 = high, 15–25 = critical**. Specifically: **likelihood score * severity score; critical >= 15, high >= 8, medium >= 3, low < 3**.
 
-Physical risk exposure assessment uses external climate indicator inputs. Physical risk exposure records reference **ECB climate indicators** as the data source, supporting a common input basis for physical risk identification and assessment.
+Using a consistent matrix-based methodology supports comparability of climate-related risk ratings across the register and provides a structured basis for prioritisation and monitoring.
 
-### 3) Use of climate-related scenario analysis in the risk process
+**Risk rating outcomes recorded in the register.** The climate risk register includes risks rated **“medium”**. These ratings demonstrate application of the rating methodology to climate-related risks and support differentiation of monitoring intensity and management attention across risks.
 
-Climate-related scenario analysis is referenced in the climate risk register through explicit links to scenario analysis identifiers. Scenario analysis links recorded in the register include **SCN0009**, **SCN0007**, **SCN0011** and **SCN0005**. These links connect scenario analysis outputs to specific climate-related risks and are used as an input to the identification and/or assessment of those risks.
+**Illustrative physical risk captured in the register.** An example climate-related physical risk described in the climate risk register is that **chronic heat and shifting precipitation reduce yields for agricultural counterparties, weakening repayment capacity over the medium term**. This example illustrates how physical climate drivers can translate into counterparty impacts over time and be documented as a discrete risk within the register.
 
-### 4) Assessment methodology: likelihood scoring and risk rating approach
+**Prioritisation and linkage to overall risk management.** Climate-related risks are managed in connection with the organisation’s overall enterprise risk management process. The climate risk register indicates that climate-related risk management is integrated into the organisation’s overall risk management process for risks where this integration is applied.
 
-Climate-related risks are assessed using a structured scoring approach that includes **likelihood scoring**. Likelihood scores recorded in the climate risk register include **3**, **4** and **5**, evidencing the use of ordinal likelihood scoring in the assessment process.
+### Monitoring and change over time
 
-Risk ratings are derived using the following methodology (applied as stated):
+This subsection explains how climate-related risks are monitored and how changes are tracked over time.
 
-- **Risk rating is derived from a 5x5 risk matrix: scores 1-2 = low, 3-6 = medium, 8-12 = high, 15-25 = critical. Specifically: likelihood_score * severity_score; critical >= 15, high >= 8, medium >= 3, low < 3.**
+**Defined monitoring frequencies.** Climate-related risks are monitored at defined frequencies as recorded in the climate risk register. Monitoring cadences recorded in the register include **monthly**, **quarterly** and **semi-annual**. Using defined monitoring frequencies supports a repeatable monitoring process and helps ensure that risks are revisited on a schedule aligned to their characteristics and management needs.
 
-This methodology provides defined quantitative thresholds that support consistent categorisation of climate-related risks into rating bands (low, medium, high, critical) based on the product of likelihood and severity scores.
+**Tracking changes since the prior reporting period.** The climate risk register includes an indicator of whether a risk has changed since the prior reporting period. The register shows that **some climate-related risks have changed since the prior reporting period**, while others have not. This approach provides a structured way to track changes in the risk profile over time within the same register used for identification, assessment and monitoring.
 
-Consistent with this approach, the climate risk register includes risks rated **“medium”**.
+### Value chain considerations reflected in risk identification
 
-### 5) Example of a documented climate-related physical risk
+This subsection summarises how climate-related risks are considered across parts of the value chain, based on documented risk descriptions.
 
-The climate risk register includes documented physical risk descriptions. One example describes a chronic physical risk affecting counterparties:
+**Operational activities.** Climate-related risks identified for operational activities include that **operational sites and travel generate Scope 1–2 emissions and face physical disruption**. This description reflects both transition-related considerations (emissions associated with operations and travel) and physical considerations (disruption risk).
 
-- **Chronic heat and shifting precipitation reduce yields for agricultural counterparties, weakening repayment capacity over the medium term.**
+**Financed activities / lending exposures.** Climate-related risks identified in relation to lending include that **lending to Other mining and quarrying carries elevated transition risk from carbon pricing and demand shifts**. This description reflects how transition drivers can affect counterparties and sectors relevant to lending activities.
 
-This description illustrates how physical climate hazards can translate into counterparty-level impacts (for example, reduced yields) and then into financial risk transmission channels (for example, repayment capacity) over a medium-term horizon.
+### Risk management processes and controls (integration and avoidance of duplication)
 
-### 6) Prioritisation and integration with enterprise risk management (ERM)
+This subsection explains how climate-related risk processes are positioned within overall risk management disclosures.
 
-Climate-related risk management is integrated into the entity’s overall ERM process for many climate-related risks. Climate risk register entries include an ERM integration indicator recorded as **True** for multiple risks, evidencing that climate-related risks are commonly managed through the same overarching risk management architecture used for other risks.
-
-The register also evidences that integration is **not universal**: at least one climate-related risk is recorded with the ERM integration indicator set to **False**. This indicates that, while the entity generally integrates climate-related risks into ERM, some risks may be managed through processes that are not fully embedded in ERM.
-
-The use of a consistent risk rating methodology (5x5 matrix with defined thresholds) supports prioritisation by enabling climate-related risks to be compared and categorised using common rating bands (for example, “medium”). Where climate-related risks are integrated into ERM, this categorisation supports their consideration alongside other risk types within the broader risk management process.
-
-### 7) Monitoring of climate-related risks
-
-Climate-related risks are monitored at different frequencies depending on the risk, as recorded in the climate risk register. Monitoring frequencies evidenced include:
-
-- **Monthly** monitoring for some risks.
-- **Quarterly** monitoring for some risks.
-- **Semi-annual** monitoring for some risks.
-
-This frequency-based approach indicates that monitoring intensity is tailored, with some risks subject to more frequent review (monthly) and others reviewed on a quarterly or semi-annual cycle.
-
-### 8) Changes compared with the prior reporting period
-
-The climate risk register includes an indicator of whether a risk has changed since the prior reporting period. The register evidences that:
-
-- **Some climate-related risks have changed since the prior reporting period** (indicator recorded as **True** for some entries).
-- **Some climate-related risks have not changed since the prior reporting period** (indicator recorded as **False** for other entries).
-
-This change indicator supports period-on-period tracking within the risk register and provides a mechanism to distinguish risks that have been updated from those that remain unchanged.
-
-### 9) Climate-related opportunities
-
-Climate-related opportunities are considered alongside climate-related risks within the entity’s risk management processes, including identification, assessment, prioritisation and monitoring through the same overarching approach used for other climate-related matters.
+**Integrated approach to risk management disclosures.** Climate-related risk management processes are integrated into the organisation’s overall risk management process for risks where this integration is applied, as reflected in the climate risk register. Consistent with this integrated approach, climate-related risks are documented, assessed (including likelihood scoring and matrix-based rating), and monitored (using defined monitoring frequencies) through the same core risk artefact—the climate risk register—supporting coherent risk management disclosure without unnecessary duplication.
