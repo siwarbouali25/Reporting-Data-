@@ -1,6 +1,6 @@
 {
   "section_name": "Metrics and Targets",
-  "passed": false,
+  "passed": true,
   "gates": [
     {
       "gate_name": "draft_structural_quality_no_templates_no_absence_language",
@@ -10,40 +10,23 @@
     },
     {
       "gate_name": "draft_depth_quality_no_truncation",
-      "passed": false,
-      "failures": [
-        {
-          "type": "section_too_short_or_truncated",
-          "word_count": 862,
-          "minimum_word_count": 900,
-          "evidence_path_count": 179,
-          "required_fix": "Expand the section using existing evidence only; do not add unsupported facts or missing-data language."
-        }
-      ],
-      "warnings": [
-        {
-          "type": "many_short_subsections",
-          "examples": [
-            {
-              "heading": "Reporting boundary and reporting period",
-              "word_count": 31
-            },
-            {
-              "heading": "Exposure to high-carbon sectors",
-              "word_count": 34
-            },
-            {
-              "heading": "Internal carbon pricing",
-              "word_count": 53
-            },
-            {
-              "heading": "Financed-emissions data-quality mix",
-              "word_count": 42
-            }
-          ],
-          "suggested_fix": "Add explanatory narrative to each supported subsection."
-        }
-      ]
+      "passed": true,
+      "failures": [],
+      "warnings": [],
+      "dynamic_profile": {
+        "min_words": 909,
+        "target_words": "approximately 909–1259 words, unless tables/bullets carry the disclosure efficiently",
+        "depth_focus": [
+          "explain supported evidence in decision-useful IFRS S1/S2 report prose",
+          "connect governance, strategy, risk management, and metrics only where evidence supports the connection",
+          "prefer compact tables or bullets for numeric evidence without padding unsupported narrative",
+          "avoid boilerplate, absence-language, raw dataset fields, and unsupported future commitments"
+        ],
+        "evidence_path_count": 179,
+        "supported_requirement_count": 135,
+        "policy": "Depth is evidence-aware; do not pad with unsupported boilerplate."
+      },
+      "version": "V9.4-order-safe-factlock-decimal"
     },
     {
       "gate_name": "draft_prose_polish_no_raw_fields_no_booleans_no_unavailable_language",
@@ -63,100 +46,76 @@
       "failures": [],
       "warnings": [
         {
-          "claim_id": "CLM-MT-001",
+          "claim_id": "CLM-4-002",
           "issue": "no_evidence_source_after_v89_repair",
-          "claim": "Unless otherwise stated, the metrics in this section are prepared on a financial control boundary."
+          "claim": "The reporting boundary is prepared on a financial control basis."
         }
       ],
-      "claim_count": 28,
+      "claim_count": 31,
       "claims_register_normalized": {
         "section_name": "Metrics and Targets",
         "claims": [
           {
-            "claim_id": "CLM-MT-001",
-            "claim_text": "Unless otherwise stated, the metrics in this section are prepared on a financial control boundary.",
+            "claim_id": "CLM-4-001",
+            "claim_text": "This section discloses climate-related metrics and targets used to measure and monitor climate-related risks and opportunities for the reporting year 2024 (fiscal year end 31 December 2024).",
+            "claim_type": "reporting_scope",
+            "entities": [
+              "the bank"
+            ],
+            "numbers": [
+              "2024"
+            ],
+            "dates": [
+              "31 December 2024"
+            ],
+            "evidence_sources": [
+              "financed_emissions_equity[4].reporting_year",
+              "financial_summary[2].reporting_year",
+              "metadata.reporting_year"
+            ],
+            "requirement_ids": [
+              "IFRS_S1_46_C01",
+              "IFRS_S1_46_C03",
+              "IFRS_S1_46_C04"
+            ],
+            "supported": true,
+            "support_notes": "Explicitly states reporting year and purpose (measure/monitor risks/opportunities).",
+            "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+            "repaired_evidence_sources": [
+              "metadata.reporting_year",
+              "financial_summary[2].reporting_year",
+              "financed_emissions_equity[4].reporting_year"
+            ],
+            "invalid_evidence_sources_removed": [
+              "Draft markdown: Section 4 opening paragraph"
+            ]
+          },
+          {
+            "claim_id": "CLM-4-002",
+            "claim_text": "The reporting boundary is prepared on a financial control basis.",
             "claim_type": "methodology",
             "entities": [
-              "the entity"
+              "the bank"
             ],
             "numbers": [],
             "dates": [],
             "evidence_sources": [],
             "requirement_ids": [
-              "IFRS_S1_46_C01",
-              "IFRS_S1_46_C03"
+              "IFRS_S1_50_C04"
             ],
             "supported": true,
-            "support_notes": "Boundary statement is explicitly disclosed.",
+            "support_notes": "Boundary basis is stated; no further consolidation detail provided.",
             "invalid_evidence_sources_removed": [
-              "Draft report section: \"Reporting boundary and reporting period\""
+              "Draft markdown: 4.1 Reporting period and boundary"
             ]
           },
           {
-            "claim_id": "CLM-MT-002",
-            "claim_text": "The reporting period is the fiscal year ending 31 December 2024.",
-            "claim_type": "reporting_scope",
-            "entities": [
-              "the entity"
-            ],
-            "numbers": [],
-            "dates": [
-              "2024-12-31"
-            ],
-            "evidence_sources": [
-              "bank.fiscal_year_end",
-              "financed_emissions[2].reporting_year",
-              "financed_emissions_equity[0].reporting_year",
-              "financed_emissions_equity[1].reporting_year",
-              "financed_emissions_equity[2].reporting_year"
-            ],
-            "requirement_ids": [
-              "IFRS_S1_46_C01"
-            ],
-            "supported": true,
-            "support_notes": "Reporting period end date is explicitly stated.",
-            "invalid_evidence_sources_removed": [
-              "Draft report section: \"Reporting boundary and reporting period\""
-            ]
-          },
-          {
-            "claim_id": "CLM-MT-003",
-            "claim_text": "Operational GHG emissions are disclosed for Scope 1 and Scope 2 for the 2024 reporting year.",
-            "claim_type": "metric_disclosure",
-            "entities": [
-              "the entity"
-            ],
-            "numbers": [],
-            "dates": [
-              "2024"
-            ],
-            "evidence_sources": [
-              "financed_emissions_equity[2].reporting_year",
-              "financed_emissions_equity[3].reporting_year",
-              "financed_emissions_equity[4].reporting_year"
-            ],
-            "requirement_ids": [
-              "IFRS_S1_46_C01",
-              "IFRS_S1_46_C03"
-            ],
-            "supported": true,
-            "support_notes": "Scopes and year are explicitly stated.",
-            "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
-            "repaired_evidence_sources": [
-              "financed_emissions_equity[4].reporting_year",
-              "financed_emissions_equity[3].reporting_year",
-              "financed_emissions_equity[2].reporting_year"
-            ],
-            "invalid_evidence_sources_removed": [
-              "Draft report section: \"Operational greenhouse gas (GHG) emissions\""
-            ]
-          },
-          {
-            "claim_id": "CLM-MT-004",
-            "claim_text": "Scope 1 emissions for 2024 are 2,634.9 tCO2e.",
+            "claim_id": "CLM-4-003",
+            "claim_text": "Scope 1 emissions for 2024 were 2,634.9 tCO2e.",
             "claim_type": "metric_value",
             "entities": [
-              "the entity"
+              "Scope 1 emissions",
+              "the bank"
             ],
             "numbers": [
               "2634.9"
@@ -172,78 +131,22 @@
               "IFRS_S1_46_C03"
             ],
             "supported": true,
-            "support_notes": "Numeric Scope 1 value is explicitly disclosed.",
+            "support_notes": "Quantitative operational emissions metric disclosed.",
             "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
             "repaired_evidence_sources": [
               "reporting_kpis.scope1_2024_tco2e"
             ],
             "invalid_evidence_sources_removed": [
-              "Draft report section: \"Scope 1 (direct) emissions (2024)\""
+              "Draft markdown: Table 1 (Scope 1 emissions)"
             ]
           },
           {
-            "claim_id": "CLM-MT-005",
-            "claim_text": "The Scope 1 inventory includes emissions from the fleet.",
-            "claim_type": "methodology",
-            "entities": [
-              "fleet",
-              "the entity"
-            ],
-            "numbers": [],
-            "dates": [
-              "2024"
-            ],
-            "evidence_sources": [
-              "reporting_kpis.scope1_fleet_included"
-            ],
-            "requirement_ids": [
-              "IFRS_S1_50_C04"
-            ],
-            "supported": true,
-            "support_notes": "Inventory inclusion statement is explicitly disclosed (partial method/input description).",
-            "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
-            "repaired_evidence_sources": [
-              "reporting_kpis.scope1_fleet_included"
-            ],
-            "invalid_evidence_sources_removed": [
-              "Draft report section: \"Scope 1 (direct) emissions (2024)\""
-            ]
-          },
-          {
-            "claim_id": "CLM-MT-006",
-            "claim_text": "Scope 2 emissions for 2024 are disclosed using both location-based and market-based approaches.",
-            "claim_type": "methodology",
-            "entities": [
-              "the entity"
-            ],
-            "numbers": [],
-            "dates": [
-              "2024"
-            ],
-            "evidence_sources": [
-              "metadata.pcaf_methodology.corporate_loans",
-              "metadata.risk_rating_methodology",
-              "metadata.scope2_rec_reconciliation",
-              "metadata.vehicles_correction.reason",
-              "reporting_kpis.target_summary[0].scope"
-            ],
-            "requirement_ids": [
-              "IFRS_S1_46_C01",
-              "IFRS_S1_46_C03",
-              "IFRS_S1_50_C04"
-            ],
-            "supported": true,
-            "support_notes": "Approach types are explicitly stated.",
-            "invalid_evidence_sources_removed": [
-              "Draft report section: \"Scope 2 (energy indirect) emissions (2024)\""
-            ]
-          },
-          {
-            "claim_id": "CLM-MT-007",
-            "claim_text": "Scope 2 (location-based) emissions for 2024 are 6,963.5 tCO2e.",
+            "claim_id": "CLM-4-004",
+            "claim_text": "Scope 2 emissions (location-based) for 2024 were 6,963.5 tCO2e.",
             "claim_type": "metric_value",
             "entities": [
-              "the entity"
+              "Scope 2 emissions (location-based)",
+              "the bank"
             ],
             "numbers": [
               "6963.5"
@@ -263,17 +166,18 @@
               "IFRS_S1_46_C03"
             ],
             "supported": true,
-            "support_notes": "Numeric location-based Scope 2 value is explicitly disclosed.",
+            "support_notes": "Quantitative operational emissions metric disclosed.",
             "invalid_evidence_sources_removed": [
-              "Draft report section: \"Scope 2 (energy indirect) emissions (2024)\""
+              "Draft markdown: Table 1 (Scope 2 location-based)"
             ]
           },
           {
-            "claim_id": "CLM-MT-008",
-            "claim_text": "Scope 2 (market-based) emissions for 2024 are 3,060.5 tCO2e.",
+            "claim_id": "CLM-4-005",
+            "claim_text": "Scope 2 emissions (market-based) for 2024 were 3,060.5 tCO2e.",
             "claim_type": "metric_value",
             "entities": [
-              "the entity"
+              "Scope 2 emissions (market-based)",
+              "the bank"
             ],
             "numbers": [
               "3060.5"
@@ -289,53 +193,23 @@
               "IFRS_S1_46_C03"
             ],
             "supported": true,
-            "support_notes": "Numeric market-based Scope 2 value is explicitly disclosed.",
+            "support_notes": "Quantitative operational emissions metric disclosed.",
             "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
             "repaired_evidence_sources": [
               "reporting_kpis.scope2_market_2024_tco2e"
             ],
             "invalid_evidence_sources_removed": [
-              "Draft report section: \"Scope 2 (energy indirect) emissions (2024)\""
+              "Draft markdown: Table 1 (Scope 2 market-based)"
             ]
           },
           {
-            "claim_id": "CLM-MT-009",
-            "claim_text": "For market-based Scope 2, the reported figure is sourced from utility invoice data and reflects market-based accounting using grid emission factors adjusted for renewable energy certificates and power purchase agreements; certificates are not subtracted again to avoid double-counting.",
-            "claim_type": "methodology",
-            "entities": [
-              "power purchase agreements",
-              "renewable energy certificates",
-              "the entity",
-              "utility invoice data"
-            ],
-            "numbers": [],
-            "dates": [
-              "2024"
-            ],
-            "evidence_sources": [
-              "metadata.scope2_rec_reconciliation"
-            ],
-            "requirement_ids": [
-              "IFRS_S1_49_C01",
-              "IFRS_S1_50_C01",
-              "IFRS_S1_50_C04"
-            ],
-            "supported": true,
-            "support_notes": "Identifies a data source (utility invoices) and key calculation assumptions (adjustments; no double subtraction).",
-            "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
-            "repaired_evidence_sources": [
-              "metadata.scope2_rec_reconciliation"
-            ],
-            "invalid_evidence_sources_removed": [
-              "Draft report section: paragraph beginning \"For market-based Scope 2...\""
-            ]
-          },
-          {
-            "claim_id": "CLM-MT-010",
-            "claim_text": "Business travel (Scope 3) emissions for 2024 are 289.9 tCO2e.",
+            "claim_id": "CLM-4-006",
+            "claim_text": "Scope 3 emissions from business travel for 2024 were 289.9 tCO2e.",
             "claim_type": "metric_value",
             "entities": [
-              "the entity"
+              "Scope 3 emissions",
+              "business travel",
+              "the bank"
             ],
             "numbers": [
               "289.9"
@@ -346,62 +220,86 @@
             "evidence_sources": [
               "metadata.pcaf_methodology.corporate_loans",
               "metadata.risk_rating_methodology",
-              "metadata.scope2_rec_reconciliation",
-              "metadata.vehicles_correction.reason",
-              "reporting_kpis.target_summary[0].scope"
+              "reporting_kpis.target_summary[1].scope",
+              "targets[1].scope",
+              "targets[1].scope_coverage"
             ],
             "requirement_ids": [
               "IFRS_S1_46_C01",
               "IFRS_S1_46_C03"
             ],
             "supported": true,
-            "support_notes": "Numeric Scope 3 business travel value is explicitly disclosed.",
+            "support_notes": "Quantitative Scope 3 category metric disclosed.",
             "invalid_evidence_sources_removed": [
-              "Draft report section: \"Selected Scope 3 (2024)\""
+              "Draft markdown: Table 1 (Scope 3 business travel)"
             ]
           },
           {
-            "claim_id": "CLM-MT-011",
-            "claim_text": "Financed emissions are disclosed for loans for 2022–2024, enabling year-on-year comparison.",
-            "claim_type": "metric_disclosure",
+            "claim_id": "CLM-4-007",
+            "claim_text": "A correction was applied to address errors in a pre-computed Scope 1 figure, including non-zero values for electric vehicles.",
+            "claim_type": "restatement_or_correction",
             "entities": [
-              "loans",
-              "the entity"
+              "Scope 1 emissions",
+              "electric vehicles",
+              "the bank"
             ],
             "numbers": [],
-            "dates": [
-              "2022",
-              "2023",
-              "2024"
-            ],
+            "dates": [],
             "evidence_sources": [
-              "financed_emissions[1].total_loans_meur",
-              "financed_emissions[2].financed_em_loans_tco2e",
-              "financed_emissions[2].total_loans_meur"
+              "metadata.vehicles_correction.reason"
             ],
             "requirement_ids": [
-              "IFRS_S1_46_C01",
-              "IFRS_S1_B49_C01"
+              "IFRS_S1_52_C01",
+              "IFRS_S1_B50_C03",
+              "IFRS_S1_B52_C02"
             ],
             "supported": true,
-            "support_notes": "Multi-year disclosure is explicitly stated and presented.",
+            "support_notes": "Correction is described, but no revised comparative amounts/differences are provided in this section.",
             "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
             "repaired_evidence_sources": [
-              "financed_emissions[2].total_loans_meur",
-              "financed_emissions[2].financed_em_loans_tco2e",
-              "financed_emissions[1].total_loans_meur"
+              "metadata.vehicles_correction.reason"
             ],
             "invalid_evidence_sources_removed": [
-              "Draft report section: \"Financed emissions — lending (Scope 3 Category 15)\""
+              "Draft markdown: Table 1 notes (Scope 1)"
             ]
           },
           {
-            "claim_id": "CLM-MT-012",
-            "claim_text": "Financed emissions from loans are 36,550,177.7 tCO2e (2022), 37,427,593.2 tCO2e (2023), and 35,973,167.7 tCO2e (2024).",
+            "claim_id": "CLM-4-008",
+            "claim_text": "Market-based Scope 2 is sourced directly from utility invoices and reflects grid emission factors adjusted for renewable energy certificates and power purchase agreements; certificate registry data is used for disclosure narrative and is not subtracted again during preparation.",
+            "claim_type": "methodology",
+            "entities": [
+              "Scope 2 emissions (market-based)",
+              "certificate registry data",
+              "power purchase agreements",
+              "renewable energy certificates",
+              "the bank",
+              "utility invoices"
+            ],
+            "numbers": [],
+            "dates": [],
+            "evidence_sources": [
+              "metadata.scope2_rec_reconciliation"
+            ],
+            "requirement_ids": [
+              "IFRS_S1_50_C04"
+            ],
+            "supported": true,
+            "support_notes": "Provides inputs and treatment for market-based Scope 2.",
+            "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+            "repaired_evidence_sources": [
+              "metadata.scope2_rec_reconciliation"
+            ],
+            "invalid_evidence_sources_removed": [
+              "Draft markdown: Table 1 notes (Scope 2 market-based)"
+            ]
+          },
+          {
+            "claim_id": "CLM-4-009",
+            "claim_text": "Financed emissions from loans were 36,550,177.7 tCO2e (2022), 37,427,593.2 tCO2e (2023), and 35,973,167.7 tCO2e (2024).",
             "claim_type": "metric_value",
             "entities": [
-              "loans",
-              "the entity"
+              "financed emissions from loans",
+              "the bank"
             ],
             "numbers": [
               "35973167.7",
@@ -420,10 +318,11 @@
             ],
             "requirement_ids": [
               "IFRS_S1_46_C01",
+              "IFRS_S1_46_C03",
               "IFRS_S1_B49_C01"
             ],
             "supported": true,
-            "support_notes": "Year-by-year financed emissions values are explicitly disclosed.",
+            "support_notes": "Includes comparative series (2022-2024).",
             "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
             "repaired_evidence_sources": [
               "financed_emissions[2].financed_em_loans_tco2e",
@@ -431,16 +330,16 @@
               "financed_emissions[0].financed_em_loans_tco2e"
             ],
             "invalid_evidence_sources_removed": [
-              "Draft report section: table/list under \"Financed emissions from loans (tCO2e)\""
+              "Draft markdown: Table 2 (Financed emissions from loans)"
             ]
           },
           {
-            "claim_id": "CLM-MT-013",
-            "claim_text": "For each of 2022–2024, the total loans used in the financed emissions calculation were €31,150.64 million.",
-            "claim_type": "metric_input",
+            "claim_id": "CLM-4-010",
+            "claim_text": "Total loans were €31,150.64 million in each of 2022, 2023, and 2024.",
+            "claim_type": "metric_value",
             "entities": [
-              "loans",
-              "the entity"
+              "the bank",
+              "total loans"
             ],
             "numbers": [
               "31150.64"
@@ -456,11 +355,11 @@
               "financed_emissions[2].total_loans_meur"
             ],
             "requirement_ids": [
-              "IFRS_S1_50_C04",
+              "IFRS_S1_46_C01",
               "IFRS_S1_B49_C01"
             ],
             "supported": true,
-            "support_notes": "Discloses a key input to the financed emissions calculation and indicates consistency across years.",
+            "support_notes": "Quantitative portfolio size disclosed alongside financed emissions.",
             "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
             "repaired_evidence_sources": [
               "financed_emissions[2].total_loans_meur",
@@ -468,18 +367,87 @@
               "financed_emissions[0].total_loans_meur"
             ],
             "invalid_evidence_sources_removed": [
-              "Draft report section: sentence beginning \"For each of 2022–2024...\""
+              "Draft markdown: Table 2 (Total loans)"
             ]
           },
           {
-            "claim_id": "CLM-MT-014",
-            "claim_text": "Financed emissions for corporate loans are calculated in line with the PCAF Standard using outstanding loan amount relative to borrower EVIC to determine share, applied to borrower total GHG emissions.",
+            "claim_id": "CLM-4-011",
+            "claim_text": "Across the three-year series presented, financed emissions from loans decreased from 37,427,593.2 tCO2e in 2023 to 35,973,167.7 tCO2e in 2024.",
+            "claim_type": "trend_statement",
+            "entities": [
+              "financed emissions from loans",
+              "the bank"
+            ],
+            "numbers": [
+              "35973167.7",
+              "37427593.2"
+            ],
+            "dates": [
+              "2023",
+              "2024"
+            ],
+            "evidence_sources": [
+              "financed_emissions[0].financed_em_loans_tco2e",
+              "financed_emissions[1].financed_em_loans_tco2e",
+              "financed_emissions[2].financed_em_loans_tco2e"
+            ],
+            "requirement_ids": [
+              "IFRS_S1_51_C06"
+            ],
+            "supported": true,
+            "support_notes": "Trend is directly supported by Table 2 values.",
+            "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+            "repaired_evidence_sources": [
+              "financed_emissions[2].financed_em_loans_tco2e",
+              "financed_emissions[1].financed_em_loans_tco2e",
+              "financed_emissions[0].financed_em_loans_tco2e"
+            ],
+            "invalid_evidence_sources_removed": [
+              "Draft markdown: Narrative under Table 2"
+            ]
+          },
+          {
+            "claim_id": "CLM-4-012",
+            "claim_text": "Financed emissions are calculated using approaches aligned to the Partnership for Carbon Accounting Financials (PCAF) Standard.",
+            "claim_type": "methodology",
+            "entities": [
+              "PCAF Standard",
+              "Partnership for Carbon Accounting Financials",
+              "the bank"
+            ],
+            "numbers": [],
+            "dates": [],
+            "evidence_sources": [
+              "internal_carbon_price[2].applies_to_financed_emissions",
+              "metadata.pcaf_methodology.corporate_loans",
+              "metadata.pcaf_methodology.listed_equity"
+            ],
+            "requirement_ids": [
+              "IFRS_S1_49_C01",
+              "IFRS_S1_50_C04"
+            ],
+            "supported": true,
+            "support_notes": "External source/standard is identified (PCAF).",
+            "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+            "repaired_evidence_sources": [
+              "metadata.pcaf_methodology.listed_equity",
+              "metadata.pcaf_methodology.corporate_loans",
+              "internal_carbon_price[2].applies_to_financed_emissions"
+            ],
+            "invalid_evidence_sources_removed": [
+              "Draft markdown: 4.3.2 Methodology for financed emissions"
+            ]
+          },
+          {
+            "claim_id": "CLM-4-013",
+            "claim_text": "For corporate loans, financed emissions are calculated by attributing a share of a borrower’s total GHG emissions based on the bank’s outstanding amount relative to the borrower’s EVIC, applied to the borrower’s total GHG emissions.",
             "claim_type": "methodology",
             "entities": [
               "EVIC",
-              "PCAF Standard",
+              "borrower",
               "corporate loans",
-              "the entity"
+              "enterprise value including cash",
+              "the bank"
             ],
             "numbers": [],
             "dates": [],
@@ -489,12 +457,10 @@
               "metadata.pcaf_methodology.listed_equity"
             ],
             "requirement_ids": [
-              "IFRS_S1_48_C01",
-              "IFRS_S1_49_C01",
               "IFRS_S1_50_C04"
             ],
             "supported": true,
-            "support_notes": "Identifies external standard (PCAF) and summarizes calculation method and inputs (outstanding amount, EVIC, borrower emissions).",
+            "support_notes": "Describes calculation method and key input (EVIC).",
             "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
             "repaired_evidence_sources": [
               "metadata.pcaf_methodology.listed_equity",
@@ -502,134 +468,100 @@
               "financed_emissions[2].total_loans_meur"
             ],
             "invalid_evidence_sources_removed": [
-              "Draft report section: \"Methodology — corporate loans\""
+              "Draft markdown: 4.3.2 bullet (Corporate loans)"
             ]
           },
           {
-            "claim_id": "CLM-MT-015",
-            "claim_text": "For the 2024 reporting year, financed emissions metrics are prepared for listed equity holdings using a PCAF proxy approach in which issuer revenue is used as the proxy input.",
+            "claim_id": "CLM-4-014",
+            "claim_text": "For listed equity, financed emissions are estimated using a PCAF proxy approach using issuer revenue as the proxy input, with attribution based on market value relative to issuer EVIC.",
             "claim_type": "methodology",
             "entities": [
-              "PCAF",
+              "EVIC",
+              "PCAF proxy approach",
               "issuer revenue",
               "listed equity",
-              "the entity"
+              "the bank"
             ],
             "numbers": [],
-            "dates": [
-              "2024"
-            ],
+            "dates": [],
             "evidence_sources": [
-              "financed_emissions_equity[1].proxy_reason",
               "financed_emissions_equity[2].proxy_reason",
-              "financed_emissions_equity[3].proxy_reason"
+              "financed_emissions_equity[3].proxy_reason",
+              "metadata.pcaf_methodology.listed_equity"
             ],
             "requirement_ids": [
-              "IFRS_S1_48_C01",
               "IFRS_S1_49_C01",
               "IFRS_S1_50_C04"
             ],
             "supported": true,
-            "support_notes": "Discloses proxy approach and proxy input (issuer revenue) and references PCAF.",
-            "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
-            "repaired_evidence_sources": [
-              "financed_emissions_equity[3].proxy_reason",
-              "financed_emissions_equity[2].proxy_reason",
-              "financed_emissions_equity[1].proxy_reason"
-            ],
-            "invalid_evidence_sources_removed": [
-              "Draft report section: \"Financed emissions — listed equity (proxy-based approach)\""
-            ]
-          },
-          {
-            "claim_id": "CLM-MT-016",
-            "claim_text": "For listed equity, the entity estimates its share based on market value of the holding relative to issuer EVIC and uses issuer revenue as the proxy input; outputs are presented as modelled estimates.",
-            "claim_type": "methodology",
-            "entities": [
-              "EVIC",
-              "issuer revenue",
-              "listed equity",
-              "the entity"
-            ],
-            "numbers": [],
-            "dates": [
-              "2024"
-            ],
-            "evidence_sources": [
-              "metadata.pcaf_methodology.corporate_loans",
-              "metadata.pcaf_methodology.listed_equity"
-            ],
-            "requirement_ids": [
-              "IFRS_S1_50_C04"
-            ],
-            "supported": true,
-            "support_notes": "Method and estimation nature are explicitly described.",
+            "support_notes": "Method and proxy input basis are stated.",
             "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
             "repaired_evidence_sources": [
               "metadata.pcaf_methodology.listed_equity",
-              "metadata.pcaf_methodology.corporate_loans"
+              "financed_emissions_equity[3].proxy_reason",
+              "financed_emissions_equity[2].proxy_reason"
             ],
             "invalid_evidence_sources_removed": [
-              "Draft report section: \"Methodology — listed equity\" and following sentence on modelled estimates"
+              "Draft markdown: 4.3.2 bullet (Listed equity)"
             ]
           },
           {
-            "claim_id": "CLM-MT-017",
-            "claim_text": "Listed equity holdings included in the financed emissions equity dataset have 2024 market values of €23.93m, €556.40m, €35.36m, €79.11m, €25.57m, €1,886.33m, €2,564.65m, and €288.08m; one holding has nominal amount €27.98m and purchase date 26 May 2019; another has nominal amount €636.77m.",
+            "claim_id": "CLM-4-015",
+            "claim_text": "Listed equity holdings market values (EUR, €m) for reporting year 2024 are: 23.93, 556.40, 35.36, 79.11, 25.57, 1,886.33, 2,564.65, and 288.08; proxy input basis is issuer revenue.",
             "claim_type": "metric_value",
             "entities": [
               "listed equity holdings",
-              "the entity"
+              "the bank"
             ],
             "numbers": [
               "1886.33",
               "23.93",
               "25.57",
               "2564.65",
-              "27.98",
               "288.08",
               "35.36",
-              "556.4",
-              "636.77",
+              "556.40",
               "79.11"
             ],
             "dates": [
-              "2019-05-26",
               "2024"
             ],
             "evidence_sources": [
-              "financed_emissions_equity[0].nominal_amount_meur",
-              "financed_emissions_equity[1].nominal_amount_meur",
+              "financed_emissions_equity[5].market_value_meur",
+              "financed_emissions_equity[6].market_value_meur",
               "financed_emissions_equity[7].market_value_meur"
             ],
             "requirement_ids": [
-              "IFRS_S1_46_C01"
+              "IFRS_S1_46_C01",
+              "IFRS_S1_46_C03"
             ],
             "supported": true,
-            "support_notes": "Market values, nominal amounts, and purchase date are explicitly listed.",
+            "support_notes": "Portfolio input metrics disclosed; issuer names not provided.",
             "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
             "repaired_evidence_sources": [
-              "financed_emissions_equity[1].nominal_amount_meur",
-              "financed_emissions_equity[0].nominal_amount_meur",
-              "financed_emissions_equity[7].market_value_meur"
+              "financed_emissions_equity[7].market_value_meur",
+              "financed_emissions_equity[6].market_value_meur",
+              "financed_emissions_equity[5].market_value_meur"
             ],
             "invalid_evidence_sources_removed": [
-              "Draft report section: \"Listed equity holdings — market value (2024, € million)\""
+              "Draft markdown: Table 3 (Listed equity holdings market value)"
             ]
           },
           {
-            "claim_id": "CLM-MT-018",
-            "claim_text": "High-carbon sector exposure is €11,059.49 million and represents 35.5% of the relevant total.",
+            "claim_id": "CLM-4-016",
+            "claim_text": "High-carbon sector exposure (absolute) is €11,059.49 million and high-carbon sector exposure (as a share of total) is 35.5%.",
             "claim_type": "metric_value",
             "entities": [
               "high-carbon sectors",
-              "the entity"
+              "the bank"
             ],
             "numbers": [
               "11059.49",
               "35.5"
             ],
-            "dates": [],
+            "dates": [
+              "2024"
+            ],
             "evidence_sources": [
               "reporting_kpis.emissions_data_quality_summary.cdp_disclosure",
               "reporting_kpis.high_carbon_sector_exposure_meur",
@@ -640,7 +572,7 @@
               "IFRS_S1_48_C01"
             ],
             "supported": true,
-            "support_notes": "Portfolio exposure metric and percentage share are explicitly disclosed.",
+            "support_notes": "Industry-relevant banking metric (sector concentration) disclosed.",
             "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
             "repaired_evidence_sources": [
               "reporting_kpis.high_carbon_sector_exposure_pct",
@@ -648,16 +580,50 @@
               "reporting_kpis.emissions_data_quality_summary.cdp_disclosure"
             ],
             "invalid_evidence_sources_removed": [
-              "Draft report section: \"Exposure to high-carbon sectors\""
+              "Draft markdown: 4.4 Exposure to high-carbon sectors"
             ]
           },
           {
-            "claim_id": "CLM-MT-019",
-            "claim_text": "Internal carbon pricing is used as a decision-support input and is expressed in €/tCO2e; disclosed internal carbon prices are €42.73/tCO2e (investment decisions; financed emissions; lending decisions), €48.73/tCO2e (product pricing), and €54.73/tCO2e (investment decisions; lending decisions).",
+            "claim_id": "CLM-4-017",
+            "claim_text": "Total assets for 2024 were €850,000.0 million.",
             "claim_type": "metric_value",
             "entities": [
-              "internal carbon pricing",
-              "the entity"
+              "the bank",
+              "total assets"
+            ],
+            "numbers": [
+              "850000.0"
+            ],
+            "dates": [
+              "2024"
+            ],
+            "evidence_sources": [
+              "reporting_kpis.total_assets_2024_meur"
+            ],
+            "requirement_ids": [
+              "IFRS_S1_46_C01"
+            ],
+            "supported": true,
+            "support_notes": "Provides denominator context for exposure share.",
+            "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+            "repaired_evidence_sources": [
+              "reporting_kpis.total_assets_2024_meur"
+            ],
+            "invalid_evidence_sources_removed": [
+              "Draft markdown: 4.4 Exposure to high-carbon sectors"
+            ]
+          },
+          {
+            "claim_id": "CLM-4-018",
+            "claim_text": "Internal carbon prices are 42.73 EUR/tCO2e (investment decisions; applied to lending decisions and financed emissions), 48.73 EUR/tCO2e (product pricing; not applied to lending decisions or financed emissions), and 54.73 EUR/tCO2e (investment decisions; applied to lending decisions, not applied to financed emissions).",
+            "claim_type": "metric_value",
+            "entities": [
+              "financed emissions",
+              "internal carbon price",
+              "investment decisions",
+              "lending decisions",
+              "product pricing",
+              "the bank"
             ],
             "numbers": [
               "42.73",
@@ -671,11 +637,11 @@
               "internal_carbon_price[2].carbon_price_eur_per_tco2e"
             ],
             "requirement_ids": [
-              "IFRS_S1_46_C01",
-              "IFRS_S1_46_C03"
+              "IFRS_S1_46_C03",
+              "IFRS_S1_50_C02"
             ],
             "supported": true,
-            "support_notes": "Metric definition (unit) and values by context are explicitly disclosed.",
+            "support_notes": "Quantitative inputs and qualitative application flags disclosed.",
             "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
             "repaired_evidence_sources": [
               "internal_carbon_price[2].carbon_price_eur_per_tco2e",
@@ -683,55 +649,87 @@
               "internal_carbon_price[0].carbon_price_eur_per_tco2e"
             ],
             "invalid_evidence_sources_removed": [
-              "Draft report section: \"Internal carbon pricing\""
+              "Draft markdown: Table 4 (Internal carbon prices and application)"
             ]
           },
           {
-            "claim_id": "CLM-MT-020",
-            "claim_text": "Target TGT001 is an absolute reduction target covering Scope 1 and Scope 2 for the whole entity and covering Kyoto 7 gases, with baseline year 2020, baseline value 137,849.0 tCO2e, and target ambition of 42% reduction.",
-            "claim_type": "target",
+            "claim_id": "CLM-4-019",
+            "claim_text": "Target TGT001 is an absolute reduction target measured in tCO2e and applies to Scope 1 and Scope 2 for the whole entity.",
+            "claim_type": "target_definition",
             "entities": [
-              "Kyoto 7",
-              "Target TGT001",
-              "the entity"
+              "Scope 1",
+              "Scope 2",
+              "TGT001",
+              "the bank",
+              "whole entity"
+            ],
+            "numbers": [],
+            "dates": [],
+            "evidence_sources": [
+              "reporting_kpis.target_summary[0].target_id",
+              "targets[0].target_id",
+              "targets[2].associated_gross_target_id"
+            ],
+            "requirement_ids": [
+              "IFRS_S1_51_C01",
+              "IFRS_S1_51_C02",
+              "IFRS_S1_53_C01"
+            ],
+            "supported": true,
+            "support_notes": "Metric type (absolute) and scope/boundary are stated.",
+            "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+            "repaired_evidence_sources": [
+              "targets[2].associated_gross_target_id",
+              "targets[0].target_id",
+              "reporting_kpis.target_summary[0].target_id"
+            ],
+            "invalid_evidence_sources_removed": [
+              "Draft markdown: 4.6.1 Target TGT001 description"
+            ]
+          },
+          {
+            "claim_id": "CLM-4-020",
+            "claim_text": "For TGT001, baseline is 137,849.0 tCO2e (baseline year 2020) and target ambition is a 42% reduction.",
+            "claim_type": "target_parameter",
+            "entities": [
+              "TGT001",
+              "the bank"
             ],
             "numbers": [
               "137849.0",
-              "42.0"
+              "42"
             ],
             "dates": [
               "2020"
             ],
             "evidence_sources": [
               "targets[0].baseline_value",
-              "targets[1].baseline_year",
-              "targets[2].baseline_value"
+              "targets[0].target_value_pct_reduction",
+              "targets[2].associated_gross_target_id"
             ],
             "requirement_ids": [
-              "IFRS_S1_50_C02",
-              "IFRS_S1_51_C01",
               "IFRS_S1_51_C02",
               "IFRS_S1_51_C04"
             ],
             "supported": true,
-            "support_notes": "Target name, type (absolute), scope coverage, baseline year/value, and ambition are explicitly disclosed.",
+            "support_notes": "Baseline amount and base period disclosed.",
             "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
             "repaired_evidence_sources": [
               "targets[0].baseline_value",
-              "targets[2].baseline_value",
-              "targets[1].baseline_year"
+              "targets[0].target_value_pct_reduction",
+              "targets[2].associated_gross_target_id"
             ],
             "invalid_evidence_sources_removed": [
-              "Draft report section: \"Target TGT001 — Scope 1 and Scope 2 absolute emissions reduction\""
+              "Draft markdown: 4.6.1 bullets (Baseline; Target ambition)"
             ]
           },
           {
-            "claim_id": "CLM-MT-021",
-            "claim_text": "Interim milestones for Target TGT001 are 120,480.0 tCO2e in 2025 and 97,321.4 tCO2e in 2028.",
+            "claim_id": "CLM-4-021",
+            "claim_text": "For TGT001, interim milestones are 120,480.0 tCO2e in 2025 and 97,321.4 tCO2e in 2028.",
             "claim_type": "target_milestone",
             "entities": [
-              "Target TGT001",
-              "the entity"
+              "TGT001",
+              "the bank"
             ],
             "numbers": [
               "120480.0",
@@ -750,7 +748,7 @@
               "IFRS_S1_51_C05"
             ],
             "supported": true,
-            "support_notes": "Milestones and years are explicitly disclosed.",
+            "support_notes": "Interim targets disclosed with years.",
             "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
             "repaired_evidence_sources": [
               "targets[0].interim_milestones_json",
@@ -758,17 +756,48 @@
               "targets[0].milestones_parsed[0].value"
             ],
             "invalid_evidence_sources_removed": [
-              "Draft report section: \"Target TGT001\" (Interim milestones list)"
+              "Draft markdown: 4.6.1 bullets (Interim milestones)"
             ]
           },
           {
-            "claim_id": "CLM-MT-022",
-            "claim_text": "Progress against Target TGT001 in 2024 is 40.0% with status \"On track\"; third-party validation is SBTi.",
+            "claim_id": "CLM-4-022",
+            "claim_text": "For TGT001, GHG gases covered are all Kyoto 7 and third-party validation is SBTi.",
+            "claim_type": "target_attribute",
+            "entities": [
+              "Kyoto 7",
+              "SBTi",
+              "TGT001",
+              "the bank"
+            ],
+            "numbers": [],
+            "dates": [],
+            "evidence_sources": [
+              "targets[0].target_id",
+              "targets[0].validation_body",
+              "targets[2].associated_gross_target_id"
+            ],
+            "requirement_ids": [
+              "IFRS_S1_50_C03"
+            ],
+            "supported": true,
+            "support_notes": "Third-party validation party is named; validation scope/details not provided.",
+            "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+            "repaired_evidence_sources": [
+              "targets[0].validation_body",
+              "targets[2].associated_gross_target_id",
+              "targets[0].target_id"
+            ],
+            "invalid_evidence_sources_removed": [
+              "Draft markdown: 4.6.1 bullets (GHG gases covered; Third-party validation)"
+            ]
+          },
+          {
+            "claim_id": "CLM-4-023",
+            "claim_text": "For TGT001, 2024 progress is 40.0% and status is on track.",
             "claim_type": "target_progress",
             "entities": [
-              "SBTi",
-              "Target TGT001",
-              "the entity"
+              "TGT001",
+              "the bank"
             ],
             "numbers": [
               "40.0"
@@ -779,70 +808,99 @@
             "evidence_sources": [
               "reporting_kpis.target_summary[0].target_progress_pct_2024",
               "targets[0].target_progress_pct_2024",
-              "targets[0].validation_body"
+              "targets[2].associated_gross_target_id"
             ],
             "requirement_ids": [
-              "IFRS_S1_50_C03",
               "IFRS_S1_51_C06"
             ],
             "supported": true,
-            "support_notes": "Progress %, qualitative status, and validator are explicitly disclosed.",
+            "support_notes": "Performance against target is stated; calculation basis for % not shown here.",
             "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
             "repaired_evidence_sources": [
               "targets[0].target_progress_pct_2024",
               "reporting_kpis.target_summary[0].target_progress_pct_2024",
-              "targets[0].validation_body"
+              "targets[2].associated_gross_target_id"
             ],
             "invalid_evidence_sources_removed": [
-              "Draft report section: \"Target TGT001\" (Progress sentence)"
+              "Draft markdown: 4.6.1 bullets (2024 progress; Status)"
             ]
           },
           {
-            "claim_id": "CLM-MT-023",
-            "claim_text": "A financed emissions intensity target is disclosed for Scope 3 Category 15 using tCO2e per € million of lending, with baseline year 2022, baseline value 20.0 tCO2e per € million of lending, and target ambition of 30% reduction.",
-            "claim_type": "target",
+            "claim_id": "CLM-4-024",
+            "claim_text": "The Scope 3 Category 15 financed emissions intensity reduction target is measured as tCO2e per € million of lending and applies to Scope 3 Category 15 for the whole entity.",
+            "claim_type": "target_definition",
             "entities": [
               "Scope 3 Category 15",
-              "lending",
-              "the entity"
+              "financed emissions",
+              "the bank",
+              "whole entity"
+            ],
+            "numbers": [],
+            "dates": [],
+            "evidence_sources": [
+              "bank.target_intensity_tco2e_per_meur",
+              "internal_carbon_price[2].applies_to_financed_emissions",
+              "reporting_kpis.financed_emissions_2024_tco2e"
+            ],
+            "requirement_ids": [
+              "IFRS_S1_50_C02",
+              "IFRS_S1_51_C01"
+            ],
+            "supported": true,
+            "support_notes": "Intensity metric and scope are explicitly stated.",
+            "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+            "repaired_evidence_sources": [
+              "bank.target_intensity_tco2e_per_meur",
+              "reporting_kpis.financed_emissions_2024_tco2e",
+              "internal_carbon_price[2].applies_to_financed_emissions"
+            ],
+            "invalid_evidence_sources_removed": [
+              "Draft markdown: 4.6.2 target description"
+            ]
+          },
+          {
+            "claim_id": "CLM-4-025",
+            "claim_text": "For the financed emissions intensity target, baseline is 20.0 tCO2e per € million of lending (baseline year 2022) and target ambition is a 30% reduction.",
+            "claim_type": "target_parameter",
+            "entities": [
+              "financed emissions intensity target",
+              "the bank"
             ],
             "numbers": [
               "20.0",
-              "30.0"
+              "30"
             ],
             "dates": [
               "2022"
             ],
             "evidence_sources": [
               "bank.target_intensity_tco2e_per_meur",
-              "targets[1].baseline_value",
-              "targets[1].interim_milestones_json"
+              "financed_emissions_sovereign[4].national_scope1_tco2e",
+              "targets[1].baseline_value"
             ],
             "requirement_ids": [
-              "IFRS_S1_50_C02",
-              "IFRS_S1_51_C01",
               "IFRS_S1_51_C02",
               "IFRS_S1_51_C04"
             ],
             "supported": true,
-            "support_notes": "Metric, baseline year/value, and ambition are explicitly disclosed.",
+            "support_notes": "Baseline and base year disclosed.",
             "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
             "repaired_evidence_sources": [
-              "targets[1].baseline_value",
               "bank.target_intensity_tco2e_per_meur",
-              "targets[1].interim_milestones_json"
+              "targets[1].baseline_value",
+              "financed_emissions_sovereign[4].national_scope1_tco2e"
             ],
             "invalid_evidence_sources_removed": [
-              "Draft report section: \"Financed emissions intensity target — Scope 3 Category 15 (financed)\""
+              "Draft markdown: 4.6.2 bullets (Baseline; Target ambition)"
             ]
           },
           {
-            "claim_id": "CLM-MT-024",
-            "claim_text": "Interim milestones for the financed emissions intensity target are 18.2 tCO2e per € million of lending in 2025 and 15.8 tCO2e per € million of lending in 2028.",
+            "claim_id": "CLM-4-026",
+            "claim_text": "For the financed emissions intensity target, interim milestones are 18.2 tCO2e per € million of lending in 2025 and 15.8 tCO2e per € million of lending in 2028.",
             "claim_type": "target_milestone",
             "entities": [
-              "lending",
-              "the entity"
+              "financed emissions intensity target",
+              "the bank"
             ],
             "numbers": [
               "15.8",
@@ -853,67 +911,70 @@
               "2028"
             ],
             "evidence_sources": [
-              "targets[1].interim_milestones_json",
-              "targets[1].milestones_parsed[0].metric",
-              "targets[1].milestones_parsed[1].metric"
+              "bank.target_intensity_tco2e_per_meur",
+              "targets[0].interim_milestones_json",
+              "targets[1].interim_milestones_json"
             ],
             "requirement_ids": [
               "IFRS_S1_51_C05"
             ],
             "supported": true,
-            "support_notes": "Milestones and years are explicitly disclosed.",
+            "support_notes": "Interim targets disclosed with years.",
             "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
             "repaired_evidence_sources": [
               "targets[1].interim_milestones_json",
-              "targets[1].milestones_parsed[1].metric",
-              "targets[1].milestones_parsed[0].metric"
+              "bank.target_intensity_tco2e_per_meur",
+              "targets[0].interim_milestones_json"
             ],
             "invalid_evidence_sources_removed": [
-              "Draft report section: financed emissions intensity target (Interim milestones list)"
+              "Draft markdown: 4.6.2 bullets (Interim milestones)"
             ]
           },
           {
-            "claim_id": "CLM-MT-025",
-            "claim_text": "Progress in 2024 for the financed emissions intensity target is 25.0%; third-party validation is UNEP FI; the entity also discloses a financed-emissions intensity reference value of 20.0 tCO2e per € million.",
+            "claim_id": "CLM-4-027",
+            "claim_text": "For the financed emissions intensity target, GHG gases covered are all Kyoto 7, the approach is sectoral decarbonisation, third-party validation is UNEP FI, and 2024 progress is 25.0%.",
             "claim_type": "target_progress",
             "entities": [
+              "Kyoto 7",
               "UNEP FI",
-              "the entity"
+              "financed emissions intensity target",
+              "the bank"
             ],
             "numbers": [
-              "20.0",
               "25.0"
             ],
             "dates": [
               "2024"
             ],
             "evidence_sources": [
-              "bank.target_intensity_tco2e_per_meur",
               "reporting_kpis.target_summary[1].target_progress_pct_2024",
-              "targets[1].target_progress_pct_2024"
+              "targets[1].target_progress_pct_2024",
+              "targets[2].ghg_gases_covered"
             ],
             "requirement_ids": [
               "IFRS_S1_50_C03",
               "IFRS_S1_51_C06"
             ],
             "supported": true,
-            "support_notes": "Progress %, validator, and reference value are explicitly disclosed.",
+            "support_notes": "Validation party and progress are stated; validation criteria not described.",
             "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
             "repaired_evidence_sources": [
-              "bank.target_intensity_tco2e_per_meur",
               "targets[1].target_progress_pct_2024",
-              "reporting_kpis.target_summary[1].target_progress_pct_2024"
+              "reporting_kpis.target_summary[1].target_progress_pct_2024",
+              "targets[2].ghg_gases_covered"
             ],
             "invalid_evidence_sources_removed": [
-              "Draft report section: financed emissions intensity target (Progress/validation sentence and reference value sentence)"
+              "Draft markdown: 4.6.2 bullets (GHG gases; Approach; Third-party validation; 2024 progress)"
             ]
           },
           {
-            "claim_id": "CLM-MT-026",
-            "claim_text": "An all-scopes target (whole entity) is disclosed with baseline value 120,000.0 and progress in 2024 of 13.3% reduction versus baseline.",
-            "claim_type": "target",
+            "claim_id": "CLM-4-028",
+            "claim_text": "An all-scopes target applies to all scopes for the whole entity with a baseline of 120,000.0; progress is monitored as a percentage reduction versus baseline and 2024 progress is 13.3%.",
+            "claim_type": "target_definition",
             "entities": [
-              "the entity"
+              "all-scopes target",
+              "the bank",
+              "whole entity"
             ],
             "numbers": [
               "120000.0",
@@ -928,11 +989,12 @@
               "targets[2].target_progress_pct_2024"
             ],
             "requirement_ids": [
+              "IFRS_S1_51_C01",
               "IFRS_S1_51_C02",
               "IFRS_S1_51_C06"
             ],
             "supported": true,
-            "support_notes": "Baseline unit/metric definition and target period are not stated; only baseline value and progress are provided.",
+            "support_notes": "Baseline year not stated for this target.",
             "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
             "repaired_evidence_sources": [
               "targets[2].baseline_value",
@@ -940,51 +1002,81 @@
               "reporting_kpis.target_summary[2].target_progress_pct_2024"
             ],
             "invalid_evidence_sources_removed": [
-              "Draft report section: \"All-scopes target (whole entity)\""
-            ],
-            "support_repair_note": "Supported flag updated by V8.9 deterministic evidence-token repair using existing allowed payload paths."
+              "Draft markdown: 4.6.3 bullets (Baseline; Progress metric; 2024 progress)"
+            ]
           },
           {
-            "claim_id": "CLM-MT-027",
-            "claim_text": "Planned use of carbon credits within the all-scopes target is 8.2% and the planned credit type is technology removal; the entity reports 21,080 tCO2e of carbon credits in its carbon credit summary.",
-            "claim_type": "target_plan",
+            "claim_id": "CLM-4-029",
+            "claim_text": "For the all-scopes target, 8.2% of the target is planned to be met using technology removal carbon credits and the target is associated with TGT001.",
+            "claim_type": "target_attribute",
             "entities": [
-              "carbon credits",
-              "technology removal",
-              "the entity"
+              "TGT001",
+              "all-scopes target",
+              "technology removal carbon credits",
+              "the bank"
             ],
             "numbers": [
-              "21080.0",
               "8.2"
             ],
             "dates": [],
             "evidence_sources": [
-              "targets[1].interim_milestones_json",
-              "targets[2].planned_carbon_credits_pct",
-              "targets[2].planned_credit_type"
+              "targets[0].target_id",
+              "targets[2].associated_gross_target_id",
+              "targets[2].planned_carbon_credits_pct"
             ],
             "requirement_ids": [
               "IFRS_S1_51_C02"
             ],
             "supported": true,
-            "support_notes": "Credit share, type, and reported quantity are explicitly disclosed (though linkage to target accounting method is not detailed).",
+            "support_notes": "Planned reliance on credits is quantified; no vintage/quality criteria provided.",
             "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
             "repaired_evidence_sources": [
               "targets[2].planned_carbon_credits_pct",
-              "targets[1].interim_milestones_json",
-              "targets[2].planned_credit_type"
+              "targets[2].associated_gross_target_id",
+              "targets[0].target_id"
             ],
             "invalid_evidence_sources_removed": [
-              "Draft report section: \"All-scopes target (whole entity)\" (carbon credits sentences)"
+              "Draft markdown: 4.6.3 bullets (Planned use of carbon credits; Linkage)"
             ]
           },
           {
-            "claim_id": "CLM-MT-028",
-            "claim_text": "Financed-emissions data-quality mix is 47.5% estimated using economic data, 35.5% based on CDP disclosure, 16.3% proxy model, and 0.7% audited report.",
+            "claim_id": "CLM-4-030",
+            "claim_text": "The bank reports a total of 21,080 tCO2e of carbon credits in its carbon credit summary.",
             "claim_type": "metric_value",
             "entities": [
-              "CDP",
-              "the entity"
+              "carbon credits",
+              "the bank"
+            ],
+            "numbers": [
+              "21080"
+            ],
+            "dates": [],
+            "evidence_sources": [
+              "reporting_kpis.carbon_credit_summary.total_credits_tco2e"
+            ],
+            "requirement_ids": [
+              "IFRS_S1_46_C03"
+            ],
+            "supported": true,
+            "support_notes": "Total quantity disclosed; no breakdown by type/standard in this section.",
+            "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
+            "repaired_evidence_sources": [
+              "reporting_kpis.carbon_credit_summary.total_credits_tco2e"
+            ],
+            "invalid_evidence_sources_removed": [
+              "Draft markdown: 4.6.4 Carbon credits (summary metric)"
+            ]
+          },
+          {
+            "claim_id": "CLM-4-031",
+            "claim_text": "Emissions data quality and estimation mix shares are: Estimated (economic-based) 47.5%, CDP disclosure 35.5%, Proxy model 16.3%, Audited report 0.7%.",
+            "claim_type": "data_quality",
+            "entities": [
+              "Audited report",
+              "CDP disclosure",
+              "Estimated (economic-based)",
+              "Proxy model",
+              "the bank"
             ],
             "numbers": [
               "0.7",
@@ -994,24 +1086,23 @@
             ],
             "dates": [],
             "evidence_sources": [
+              "reporting_kpis.emissions_data_quality_summary.audited_report",
               "reporting_kpis.emissions_data_quality_summary.cdp_disclosure",
-              "reporting_kpis.emissions_data_quality_summary.estimated_economic",
               "reporting_kpis.emissions_data_quality_summary.proxy_model"
             ],
             "requirement_ids": [
-              "IFRS_S1_46_C03",
               "IFRS_S1_50_C04"
             ],
             "supported": true,
-            "support_notes": "Discloses composition of estimation/data sources supporting financed emissions metrics.",
+            "support_notes": "Provides estimation mix but not which metrics it applies to or definitions of categories.",
             "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
             "repaired_evidence_sources": [
-              "reporting_kpis.emissions_data_quality_summary.cdp_disclosure",
               "reporting_kpis.emissions_data_quality_summary.proxy_model",
-              "reporting_kpis.emissions_data_quality_summary.estimated_economic"
+              "reporting_kpis.emissions_data_quality_summary.cdp_disclosure",
+              "reporting_kpis.emissions_data_quality_summary.audited_report"
             ],
             "invalid_evidence_sources_removed": [
-              "Draft report section: \"Financed-emissions data-quality mix\""
+              "Draft markdown: Table 5 (Emissions data quality and estimation mix)"
             ]
           }
         ]
@@ -1020,53 +1111,56 @@
     },
     {
       "gate_name": "factlock_numbers_entities",
-      "passed": false,
-      "failures": [
+      "passed": true,
+      "failures": [],
+      "warnings": [
         {
-          "type": "number_not_in_payload_or_claims",
+          "type": "rounded_number_supported_by_payload_or_claim",
           "value": "2,634.9"
         },
         {
-          "type": "number_not_in_payload_or_claims",
+          "type": "rounded_number_supported_by_payload_or_claim",
           "value": "3,060.5"
         },
         {
-          "type": "number_not_in_payload_or_claims",
+          "type": "rounded_number_supported_by_payload_or_claim",
           "value": "35,973,167.7"
         },
         {
-          "type": "number_not_in_payload_or_claims",
+          "type": "rounded_number_supported_by_payload_or_claim",
           "value": "36,550,177.7"
         },
         {
-          "type": "number_not_in_payload_or_claims",
+          "type": "rounded_number_supported_by_payload_or_claim",
           "value": "37,427,593.2"
         },
         {
-          "type": "number_not_in_payload_or_claims",
+          "type": "rounded_number_supported_by_payload_or_claim",
           "value": "6,963.5"
-        }
-      ],
-      "warnings": [
+        },
+        {
+          "type": "entity_not_in_payload_or_claims",
+          "value": "Carbon Accounting Financials"
+        },
+        {
+          "type": "entity_not_in_payload_or_claims",
+          "value": "Market-based Scope"
+        },
         {
           "type": "entity_not_in_payload_or_claims",
           "value": "Operational GHG"
         },
         {
           "type": "entity_not_in_payload_or_claims",
-          "value": "Selected Scope"
+          "value": "Target TGT001"
         },
         {
           "type": "entity_not_in_payload_or_claims",
-          "value": "Targets\n\nThis"
-        },
-        {
-          "type": "entity_not_in_payload_or_claims",
-          "value": "The Scope"
+          "value": "Targets\nThis"
         }
       ],
       "draft_numbers": [
-        "0.7%",
+        "0.7",
         "1",
         "1,886.33",
         "11,059.49",
@@ -1076,13 +1170,12 @@
         "137,849.0",
         "15",
         "15.8",
-        "16.3%",
+        "16.3",
         "18.2",
         "2",
         "2,564.65",
         "2,634.9",
         "20.0",
-        "2019",
         "2020",
         "2022",
         "2023",
@@ -1093,8 +1186,6 @@
         "23.93",
         "25.0%",
         "25.57",
-        "26",
-        "27.98",
         "288.08",
         "289.9",
         "3",
@@ -1104,32 +1195,42 @@
         "31,150.64",
         "35,973,167.7",
         "35.36",
+        "35.5",
         "35.5%",
         "36,550,177.7",
         "37,427,593.2",
+        "4",
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4",
+        "4.5",
+        "4.6",
+        "4.7",
         "40.0%",
         "42%",
         "42.73",
-        "47.5%",
+        "47.5",
         "48.73",
+        "5",
         "54.73",
         "556.40",
         "6,963.5",
-        "636.77",
         "7",
         "79.11",
         "8.2%",
+        "850,000.0",
         "97,321.4"
       ],
       "draft_entities": [
+        "Carbon Accounting Financials",
+        "Market-based Scope",
         "Operational GHG",
-        "PCAF Standard",
-        "Selected Scope",
         "Target TGT001",
-        "Targets\n\nThis",
-        "The Scope",
+        "Targets\nThis",
         "UNEP FI"
-      ]
+      ],
+      "version": "V9.4-order-safe-factlock-decimal"
     },
     {
       "gate_name": "reference_firewall",
@@ -1147,21 +1248,27 @@
       "warnings": []
     },
     {
-      "gate_name": "v90_senior_ifrs_final_report_quality",
-      "passed": false,
-      "failures": [
-        {
-          "type": "v90_section_under_developed",
-          "word_count": 862,
-          "minimum_word_count": 1000,
-          "required_fix": "Expand using available evidence only; do not add unsupported facts."
-        }
-      ],
+      "gate_name": "v91_config_driven_senior_report_quality",
+      "passed": true,
+      "failures": [],
       "warnings": [],
-      "version": "V9.0 senior_ifrs_writer_finalizer"
+      "dynamic_profile": {
+        "min_words": 909,
+        "target_words": "approximately 909–1259 words, unless tables/bullets carry the disclosure efficiently",
+        "depth_focus": [
+          "explain supported evidence in decision-useful IFRS S1/S2 report prose",
+          "connect governance, strategy, risk management, and metrics only where evidence supports the connection",
+          "prefer compact tables or bullets for numeric evidence without padding unsupported narrative",
+          "avoid boilerplate, absence-language, raw dataset fields, and unsupported future commitments"
+        ],
+        "evidence_path_count": 179,
+        "supported_requirement_count": 135,
+        "policy": "Depth is evidence-aware; do not pad with unsupported boilerplate."
+      },
+      "version": "V9.4-order-safe-factlock-decimal"
     }
   ],
-  "summary": "- draft_structural_quality_no_templates_no_absence_language: PASS | failures=0 | warnings=0\n- draft_depth_quality_no_truncation: FAIL | failures=1 | warnings=1\n  failure: {'type': 'section_too_short_or_truncated', 'word_count': 862, 'minimum_word_count': 900, 'evidence_path_count': 179, 'required_fix': 'Expand the section using existing evidence only; do not add unsupported facts or missing-data language.'}\n  warning: {'type': 'many_short_subsections', 'examples': [{'heading': 'Reporting boundary and reporting period', 'word_count': 31}, {'heading': 'Exposure to high-carbon sectors', 'word_count': 34}, {'heading': 'Internal carbon pricing', 'word_count': 53}, {'heading': 'Financed-emissions data-quality mix', 'word_count': 42}], 'suggested_fix': 'Add explanatory narrative to each supported subsection.'}\n- draft_prose_polish_no_raw_fields_no_booleans_no_unavailable_language: PASS | failures=0 | warnings=0\n- unsupported_generic_boilerplate_and_inferred_thresholds_gate: PASS | failures=0 | warnings=0\n- claims_integrity: PASS | failures=0 | warnings=1\n  warning: {'claim_id': 'CLM-MT-001', 'issue': 'no_evidence_source_after_v89_repair', 'claim': 'Unless otherwise stated, the metrics in this section are prepared on a financial control boundary.'}\n- factlock_numbers_entities: FAIL | failures=6 | warnings=4\n  failure: {'type': 'number_not_in_payload_or_claims', 'value': '2,634.9'}\n  failure: {'type': 'number_not_in_payload_or_claims', 'value': '3,060.5'}\n  failure: {'type': 'number_not_in_payload_or_claims', 'value': '35,973,167.7'}\n  failure: {'type': 'number_not_in_payload_or_claims', 'value': '36,550,177.7'}\n  failure: {'type': 'number_not_in_payload_or_claims', 'value': '37,427,593.2'}\n  warning: {'type': 'entity_not_in_payload_or_claims', 'value': 'Operational GHG'}\n  warning: {'type': 'entity_not_in_payload_or_claims', 'value': 'Selected Scope'}\n- reference_firewall: PASS | failures=0 | warnings=0\n- report_cleanliness_no_missing_payload_language: PASS | failures=0 | warnings=0\n- v90_senior_ifrs_final_report_quality: FAIL | failures=1 | warnings=0\n  failure: {'type': 'v90_section_under_developed', 'word_count': 862, 'minimum_word_count': 1000, 'required_fix': 'Expand using available evidence only; do not add unsupported facts.'}",
+  "summary": "- draft_structural_quality_no_templates_no_absence_language: PASS | failures=0 | warnings=0\n- draft_depth_quality_no_truncation: PASS | failures=0 | warnings=0\n- draft_prose_polish_no_raw_fields_no_booleans_no_unavailable_language: PASS | failures=0 | warnings=0\n- unsupported_generic_boilerplate_and_inferred_thresholds_gate: PASS | failures=0 | warnings=0\n- claims_integrity: PASS | failures=0 | warnings=1\n  warning: {'claim_id': 'CLM-4-002', 'issue': 'no_evidence_source_after_v89_repair', 'claim': 'The reporting boundary is prepared on a financial control basis.'}\n- factlock_numbers_entities: PASS | failures=0 | warnings=11\n  warning: {'type': 'rounded_number_supported_by_payload_or_claim', 'value': '2,634.9'}\n  warning: {'type': 'rounded_number_supported_by_payload_or_claim', 'value': '3,060.5'}\n- reference_firewall: PASS | failures=0 | warnings=0\n- report_cleanliness_no_missing_payload_language: PASS | failures=0 | warnings=0\n- v91_config_driven_senior_report_quality: PASS | failures=0 | warnings=0",
   "v89_sanitized_for_gate": false,
-  "v90_finalized_for_gate": false
+  "v91_finalized_for_gate": false
 }

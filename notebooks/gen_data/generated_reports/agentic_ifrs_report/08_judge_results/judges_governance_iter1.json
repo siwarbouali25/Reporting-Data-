@@ -6,276 +6,235 @@
     "missing_supported_requirements": [
       {
         "requirement_id": "IFRS_S1_27_C02",
-        "gap_summary": "Identifies Board/ESG committee but does not disclose how responsibilities for climate/sustainability risks and opportunities are reflected in terms of reference, mandates, role descriptions or related policies.",
-        "draft_evidence": "States 'The Board oversees...' and 'An ESG committee is in place' plus meeting frequencies, but no ToR/mandate/role description/policy linkage."
+        "gap": "Identifies Board/ESG committee but does not disclose how responsibilities for sustainability-related risks and opportunities are reflected in terms of reference/mandates/role descriptions/related policies.",
+        "evidence_expected_from_payload": [
+          "terms_of_reference_or_mandate_linkage (not present in draft)"
+        ]
       },
       {
         "requirement_id": "IFRS_S2_6_C02",
-        "gap_summary": "Same gap as IFRS_S1_27_C02 for climate-specific governance responsibilities reflected in mandates/ToR/role descriptions/policies.",
-        "draft_evidence": "Board/committee existence and activity metrics only; no mandate/ToR/role description/policy disclosure."
+        "gap": "Identifies Board/ESG committee but does not disclose how responsibilities for climate-related risks and opportunities are reflected in terms of reference/mandates/role descriptions/related policies.",
+        "evidence_expected_from_payload": [
+          "terms_of_reference_or_mandate_linkage (not present in draft)"
+        ]
+      },
+      {
+        "requirement_id": "IFRS_S1_27_C03",
+        "gap": "Provides % of directors with climate expertise and mentions a skills development programme, but does not explain how the Board determines whether appropriate skills/competencies are available or will be developed (process/assessment approach).",
+        "evidence_expected_from_payload": [
+          "governance[0].board_climate_expertise_pct",
+          "governance[0].skills_development_programme"
+        ]
+      },
+      {
+        "requirement_id": "IFRS_S2_6_C03",
+        "gap": "Provides % of directors with climate expertise and mentions a skills development programme, but does not explain how the Board determines whether appropriate skills/competencies are available or will be developed (process/assessment approach).",
+        "evidence_expected_from_payload": [
+          "governance[0].board_climate_expertise_pct",
+          "governance[0].skills_development_programme"
+        ]
       },
       {
         "requirement_id": "IFRS_S1_27_C05",
-        "gap_summary": "Partially addresses oversight of strategy/major transactions/risk management, but does not address whether the governance body has considered trade-offs associated with climate-related risks and opportunities.",
-        "draft_evidence": "Mentions 'climate check for major transactions' and ERM integration, but no trade-offs discussion."
+        "gap": "Mentions ERM integration and a 'climate check for major transactions' but does not explain how the Board takes sustainability-related risks/opportunities into account when overseeing strategy, major transactions and risk management processes/related policies, including whether trade-offs were considered.",
+        "evidence_expected_from_payload": [
+          "governance[0].erm_integration_flag",
+          "governance[0].major_transactions_climate_check"
+        ]
       },
       {
         "requirement_id": "IFRS_S2_6_C05",
-        "gap_summary": "Same gap as IFRS_S1_27_C05 for climate-specific trade-offs consideration.",
-        "draft_evidence": "No disclosure of trade-offs considered by Board/committee."
+        "gap": "Mentions ERM integration and a 'climate check for major transactions' but does not explain how the Board takes climate-related risks/opportunities into account when overseeing strategy, major transactions and risk management processes/related policies, including whether trade-offs were considered.",
+        "evidence_expected_from_payload": [
+          "governance[0].erm_integration_flag",
+          "governance[0].major_transactions_climate_check"
+        ]
       },
       {
         "requirement_id": "IFRS_S1_27_C06",
-        "gap_summary": "Mentions remuneration linkage and topics discussed, but does not clearly describe how the Board oversees setting climate-related targets and monitors progress towards those targets (beyond general statements).",
-        "draft_evidence": "Provides % of remuneration linked to climate factors and lists topics (e.g., net zero progress), but no explicit description of target-setting oversight/monitoring process."
+        "gap": "States monitoring of net zero progress and remuneration linkage (8.7%) but does not describe how the Board oversees setting of targets and monitors progress towards those targets, nor whether/how performance metrics are included in remuneration policies (beyond a percentage).",
+        "evidence_expected_from_payload": [
+          "governance[0].all_exec_climate_remuneration_pct",
+          "board_minutes[*].climate_topics_discussed"
+        ]
       },
       {
         "requirement_id": "IFRS_S2_6_C06",
-        "gap_summary": "Same gap as IFRS_S1_27_C06 for climate-specific targets/progress monitoring oversight.",
-        "draft_evidence": "Remuneration linkage quantified; target-setting/progress monitoring governance process not described."
+        "gap": "States monitoring of net zero progress and remuneration linkage (8.7%) but does not describe how the Board oversees setting of targets and monitors progress towards those targets, nor whether/how performance metrics are included in remuneration policies (beyond a percentage).",
+        "evidence_expected_from_payload": [
+          "governance[0].all_exec_climate_remuneration_pct",
+          "board_minutes[*].climate_topics_discussed"
+        ]
       },
       {
         "requirement_id": "IFRS_S1_27_C08",
-        "gap_summary": "States delegation to a management-level committee but does not explain how oversight is exercised over that committee/position.",
-        "draft_evidence": "Lists possible committee names; no description of oversight mechanisms (reporting lines, approvals, escalation, etc.)."
+        "gap": "Identifies delegation to a management-level committee (Group Sustainability Committee) but does not explain how oversight is exercised over that committee.",
+        "evidence_expected_from_payload": [
+          "governance[0].management_committee_name"
+        ]
       },
       {
         "requirement_id": "IFRS_S2_6_C08",
-        "gap_summary": "Same gap as IFRS_S1_27_C08 for climate-specific management role oversight.",
-        "draft_evidence": "Delegation stated; oversight exercise not described."
+        "gap": "Identifies delegation to a management-level committee (Group Sustainability Committee) but does not explain how oversight is exercised over that committee.",
+        "evidence_expected_from_payload": [
+          "governance[0].management_committee_name"
+        ]
       },
       {
         "requirement_id": "IFRS_S1_27_C09",
-        "gap_summary": "States ERM integration but does not describe the specific controls and procedures used and how they are integrated with other internal functions.",
-        "draft_evidence": "Single sentence 'integrated into ERM' without describing controls/procedures/integration mechanics."
+        "gap": "States ERM integration at a high level but does not describe the controls and procedures management uses to support oversight of sustainability-related risks/opportunities and how they are integrated with other internal functions.",
+        "evidence_expected_from_payload": [
+          "governance[0].erm_integration_flag"
+        ]
       },
       {
         "requirement_id": "IFRS_S2_6_C09",
-        "gap_summary": "Same gap as IFRS_S1_27_C09 for climate-specific controls/procedures integration.",
-        "draft_evidence": "ERM integration asserted; controls/procedures and integration details not disclosed."
+        "gap": "States ERM integration at a high level but does not describe the controls and procedures management uses to support oversight of climate-related risks/opportunities and how they are integrated with other internal functions.",
+        "evidence_expected_from_payload": [
+          "governance[0].erm_integration_flag"
+        ]
       }
     ],
     "invented_missing_requirements": [],
     "missing_data_language_found": false,
     "required_fixes": [
-      {
-        "fix_id": "FIX-01",
-        "requirement_ids": [
-          "IFRS_S1_27_C02",
-          "IFRS_S2_6_C02"
-        ],
-        "instruction": "Add disclosure describing how Board/committee responsibilities for climate-related (and sustainability-related) risks and opportunities are reflected in terms of reference/mandates/role descriptions/related policies (e.g., charter excerpts or a clear narrative mapping)."
-      },
-      {
-        "fix_id": "FIX-02",
-        "requirement_ids": [
-          "IFRS_S1_27_C05",
-          "IFRS_S2_6_C05"
-        ],
-        "instruction": "Explicitly state whether and how the Board/committee considers trade-offs associated with climate-related risks and opportunities when overseeing strategy, major transactions and risk management (or state that trade-offs were not considered, if accurate)."
-      },
-      {
-        "fix_id": "FIX-03",
-        "requirement_ids": [
-          "IFRS_S1_27_C06",
-          "IFRS_S2_6_C06"
-        ],
-        "instruction": "Describe the governance process for overseeing target-setting and monitoring progress (who proposes targets, who approves, review cadence, what progress reporting looks like), and connect remuneration metrics to those targets/metrics (not only % weighting)."
-      },
-      {
-        "fix_id": "FIX-04",
-        "requirement_ids": [
-          "IFRS_S1_27_C08",
-          "IFRS_S2_6_C08"
-        ],
-        "instruction": "Clarify the management-level committee/position responsible (avoid ambiguous multiple names or specify by period), and explain how oversight is exercised over it (reporting lines to Board/ESG committee, decision rights, escalation)."
-      },
-      {
-        "fix_id": "FIX-05",
-        "requirement_ids": [
-          "IFRS_S1_27_C09",
-          "IFRS_S2_6_C09"
-        ],
-        "instruction": "Describe the controls/procedures management uses to support oversight of climate-related risks and opportunities and how they integrate with internal functions (e.g., ERM, finance, internal audit, compliance)."
-      }
+      "Add disclosure of how Board/committee responsibilities for climate- and sustainability-related risks and opportunities are reflected in formal governance documents (terms of reference/mandates/role descriptions/related policies).",
+      "Explain the process used by the Board to determine whether appropriate climate/sustainability skills and competencies are available or will be developed (eg, skills matrix, periodic assessment, training plan governance).",
+      "Expand on how the Board takes climate/sustainability matters into account in (i) strategy oversight, (ii) major transactions (describe the 'climate check' at least at a procedural level), and (iii) risk management processes/related policies, including whether/how trade-offs are considered.",
+      "For targets: describe how the Board oversees target-setting and progress monitoring (what targets/metrics, cadence, dashboards/committees), and clarify how performance metrics are incorporated into remuneration policies (not only the 8.7% figure).",
+      "For management’s role: describe how oversight is exercised over the Group Sustainability Committee (reporting lines, approvals/escalation, interaction with Board/ESG committee).",
+      "Describe management controls/procedures used to monitor/manage/oversee climate/sustainability risks and opportunities and how these integrate with other internal functions (eg, risk, finance, internal audit, compliance)."
     ],
-    "summary": "The section covers several governance elements (identifies Board/ESG committee, meeting cadence, reporting frequency, skills tracking, ERM integration, remuneration linkage) and includes an explicit anti-duplication statement consistent with IFRS S2.7. However, multiple mandatory requirements are only partially met: it lacks disclosure of how responsibilities are embedded in mandates/ToR/role descriptions/policies; does not address trade-offs; does not clearly describe Board oversight of target-setting and progress monitoring; and provides insufficient detail on management oversight mechanisms and the specific controls/procedures and their integration with internal functions."
+    "summary": "The draft provides several governance facts (Board identification, meeting cadence, semi-annual climate reporting, committee existence, skills programme, ERM integration statement, major transaction climate check, and remuneration linkage). However, multiple mandatory IFRS S1/S2 governance requirements are not fully met because the section lacks required process-level disclosures: linkage to formal mandates/terms of reference, how skills needs are determined, how the Board considers climate/sustainability in strategy/transactions/risk management including trade-offs, how targets are set/monitored and embedded in remuneration policy, and how management oversight/controls are exercised and integrated across internal functions. No invented 'missing data' language was found."
   },
   "evidence_judge": {
     "approved": false,
-    "evidence_score_0_to_10": 7,
+    "evidence_score_0_to_10": 6,
     "unsupported_claims": [
       {
-        "claim_id": "GOV-001",
-        "claim_text": "The Board oversees climate-related risks and opportunities.",
-        "reason": "No payload evidence provided that explicitly establishes the Board’s formal oversight responsibility (e.g., charter/terms of reference/mandate). The provided evidence items show topics discussed and some governance KPIs, but not the governance accountability statement itself."
+        "claim_text": "During the period, the Board met in full session four times per year.",
+        "why_unsupported": "Evidence shows conflicting board meeting frequencies (4 in governance[0], but 7 in governance[1] and 8 in governance[2]) and the draft does not specify which period/index applies.",
+        "conflicting_evidence": [
+          "governance[0].board_full_meeting_frequency = 4",
+          "governance[1].board_full_meeting_frequency = 7",
+          "governance[2].board_full_meeting_frequency = 8"
+        ]
       },
       {
-        "claim_id": "GOV-010",
-        "claim_text": "The Board’s oversight of climate-related performance is linked to remuneration through climate-related components of executive remuneration.",
-        "reason": "Payload supports that a proportion of executive remuneration is linked to climate factors (percentages), but does not evidence that this linkage is specifically a Board oversight mechanism (e.g., Board/remuneration committee approval/oversight documentation)."
+        "claim_text": "Board oversight is supported by climate-related competence within the Board. 33.5% of directors are assessed as having climate expertise.",
+        "why_unsupported": "Evidence contains multiple different values (33.5, 35.5, 37.5) and the draft does not specify which period/index applies; reporting_kpis shows 37.5, not 33.5.",
+        "conflicting_evidence": [
+          "governance[0].board_climate_expertise_pct = 33.5",
+          "governance[1].board_climate_expertise_pct = 35.5",
+          "governance[2].board_climate_expertise_pct = 37.5",
+          "reporting_kpis.governance_maturity.board_climate_expertise_pct = 37.5"
+        ]
       },
       {
-        "claim_id": "GOV-018",
-        "claim_text": "To avoid unnecessary duplication, governance disclosures for climate-related risks and opportunities are presented together with broader sustainability-related governance where these are managed on an integrated basis.",
-        "reason": "No payload evidence supports this stated disclosure policy/rationale."
+        "claim_text": "An ESG committee operates as part of the governance structure. During the period, the ESG committee met five times per year.",
+        "why_unsupported": "Evidence contains multiple different values (5, 6, 7) and the draft does not specify which period/index applies; reporting_kpis shows 7, not 5.",
+        "conflicting_evidence": [
+          "governance[0].esg_committee_meetings_per_year = 5",
+          "governance[1].esg_committee_meetings_per_year = 6",
+          "governance[2].esg_committee_meetings_per_year = 7",
+          "reporting_kpis.governance_maturity.esg_committee_meetings = 7"
+        ]
+      },
+      {
+        "claim_text": "During the period, the named management committee was the Group Sustainability Committee.",
+        "why_unsupported": "Evidence shows different management committee names across governance indices; the draft does not specify which period/index applies.",
+        "conflicting_evidence": [
+          "governance[0].management_committee_name = Group Sustainability Committee",
+          "governance[1].management_committee_name = ESG Executive Committee",
+          "governance[2].management_committee_name = Climate Risk Management Committee"
+        ]
+      },
+      {
+        "claim_text": "Across the executive population, 8.7% of executive remuneration is linked to climate-related measures.",
+        "why_unsupported": "Evidence contains multiple different values (8.7, 15.3, 15.1) and the draft does not specify which period/index applies.",
+        "conflicting_evidence": [
+          "governance[0].all_exec_climate_remuneration_pct = 8.7",
+          "governance[1].all_exec_climate_remuneration_pct = 15.3",
+          "governance[2].all_exec_climate_remuneration_pct = 15.1"
+        ]
       }
     ],
     "questionable_claims": [
       {
-        "claim_id": "GOV-003",
-        "claim_text": "Across the reported governance records, the Board held 4, 7 and 8 full Board meetings per year.",
-        "reason": "Supported by governance[0..2].board_full_meeting_frequency, but the draft does not specify which years/periods these correspond to."
+        "claim_text": "Oversight is managed on an integrated basis and is therefore described in a single, integrated governance disclosure.",
+        "why_questionable": "No direct evidence item demonstrates 'integrated' oversight (e.g., terms of reference, governance model, role descriptions). Existing evidence supports some governance metrics but not the integration assertion."
       },
       {
-        "claim_id": "GOV-004",
-        "claim_text": "Across the reported governance records, climate-related matters were included on the Board agenda 69.8% of the time.",
-        "reason": "Supported by governance[0].climate_on_board_agenda_pct, but denominator/timeframe and method are not defined in the draft."
+        "claim_text": "The Board is the primary governance body overseeing climate-related and sustainability-related risks and opportunities.",
+        "why_questionable": "No direct evidence (e.g., board charter/mandate) is provided to substantiate primacy of Board oversight versus committees/management; evidence only shows meeting/reporting metrics."
       },
       {
-        "claim_id": "GOV-005",
-        "claim_text": "Board minutes evidence that Board discussions on climate-related matters include transition plan review, scenario analysis, TCFD review, net zero progress, carbon credit approval and executive remuneration ESG KPIs.",
-        "reason": "Partially supported by several board_minutes[*].climate_topics_discussed entries, but the provided evidence previews do not show all listed topics across the sample (e.g., net_zero_progress appears; scenario_analysis appears; etc.), and the draft implies comprehensive minutes support without citing scope/time period."
+        "claim_text": "Climate-related matters were integrated into Board deliberations and decision-making.",
+        "why_questionable": "Board minutes show climate topics discussed, but 'integrated into decision-making' implies a process/impact not evidenced beyond topic presence."
       },
       {
-        "claim_id": "GOV-006",
-        "claim_text": "Climate risk reporting is provided to the Board on a semi-annual basis.",
-        "reason": "Supported by governance[0..2].climate_risk_reporting_to_board = semi_annual, but no evidence of actual reporting instances/content/cadence beyond the flag."
+        "claim_text": "The Group Sustainability Committee supports management oversight ... and provides inputs for escalation ... including the semi-annual climate risk reporting to the Board.",
+        "why_questionable": "Evidence supports existence of a management committee name (in one index) and semi-annual reporting, but not the described escalation mechanics or that this specific committee is the source of the Board reporting."
       },
       {
-        "claim_id": "GOV-007",
-        "claim_text": "An ESG committee is in place.",
-        "reason": "Supported by governance[0].esg_committee_exists = True, but no mandate/role evidence is provided."
+        "claim_text": "Climate-related and sustainability-related risks and opportunities are integrated into the organisation’s enterprise risk management processes.",
+        "why_questionable": "Evidence includes a boolean flag (erm_integration_flag=True) but no description of how integration occurs; still minimally supported as a high-level statement."
       },
       {
-        "claim_id": "GOV-008",
-        "claim_text": "Across the reported governance records, the ESG committee met 5, 6 and 7 times per year.",
-        "reason": "Supported by governance[0..2].esg_committee_meetings_per_year, but periods/years are not specified."
-      },
-      {
-        "claim_id": "GOV-009",
-        "claim_text": "Climate-related considerations are incorporated into decisions on major transactions through a climate check for major transactions.",
-        "reason": "Supported by governance[0..2].major_transactions_climate_check = True, but the draft does not define what the check is, thresholds/scope, or provide evidence of application."
-      },
-      {
-        "claim_id": "GOV-011",
-        "claim_text": "Across the reported governance records, the proportion of executive remuneration linked to climate-related factors was 8.7%, 15.3% and 15.1%.",
-        "reason": "Supported by governance[0..2].all_exec_climate_remuneration_pct, but the draft lacks timeframe and definition of 'climate-related factors'."
-      },
-      {
-        "claim_id": "GOV-012",
-        "claim_text": "Management oversight is delegated to a management-level committee.",
-        "reason": "Partially supported by presence of management_committee_name fields, but no evidence of delegation/mandate/authority is provided."
-      },
-      {
-        "claim_id": "GOV-013",
-        "claim_text": "Across the reported governance records, the management committee identified for this purpose is recorded as Group Sustainability Committee, ESG Executive Committee, and Climate Risk Management Committee.",
-        "reason": "Supported by governance[0..2].management_committee_name, but ambiguous without specifying which period/year each name applies to."
-      },
-      {
-        "claim_id": "GOV-014",
-        "claim_text": "Climate-related risk management is integrated into enterprise risk management (ERM).",
-        "reason": "Supported by governance[0..2].erm_integration_flag = True, but no description/evidence of how integration operates is provided."
-      },
-      {
-        "claim_id": "GOV-015",
-        "claim_text": "Board climate expertise is tracked.",
-        "reason": "Supported indirectly by existence of board_climate_expertise_pct metrics, but no methodology/criteria for tracking is provided."
-      },
-      {
-        "claim_id": "GOV-016",
-        "claim_text": "Across the reported governance records, 33.5%, 35.5% and 37.5% of the Board was identified as having climate expertise.",
-        "reason": "Supported by governance[0..2].board_climate_expertise_pct, but timeframe and definition/assessment basis for 'climate expertise' are not provided."
-      },
-      {
-        "claim_id": "GOV-017",
-        "claim_text": "A skills development programme is in place.",
-        "reason": "Supported by governance[0..2].skills_development_programme = True, but no programme details/evidence are provided."
+        "claim_text": "Climate-related considerations are incorporated into decision-making on major transactions through a climate check for major transactions.",
+        "why_questionable": "Evidence includes a boolean flag (major_transactions_climate_check=True) but no detail on scope/criteria/ownership; statement is directionally supported but underspecified."
       }
     ],
     "required_fixes": [
-      {
-        "fix": "Add explicit evidence or citation for Board oversight responsibility (e.g., Board charter/committee terms of reference, governance policy) or soften the statement to reflect what is evidenced (e.g., 'The Board discusses climate-related risks and opportunities').",
-        "applies_to_claim_ids": [
-          "GOV-001"
-        ]
-      },
-      {
-        "fix": "For remuneration linkage, either provide evidence that the Board/remuneration committee oversees/approves the climate-linked remuneration components (policy/KPI governance) or rephrase to a narrower evidenced claim (e.g., 'A portion of executive remuneration is linked to climate-related factors').",
-        "applies_to_claim_ids": [
-          "GOV-010",
-          "GOV-011"
-        ]
-      },
-      {
-        "fix": "Remove or evidence the disclosure presentation policy/rationale about avoiding duplication and integrated governance, or label it clearly as an editorial approach without asserting an underlying integrated management basis unless evidenced.",
-        "applies_to_claim_ids": [
-          "GOV-018"
-        ]
-      },
-      {
-        "fix": "Specify the reporting periods/years for all 'across the reported governance records' multi-value metrics (Board meetings, ESG committee meetings, remuneration %, expertise %), and define calculation bases where percentages are used (e.g., agenda % denominator; definition of climate expertise; definition of climate-related remuneration factors).",
-        "applies_to_claim_ids": [
-          "GOV-003",
-          "GOV-004",
-          "GOV-008",
-          "GOV-011",
-          "GOV-013",
-          "GOV-016"
-        ]
-      },
-      {
-        "fix": "For process/control claims (semi-annual reporting, climate check for major transactions, ERM integration, management committee delegation), add brief descriptions of how the process works and/or cite supporting internal documents or examples of application.",
-        "applies_to_claim_ids": [
-          "GOV-006",
-          "GOV-009",
-          "GOV-012",
-          "GOV-014"
-        ]
-      }
+      "Specify the reporting period and align all quantitative values to the correct dataset slice (e.g., governance[0] vs governance[1] vs governance[2]) or update the narrative to match the selected period’s evidence.",
+      "Resolve conflicts between narrative/Table 1 and evidence for: Board meeting frequency, Board climate expertise %, ESG committee meeting frequency, management committee name, and % of executive remuneration linked to climate measures.",
+      "If claiming 'integrated oversight' and 'Board is primary governance body', add supporting evidence references (e.g., board/committee terms of reference, governance charter) or soften/rephrase to what is evidenced (e.g., 'Board receives semi-annual climate risk reporting and discusses climate topics').",
+      "For the management committee and escalation flow, either (a) provide evidence that the named committee produces/escalates the semi-annual Board reporting, or (b) reword to a generic statement supported by evidence (committee exists; Board receives semi-annual reporting).",
+      "Keep Table 1 consistent with the corrected narrative values and the chosen evidence source."
     ],
-    "summary": "Most quantitative governance metrics in the draft are supported by provided payload fields (board size, meeting frequencies, agenda %, remuneration %, expertise %, committee existence, ERM integration flag). However, several statements overreach the available evidence: formal Board oversight responsibility, Board-to-remuneration governance linkage, and the disclosure presentation policy are not evidenced in the payload. Multiple claims are also under-specified (missing years/periods, definitions, and calculation bases), making them questionable even where a supporting flag/metric exists."
+    "summary": "The section contains several materially unsupported quantitative claims due to conflicting evidence across governance indices (meeting frequency, expertise %, committee meetings, management committee name, remuneration linkage). Several qualitative statements (integrated oversight, primary governance body, decision-making integration, escalation flow) are also undersupported because the provided evidence does not include mandates/charters or process documentation. Correct by selecting the correct period/index, aligning numbers, and adding governance mandate/process evidence or softening claims."
   },
   "style_judge": {
     "approved": false,
     "style_score_0_to_10": 6.8,
     "voice_issues": [
-      "Voice is generally neutral and formal, but it reads more like a descriptive template than an IFRS-style disclosure anchored in the reporting entity’s perspective (no consistent use of first-person plural or clear third-person framing).",
-      "Some sentences use impersonal constructions (e.g., 'This subsection describes...') that are acceptable but could be more disclosure-oriented (e.g., 'We describe', 'The entity discloses')."
+      "Voice is generally neutral and formal, but it does not consistently use standards-oriented verbs (e.g., 'oversees', 'reviews', 'monitors') even though the content would support them.",
+      "The section uses third-person consistently, which is acceptable, but it does not explicitly distinguish externally defined requirements from entity actions (minor issue)."
     ],
     "structure_issues": [
-      "Subsections open with purpose statements, which is aligned, but they do not consistently progress from overview → structured evidence (e.g., tables/role blocks) → connectivity sentence.",
-      "There are no tables or figures, despite the style guide’s preference for governance role-to-responsibility mapping tables and a governance structure figure.",
-      "No connectivity sentences are used at the end of major subsections to link to Strategy, Risk Management, Metrics and Targets, or financial statement sections.",
-      "Paragraphs are short and single-topic, which is good, but the section does not clearly separate 'principles/what' from 'mechanics/how' using subheadings or role blocks; it jumps directly into facts.",
-      "The section opener does not explicitly link governance to the business model and operations, as requested in the section_style."
+      "The section does not open with a high-level framing paragraph linking governance of sustainability/climate to the business model and operations, as required by the section_style.",
+      "Subsections generally lack explicit one-sentence purpose statements before details (e.g., 1.2, 1.3, 1.4, etc.).",
+      "Most subsections do not close with a short connectivity sentence linking to related sections or financial statements.",
+      "The structure is largely narrative; it does not use role blocks or a governance body/role-to-responsibility mapping table, which is preferred for scanability and evidence.",
+      "The section references only one table and no figures; the style guide prefers a governance structure figure and more explicit use of tables for role/responsibility mapping.",
+      "Principles/what vs mechanics/how are not clearly separated with subheadings; many subsections mix mandate and mechanics in the same short paragraph."
     ],
     "wording_issues": [
-      "Multiple numeric values are used for meetings, percentages, and remuneration linkages, which conflicts with the section_style prohibition on numeric values in reusable template text.",
-      "Some phrasing is more narrative than standards-oriented (e.g., 'To avoid unnecessary duplication...') and could be reframed using disclosure verbs and explicit cross-reference placeholders.",
-      "The text does not distinguish clearly between current-period facts, historical records, and forward-looking intentions; 'Across the reported governance records' is vague and not tied to specific periods.",
-      "Acronyms such as ESG, ERM, TCFD are used but not consistently defined in a way that would be self-contained for a generic template; TCFD is not expanded at first use.",
-      "The wording does not explicitly label any limitations, judgements, or areas 'under development', which weakens IFRS-style transparency about governance maturity."
+      "Some sentences are descriptive but could be more aligned with preferred governance verbs (e.g., 'is the primary governance body' could be 'oversees', 'monitors', 'reviews').",
+      "A few phrases are slightly interpretive rather than strictly evidence-led (e.g., 'These agenda items indicate that Board oversight covered both review of climate-related strategic responses...' reads as commentary rather than pure process evidence).",
+      "The section does not explicitly distinguish between current-period facts, estimates/judgements, and forward-looking intentions; all content is presented as factual without clarifying where assessments (e.g., 'assessed as having climate expertise') involve judgement.",
+      "Percentages and meeting frequencies are used even though the section_style explicitly discourages numeric values such as meeting frequencies and KPI weights in template text."
     ],
     "table_figure_issues": [
-      "No tables are provided for governance body/role-to-responsibility mapping, competency overview, or lines-of-defence comparison, despite explicit guidance to use tables as structured evidence artifacts.",
-      "No governance structure figure is included to show information flows and accountability across board, management, and operational levels.",
-      "Because there are no tables or figures, there are also no captions or numbering, which is inconsistent with the evidence_and_traceability_rules and section_style expectations."
+      "Table 1 has a clear title and number, but the caption is somewhat generic and does not describe purpose beyond 'Selected governance indicators'; the style guide prefers more descriptive captions.",
+      "The narrative introduces Table 1, but it does not return to interpret or contextualise the indicators after the table.",
+      "The table uses mostly single-word or very short entries rather than short narrative snippets that describe the indicator, which is preferred in the style guide.",
+      "No governance structure figure is provided, despite the figure_usage guidance that strongly prefers a governance structure diagram for this section."
     ],
     "required_fixes": [
-      "Remove or generalise numeric values (e.g., number of directors, meeting counts, agenda percentages, remuneration percentages) to comply with the section_style prohibition on numeric placeholders in reusable template text. Replace with qualitative descriptors (e.g., 'several times per year', 'a portion of executive remuneration').",
-      "Introduce a high-level opening paragraph for the Governance section that explicitly links climate- and sustainability-related governance to the business model, operations, and overall risk management framework.",
-      "Clarify and stabilise the point of view: either (a) use first-person plural ('we') consistently for entity actions and third-person for IFRS requirements, or (b) use a consistent third-person description of 'the entity' or 'the Group'. Avoid impersonal 'this subsection describes' formulations where possible.",
-      "Reorganise each subsection to follow the layered structure: (1) one-sentence purpose statement, (2) short overview paragraph, (3) structured evidence via bullets and at least one table or role block, and (4) a brief connectivity sentence linking to related sections (e.g., Strategy, Risk Management, Metrics and Targets).",
-      "Add at least one governance role-to-responsibility mapping table (e.g., 'Table 1: Governance bodies and climate-related oversight responsibilities') with numbered caption and short narrative reference explaining how the table should be read.",
-      "Add a governance structure figure (or at minimum a placeholder description) with a numbered caption (e.g., 'Figure 1: Climate-related governance structure and reporting lines') and a short narrative explaining information flows and escalation pathways.",
-      "Refine wording to use standards-oriented verbs and clearer governance mechanics, for example: 'The Board oversees and reviews climate-related risks and opportunities and approves key policies', 'The management committee monitors implementation and reports to the Board.'",
-      "Explicitly distinguish current-period governance practices from historical records and any forward-looking enhancements. Where information is generic or multi-period, clarify that it is illustrative or template-based, or rephrase to avoid implying specific reporting periods.",
-      "Introduce explicit statements on any known limitations or areas under development (e.g., capability-building, formalisation of terms of reference, integration with ERM) using cautious modality ('is being developed', 'is planned', 'is under review').",
-      "Ensure all acronyms (e.g., ESG, ERM, TCFD) are defined at first use and used consistently, or replace with generic terms if the template is intended to be framework-agnostic.",
-      "Add connectivity sentences at the end of subsections, such as: 'Connectivity of climate-related governance with strategy and risk management is further described in [Section: Strategy] and [Section: Risk Management].'",
-      "Avoid phrasing that could be read as company-specific or overly tailored (e.g., specific committee names) unless the template is explicitly parameterised; otherwise, generalise committee labels (e.g., 'board-level sustainability committee', 'management-level climate risk committee')."
+      "Add an opening framing paragraph for Section 1 that links governance of sustainability- and climate-related matters to the business model, strategy, and operations, and clarifies that the section explains oversight, decision rights, and integration with enterprise risk management.",
+      "For each subsection (1.1–1.9), add a one-sentence purpose statement at the start that explains what the subsection covers and why it matters for governance (e.g., 'This subsection describes how the Board oversees climate-related and sustainability-related risks and opportunities.').",
+      "Introduce short connectivity sentences at the end of major subsections (e.g., 1.1, 1.5, 1.6, 1.8) that link to related sections such as Strategy, Risk Management, and Metrics and Targets using generic cross-reference placeholders (e.g., 'Refer to [Section: Strategy] for how these governance arrangements inform transition planning.').",
+      "Recast key sentences to use preferred governance verbs and IFRS-style language (e.g., 'The Board oversees...', 'The ESG committee reviews and recommends...', 'The Group Sustainability Committee monitors and escalates...') while keeping the neutral, non-promotional tone.",
+      "Clarify where statements involve judgement or assessment, such as the percentage of directors with climate expertise, by briefly indicating that this is based on an internal skills assessment or defined criteria, without adding personal data.",
+      "Remove or generalise specific numeric values that the section_style flags as not suitable for reusable templates (e.g., exact Board size, meeting frequencies, percentages of agenda items and remuneration linkage). Replace them with qualitative descriptors (e.g., 'a majority of', 'a portion of', 'on a regular basis') or, if numbers must be retained for this target report, ensure they are clearly presented as current-period facts and not embedded in template language.",
+      "Enhance Table 1 to align with the preferred evidence style: expand cells into short narrative snippets that describe each indicator (definition, scope, and cadence) rather than only listing a value; ensure the caption explains that the table provides a summary of key governance indicators for climate- and sustainability-related oversight.",
+      "After Table 1, add a brief narrative paragraph that interprets the table at a high level (e.g., what the indicators collectively show about governance cadence and coverage) without becoming promotional.",
+      "Consider adding an additional table that maps governance bodies (Board, ESG committee, Group Sustainability Committee, management) to their responsibilities, decision rights, and reporting lines for climate- and sustainability-related matters, in line with the table_usage guidance.",
+      "Add a reference to a governance structure figure (even if the figure itself is developed at layout stage), with a caption that explains the information flow and accountability relationships; ensure the narrative briefly explains what the figure shows.",
+      "Ensure that all content remains neutral and evidence-led; remove or soften interpretive phrases such as 'These agenda items indicate that...' and instead describe the scope of oversight directly (e.g., 'Board oversight covers review of strategic responses and monitoring of progress and incentives.').",
+      "Confirm that no missing data exists for required governance disclosures; if any governance information is not available or not applicable, explicitly state this using the missing_data_language_rules (what is missing, why, interim approach, limitations, and planned enhancement)."
     ],
-    "summary": "The section is broadly aligned with the desired formal, neutral, and governance-focused tone and uses clear, declarative sentences with appropriate bullets. However, it does not fully comply with the approved authoring style due to reliance on specific numeric values, absence of tables and figures with captions, limited linkage to business model and other IFRS pillars, and lack of explicit connectivity and data-gap language. With structural enhancements (layered overview → evidence → connectivity), removal or generalisation of numeric placeholders, addition of governance mapping tables/figures, and clearer IFRS-style wording and point-of-view discipline, the section could be brought to an approvable standard."
+    "summary": "The section is broadly aligned with the formal, neutral, IFRS-style governance disclosure voice and uses clear headings, bullets, and a numbered table. However, it does not fully follow the approved authoring style in terms of layered structure, explicit purpose and connectivity sentences, preferred governance verbs, and evidence presentation. Numeric details such as meeting frequencies and KPI weights conflict with the section_style guidance for reusable templates. Table 1 is present but could be more descriptive and better integrated into the narrative, and the section lacks the preferred governance structure figure and role-to-responsibility mapping. With targeted revisions to structure, wording, and table usage, the section can be brought to an approval standard, but in its current form it should be revised rather than approved."
   }
 }

@@ -9,62 +9,78 @@
       "scores": {
         "ifrs_coverage": 6.0,
         "evidence": 6.0,
-        "style": 3.6
+        "style": 3.8
       },
       "failures": [
         {
           "judge": "ifrs_coverage_judge",
           "score": 6.0,
           "required_fixes": [
-            "Remove or qualify the statement that the sustainability-related risks and opportunities described are climate-related, or add an explicit statement that the disclosures cover all sustainability-related risks and opportunities that could reasonably be expected to affect the bank’s prospects (and clarify if this section/report is limited to climate only).",
-            "Add an explicit statement that the sustainability-related financial disclosures are for the same reporting entity as the related financial statements.",
-            "Identify the specific financial statements to which these sustainability-related financial disclosures relate (e.g., consolidated financial statements for the year ended 31 December 2024).",
-            "Add a statement explaining how information is connected to (or cross-referenced with) the related financial statements/other GPFR, including where users can find related amounts and how consistency is maintained.",
-            "Add an explicit statement that the reporting currency used in sustainability disclosures is the same as the presentation currency of the related financial statements (or explain any permitted exception).",
-            "Add a statement addressing consistency of data and assumptions with those used in the related financial statements (to the extent possible), and explain key differences if any.",
-            "Add disclosures identifying the external standards/guidance applied in preparing the sustainability-related financial disclosures (including whether SASB Standards topics/metrics were considered and applicability conclusions), and identify the relevant industry classification used for metric selection.",
-            "If cross-referencing is used anywhere in the broader report, include the required cross-reference mechanics (what is cross-referenced, where, availability, and conditions); otherwise remove any implication of cross-referencing."
+            "Add an explicit statement identifying the related financial statements (eg, consolidated financial statements for the year ended 31 December 2024) and confirm the sustainability disclosures are for the same reporting entity (IFRS_S1_20_C01, IFRS_S1_22_C01).",
+            "Strengthen connected information by providing specific linkages/cross-references between sustainability disclosures and the financial statements (eg, where climate-related capex, provisions/impairments, or risk disclosures are reflected) rather than only stating currency consistency (IFRS_S1_21_C04).",
+            "Either (a) include the required disclosures about all sustainability-related risks and opportunities affecting prospects (beyond climate), or (b) clearly scope this section as basis-of-preparation only and ensure the full report elsewhere meets IFRS_S1_3_C01 (IFRS_S1_3_C01).",
+            "Disclose the specific external standards/guidance applied (eg, IFRS S1/S2, SASB topics considered, NGFS, PCAF) and the industry classification used to identify applicable metrics; explicitly state SASB topics/metrics were considered (or not applicable) (IFRS_S1_55_C01, IFRS_S1_58_C01, IFRS_S1_59_C01, IFRS_S1_59_C02).",
+            "Add disclosures describing how the Bank determines which IFRS Sustainability Disclosure Standard specifically applies to each risk/opportunity and how judgement is applied when none applies, including how relevance and faithful representation are ensured (IFRS_S1_56_C01, IFRS_S1_57_C01, IFRS_S1_57_C02).",
+            "State whether information is incorporated by cross-reference to other reports; if yes, include the cross-reference mechanics consistent with B45–B47 (IFRS_S1_63_C01).",
+            "State that sustainability-related financial disclosures are reported at the same time as the related financial statements (IFRS_S1_64_C01).",
+            "If relying on the 'additional information' principle, identify at least one concrete example where additional information was necessary and provided to explain effects on cash flows/access to finance/cost of capital (IFRS_S1_15_C02)."
           ]
         },
         {
           "judge": "evidence_judge",
           "score": 6.0,
           "required_fixes": [
-            "Add explicit evidence/citations (or internal cross-references) for governance facts: board reporting cadence, board size, climate expertise %, agenda %, ESG committee existence/meeting frequency, and management committee names (e.g., governance charter excerpts, minutes, or a governance data table with definitions).",
-            "Resolve year alignment issues: multiple climate_risk_register evidence items shown are for reporting_year 2023, while the section states disclosures are for 2024. Provide 2024 register extracts or clarify that the register data shown is as of 2023 and explain why used in a 2024 report.",
-            "Provide untruncated, verifiable scenario methodology evidence for NGFS v4 usage and the detailed methodological steps (IEA NZE mapping, REMIND-MAgPIE, PD sensitivity approach, jurisdictions covered).",
-            "Support quantitative metrics (capex, Tier 1 capital, operational emissions, financed emissions, carbon intensity) with evidence items/tables and definitions (scope, boundary, units, and reconciliation where relevant).",
-            "For Scope 2 market-based accounting and sovereign bond financed emissions notes, include the specific methodology references (e.g., GHG Protocol Scope 2 Guidance, PCAF standard section) and the bank’s applied denominator/attribution approach for sovereigns.",
-            "For emissions data quality percentages and 'limited assurance', disclose basis (which scopes/categories covered), calculation method, assurer identity, assurance standard, and scope/period."
+            {
+              "fix": "Add/replace evidence linkage for fiscal year-end date to bank.fiscal_year_end (or equivalent audited financial statements reference) for the statement 'fiscal year ends on 31 December 2024' (GR-005)."
+            },
+            {
+              "fix": "Add/replace evidence linkage for reporting currency to bank.reporting_currency (or financial statements note) for 'reporting currency is EUR' (GR-006)."
+            },
+            {
+              "fix": "Provide a concrete evidence source for 'green loans 10.71%' (e.g., reporting_kpis.green_loans_pct_2024 or taxonomy/portfolio KPI table) and cite it for GR-032."
+            },
+            {
+              "fix": "Clean up evidence mappings where unrelated sources are cited (e.g., remove board_climate_expertise_pct from GR-012 unless it truly supports the 69.8% agenda metric)."
+            },
+            {
+              "fix": "For Table 1 data quality percentages, cite evidence paths for each percentage (estimated/proxy/audited) or a single structured object that contains all four values."
+            },
+            {
+              "fix": "For Scope 1/2 totals, cite the specific emissions inventory/KPI fields that contain those totals (rather than scope2 reconciliation narrative or generic target progress fields), and ensure location-based vs market-based are separately evidenced."
+            }
           ]
-        },
+        }
+      ],
+      "warnings": [
         {
           "judge": "style_judge",
-          "score": 3.6,
+          "score": 3.8,
           "required_fixes": [
-            "Remove or generalize hard-coded temporal, currency, and numeric details from the basis-of-preparation narrative so that the section can function as a reusable template. For example, replace specific years, dates, currencies, jurisdictions, and metric values with configurable placeholders or describe them generically (e.g., 'the reporting period', 'the reporting currency').",
-            "Reframe organization-specific governance and committee names into generic role-based descriptions unless the report is explicitly intended to be entity-specific and such names are supported by the target payload. Where retained, ensure they are clearly presented as target-company-specific and not part of the generic style template.",
-            "Adjust references to external scenarios and frameworks (e.g., NGFS, IEA NZE, REMIND-MAgPIE) to be configurable and non-prescriptive. For example, state that 'we apply externally published climate scenarios (e.g., central bank or international agency scenarios) as configured for our context' rather than hard-coding specific scenario labels as universal content.",
-            "Introduce the layered structure in each major subsection: start with a concise purpose/basis sentence, follow with a bulleted list of key principles or mechanics, and close with a short connectivity sentence that cross-references related sections (e.g., 'Refer to [Section: Strategy]' or 'See [Appendix: Methodologies]').",
-            "Explicitly map elements of this General Requirements section to the IFRS S1/S2 pillars by adding brief subheadings or cross-reference statements (e.g., 'Connectivity to Governance disclosures', 'Linkage to Metrics and Targets') where relevant content is discussed.",
-            "Separate 'what' from 'how' more clearly in subsections such as 1.4 and 1.5 by using subheadings or short paragraphs: first describe the principle or requirement (e.g., 'We identify climate-related risks and opportunities as follows...'), then describe the mechanics (e.g., 'We apply a 5×5 risk matrix to assess likelihood and severity...').",
-            "Clarify where information reflects current-period facts versus estimates, judgements, or forward-looking analysis. For example, explicitly label scenario analysis outputs and risk ratings as estimates based on assumptions, and describe any limitations or uncertainty at a high level.",
-            "Introduce at least one compact table to summarize key basis-of-preparation elements (e.g., reporting period, reporting entity boundary, reporting currency, comparatives, assurance level) and caption it in line with the style guide (e.g., 'Table 1: Summary of general reporting parameters'). Reference the table in the narrative.",
-            "Tighten wording to use preferred disclosure verbs and more standards-oriented phrasing. Replace generic 'This subsection explains/summarises...' with formulations such as 'We disclose...', 'The bank presents...', 'This section describes...'.",
-            "Add brief connectivity sentences at the end of major subsections (e.g., 1.1, 1.4, 1.5, 1.6, 1.7, 1.8) that link to related sections or appendices using generic cross-reference placeholders, enhancing traceability and alignment with the connectivity requirement."
-          ]
+            "Remove or generalize hard-coded reporting years, specific dates, currencies, and jurisdiction lists from template-style narrative. Replace with configurable placeholders or generic wording (e.g., 'the reporting period', 'the reporting currency', 'relevant jurisdictions') to comply with the 'what_to_avoid' rules.",
+            "Refocus the section on basis of preparation and 'how to read this report' mechanics by removing or relocating detailed performance metrics (e.g., financed emissions, capex, Tier 1 capital, Scope 1/2/3 values, green loans percentage) to the dedicated Metrics and Targets section, and instead include cross-references (e.g., 'Refer to [Section: Metrics and Targets]').",
+            "Introduce or refine one-sentence purpose statements at the start of each subsection that explicitly state what the subsection describes (e.g., 'This subsection describes the reporting period applied to these sustainability-related financial disclosures.').",
+            "Add closing connectivity sentences to major subsections (e.g., 1.1, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9) that link to related sections or the financial statements using generic cross-reference placeholders (e.g., 'Refer to [Section: Governance]' or 'See [Related Financial Statements]').",
+            "Separate high-level principles from detailed mechanics in methodology subsections. For example, in 1.6, first state the overarching principles for climate-related methodologies, then use bullets or short paragraphs for specific methods (risk rating, scenario analysis, emissions accounting) without embedding detailed case examples unless clearly labelled as illustrative.",
+            "Simplify and standardize wording to use preferred standards-oriented verbs and cautious modality. Replace narrative verbs like 'explains' and 'sets out' with 'describes', 'presents', 'discloses', and ensure judgement-heavy areas use 'may', 'could', or 'is subject to'.",
+            "Review long or multi-clause sentences and split them into shorter, single-idea sentences to improve clarity and align with the sentence_length guidance.",
+            "Adjust numeric precision to a reasonable number of decimal places consistent with audit-ready practice (e.g., one or two decimals for emissions and intensity metrics) and state rounding conventions where relevant.",
+            "Enhance the data quality and estimates sections to more explicitly distinguish between current-period facts, estimates/judgements, and any forward-looking intentions, and, where any data is incomplete or estimated, follow the missing_data_language_rules (what is missing, why, interim approach, limitations, and planned enhancements).",
+            "Consider adding a compact mapping table that links each general requirement topic (e.g., reporting boundary, comparatives, connected information) to the sections where detailed disclosures appear, to improve navigability and align with the preferred table usage for this section."
+          ],
+          "advisory": true
         }
       ],
       "thresholds": {
         "ifrs_coverage_score_min": 8.0,
         "evidence_score_min": 8.0,
-        "style_score_min": 7.5
+        "style_score_min": 7.5,
+        "style_judge_mode": "advisory_after_deterministic_pass"
       },
-      "approval_policy": "V9.0 approves sections that pass deterministic/fact-lock gates and meet supported-evidence-scope judge thresholds; missing requirements remain audit-only.",
-      "version": "V9.0 senior_ifrs_writer_finalizer",
+      "approval_policy": "V9.1: deterministic evidence/fact gates are binding; style judge is advisory unless IFRS_STYLE_JUDGE_MODE=blocking.",
+      "version": "V9.4-order-safe-factlock-decimal",
       "section_generation_score": {
         "section_name": "General Requirements",
-        "overall_section_generation_score_0_to_100": 78.08,
+        "overall_section_generation_score_0_to_100": 78.28,
         "coverage_component": {
           "requirements_total": 108,
           "coverage_counts": {
@@ -74,7 +90,7 @@
           },
           "coverage_score_0_to_100": 69.91
         },
-        "judge_average_0_to_100": 52.0,
+        "judge_average_0_to_100": 52.67,
         "deterministic_gate_score_0_to_100": 100.0,
         "report_cleanliness_score_0_to_100": 100.0,
         "missing_requirements_count_flagged": 10,
@@ -97,7 +113,7 @@
     },
     "section_generation_score": {
       "section_name": "General Requirements",
-      "overall_section_generation_score_0_to_100": 78.08,
+      "overall_section_generation_score_0_to_100": 78.28,
       "coverage_component": {
         "requirements_total": 108,
         "coverage_counts": {
@@ -107,7 +123,7 @@
         },
         "coverage_score_0_to_100": 69.91
       },
-      "judge_average_0_to_100": 52.0,
+      "judge_average_0_to_100": 52.67,
       "deterministic_gate_score_0_to_100": 100.0,
       "report_cleanliness_score_0_to_100": 100.0,
       "missing_requirements_count_flagged": 10,
@@ -127,7 +143,7 @@
       "approved": false,
       "policy": "Missing requirements reduce audit/readiness visibility only; they must not appear in report prose."
     },
-    "senior_ifrs_version": "V9.0 senior_ifrs_writer_finalizer"
+    "senior_ifrs_version": "V9.4-order-safe-factlock-decimal"
   },
   {
     "section_name": "Governance",
@@ -136,584 +152,66 @@
     "approval": {
       "section_name": "Governance",
       "approved": false,
-      "reason": "deterministic_gates_failed",
-      "required_fixes": {
-        "section_name": "Governance",
-        "passed": false,
-        "gates": [
-          {
-            "gate_name": "draft_structural_quality_no_templates_no_absence_language",
-            "passed": true,
-            "failures": [],
-            "warnings": []
-          },
-          {
-            "gate_name": "draft_depth_quality_no_truncation",
-            "passed": false,
-            "failures": [
-              {
-                "type": "section_too_short_or_truncated",
-                "word_count": 707,
-                "minimum_word_count": 800,
-                "evidence_path_count": 38,
-                "required_fix": "Expand the section using existing evidence only; do not add unsupported facts or missing-data language."
-              }
-            ],
-            "warnings": []
-          },
-          {
-            "gate_name": "draft_prose_polish_no_raw_fields_no_booleans_no_unavailable_language",
-            "passed": true,
-            "failures": [],
-            "warnings": []
-          },
-          {
-            "gate_name": "unsupported_generic_boilerplate_and_inferred_thresholds_gate",
-            "passed": true,
-            "failures": [],
-            "warnings": []
-          },
-          {
-            "gate_name": "claims_integrity",
-            "passed": true,
-            "failures": [],
-            "warnings": [
-              {
-                "claim_id": "GOV-001",
-                "issue": "no_evidence_source_after_v89_repair",
-                "claim": "This section describes how governance arrangements support oversight of climate-related and broader sustainability-related risks and opportunities."
-              },
-              {
-                "claim_id": "GOV-010",
-                "issue": "no_evidence_source_after_v89_repair",
-                "claim": "Climate-related and sustainability-related matters are integrated into the entity’s enterprise risk management processes."
-              },
-              {
-                "claim_id": "GOV-011",
-                "issue": "no_evidence_source_after_v89_repair",
-                "claim": "A climate check is applied for major transactions."
-              }
-            ],
-            "claim_count": 15,
-            "claims_register_normalized": {
-              "section_name": "Governance",
-              "claims": [
-                {
-                  "claim_id": "GOV-001",
-                  "claim_text": "This section describes how governance arrangements support oversight of climate-related and broader sustainability-related risks and opportunities.",
-                  "claim_type": "narrative_scope",
-                  "entities": [
-                    "the entity"
-                  ],
-                  "numbers": [],
-                  "dates": [],
-                  "evidence_sources": [],
-                  "requirement_ids": [],
-                  "supported": true,
-                  "support_notes": "Introductory framing statement; not a specific IFRS disclosure datapoint.",
-                  "invalid_evidence_sources_removed": [
-                    "draft_markdown: Governance intro paragraph"
-                  ]
-                },
-                {
-                  "claim_id": "GOV-002",
-                  "claim_text": "Oversight of climate-related and sustainability-related matters is exercised through the Board.",
-                  "claim_type": "governance_structure",
-                  "entities": [
-                    "Board"
-                  ],
-                  "numbers": [],
-                  "dates": [],
-                  "evidence_sources": [
-                    "governance[2].board_full_meeting_frequency",
-                    "governance[2].climate_risk_reporting_to_board",
-                    "reporting_kpis.governance_maturity.board_climate_expertise_pct"
-                  ],
-                  "requirement_ids": [
-                    "IFRS_S1_27_C02",
-                    "IFRS_S2_6_C02"
-                  ],
-                  "supported": true,
-                  "support_notes": "Identifies the governance body responsible for oversight, but does not describe terms of reference/mandates/role descriptions.",
-                  "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
-                  "repaired_evidence_sources": [
-                    "reporting_kpis.governance_maturity.board_climate_expertise_pct",
-                    "governance[2].climate_risk_reporting_to_board",
-                    "governance[2].board_full_meeting_frequency"
-                  ],
-                  "invalid_evidence_sources_removed": [
-                    "draft_markdown: Board oversight and agenda integration"
-                  ]
-                },
-                {
-                  "claim_id": "GOV-003",
-                  "claim_text": "The Board comprises 10 directors.",
-                  "claim_type": "quantitative",
-                  "entities": [
-                    "Board",
-                    "directors"
-                  ],
-                  "numbers": [
-                    "10"
-                  ],
-                  "dates": [],
-                  "evidence_sources": [
-                    "governance[0].board_size",
-                    "governance[2].climate_risk_reporting_to_board",
-                    "reporting_kpis.governance_maturity.board_climate_expertise_pct"
-                  ],
-                  "requirement_ids": [],
-                  "supported": true,
-                  "support_notes": "Board composition count stated; not directly mapped to listed IFRS governance sub-clauses.",
-                  "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
-                  "repaired_evidence_sources": [
-                    "governance[0].board_size",
-                    "reporting_kpis.governance_maturity.board_climate_expertise_pct",
-                    "governance[2].climate_risk_reporting_to_board"
-                  ],
-                  "invalid_evidence_sources_removed": [
-                    "draft_markdown: Board oversight and agenda integration"
-                  ]
-                },
-                {
-                  "claim_id": "GOV-004",
-                  "claim_text": "During the period covered by the governance data, the Board held four full Board meetings.",
-                  "claim_type": "quantitative",
-                  "entities": [
-                    "Board"
-                  ],
-                  "numbers": [
-                    "4"
-                  ],
-                  "dates": [],
-                  "evidence_sources": [
-                    "governance[0].board_full_meeting_frequency",
-                    "governance[1].board_full_meeting_frequency",
-                    "governance[2].board_full_meeting_frequency"
-                  ],
-                  "requirement_ids": [],
-                  "supported": true,
-                  "support_notes": "Meeting frequency stated; could support context for oversight but does not by itself evidence climate reporting cadence.",
-                  "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
-                  "repaired_evidence_sources": [
-                    "governance[0].board_full_meeting_frequency",
-                    "governance[2].board_full_meeting_frequency",
-                    "governance[1].board_full_meeting_frequency"
-                  ],
-                  "invalid_evidence_sources_removed": [
-                    "draft_markdown: Board oversight and agenda integration"
-                  ]
-                },
-                {
-                  "claim_id": "GOV-005",
-                  "claim_text": "During the same period, climate-related matters appeared on the Board agenda 69.8% of the time.",
-                  "claim_type": "quantitative",
-                  "entities": [
-                    "Board"
-                  ],
-                  "numbers": [
-                    "69.8"
-                  ],
-                  "dates": [],
-                  "evidence_sources": [
-                    "governance[0].climate_on_board_agenda_pct",
-                    "governance[2].climate_risk_reporting_to_board",
-                    "reporting_kpis.governance_maturity.board_climate_expertise_pct"
-                  ],
-                  "requirement_ids": [
-                    "IFRS_S1_27_C04",
-                    "IFRS_S2_6_C04"
-                  ],
-                  "supported": true,
-                  "support_notes": "Supports that climate matters are regularly brought to the Board, but does not explicitly state 'how and how often' the Board is informed beyond agenda presence.",
-                  "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
-                  "repaired_evidence_sources": [
-                    "governance[0].climate_on_board_agenda_pct",
-                    "reporting_kpis.governance_maturity.board_climate_expertise_pct",
-                    "governance[2].climate_risk_reporting_to_board"
-                  ],
-                  "invalid_evidence_sources_removed": [
-                    "draft_markdown: Board oversight and agenda integration"
-                  ]
-                },
-                {
-                  "claim_id": "GOV-006",
-                  "claim_text": "Board meeting records indicate that climate-related topics brought to the Board included transition plan review, scenario analysis, TCFD-aligned disclosure review, monitoring net zero progress, carbon credit approval, and executive remuneration ESG KPIs.",
-                  "claim_type": "governance_process",
-                  "entities": [
-                    "Board",
-                    "Task Force on Climate-related Financial Disclosures (TCFD)"
-                  ],
-                  "numbers": [],
-                  "dates": [],
-                  "evidence_sources": [
-                    "board_minutes[0].climate_topics_discussed",
-                    "board_minutes[35].climate_topics_discussed",
-                    "board_minutes[8].climate_topics_discussed"
-                  ],
-                  "requirement_ids": [
-                    "IFRS_S1_27_C05",
-                    "IFRS_S1_27_C06",
-                    "IFRS_S2_6_C05",
-                    "IFRS_S2_6_C06"
-                  ],
-                  "supported": true,
-                  "support_notes": "Demonstrates Board consideration of strategy, targets/progress, and remuneration-related metrics; does not evidence formal processes for target-setting oversight beyond discussion topics.",
-                  "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
-                  "repaired_evidence_sources": [
-                    "board_minutes[8].climate_topics_discussed",
-                    "board_minutes[0].climate_topics_discussed",
-                    "board_minutes[35].climate_topics_discussed"
-                  ],
-                  "invalid_evidence_sources_removed": [
-                    "draft_markdown: Board oversight and agenda integration bullet list"
-                  ]
-                },
-                {
-                  "claim_id": "GOV-007",
-                  "claim_text": "Climate risk information is reported to the Board on a semi-annual basis.",
-                  "claim_type": "governance_process",
-                  "entities": [
-                    "Board"
-                  ],
-                  "numbers": [],
-                  "dates": [],
-                  "evidence_sources": [
-                    "governance[0].climate_risk_reporting_to_board",
-                    "governance[1].climate_risk_reporting_to_board",
-                    "governance[2].climate_risk_reporting_to_board"
-                  ],
-                  "requirement_ids": [
-                    "IFRS_S1_27_C04",
-                    "IFRS_S2_6_C04"
-                  ],
-                  "supported": true,
-                  "support_notes": "Directly addresses reporting frequency ('how often'); does not describe 'how' (format/content/owner) beyond cadence.",
-                  "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
-                  "repaired_evidence_sources": [
-                    "governance[2].climate_risk_reporting_to_board",
-                    "governance[1].climate_risk_reporting_to_board",
-                    "governance[0].climate_risk_reporting_to_board"
-                  ],
-                  "invalid_evidence_sources_removed": [
-                    "draft_markdown: How the Board is informed about climate-related risks and opportunities"
-                  ]
-                },
-                {
-                  "claim_id": "GOV-008",
-                  "claim_text": "Management’s role in governance processes, controls and procedures for sustainability-related and climate-related matters is supported through management-level committees, including the Group Sustainability Committee, ESG Executive Committee, and Climate Risk Management Committee.",
-                  "claim_type": "governance_structure",
-                  "entities": [
-                    "Climate Risk Management Committee",
-                    "ESG Executive Committee",
-                    "Group Sustainability Committee",
-                    "Management"
-                  ],
-                  "numbers": [],
-                  "dates": [],
-                  "evidence_sources": [
-                    "governance[0].management_committee_name",
-                    "governance[1].management_committee_name",
-                    "governance[2].management_committee_name"
-                  ],
-                  "requirement_ids": [
-                    "IFRS_S1_27_C08",
-                    "IFRS_S2_6_C08"
-                  ],
-                  "supported": true,
-                  "support_notes": "Identifies management-level committees; does not explain how oversight is exercised over them.",
-                  "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
-                  "repaired_evidence_sources": [
-                    "governance[2].management_committee_name",
-                    "governance[1].management_committee_name",
-                    "governance[0].management_committee_name"
-                  ],
-                  "invalid_evidence_sources_removed": [
-                    "draft_markdown: Management governance: committees and oversight"
-                  ]
-                },
-                {
-                  "claim_id": "GOV-009",
-                  "claim_text": "An ESG committee is also in place and met five times during the period covered by the governance data.",
-                  "claim_type": "quantitative",
-                  "entities": [
-                    "ESG committee"
-                  ],
-                  "numbers": [
-                    "5"
-                  ],
-                  "dates": [],
-                  "evidence_sources": [
-                    "governance[0].esg_committee_meetings_per_year",
-                    "governance[2].board_climate_expertise_pct",
-                    "reporting_kpis.governance_maturity.board_climate_expertise_pct"
-                  ],
-                  "requirement_ids": [
-                    "IFRS_S1_27_C08",
-                    "IFRS_S2_6_C08"
-                  ],
-                  "supported": true,
-                  "support_notes": "Supports existence and activity of a management committee; does not specify delegation/oversight mechanics.",
-                  "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
-                  "repaired_evidence_sources": [
-                    "governance[0].esg_committee_meetings_per_year",
-                    "reporting_kpis.governance_maturity.board_climate_expertise_pct",
-                    "governance[2].board_climate_expertise_pct"
-                  ],
-                  "invalid_evidence_sources_removed": [
-                    "draft_markdown: Management governance: committees and oversight"
-                  ]
-                },
-                {
-                  "claim_id": "GOV-010",
-                  "claim_text": "Climate-related and sustainability-related matters are integrated into the entity’s enterprise risk management processes.",
-                  "claim_type": "risk_management_integration",
-                  "entities": [
-                    "enterprise risk management (ERM)",
-                    "the entity"
-                  ],
-                  "numbers": [],
-                  "dates": [],
-                  "evidence_sources": [],
-                  "requirement_ids": [
-                    "IFRS_S1_27_C05",
-                    "IFRS_S2_6_C05"
-                  ],
-                  "supported": true,
-                  "support_notes": "Addresses that governance takes these matters into account in risk management processes; lacks detail on how integration is implemented.",
-                  "invalid_evidence_sources_removed": [
-                    "draft_markdown: Integration with enterprise risk management"
-                  ]
-                },
-                {
-                  "claim_id": "GOV-011",
-                  "claim_text": "A climate check is applied for major transactions.",
-                  "claim_type": "control_process",
-                  "entities": [
-                    "the entity"
-                  ],
-                  "numbers": [],
-                  "dates": [],
-                  "evidence_sources": [],
-                  "requirement_ids": [
-                    "IFRS_S1_27_C05",
-                    "IFRS_S2_6_C05"
-                  ],
-                  "supported": true,
-                  "support_notes": "Addresses consideration of climate in major transaction decisions; does not describe criteria, thresholds, or governance owner.",
-                  "invalid_evidence_sources_removed": [
-                    "draft_markdown: Major transactions: climate-related check"
-                  ]
-                },
-                {
-                  "claim_id": "GOV-012",
-                  "claim_text": "During the period covered by the governance data, 33.5% of directors were identified as having climate expertise.",
-                  "claim_type": "quantitative",
-                  "entities": [
-                    "Board",
-                    "directors"
-                  ],
-                  "numbers": [
-                    "33.5"
-                  ],
-                  "dates": [],
-                  "evidence_sources": [
-                    "governance[0].board_climate_expertise_pct",
-                    "governance[2].board_climate_expertise_pct",
-                    "reporting_kpis.governance_maturity.board_climate_expertise_pct"
-                  ],
-                  "requirement_ids": [
-                    "IFRS_S1_27_C03",
-                    "IFRS_S2_6_C03"
-                  ],
-                  "supported": true,
-                  "support_notes": "Provides an indicator of skills/competence availability; does not explain the process for determining skills needs or development plans.",
-                  "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
-                  "repaired_evidence_sources": [
-                    "governance[0].board_climate_expertise_pct",
-                    "reporting_kpis.governance_maturity.board_climate_expertise_pct",
-                    "governance[2].board_climate_expertise_pct"
-                  ],
-                  "invalid_evidence_sources_removed": [
-                    "draft_markdown: Skills and competence"
-                  ]
-                },
-                {
-                  "claim_id": "GOV-013",
-                  "claim_text": "A skills development programme is in place to support development of skills and competencies relevant to oversight of strategies responding to climate-related and broader sustainability-related risks and opportunities.",
-                  "claim_type": "governance_process",
-                  "entities": [
-                    "Board"
-                  ],
-                  "numbers": [],
-                  "dates": [],
-                  "evidence_sources": [
-                    "governance[2].board_full_meeting_frequency",
-                    "governance[2].climate_risk_reporting_to_board",
-                    "reporting_kpis.governance_maturity.board_climate_expertise_pct"
-                  ],
-                  "requirement_ids": [
-                    "IFRS_S1_27_C03",
-                    "IFRS_S2_6_C03"
-                  ],
-                  "supported": true,
-                  "support_notes": "Supports that competencies will be developed; lacks detail on how the Board determines appropriate skills and monitors development.",
-                  "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
-                  "repaired_evidence_sources": [
-                    "reporting_kpis.governance_maturity.board_climate_expertise_pct",
-                    "governance[2].climate_risk_reporting_to_board",
-                    "governance[2].board_full_meeting_frequency"
-                  ],
-                  "invalid_evidence_sources_removed": [
-                    "draft_markdown: Skills and competence"
-                  ]
-                },
-                {
-                  "claim_id": "GOV-014",
-                  "claim_text": "During the period covered by the governance data, 8.7% of executive remuneration was linked to climate-related considerations.",
-                  "claim_type": "quantitative",
-                  "entities": [
-                    "executive remuneration"
-                  ],
-                  "numbers": [
-                    "8.7"
-                  ],
-                  "dates": [],
-                  "evidence_sources": [
-                    "governance[0].all_exec_climate_remuneration_pct"
-                  ],
-                  "requirement_ids": [
-                    "IFRS_S1_27_C06",
-                    "IFRS_S2_6_C06"
-                  ],
-                  "supported": true,
-                  "support_notes": "Quantifies remuneration linkage to climate considerations; does not specify which metrics/targets drive the linkage.",
-                  "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
-                  "repaired_evidence_sources": [
-                    "governance[0].all_exec_climate_remuneration_pct"
-                  ],
-                  "invalid_evidence_sources_removed": [
-                    "draft_markdown: Remuneration linkage"
-                  ]
-                },
-                {
-                  "claim_id": "GOV-015",
-                  "claim_text": "Board meeting records show that executive remuneration ESG KPIs were among the climate-related topics discussed.",
-                  "claim_type": "governance_process",
-                  "entities": [
-                    "Board",
-                    "ESG KPIs",
-                    "executive remuneration"
-                  ],
-                  "numbers": [],
-                  "dates": [],
-                  "evidence_sources": [
-                    "board_minutes[34].climate_topics_discussed",
-                    "board_minutes[35].climate_topics_discussed",
-                    "board_minutes[8].climate_topics_discussed"
-                  ],
-                  "requirement_ids": [
-                    "IFRS_S1_27_C06",
-                    "IFRS_S2_6_C06"
-                  ],
-                  "supported": true,
-                  "support_notes": "Supports Board oversight of remuneration-related performance measures connected to ESG/climate; does not evidence formal remuneration policy design.",
-                  "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
-                  "repaired_evidence_sources": [
-                    "board_minutes[8].climate_topics_discussed",
-                    "board_minutes[35].climate_topics_discussed",
-                    "board_minutes[34].climate_topics_discussed"
-                  ],
-                  "invalid_evidence_sources_removed": [
-                    "draft_markdown: Remuneration linkage"
-                  ]
-                }
-              ]
-            },
-            "policy": "V8.9 treats LLM claim-builder support false negatives as warnings after deterministic evidence repair; factlock still blocks unsupported report numbers."
-          },
-          {
-            "gate_name": "factlock_numbers_entities",
-            "passed": true,
-            "failures": [],
-            "warnings": [
-              {
-                "type": "entity_not_in_payload_or_claims",
-                "value": "An ESG"
-              },
-              {
-                "type": "entity_not_in_payload_or_claims",
-                "value": "Climate-related Financial Disclosures"
-              },
-              {
-                "type": "entity_not_in_payload_or_claims",
-                "value": "Governance\n\nThis"
-              },
-              {
-                "type": "entity_not_in_payload_or_claims",
-                "value": "Task Force"
-              },
-              {
-                "type": "entity_not_in_payload_or_claims",
-                "value": "The Board"
-              }
-            ],
-            "draft_numbers": [
-              "10",
-              "33.5%",
-              "69.8%",
-              "8.7%"
-            ],
-            "draft_entities": [
-              "An ESG",
-              "Climate Risk Management Committee",
-              "Climate-related Financial Disclosures",
-              "ESG Executive Committee",
-              "ESG KPIs",
-              "Governance\n\nThis",
-              "Group Sustainability Committee",
-              "Task Force",
-              "The Board"
-            ]
-          },
-          {
-            "gate_name": "reference_firewall",
-            "passed": true,
-            "forbidden_term_hits": [],
-            "failures": [],
-            "warnings": []
-          },
-          {
-            "gate_name": "report_cleanliness_no_missing_payload_language",
-            "passed": true,
-            "blocked_phrase_hits": [],
-            "soft_phrase_hits": [],
-            "failures": [],
-            "warnings": []
-          },
-          {
-            "gate_name": "v90_senior_ifrs_final_report_quality",
-            "passed": false,
-            "failures": [
-              {
-                "type": "v90_section_under_developed",
-                "word_count": 707,
-                "minimum_word_count": 800,
-                "required_fix": "Expand using available evidence only; do not add unsupported facts."
-              }
-            ],
-            "warnings": [],
-            "version": "V9.0 senior_ifrs_writer_finalizer"
-          }
-        ],
-        "summary": "- draft_structural_quality_no_templates_no_absence_language: PASS | failures=0 | warnings=0\n- draft_depth_quality_no_truncation: FAIL | failures=1 | warnings=0\n  failure: {'type': 'section_too_short_or_truncated', 'word_count': 707, 'minimum_word_count': 800, 'evidence_path_count': 38, 'required_fix': 'Expand the section using existing evidence only; do not add unsupported facts or missing-data language.'}\n- draft_prose_polish_no_raw_fields_no_booleans_no_unavailable_language: PASS | failures=0 | warnings=0\n- unsupported_generic_boilerplate_and_inferred_thresholds_gate: PASS | failures=0 | warnings=0\n- claims_integrity: PASS | failures=0 | warnings=3\n  warning: {'claim_id': 'GOV-001', 'issue': 'no_evidence_source_after_v89_repair', 'claim': 'This section describes how governance arrangements support oversight of climate-related and broader sustainability-related risks and opportunities.'}\n  warning: {'claim_id': 'GOV-010', 'issue': 'no_evidence_source_after_v89_repair', 'claim': 'Climate-related and sustainability-related matters are integrated into the entity’s enterprise risk management processes.'}\n- factlock_numbers_entities: PASS | failures=0 | warnings=5\n  warning: {'type': 'entity_not_in_payload_or_claims', 'value': 'An ESG'}\n  warning: {'type': 'entity_not_in_payload_or_claims', 'value': 'Climate-related Financial Disclosures'}\n- reference_firewall: PASS | failures=0 | warnings=0\n- report_cleanliness_no_missing_payload_language: PASS | failures=0 | warnings=0\n- v90_senior_ifrs_final_report_quality: FAIL | failures=1 | warnings=0\n  failure: {'type': 'v90_section_under_developed', 'word_count': 707, 'minimum_word_count': 800, 'required_fix': 'Expand using available evidence only; do not add unsupported facts.'}",
-        "v89_sanitized_for_gate": false,
-        "v90_finalized_for_gate": false
+      "scores": {
+        "ifrs_coverage": 6.0,
+        "evidence": 7.0,
+        "style": 6.8
       },
-      "version": "V9.0 senior_ifrs_writer_finalizer",
+      "failures": [
+        {
+          "judge": "ifrs_coverage_judge",
+          "score": 6.0,
+          "required_fixes": [
+            "Add disclosure of how Board/committee responsibilities for sustainability/climate are reflected in formal terms of reference/mandates/role descriptions/related policies (or equivalent governance documents).",
+            "Explain the process used by the Board (or relevant committee) to determine whether appropriate climate/sustainability skills and competencies are available or will be developed (eg, skills matrix, periodic assessment, recruitment criteria, training plan governance).",
+            "Describe how the Board takes climate/sustainability matters into account in (i) strategy oversight, (ii) major transactions (expand the 'climate check'—what triggers it, who performs it, how results influence decisions), and (iii) risk management processes/policies; include whether/how trade-offs are considered.",
+            "Describe how the Board oversees target-setting and monitors progress (eg, which targets, review cadence, dashboards/metrics reviewed, decision points), and clarify how performance metrics are incorporated into remuneration policies beyond the % linkage.",
+            "For management’s role, describe how oversight is exercised over the management-level committee(s): reporting lines to Board/ESG committee, escalation routes, approval authorities, and meeting/reporting cadence.",
+            "Describe management controls and procedures used to monitor/manage/oversee climate/sustainability risks and opportunities and how these are integrated with other internal functions (eg, finance, risk, internal audit, compliance).",
+            "Add a brief statement addressing IFRS S2 paragraph 7 on avoiding unnecessary duplication (eg, confirming integrated governance disclosures where oversight is managed on an integrated basis)."
+          ]
+        },
+        {
+          "judge": "evidence_judge",
+          "score": 7.0,
+          "required_fixes": [
+            "Revise GOV-006 to avoid overstating: either (a) soften to 'indicate climate matters are discussed by the Board' or (b) add concrete evidence/examples of strategic planning and performance oversight decisions influenced by climate discussions (e.g., approvals, strategy updates, KPI reviews).",
+            "For GOV-012 (ERM integration), add a brief description of the integration mechanism (risk identification, assessment, ownership, reporting cadence, escalation) and/or cite specific artifacts (risk register inclusion, ERM policy excerpt). If only a reported flag is available, qualify the statement as 'reported as integrated' and avoid implying operational detail.",
+            "For GOV-013 (climate check), define 'major transactions' threshold and describe the climate check process (criteria, responsible function/committee, documentation, decision rights). If only a reported flag is available, qualify as 'reported to be applied' and remove implied rigor.",
+            "For GOV-015 (skills development programme), add minimum programme details (who participates, frequency, topics) or qualify as 'a programme is reported to exist' if only a flag is available.",
+            "Fix evidence mapping for GOV-008 to cite governance[*].esg_committee_exists (not management_committee_name).",
+            "Improve evidence mapping for GOV-017 to cite the direct metric fields for each indicator; avoid bundling items that lack process detail without qualification."
+          ]
+        }
+      ],
+      "warnings": [
+        {
+          "judge": "style_judge",
+          "score": 6.8,
+          "required_fixes": [
+            "Remove or generalise specific numeric values (e.g., number of directors, meeting frequencies, percentages of agenda coverage, board expertise, and remuneration linkage) to comply with the section_style prohibition on numeric values in reusable template text, or clearly mark them as configurable placeholders if this is intended as a template.",
+            "Rephrase interpretive or evidentiary language into neutral, descriptive IFRS-style wording (e.g., replace 'These agenda items and discussions evidence that climate-related matters are brought to the Board...' with a more neutral description such as 'These agenda items indicate that climate-related matters are brought to the Board in connection with strategic planning and performance oversight.').",
+            "Introduce at least one governance body/role-to-responsibility mapping table with a numbered caption (e.g., 'Table 2.1: Governance bodies and responsibilities for sustainability- and climate-related oversight') and reference it explicitly in the narrative.",
+            "Add a governance structure figure (or at minimum, a placeholder description) with a numbered caption explaining how Board, committees, and management-level bodies interact and how information flows between them.",
+            "Convert the 'Selected governance indicators (climate)' bullet list into a structured, captioned table that includes metric definition, boundary, value/status, and source type, in line with the evidence_and_traceability rules.",
+            "Add brief connectivity sentences at the end of key subsections (e.g., 2.1, 2.4, 2.5, 2.8) linking governance mechanisms to related Strategy, Risk Management, and Metrics and Targets sections using generic cross-reference placeholders (e.g., 'Refer to [Section: Strategy] for how these governance arrangements inform climate-related strategic planning.').",
+            "Strengthen the use of standards-oriented verbs and governance verbs from the preferred list (e.g., 'oversees', 'reviews', 'monitors', 'approves', 'escalates') to describe Board and committee roles more explicitly.",
+            "Clarify, where relevant, whether statements refer to current-period practice versus historical trend, and use cautious language for any forward-looking or evolving aspects (e.g., skills development programmes, governance enhancements)."
+          ],
+          "advisory": true
+        }
+      ],
+      "thresholds": {
+        "ifrs_coverage_score_min": 8.0,
+        "evidence_score_min": 8.0,
+        "style_score_min": 7.5,
+        "style_judge_mode": "advisory_after_deterministic_pass"
+      },
+      "approval_policy": "V9.1: deterministic evidence/fact gates are binding; style judge is advisory unless IFRS_STYLE_JUDGE_MODE=blocking.",
+      "version": "V9.4-order-safe-factlock-decimal",
       "section_generation_score": {
         "section_name": "Governance",
-        "overall_section_generation_score_0_to_100": 44.17,
+        "overall_section_generation_score_0_to_100": 88.97,
         "coverage_component": {
           "requirements_total": 15,
           "coverage_counts": {
@@ -722,8 +220,8 @@
           },
           "coverage_score_0_to_100": 96.67
         },
-        "judge_average_0_to_100": 0.0,
-        "deterministic_gate_score_0_to_100": 0.0,
+        "judge_average_0_to_100": 66.0,
+        "deterministic_gate_score_0_to_100": 100.0,
         "report_cleanliness_score_0_to_100": 100.0,
         "missing_requirements_count_flagged": 0,
         "missing_requirement_ids_flagged": [],
@@ -734,7 +232,7 @@
     },
     "section_generation_score": {
       "section_name": "Governance",
-      "overall_section_generation_score_0_to_100": 44.17,
+      "overall_section_generation_score_0_to_100": 88.97,
       "coverage_component": {
         "requirements_total": 15,
         "coverage_counts": {
@@ -743,8 +241,8 @@
         },
         "coverage_score_0_to_100": 96.67
       },
-      "judge_average_0_to_100": 0.0,
-      "deterministic_gate_score_0_to_100": 0.0,
+      "judge_average_0_to_100": 66.0,
+      "deterministic_gate_score_0_to_100": 100.0,
       "report_cleanliness_score_0_to_100": 100.0,
       "missing_requirements_count_flagged": 0,
       "missing_requirement_ids_flagged": [],
@@ -752,7 +250,7 @@
       "approved": false,
       "policy": "Missing requirements reduce audit/readiness visibility only; they must not appear in report prose."
     },
-    "senior_ifrs_version": "V9.0 senior_ifrs_writer_finalizer"
+    "senior_ifrs_version": "V9.4-order-safe-factlock-decimal"
   },
   {
     "section_name": "Strategy",
@@ -763,7 +261,7 @@
       "approved": false,
       "scores": {
         "ifrs_coverage": 6.0,
-        "evidence": 6.0,
+        "evidence": 4.0,
         "style": 7.4
       },
       "failures": [
@@ -771,50 +269,66 @@
           "judge": "ifrs_coverage_judge",
           "score": 6.0,
           "required_fixes": [
-            "Add explicit definitions of short, medium and long term (e.g., year ranges) and explain how these align with internal strategic planning horizons (budget cycle, ICAAP/ILAAP, credit planning, etc.).",
-            "Disclose current-period (reporting period) financial effects of climate-related risks and opportunities on financial position, financial performance and cash flows, using quantitative and qualitative information and clearly attributing impacts (or explaining why attribution is not possible without using 'missing/unavailable data' language).",
-            "Strengthen anticipated financial effects across short/medium/long term by linking scenario outputs (e.g., revenue-at-risk, capital consumption) to expected impacts on financial statements/cash flows and describing how these are incorporated into financial planning (capital planning, provisioning, pricing, portfolio rebalancing).",
-            "Include planned sources of funding to implement the strategy (e.g., internal capital generation, wholesale funding, green/sustainability-linked issuance, reallocations) and how funding supports planned actions.",
-            "Add progress against previously disclosed plans/targets (quantitative and qualitative), using the available target progress and 'changed since prior period' evidence indicated in the payload."
+            "Add explicit definitions for short, medium and long term (e.g., year ranges) and explain how these align with the bank’s strategic/financial planning horizons (to satisfy IFRS_S1_30_C03 and IFRS_S2_10_C04).",
+            "Disclose current-period financial effects attributable to climate-related risks and opportunities on financial position, financial performance and cash flows (e.g., impairments/expected credit losses linked to climate drivers, valuation changes, provisions, revenue impacts, costs), with qualitative explanation and quantitative amounts where practicable (to satisfy IFRS_S1_34_C01 / IFRS_S1_35_C01 and support IFRS_S1_29_C04 / IFRS_S2_9_C04).",
+            "Disclose anticipated financial effects over short/medium/long term that are clearly connected to identified climate risks/opportunities and to financial planning (e.g., expected changes in credit losses, collateral values, capital needs, funding costs, revenues), including key assumptions and how they are incorporated into planning (to satisfy IFRS_S1_29_C04 and IFRS_S2_9_C04).",
+            "Describe planned sources of funding to implement the climate strategy/transition actions (e.g., internal capital, retained earnings, debt issuance/green bonds, securitisation, other funding programmes) (to satisfy IFRS_S1_35_C05)."
           ]
         },
         {
           "judge": "evidence_judge",
-          "score": 6.0,
+          "score": 4.0,
           "required_fixes": [
-            "For the strategic-response statement (STR-013), either (a) add specific, evidenced actions/commitments (e.g., named policies, limits, monitoring processes, resource allocation) and cite supporting evidence, or (b) rephrase as an aspiration and clearly label it as forward-looking without implying implemented capability.",
-            "Define 'short term', 'medium term', and 'long term' (e.g., year ranges) and align them to planning horizons used in strategy and scenario analysis.",
-            "For resilience conclusions ('adequate', 'acceptable', 'material', 'dominant'), add objective criteria/thresholds and/or supporting quantitative indicators (e.g., loss ranges, capital impact, concentration metrics) or soften language to reflect uncertainty.",
-            "For revenue-at-risk figures, disclose at minimum: measurement period, baseline/reference case, scope (portfolio/geographies), key assumptions, and explicitly link each figure to a named scenario and horizon.",
-            "For the financed-emissions intensity orientation (20.0 tCO2e/EURm), specify scope (which exposures), calculation method (e.g., PCAF approach), and baseline/reference year."
+            {
+              "fix": "Add explicit evidence references (or footnotes/appendix cross-references) for all numeric tables (2.1, 2.2, 2.3, 2.4) including data source systems, reporting perimeter, and calculation methodology for revenue-at-risk, capex/opex tagging, financial indicators, and financed emissions/target progress."
+            },
+            {
+              "fix": "For Table 2.3, either populate net profit for 2023 and 2024 or remove the column/years; ensure consistency with audited financial statements and specify whether 2024 is actual or forecast."
+            },
+            {
+              "fix": "For revenue-at-risk (Table 2.1), define the metric (gross vs net revenue, baseline, time horizon definition, confidence/uncertainty), and provide a reconciliation or explanation of why the value is plausible relative to total revenue."
+            },
+            {
+              "fix": "Clarify the risk-matrix banding to remove gaps (define where score 7 and 13–14 fall) and specify inclusive/exclusive boundaries."
+            },
+            {
+              "fix": "Clarify how RCP 8.5 is used within NGFS v4 Current Policies physical risk analysis (mapping approach, hazard dataset/version, downscaling method, and limitations)."
+            },
+            {
+              "fix": "Where absolute statements are made (e.g., “all exposures”, “within Pillar 2 thresholds”), add qualifiers, scope notes, or quantitative context (coverage %, threshold level, loss range) to avoid unverifiable claims."
+            }
           ]
-        },
+        }
+      ],
+      "warnings": [
         {
           "judge": "style_judge",
           "score": 7.4,
           "required_fixes": [
-            "Introduce numbered headings aligned to IFRS pillars and subsections (e.g., '2. Strategy', '2.1 Strategic context and boundary', '2.2 Climate-related risks and opportunities', '2.3 Effects on the business model and value chain', '2.4 Scenario analysis and resilience', '2.5 Financial planning, resource allocation and monitoring indicators').",
-            "Add a one-sentence purpose statement at the start of each subsection explaining what is being disclosed and how it supports understanding of strategy and financial effects.",
-            "Rebalance the 'Scenario analysis and resilience' subsection to focus on how scenario results inform strategic decisions, risk appetite, and resource allocation, and move or summarise highly technical methodology details to a separate methodology or Risk Management section.",
-            "Introduce at least one central table or matrix that maps principal climate-related risks and opportunities to: (a) value-chain segments, (b) time horizons, and (c) potential financial statement areas/line items, with concise cell text and a numbered caption referenced in the narrative.",
-            "Clarify the distinction between current-period facts, modelled estimates, and forward-looking intentions, especially where scenario results and resilience assessments are discussed; use cautious modality and explicit labels (e.g., 'modelled estimate', 'scenario-based projection').",
-            "Tighten and split longer sentences into shorter, single-idea statements, and ensure parallel structure in lists and bullets.",
-            "Add brief definitional context for technical scenario and model references (e.g., NGFS, RCP, integrated assessment models) or cross-reference to a definitions/methodology section.",
-            "Close major subsections with short connectivity sentences that link to related sections (e.g., Governance, Risk Management, Metrics and Targets) and to financial statement disclosures via generic placeholders.",
-            "Ensure wording consistently uses standards-oriented verbs (e.g., 'assess', 'monitor', 'manage', 'integrate') and avoids narrative or promotional phrasing, while keeping the existing neutral tone."
-          ]
+            "Apply the missing data protocol to all incomplete table cells (e.g., Net profit for 2023 and 2024 in Table 2.3, any other blank cells). Replace blanks with standardized status labels such as 'not currently available', 'not reported for the period', or 'not applicable', and add brief narrative explaining what is missing, why, interim approach, limitations, and planned enhancement direction.",
+            "Add short interpretive and connectivity paragraphs immediately after each major table (Tables 2.1–2.4) that (a) explain what the table shows, (b) clarify whether values are current-period facts, scenario outputs, or estimates, and (c) link to relevant sections or financial statement areas using the placeholder cross-reference style (e.g., 'Refer to [Section: Metrics and Targets]').",
+            "Clarify the status of scenario-based statements and resilience conclusions by explicitly labelling them as scenario outputs or estimates (e.g., 'Under the NGFS v4 Net Zero 2050 scenario, the analysis indicates that...') and using cautious modality ('is expected to', 'could', 'may') to avoid implying guarantees.",
+            "Reduce technical detail in 2.4.2 to the level necessary for understanding the strategy. Separate high-level scenario selection principles ('what and why') from methodological mechanics ('how') using subheadings or short paragraphs, and move highly technical model references to a methodology appendix or footnote if needed.",
+            "Strengthen the layered structure and single-idea paragraph discipline by: (a) splitting multi-topic paragraphs (especially in 2.2 and 2.4) into shorter, topic-led paragraphs; (b) ensuring each subsection opens with a clear purpose statement; and (c) closing each major subsection (2.1–2.6) with a brief connectivity sentence linking back to materiality assessment outputs, governance, or financial statements.",
+            "Enhance the use of structured artifacts by introducing at least one summary matrix or table that maps key climate-related risks and opportunities to value-chain segments, time horizons, and potential financial statement areas, in line with the section_style preference for tables as primary organizing devices.",
+            "Review wording to remove or temper any promotional or outcome-focused phrasing (e.g., 'support revenue growth and client relevance', 'portfolio demonstrates adequate resilience') and replace with standards-oriented, evidence-based language (e.g., 'the bank identifies potential revenue opportunities from...', 'scenario analysis indicates that losses remain within... under the assumptions applied').",
+            "Ensure consistent use of controlled vocabulary and cautious resilience language by explicitly stating that resilience assessments are scenario-based and subject to uncertainty, and by avoiding unqualified statements that could be interpreted as guarantees.",
+            "Consider adding a brief statement on voice and accountability (e.g., 'We assess', 'We monitor') in key strategic subsections to align with the preferred use of first-person plural for accountability, while maintaining overall consistency of point of view across the section."
+          ],
+          "advisory": true
         }
       ],
       "thresholds": {
         "ifrs_coverage_score_min": 8.0,
         "evidence_score_min": 8.0,
-        "style_score_min": 7.5
+        "style_score_min": 7.5,
+        "style_judge_mode": "advisory_after_deterministic_pass"
       },
-      "approval_policy": "V9.0 approves sections that pass deterministic/fact-lock gates and meet supported-evidence-scope judge thresholds; missing requirements remain audit-only.",
-      "version": "V9.0 senior_ifrs_writer_finalizer",
+      "approval_policy": "V9.1: deterministic evidence/fact gates are binding; style judge is advisory unless IFRS_STYLE_JUDGE_MODE=blocking.",
+      "version": "V9.4-order-safe-factlock-decimal",
       "section_generation_score": {
         "section_name": "Strategy",
-        "overall_section_generation_score_0_to_100": 86.54,
+        "overall_section_generation_score_0_to_100": 84.54,
         "coverage_component": {
           "requirements_total": 70,
           "coverage_counts": {
@@ -823,7 +337,7 @@
           },
           "coverage_score_0_to_100": 88.57
         },
-        "judge_average_0_to_100": 64.67,
+        "judge_average_0_to_100": 58.0,
         "deterministic_gate_score_0_to_100": 100.0,
         "report_cleanliness_score_0_to_100": 100.0,
         "missing_requirements_count_flagged": 0,
@@ -835,7 +349,7 @@
     },
     "section_generation_score": {
       "section_name": "Strategy",
-      "overall_section_generation_score_0_to_100": 86.54,
+      "overall_section_generation_score_0_to_100": 84.54,
       "coverage_component": {
         "requirements_total": 70,
         "coverage_counts": {
@@ -844,7 +358,7 @@
         },
         "coverage_score_0_to_100": 88.57
       },
-      "judge_average_0_to_100": 64.67,
+      "judge_average_0_to_100": 58.0,
       "deterministic_gate_score_0_to_100": 100.0,
       "report_cleanliness_score_0_to_100": 100.0,
       "missing_requirements_count_flagged": 0,
@@ -853,7 +367,7 @@
       "approved": false,
       "policy": "Missing requirements reduce audit/readiness visibility only; they must not appear in report prose."
     },
-    "senior_ifrs_version": "V9.0 senior_ifrs_writer_finalizer"
+    "senior_ifrs_version": "V9.4-order-safe-factlock-decimal"
   },
   {
     "section_name": "Risk Management",
@@ -864,56 +378,45 @@
       "approved": false,
       "scores": {
         "ifrs_coverage": 6.0,
-        "evidence": 7.0,
-        "style": 7.4
+        "evidence": 6.0,
+        "style": 7.6
       },
       "failures": [
         {
           "judge": "ifrs_coverage_judge",
           "score": 6.0,
           "required_fixes": [
-            "Remove or qualify unsupported specifics: SCN0005/SCN0007/SCN0011; likelihood values 3 and 5 and 'five-point scale'; quarterly and semi-annual monitoring; 'multiple integrated' and 'at least one not integrated' ERM statements. Alternatively, add supporting evidence in the underlying dataset and regenerate.",
-            "Add disclosure explaining whether and how climate/sustainability risks are prioritised relative to other types of risk within overall risk management (not just within climate risk bands).",
-            "Add disclosure of processes for identifying, assessing, prioritising and monitoring (climate-related and broader sustainability-related) opportunities, including whether/how scenario analysis informs opportunity identification (or move this requirement to another section and ensure it is covered there).",
-            "If retaining the 5×5 matrix methodology and band thresholds, ensure the narrative is aligned to evidenced methodology fields (eg include only what is supported by metadata.risk_rating_methodology) and avoid asserting severity/matrix-score mechanics unless evidenced."
+            "Remove or qualify unsupported methodology specifics (5×5 matrix, severity scoring, multiplication rule, and the exact score-band thresholds 15–25/8–12/3–6/1–2) unless they are evidenced in the payload; keep only what is supported (e.g., existence of a methodology and likelihood scoring).",
+            "Add disclosure explaining whether and how climate-related risks are prioritised relative to other types of risk (not just within the climate risk register).",
+            "Add a description of the processes used to identify, assess, prioritise and monitor climate-related opportunities (and, for IFRS S2, whether/how scenario analysis informs opportunity identification).",
+            "Replace/augment the 'changed since prior period' discussion to address whether and how the risk management processes themselves changed compared with the previous reporting period (or explicitly state no changes, if supported elsewhere).",
+            "Remove unsupported specificity about scenario references (SCN0005/SCN0007/SCN0011) unless evidenced; keep scenario linkage at a level supported by the payload."
           ]
         },
         {
           "judge": "evidence_judge",
-          "score": 7.0,
+          "score": 6.0,
           "required_fixes": [
-            "Soften or evidence RM-001: replace 'are managed through a structured lifecycle' with a verifiable statement tied to the register fields (eg 'The climate risk register captures identification, assessment inputs, monitoring cadence, change tracking and ERM integration status'), or add payload evidence of the lifecycle process (procedure/workflow/controls).",
-            "Soften or evidence prioritisation (Section 3.3): either provide evidence of prioritisation outputs/actions based on rating bands (eg ranked ordering, escalation rules, action plans linked to rating) or rephrase to 'Risks can be prioritised using the rating bands' (capability rather than performed practice).",
-            "If keeping 'five-point scale', add explicit evidence defining the scale (eg metadata field stating likelihood is 1–5) or remove 'five-point' and just state observed values (3–5).",
-            "Normalize monitoring frequency wording to match payload values (eg 'semi_annual' vs 'semi-annual') or state both as equivalent."
-          ]
-        },
-        {
-          "judge": "style_judge",
-          "score": 7.4,
-          "required_fixes": [
-            "Reframe the section structure to follow the layered approach: start with a short overview of the overall risk management and ERM integration, then explain how sustainability-related risks are treated within that system, and finally provide the current climate-related risk methodology as a subset with additional detail.",
-            "Add a brief section-opening paragraph (or mini table-of-contents) at the start of Section 3 that states the purpose of the Risk Management section and signposts the main subsections.",
-            "Introduce each subsection (3.1–3.5) with a one-sentence purpose statement that explains what the subsection covers and why it is relevant for users of general-purpose financial reports.",
-            "Adjust references to specific external data sources (e.g., 'ECB climate indicators') to more generic phrasing such as 'relevant external climate indicators' to comply with the 'what to avoid' guidance on named external standards or datasets.",
-            "Clarify the scope by explicitly stating that the described processes apply to climate-related risks as a subset of sustainability-related risks, and briefly indicate how these processes align with or differ from the broader sustainability risk management approach.",
-            "Strengthen IFRS-style wording by incorporating standards-oriented verbs (e.g., 'we identify and assess climate-related risks using...', 'the entity monitors and reviews...') and, where appropriate, using first-person plural for actions under the entity’s control while keeping third-person for external requirements.",
-            "Split longer sentences, particularly in the risk matrix description, into shorter declarative sentences to improve readability and align with the sentence-length guidance.",
-            "Reduce duplication of value-chain examples between Sections 3.1 and 3.5 by either consolidating them into one clearly signposted list or using a cross-reference, and use the freed space to add brief connectivity sentences linking to Strategy and Metrics/Targets sections.",
-            "Optionally, add a compact table or figure (with a numbered caption) that summarises the risk lifecycle stages (identify, assess, prioritise, monitor, integrate) with key activities and outputs, and reference it in the narrative to enhance scanability."
+            "Narrow or evidence the end-to-end process claim: either (a) add evidence of the documented lifecycle and ERM integration process (procedure/control/workflow evidence), or (b) rewrite to only state what is evidenced (existence of a climate risk register with specific fields: likelihood_score, risk_rating, monitoring_frequency, changed_since_prior_period, erm_integrated_flag, scenario_analysis_link).",
+            "For own operations vs value chain coverage: add evidence that the climate risk register contains entries tagged to both scopes (or add a linkage field to value_chain_map), or revise wording to say identification considers both scopes via value-chain mapping (supported by value_chain_map descriptions) without asserting the register contains both.",
+            "For integrated disclosures (3.8): provide evidence (report cross-references/reporting policy) or remove/soften the claim to a non-assertive statement (e.g., 'the entity intends to present...').",
+            "If keeping the 5x5 methodology narrative, add evidence that severity_score and/or overall_score are captured/calculated (register fields or calculation logic implementation), or explicitly state that risk_rating is derived per metadata methodology without asserting register stores all intermediate values.",
+            "Clarify the linkage between the agricultural counterparty risk description and its 'medium' rating by referencing the same register entry (e.g., cite that the entry containing the description has risk_rating=medium)."
           ]
         }
       ],
+      "warnings": [],
       "thresholds": {
         "ifrs_coverage_score_min": 8.0,
         "evidence_score_min": 8.0,
-        "style_score_min": 7.5
+        "style_score_min": 7.5,
+        "style_judge_mode": "advisory_after_deterministic_pass"
       },
-      "approval_policy": "V9.0 approves sections that pass deterministic/fact-lock gates and meet supported-evidence-scope judge thresholds; missing requirements remain audit-only.",
-      "version": "V9.0 senior_ifrs_writer_finalizer",
+      "approval_policy": "V9.1: deterministic evidence/fact gates are binding; style judge is advisory unless IFRS_STYLE_JUDGE_MODE=blocking.",
+      "version": "V9.4-order-safe-factlock-decimal",
       "section_generation_score": {
         "section_name": "Risk Management",
-        "overall_section_generation_score_0_to_100": 85.25,
+        "overall_section_generation_score_0_to_100": 84.45,
         "coverage_component": {
           "requirements_total": 17,
           "coverage_counts": {
@@ -922,7 +425,7 @@
           },
           "coverage_score_0_to_100": 79.41
         },
-        "judge_average_0_to_100": 68.0,
+        "judge_average_0_to_100": 65.33,
         "deterministic_gate_score_0_to_100": 100.0,
         "report_cleanliness_score_0_to_100": 100.0,
         "missing_requirements_count_flagged": 0,
@@ -934,7 +437,7 @@
     },
     "section_generation_score": {
       "section_name": "Risk Management",
-      "overall_section_generation_score_0_to_100": 85.25,
+      "overall_section_generation_score_0_to_100": 84.45,
       "coverage_component": {
         "requirements_total": 17,
         "coverage_counts": {
@@ -943,7 +446,7 @@
         },
         "coverage_score_0_to_100": 79.41
       },
-      "judge_average_0_to_100": 68.0,
+      "judge_average_0_to_100": 65.33,
       "deterministic_gate_score_0_to_100": 100.0,
       "report_cleanliness_score_0_to_100": 100.0,
       "missing_requirements_count_flagged": 0,
@@ -952,7 +455,7 @@
       "approved": false,
       "policy": "Missing requirements reduce audit/readiness visibility only; they must not appear in report prose."
     },
-    "senior_ifrs_version": "V9.0 senior_ifrs_writer_finalizer"
+    "senior_ifrs_version": "V9.4-order-safe-factlock-decimal"
   },
   {
     "section_name": "Metrics and Targets",
@@ -961,1178 +464,65 @@
     "approval": {
       "section_name": "Metrics and Targets",
       "approved": false,
-      "reason": "deterministic_gates_failed",
-      "required_fixes": {
-        "section_name": "Metrics and Targets",
-        "passed": false,
-        "gates": [
-          {
-            "gate_name": "draft_structural_quality_no_templates_no_absence_language",
-            "passed": true,
-            "failures": [],
-            "warnings": []
-          },
-          {
-            "gate_name": "draft_depth_quality_no_truncation",
-            "passed": false,
-            "failures": [
-              {
-                "type": "section_too_short_or_truncated",
-                "word_count": 862,
-                "minimum_word_count": 900,
-                "evidence_path_count": 179,
-                "required_fix": "Expand the section using existing evidence only; do not add unsupported facts or missing-data language."
-              }
-            ],
-            "warnings": [
-              {
-                "type": "many_short_subsections",
-                "examples": [
-                  {
-                    "heading": "Reporting boundary and reporting period",
-                    "word_count": 31
-                  },
-                  {
-                    "heading": "Exposure to high-carbon sectors",
-                    "word_count": 34
-                  },
-                  {
-                    "heading": "Internal carbon pricing",
-                    "word_count": 53
-                  },
-                  {
-                    "heading": "Financed-emissions data-quality mix",
-                    "word_count": 42
-                  }
-                ],
-                "suggested_fix": "Add explanatory narrative to each supported subsection."
-              }
-            ]
-          },
-          {
-            "gate_name": "draft_prose_polish_no_raw_fields_no_booleans_no_unavailable_language",
-            "passed": true,
-            "failures": [],
-            "warnings": []
-          },
-          {
-            "gate_name": "unsupported_generic_boilerplate_and_inferred_thresholds_gate",
-            "passed": true,
-            "failures": [],
-            "warnings": []
-          },
-          {
-            "gate_name": "claims_integrity",
-            "passed": true,
-            "failures": [],
-            "warnings": [
-              {
-                "claim_id": "CLM-MT-001",
-                "issue": "no_evidence_source_after_v89_repair",
-                "claim": "Unless otherwise stated, the metrics in this section are prepared on a financial control boundary."
-              }
-            ],
-            "claim_count": 28,
-            "claims_register_normalized": {
-              "section_name": "Metrics and Targets",
-              "claims": [
-                {
-                  "claim_id": "CLM-MT-001",
-                  "claim_text": "Unless otherwise stated, the metrics in this section are prepared on a financial control boundary.",
-                  "claim_type": "methodology",
-                  "entities": [
-                    "the entity"
-                  ],
-                  "numbers": [],
-                  "dates": [],
-                  "evidence_sources": [],
-                  "requirement_ids": [
-                    "IFRS_S1_46_C01",
-                    "IFRS_S1_46_C03"
-                  ],
-                  "supported": true,
-                  "support_notes": "Boundary statement is explicitly disclosed.",
-                  "invalid_evidence_sources_removed": [
-                    "Draft report section: \"Reporting boundary and reporting period\""
-                  ]
-                },
-                {
-                  "claim_id": "CLM-MT-002",
-                  "claim_text": "The reporting period is the fiscal year ending 31 December 2024.",
-                  "claim_type": "reporting_scope",
-                  "entities": [
-                    "the entity"
-                  ],
-                  "numbers": [],
-                  "dates": [
-                    "2024-12-31"
-                  ],
-                  "evidence_sources": [
-                    "bank.fiscal_year_end",
-                    "financed_emissions[2].reporting_year",
-                    "financed_emissions_equity[0].reporting_year",
-                    "financed_emissions_equity[1].reporting_year",
-                    "financed_emissions_equity[2].reporting_year"
-                  ],
-                  "requirement_ids": [
-                    "IFRS_S1_46_C01"
-                  ],
-                  "supported": true,
-                  "support_notes": "Reporting period end date is explicitly stated.",
-                  "invalid_evidence_sources_removed": [
-                    "Draft report section: \"Reporting boundary and reporting period\""
-                  ]
-                },
-                {
-                  "claim_id": "CLM-MT-003",
-                  "claim_text": "Operational GHG emissions are disclosed for Scope 1 and Scope 2 for the 2024 reporting year.",
-                  "claim_type": "metric_disclosure",
-                  "entities": [
-                    "the entity"
-                  ],
-                  "numbers": [],
-                  "dates": [
-                    "2024"
-                  ],
-                  "evidence_sources": [
-                    "financed_emissions_equity[2].reporting_year",
-                    "financed_emissions_equity[3].reporting_year",
-                    "financed_emissions_equity[4].reporting_year"
-                  ],
-                  "requirement_ids": [
-                    "IFRS_S1_46_C01",
-                    "IFRS_S1_46_C03"
-                  ],
-                  "supported": true,
-                  "support_notes": "Scopes and year are explicitly stated.",
-                  "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
-                  "repaired_evidence_sources": [
-                    "financed_emissions_equity[4].reporting_year",
-                    "financed_emissions_equity[3].reporting_year",
-                    "financed_emissions_equity[2].reporting_year"
-                  ],
-                  "invalid_evidence_sources_removed": [
-                    "Draft report section: \"Operational greenhouse gas (GHG) emissions\""
-                  ]
-                },
-                {
-                  "claim_id": "CLM-MT-004",
-                  "claim_text": "Scope 1 emissions for 2024 are 2,634.9 tCO2e.",
-                  "claim_type": "metric_value",
-                  "entities": [
-                    "the entity"
-                  ],
-                  "numbers": [
-                    "2634.9"
-                  ],
-                  "dates": [
-                    "2024"
-                  ],
-                  "evidence_sources": [
-                    "reporting_kpis.scope1_2024_tco2e"
-                  ],
-                  "requirement_ids": [
-                    "IFRS_S1_46_C01",
-                    "IFRS_S1_46_C03"
-                  ],
-                  "supported": true,
-                  "support_notes": "Numeric Scope 1 value is explicitly disclosed.",
-                  "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
-                  "repaired_evidence_sources": [
-                    "reporting_kpis.scope1_2024_tco2e"
-                  ],
-                  "invalid_evidence_sources_removed": [
-                    "Draft report section: \"Scope 1 (direct) emissions (2024)\""
-                  ]
-                },
-                {
-                  "claim_id": "CLM-MT-005",
-                  "claim_text": "The Scope 1 inventory includes emissions from the fleet.",
-                  "claim_type": "methodology",
-                  "entities": [
-                    "fleet",
-                    "the entity"
-                  ],
-                  "numbers": [],
-                  "dates": [
-                    "2024"
-                  ],
-                  "evidence_sources": [
-                    "reporting_kpis.scope1_fleet_included"
-                  ],
-                  "requirement_ids": [
-                    "IFRS_S1_50_C04"
-                  ],
-                  "supported": true,
-                  "support_notes": "Inventory inclusion statement is explicitly disclosed (partial method/input description).",
-                  "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
-                  "repaired_evidence_sources": [
-                    "reporting_kpis.scope1_fleet_included"
-                  ],
-                  "invalid_evidence_sources_removed": [
-                    "Draft report section: \"Scope 1 (direct) emissions (2024)\""
-                  ]
-                },
-                {
-                  "claim_id": "CLM-MT-006",
-                  "claim_text": "Scope 2 emissions for 2024 are disclosed using both location-based and market-based approaches.",
-                  "claim_type": "methodology",
-                  "entities": [
-                    "the entity"
-                  ],
-                  "numbers": [],
-                  "dates": [
-                    "2024"
-                  ],
-                  "evidence_sources": [
-                    "metadata.pcaf_methodology.corporate_loans",
-                    "metadata.risk_rating_methodology",
-                    "metadata.scope2_rec_reconciliation",
-                    "metadata.vehicles_correction.reason",
-                    "reporting_kpis.target_summary[0].scope"
-                  ],
-                  "requirement_ids": [
-                    "IFRS_S1_46_C01",
-                    "IFRS_S1_46_C03",
-                    "IFRS_S1_50_C04"
-                  ],
-                  "supported": true,
-                  "support_notes": "Approach types are explicitly stated.",
-                  "invalid_evidence_sources_removed": [
-                    "Draft report section: \"Scope 2 (energy indirect) emissions (2024)\""
-                  ]
-                },
-                {
-                  "claim_id": "CLM-MT-007",
-                  "claim_text": "Scope 2 (location-based) emissions for 2024 are 6,963.5 tCO2e.",
-                  "claim_type": "metric_value",
-                  "entities": [
-                    "the entity"
-                  ],
-                  "numbers": [
-                    "6963.5"
-                  ],
-                  "dates": [
-                    "2024"
-                  ],
-                  "evidence_sources": [
-                    "metadata.pcaf_methodology.corporate_loans",
-                    "metadata.risk_rating_methodology",
-                    "metadata.scope2_rec_reconciliation",
-                    "metadata.vehicles_correction.reason",
-                    "reporting_kpis.target_summary[0].scope"
-                  ],
-                  "requirement_ids": [
-                    "IFRS_S1_46_C01",
-                    "IFRS_S1_46_C03"
-                  ],
-                  "supported": true,
-                  "support_notes": "Numeric location-based Scope 2 value is explicitly disclosed.",
-                  "invalid_evidence_sources_removed": [
-                    "Draft report section: \"Scope 2 (energy indirect) emissions (2024)\""
-                  ]
-                },
-                {
-                  "claim_id": "CLM-MT-008",
-                  "claim_text": "Scope 2 (market-based) emissions for 2024 are 3,060.5 tCO2e.",
-                  "claim_type": "metric_value",
-                  "entities": [
-                    "the entity"
-                  ],
-                  "numbers": [
-                    "3060.5"
-                  ],
-                  "dates": [
-                    "2024"
-                  ],
-                  "evidence_sources": [
-                    "reporting_kpis.scope2_market_2024_tco2e"
-                  ],
-                  "requirement_ids": [
-                    "IFRS_S1_46_C01",
-                    "IFRS_S1_46_C03"
-                  ],
-                  "supported": true,
-                  "support_notes": "Numeric market-based Scope 2 value is explicitly disclosed.",
-                  "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
-                  "repaired_evidence_sources": [
-                    "reporting_kpis.scope2_market_2024_tco2e"
-                  ],
-                  "invalid_evidence_sources_removed": [
-                    "Draft report section: \"Scope 2 (energy indirect) emissions (2024)\""
-                  ]
-                },
-                {
-                  "claim_id": "CLM-MT-009",
-                  "claim_text": "For market-based Scope 2, the reported figure is sourced from utility invoice data and reflects market-based accounting using grid emission factors adjusted for renewable energy certificates and power purchase agreements; certificates are not subtracted again to avoid double-counting.",
-                  "claim_type": "methodology",
-                  "entities": [
-                    "power purchase agreements",
-                    "renewable energy certificates",
-                    "the entity",
-                    "utility invoice data"
-                  ],
-                  "numbers": [],
-                  "dates": [
-                    "2024"
-                  ],
-                  "evidence_sources": [
-                    "metadata.scope2_rec_reconciliation"
-                  ],
-                  "requirement_ids": [
-                    "IFRS_S1_49_C01",
-                    "IFRS_S1_50_C01",
-                    "IFRS_S1_50_C04"
-                  ],
-                  "supported": true,
-                  "support_notes": "Identifies a data source (utility invoices) and key calculation assumptions (adjustments; no double subtraction).",
-                  "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
-                  "repaired_evidence_sources": [
-                    "metadata.scope2_rec_reconciliation"
-                  ],
-                  "invalid_evidence_sources_removed": [
-                    "Draft report section: paragraph beginning \"For market-based Scope 2...\""
-                  ]
-                },
-                {
-                  "claim_id": "CLM-MT-010",
-                  "claim_text": "Business travel (Scope 3) emissions for 2024 are 289.9 tCO2e.",
-                  "claim_type": "metric_value",
-                  "entities": [
-                    "the entity"
-                  ],
-                  "numbers": [
-                    "289.9"
-                  ],
-                  "dates": [
-                    "2024"
-                  ],
-                  "evidence_sources": [
-                    "metadata.pcaf_methodology.corporate_loans",
-                    "metadata.risk_rating_methodology",
-                    "metadata.scope2_rec_reconciliation",
-                    "metadata.vehicles_correction.reason",
-                    "reporting_kpis.target_summary[0].scope"
-                  ],
-                  "requirement_ids": [
-                    "IFRS_S1_46_C01",
-                    "IFRS_S1_46_C03"
-                  ],
-                  "supported": true,
-                  "support_notes": "Numeric Scope 3 business travel value is explicitly disclosed.",
-                  "invalid_evidence_sources_removed": [
-                    "Draft report section: \"Selected Scope 3 (2024)\""
-                  ]
-                },
-                {
-                  "claim_id": "CLM-MT-011",
-                  "claim_text": "Financed emissions are disclosed for loans for 2022–2024, enabling year-on-year comparison.",
-                  "claim_type": "metric_disclosure",
-                  "entities": [
-                    "loans",
-                    "the entity"
-                  ],
-                  "numbers": [],
-                  "dates": [
-                    "2022",
-                    "2023",
-                    "2024"
-                  ],
-                  "evidence_sources": [
-                    "financed_emissions[1].total_loans_meur",
-                    "financed_emissions[2].financed_em_loans_tco2e",
-                    "financed_emissions[2].total_loans_meur"
-                  ],
-                  "requirement_ids": [
-                    "IFRS_S1_46_C01",
-                    "IFRS_S1_B49_C01"
-                  ],
-                  "supported": true,
-                  "support_notes": "Multi-year disclosure is explicitly stated and presented.",
-                  "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
-                  "repaired_evidence_sources": [
-                    "financed_emissions[2].total_loans_meur",
-                    "financed_emissions[2].financed_em_loans_tco2e",
-                    "financed_emissions[1].total_loans_meur"
-                  ],
-                  "invalid_evidence_sources_removed": [
-                    "Draft report section: \"Financed emissions — lending (Scope 3 Category 15)\""
-                  ]
-                },
-                {
-                  "claim_id": "CLM-MT-012",
-                  "claim_text": "Financed emissions from loans are 36,550,177.7 tCO2e (2022), 37,427,593.2 tCO2e (2023), and 35,973,167.7 tCO2e (2024).",
-                  "claim_type": "metric_value",
-                  "entities": [
-                    "loans",
-                    "the entity"
-                  ],
-                  "numbers": [
-                    "35973167.7",
-                    "36550177.7",
-                    "37427593.2"
-                  ],
-                  "dates": [
-                    "2022",
-                    "2023",
-                    "2024"
-                  ],
-                  "evidence_sources": [
-                    "financed_emissions[0].financed_em_loans_tco2e",
-                    "financed_emissions[1].financed_em_loans_tco2e",
-                    "financed_emissions[2].financed_em_loans_tco2e"
-                  ],
-                  "requirement_ids": [
-                    "IFRS_S1_46_C01",
-                    "IFRS_S1_B49_C01"
-                  ],
-                  "supported": true,
-                  "support_notes": "Year-by-year financed emissions values are explicitly disclosed.",
-                  "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
-                  "repaired_evidence_sources": [
-                    "financed_emissions[2].financed_em_loans_tco2e",
-                    "financed_emissions[1].financed_em_loans_tco2e",
-                    "financed_emissions[0].financed_em_loans_tco2e"
-                  ],
-                  "invalid_evidence_sources_removed": [
-                    "Draft report section: table/list under \"Financed emissions from loans (tCO2e)\""
-                  ]
-                },
-                {
-                  "claim_id": "CLM-MT-013",
-                  "claim_text": "For each of 2022–2024, the total loans used in the financed emissions calculation were €31,150.64 million.",
-                  "claim_type": "metric_input",
-                  "entities": [
-                    "loans",
-                    "the entity"
-                  ],
-                  "numbers": [
-                    "31150.64"
-                  ],
-                  "dates": [
-                    "2022",
-                    "2023",
-                    "2024"
-                  ],
-                  "evidence_sources": [
-                    "financed_emissions[0].total_loans_meur",
-                    "financed_emissions[1].total_loans_meur",
-                    "financed_emissions[2].total_loans_meur"
-                  ],
-                  "requirement_ids": [
-                    "IFRS_S1_50_C04",
-                    "IFRS_S1_B49_C01"
-                  ],
-                  "supported": true,
-                  "support_notes": "Discloses a key input to the financed emissions calculation and indicates consistency across years.",
-                  "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
-                  "repaired_evidence_sources": [
-                    "financed_emissions[2].total_loans_meur",
-                    "financed_emissions[1].total_loans_meur",
-                    "financed_emissions[0].total_loans_meur"
-                  ],
-                  "invalid_evidence_sources_removed": [
-                    "Draft report section: sentence beginning \"For each of 2022–2024...\""
-                  ]
-                },
-                {
-                  "claim_id": "CLM-MT-014",
-                  "claim_text": "Financed emissions for corporate loans are calculated in line with the PCAF Standard using outstanding loan amount relative to borrower EVIC to determine share, applied to borrower total GHG emissions.",
-                  "claim_type": "methodology",
-                  "entities": [
-                    "EVIC",
-                    "PCAF Standard",
-                    "corporate loans",
-                    "the entity"
-                  ],
-                  "numbers": [],
-                  "dates": [],
-                  "evidence_sources": [
-                    "financed_emissions[2].total_loans_meur",
-                    "metadata.pcaf_methodology.corporate_loans",
-                    "metadata.pcaf_methodology.listed_equity"
-                  ],
-                  "requirement_ids": [
-                    "IFRS_S1_48_C01",
-                    "IFRS_S1_49_C01",
-                    "IFRS_S1_50_C04"
-                  ],
-                  "supported": true,
-                  "support_notes": "Identifies external standard (PCAF) and summarizes calculation method and inputs (outstanding amount, EVIC, borrower emissions).",
-                  "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
-                  "repaired_evidence_sources": [
-                    "metadata.pcaf_methodology.listed_equity",
-                    "metadata.pcaf_methodology.corporate_loans",
-                    "financed_emissions[2].total_loans_meur"
-                  ],
-                  "invalid_evidence_sources_removed": [
-                    "Draft report section: \"Methodology — corporate loans\""
-                  ]
-                },
-                {
-                  "claim_id": "CLM-MT-015",
-                  "claim_text": "For the 2024 reporting year, financed emissions metrics are prepared for listed equity holdings using a PCAF proxy approach in which issuer revenue is used as the proxy input.",
-                  "claim_type": "methodology",
-                  "entities": [
-                    "PCAF",
-                    "issuer revenue",
-                    "listed equity",
-                    "the entity"
-                  ],
-                  "numbers": [],
-                  "dates": [
-                    "2024"
-                  ],
-                  "evidence_sources": [
-                    "financed_emissions_equity[1].proxy_reason",
-                    "financed_emissions_equity[2].proxy_reason",
-                    "financed_emissions_equity[3].proxy_reason"
-                  ],
-                  "requirement_ids": [
-                    "IFRS_S1_48_C01",
-                    "IFRS_S1_49_C01",
-                    "IFRS_S1_50_C04"
-                  ],
-                  "supported": true,
-                  "support_notes": "Discloses proxy approach and proxy input (issuer revenue) and references PCAF.",
-                  "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
-                  "repaired_evidence_sources": [
-                    "financed_emissions_equity[3].proxy_reason",
-                    "financed_emissions_equity[2].proxy_reason",
-                    "financed_emissions_equity[1].proxy_reason"
-                  ],
-                  "invalid_evidence_sources_removed": [
-                    "Draft report section: \"Financed emissions — listed equity (proxy-based approach)\""
-                  ]
-                },
-                {
-                  "claim_id": "CLM-MT-016",
-                  "claim_text": "For listed equity, the entity estimates its share based on market value of the holding relative to issuer EVIC and uses issuer revenue as the proxy input; outputs are presented as modelled estimates.",
-                  "claim_type": "methodology",
-                  "entities": [
-                    "EVIC",
-                    "issuer revenue",
-                    "listed equity",
-                    "the entity"
-                  ],
-                  "numbers": [],
-                  "dates": [
-                    "2024"
-                  ],
-                  "evidence_sources": [
-                    "metadata.pcaf_methodology.corporate_loans",
-                    "metadata.pcaf_methodology.listed_equity"
-                  ],
-                  "requirement_ids": [
-                    "IFRS_S1_50_C04"
-                  ],
-                  "supported": true,
-                  "support_notes": "Method and estimation nature are explicitly described.",
-                  "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
-                  "repaired_evidence_sources": [
-                    "metadata.pcaf_methodology.listed_equity",
-                    "metadata.pcaf_methodology.corporate_loans"
-                  ],
-                  "invalid_evidence_sources_removed": [
-                    "Draft report section: \"Methodology — listed equity\" and following sentence on modelled estimates"
-                  ]
-                },
-                {
-                  "claim_id": "CLM-MT-017",
-                  "claim_text": "Listed equity holdings included in the financed emissions equity dataset have 2024 market values of €23.93m, €556.40m, €35.36m, €79.11m, €25.57m, €1,886.33m, €2,564.65m, and €288.08m; one holding has nominal amount €27.98m and purchase date 26 May 2019; another has nominal amount €636.77m.",
-                  "claim_type": "metric_value",
-                  "entities": [
-                    "listed equity holdings",
-                    "the entity"
-                  ],
-                  "numbers": [
-                    "1886.33",
-                    "23.93",
-                    "25.57",
-                    "2564.65",
-                    "27.98",
-                    "288.08",
-                    "35.36",
-                    "556.4",
-                    "636.77",
-                    "79.11"
-                  ],
-                  "dates": [
-                    "2019-05-26",
-                    "2024"
-                  ],
-                  "evidence_sources": [
-                    "financed_emissions_equity[0].nominal_amount_meur",
-                    "financed_emissions_equity[1].nominal_amount_meur",
-                    "financed_emissions_equity[7].market_value_meur"
-                  ],
-                  "requirement_ids": [
-                    "IFRS_S1_46_C01"
-                  ],
-                  "supported": true,
-                  "support_notes": "Market values, nominal amounts, and purchase date are explicitly listed.",
-                  "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
-                  "repaired_evidence_sources": [
-                    "financed_emissions_equity[1].nominal_amount_meur",
-                    "financed_emissions_equity[0].nominal_amount_meur",
-                    "financed_emissions_equity[7].market_value_meur"
-                  ],
-                  "invalid_evidence_sources_removed": [
-                    "Draft report section: \"Listed equity holdings — market value (2024, € million)\""
-                  ]
-                },
-                {
-                  "claim_id": "CLM-MT-018",
-                  "claim_text": "High-carbon sector exposure is €11,059.49 million and represents 35.5% of the relevant total.",
-                  "claim_type": "metric_value",
-                  "entities": [
-                    "high-carbon sectors",
-                    "the entity"
-                  ],
-                  "numbers": [
-                    "11059.49",
-                    "35.5"
-                  ],
-                  "dates": [],
-                  "evidence_sources": [
-                    "reporting_kpis.emissions_data_quality_summary.cdp_disclosure",
-                    "reporting_kpis.high_carbon_sector_exposure_meur",
-                    "reporting_kpis.high_carbon_sector_exposure_pct"
-                  ],
-                  "requirement_ids": [
-                    "IFRS_S1_46_C01",
-                    "IFRS_S1_48_C01"
-                  ],
-                  "supported": true,
-                  "support_notes": "Portfolio exposure metric and percentage share are explicitly disclosed.",
-                  "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
-                  "repaired_evidence_sources": [
-                    "reporting_kpis.high_carbon_sector_exposure_pct",
-                    "reporting_kpis.high_carbon_sector_exposure_meur",
-                    "reporting_kpis.emissions_data_quality_summary.cdp_disclosure"
-                  ],
-                  "invalid_evidence_sources_removed": [
-                    "Draft report section: \"Exposure to high-carbon sectors\""
-                  ]
-                },
-                {
-                  "claim_id": "CLM-MT-019",
-                  "claim_text": "Internal carbon pricing is used as a decision-support input and is expressed in €/tCO2e; disclosed internal carbon prices are €42.73/tCO2e (investment decisions; financed emissions; lending decisions), €48.73/tCO2e (product pricing), and €54.73/tCO2e (investment decisions; lending decisions).",
-                  "claim_type": "metric_value",
-                  "entities": [
-                    "internal carbon pricing",
-                    "the entity"
-                  ],
-                  "numbers": [
-                    "42.73",
-                    "48.73",
-                    "54.73"
-                  ],
-                  "dates": [],
-                  "evidence_sources": [
-                    "internal_carbon_price[0].carbon_price_eur_per_tco2e",
-                    "internal_carbon_price[1].carbon_price_eur_per_tco2e",
-                    "internal_carbon_price[2].carbon_price_eur_per_tco2e"
-                  ],
-                  "requirement_ids": [
-                    "IFRS_S1_46_C01",
-                    "IFRS_S1_46_C03"
-                  ],
-                  "supported": true,
-                  "support_notes": "Metric definition (unit) and values by context are explicitly disclosed.",
-                  "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
-                  "repaired_evidence_sources": [
-                    "internal_carbon_price[2].carbon_price_eur_per_tco2e",
-                    "internal_carbon_price[1].carbon_price_eur_per_tco2e",
-                    "internal_carbon_price[0].carbon_price_eur_per_tco2e"
-                  ],
-                  "invalid_evidence_sources_removed": [
-                    "Draft report section: \"Internal carbon pricing\""
-                  ]
-                },
-                {
-                  "claim_id": "CLM-MT-020",
-                  "claim_text": "Target TGT001 is an absolute reduction target covering Scope 1 and Scope 2 for the whole entity and covering Kyoto 7 gases, with baseline year 2020, baseline value 137,849.0 tCO2e, and target ambition of 42% reduction.",
-                  "claim_type": "target",
-                  "entities": [
-                    "Kyoto 7",
-                    "Target TGT001",
-                    "the entity"
-                  ],
-                  "numbers": [
-                    "137849.0",
-                    "42.0"
-                  ],
-                  "dates": [
-                    "2020"
-                  ],
-                  "evidence_sources": [
-                    "targets[0].baseline_value",
-                    "targets[1].baseline_year",
-                    "targets[2].baseline_value"
-                  ],
-                  "requirement_ids": [
-                    "IFRS_S1_50_C02",
-                    "IFRS_S1_51_C01",
-                    "IFRS_S1_51_C02",
-                    "IFRS_S1_51_C04"
-                  ],
-                  "supported": true,
-                  "support_notes": "Target name, type (absolute), scope coverage, baseline year/value, and ambition are explicitly disclosed.",
-                  "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
-                  "repaired_evidence_sources": [
-                    "targets[0].baseline_value",
-                    "targets[2].baseline_value",
-                    "targets[1].baseline_year"
-                  ],
-                  "invalid_evidence_sources_removed": [
-                    "Draft report section: \"Target TGT001 — Scope 1 and Scope 2 absolute emissions reduction\""
-                  ]
-                },
-                {
-                  "claim_id": "CLM-MT-021",
-                  "claim_text": "Interim milestones for Target TGT001 are 120,480.0 tCO2e in 2025 and 97,321.4 tCO2e in 2028.",
-                  "claim_type": "target_milestone",
-                  "entities": [
-                    "Target TGT001",
-                    "the entity"
-                  ],
-                  "numbers": [
-                    "120480.0",
-                    "97321.4"
-                  ],
-                  "dates": [
-                    "2025",
-                    "2028"
-                  ],
-                  "evidence_sources": [
-                    "targets[0].interim_milestones_json",
-                    "targets[0].milestones_parsed[0].value",
-                    "targets[0].milestones_parsed[1].value"
-                  ],
-                  "requirement_ids": [
-                    "IFRS_S1_51_C05"
-                  ],
-                  "supported": true,
-                  "support_notes": "Milestones and years are explicitly disclosed.",
-                  "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
-                  "repaired_evidence_sources": [
-                    "targets[0].interim_milestones_json",
-                    "targets[0].milestones_parsed[1].value",
-                    "targets[0].milestones_parsed[0].value"
-                  ],
-                  "invalid_evidence_sources_removed": [
-                    "Draft report section: \"Target TGT001\" (Interim milestones list)"
-                  ]
-                },
-                {
-                  "claim_id": "CLM-MT-022",
-                  "claim_text": "Progress against Target TGT001 in 2024 is 40.0% with status \"On track\"; third-party validation is SBTi.",
-                  "claim_type": "target_progress",
-                  "entities": [
-                    "SBTi",
-                    "Target TGT001",
-                    "the entity"
-                  ],
-                  "numbers": [
-                    "40.0"
-                  ],
-                  "dates": [
-                    "2024"
-                  ],
-                  "evidence_sources": [
-                    "reporting_kpis.target_summary[0].target_progress_pct_2024",
-                    "targets[0].target_progress_pct_2024",
-                    "targets[0].validation_body"
-                  ],
-                  "requirement_ids": [
-                    "IFRS_S1_50_C03",
-                    "IFRS_S1_51_C06"
-                  ],
-                  "supported": true,
-                  "support_notes": "Progress %, qualitative status, and validator are explicitly disclosed.",
-                  "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
-                  "repaired_evidence_sources": [
-                    "targets[0].target_progress_pct_2024",
-                    "reporting_kpis.target_summary[0].target_progress_pct_2024",
-                    "targets[0].validation_body"
-                  ],
-                  "invalid_evidence_sources_removed": [
-                    "Draft report section: \"Target TGT001\" (Progress sentence)"
-                  ]
-                },
-                {
-                  "claim_id": "CLM-MT-023",
-                  "claim_text": "A financed emissions intensity target is disclosed for Scope 3 Category 15 using tCO2e per € million of lending, with baseline year 2022, baseline value 20.0 tCO2e per € million of lending, and target ambition of 30% reduction.",
-                  "claim_type": "target",
-                  "entities": [
-                    "Scope 3 Category 15",
-                    "lending",
-                    "the entity"
-                  ],
-                  "numbers": [
-                    "20.0",
-                    "30.0"
-                  ],
-                  "dates": [
-                    "2022"
-                  ],
-                  "evidence_sources": [
-                    "bank.target_intensity_tco2e_per_meur",
-                    "targets[1].baseline_value",
-                    "targets[1].interim_milestones_json"
-                  ],
-                  "requirement_ids": [
-                    "IFRS_S1_50_C02",
-                    "IFRS_S1_51_C01",
-                    "IFRS_S1_51_C02",
-                    "IFRS_S1_51_C04"
-                  ],
-                  "supported": true,
-                  "support_notes": "Metric, baseline year/value, and ambition are explicitly disclosed.",
-                  "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
-                  "repaired_evidence_sources": [
-                    "targets[1].baseline_value",
-                    "bank.target_intensity_tco2e_per_meur",
-                    "targets[1].interim_milestones_json"
-                  ],
-                  "invalid_evidence_sources_removed": [
-                    "Draft report section: \"Financed emissions intensity target — Scope 3 Category 15 (financed)\""
-                  ]
-                },
-                {
-                  "claim_id": "CLM-MT-024",
-                  "claim_text": "Interim milestones for the financed emissions intensity target are 18.2 tCO2e per € million of lending in 2025 and 15.8 tCO2e per € million of lending in 2028.",
-                  "claim_type": "target_milestone",
-                  "entities": [
-                    "lending",
-                    "the entity"
-                  ],
-                  "numbers": [
-                    "15.8",
-                    "18.2"
-                  ],
-                  "dates": [
-                    "2025",
-                    "2028"
-                  ],
-                  "evidence_sources": [
-                    "targets[1].interim_milestones_json",
-                    "targets[1].milestones_parsed[0].metric",
-                    "targets[1].milestones_parsed[1].metric"
-                  ],
-                  "requirement_ids": [
-                    "IFRS_S1_51_C05"
-                  ],
-                  "supported": true,
-                  "support_notes": "Milestones and years are explicitly disclosed.",
-                  "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
-                  "repaired_evidence_sources": [
-                    "targets[1].interim_milestones_json",
-                    "targets[1].milestones_parsed[1].metric",
-                    "targets[1].milestones_parsed[0].metric"
-                  ],
-                  "invalid_evidence_sources_removed": [
-                    "Draft report section: financed emissions intensity target (Interim milestones list)"
-                  ]
-                },
-                {
-                  "claim_id": "CLM-MT-025",
-                  "claim_text": "Progress in 2024 for the financed emissions intensity target is 25.0%; third-party validation is UNEP FI; the entity also discloses a financed-emissions intensity reference value of 20.0 tCO2e per € million.",
-                  "claim_type": "target_progress",
-                  "entities": [
-                    "UNEP FI",
-                    "the entity"
-                  ],
-                  "numbers": [
-                    "20.0",
-                    "25.0"
-                  ],
-                  "dates": [
-                    "2024"
-                  ],
-                  "evidence_sources": [
-                    "bank.target_intensity_tco2e_per_meur",
-                    "reporting_kpis.target_summary[1].target_progress_pct_2024",
-                    "targets[1].target_progress_pct_2024"
-                  ],
-                  "requirement_ids": [
-                    "IFRS_S1_50_C03",
-                    "IFRS_S1_51_C06"
-                  ],
-                  "supported": true,
-                  "support_notes": "Progress %, validator, and reference value are explicitly disclosed.",
-                  "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
-                  "repaired_evidence_sources": [
-                    "bank.target_intensity_tco2e_per_meur",
-                    "targets[1].target_progress_pct_2024",
-                    "reporting_kpis.target_summary[1].target_progress_pct_2024"
-                  ],
-                  "invalid_evidence_sources_removed": [
-                    "Draft report section: financed emissions intensity target (Progress/validation sentence and reference value sentence)"
-                  ]
-                },
-                {
-                  "claim_id": "CLM-MT-026",
-                  "claim_text": "An all-scopes target (whole entity) is disclosed with baseline value 120,000.0 and progress in 2024 of 13.3% reduction versus baseline.",
-                  "claim_type": "target",
-                  "entities": [
-                    "the entity"
-                  ],
-                  "numbers": [
-                    "120000.0",
-                    "13.3"
-                  ],
-                  "dates": [
-                    "2024"
-                  ],
-                  "evidence_sources": [
-                    "reporting_kpis.target_summary[2].target_progress_pct_2024",
-                    "targets[2].baseline_value",
-                    "targets[2].target_progress_pct_2024"
-                  ],
-                  "requirement_ids": [
-                    "IFRS_S1_51_C02",
-                    "IFRS_S1_51_C06"
-                  ],
-                  "supported": true,
-                  "support_notes": "Baseline unit/metric definition and target period are not stated; only baseline value and progress are provided.",
-                  "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
-                  "repaired_evidence_sources": [
-                    "targets[2].baseline_value",
-                    "targets[2].target_progress_pct_2024",
-                    "reporting_kpis.target_summary[2].target_progress_pct_2024"
-                  ],
-                  "invalid_evidence_sources_removed": [
-                    "Draft report section: \"All-scopes target (whole entity)\""
-                  ],
-                  "support_repair_note": "Supported flag updated by V8.9 deterministic evidence-token repair using existing allowed payload paths."
-                },
-                {
-                  "claim_id": "CLM-MT-027",
-                  "claim_text": "Planned use of carbon credits within the all-scopes target is 8.2% and the planned credit type is technology removal; the entity reports 21,080 tCO2e of carbon credits in its carbon credit summary.",
-                  "claim_type": "target_plan",
-                  "entities": [
-                    "carbon credits",
-                    "technology removal",
-                    "the entity"
-                  ],
-                  "numbers": [
-                    "21080.0",
-                    "8.2"
-                  ],
-                  "dates": [],
-                  "evidence_sources": [
-                    "targets[1].interim_milestones_json",
-                    "targets[2].planned_carbon_credits_pct",
-                    "targets[2].planned_credit_type"
-                  ],
-                  "requirement_ids": [
-                    "IFRS_S1_51_C02"
-                  ],
-                  "supported": true,
-                  "support_notes": "Credit share, type, and reported quantity are explicitly disclosed (though linkage to target accounting method is not detailed).",
-                  "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
-                  "repaired_evidence_sources": [
-                    "targets[2].planned_carbon_credits_pct",
-                    "targets[1].interim_milestones_json",
-                    "targets[2].planned_credit_type"
-                  ],
-                  "invalid_evidence_sources_removed": [
-                    "Draft report section: \"All-scopes target (whole entity)\" (carbon credits sentences)"
-                  ]
-                },
-                {
-                  "claim_id": "CLM-MT-028",
-                  "claim_text": "Financed-emissions data-quality mix is 47.5% estimated using economic data, 35.5% based on CDP disclosure, 16.3% proxy model, and 0.7% audited report.",
-                  "claim_type": "metric_value",
-                  "entities": [
-                    "CDP",
-                    "the entity"
-                  ],
-                  "numbers": [
-                    "0.7",
-                    "16.3",
-                    "35.5",
-                    "47.5"
-                  ],
-                  "dates": [],
-                  "evidence_sources": [
-                    "reporting_kpis.emissions_data_quality_summary.cdp_disclosure",
-                    "reporting_kpis.emissions_data_quality_summary.estimated_economic",
-                    "reporting_kpis.emissions_data_quality_summary.proxy_model"
-                  ],
-                  "requirement_ids": [
-                    "IFRS_S1_46_C03",
-                    "IFRS_S1_50_C04"
-                  ],
-                  "supported": true,
-                  "support_notes": "Discloses composition of estimation/data sources supporting financed emissions metrics.",
-                  "evidence_repair_note": "Added by deterministic path repair from disclosure-plan evidence paths.",
-                  "repaired_evidence_sources": [
-                    "reporting_kpis.emissions_data_quality_summary.cdp_disclosure",
-                    "reporting_kpis.emissions_data_quality_summary.proxy_model",
-                    "reporting_kpis.emissions_data_quality_summary.estimated_economic"
-                  ],
-                  "invalid_evidence_sources_removed": [
-                    "Draft report section: \"Financed-emissions data-quality mix\""
-                  ]
-                }
-              ]
-            },
-            "policy": "V8.9 treats LLM claim-builder support false negatives as warnings after deterministic evidence repair; factlock still blocks unsupported report numbers."
-          },
-          {
-            "gate_name": "factlock_numbers_entities",
-            "passed": false,
-            "failures": [
-              {
-                "type": "number_not_in_payload_or_claims",
-                "value": "2,634.9"
-              },
-              {
-                "type": "number_not_in_payload_or_claims",
-                "value": "3,060.5"
-              },
-              {
-                "type": "number_not_in_payload_or_claims",
-                "value": "35,973,167.7"
-              },
-              {
-                "type": "number_not_in_payload_or_claims",
-                "value": "36,550,177.7"
-              },
-              {
-                "type": "number_not_in_payload_or_claims",
-                "value": "37,427,593.2"
-              },
-              {
-                "type": "number_not_in_payload_or_claims",
-                "value": "6,963.5"
-              }
-            ],
-            "warnings": [
-              {
-                "type": "entity_not_in_payload_or_claims",
-                "value": "Operational GHG"
-              },
-              {
-                "type": "entity_not_in_payload_or_claims",
-                "value": "Selected Scope"
-              },
-              {
-                "type": "entity_not_in_payload_or_claims",
-                "value": "Targets\n\nThis"
-              },
-              {
-                "type": "entity_not_in_payload_or_claims",
-                "value": "The Scope"
-              }
-            ],
-            "draft_numbers": [
-              "0.7%",
-              "1",
-              "1,886.33",
-              "11,059.49",
-              "120,000.0",
-              "120,480.0",
-              "13.3%",
-              "137,849.0",
-              "15",
-              "15.8",
-              "16.3%",
-              "18.2",
-              "2",
-              "2,564.65",
-              "2,634.9",
-              "20.0",
-              "2019",
-              "2020",
-              "2022",
-              "2023",
-              "2024",
-              "2025",
-              "2028",
-              "21,080",
-              "23.93",
-              "25.0%",
-              "25.57",
-              "26",
-              "27.98",
-              "288.08",
-              "289.9",
-              "3",
-              "3,060.5",
-              "30%",
-              "31",
-              "31,150.64",
-              "35,973,167.7",
-              "35.36",
-              "35.5%",
-              "36,550,177.7",
-              "37,427,593.2",
-              "40.0%",
-              "42%",
-              "42.73",
-              "47.5%",
-              "48.73",
-              "54.73",
-              "556.40",
-              "6,963.5",
-              "636.77",
-              "7",
-              "79.11",
-              "8.2%",
-              "97,321.4"
-            ],
-            "draft_entities": [
-              "Operational GHG",
-              "PCAF Standard",
-              "Selected Scope",
-              "Target TGT001",
-              "Targets\n\nThis",
-              "The Scope",
-              "UNEP FI"
-            ]
-          },
-          {
-            "gate_name": "reference_firewall",
-            "passed": true,
-            "forbidden_term_hits": [],
-            "failures": [],
-            "warnings": []
-          },
-          {
-            "gate_name": "report_cleanliness_no_missing_payload_language",
-            "passed": true,
-            "blocked_phrase_hits": [],
-            "soft_phrase_hits": [],
-            "failures": [],
-            "warnings": []
-          },
-          {
-            "gate_name": "v90_senior_ifrs_final_report_quality",
-            "passed": false,
-            "failures": [
-              {
-                "type": "v90_section_under_developed",
-                "word_count": 862,
-                "minimum_word_count": 1000,
-                "required_fix": "Expand using available evidence only; do not add unsupported facts."
-              }
-            ],
-            "warnings": [],
-            "version": "V9.0 senior_ifrs_writer_finalizer"
-          }
-        ],
-        "summary": "- draft_structural_quality_no_templates_no_absence_language: PASS | failures=0 | warnings=0\n- draft_depth_quality_no_truncation: FAIL | failures=1 | warnings=1\n  failure: {'type': 'section_too_short_or_truncated', 'word_count': 862, 'minimum_word_count': 900, 'evidence_path_count': 179, 'required_fix': 'Expand the section using existing evidence only; do not add unsupported facts or missing-data language.'}\n  warning: {'type': 'many_short_subsections', 'examples': [{'heading': 'Reporting boundary and reporting period', 'word_count': 31}, {'heading': 'Exposure to high-carbon sectors', 'word_count': 34}, {'heading': 'Internal carbon pricing', 'word_count': 53}, {'heading': 'Financed-emissions data-quality mix', 'word_count': 42}], 'suggested_fix': 'Add explanatory narrative to each supported subsection.'}\n- draft_prose_polish_no_raw_fields_no_booleans_no_unavailable_language: PASS | failures=0 | warnings=0\n- unsupported_generic_boilerplate_and_inferred_thresholds_gate: PASS | failures=0 | warnings=0\n- claims_integrity: PASS | failures=0 | warnings=1\n  warning: {'claim_id': 'CLM-MT-001', 'issue': 'no_evidence_source_after_v89_repair', 'claim': 'Unless otherwise stated, the metrics in this section are prepared on a financial control boundary.'}\n- factlock_numbers_entities: FAIL | failures=6 | warnings=4\n  failure: {'type': 'number_not_in_payload_or_claims', 'value': '2,634.9'}\n  failure: {'type': 'number_not_in_payload_or_claims', 'value': '3,060.5'}\n  failure: {'type': 'number_not_in_payload_or_claims', 'value': '35,973,167.7'}\n  failure: {'type': 'number_not_in_payload_or_claims', 'value': '36,550,177.7'}\n  failure: {'type': 'number_not_in_payload_or_claims', 'value': '37,427,593.2'}\n  warning: {'type': 'entity_not_in_payload_or_claims', 'value': 'Operational GHG'}\n  warning: {'type': 'entity_not_in_payload_or_claims', 'value': 'Selected Scope'}\n- reference_firewall: PASS | failures=0 | warnings=0\n- report_cleanliness_no_missing_payload_language: PASS | failures=0 | warnings=0\n- v90_senior_ifrs_final_report_quality: FAIL | failures=1 | warnings=0\n  failure: {'type': 'v90_section_under_developed', 'word_count': 862, 'minimum_word_count': 1000, 'required_fix': 'Expand using available evidence only; do not add unsupported facts.'}",
-        "v89_sanitized_for_gate": false,
-        "v90_finalized_for_gate": false
+      "scores": {
+        "ifrs_coverage": 6.0,
+        "evidence": 6.0,
+        "style": 8.8
       },
-      "version": "V9.0 senior_ifrs_writer_finalizer",
+      "failures": [
+        {
+          "judge": "ifrs_coverage_judge",
+          "score": 6.0,
+          "required_fixes": [
+            "Add an explicit mapping of disclosed metrics/targets to the climate-related (and other sustainability-related, if applicable) risks and opportunities that could reasonably be expected to affect prospects, indicating which metrics are required by IFRS S2 (and any other applicable IFRS SDS) versus entity-defined metrics (IFRS S1.46).",
+            "Improve labelling/definitions: specify units for all baselines/targets (eg 'All-scopes target' baseline), clarify duplicated internal carbon price 'Investment decisions' rows, and explain what each listed equity row represents (IFRS S1.53).",
+            "Provide comparative information for preceding period(s) for all disclosed amounts, or explicitly state impracticability where applicable (IFRS S1.B49, B53, B54).",
+            "Address the Scope 1 'correction' under the comparative revision requirements: disclose revised comparative amounts (if prior-period figures were affected), quantify differences, and explain reasons; or clarify that no prior-period amounts were affected (IFRS S1.B50/B52).",
+            "State GHG measurement standard used (GHG Protocol Corporate Standard 2004 or jurisdictional alternative) and provide a coherent description of measurement approach, key inputs/assumptions, reasons for choices, and changes during the period (IFRS S2.29(a)(ii)–(iii)).",
+            "Provide required Scope 1/2 disaggregation between consolidated accounting group and other investees (associates/JVs/unconsolidated subsidiaries/other investees), or explicitly state that there are none (IFRS S2.29(a)(iv)).",
+            "For Scope 3, list the categories included in the Scope 3 measure and clarify which categories are excluded/not measured (IFRS S2.29(a)(vi)(1)).",
+            "If any targets were revised, disclose revisions and explanations; if none, consider stating 'no revisions during 2024' to avoid ambiguity (IFRS S1.51(g))."
+          ]
+        },
+        {
+          "judge": "evidence_judge",
+          "score": 6.0,
+          "required_fixes": [
+            {
+              "fix": "Add direct evidence links for boundary basis.",
+              "details": "Update CLM-4-002 evidence_sources to include bank.boundary_type (financial_control)."
+            },
+            {
+              "fix": "Provide direct KPI evidence paths for Scope 2 location-based and Scope 3 business travel values.",
+              "details": "Update CLM-4-004 and CLM-4-006 to cite the exact data fields that store 6,963.5 and 289.9 (e.g., reporting_kpis.scope2_location_2024_tco2e and reporting_kpis.scope3_business_travel_2024_tco2e or equivalent). Remove unrelated evidence paths."
+            },
+            {
+              "fix": "Correct/complete evidence mapping for listed equity market values.",
+              "details": "Update CLM-4-015 evidence_sources to include financed_emissions_equity[0..7].market_value_meur (or otherwise explain aggregation/selection)."
+            },
+            {
+              "fix": "Clarify or evidence total assets figure used for exposure share.",
+              "details": "Either (a) cite the exact evidence item showing total assets = 850,000.0 for 2024, or (b) reconcile with financial_summary totals if different, and explain why a different denominator is used."
+            },
+            {
+              "fix": "Qualify third-party validation and 'on track' statements.",
+              "details": "Specify what was validated (target, methodology, or disclosure), the validation date/status, and define the criteria for 'on track' (e.g., linear pathway vs interim milestones)."
+            }
+          ]
+        }
+      ],
+      "warnings": [],
+      "thresholds": {
+        "ifrs_coverage_score_min": 8.0,
+        "evidence_score_min": 8.0,
+        "style_score_min": 7.5,
+        "style_judge_mode": "advisory_after_deterministic_pass"
+      },
+      "approval_policy": "V9.1: deterministic evidence/fact gates are binding; style judge is advisory unless IFRS_STYLE_JUDGE_MODE=blocking.",
+      "version": "V9.4-order-safe-factlock-decimal",
       "section_generation_score": {
         "section_name": "Metrics and Targets",
-        "overall_section_generation_score_0_to_100": 41.52,
+        "overall_section_generation_score_0_to_100": 87.32,
         "coverage_component": {
           "requirements_total": 151,
           "coverage_counts": {
@@ -2142,8 +532,8 @@
           },
           "coverage_score_0_to_100": 86.09
         },
-        "judge_average_0_to_100": 0.0,
-        "deterministic_gate_score_0_to_100": 0.0,
+        "judge_average_0_to_100": 69.33,
+        "deterministic_gate_score_0_to_100": 100.0,
         "report_cleanliness_score_0_to_100": 100.0,
         "missing_requirements_count_flagged": 16,
         "missing_requirement_ids_flagged": [
@@ -2171,7 +561,7 @@
     },
     "section_generation_score": {
       "section_name": "Metrics and Targets",
-      "overall_section_generation_score_0_to_100": 41.52,
+      "overall_section_generation_score_0_to_100": 87.32,
       "coverage_component": {
         "requirements_total": 151,
         "coverage_counts": {
@@ -2181,8 +571,8 @@
         },
         "coverage_score_0_to_100": 86.09
       },
-      "judge_average_0_to_100": 0.0,
-      "deterministic_gate_score_0_to_100": 0.0,
+      "judge_average_0_to_100": 69.33,
+      "deterministic_gate_score_0_to_100": 100.0,
       "report_cleanliness_score_0_to_100": 100.0,
       "missing_requirements_count_flagged": 16,
       "missing_requirement_ids_flagged": [
@@ -2207,6 +597,6 @@
       "approved": false,
       "policy": "Missing requirements reduce audit/readiness visibility only; they must not appear in report prose."
     },
-    "senior_ifrs_version": "V9.0 senior_ifrs_writer_finalizer"
+    "senior_ifrs_version": "V9.4-order-safe-factlock-decimal"
   }
 ]

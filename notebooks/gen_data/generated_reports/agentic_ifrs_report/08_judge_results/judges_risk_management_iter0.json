@@ -2,165 +2,134 @@
   "section_name": "Risk Management",
   "ifrs_coverage_judge": {
     "approved": false,
-    "ifrs_coverage_score_0_to_10": 7,
+    "ifrs_coverage_score_0_to_10": 6,
     "missing_supported_requirements": [
       {
-        "requirement_id": "IFRS_S1_44_C04",
-        "status_in_matrix": "partially_covered",
-        "why_missing_or_insufficient": "The draft explains likelihood scoring and a 5×5 matrix, but does not clearly explain how the entity assesses the nature and magnitude of effects beyond the generic 'severity score' (eg, what severity represents, whether qualitative factors/quantitative thresholds are used, and how magnitude is determined). This leaves the 'nature, likelihood and magnitude' assessment only partially addressed."
-      },
-      {
-        "requirement_id": "IFRS_S1_44_C05",
-        "status_in_matrix": "partially_covered",
-        "why_missing_or_insufficient": "The draft describes prioritisation within climate risks (rating bands) and mentions ERM integration, but does not explain whether/how climate-related risks are prioritised relative to other (non-climate) risks (eg, common thresholds, escalation criteria, comparative ranking, or how climate risks compete for attention/resources versus other risk types)."
-      },
-      {
-        "requirement_id": "IFRS_S1_44_C06",
-        "status_in_matrix": "partially_covered",
-        "why_missing_or_insufficient": "The draft lists monitoring cadences and change tracking, but does not describe the monitoring process mechanics (eg, who monitors, what indicators/triggers are reviewed, how monitoring results are reported/escalated, and how monitoring leads to updates in risk ratings/actions)."
-      },
-      {
         "requirement_id": "IFRS_S1_44_C08",
-        "status_in_matrix": "partially_covered",
-        "why_missing_or_insufficient": "The draft is framed entirely around climate-related risks and does not disclose processes to identify, assess, prioritise and monitor sustainability-related opportunities (as required by S1)."
-      },
-      {
-        "requirement_id": "IFRS_S2_25_C04",
-        "status_in_matrix": "partially_covered",
-        "why_missing_or_insufficient": "Same gap as S1_44_C04: likelihood scoring is described, but the method for assessing magnitude of effects is not sufficiently explained (severity definition/criteria, qualitative vs quantitative thresholds, and how magnitude is determined)."
-      },
-      {
-        "requirement_id": "IFRS_S2_25_C05",
-        "status_in_matrix": "partially_covered",
-        "why_missing_or_insufficient": "Same gap as S1_44_C05: prioritisation relative to other types of risk is not explained beyond stating ERM integration status."
-      },
-      {
-        "requirement_id": "IFRS_S2_25_C06",
-        "status_in_matrix": "partially_covered",
-        "why_missing_or_insufficient": "Same gap as S1_44_C06: monitoring cadence is disclosed, but the monitoring process is not described in a way that explains how monitoring is performed and used."
+        "standard": "IFRS S1",
+        "paragraph_id": "44",
+        "reason": "The draft describes processes for climate-related risks but does not disclose the processes used to identify, assess, prioritise and monitor sustainability-related opportunities."
       },
       {
         "requirement_id": "IFRS_S2_25_C08",
-        "status_in_matrix": "covered",
-        "why_missing_or_insufficient": "Although the matrix marks this as covered, the draft does not actually describe processes for climate-related opportunities nor whether/how scenario analysis informs identification of climate-related opportunities. It only discusses scenario analysis in the context of risks."
+        "standard": "IFRS S2",
+        "paragraph_id": "25",
+        "reason": "The draft does not describe processes for identifying, assessing, prioritising and monitoring climate-related opportunities, nor whether/how scenario analysis informs identification of climate-related opportunities."
       }
     ],
     "invented_missing_requirements": [],
     "missing_data_language_found": false,
     "required_fixes": [
-      "Add a clear description of how 'severity' (magnitude of effects) is defined and assessed for climate-related risks, including the criteria used (qualitative factors and/or quantitative thresholds) and how nature/likelihood/magnitude are determined in practice (IFRS S1 44(a)(iii); IFRS S2 25(a)(iii)).",
-      "Explain whether and how climate-related risks are prioritised relative to other risk types within the overall risk universe (eg, common risk appetite/thresholds, escalation triggers, comparative ranking, decision forums) (IFRS S1 44(a)(iv); IFRS S2 25(a)(iv)).",
-      "Describe the monitoring process beyond cadence (eg, what is monitored, key indicators/triggers, roles/responsibilities, reporting/escalation, and how monitoring results update the register/ratings) (IFRS S1 44(a)(v); IFRS S2 25(a)(v)).",
-      "Add disclosures on processes to identify, assess, prioritise and monitor opportunities (S1 sustainability-related opportunities; S2 climate-related opportunities), including whether/how scenario analysis informs identification of climate-related opportunities (IFRS S1 44(b); IFRS S2 25(b))."
+      {
+        "fix_id": "FIX-001",
+        "type": "add_disclosure",
+        "related_requirement_ids": [
+          "IFRS_S1_44_C08"
+        ],
+        "instruction": "Add a subsection describing the entity’s processes (and related policies, if applicable) used to identify, assess, prioritise and monitor sustainability-related opportunities (not limited to risks)."
+      },
+      {
+        "fix_id": "FIX-002",
+        "type": "add_disclosure",
+        "related_requirement_ids": [
+          "IFRS_S2_25_C08"
+        ],
+        "instruction": "Add a subsection describing the processes used to identify, assess, prioritise and monitor climate-related opportunities, explicitly stating whether and how climate-related scenario analysis is used to inform identification of climate-related opportunities."
+      },
+      {
+        "fix_id": "FIX-003",
+        "type": "tighten_to_evidence",
+        "related_requirement_ids": [
+          "IFRS_S1_44_C03",
+          "IFRS_S2_25_C03"
+        ],
+        "instruction": "Either (a) substantiate the list of scenario references (SCN0005, SCN0007, SCN0009, SCN0011) with evidence for each referenced scenario link, or (b) revise wording to only reference scenario IDs that are evidenced."
+      },
+      {
+        "fix_id": "FIX-004",
+        "type": "tighten_to_evidence",
+        "related_requirement_ids": [
+          "IFRS_S1_44_C06",
+          "IFRS_S2_25_C06"
+        ],
+        "instruction": "Either (a) substantiate that monitoring frequencies include monthly, quarterly and semi-annual with evidence for each frequency, or (b) revise to only state the frequencies that are evidenced."
+      },
+      {
+        "fix_id": "FIX-005",
+        "type": "tighten_to_evidence",
+        "related_requirement_ids": [
+          "IFRS_S1_44_C04",
+          "IFRS_S2_25_C04"
+        ],
+        "instruction": "Either (a) substantiate the stated risk-rating thresholds (Critical 15–25, High 8–12, Medium 3–6, Low 1–2) and the use of a severity score with evidence, or (b) revise to describe the assessment approach only to the extent supported."
+      }
     ],
-    "summary": "The section is strong on describing a climate risk register, inputs/data sources (ECB indicators), scenario-analysis linkage for risks, ERM integration status, monitoring cadence, and change tracking. However, it does not sufficiently explain how magnitude/severity is assessed, does not explain prioritisation relative to other (non-climate) risks, provides only limited description of the monitoring process mechanics, and omits opportunity processes (including scenario analysis for opportunities). Additionally, despite the matrix marking IFRS S2 25(b) as covered, the draft does not actually discuss climate-related opportunities."
+    "summary": "The section broadly covers IFRS S1/S2 risk-management process disclosures for climate-related risks (inputs/data sources, scenario analysis use, monitoring cadence concept, ERM integration, and prior-period change tracking) and includes an explicit duplication-avoidance statement. However, it does not disclose processes for sustainability-related opportunities (IFRS S1 44(b)) or climate-related opportunities including scenario analysis for opportunities (IFRS S2 25(b)). In addition, several specific statements (scenario IDs list, monitoring frequencies list, and detailed matrix thresholds/severity mechanics) appear more specific than the available evidence and should be tightened or substantiated."
   },
   "evidence_judge": {
     "approved": false,
     "evidence_score_0_to_10": 7,
     "unsupported_claims": [
       {
-        "claim_text": "Physical risk exposure assessment uses ECB climate indicators as a data source across multiple physical risk exposure records, supporting a consistent basis for assessing physical climate hazard exposure.",
-        "issue": "Evidence supports use of ECB_climate_indicators as a data_source across multiple records, but does not support the additional assertion that this 'supports a consistent basis' (an evaluative/impact claim about the effect of using the source).",
-        "suggested_fix": "Remove or qualify the evaluative clause (e.g., 'ECB climate indicators are used as a data source across multiple records')."
-      },
-      {
-        "claim_text": "These references provide traceability between individual risks and the scenario analysis used to inform their assessment.",
-        "issue": "Evidence shows scenario_analysis_link fields exist with scenario IDs, but does not demonstrate actual traceability (e.g., documented mapping, methodology, or audit trail) beyond the presence of links.",
-        "suggested_fix": "Rephrase to a factual statement: 'The register includes scenario reference links for individual risks (e.g., SCN0005...).'"
-      },
-      {
-        "claim_text": "Multiple risks are marked as integrated into ERM, indicating that climate-related risks are incorporated into the broader risk management process rather than being managed solely through a standalone climate process.",
-        "issue": "Evidence supports that multiple risks have erm_integrated_flag = True, but does not support the inference that this means they are incorporated into broader ERM processes (e.g., escalation, reporting, governance) versus merely flagged.",
-        "suggested_fix": "Remove the inference or add evidence of ERM process integration (e.g., ERM reporting, committee review, inclusion in enterprise risk register)."
-      },
-      {
-        "claim_text": "This tiered cadence supports ongoing oversight, with more frequent monitoring applied to certain risks and less frequent monitoring applied to others.",
-        "issue": "Evidence supports that different monitoring frequencies exist (monthly/quarterly/semi_annual) but not that this 'supports ongoing oversight' (effectiveness claim).",
-        "suggested_fix": "State only the observed cadences without claiming oversight benefit, or add evidence (e.g., monitoring outcomes, governance review)."
-      },
-      {
-        "claim_text": "This change tracking supports disciplined monitoring by highlighting where reassessment may be required and where risk conditions are considered stable relative to the prior period.",
-        "issue": "Evidence supports existence of changed_since_prior_period flags, but not that it results in disciplined monitoring or triggers reassessment/stability determinations.",
-        "suggested_fix": "Limit to factual description of the indicator, or add evidence of how changes trigger reassessment actions."
-      },
-      {
-        "claim_text": "Integration is evidenced by the ERM integration status recorded for individual risks. This enables climate-related risks to be managed using comparable risk language and prioritisation logic..., supporting alignment between climate risk assessment and the entity’s overall risk management approach.",
-        "issue": "Evidence supports the existence of an ERM integration flag and a risk rating methodology, but not that this 'enables' comparable management or 'supports alignment' (outcome/impact claims).",
-        "suggested_fix": "Rephrase to factual: 'The register includes an ERM integration status field and uses the same 5×5 matrix rating bands.' Add evidence if keeping outcome language."
-      },
-      {
-        "claim_text": "By capturing these risk pathways, the risk management process supports a more complete view of climate-related risk transmission channels...",
-        "issue": "Evidence supports that example pathways are recorded (operations, mining/quarrying lending, agriculture), but not that the process yields a 'more complete view' (completeness/effectiveness claim).",
-        "suggested_fix": "Remove 'more complete' or define scope/coverage and provide evidence of completeness (e.g., documented value-chain mapping coverage)."
+        "claim_text": "Scenario analysis references include SCN0005, SCN0007, SCN0009, and SCN0011 (as linked from individual risks in the climate risk register).",
+        "location_hint": "Inputs and parameters used in assessment; Illustrative examples (Scenario-linked risks)",
+        "why_unsupported": "The draft asserts these specific scenario IDs are linked in the register. Evidence supports SCN0005 (climate_risk_register[7].scenario_analysis_link), SCN0007 (climate_risk_register[3-5].scenario_analysis_link), and SCN0011 (climate_risk_register[6].scenario_analysis_link), but SCN0009 is not evidenced as a scenario_analysis_link in the provided evidence items (only climate_risk_register[0].scenario_analysis_link shows SCN0009, and that item is not referenced by the claims register evidence_sources for RM-007)."
       }
     ],
     "questionable_claims": [
       {
-        "claim_text": "Climate-related risks are captured consistently across the business and value chain.",
-        "issue": "Evidence shows some value-chain mapping entries, but does not evidence consistency (e.g., standard taxonomy, coverage, controls, or completeness).",
-        "suggested_fix": "Qualify ('aims to capture') or add evidence of standardised process and coverage."
+        "claim_text": "The risk register also records the resulting qualitative risk rating for some risks; for example, several risks are rated medium, including the agricultural counterparty risk described above.",
+        "location_hint": "Risk assessment methodology",
+        "why_questionable": "Agricultural risk is evidenced as medium (climate_risk_register[10].risk_rating). However, the claims register evidence_sources for RM-011 do not include any risk_rating fields for the agricultural entry (they cite risk_description and metadata). The statement is true per evidence_items, but the cited support in the claims register is incomplete/misaligned."
       },
       {
-        "claim_text": "The climate risk register is the primary artefact used to document and manage climate-related risks.",
-        "issue": "Evidence indicates register fields exist, but does not prove primacy versus other artefacts (e.g., enterprise risk register, policies, tools).",
-        "suggested_fix": "Qualify ('a key artefact') or provide evidence that it is the primary artefact."
-      },
-      {
-        "claim_text": "Risks are prioritised based on their assessed rating derived from the risk matrix methodology.",
-        "issue": "Evidence supports existence of ratings/methodology, but not that prioritisation decisions are actually made based on those ratings (no prioritisation outputs/thresholds/escalation evidence).",
-        "suggested_fix": "Qualify as methodology description ('are intended to be prioritised') or add evidence of prioritisation practice."
-      },
-      {
-        "claim_text": "The overall risk rating band mapping (Low 1–2, Medium 3–6, High 8–12, Critical 15–25).",
-        "issue": "Supported by metadata, but the narrative omits how scores 7, 13, and 14 are treated; could confuse readers and appear internally inconsistent.",
-        "suggested_fix": "Add explicit rule for unmapped scores (e.g., '7 is medium/high?') or include the threshold logic from metadata (critical >=15, high >=8, medium >=3, low <3)."
+        "claim_text": "Monitoring frequencies applied across risks include monthly, quarterly, and semi-annual.",
+        "location_hint": "Monitoring and review cadence",
+        "why_questionable": "Supported by evidence_items (monthly: climate_risk_register[0]/[2]/[4]; quarterly: [1]/[3]/[7]; semi_annual: [5]/[6]). Note the draft uses 'Semi-annual' while evidence uses 'semi_annual'—terminology mismatch could confuse readers if the register uses coded values."
       }
     ],
     "required_fixes": [
-      "Remove or qualify evaluative/effectiveness language not evidenced (e.g., 'supports a consistent basis', 'supports ongoing oversight', 'supports disciplined monitoring', 'supports alignment', 'more complete view').",
-      "Replace inferences about ERM integration with factual statements, or add concrete evidence of ERM process integration (e.g., inclusion in enterprise risk register, ERM reporting cadence, governance/committee review).",
-      "Clarify the risk rating band mapping to address gaps (scores 7, 13, 14) or restate the threshold logic exactly as in metadata.",
-      "If keeping 'traceability' claims for scenario links, add evidence of traceability mechanism (e.g., documented mapping, scenario documentation references) or rephrase to 'includes scenario reference links'."
+      "Fix the scenario reference list: either (a) remove SCN0009 from the list, or (b) add/point to payload evidence showing SCN0009 is linked to at least one risk via climate_risk_register[*].scenario_analysis_link (and ensure the claims register cites that payload path).",
+      "Align evidence citations for the 'medium' rating example: cite climate_risk_register[10].risk_rating (and/or other relevant risk_rating fields) rather than only risk_description/metadata.",
+      "Optional clarity fix: standardize 'semi-annual' wording to match the register value ('semi_annual') or explicitly state it is the human-readable label for the coded value."
     ],
-    "summary": "Most factual statements about the existence of register fields (scenario links, likelihood scores, monitoring frequencies, change flags, ERM integration flags) are supported by the provided payload evidence. However, the draft repeatedly adds outcome/effectiveness inferences (e.g., supporting oversight, disciplined monitoring, alignment, completeness, traceability) that are not evidenced. Additionally, the 5×5 rating band description is potentially confusing due to unmapped scores and should be clarified or aligned verbatim with the metadata threshold logic."
+    "summary": "Most operational/process statements are supported by payload evidence (risk register existence/fields, ECB climate indicators as data source, 5x5 matrix methodology, monitoring cadence values, change tracking, ERM integration flags). The main unsupported element is inclusion of SCN0009 in the list of scenario links without properly cited payload evidence. A couple of statements are directionally supported but have citation/terminology alignment issues that should be corrected."
   },
   "style_judge": {
     "approved": false,
-    "style_score_0_to_10": 7.2,
+    "style_score_0_to_10": 7.4,
     "voice_issues": [
-      "Voice is generally neutral and process-focused, but it does not clearly adopt a consistent first-person plural or third-person perspective for the entity (it reads as impersonal descriptive text rather than 'we' or 'the entity').",
-      "Some phrasing leans toward explanatory narrative ('These examples illustrate...') rather than standards-oriented disclosure verbs tied to the reporting entity."
+      "Voice is generally neutral and process-focused, but it does not consistently use the preferred standards-oriented verbs (e.g., disclose, explain, review, escalate) even though many are implied.",
+      "Point of view is mostly impersonal/third-person, which is acceptable, but the style guide prefers explicit first-person plural for accountability statements; this section avoids explicit responsibility language almost entirely.",
+      "Some phrasing is slightly narrative (e.g., 'This cadence-based approach supports...') rather than assurance-oriented and control-focused."
     ],
     "structure_issues": [
-      "Heading hierarchy does not follow the required numbered IFRS pillar structure (e.g., 3, 3.1, 3.2 for Risk Management) and instead uses multiple unnumbered '##' headings.",
-      "The section opens directly with 'Risk management approach for climate-related risks' rather than a short section overview and mini table-of-contents for subsections, as specified in the section_style.",
-      "The layered structure requested in the section_style (overall ERM → sustainability-related risks → climate-related risks) is only partially followed; the text focuses almost exclusively on climate-related risks without clearly situating them as a subset of sustainability-related risks and of overall ERM.",
-      "Major subsections do not consistently close with a short connectivity sentence linking to related sections or financial statements.",
-      "Some subsections combine 'what' and 'how' (principles and mechanics) in the same blocks instead of clearly separating them with subheadings."
+      "Headings are unnumbered and do not follow the required numbered hierarchy aligned to IFRS pillars (e.g., 3, 3.1, 3.2).",
+      "The section does not open with a mini table-of-contents or a clear high-level framing of integration into enterprise risk management before diving into climate-specific mechanics, as requested in the section_style.",
+      "Paragraphs are mostly single-idea and short, but some subsections (e.g., 'Integration into overall risk management (ERM)', 'Avoiding unnecessary duplication') could better separate 'principles/what' from 'mechanics/how'.",
+      "Connectivity sentences linking to related sections or financial statements (e.g., 'Refer to [Section: Strategy]') are missing at the close of major subsections.",
+      "The layered structure requested (overall ERM → sustainability-related risks → climate-related risks) is only partially followed; the text focuses almost exclusively on climate-related risks without clearly situating them as a subset of broader sustainability-related risks."
     ],
     "wording_issues": [
-      "Limited use of preferred disclosure verbs such as 'review', 'approve', 'escalate', 'oversee', 'align', 'validate', 'audit'; the narrative is descriptive but could be more explicitly control- and oversight-oriented.",
-      "A few sentences are relatively long and could be split for scanability (e.g., sentences describing the 5×5 matrix and mapping to rating bands).",
-      "The text occasionally uses explanatory or illustrative language ('These examples illustrate...') rather than strictly assurance-oriented disclosure phrasing.",
-      "The section does not explicitly distinguish between current-period facts, estimates/judgements, and forward-looking intentions; everything is presented as a static description of process."
+      "Some sentences are slightly long and could be split for clarity (e.g., the sentence describing the climate risk register capturing risk statements and supporting attributes).",
+      "The term 'ECB climate indicators' appears as a specific named external data source, which conflicts with the 'what_to_avoid' rule against named vendors/data providers and jurisdiction-specific references in template-style content.",
+      "Scenario references such as 'SCN0005', 'SCN0007', etc., may be acceptable as internal identifiers, but they are not clearly defined as such and could be misread as external scenario names; the style guide prefers generic, configurable references.",
+      "The section does not explicitly distinguish between current-period facts, estimates/judgements, and forward-looking intentions; most content is process description, but this distinction is not signposted.",
+      "Some opportunities to use preferred verbs (identify, assess, monitor, review, escalate, integrate) are missed or replaced with softer phrasing like 'supports' and 'is intended to ensure'."
     ],
     "table_figure_issues": [
-      "No tables or figures are used, which is acceptable in principle, but the length and process orientation of the section suggest that a compact lifecycle table or workflow figure could improve scanability and alignment with the style guide.",
-      "Because there are no tables or figures, there are no numbered captions or narrative references; this is not a violation but falls short of the preferred use of visual anchors in long sections."
+      "No tables or figures are used, which is acceptable given the guidance to use tables sparingly, but the rubric requires that any tables/figures present be numbered and captioned; this is not applicable here.",
+      "Given the length and process orientation of the section, a simple high-level table or figure mapping risk lifecycle stages to activities/owners/outputs could improve scanability, but its absence is a stylistic opportunity rather than a strict non-compliance."
     ],
     "required_fixes": [
-      "Adopt a consistent point of view for the entity (either first-person plural 'we' or third-person 'the entity') and apply it throughout, especially when describing actions and responsibilities (e.g., 'We identify and assess climate-related risks...' or 'The entity identifies and assesses...').",
-      "Reframe the section under a numbered IFRS pillar-aligned heading structure (e.g., '3 Risk Management', '3.1 Overview and integration into ERM', '3.2 Identification of sustainability-related and climate-related risks', '3.3 Assessment and prioritisation', '3.4 Monitoring and review', '3.5 Integration into ERM and value chain considerations').",
-      "Add a short opening overview paragraph for the Risk Management pillar that explains the purpose of the section and provides a brief list of subsections (mini table-of-contents).",
-      "Explicitly position climate-related risks as a subset of sustainability-related risks and of the overall risk universe, including a brief paragraph that explains how sustainability-related risks more broadly are handled, with climate-related risks described as having additional methodological detail.",
-      "At the start of each major subsection, include a one-sentence purpose statement that uses standards-oriented verbs (e.g., 'This subsection describes how we identify and document climate-related risks across our operations and value chain.').",
-      "Close each major subsection with a short connectivity sentence that links to related sections (e.g., governance, strategy, metrics and targets) using generic cross-reference placeholders (e.g., 'Refer to [Section: Governance – Risk oversight]').",
-      "Increase the use of preferred disclosure verbs and control language (e.g., 'monitor', 'review', 'escalate', 'approve', 'update') to describe how the risk register is governed, how ratings are reviewed, and how integration into ERM is overseen.",
-      "Shorten or split longer sentences, particularly those that describe the 5×5 risk matrix and rating bands, to improve clarity and alignment with the sentence length guidance.",
-      "Consider adding a compact table or figure (with a numbered caption) that maps the risk lifecycle stages (identify, assess, prioritise, monitor, integrate) to key activities and outputs, and reference it explicitly in the narrative.",
-      "Clarify, where relevant, whether the described processes reflect current-period practice, and if there are any known limitations or areas under development, describe them using the standardized missing-data/limitations language (even if only to state that no material limitations have been identified)."
+      "Introduce numbered headings aligned with IFRS pillars and subsection numbering (e.g., '3. Risk Management', '3.1 Risk identification', '3.2 Risk assessment methodology', etc.) to comply with the formatting_rules.",
+      "Add a short opening paragraph that situates climate-related risk management within the overall enterprise risk management framework and clarifies that climate-related risks are a subset of sustainability-related risks, consistent with the section_style layered structure.",
+      "Replace or generalize the reference to 'ECB climate indicators' with a non-identifying description such as 'relevant external climate indicators from public and supervisory sources', in line with the 'what_to_avoid' and 'do_not_do' rules on named data providers and jurisdiction-specific references.",
+      "Clarify that scenario identifiers like 'SCN0005', 'SCN0007', etc., are internal scenario labels, or generalize them (e.g., 'internally defined climate scenarios') to avoid implying external, identifying scenario names; ensure they are described as configurable placeholders.",
+      "Strengthen the use of standards-oriented and control verbs (identify, assess, prioritise, monitor, review, escalate, integrate, update) and explicitly state responsibilities where appropriate (e.g., 'We identify and assess climate-related risks using...') to align with the preferred tone and sentence_style.",
+      "Add brief connectivity sentences at the end of major subsections (e.g., risk identification, assessment, monitoring, integration) that reference related sections using generic placeholders (e.g., 'Refer to [Section: Strategy]' or 'See [Section: Metrics and Targets]') as required by the paragraph_rules and evidence_and_traceability_rules.",
+      "Ensure that any references to missing or incomplete data, if applicable in future iterations, follow the missing_data_language_rules; currently there is no explicit mention of data gaps, which is acceptable only if there are genuinely no gaps, but this should be confirmed or clarified where relevant."
     ],
-    "summary": "The section is well-structured around the risk lifecycle, uses neutral and process-focused language, and avoids promotional content. It aligns broadly with an IFRS S1/S2-style risk management disclosure, with clear descriptions of identification, assessment, prioritisation, monitoring, and ERM integration. However, it does not fully meet the approved authoring style: the IFRS pillar numbering and layered ERM → sustainability-related → climate-related structure are not explicit; the point of view is impersonal rather than consistently entity-focused; and connectivity sentences and control-oriented verbs are underused. There are no tables or figures, which is acceptable but leaves the long narrative without visual anchors. With structural adjustments, clearer POV, stronger control language, and minor sentence refinements, the section can be brought to fully approved style compliance."
+    "summary": "The section is generally well-structured, neutral, and process-focused, with clear descriptions of climate-related risk identification, assessment, prioritisation, monitoring, and integration into ERM. It uses bullets effectively and avoids promotional language. However, it does not fully comply with the approved authoring style in several areas: headings are not numbered or explicitly aligned to IFRS pillars; the layered framing of ERM → sustainability-related risks → climate-related risks is incomplete; references to 'ECB climate indicators' and specific scenario codes may conflict with rules against named external data sources and identifying scenario names; and connectivity sentences and explicit accountability language are limited. With these issues addressed, the section would be suitable for approval under the style rubric."
   }
 }

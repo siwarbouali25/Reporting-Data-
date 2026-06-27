@@ -1,56 +1,70 @@
-## Governance
+## 2. Governance
 
-This section describes how governance arrangements support oversight of climate-related and broader sustainability-related risks and opportunities. It focuses on Board oversight and agenda integration, the flow and cadence of climate risk reporting to the Board, management committee structures used to monitor and manage these matters, and the use of enterprise risk management and major-transaction checks. It also summarises indicators of climate-related competence and how climate-related considerations are reflected in executive remuneration.
+This section describes governance arrangements used to oversee sustainability-related risks and opportunities, with a focus on climate-related risks and opportunities.
 
-### Board oversight and agenda integration
+### 2.1 Board oversight and agenda integration
 
-Oversight of climate-related and sustainability-related matters is exercised through the Board. The Board comprises 10 directors and, during the period covered by the governance data, held four full Board meetings.
+The Board comprises 10 directors. Across the periods covered by the governance metrics, the number of full Board meetings per year increased from 4 to 7 and then to 8.
 
-Climate-related matters were integrated into Board discussions through agenda coverage and specific items considered. During the same period, climate-related matters appeared on the Board agenda 69.8% of the time. Board meeting records indicate that climate-related topics brought to the Board included:
+Climate-related matters are incorporated into Board oversight through Board agenda coverage and Board discussion of specific climate topics. In one period, climate-related items represented 69.8% of Board agenda coverage.
+
+Board discussions of climate-related matters included the following topics:
 
 - transition plan review;
 - scenario analysis;
-- review of climate-related disclosures aligned to the Task Force on Climate-related Financial Disclosures (TCFD);
-- monitoring net zero progress;
-- carbon credit approval; and
-- executive remuneration ESG KPIs.
+- review of climate-related disclosures;
+- monitoring of net zero progress;
+- approval of carbon credits; and
+- consideration of executive remuneration and ESG key performance indicators.
 
-These agenda items demonstrate that the Board’s oversight extends across strategic direction (for example, transition planning and scenario analysis), monitoring of progress (including net zero progress), and governance of specific decisions (such as carbon credit approvals). The inclusion of climate-related disclosures aligned to TCFD and remuneration-related ESG KPIs in Board discussions also indicates that the Board considers how climate-related matters are reflected in external reporting and performance management.
+These agenda items and discussions evidence that climate-related matters are brought to the Board for consideration in connection with strategic planning and performance oversight.
 
-### How the Board is informed about climate-related risks and opportunities
+### 2.2 How the Board is informed about climate-related risks and opportunities
 
-Climate risk information is reported to the Board on a semi-annual basis. This reporting cadence provides a structured mechanism for the Board to receive updates on climate-related risks and opportunities.
+Climate risk reporting is provided to the Board on a semi-annual basis. This reporting cadence provides a recurring mechanism for the Board to receive information relevant to climate-related risks and opportunities and to support Board discussion of climate-related topics.
 
-In addition to this defined reporting cycle, climate-related matters were also addressed through Board agenda items during the period, as reflected in the climate-related topics recorded in Board meeting discussions. In practice, this means the Board’s oversight is supported both by periodic climate risk reporting and by the inclusion of climate-related items within the Board’s broader agenda.
+### 2.3 Committee structure supporting Board oversight
 
-### Management governance: committees and oversight
+An ESG committee is in place. Across the periods covered by the governance metrics, the ESG committee met 5 times per year, increasing to 6 and then to 7 meetings per year.
 
-Management’s role in governance processes, controls and procedures for sustainability-related and climate-related matters is supported through management-level committees. The management governance structures identified for these matters include:
+The ESG committee meeting cadence supports Board oversight by providing a forum for recurring consideration of sustainability-related and climate-related matters, including matters that are subsequently discussed at Board level.
+
+### 2.4 Management governance and committee roles
+
+Management oversight of sustainability-related and climate-related matters is delegated to a management-level committee. Across the periods covered by the governance metrics, the management committee identified for this role was:
 
 - Group Sustainability Committee;
 - ESG Executive Committee; and
 - Climate Risk Management Committee.
 
-An ESG committee is also in place. During the period covered by the governance data, the ESG committee met five times.
+These management-level committees provide a defined governance mechanism through which sustainability-related and climate-related matters are monitored and overseen within management, and through which matters can be prepared for escalation and discussion at Board level.
 
-Together, these committees provide a management-level structure through which sustainability-related and climate-related matters can be monitored, managed and overseen. The existence of multiple committees indicates that management governance is organised to address sustainability and climate topics through dedicated forums, with meeting activity evidenced for the ESG committee.
+### 2.5 Integration with enterprise risk management
 
-### Integration with enterprise risk management
+Climate-related risks and opportunities are integrated within enterprise risk management.
 
-Climate-related and sustainability-related matters are integrated into the entity’s enterprise risk management processes. This integration supports governance by linking climate-related and sustainability-related considerations with established risk management processes and related policies.
+### 2.6 Consideration in major transactions (climate check)
 
-### Major transactions: climate-related check
+A climate check is applied for major transactions.
 
-A climate check is applied for major transactions. This provides a mechanism for climate-related considerations to be taken into account when decisions on major transactions are made.
+### 2.7 Competence, skills development and capability for oversight
 
-### Skills and competence
+Board capability for climate oversight is reflected in the reported proportion of the Board having climate-related expertise. Across the periods covered by the governance metrics, the reported proportion increased from 33.5% to 35.5% and then to 37.5%.
 
-The Board’s climate-related competence is reflected in the proportion of directors identified as having climate expertise. During the period covered by the governance data, 33.5% of directors were identified as having climate expertise.
+A skills development programme supports the development of skills and competencies relevant to sustainability-related and climate-related oversight.
 
-A skills development programme is in place. This supports the development of skills and competencies relevant to oversight of strategies designed to respond to climate-related and broader sustainability-related risks and opportunities.
+### 2.8 Targets, progress monitoring and remuneration linkage
 
-### Remuneration linkage
+Board discussions included monitoring of net zero progress and consideration of executive remuneration and ESG key performance indicators.
 
-Climate-related considerations are reflected in executive remuneration through a quantified linkage. During the period covered by the governance data, 8.7% of executive remuneration was linked to climate-related considerations.
+Across the periods covered by the governance metrics, the proportion of executive remuneration linked to climate-related measures was 8.7%, increasing to 15.3% and then 15.1%.
 
-Board meeting records also show that executive remuneration ESG KPIs were among the climate-related topics discussed. This indicates that remuneration-related performance measures connected to ESG considerations formed part of the Board’s climate-related oversight discussions during the period.
+### 2.9 Selected governance indicators (climate)
+
+The following indicators summarise selected aspects of climate-related governance reflected in the governance metrics:
+
+- **Board climate expertise (reported):** 37.5%.
+- **ESG committee meeting frequency:** 7 meetings per year.
+- **Climate risk reporting to the Board:** semi-annual.
+- **Enterprise risk management integration:** climate-related risks and opportunities are integrated within enterprise risk management.
+- **Major transactions:** a climate check is applied for major transactions.

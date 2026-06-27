@@ -6,174 +6,151 @@
     "missing_supported_requirements": [
       {
         "requirement_id": "IFRS_S1_29_C04",
-        "gap_summary": "Does not disclose current-period effects of climate-related risks/opportunities on financial position, financial performance and cash flows, nor anticipated effects across short/medium/long term in a way that is clearly tied to financial planning (only scenario revenue-at-risk and qualitative statements; no linkage to FS line items/cash flows for the reporting period).",
-        "evidence_expected_from_payload": [
-          "financial_summary[*].total_revenue_meur",
-          "financial_summary[*].net_profit_meur",
-          "financial_summary[*].total_assets_meur",
-          "financial_summary[*].climate_capex_meur",
-          "financial_summary[*].climate_opex_meur",
-          "financial_summary[*].tier1_capital_meur"
-        ]
+        "reason": "Only general financial capacity indicators (assets, Tier 1 capital, revenue, net profit blanks) and qualitative statements are provided; the section does not clearly disclose current-period effects of climate-related risks/opportunities on financial position/performance/cash flows and anticipated effects across short/medium/long term in a way that is explicitly linked to those risks/opportunities and financial planning."
       },
       {
         "requirement_id": "IFRS_S2_9_C04",
-        "gap_summary": "Same gap as IFRS_S1_29_C04 but for climate-specific requirement: missing clear disclosure of effects on financial position/performance/cash flows for the reporting period and anticipated effects over short/medium/long term considering financial planning.",
-        "evidence_expected_from_payload": [
-          "financial_summary[*].total_revenue_meur",
-          "financial_summary[*].net_profit_meur",
-          "financial_summary[*].total_assets_meur",
-          "financial_summary[*].climate_capex_meur",
-          "financial_summary[*].climate_opex_meur",
-          "financial_summary[*].tier1_capital_meur"
-        ]
+        "reason": "Same gap as IFRS_S1_29_C04 but for climate-specific requirement: lacks explicit current-period and anticipated financial effects on financial position/performance/cash flows attributable to climate-related risks/opportunities, beyond generic capital-buffer statements and capex/opex totals."
       },
       {
         "requirement_id": "IFRS_S1_34_C01",
-        "gap_summary": "Missing disclosure of current financial effects for the reporting period attributable to sustainability/climate risks and opportunities (no quantified or clearly attributable impacts on financial position/performance/cash flows for the period).",
-        "evidence_expected_from_payload": [
-          "financial_summary[*].reporting_year",
-          "financial_summary[*].total_revenue_meur",
-          "financial_summary[*].net_profit_meur",
-          "financial_summary[*].total_assets_meur"
-        ]
+        "reason": "Does not disclose how climate-related risks/opportunities affected financial position, financial performance and cash flows for the reporting period (current financial effects). Tables show overall financials and climate capex/opex but not the climate-attributable effects."
       },
       {
         "requirement_id": "IFRS_S1_35_C01",
-        "gap_summary": "Missing quantitative and qualitative information about how sustainability-related risks/opportunities affected financial position, financial performance and cash flows for the reporting period (section provides scenario metrics but not reporting-period effects).",
-        "evidence_expected_from_payload": [
-          "financial_summary[*].total_revenue_meur",
-          "financial_summary[*].net_profit_meur",
-          "financial_summary[*].total_assets_meur"
-        ]
-      },
-      {
-        "requirement_id": "IFRS_S1_30_C03",
-        "gap_summary": "Uses 'short/medium/long term' labels but does not define them (e.g., years) nor link definitions to planning horizons used for strategic decision-making.",
-        "evidence_expected_from_payload": [
-          "climate_scenarios[*].horizon",
-          "climate_scenarios[*].resilience_assessment"
-        ]
-      },
-      {
-        "requirement_id": "IFRS_S2_10_C04",
-        "gap_summary": "Same as IFRS_S1_30_C03: missing definitions of short/medium/long term and linkage to planning horizons.",
-        "evidence_expected_from_payload": [
-          "climate_scenarios[*].horizon",
-          "climate_scenarios[*].resilience_assessment"
-        ]
+        "reason": "Quantitative/qualitative information about how sustainability-related risks/opportunities affected financial position/performance/cash flows for the reporting period is not provided (only overall financials and climate capex/opex)."
       },
       {
         "requirement_id": "IFRS_S1_35_C05",
-        "gap_summary": "Does not describe planned sources of funding to implement the climate strategy (no funding mix, instruments, or internal/external funding sources).",
-        "evidence_expected_from_payload": [
-          "financial_summary[*].total_revenue_meur",
-          "financial_summary[*].net_profit_meur",
-          "metadata.pcaf_methodology.sovereign_bonds_note"
-        ]
+        "reason": "Planned sources of funding to implement the climate strategy are not described (e.g., funding mix, internal capital allocation, debt/green bonds, etc.)."
       },
       {
-        "requirement_id": "IFRS_S1_33_C02",
-        "gap_summary": "Requirement expects progress against plans disclosed in previous periods; the section does not provide prior-period plan references or progress metrics (despite payload indicating target progress fields exist).",
-        "evidence_expected_from_payload": [
-          "reporting_kpis.target_summary[*].target_progress_pct_2024",
-          "climate_risk_register[*].changed_since_prior_period"
-        ]
+        "requirement_id": "IFRS_S1_30_C03",
+        "reason": "Time-horizon labels are referenced, but the section does not explain how 'short/medium/long term' are defined (e.g., years) nor how they link to planning horizons used for strategic decision-making."
+      },
+      {
+        "requirement_id": "IFRS_S2_10_C04",
+        "reason": "Same as IFRS_S1_30_C03 for climate-specific requirement: no definitions (e.g., years) and no linkage to strategic planning horizons."
       }
     ],
     "invented_missing_requirements": [],
     "missing_data_language_found": false,
     "required_fixes": [
-      "Add explicit definitions of short, medium and long term (e.g., year ranges) and explain how these align with internal strategic planning horizons (budget cycle, ICAAP/ILAAP, credit planning, etc.).",
-      "Disclose current-period (reporting period) financial effects of climate-related risks and opportunities on financial position, financial performance and cash flows, using quantitative and qualitative information and clearly attributing impacts (or explaining why attribution is not possible without using 'missing/unavailable data' language).",
-      "Strengthen anticipated financial effects across short/medium/long term by linking scenario outputs (e.g., revenue-at-risk, capital consumption) to expected impacts on financial statements/cash flows and describing how these are incorporated into financial planning (capital planning, provisioning, pricing, portfolio rebalancing).",
-      "Include planned sources of funding to implement the strategy (e.g., internal capital generation, wholesale funding, green/sustainability-linked issuance, reallocations) and how funding supports planned actions.",
-      "Add progress against previously disclosed plans/targets (quantitative and qualitative), using the available target progress and 'changed since prior period' evidence indicated in the payload."
+      "Add explicit definitions for short, medium and long term (e.g., year ranges) and explain how these align with the bank’s strategic/financial planning horizons (to satisfy IFRS_S1_30_C03 and IFRS_S2_10_C04).",
+      "Disclose current-period financial effects attributable to climate-related risks and opportunities on financial position, financial performance and cash flows (e.g., impairments/expected credit losses linked to climate drivers, valuation changes, provisions, revenue impacts, costs), with qualitative explanation and quantitative amounts where practicable (to satisfy IFRS_S1_34_C01 / IFRS_S1_35_C01 and support IFRS_S1_29_C04 / IFRS_S2_9_C04).",
+      "Disclose anticipated financial effects over short/medium/long term that are clearly connected to identified climate risks/opportunities and to financial planning (e.g., expected changes in credit losses, collateral values, capital needs, funding costs, revenues), including key assumptions and how they are incorporated into planning (to satisfy IFRS_S1_29_C04 and IFRS_S2_9_C04).",
+      "Describe planned sources of funding to implement the climate strategy/transition actions (e.g., internal capital, retained earnings, debt issuance/green bonds, securitisation, other funding programmes) (to satisfy IFRS_S1_35_C05)."
     ],
-    "summary": "The section provides a robust qualitative description of climate-related risks/opportunities, transmission channels, strategic responses, trade-offs and scenario analysis/resilience. However, it falls short on several supported IFRS S1/S2 Strategy requirements that are expected to be evidenced by the payload: (i) defining short/medium/long term and linking to planning horizons; (ii) disclosing current-period financial effects; (iii) clearly connecting anticipated effects to financial planning; (iv) planned sources of funding; and (v) progress against prior-period plans/targets. No invented 'missing data' statements were found."
+    "summary": "The Strategy section provides substantial disclosure on climate-related risks and opportunities, value-chain exposure, scenario analysis and qualitative resilience conclusions. However, it falls short on (i) defining time horizons and linking them to planning horizons, (ii) disclosing climate-attributable current-period financial effects, (iii) clearly presenting anticipated financial effects across time horizons tied to financial planning, and (iv) planned sources of funding for the strategy. No invented 'missing data' language was detected."
   },
   "evidence_judge": {
     "approved": false,
-    "evidence_score_0_to_10": 6,
+    "evidence_score_0_to_10": 4,
     "unsupported_claims": [
       {
-        "claim_text": "Our strategic response focuses on managing the identified risk transmission channels and pursuing climate-related opportunities that are relevant to our financing and advisory activities.",
-        "issue": "No evidence sources are provided in the claims register for this statement (STR-013). It is a strategic-intent assertion that is not tied to documented actions, plans, or governance artifacts in the provided evidence items."
+        "location": "2.4.4 Table 2.1",
+        "claim": "Revenue-at-risk (EUR million) under NGFS v4 Net Zero 2050 (Medium term) equals 9,214.0 for all banking book exposures across DE, FR, IT, NL, ES.",
+        "why_unsupported": "No corresponding claim entry/evidence is provided in the claims_register for this numeric value/table. The register is truncated, but within the visible claims there is no supported numeric evidence path for 9,214.0 EURm revenue-at-risk."
+      },
+      {
+        "location": "2.5.1 Table 2.2",
+        "claim": "Climate capex/opex: 2022 capex 322.2, opex 420.32; 2023 capex 373.91, opex 509.21 (EUR million).",
+        "why_unsupported": "No claim entries/evidence sources are provided for these capex/opex figures in the visible claims_register."
+      },
+      {
+        "location": "2.5.2 Table 2.3",
+        "claim": "Selected financial indicators: Total assets, Tier 1 capital, total revenue, net profit for 2022–2024 (including 2023 Tier 1 capital 143,979.2; 2024 total assets 850,000.0; etc.).",
+        "why_unsupported": "No claim entries/evidence sources are provided for these financial statement figures in the visible claims_register; additionally net profit is blank for 2023 and 2024, making the table internally incomplete."
+      },
+      {
+        "location": "2.6 Table 2.4",
+        "claim": "Financed emissions (2024) = 35,973,167.6878965 tCO2e; emissions intensity target = 20.0 tCO2e per EUR million; target progress: Scope 1&2 40.0%, Scope 3 Cat 15 25.0%, Net zero (all scopes) 13.3%.",
+        "why_unsupported": "No claim entries/evidence sources are provided for these KPI values/targets/progress percentages in the visible claims_register."
       }
     ],
     "questionable_claims": [
       {
-        "claim_text": "Under orderly transition scenarios, the portfolio demonstrates adequate resilience.",
-        "issue": "Conclusory qualitative judgement ('adequate') without defined criteria/thresholds or supporting metrics in the section; evidence paths cited are scenario assessments but the draft does not disclose what 'adequate' means."
+        "location": "2.2.1 Risk rating methodology",
+        "claim": "5×5 risk matrix classifications: low (below 3), medium (3–6), high (8–12), critical (15–25).",
+        "why_questionable": "Even if sourced from metadata, the banding leaves gaps (score 7 and 13–14) and is ambiguous about whether boundaries are inclusive/exclusive. This is more a definitional/quality issue than pure evidentiary support."
       },
       {
-        "claim_text": "Under disorderly transition scenarios, near-term resilience is acceptable but medium-term capital consumption from stranded asset impairments is material; under the most adverse disorderly assumptions, additional capital buffers may be required post-2030.",
-        "issue": "Uses undefined qualitative terms ('acceptable', 'material') and implies capital planning impacts without quantification or linkage to capital metrics; 'post-2030' timing is asserted without disclosed assumptions/results."
+        "location": "2.4.2 Current Policies methodology",
+        "claim": "RCP 8.5 projections are used for a 2050 horizon analysis within NGFS v4 Current Policies (hot house world).",
+        "why_questionable": "Methodologically plausible but potentially inconsistent/unclear because NGFS scenarios are not always expressed as RCPs; needs clearer explanation of how RCP 8.5 is mapped/used alongside NGFS hazard layers (even if internally supported)."
       },
       {
-        "claim_text": "Under hot house world scenarios, physical risk losses represent the dominant long-term resilience challenge.",
-        "issue": "Dominance claim is comparative but no quantified physical loss estimates or comparison versus transition losses are provided in the section."
+        "location": "2.4.3 Orderly transition conclusions",
+        "claim": "Transition risk losses remain within Pillar 2 capital buffer thresholds.",
+        "why_questionable": "Qualitative assertion referencing internal thresholds without disclosing the thresholds or quantified losses; may be supported internally but is not verifiable from the section as written."
       },
       {
-        "claim_text": "Revenue-at-risk is quantified as EUR 9,689.2 million (NGFS v4 Net Zero 2050) and EUR 9,214.0 million (medium-term horizon application).",
-        "issue": "Quantitative outputs are presented without sufficient definition (period, baseline, scope, confidence/uncertainty, and clear scenario/horizon linkage for the 'medium-term' figure)."
-      },
-      {
-        "claim_text": "We use a target intensity of 20.0 tCO2e per EUR million as an orientation point for portfolio monitoring.",
-        "issue": "Metric is stated but scope (which portfolio), calculation methodology, and baseline are not disclosed in the section."
-      },
-      {
-        "claim_text": "Time horizons are referenced as short term, medium term and long term across risks and opportunities.",
-        "issue": "Horizon labels are used but not defined (what time ranges they correspond to), reducing interpretability."
+        "location": "2.4.1 Scope of analysis",
+        "claim": "Scenario analysis applies to all banking book exposures across DE, FR, IT, NL and ES.",
+        "why_questionable": "“All exposures” is absolute; the section does not state exclusions, coverage %, or treatment of off-balance-sheet/derivatives. Even if supported internally, it is easy to overstate without clarifying scope boundaries."
       }
     ],
     "required_fixes": [
-      "For the strategic-response statement (STR-013), either (a) add specific, evidenced actions/commitments (e.g., named policies, limits, monitoring processes, resource allocation) and cite supporting evidence, or (b) rephrase as an aspiration and clearly label it as forward-looking without implying implemented capability.",
-      "Define 'short term', 'medium term', and 'long term' (e.g., year ranges) and align them to planning horizons used in strategy and scenario analysis.",
-      "For resilience conclusions ('adequate', 'acceptable', 'material', 'dominant'), add objective criteria/thresholds and/or supporting quantitative indicators (e.g., loss ranges, capital impact, concentration metrics) or soften language to reflect uncertainty.",
-      "For revenue-at-risk figures, disclose at minimum: measurement period, baseline/reference case, scope (portfolio/geographies), key assumptions, and explicitly link each figure to a named scenario and horizon.",
-      "For the financed-emissions intensity orientation (20.0 tCO2e/EURm), specify scope (which exposures), calculation method (e.g., PCAF approach), and baseline/reference year."
+      {
+        "fix": "Add explicit evidence references (or footnotes/appendix cross-references) for all numeric tables (2.1, 2.2, 2.3, 2.4) including data source systems, reporting perimeter, and calculation methodology for revenue-at-risk, capex/opex tagging, financial indicators, and financed emissions/target progress."
+      },
+      {
+        "fix": "For Table 2.3, either populate net profit for 2023 and 2024 or remove the column/years; ensure consistency with audited financial statements and specify whether 2024 is actual or forecast."
+      },
+      {
+        "fix": "For revenue-at-risk (Table 2.1), define the metric (gross vs net revenue, baseline, time horizon definition, confidence/uncertainty), and provide a reconciliation or explanation of why the value is plausible relative to total revenue."
+      },
+      {
+        "fix": "Clarify the risk-matrix banding to remove gaps (define where score 7 and 13–14 fall) and specify inclusive/exclusive boundaries."
+      },
+      {
+        "fix": "Clarify how RCP 8.5 is used within NGFS v4 Current Policies physical risk analysis (mapping approach, hazard dataset/version, downscaling method, and limitations)."
+      },
+      {
+        "fix": "Where absolute statements are made (e.g., “all exposures”, “within Pillar 2 thresholds”), add qualifiers, scope notes, or quantitative context (coverage %, threshold level, loss range) to avoid unverifiable claims."
+      }
     ],
-    "summary": "The section is largely consistent with the provided risk/opportunity and scenario-methodology evidence, but it contains at least one unsupported strategic-intent claim (STR-013) with no evidence sources. Several other statements are not strictly unsupported but are questionable due to undefined qualitative terms, missing horizon definitions, and insufficient context for quantitative metrics (revenue-at-risk and intensity target)."
+    "summary": "The narrative/process claims are largely mapped to internal registers/scenario notes in the claims_register, but multiple high-stakes quantitative disclosures in the section (revenue-at-risk, capex/opex, financial indicators, financed emissions/targets/progress) lack visible claim entries and evidence links, making them unsupported as presented. Several additional statements are potentially supported internally but are drafted in absolute or ambiguous terms and need clarification to be verifiable and decision-useful."
   },
   "style_judge": {
     "approved": false,
     "style_score_0_to_10": 7.4,
     "voice_issues": [
-      "Voice is generally consistent first-person plural and neutral, but some phrasing is more narrative than standards-oriented (e.g., 'We identify wildfire exposure in parts of the portfolio.' could be reframed with disclosure verbs such as 'assess' or 'monitor').",
-      "Forward-looking elements are mostly cautious, but some statements could more clearly distinguish current state vs. forward-looking intent (e.g., 'Green loan growth and client engagement on transition plans are expected to progressively reduce high-carbon sector concentration' could explicitly label this as an expectation or scenario-based outcome)."
+      "Voice is generally consistent and neutral, but it defaults to third-person ('the bank') throughout; the style guide allows either first-person plural or third-person, but expects a deliberate, consistent choice with first-person for accountability statements. There are few explicit accountability statements, which weakens alignment with the preferred pattern.",
+      "Some phrasing is more descriptive than standards-oriented (e.g., 'The bank identifies climate-related opportunities that can support revenue growth and client relevance'), which leans slightly toward promotional framing rather than purely analytical disclosure language."
     ],
     "structure_issues": [
-      "Headings are not numbered and are not explicitly aligned to the IFRS pillar numbering convention requested in the global style guide (e.g., '2. Strategy', '2.1 Strategic context and boundary').",
-      "Subsections generally lack one-sentence purpose statements at the start explaining what is being disclosed and why it matters (e.g., 'Climate-related risks and opportunities', 'Scenario analysis and resilience').",
-      "The layered structure is only partially followed: there is narrative and some bullets, but no central organizing table or matrix (e.g., topic-by-topic mapping of risks/opportunities to value chain, time horizons, and financial statement areas).",
-      "Paragraphs are mostly single-idea but some blocks combine multiple mechanisms (e.g., 'Effects on the business model and value chain' paragraphs mix several risk channels and time horizons in one block).",
-      "Major subsections do not consistently close with connectivity sentences linking to other sections (e.g., Governance, Risk Management, Metrics and Targets) or to financial statements.",
-      "Scenario analysis content is highly detailed and methodology-heavy for a Strategy section; some of this belongs in a dedicated methodology appendix or Risk Management section, with Strategy focusing more on how results inform decisions and resource allocation."
+      "Subsections mostly open with purpose statements, but several do not clearly follow the prescribed progression (context → structured artifact → brief interpretation and connectivity). For example, 2.2 and 2.3 lack explicit closing connectivity sentences linking back to materiality assessment or other pillars.",
+      "The section is heavily narrative in parts (especially 2.2 and 2.4) and does not fully exploit tables or matrices as primary organizing devices for comparability, as recommended in the section_style (e.g., no consolidated matrix mapping risks/opportunities to value-chain segments and financial statement areas).",
+      "Some subsections combine 'what' and 'how' without clear separation (e.g., 2.4.2 mixes scenario selection principles with detailed methodology in one block, rather than separating principles from mechanics).",
+      "The layered structure is partially followed, but several paragraphs contain multiple ideas (e.g., 2.4.2 scenario descriptions combine scenario definition, methodology, and financial impact channels in single bullets), which reduces scanability.",
+      "Connectivity to other IFRS pillars and to financial statements is limited; cross-references are present but not consistently framed using the placeholder style (e.g., 'Refer to [Section: X]')."
     ],
     "wording_issues": [
-      "Some sentences are relatively long and multi-clause, which reduces scanability (e.g., 'Technology transition risk in automotive value chains can arise where rapid electrification strands internal-combustion vehicle manufacturers and suppliers in the lending book.').",
-      "The section uses several technical references (e.g., 'NGFS v4', 'RCP 8.5', 'REMIND-MAgPIE') without brief definitional context, which may not align with the guidance to define key terms before first use.",
-      "A few phrases are closer to narrative than standards-oriented disclosure language (e.g., 'We identify the following opportunities as relevant to our strategy' could be 'We identify and monitor the following climate-related opportunities as relevant to our strategy').",
-      "The section does not clearly separate current-period facts, estimates/judgements, and forward-looking intentions with explicit labels; for example, scenario loss figures are presented without clarifying that they are modelled estimates under specific assumptions.",
-      "Some repetition could be streamlined (e.g., physical and transition risk descriptions appear both under 'Principal climate-related risks' and again under 'Effects on the business model and value chain' with similar wording)."
+      "Some sentences are relatively long and multi-clause (e.g., scenario descriptions in 2.4.2), which could be split for clarity and to better match the short-to-medium sentence guidance.",
+      "A few phrases verge on promotional or outcome-focused language (e.g., 'can support revenue growth and client relevance', 'portfolio demonstrates adequate resilience') without immediately anchoring in process evidence or cautious modality.",
+      "The distinction between current-period facts, estimates, and forward-looking intentions is not always explicit; for example, resilience conclusions and revenue-at-risk indicators are presented without clear labels as to whether they are estimates, scenario outputs, or forward-looking expectations.",
+      "Some terminology is more technical than necessary for a strategy section (e.g., detailed references to specific integrated assessment models and RCP 8.5) and may exceed the 'avoid excessive technical detail unless necessary' guidance.",
+      "Controlled vocabulary is mostly respected, but there are occasional unqualified uses of 'resilience' and 'adequate resilience' without clarifying that these are scenario-based assessments rather than guarantees."
     ],
     "table_figure_issues": [
-      "No tables or figures are used, despite the style guide preference for central matrices and mapping tables in Strategy sections.",
-      "Because there are no tables or figures, there are no captions or references; this does not meet the guidance that tables/figures should be numbered and referenced where used.",
-      "Opportunities, risks, and scenario outputs would benefit from at-a-glance tabular presentation (e.g., risk/opportunity by value-chain segment, time horizon, and financial statement linkage), which is currently missing."
+      "Tables are numbered and captioned (Tables 2.1–2.4) and generally referenced in the narrative, which aligns with the style guide; however, the narrative references could be more explicit about how users should interpret each table (e.g., brief interpretation paragraphs after each table).",
+      "Table 2.4 is effectively split into two separate tables (one for indicators and one for target progress) without a clear combined caption or explanation; this may confuse readers and is not fully aligned with the guidance to keep tables compact and clearly scoped.",
+      "Numeric cells in Tables 2.3 and 2.4 contain blanks for some years/metrics, which violates the 'never leave blanks' rule and the missing data protocol; standardized status labels should be used instead.",
+      "Tables do not provide traceability metadata (definition, boundary, source type, internal source location, mapping to pillar/section) as recommended in the evidence_and_traceability_rules for metrics and targets.",
+      "There are no figures or conceptual diagrams anchoring the value-chain or strategic themes, despite the figure_usage guidance encouraging lightweight conceptual visuals in long Strategy sections."
     ],
     "required_fixes": [
-      "Introduce numbered headings aligned to IFRS pillars and subsections (e.g., '2. Strategy', '2.1 Strategic context and boundary', '2.2 Climate-related risks and opportunities', '2.3 Effects on the business model and value chain', '2.4 Scenario analysis and resilience', '2.5 Financial planning, resource allocation and monitoring indicators').",
-      "Add a one-sentence purpose statement at the start of each subsection explaining what is being disclosed and how it supports understanding of strategy and financial effects.",
-      "Rebalance the 'Scenario analysis and resilience' subsection to focus on how scenario results inform strategic decisions, risk appetite, and resource allocation, and move or summarise highly technical methodology details to a separate methodology or Risk Management section.",
-      "Introduce at least one central table or matrix that maps principal climate-related risks and opportunities to: (a) value-chain segments, (b) time horizons, and (c) potential financial statement areas/line items, with concise cell text and a numbered caption referenced in the narrative.",
-      "Clarify the distinction between current-period facts, modelled estimates, and forward-looking intentions, especially where scenario results and resilience assessments are discussed; use cautious modality and explicit labels (e.g., 'modelled estimate', 'scenario-based projection').",
-      "Tighten and split longer sentences into shorter, single-idea statements, and ensure parallel structure in lists and bullets.",
-      "Add brief definitional context for technical scenario and model references (e.g., NGFS, RCP, integrated assessment models) or cross-reference to a definitions/methodology section.",
-      "Close major subsections with short connectivity sentences that link to related sections (e.g., Governance, Risk Management, Metrics and Targets) and to financial statement disclosures via generic placeholders.",
-      "Ensure wording consistently uses standards-oriented verbs (e.g., 'assess', 'monitor', 'manage', 'integrate') and avoids narrative or promotional phrasing, while keeping the existing neutral tone."
+      "Apply the missing data protocol to all incomplete table cells (e.g., Net profit for 2023 and 2024 in Table 2.3, any other blank cells). Replace blanks with standardized status labels such as 'not currently available', 'not reported for the period', or 'not applicable', and add brief narrative explaining what is missing, why, interim approach, limitations, and planned enhancement direction.",
+      "Add short interpretive and connectivity paragraphs immediately after each major table (Tables 2.1–2.4) that (a) explain what the table shows, (b) clarify whether values are current-period facts, scenario outputs, or estimates, and (c) link to relevant sections or financial statement areas using the placeholder cross-reference style (e.g., 'Refer to [Section: Metrics and Targets]').",
+      "Clarify the status of scenario-based statements and resilience conclusions by explicitly labelling them as scenario outputs or estimates (e.g., 'Under the NGFS v4 Net Zero 2050 scenario, the analysis indicates that...') and using cautious modality ('is expected to', 'could', 'may') to avoid implying guarantees.",
+      "Reduce technical detail in 2.4.2 to the level necessary for understanding the strategy. Separate high-level scenario selection principles ('what and why') from methodological mechanics ('how') using subheadings or short paragraphs, and move highly technical model references to a methodology appendix or footnote if needed.",
+      "Strengthen the layered structure and single-idea paragraph discipline by: (a) splitting multi-topic paragraphs (especially in 2.2 and 2.4) into shorter, topic-led paragraphs; (b) ensuring each subsection opens with a clear purpose statement; and (c) closing each major subsection (2.1–2.6) with a brief connectivity sentence linking back to materiality assessment outputs, governance, or financial statements.",
+      "Enhance the use of structured artifacts by introducing at least one summary matrix or table that maps key climate-related risks and opportunities to value-chain segments, time horizons, and potential financial statement areas, in line with the section_style preference for tables as primary organizing devices.",
+      "Review wording to remove or temper any promotional or outcome-focused phrasing (e.g., 'support revenue growth and client relevance', 'portfolio demonstrates adequate resilience') and replace with standards-oriented, evidence-based language (e.g., 'the bank identifies potential revenue opportunities from...', 'scenario analysis indicates that losses remain within... under the assumptions applied').",
+      "Ensure consistent use of controlled vocabulary and cautious resilience language by explicitly stating that resilience assessments are scenario-based and subject to uncertainty, and by avoiding unqualified statements that could be interpreted as guarantees.",
+      "Consider adding a brief statement on voice and accountability (e.g., 'We assess', 'We monitor') in key strategic subsections to align with the preferred use of first-person plural for accountability, while maintaining overall consistency of point of view across the section."
     ],
-    "summary": "The section is broadly aligned with the desired formal, neutral, and analytical voice and uses first-person plural consistently. It clearly identifies climate-related risks, opportunities, and scenario-based resilience themes, and it avoids promotional language. However, it does not fully follow the prescribed layered structure: headings are not numbered, subsections lack explicit purpose and connectivity sentences, and there are no organizing tables or figures. Scenario analysis content is detailed but not always clearly distinguished as modelled estimates, and some methodology detail may be better placed elsewhere. With structural refinements, clearer labelling of current vs. forward-looking content, and the addition of at-a-glance tables, the section can be brought into full compliance with the approved authoring style."
+    "summary": "The Strategy section is broadly aligned with the approved authoring style: it is formal, neutral, analytically framed, and uses structured headings, bullets, and numbered tables. Scenario analysis and resilience are described in a standards-oriented manner, and the value-chain framing is clear. However, the section does not fully meet the style rubric due to missing-data handling in tables, limited interpretive and connectivity paragraphs, some overly technical methodology detail, and occasional promotional or unqualified resilience wording. To be approved, the section needs explicit missing-data labelling and explanation, clearer distinction between current facts and scenario-based estimates, stronger layered structure with interpretive links around tables, and minor wording and structure refinements to reinforce IFRS-style, decision-useful disclosure. With these targeted revisions, the section should reach full approval under the style guide."
   }
 }

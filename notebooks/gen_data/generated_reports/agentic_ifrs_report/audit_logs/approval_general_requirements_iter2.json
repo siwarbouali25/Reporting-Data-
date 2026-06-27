@@ -4,62 +4,78 @@
   "scores": {
     "ifrs_coverage": 6.0,
     "evidence": 6.0,
-    "style": 3.6
+    "style": 3.8
   },
   "failures": [
     {
       "judge": "ifrs_coverage_judge",
       "score": 6.0,
       "required_fixes": [
-        "Remove or qualify the statement that the sustainability-related risks and opportunities described are climate-related, or add an explicit statement that the disclosures cover all sustainability-related risks and opportunities that could reasonably be expected to affect the bank’s prospects (and clarify if this section/report is limited to climate only).",
-        "Add an explicit statement that the sustainability-related financial disclosures are for the same reporting entity as the related financial statements.",
-        "Identify the specific financial statements to which these sustainability-related financial disclosures relate (e.g., consolidated financial statements for the year ended 31 December 2024).",
-        "Add a statement explaining how information is connected to (or cross-referenced with) the related financial statements/other GPFR, including where users can find related amounts and how consistency is maintained.",
-        "Add an explicit statement that the reporting currency used in sustainability disclosures is the same as the presentation currency of the related financial statements (or explain any permitted exception).",
-        "Add a statement addressing consistency of data and assumptions with those used in the related financial statements (to the extent possible), and explain key differences if any.",
-        "Add disclosures identifying the external standards/guidance applied in preparing the sustainability-related financial disclosures (including whether SASB Standards topics/metrics were considered and applicability conclusions), and identify the relevant industry classification used for metric selection.",
-        "If cross-referencing is used anywhere in the broader report, include the required cross-reference mechanics (what is cross-referenced, where, availability, and conditions); otherwise remove any implication of cross-referencing."
+        "Add an explicit statement identifying the related financial statements (eg, consolidated financial statements for the year ended 31 December 2024) and confirm the sustainability disclosures are for the same reporting entity (IFRS_S1_20_C01, IFRS_S1_22_C01).",
+        "Strengthen connected information by providing specific linkages/cross-references between sustainability disclosures and the financial statements (eg, where climate-related capex, provisions/impairments, or risk disclosures are reflected) rather than only stating currency consistency (IFRS_S1_21_C04).",
+        "Either (a) include the required disclosures about all sustainability-related risks and opportunities affecting prospects (beyond climate), or (b) clearly scope this section as basis-of-preparation only and ensure the full report elsewhere meets IFRS_S1_3_C01 (IFRS_S1_3_C01).",
+        "Disclose the specific external standards/guidance applied (eg, IFRS S1/S2, SASB topics considered, NGFS, PCAF) and the industry classification used to identify applicable metrics; explicitly state SASB topics/metrics were considered (or not applicable) (IFRS_S1_55_C01, IFRS_S1_58_C01, IFRS_S1_59_C01, IFRS_S1_59_C02).",
+        "Add disclosures describing how the Bank determines which IFRS Sustainability Disclosure Standard specifically applies to each risk/opportunity and how judgement is applied when none applies, including how relevance and faithful representation are ensured (IFRS_S1_56_C01, IFRS_S1_57_C01, IFRS_S1_57_C02).",
+        "State whether information is incorporated by cross-reference to other reports; if yes, include the cross-reference mechanics consistent with B45–B47 (IFRS_S1_63_C01).",
+        "State that sustainability-related financial disclosures are reported at the same time as the related financial statements (IFRS_S1_64_C01).",
+        "If relying on the 'additional information' principle, identify at least one concrete example where additional information was necessary and provided to explain effects on cash flows/access to finance/cost of capital (IFRS_S1_15_C02)."
       ]
     },
     {
       "judge": "evidence_judge",
       "score": 6.0,
       "required_fixes": [
-        "Add explicit evidence/citations (or internal cross-references) for governance facts: board reporting cadence, board size, climate expertise %, agenda %, ESG committee existence/meeting frequency, and management committee names (e.g., governance charter excerpts, minutes, or a governance data table with definitions).",
-        "Resolve year alignment issues: multiple climate_risk_register evidence items shown are for reporting_year 2023, while the section states disclosures are for 2024. Provide 2024 register extracts or clarify that the register data shown is as of 2023 and explain why used in a 2024 report.",
-        "Provide untruncated, verifiable scenario methodology evidence for NGFS v4 usage and the detailed methodological steps (IEA NZE mapping, REMIND-MAgPIE, PD sensitivity approach, jurisdictions covered).",
-        "Support quantitative metrics (capex, Tier 1 capital, operational emissions, financed emissions, carbon intensity) with evidence items/tables and definitions (scope, boundary, units, and reconciliation where relevant).",
-        "For Scope 2 market-based accounting and sovereign bond financed emissions notes, include the specific methodology references (e.g., GHG Protocol Scope 2 Guidance, PCAF standard section) and the bank’s applied denominator/attribution approach for sovereigns.",
-        "For emissions data quality percentages and 'limited assurance', disclose basis (which scopes/categories covered), calculation method, assurer identity, assurance standard, and scope/period."
+        {
+          "fix": "Add/replace evidence linkage for fiscal year-end date to bank.fiscal_year_end (or equivalent audited financial statements reference) for the statement 'fiscal year ends on 31 December 2024' (GR-005)."
+        },
+        {
+          "fix": "Add/replace evidence linkage for reporting currency to bank.reporting_currency (or financial statements note) for 'reporting currency is EUR' (GR-006)."
+        },
+        {
+          "fix": "Provide a concrete evidence source for 'green loans 10.71%' (e.g., reporting_kpis.green_loans_pct_2024 or taxonomy/portfolio KPI table) and cite it for GR-032."
+        },
+        {
+          "fix": "Clean up evidence mappings where unrelated sources are cited (e.g., remove board_climate_expertise_pct from GR-012 unless it truly supports the 69.8% agenda metric)."
+        },
+        {
+          "fix": "For Table 1 data quality percentages, cite evidence paths for each percentage (estimated/proxy/audited) or a single structured object that contains all four values."
+        },
+        {
+          "fix": "For Scope 1/2 totals, cite the specific emissions inventory/KPI fields that contain those totals (rather than scope2 reconciliation narrative or generic target progress fields), and ensure location-based vs market-based are separately evidenced."
+        }
       ]
-    },
+    }
+  ],
+  "warnings": [
     {
       "judge": "style_judge",
-      "score": 3.6,
+      "score": 3.8,
       "required_fixes": [
-        "Remove or generalize hard-coded temporal, currency, and numeric details from the basis-of-preparation narrative so that the section can function as a reusable template. For example, replace specific years, dates, currencies, jurisdictions, and metric values with configurable placeholders or describe them generically (e.g., 'the reporting period', 'the reporting currency').",
-        "Reframe organization-specific governance and committee names into generic role-based descriptions unless the report is explicitly intended to be entity-specific and such names are supported by the target payload. Where retained, ensure they are clearly presented as target-company-specific and not part of the generic style template.",
-        "Adjust references to external scenarios and frameworks (e.g., NGFS, IEA NZE, REMIND-MAgPIE) to be configurable and non-prescriptive. For example, state that 'we apply externally published climate scenarios (e.g., central bank or international agency scenarios) as configured for our context' rather than hard-coding specific scenario labels as universal content.",
-        "Introduce the layered structure in each major subsection: start with a concise purpose/basis sentence, follow with a bulleted list of key principles or mechanics, and close with a short connectivity sentence that cross-references related sections (e.g., 'Refer to [Section: Strategy]' or 'See [Appendix: Methodologies]').",
-        "Explicitly map elements of this General Requirements section to the IFRS S1/S2 pillars by adding brief subheadings or cross-reference statements (e.g., 'Connectivity to Governance disclosures', 'Linkage to Metrics and Targets') where relevant content is discussed.",
-        "Separate 'what' from 'how' more clearly in subsections such as 1.4 and 1.5 by using subheadings or short paragraphs: first describe the principle or requirement (e.g., 'We identify climate-related risks and opportunities as follows...'), then describe the mechanics (e.g., 'We apply a 5×5 risk matrix to assess likelihood and severity...').",
-        "Clarify where information reflects current-period facts versus estimates, judgements, or forward-looking analysis. For example, explicitly label scenario analysis outputs and risk ratings as estimates based on assumptions, and describe any limitations or uncertainty at a high level.",
-        "Introduce at least one compact table to summarize key basis-of-preparation elements (e.g., reporting period, reporting entity boundary, reporting currency, comparatives, assurance level) and caption it in line with the style guide (e.g., 'Table 1: Summary of general reporting parameters'). Reference the table in the narrative.",
-        "Tighten wording to use preferred disclosure verbs and more standards-oriented phrasing. Replace generic 'This subsection explains/summarises...' with formulations such as 'We disclose...', 'The bank presents...', 'This section describes...'.",
-        "Add brief connectivity sentences at the end of major subsections (e.g., 1.1, 1.4, 1.5, 1.6, 1.7, 1.8) that link to related sections or appendices using generic cross-reference placeholders, enhancing traceability and alignment with the connectivity requirement."
-      ]
+        "Remove or generalize hard-coded reporting years, specific dates, currencies, and jurisdiction lists from template-style narrative. Replace with configurable placeholders or generic wording (e.g., 'the reporting period', 'the reporting currency', 'relevant jurisdictions') to comply with the 'what_to_avoid' rules.",
+        "Refocus the section on basis of preparation and 'how to read this report' mechanics by removing or relocating detailed performance metrics (e.g., financed emissions, capex, Tier 1 capital, Scope 1/2/3 values, green loans percentage) to the dedicated Metrics and Targets section, and instead include cross-references (e.g., 'Refer to [Section: Metrics and Targets]').",
+        "Introduce or refine one-sentence purpose statements at the start of each subsection that explicitly state what the subsection describes (e.g., 'This subsection describes the reporting period applied to these sustainability-related financial disclosures.').",
+        "Add closing connectivity sentences to major subsections (e.g., 1.1, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9) that link to related sections or the financial statements using generic cross-reference placeholders (e.g., 'Refer to [Section: Governance]' or 'See [Related Financial Statements]').",
+        "Separate high-level principles from detailed mechanics in methodology subsections. For example, in 1.6, first state the overarching principles for climate-related methodologies, then use bullets or short paragraphs for specific methods (risk rating, scenario analysis, emissions accounting) without embedding detailed case examples unless clearly labelled as illustrative.",
+        "Simplify and standardize wording to use preferred standards-oriented verbs and cautious modality. Replace narrative verbs like 'explains' and 'sets out' with 'describes', 'presents', 'discloses', and ensure judgement-heavy areas use 'may', 'could', or 'is subject to'.",
+        "Review long or multi-clause sentences and split them into shorter, single-idea sentences to improve clarity and align with the sentence_length guidance.",
+        "Adjust numeric precision to a reasonable number of decimal places consistent with audit-ready practice (e.g., one or two decimals for emissions and intensity metrics) and state rounding conventions where relevant.",
+        "Enhance the data quality and estimates sections to more explicitly distinguish between current-period facts, estimates/judgements, and any forward-looking intentions, and, where any data is incomplete or estimated, follow the missing_data_language_rules (what is missing, why, interim approach, limitations, and planned enhancements).",
+        "Consider adding a compact mapping table that links each general requirement topic (e.g., reporting boundary, comparatives, connected information) to the sections where detailed disclosures appear, to improve navigability and align with the preferred table usage for this section."
+      ],
+      "advisory": true
     }
   ],
   "thresholds": {
     "ifrs_coverage_score_min": 8.0,
     "evidence_score_min": 8.0,
-    "style_score_min": 7.5
+    "style_score_min": 7.5,
+    "style_judge_mode": "advisory_after_deterministic_pass"
   },
-  "approval_policy": "V9.0 approves sections that pass deterministic/fact-lock gates and meet supported-evidence-scope judge thresholds; missing requirements remain audit-only.",
-  "version": "V9.0 senior_ifrs_writer_finalizer",
+  "approval_policy": "V9.1: deterministic evidence/fact gates are binding; style judge is advisory unless IFRS_STYLE_JUDGE_MODE=blocking.",
+  "version": "V9.4-order-safe-factlock-decimal",
   "section_generation_score": {
     "section_name": "General Requirements",
-    "overall_section_generation_score_0_to_100": 78.08,
+    "overall_section_generation_score_0_to_100": 78.28,
     "coverage_component": {
       "requirements_total": 108,
       "coverage_counts": {
@@ -69,7 +85,7 @@
       },
       "coverage_score_0_to_100": 69.91
     },
-    "judge_average_0_to_100": 52.0,
+    "judge_average_0_to_100": 52.67,
     "deterministic_gate_score_0_to_100": 100.0,
     "report_cleanliness_score_0_to_100": 100.0,
     "missing_requirements_count_flagged": 10,

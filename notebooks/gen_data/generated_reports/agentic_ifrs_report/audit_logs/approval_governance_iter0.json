@@ -3,59 +3,66 @@
   "approved": false,
   "scores": {
     "ifrs_coverage": 6.0,
-    "evidence": 6.0,
-    "style": 6.8
+    "evidence": 7.0,
+    "style": 3.8
   },
   "failures": [
     {
       "judge": "ifrs_coverage_judge",
       "score": 6.0,
       "required_fixes": [
-        "Add disclosure describing how Board responsibilities for sustainability-related and climate-related risks/opportunities are reflected in formal governance documentation (terms of reference/mandates/role descriptions/related policies) for the relevant governance body(ies)/individual(s).",
-        "Explain the process used to determine whether appropriate climate/sustainability skills and competencies are available or will be developed (eg, skills matrix, periodic assessment, training plan ownership), not only the % expertise and existence of a programme.",
-        "Describe how the Board is informed about climate/sustainability risks and opportunities (format/content/source of reporting, who prepares/presents, what is covered), in addition to frequency/cadence.",
-        "Expand on how the Board takes climate/sustainability matters into account in overseeing strategy, major transactions and risk management policies, explicitly addressing whether/how trade-offs are considered (not just stating ERM integration or a 'climate check').",
-        "Describe how the Board oversees target-setting and monitors progress towards targets, and clarify whether/how performance metrics are included in remuneration policies (beyond stating an 8.7% linkage).",
-        "For management governance, explain how oversight is exercised over the named management committees/positions (authority, reporting lines, escalation to Board) and describe the controls/procedures used and how they integrate with other internal functions."
+        "Add disclosure describing how Board/committee responsibilities for sustainability-related and climate-related risks and opportunities are reflected in formal governance documentation (terms of reference, mandates, role descriptions, or related policies).",
+        "Explain the process the Board uses to determine whether appropriate skills/competencies are available or will be developed (e.g., skills matrix, periodic assessment, training plan governance), not just the existence of expertise percentages/programme.",
+        "Explicitly state whether and how the Board considers trade-offs associated with sustainability/climate-related risks and opportunities when overseeing strategy, major transactions and risk management.",
+        "For management’s role: describe how oversight is exercised over the management-level committee (reporting lines to Board/ESG committee, cadence, decision rights, escalation, accountability).",
+        "Describe the specific controls/procedures management uses to support oversight and how they are integrated with other internal functions (e.g., risk, finance, internal audit, legal, operations), beyond a generic ERM integration statement.",
+        "Add a brief statement on how the governance disclosure avoids unnecessary duplication between sustainability-related and climate-related governance disclosures (or explicitly state that governance is integrated and therefore disclosed once)."
       ]
     },
     {
       "judge": "evidence_judge",
-      "score": 6.0,
+      "score": 7.0,
       "required_fixes": [
-        "Add explicit period definition for all point-in-time metrics (board meetings=4, board size=10, agenda%=69.8, board expertise%=33.5, remuneration link%=8.7, ESG committee meetings=5) or present a consistent period/series (e.g., latest year vs multi-year table).",
-        "Downgrade or rephrase interpretive statements that infer effectiveness/extent/purpose (e.g., 'demonstrate oversight extends across...', 'supports consistent oversight', 'enables monitoring', 'indicates active rhythm', 'supports accountability/alignment') to factual, evidence-tied wording (e.g., 'Board agendas/minutes included topics such as...'; 'climate risk reporting cadence is semi-annual').",
-        "For ERM integration and major transaction climate check, either (a) cite the specific evidence flags (erm_integration_flag / major_transactions_climate_check) and keep wording strictly to 'is integrated' / 'a climate check exists', or (b) add evidence describing the process (controls, thresholds, owners, reporting lines) if you want to claim how it operates and what it achieves.",
-        "For management committees, keep to evidenced facts (committee names exist) unless you can provide evidence of mandates, responsibilities, escalation routes, and reporting to the Board.",
-        "Align evidence mapping for carbon credit approval to include board_minutes[34] if relying on it, or ensure the claim is explicitly supported by the cited minutes only."
+        "Specify the reporting period for Board meeting frequency, or present it as a trend across periods (e.g., 4/7/8) consistent with governance[*].board_full_meeting_frequency; do not state a single fixed value unless tied to a specific period.",
+        "For ERM integration: either (a) cite and use the available ERM integration flag evidence and soften wording to match it (e.g., 'an ERM integration indicator is reported as True'), or (b) add/process evidence (risk framework, ERM procedure, risk register integration) to support the stronger 'integrated into ERM processes' statement.",
+        "For the 'climate check' on major transactions: either (a) cite and use the available boolean evidence and soften wording to 'a climate check requirement/flag exists for major transactions', or (b) add evidence of how it is applied (policy, workflow, approval checklist, examples).",
+        "Align the cited board minutes evidence for 'net zero progress' with the claim: include board_minutes[34] and/or board_minutes[35] in evidence sources or adjust the claim to only include topics evidenced by board_minutes[0]/[2]/[8].",
+        "Where the draft uses effectiveness language ('supports', 'enables', 'demonstrate'), either provide evidence (e.g., documented governance assessment, minutes showing decisions taken) or rephrase as descriptive/non-causal."
       ]
-    },
+    }
+  ],
+  "warnings": [
     {
       "judge": "style_judge",
-      "score": 6.8,
+      "score": 3.8,
       "required_fixes": [
-        "Introduce numbered headings aligned with IFRS pillars and the formatting rules (e.g., '1 Governance', '1.1 Board oversight and accountability', '1.2 Management governance and committee structures').",
-        "Revise the opening paragraph to explicitly link governance of sustainability- and climate-related matters to the business model and core operations, not only to disclosure content.",
-        "Recast interpretive or evaluative phrases into neutral, evidence-led descriptions. For example, replace 'These agenda items demonstrate that the Board’s oversight extends...' with 'These agenda items indicate that the Board oversees strategic planning, external reporting governance, and performance and accountability mechanisms.'",
-        "Shorten or split long sentences into clearer, single-idea sentences, maintaining subject–verb–object structure and using standards-oriented verbs (oversees, reviews, approves, monitors, reports, escalates).",
-        "Add at least one governance role-to-responsibility table (with a numbered caption) summarizing Board and management committees, their mandates, meeting cadence (qualitative rather than numeric), and reporting lines, and reference this table in the narrative.",
-        "Add a brief narrative reference to a governance structure figure (even if developed elsewhere) that maps information flows between Board, management committees, and operational teams, with a numbered caption for audit traceability.",
-        "Ensure each major subsection closes with a short connectivity sentence linking to related sections (e.g., Strategy, Risk Management, Metrics and Targets) using generic cross-reference placeholders (e.g., 'Refer to [Section: Strategy]').",
-        "Adjust language that implies strong maturity or outcomes (e.g., 'supports ongoing capability-building', 'supports structured management oversight') to be more cautious and process-focused, or explicitly frame them as current governance design intentions.",
-        "Where numeric details are not required by the style guide (e.g., exact meeting counts, percentages of agenda items, remuneration linkage), consider replacing with qualitative descriptors (e.g., 'regular', 'periodic', 'a defined proportion') to align with the section_style prohibition on numeric placeholders, unless these numbers are explicitly required by the reporting framework and target payload."
-      ]
+        "Rework the heading hierarchy to follow the numbered IFRS-aligned structure (e.g., '2. Governance', '2.1 Board oversight and agenda integration', '2.2 Committees and management governance') and ensure consistent use across the report.",
+        "Add an opening paragraph that explicitly links governance of sustainability- and climate-related matters to the business model, operations, and overall risk management framework, in line with the section_style purpose.",
+        "Refactor paragraphs to be single-idea and topic-led: separate Board mandate, composition, meeting cadence, agenda integration, and remuneration linkage into distinct short paragraphs or role blocks.",
+        "Introduce at least one governance architecture figure (with number and caption) showing Board, Board committees, management committees, and information flows, and reference it explicitly in the narrative.",
+        "Add a governance body-to-responsibility mapping table (with number, caption, and short narrative cells) covering Board, ESG committee, and management-level committees, and reference it in the text for traceability.",
+        "Replace interpretive or maturity-claiming phrases with more neutral, evidence-led wording and preferred governance verbs (e.g., 'oversees', 'reviews', 'monitors', 'approves') and avoid statements like 'embedded' unless supported by described processes.",
+        "Define key terms such as 'climate check', 'net zero progress', and 'ESG KPIs' at first use, or reference a definitions appendix, to comply with the sentence_rules on term definition.",
+        "Clarify multi-period metrics (e.g., proportions of remuneration and Board expertise) by indicating that they relate to different reporting periods and, where relevant, label them as current-period facts vs historical trend; avoid implying completeness or maturity without qualifiers.",
+        "Add short connectivity sentences at the end of major subsections (e.g., Board oversight, risk integration, remuneration linkage) that link to related sections such as Strategy, Risk Management, and Metrics and Targets using generic cross-reference placeholders.",
+        "Ensure wording avoids promotional or outcome-assurance language; describe controls and processes (e.g., how the climate check is applied, who reviews it, how often) rather than asserting that considerations are 'embedded'.",
+        "Introduce standardized status labels where information is not available or is under development (if applicable), following the missing_data_language_rules; explicitly state if any governance elements are 'under development' or 'not applicable' rather than implying full coverage.",
+        "Align bullet lists to parallel grammar and use lead-in sentences that explain what follows and why it matters, especially for lists of Board agenda topics and governance maturity indicators."
+      ],
+      "advisory": true
     }
   ],
   "thresholds": {
     "ifrs_coverage_score_min": 8.0,
     "evidence_score_min": 8.0,
-    "style_score_min": 7.5
+    "style_score_min": 7.5,
+    "style_judge_mode": "advisory_after_deterministic_pass"
   },
-  "approval_policy": "V9.0 approves sections that pass deterministic/fact-lock gates and meet supported-evidence-scope judge thresholds; missing requirements remain audit-only.",
-  "version": "V9.0 senior_ifrs_writer_finalizer",
+  "approval_policy": "V9.1: deterministic evidence/fact gates are binding; style judge is advisory unless IFRS_STYLE_JUDGE_MODE=blocking.",
+  "version": "V9.4-order-safe-factlock-decimal",
   "section_generation_score": {
     "section_name": "Governance",
-    "overall_section_generation_score_0_to_100": 87.97,
+    "overall_section_generation_score_0_to_100": 85.97,
     "coverage_component": {
       "requirements_total": 15,
       "coverage_counts": {
@@ -64,7 +71,7 @@
       },
       "coverage_score_0_to_100": 96.67
     },
-    "judge_average_0_to_100": 62.67,
+    "judge_average_0_to_100": 56.0,
     "deterministic_gate_score_0_to_100": 100.0,
     "report_cleanliness_score_0_to_100": 100.0,
     "missing_requirements_count_flagged": 0,

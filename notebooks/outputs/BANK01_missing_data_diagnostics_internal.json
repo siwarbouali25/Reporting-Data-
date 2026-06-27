@@ -1,0 +1,701 @@
+{
+  "bank_id": "BANK01",
+  "bank_name": "Eurolux Universal Bank AG",
+  "created_at_utc": "2026-06-27T21:39:15.281341+00:00",
+  "public_report_policy": {
+    "public_report": "suppress_missing_data_language",
+    "score_penalty_for_missing_data": false,
+    "internal_missing_data_register": true,
+    "never_impute_missing_as_zero": true,
+    "unsupported_claims_score_penalty": true,
+    "rule": "Missing fields in synthetic/source data are internal diagnostics only. Public prose should omit unsupported topics and must not say that data/evidence is missing. A section score can be reduced for unsupported claims or omitted available evidence, not for absent source fields."
+  },
+  "known_metadata_data_gaps": [
+    {
+      "section_source": "general_requirements",
+      "field": "scope1_fleet_tco2e",
+      "affected_years": [
+        2022,
+        2023
+      ],
+      "reason": "Vehicle activity data available for 2024 only.",
+      "instruction": "Report 2024 fleet Scope 1 only. State data unavailable for prior years. Do not report missing years as zero."
+    },
+    {
+      "section_source": "general_requirements",
+      "field": "scope3_travel_tco2e",
+      "affected_years": [
+        2022,
+        2023
+      ],
+      "reason": "Travel records cover 2024 only.",
+      "instruction": "Report 2024 Scope 3 Cat.6 only. Prior years not available."
+    },
+    {
+      "section_source": "general_requirements",
+      "field": "investments.counterparty_id",
+      "affected_years": [
+        2024
+      ],
+      "reason": "counterparty_id not populated in investments table. Investments attributed at bank level only.",
+      "instruction": "Note PCAF DQS 3 for investment attribution. Do not report issuer-level investment claims."
+    },
+    {
+      "section_source": "general_requirements",
+      "field": "total_loans_meur",
+      "affected_years": [
+        2022,
+        2023,
+        2024
+      ],
+      "reason": "total_loans_meur is constant across all reporting years in the available data. Loan book growth data not available.",
+      "instruction": "Carbon intensity trend reflects emission changes only, not loan book growth. Disclose this methodology limitation explicitly. Do not describe a trend in the loan book denominator."
+    }
+  ],
+  "row_level_data_gap_flags": [
+    {
+      "section_source": "metrics_targets",
+      "table": "financed_emissions_sovereign",
+      "count": 4,
+      "examples": [
+        {
+          "id": "INV00027",
+          "reason": "Missing sovereign national emissions — attribution not calculable"
+        },
+        {
+          "id": "INV00029",
+          "reason": "Missing sovereign national emissions — attribution not calculable"
+        },
+        {
+          "id": "INV00031",
+          "reason": "Missing sovereign national emissions — attribution not calculable"
+        },
+        {
+          "id": "INV00037",
+          "reason": "Missing sovereign national emissions — attribution not calculable"
+        }
+      ]
+    }
+  ],
+  "null_or_empty_value_samples": {
+    "general_requirements": [
+      {
+        "path": "general_requirements.targets[0].associated_gross_target_id",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "general_requirements.targets[0].planned_carbon_credits_pct",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "general_requirements.targets[0].planned_credit_type",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "general_requirements.targets[0].actual_progress_pct_2024",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "general_requirements.targets[0].target_progress_pct_2024",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "general_requirements.targets[1].associated_gross_target_id",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "general_requirements.targets[1].planned_carbon_credits_pct",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "general_requirements.targets[1].planned_credit_type",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "general_requirements.targets[1].actual_progress_pct_2024",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "general_requirements.targets[1].target_progress_pct_2024",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "general_requirements.targets[2].interim_milestones_json",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "general_requirements.targets[2].actual_progress_pct_2024",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "general_requirements.targets[2].target_progress_pct_2024",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "general_requirements.reporting_kpis.target_summary[0].target_progress_pct_2024",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "general_requirements.reporting_kpis.target_summary[1].target_progress_pct_2024",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "general_requirements.reporting_kpis.target_summary[2].target_progress_pct_2024",
+        "reason": "null_or_empty"
+      }
+    ],
+    "governance": [
+      {
+        "path": "governance.board_minutes[1].decision_summary",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "governance.board_minutes[2].decision_summary",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "governance.board_minutes[4].decision_summary",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "governance.board_minutes[5].decision_summary",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "governance.board_minutes[8].decision_summary",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "governance.board_minutes[11].decision_summary",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "governance.board_minutes[14].climate_topics_discussed",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "governance.board_minutes[14].decision_summary",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "governance.board_minutes[17].decision_summary",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "governance.board_minutes[19].decision_summary",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "governance.board_minutes[20].decision_summary",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "governance.board_minutes[23].decision_summary",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "governance.board_minutes[26].decision_summary",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "governance.board_minutes[27].decision_summary",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "governance.board_minutes[34].decision_summary",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "governance.climate_risk_register[1].scenario_analysis_link",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "governance.climate_risk_register[2].scenario_analysis_link",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "governance.climate_risk_register[9].scenario_analysis_link",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "governance.climate_risk_register[12].scenario_analysis_link",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "governance.climate_risk_register[15].scenario_analysis_link",
+        "reason": "null_or_empty"
+      }
+    ],
+    "strategy": [
+      {
+        "path": "strategy.climate_risk_register[1].scenario_analysis_link",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "strategy.climate_risk_register[2].scenario_analysis_link",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "strategy.climate_risk_register[9].scenario_analysis_link",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "strategy.climate_risk_register[12].scenario_analysis_link",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "strategy.climate_risk_register[15].scenario_analysis_link",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "strategy.value_chain_map[0].financial_exposure_meur",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "strategy.value_chain_map[0].scope3_category",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "strategy.value_chain_map[1].financial_exposure_meur",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "strategy.value_chain_map[2].climate_exposure_type",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "strategy.value_chain_map[2].climate_risk_description",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "strategy.value_chain_map[2].financial_exposure_meur",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "strategy.value_chain_map[2].nace_link",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "strategy.value_chain_map[3].climate_exposure_type",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "strategy.value_chain_map[3].climate_risk_description",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "strategy.value_chain_map[4].climate_exposure_type",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "strategy.value_chain_map[4].climate_risk_description",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "strategy.value_chain_map[5].climate_exposure_type",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "strategy.value_chain_map[5].climate_risk_description",
+        "reason": "null_or_empty"
+      }
+    ],
+    "risk_management": [
+      {
+        "path": "risk_management.climate_risk_register[1].scenario_analysis_link",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "risk_management.climate_risk_register[2].scenario_analysis_link",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "risk_management.climate_risk_register[9].scenario_analysis_link",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "risk_management.climate_risk_register[12].scenario_analysis_link",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "risk_management.climate_risk_register[15].scenario_analysis_link",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "risk_management.value_chain_map[0].financial_exposure_meur",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "risk_management.value_chain_map[0].scope3_category",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "risk_management.value_chain_map[1].financial_exposure_meur",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "risk_management.value_chain_map[2].climate_exposure_type",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "risk_management.value_chain_map[2].climate_risk_description",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "risk_management.value_chain_map[2].financial_exposure_meur",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "risk_management.value_chain_map[2].nace_link",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "risk_management.value_chain_map[3].climate_exposure_type",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "risk_management.value_chain_map[3].climate_risk_description",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "risk_management.value_chain_map[4].climate_exposure_type",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "risk_management.value_chain_map[4].climate_risk_description",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "risk_management.value_chain_map[5].climate_exposure_type",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "risk_management.value_chain_map[5].climate_risk_description",
+        "reason": "null_or_empty"
+      }
+    ],
+    "metrics_targets": [
+      {
+        "path": "metrics_targets.financed_emissions_equity[0].ppp_gdp_meur",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_equity[0].counterparty_id",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_equity[1].ppp_gdp_meur",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_equity[1].counterparty_id",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_equity[2].ppp_gdp_meur",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_equity[2].counterparty_id",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_equity[3].ppp_gdp_meur",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_equity[3].counterparty_id",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_equity[4].ppp_gdp_meur",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_equity[4].counterparty_id",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_equity[5].ppp_gdp_meur",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_equity[5].counterparty_id",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_equity[6].ppp_gdp_meur",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_equity[6].counterparty_id",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_equity[7].ppp_gdp_meur",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_equity[7].counterparty_id",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_sovereign[0].issuer_revenue_meur",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_sovereign[0].issuer_evic_meur",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_sovereign[0].counterparty_id",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_sovereign[0].data_gap_reason",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_sovereign[1].issuer_revenue_meur",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_sovereign[1].issuer_evic_meur",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_sovereign[1].counterparty_id",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_sovereign[1].data_gap_reason",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_sovereign[2].issuer_revenue_meur",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_sovereign[2].issuer_evic_meur",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_sovereign[2].counterparty_id",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_sovereign[2].data_gap_reason",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_sovereign[3].issuer_revenue_meur",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_sovereign[3].issuer_evic_meur",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_sovereign[3].counterparty_id",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_sovereign[3].data_gap_reason",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_sovereign[4].issuer_revenue_meur",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_sovereign[4].issuer_evic_meur",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_sovereign[4].counterparty_id",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_sovereign[4].data_gap_reason",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_sovereign[5].issuer_revenue_meur",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_sovereign[5].issuer_evic_meur",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_sovereign[5].counterparty_id",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_sovereign[5].data_gap_reason",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_sovereign[6].issuer_revenue_meur",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_sovereign[6].issuer_evic_meur",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_sovereign[6].counterparty_id",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_sovereign[6].data_gap_reason",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_sovereign[7].issuer_revenue_meur",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_sovereign[7].issuer_evic_meur",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_sovereign[7].counterparty_id",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_sovereign[7].data_gap_reason",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_sovereign[8].issuer_revenue_meur",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_sovereign[8].issuer_evic_meur",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_sovereign[8].counterparty_id",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_sovereign[8].national_scope1_tco2e",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_sovereign[8].ppp_adjusted_gdp_meur",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_sovereign[8].attributed_emissions_tco2e",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_sovereign[9].issuer_revenue_meur",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_sovereign[9].issuer_evic_meur",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_sovereign[9].counterparty_id",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_sovereign[9].data_gap_reason",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_sovereign[10].issuer_revenue_meur",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_sovereign[10].issuer_evic_meur",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_sovereign[10].counterparty_id",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_sovereign[10].national_scope1_tco2e",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_sovereign[10].ppp_adjusted_gdp_meur",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_sovereign[10].attributed_emissions_tco2e",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_sovereign[11].issuer_revenue_meur",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_sovereign[11].issuer_evic_meur",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_sovereign[11].counterparty_id",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_sovereign[11].national_scope1_tco2e",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_sovereign[11].ppp_adjusted_gdp_meur",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_sovereign[11].attributed_emissions_tco2e",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_sovereign[12].issuer_revenue_meur",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_sovereign[12].issuer_evic_meur",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_sovereign[12].counterparty_id",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_sovereign[12].national_scope1_tco2e",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_sovereign[12].ppp_adjusted_gdp_meur",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_sovereign[12].attributed_emissions_tco2e",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_sovereign[13].issuer_revenue_meur",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_sovereign[13].issuer_evic_meur",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_sovereign[13].counterparty_id",
+        "reason": "null_or_empty"
+      },
+      {
+        "path": "metrics_targets.financed_emissions_sovereign[13].data_gap_reason",
+        "reason": "null_or_empty"
+      }
+    ]
+  },
+  "public_report_instruction": "Do not inject this diagnostics register into public report prose. Use it only for internal QA and source-data improvement planning."
+}

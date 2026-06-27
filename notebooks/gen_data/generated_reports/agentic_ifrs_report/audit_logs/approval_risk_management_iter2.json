@@ -3,56 +3,45 @@
   "approved": false,
   "scores": {
     "ifrs_coverage": 6.0,
-    "evidence": 7.0,
-    "style": 7.4
+    "evidence": 6.0,
+    "style": 7.6
   },
   "failures": [
     {
       "judge": "ifrs_coverage_judge",
       "score": 6.0,
       "required_fixes": [
-        "Remove or qualify unsupported specifics: SCN0005/SCN0007/SCN0011; likelihood values 3 and 5 and 'five-point scale'; quarterly and semi-annual monitoring; 'multiple integrated' and 'at least one not integrated' ERM statements. Alternatively, add supporting evidence in the underlying dataset and regenerate.",
-        "Add disclosure explaining whether and how climate/sustainability risks are prioritised relative to other types of risk within overall risk management (not just within climate risk bands).",
-        "Add disclosure of processes for identifying, assessing, prioritising and monitoring (climate-related and broader sustainability-related) opportunities, including whether/how scenario analysis informs opportunity identification (or move this requirement to another section and ensure it is covered there).",
-        "If retaining the 5×5 matrix methodology and band thresholds, ensure the narrative is aligned to evidenced methodology fields (eg include only what is supported by metadata.risk_rating_methodology) and avoid asserting severity/matrix-score mechanics unless evidenced."
+        "Remove or qualify unsupported methodology specifics (5×5 matrix, severity scoring, multiplication rule, and the exact score-band thresholds 15–25/8–12/3–6/1–2) unless they are evidenced in the payload; keep only what is supported (e.g., existence of a methodology and likelihood scoring).",
+        "Add disclosure explaining whether and how climate-related risks are prioritised relative to other types of risk (not just within the climate risk register).",
+        "Add a description of the processes used to identify, assess, prioritise and monitor climate-related opportunities (and, for IFRS S2, whether/how scenario analysis informs opportunity identification).",
+        "Replace/augment the 'changed since prior period' discussion to address whether and how the risk management processes themselves changed compared with the previous reporting period (or explicitly state no changes, if supported elsewhere).",
+        "Remove unsupported specificity about scenario references (SCN0005/SCN0007/SCN0011) unless evidenced; keep scenario linkage at a level supported by the payload."
       ]
     },
     {
       "judge": "evidence_judge",
-      "score": 7.0,
+      "score": 6.0,
       "required_fixes": [
-        "Soften or evidence RM-001: replace 'are managed through a structured lifecycle' with a verifiable statement tied to the register fields (eg 'The climate risk register captures identification, assessment inputs, monitoring cadence, change tracking and ERM integration status'), or add payload evidence of the lifecycle process (procedure/workflow/controls).",
-        "Soften or evidence prioritisation (Section 3.3): either provide evidence of prioritisation outputs/actions based on rating bands (eg ranked ordering, escalation rules, action plans linked to rating) or rephrase to 'Risks can be prioritised using the rating bands' (capability rather than performed practice).",
-        "If keeping 'five-point scale', add explicit evidence defining the scale (eg metadata field stating likelihood is 1–5) or remove 'five-point' and just state observed values (3–5).",
-        "Normalize monitoring frequency wording to match payload values (eg 'semi_annual' vs 'semi-annual') or state both as equivalent."
-      ]
-    },
-    {
-      "judge": "style_judge",
-      "score": 7.4,
-      "required_fixes": [
-        "Reframe the section structure to follow the layered approach: start with a short overview of the overall risk management and ERM integration, then explain how sustainability-related risks are treated within that system, and finally provide the current climate-related risk methodology as a subset with additional detail.",
-        "Add a brief section-opening paragraph (or mini table-of-contents) at the start of Section 3 that states the purpose of the Risk Management section and signposts the main subsections.",
-        "Introduce each subsection (3.1–3.5) with a one-sentence purpose statement that explains what the subsection covers and why it is relevant for users of general-purpose financial reports.",
-        "Adjust references to specific external data sources (e.g., 'ECB climate indicators') to more generic phrasing such as 'relevant external climate indicators' to comply with the 'what to avoid' guidance on named external standards or datasets.",
-        "Clarify the scope by explicitly stating that the described processes apply to climate-related risks as a subset of sustainability-related risks, and briefly indicate how these processes align with or differ from the broader sustainability risk management approach.",
-        "Strengthen IFRS-style wording by incorporating standards-oriented verbs (e.g., 'we identify and assess climate-related risks using...', 'the entity monitors and reviews...') and, where appropriate, using first-person plural for actions under the entity’s control while keeping third-person for external requirements.",
-        "Split longer sentences, particularly in the risk matrix description, into shorter declarative sentences to improve readability and align with the sentence-length guidance.",
-        "Reduce duplication of value-chain examples between Sections 3.1 and 3.5 by either consolidating them into one clearly signposted list or using a cross-reference, and use the freed space to add brief connectivity sentences linking to Strategy and Metrics/Targets sections.",
-        "Optionally, add a compact table or figure (with a numbered caption) that summarises the risk lifecycle stages (identify, assess, prioritise, monitor, integrate) with key activities and outputs, and reference it in the narrative to enhance scanability."
+        "Narrow or evidence the end-to-end process claim: either (a) add evidence of the documented lifecycle and ERM integration process (procedure/control/workflow evidence), or (b) rewrite to only state what is evidenced (existence of a climate risk register with specific fields: likelihood_score, risk_rating, monitoring_frequency, changed_since_prior_period, erm_integrated_flag, scenario_analysis_link).",
+        "For own operations vs value chain coverage: add evidence that the climate risk register contains entries tagged to both scopes (or add a linkage field to value_chain_map), or revise wording to say identification considers both scopes via value-chain mapping (supported by value_chain_map descriptions) without asserting the register contains both.",
+        "For integrated disclosures (3.8): provide evidence (report cross-references/reporting policy) or remove/soften the claim to a non-assertive statement (e.g., 'the entity intends to present...').",
+        "If keeping the 5x5 methodology narrative, add evidence that severity_score and/or overall_score are captured/calculated (register fields or calculation logic implementation), or explicitly state that risk_rating is derived per metadata methodology without asserting register stores all intermediate values.",
+        "Clarify the linkage between the agricultural counterparty risk description and its 'medium' rating by referencing the same register entry (e.g., cite that the entry containing the description has risk_rating=medium)."
       ]
     }
   ],
+  "warnings": [],
   "thresholds": {
     "ifrs_coverage_score_min": 8.0,
     "evidence_score_min": 8.0,
-    "style_score_min": 7.5
+    "style_score_min": 7.5,
+    "style_judge_mode": "advisory_after_deterministic_pass"
   },
-  "approval_policy": "V9.0 approves sections that pass deterministic/fact-lock gates and meet supported-evidence-scope judge thresholds; missing requirements remain audit-only.",
-  "version": "V9.0 senior_ifrs_writer_finalizer",
+  "approval_policy": "V9.1: deterministic evidence/fact gates are binding; style judge is advisory unless IFRS_STYLE_JUDGE_MODE=blocking.",
+  "version": "V9.4-order-safe-factlock-decimal",
   "section_generation_score": {
     "section_name": "Risk Management",
-    "overall_section_generation_score_0_to_100": 85.25,
+    "overall_section_generation_score_0_to_100": 84.45,
     "coverage_component": {
       "requirements_total": 17,
       "coverage_counts": {
@@ -61,7 +50,7 @@
       },
       "coverage_score_0_to_100": 79.41
     },
-    "judge_average_0_to_100": 68.0,
+    "judge_average_0_to_100": 65.33,
     "deterministic_gate_score_0_to_100": 100.0,
     "report_cleanliness_score_0_to_100": 100.0,
     "missing_requirements_count_flagged": 0,

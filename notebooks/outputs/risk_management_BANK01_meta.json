@@ -4,18 +4,18 @@
   "section": "risk_management",
   "status": "needs_human_review",
   "approval_status": "needs_human_review",
-  "final_score": 8,
+  "final_score": 7,
   "revisions": 3,
   "approved": false,
   "checklist": {
     "required_structure_present": true,
-    "report_style_structure_present": true,
+    "report_style_structure_present": false,
     "upstream_internal_downstream_structure_present": true,
     "risk_identification_used_correctly": true,
     "physical_transition_distinction_used": true,
     "risk_assessment_prioritisation_used_correctly": true,
     "monitoring_process_used_correctly": true,
-    "mitigation_actions_used_correctly": true,
+    "mitigation_actions_used_correctly": false,
     "erm_integration_used_correctly": true,
     "scenario_analysis_used_correctly": true,
     "risk_appetite_handled_according_to_availability": true,
@@ -26,34 +26,34 @@
     "no_unsupported_strong_claims": false
   },
   "issues": [
-    "One over-claim about prioritising climate risks relative to other material risks without describing (or evidencing) the mechanism by which climate risks are compared across the full risk universe.",
-    "A few phrases could be tightened to anchor statements explicitly to the climate risk register (to avoid implying broader coverage than disclosed)."
+    "One deterministic failure: use of report-machinery/evidence-boundary framing (“Risk management limitations and evidence boundaries”) rather than a standard scope/limitations disclosure.",
+    "Several mitigation-action statements drift from risk-register-specific linkages into broader implied application (“used for selected risks”, “applied to certain risks”) without naming only the evidenced risk linkages.",
+    "Minor opportunity: scenario set description could incorporate scenario name examples already evidenced, but this is optional."
   ],
   "available_evidence_omitted": [
-    "ERM integration percentage (6 of 8 = 75%) is not stated explicitly (draft states 6 of 8, but not the percentage).",
-    "Scenario analysis evidence includes named NGFS v4 scenario names (e.g., Net Zero 2050, Current Policies, Delayed Transition) that are not referenced in the narrative.",
-    "Scenario analysis evidence indicates scenario links used by risks are SCN0002, SCN0004, SCN0011, SCN0013 (draft does not list the identifiers; it refers to 'scenario identifiers' generally)."
+    "Scenario analysis frameworks/types and horizon years are only partially specified; the draft mentions NGFS v4 and 2025/2030/2050 but omits the scenario name examples present in the evidence (e.g., Net Zero 2050, Current Policies, Delayed Transition)."
   ],
   "unsupported_claims": [
-    "“Mitigation actions are recorded for the risks disclosed in this report.” (The evidence supports mitigation actions recorded in the climate risk register; the draft’s phrasing could be read as broader than the register.)",
-    "“These indicative financial impacts … are used to prioritise climate-related risks relative to one another and to other material risks.” (Evidence supports prioritisation within the register; prioritisation relative to other risk types is not evidenced beyond a general statement.)"
+    "“Collateral revaluation and flood mapping overlay” is stated as a mitigation action for the stranded asset risk related to fossil fuel sector exposure (this linkage is supported), but the draft also implies it is used for flood mapping and collateral revaluation across other risks without specifying which risks; this is slightly broader than the risk-by-risk evidence.",
+    "“Engagement and transition-plan covenants with borrowers” is stated as used for certain physical and transition risks; evidence supports it for mortgage book flood exposure, but not for additional risks named in the draft.",
+    "“Sector exposure limits and enhanced due diligence” is stated as applied to selected transition policy risks (plural); evidence explicitly links it to carbon pricing on industrial loans, but does not evidence additional transition policy risks using this action.",
+    "“Climate scenario stress testing integrated into ICAAP” is described as used for selected physical and transition risks; evidence supports it for EV shift in auto lending and heat stress on agricultural borrowers, but not for other risks."
   ],
   "material_unsupported_claims": [
-    "“These indicative financial impacts, together with the qualitative ratings and time horizons, are used to prioritise climate-related risks relative to one another and to other material risks.” (Over-claims integration into cross-risk prioritisation; the payload does not evidence how climate risks are prioritised relative to other risk types within overall risk taxonomy/ERM beyond an integration flag.)"
+    "Misassignment of mitigation action: “Collateral revaluation and flood mapping overlay” is stated as recorded as a mitigation action for selected risks, including the stranded asset risk related to fossil fuel sector exposure. While that linkage is supported, the draft’s downstream section also frames this action as a mitigation for stranded assets in a way that can read as a general control for transition market risk; it should be stated strictly as the register-recorded action for that specific risk (and any other specifically listed risks) without implying broader applicability.",
+    "Deterministic/style failure: the heading and framing “Risk management limitations and evidence boundaries” constitutes report-machinery/evidence-boundary language flagged by the pre-check; it should be reframed as a normal scope/limitations statement without “evidence boundaries” terminology."
   ],
   "minor_wording_to_tighten": [
-    "“Mitigation actions are recorded for the risks disclosed in this report.” → tighten to “Mitigation actions are recorded in the climate risk register for each of the eight climate-related risks.”",
-    "“We identify climate-related risks through our risk register process …” → acceptable, but could clarify that the register is the primary mechanism disclosed (not necessarily the only mechanism used).",
-    "“Any upstream implications … are considered indirectly through the transition and reputational risks recorded in the climate risk register …” → defensible, but could clarify this is not a distinct upstream process."
+    "“The climate risk register is the primary tool used to…” could be tightened to avoid implying it is the sole bank-wide process (the payload does not evidence broader process architecture beyond the register).",
+    "“Integration is reflected through inclusion of these risks in the Bank’s standard risk monitoring and reporting routines…” is plausible but not explicitly evidenced; tighten to “flagged as integrated into ERM and included in broader monitoring and reporting” without implying specific routines.",
+    "“Scenario analysis is used as a forward-looking input…” is appropriate; keep, but avoid implying scenario analysis is used for all risks (the draft mostly does this correctly)."
   ],
   "correctly_disclosed_evidence_boundaries": [
-    "No formal climate-specific risk appetite thresholds or limits are disclosed.",
-    "No detailed climate risk policies, formal control procedures or internal standards are disclosed beyond the mitigation actions recorded in the register.",
-    "No formal escalation thresholds or triggers for climate-related risks are disclosed.",
-    "Upstream (funding/suppliers) and internal operational climate risks are not separately captured in the 2024 climate risk register and are outside the scope of this report.",
-    "No dedicated processes for identifying, assessing, prioritising or monitoring climate-related opportunities are disclosed.",
-    "Scenario analysis is described as forward-looking, modelled estimates and not treated as forecasts or realised losses.",
-    "No detailed probability models, quantitative scoring methodologies, or scenario model mechanics are disclosed."
+    "The Bank does not currently disclose formal climate-specific risk appetite thresholds.",
+    "The Bank does not currently disclose detailed climate-specific risk policy documents.",
+    "The Bank does not currently disclose detailed formal control procedures for climate-related risks.",
+    "The Bank does not currently disclose formal climate-specific escalation thresholds or triggers.",
+    "Upstream and internal operations climate-related risks are not recorded as separate categories in the 2024 climate risk register."
   ],
   "raw_risk_management_payload_path": "outputs\\payload_BANK01_risk_management_raw.json",
   "compact_risk_management_evidence_path": "outputs\\compact_risk_management_evidence_BANK01.json"
