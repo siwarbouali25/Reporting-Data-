@@ -1,133 +1,119 @@
-## General requirements
-
-This section explains the basis on which the Bank’s sustainability-related financial disclosures have been prepared, including the reporting period, currency, comparative information, connected information, and the key methodologies, estimates and judgements applied to climate-related disclosures.
+This section explains the basis on which the Bank’s sustainability-related financial disclosures have been prepared, including the reporting period and presentation currency, the approach to comparative information, and how the Bank presents connected information. It also summarises key methodologies, estimates and judgements applied to climate-related disclosures.
 
 ### Basis of preparation and fair presentation
 
-The Bank prepares sustainability-related financial disclosures to present fairly sustainability-related risks and opportunities that could reasonably be expected to affect the Bank’s prospects. Fair presentation is supported through disclosures that are complete, neutral and accurate, and that are designed to be comparable, verifiable, timely and understandable.
+The Bank prepares its sustainability-related financial disclosures to present fairly sustainability-related risks and opportunities that could reasonably be expected to affect the Bank’s prospects. Fair presentation is supported through disclosures that are intended to be complete, neutral and accurate, and that are prepared in a manner designed to be comparable, verifiable, timely and understandable.
 
-The disclosures are prepared using data and assumptions that are consistent, to the extent possible, with the corresponding data and assumptions used in preparing the related financial statements.
+The disclosures are organised to help users understand:
 
-### Reporting period, fiscal year-end and reporting currency
+- **connections between sustainability-related risks and opportunities** that could reasonably be expected to affect the Bank’s prospects; and
+- **connections across the disclosure pillars** (governance, strategy, risk management, and metrics and targets), including how oversight and monitoring relate to the measurement of performance.
 
-The reporting year for these sustainability-related financial disclosures is **2024**.
+Where quantitative measures are presented, the Bank uses consistent units of measure and provides accompanying methodology notes to support interpretability.
 
-The Bank’s fiscal year-end is **31 December 2024**.
+### Reporting period and reporting currency
 
-The reporting currency used for sustainability-related financial disclosures is **euro (EUR)**.
+These sustainability-related financial disclosures are prepared for the reporting year **2024**, with a fiscal year end of **31 December 2024**.
+
+The presentation currency used in these sustainability-related financial disclosures is **euro (EUR)**. Where currency is used as a unit of measure (for example, climate-related capital expenditure and Tier 1 capital), amounts are presented in **EUR millions**.
 
 ### Comparative information
 
-Comparative information is presented for **2022** and **2023**, where relevant to understanding performance and trends.
+Comparative information is provided for **2022** and **2023** where relevant to understanding performance and trends. Selected climate-related financial measures are presented across multiple years to support comparability, including climate-related capital expenditure and Tier 1 capital.
 
-Where metrics are presented for 2024 alongside comparative years, the Bank seeks to maintain consistent definitions and measurement approaches across periods to support comparability.
+| Measure (EUR million) | 2022 | 2023 | 2024 |
+| --- | --- | --- | --- |
+| Climate-related capital expenditure | 322.2 | 373.91 | 476.95 |
+| Tier 1 capital | 95,149.4 | 143,979.2 | 151,208.6 |
 
 ### Connected information
 
-The Bank provides information in a manner intended to enable users to understand:
+The Bank prepares its sustainability-related financial disclosures to enable users to understand connections (i) between related sustainability matters and (ii) across the disclosures provided.
 
-- **Connections between sustainability-related risks and opportunities**, including how different climate-related risks may interact (for example, acute physical risks affecting collateral values and transition risks affecting counterparty creditworthiness).
-- **Connections across the four content areas** (governance, strategy, risk management, and metrics and targets), where the same underlying evidence supports those linkages.
+**Connections across governance, risk management and metrics.** Climate-related risks are monitored at defined frequencies and are reported to the Board on a **semi-annual** basis. Governance indicators (including Board climate expertise and the frequency of Board and committee meetings) are presented alongside climate-related metrics (including financed emissions, operational emissions and climate-related capital expenditure) to support an integrated understanding of how oversight and monitoring relate to performance measurement.
 
-Examples of connected information reflected in these disclosures include:
+**Connections across risk identification, assessment and monitoring.** The climate risk register includes risk descriptions, risk categories, risk ratings, and monitoring frequencies. For example:
 
-- Climate-related risk identification and monitoring practices (including monitoring frequency) that link risk management processes to the metrics used to track exposures and performance.
-- Scenario analysis methodology and resilience assessments that connect strategic assessment of climate-related transition pathways to risk management mechanisms (such as sector exposure limits and portfolio decarbonisation glide-path monitoring).
+- **Physical risk — mortgage book flood exposure (acute physical risk):** residential and commercial mortgage collateral located in flood-prone zones faces rising acute physical risk; property damage and devaluation could impair collateral coverage. This risk is monitored **monthly** and is rated **critical** (likelihood score **4**, severity score **5**).
+- **Transition risk (example):** rapid electrification could strand internal-combustion vehicle manufacturers and suppliers in the lending book.
+- **Reputational risk (example):** stakeholder and NGO scrutiny of financed emissions and fossil financing could damage brand and trigger client attrition.
 
-### Methodologies and measurement approaches
+**Connections between scenario analysis and resilience assessment.** The Bank uses climate scenario analysis to assess portfolio resilience under orderly and disorderly transition pathways. Methodology notes describe scenario sources and modelling approaches, and resilience assessments describe implications for portfolio resilience and capital consumption.
 
-This subsection summarises the principal methodologies used in preparing climate-related disclosures, including risk rating, scenario analysis, and greenhouse gas (GHG) measurement approaches.
+### Methodologies, estimates and judgements
+
+This subsection summarises principal methodologies used in preparing climate-related disclosures, focusing on scenario analysis, climate risk rating, and greenhouse gas accounting approaches that underpin reported metrics.
+
+#### Climate scenario analysis methodology
+
+The Bank applies climate scenarios to the banking book using methodologies that link scenario pathways to sector exposures.
+
+- **NGFS v4 Net Zero 2050 scenario (orderly transition).** The scenario is applied using a top-down sector-pathway approach. Carbon price assumptions are taken from the IEA Net Zero Emissions by 2050 trajectory and mapped to counterparty NACE sectors. Stranded asset estimates are derived from sector-level fossil fuel capital expenditure exposure. The analysis scope covers all lending book exposures across **Germany, France, Italy, the Netherlands and Spain**.
+
+Resilience assessments are presented for both orderly and disorderly transition scenarios:
+
+- Under **orderly transition scenarios**, the portfolio demonstrates adequate resilience. Transition risk losses remain within Pillar 2 capital buffer thresholds. Green loan growth and client engagement on transition plans are expected to progressively reduce high-carbon sector concentration over the medium term.
+- Under **disorderly transition scenarios**, near-term resilience is acceptable but medium-term capital consumption from stranded asset impairments is material. The Bank’s current sector exposure limits and active portfolio decarbonisation glide-path monitoring are the primary resilience mechanisms. Additional capital buffers may be required post-2030 under the most adverse disorderly assumptions.
+
+These assessments are forward-looking and involve judgement in selecting scenario pathways and translating scenario variables (including carbon prices) into sector and counterparty impacts.
 
 #### Climate risk rating methodology
 
-Climate risk ratings in the Bank’s climate risk register are derived from a **5×5 risk matrix** based on the product of a likelihood score and a severity score. The methodology is applied as follows:
+Climate risk ratings in the risk register are derived from a **5×5 risk matrix** based on likelihood and severity scores. The overall score is calculated as the product of the likelihood score and the severity score.
 
-- **Risk score = likelihood score × severity score**
-- **Low:** scores **1–2**
-- **Medium:** scores **3–6**
-- **High:** scores **8–12**
-- **Critical:** scores **15–25**
+Risk rating bands are defined as follows:
 
-For example, the risk titled **“Physical risk — mortgage book flood exposure”** is assessed as **critical**, with a likelihood score of **4** and a severity score of **5** (risk score **20**), and is monitored **monthly**.
+- **Low:** score less than 3
+- **Medium:** score from 3 to 6
+- **High:** score from 8 to 12
+- **Critical:** score from 15 to 25
 
-#### Climate risk register monitoring cadence
+As an illustration of application, “Physical risk — mortgage book flood exposure” is rated **critical** with a likelihood score of **4** and a severity score of **5** (score 20).
 
-Climate-related risks in the risk register are monitored at different frequencies, reflecting the Bank’s approach to ongoing oversight. Monitoring frequencies evidenced in the register include **monthly**, **quarterly**, and **semi-annual**.
+#### Greenhouse gas emissions accounting and Scope 2 market-based approach
 
-The risk register also records whether a risk has **changed since the prior period** for the reporting year **2023**, supporting transparency about the evolution of the risk profile.
+Operational emissions metrics are presented for 2024, including Scope 1, Scope 2 (location-based and market-based), and Scope 3 business travel.
 
-#### Scenario analysis methodology
+For **Scope 2 market-based emissions**, the Bank’s market-based figure is sourced directly from utility invoice data that already reflects market-based accounting. Grid emission factors are adjusted for renewable energy certificates and power purchase agreements. Renewable energy certificate registry information is used for disclosure narrative (for example, certificate type, volume and registry) and is not subtracted again in the calculation, avoiding double-counting.
 
-The Bank applies climate scenario analysis to assess the resilience of its banking book under different transition pathways.
+#### Financed emissions and intensity metrics
 
-Methodologies evidenced include:
+The Bank reports financed emissions for 2024 and a carbon intensity metric expressed as tonnes of CO₂e per EUR million.
 
-- **NGFS v4 Net Zero 2050 scenario** applied to the banking book using a **top-down sector-pathway approach**. Carbon price assumptions are mapped from the **IEA NZE 2050 trajectory** to counterparty **NACE sectors**. Stranded asset estimates are derived from **sector-level fossil fuel capex exposure**. The analysis scope covers **all lending book exposures** across **Germany, France, Italy, the Netherlands and Spain**.
+For sovereign bonds, issuer enterprise value including cash and issuer revenue are not used because these are corporate concepts not applicable to sovereigns.
 
-- **NGFS v4 Below 2°C (orderly) scenario** applied using **NGFS integrated assessment model outputs** aligned to a **1.8°C median temperature pathway**. The carbon price trajectory is sourced from the **REMIND-MAgPIE model**. Financial impact is assessed through **loan-level probability of default sensitivity** to carbon cost pass-through by **sector carbon intensity tier**.
+### Characteristics of information and monitoring
 
-Resilience assessments evidenced for these scenarios indicate:
+The Bank’s sustainability-related financial disclosures are prepared with the objective of providing information that is comparable, verifiable, timely and understandable.
 
-- Under **orderly transition scenarios**, the portfolio demonstrates **adequate resilience**, with transition risk losses remaining within **Pillar 2 capital buffer thresholds**.
-- Under **disorderly transition scenarios**, near-term resilience is described as **acceptable**, while **medium-term capital consumption from stranded asset impairments is material**. Sector exposure limits and portfolio decarbonisation glide-path monitoring are described as primary resilience mechanisms, and additional capital buffers may be required **post-2030** under the most adverse disorderly assumptions.
+#### Emissions data quality profile
 
-#### Greenhouse gas emissions measurement and market-based Scope 2
+For emissions-related information, the Bank summarises the composition of data sources and estimation approaches used.
 
-For Scope 2 (market-based) emissions, the Bank’s market-based Scope 2 figure is sourced directly from utility invoice data that already reflects market-based accounting using grid emission factors adjusted for **renewable energy certificates and power purchase agreements**. Renewable energy certificate registry data is used for disclosure narrative (for example, certificate type, volume and registry) and is **not subtracted again** in the calculation, avoiding double-counting.
-
-#### Financed emissions methodology note (sovereign bonds)
-
-For financed emissions measurement approaches that use corporate attribution factors, the Bank notes that **enterprise value including cash (EVIC)** and **issuer revenue** are corporate concepts and are **not applicable to sovereign bonds**; accordingly, these fields are treated as not applicable for sovereign bond exposures.
-
-### Metrics, units of measure and presentation
-
-The Bank uses a combination of absolute and intensity metrics to support decision-useful disclosure of climate-related performance.
-
-Selected 2024 metrics include:
-
-- **Scope 1 emissions:** 2,634.9 tCO₂e (with fleet included)
-- **Scope 2 emissions (location-based):** 6,963.5 tCO₂e
-- **Scope 2 emissions (market-based):** 3,060.5 tCO₂e
-- **Scope 3 business travel emissions:** 289.9 tCO₂e
-- **Financed emissions (2024):** 35,973,167.7 tCO₂e
-- **Carbon intensity (2024):** 1,154.8131 tCO₂e per €m
-- **Green loans (2024):** 10.71% (share)
-- **Climate capex (2024):** €476.95m
-
-Where financial measures are presented (for example, climate capex and Tier 1 capital), they are presented in **€m**.
-
-### Estimates, judgements and sources of measurement uncertainty
-
-The preparation of sustainability-related financial disclosures involves estimates and judgements, particularly where measurement relies on modelling, scenario assumptions, or proxy data.
-
-Key areas where estimates and judgements are evidenced include:
-
-- **Scenario analysis and resilience assessment**, including the selection of NGFS scenarios, the mapping of carbon price trajectories to counterparty sectors, and the translation of sector pathways into credit risk sensitivities (for example, probability of default sensitivity to carbon cost pass-through).
-- **Stranded asset estimation**, derived from sector-level fossil fuel capex exposure within the scenario analysis methodology.
-- **Financed emissions measurement**, where data availability and methodological choices affect attribution (including the treatment of sovereign bonds where EVIC and revenue are not applicable).
-
-### Data-quality characteristics and assurance
-
-The Bank summarises the quality of emissions data using a source-based breakdown that supports users’ understanding of reliability and estimation uncertainty. For the emissions data quality summary, the Bank reports the following composition:
-
-| Emissions data quality source | Share (%) |
+| Emissions data quality category | Share (%) |
 | --- | --- |
-| Estimated (economic) | 47.5 |
-| CDP disclosure | 35.5 |
-| Proxy model | 16.3 |
-| Audited report | 0.7 |
+| Estimated using economic data | 47.5 |
+| CDP disclosure-based | 35.5 |
+| Proxy model-based | 16.3 |
+| Audited report-based | 0.7 |
 
-The Bank reports **limited external assurance** as part of its governance maturity indicators.
+This profile is intended to help users understand the extent to which emissions information is derived from estimates, third-party disclosures, proxy modelling and audited sources.
 
-### Consistency and comparability across periods
+#### Monitoring frequency and change tracking for climate risks
 
-The Bank presents multi-year information for selected metrics and financial indicators to support comparability across time. For example:
+The climate risk register includes monitoring frequencies and whether a risk has changed since the prior period. Monitoring frequencies observed in the register include **monthly**, **quarterly**, and **semi-annual**, supporting ongoing oversight of climate-related risks.
 
-- **Climate capex (€m):** 322.2 (2022), 373.91 (2023), 476.95 (2024)
-- **Tier 1 capital (€m):** 95,149.4 (2022), 143,979.2 (2023), 151,208.6 (2024)
+### Key quantitative measures presented in this report
 
-These disclosures are intended to help users assess trends in climate-related investment and capital position alongside the Bank’s climate-related risk and performance metrics.
+To support comparability and decision usefulness, the Bank presents selected climate-related metrics and financial measures for the reporting year and, where available, comparative years.
 
-### Value chain boundary considerations (climate-related)
+**Selected 2024 metrics**
 
-The Bank’s value chain mapping identifies climate-relevant nodes flagged as material within its own operations, including **“Corporate fleet & business travel”**. This supports the boundary applied for operational emissions disclosures, including Scope 1 (with fleet included) and Scope 3 business travel emissions.
+- Financed emissions (2024): **35,973,167.7 tCO₂e**
+- Carbon intensity (2024): **1,154.8 tCO₂e per EUR million**
+- Climate-related capital expenditure (2024): **EUR 476.95 million**
+- Tier 1 capital (2024): **EUR 151,208.6 million**
+
+### Assurance
+
+The Bank reports **limited** external assurance as part of its governance maturity indicators.
