@@ -3,165 +3,133 @@
   "connectivity_score_0_to_10": 6,
   "contradictions": [
     {
-      "id": "C-01",
-      "type": "governance_cadence_mismatch",
-      "sections": [
-        "General Requirements",
-        "Governance"
+      "issue": "Financed-emissions intensity target baseline conflicts with disclosed financed emissions and loan exposure figures.",
+      "where": [
+        "Strategy: 'target intensity of 20.0 tCO₂e per EUR million'",
+        "Metrics and Targets: '2022 baseline of 20.0 tCO₂e per EUR million of lending'",
+        "Metrics and Targets table: 2022 financed emissions—loans 36,550,177.7 tCO₂e; Total loans 31,150.64 EURm",
+        "General Requirements: Carbon intensity (2024): 1,154.8131 tCO₂e per €m"
       ],
-      "issue": "ESG committee meeting frequency differs across sections.",
-      "evidence": {
-        "General Requirements": "“an ESG committee meets five times per year”",
-        "Governance": "“ESG committee … met 7 times during the year.”"
-      },
-      "impact": "Undermines connected information and governance consistency; users cannot determine the actual cadence."
+      "why_it_is_a_contradiction": "If 2022 financed emissions are 36,550,177.7 tCO₂e and total loans are 31,150.64 EURm, the implied intensity is ~1,173 tCO₂e/EURm, not 20.0. Also, General Requirements discloses a 2024 'Carbon intensity' of 1,154.8131 tCO₂e/€m, which is in the same order of magnitude as the implied financed-emissions intensity, further conflicting with the 20.0 baseline/parameter."
     },
     {
-      "id": "C-02",
-      "type": "comparatives_inconsistency",
-      "sections": [
-        "General Requirements",
-        "Metrics and Targets"
+      "issue": "Scenario set differs between sections without explanation, creating an apparent inconsistency in what scenarios are used.",
+      "where": [
+        "General Requirements (Scenario analysis methodology): NGFS v4 Net Zero 2050; NGFS v4 Below 2°C (orderly); references 'disorderly transition scenarios' generically",
+        "Strategy (Scenario analysis): adds NGFS v4 Divergent Net Zero (disorderly), NGFS v4 Current Policies (hot house world), and NGFS v4 NDC"
       ],
-      "issue": "General Requirements comparative table shows 2023 financed emissions as “—”, while Metrics and Targets provides a 2023 value.",
-      "evidence": {
-        "General Requirements": "Financed emissions (tCO₂e): 2023 “—”",
-        "Metrics and Targets": "2023 financed emissions from loans: 37,427,593.2 tCO₂e"
-      },
-      "impact": "Creates confusion about availability of comparative information and completeness of financed emissions disclosures."
+      "why_it_is_a_contradiction": "Not a direct numerical contradiction, but the methodology section reads like the evidenced methodologies are limited to two scenarios, while Strategy asserts additional scenarios are used. Without a bridging statement (e.g., 'additional scenarios used for physical risk and disorderly transition'), users may infer inconsistency in the scenario analysis program."
     },
     {
-      "id": "C-03",
-      "type": "intensity_metric_conflict",
-      "sections": [
-        "General Requirements",
-        "Strategy",
-        "Metrics and Targets"
+      "issue": "Risk register change-tracking period references 2023 while the report period is 2024, without clarifying whether the register change flag is assessed for 2024 or only carried forward from 2023.",
+      "where": [
+        "General Requirements: 'risk register ... changed since the prior period for the reporting year 2023'",
+        "Risk Management: 'changed since the prior reporting period' (no year specified)",
+        "Strategy: reputational risk 'changed since the prior period'"
       ],
-      "issue": "Different financed emissions intensity figures/definitions appear without reconciliation.",
-      "evidence": {
-        "General Requirements": "Carbon intensity: 1,154.81 tCO₂e per EUR million",
-        "Strategy": "Financed emissions intensity target: 20.0 tCO₂e per €m",
-        "Metrics and Targets": "Baseline intensity: 20.0 tCO₂e per EUR million of lending; also tracks 20.0 tCO₂e per EUR million"
-      },
-      "impact": "Users cannot tell whether “carbon intensity” is financed-emissions intensity, operational intensity, or another denominator (e.g., revenue/assets/loans)."
-    },
-    {
-      "id": "C-04",
-      "type": "risk_matrix_band_gap",
-      "sections": [
-        "General Requirements",
-        "Risk Management"
-      ],
-      "issue": "Risk rating bands omit score 7 (gap between Medium 3–6 and High 8–12).",
-      "evidence": {
-        "General Requirements": "Medium 3–6; High 8–12",
-        "Risk Management": "Medium 3–6; High 8–12"
-      },
-      "impact": "Methodology appears internally inconsistent/incomplete; could affect interpretation of risk ratings."
+      "why_it_is_a_contradiction": "The report period is 2024, but the only explicit year for the 'changed since prior period' mechanism is 2023. Strategy implies the change flag is current, while General Requirements anchors it to 2023. This creates ambiguity about whether 'changed' refers to 2024 vs 2023."
     }
   ],
   "terminology_issues": [
     {
-      "id": "T-01",
+      "term": "Bank vs bank",
+      "where": [
+        "General Requirements uses 'Bank'",
+        "Strategy uses 'bank' (lowercase) throughout"
+      ],
+      "issue": "Inconsistent entity naming/capitalisation across sections."
+    },
+    {
       "term": "Carbon intensity",
-      "issue": "Used in General Requirements as a headline metric (1,154.81 tCO₂e/EURm) but not defined or aligned to the financed emissions intensity target (20.0 tCO₂e/EURm of lending).",
-      "sections": [
-        "General Requirements",
-        "Strategy",
-        "Metrics and Targets"
+      "where": [
+        "General Requirements: 'Carbon intensity (2024): 1,154.8131 tCO₂e per €m'",
+        "Metrics and Targets: financed emissions intensity metric 'tCO₂e per EUR million of lending' and baseline '20.0 tCO₂e per EUR million'"
       ],
-      "fix": "Define each intensity metric with numerator (which emissions scope) and denominator (loans, revenue, assets, etc.) and ensure consistent naming (e.g., “Financed emissions intensity (loans)” vs “Operational emissions intensity (revenue)” if applicable)."
+      "issue": "The label 'Carbon intensity' is undefined and could be confused with financed-emissions intensity. Units are similar but the magnitude differs drastically from the stated target baseline, indicating either different denominators or a mislabel."
     },
     {
-      "id": "T-02",
-      "term": "Financed emissions",
-      "issue": "General Requirements comparative table labels financed emissions as “(loans)” for 2022 but not consistently for 2024; Metrics and Targets explicitly scopes it to loans and separately discusses listed equity.",
-      "sections": [
-        "General Requirements",
-        "Metrics and Targets"
+      "term": "Reporting boundary",
+      "where": [
+        "Metrics and Targets: 'boundary is based on financial control'",
+        "General Requirements: discusses value chain boundary considerations but does not explicitly align boundary basis (financial control vs operational control) for Scopes 1–2"
       ],
-      "fix": "Standardize labels: “Financed emissions (Scope 3 Cat 15) — loans” and, if relevant, add separate line items for other asset classes (e.g., listed equity) or state clearly that the headline financed emissions metric refers to loans only."
+      "issue": "Boundary basis is stated in Metrics and Targets but not clearly connected/confirmed in General Requirements for operational emissions; could be read as incomplete alignment."
     },
     {
-      "id": "T-03",
-      "term": "Climate-related capital expenditure / Climate capex",
-      "issue": "Referred to as “climate-related capital expenditure” (General Requirements) and “Climate capex” (Strategy table) without an explicit statement they are the same definition and boundary.",
-      "sections": [
-        "General Requirements",
-        "Strategy"
+      "term": "Disorderly transition scenarios",
+      "where": [
+        "General Requirements: uses the term without naming the scenario",
+        "Strategy: names 'NGFS v4 Divergent Net Zero' as the disorderly scenario"
       ],
-      "fix": "Add a short definition cross-reference confirming equivalence (or explain differences if any)."
+      "issue": "Terminology is directionally consistent but should be explicitly linked (i.e., define which scenario(s) constitute 'disorderly' in the methodology section)."
     }
   ],
   "target_metric_mismatches": [
     {
-      "id": "M-01",
-      "target": "Scope 1 and Scope 2 absolute emissions reduction (TGT001)",
-      "issue": "Baseline value (137,849 tCO₂e in 2020) is orders of magnitude larger than 2024 reported Scope 1+2 (~9,659 tCO₂e), without explanation of boundary/method change or what is included in the target metric.",
-      "sections": [
-        "Metrics and Targets",
-        "General Requirements"
-      ],
-      "impact": "Calls into question comparability and credibility of the 40.0% progress figure.",
-      "required_reconciliation": "Explain whether the target covers a broader perimeter (e.g., additional entities, heat/steam, upstream energy, or previously included categories), whether there was a restatement, or whether 2024 operational emissions are partial. If boundary changed, disclose restated baseline or provide like-for-like progress."
+      "target": "Financed emissions intensity target (Scope 3 Category 15)",
+      "mismatch": "Baseline/parameter intensity (20.0 tCO₂e/EURm) does not reconcile to disclosed financed emissions and loan exposure amounts (implied ~1,173 tCO₂e/EURm for 2022).",
+      "where": [
+        "Metrics and Targets: baseline 20.0; ambition 30%; milestones 18.2 and 15.8; progress 25.0%",
+        "Metrics and Targets: financed emissions—loans and total loans table",
+        "Strategy: repeats target intensity 20.0",
+        "General Requirements: 'Carbon intensity (2024): 1,154.8131 tCO₂e per €m'"
+      ]
     },
     {
-      "id": "M-02",
-      "target": "Financed emissions intensity reduction (Scope 3 Category 15)",
-      "issue": "Baseline intensity is stated as 20.0 tCO₂e/EURm (2022), but 2024 financed emissions and total loans imply a much higher intensity (~35,973,167.7 / 31,150.64 ≈ 1,155 tCO₂e/EURm), matching the separate “carbon intensity” figure in General Requirements.",
-      "sections": [
-        "Metrics and Targets",
-        "General Requirements",
-        "Strategy"
-      ],
-      "impact": "Progress (25.0%) and milestones (18.2; 15.8) are not mathematically consistent with disclosed financed emissions and loans, suggesting either the denominator differs (e.g., only certain portfolios) or the 20.0 figure is mis-stated.",
-      "required_reconciliation": "Clarify the denominator and portfolio scope for the intensity target (e.g., only corporate lending subset, only high-carbon sectors, only in-scope counterparties with data). Provide the actual calculated intensity for 2022–2024 on the same basis as the target, or correct the baseline/milestones."
+      "target": "TGT001 Scope 1 and 2 absolute reduction",
+      "mismatch": "Baseline value (137,849 tCO₂e in 2020) is orders of magnitude larger than 2024 Scope 1+2 totals (~9,598 tCO₂e). This may be valid (e.g., boundary change, acquisitions/divestments, methodology change), but no cross-section explanation is provided.",
+      "where": [
+        "Metrics and Targets: TGT001 baseline 2020 = 137,849 tCO₂e; milestones 120,480 and 97,321.4; progress 40.0%",
+        "General Requirements & Metrics and Targets: 2024 Scope 1 = 2,634.9; Scope 2 location-based = 6,963.5; market-based = 3,060.5"
+      ]
     },
     {
-      "id": "M-03",
       "target": "All-scopes target (whole entity)",
-      "issue": "Baseline year is not stated; baseline value (120,000 tCO₂e) is not connected to the disclosed operational and financed emissions magnitudes, and carbon credit use (8.2% plus 21,080 tCO₂e) is not reconciled to the baseline/target framing.",
-      "sections": [
-        "Metrics and Targets",
-        "Governance",
-        "Strategy"
-      ],
-      "impact": "Users cannot understand what emissions are covered, how progress (13.3%) is computed, or how credits interact with gross vs net accounting.",
-      "required_reconciliation": "State baseline year, scopes/categories included, whether financed emissions are included, whether progress is gross or net of credits, and reconcile the 21,080 tCO₂e credit figure to the 8.2% statement."
+      "mismatch": "Baseline value (120,000 tCO₂e) is not connected to the disclosed scope totals and financed emissions magnitude (tens of millions tCO₂e). If financed emissions are included in 'all scopes', the baseline appears inconsistent; if excluded, 'all scopes' is mis-termed.",
+      "where": [
+        "Metrics and Targets: 'All scopes' baseline 120,000 tCO₂e; progress 13.3%",
+        "Metrics and Targets: financed emissions 35,973,167.7 tCO₂e",
+        "Strategy: 'Net zero (all scopes): 13.3% progress'"
+      ]
     }
   ],
   "required_fixes": [
     {
-      "id": "F-01",
-      "priority": "high",
-      "fix": "Resolve ESG committee cadence inconsistency (5 vs 7 meetings). Choose the correct number and align across General Requirements and Governance; if both are true (e.g., scheduled vs held), explain explicitly."
+      "fix": "Reconcile and clearly define 'carbon intensity' vs 'financed emissions intensity' and ensure the financed-emissions intensity baseline/milestones match the disclosed financed emissions and denominator.",
+      "actions": [
+        "State the exact formula for financed-emissions intensity (numerator: which financed emissions components; denominator: total loans vs corporate loans vs exposure class).",
+        "If the 20.0 tCO₂e/EURm baseline is correct, correct either the financed emissions totals, the loan exposure denominator, or the unit scaling (e.g., per €bn rather than per €m).",
+        "If General Requirements 'Carbon intensity (2024): 1,154.8131 tCO₂e per €m' is financed-emissions intensity, rename it accordingly and align it to the same denominator used in Metrics and Targets."
+      ]
     },
     {
-      "id": "F-02",
-      "priority": "high",
-      "fix": "Fix financed emissions comparative inconsistency: update General Requirements table to include the 2023 financed emissions value (or explain why it is excluded there). Ensure consistent labeling as “loans” if that is the scope."
+      "fix": "Clarify scenario analysis inventory consistently across General Requirements and Strategy.",
+      "actions": [
+        "Update General Requirements scenario methodology to list all scenarios referenced in Strategy (Net Zero 2050, Below 2°C, Divergent Net Zero, Current Policies, NDC) or explicitly state that Strategy includes additional scenarios beyond those summarised in the methodology subsection.",
+        "Define which scenarios are treated as 'orderly', 'disorderly', and 'hot house world/current policies' for consistent terminology."
+      ]
     },
     {
-      "id": "F-03",
-      "priority": "high",
-      "fix": "Define and reconcile intensity metrics: distinguish “carbon intensity (tCO₂e/EURm)” from “financed emissions intensity target (tCO₂e/EURm of lending)”. Provide formulas and denominators and ensure the target baseline/milestones match the disclosed financed emissions and loan totals (or clarify different scope)."
+      "fix": "Resolve the 'changed since prior period' year ambiguity for the climate risk register.",
+      "actions": [
+        "Specify whether the change flag is assessed for 2024 vs 2023, and align wording across General Requirements, Risk Management, and Strategy.",
+        "If only 2023 change-tracking is available, state that limitation explicitly and avoid implying it is a 2024 assessment."
+      ]
     },
     {
-      "id": "F-04",
-      "priority": "high",
-      "fix": "Reconcile Scope 1+2 target baseline (2020: 137,849 tCO₂e) with 2024 Scope 1+2 results (~9,659 tCO₂e). Disclose boundary/method changes, restatements, or correct baseline/progress."
+      "fix": "Align target baselines with boundary/methodology explanations (TGT001 and all-scopes target).",
+      "actions": [
+        "Explain why the 2020 Scope 1+2 baseline (137,849 tCO₂e) is so much higher than 2024 operational emissions (e.g., boundary change, divestment, methodology restatement) and cross-reference where the change is described.",
+        "For the 'all-scopes' target, clarify whether financed emissions are included. If included, revisit baseline magnitude; if excluded, rename the target (e.g., 'operational + selected Scope 3') and adjust 'all scopes' wording in Strategy and Metrics and Targets."
+      ]
     },
     {
-      "id": "F-05",
-      "priority": "medium",
-      "fix": "Close the risk-matrix band gap (score 7). Either redefine bands to cover all scores 1–25 without gaps or explain treatment of score 7."
-    },
-    {
-      "id": "F-06",
-      "priority": "medium",
-      "fix": "Strengthen connectivity for the all-scopes target: add baseline year, scope composition, and gross/net treatment of carbon credits; reconcile 8.2% planned credit contribution with the 21,080 tCO₂e credit total."
+      "fix": "Standardise entity naming and key terms.",
+      "actions": [
+        "Use consistent capitalisation ('Bank') across all sections or define a style convention.",
+        "Ensure consistent currency/unit notation (EUR million vs €m) and apply consistently in intensity metrics."
+      ]
     }
   ],
-  "summary": "Connectivity is moderate but not approval-ready due to several cross-section inconsistencies that affect user understanding of governance cadence, comparative financed emissions, and—most critically—targets and intensity metrics. The financed emissions intensity target (20.0 tCO₂e/EURm) conflicts with the financed emissions and loan totals (implying ~1,155 tCO₂e/EURm), and the Scope 1+2 target baseline is not reconcilable with the disclosed 2024 operational emissions without boundary/method explanations. Fixing these items and standardizing terminology (especially around “carbon intensity” and financed emissions scope) is required to achieve IFRS S1/S2 connected information coherence."
+  "summary": "Sections are broadly connected (governance cadence links to risk monitoring; scenario analysis links to strategy and risk register), but there are material cross-section inconsistencies around intensity metrics and target baselines. The financed-emissions intensity target baseline (20.0 tCO₂e/EURm) does not reconcile with disclosed financed emissions and loan exposure data and conflicts with the separately disclosed 'Carbon intensity' (~1,155 tCO₂e/€m). Scenario coverage is also inconsistently enumerated between methodology and strategy, and the risk-register change-tracking year is ambiguous. These issues should be corrected/clarified to achieve IFRS S1/S2 connectivity and internal consistency."
 }

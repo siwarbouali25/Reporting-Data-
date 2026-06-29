@@ -11,34 +11,11 @@
       "reason": "approved_after_deterministic_and_supported_scope_judges",
       "scores": {
         "ifrs_coverage": 6.0,
-        "evidence": 6.0,
-        "style": 3.6
+        "evidence": 7.0,
+        "style": 6.8
       },
       "failures": [],
-      "warnings": [
-        {
-          "judge": "style_judge",
-          "score": 3.6,
-          "threshold": 0.0,
-          "required_fixes": [
-            "Introduce a numbered heading structure aligned with the global formatting rules (e.g., '1. General requirements', '1.1 Basis of preparation and reporting scope', '1.2 Reporting period and fiscal year', etc.) and ensure consistency with IFRS S1/S2 pillar references where relevant.",
-            "Add short purpose statements at the start of each subsection explaining what the subsection covers and how it helps users interpret the sustainability-related financial disclosures.",
-            "Rework the opening of the section to follow the layered structure: a concise scope and basis-of-preparation statement, followed by a bulleted list of qualitative characteristics and preparation principles (e.g., completeness, neutrality, accuracy, comparability, verifiability, timeliness, understandability), and then brief cross-references to where pillar-specific details are disclosed.",
-            "Adjust voice to align with the preferred point of view: use first-person plural ('we') for accountability statements about how the disclosures are prepared and third-person or passive voice for externally defined requirements. Ensure this is consistent throughout the section.",
-            "Shorten and simplify long sentences, especially in the introductory paragraph and the scenario methodology descriptions, to maintain clear subject–verb–object structure and avoid multi-topic sentences.",
-            "Clarify the distinction between current-period facts, estimates, and forward-looking scenario-based judgements. For scenario analysis and resilience content, explicitly state that these are modelled outcomes based on defined assumptions and use cautious modality ('may', 'could', 'is expected to') rather than definitive statements.",
-            "Remove or significantly trim detailed scenario outcomes, resilience assessments, and specific risk examples from this general requirements section, or convert them into high-level methodological descriptions with cross-references to detailed content in Strategy and Risk Management sections (e.g., 'Refer to [Section: Strategy – Climate scenario analysis]').",
-            "Review and adjust content that hard-codes specific years, dates, currencies, geographies, and detailed metrics if this section is intended as a reusable template. Where such specifics are necessary for this particular report, ensure they are clearly framed as current-period facts and that this does not conflict with the broader template guidance.",
-            "Number and caption all tables (e.g., 'Table 1: Comparative climate-related metrics, 2022–2024'; 'Table 2: Emissions data quality mix, 2024') and reference them explicitly in the narrative using those labels.",
-            "Replace the em dash ('—') used for missing 2023 financed emissions with a standardized status label (e.g., 'not reported for the period') and, if material, add a brief narrative note explaining why the data is not available, any interim approach, limitations, and planned enhancements.",
-            "Add brief connectivity sentences at the end of major subsections to link to related sections or appendices (e.g., 'Refer to [Section: Metrics and Targets] for detailed emissions metrics and targets' or 'See [Appendix: Methodologies] for additional methodological detail.').",
-            "Ensure that commentary on data quality and interpretation remains neutral and evidence-led; avoid interpretive or evaluative language such as 'substantial portion' unless it is clearly defined or supported by a threshold or materiality assessment.",
-            "Where metrics and targets are listed, consider adding minimal traceability elements (e.g., boundary and source type) or cross-references to where full traceability is provided, to align with the evidence and traceability rules."
-          ],
-          "advisory": true,
-          "note": "Style is below preferred level but deterministic gates passed; do not trigger destructive revision."
-        }
-      ],
+      "warnings": [],
       "thresholds": {
         "ifrs_coverage_score_min": 5.5,
         "evidence_score_min": 5.5,
@@ -47,12 +24,12 @@
         "approve_clean_sections_with_warnings": true,
         "judge_floor_for_clean_gate_auto_approval": 5.5
       },
-      "approval_policy": "V9.6: deterministic gates/fact-lock/cleanliness are binding; IFRS and evidence judges use IFRS_SUPPORTED_SCOPE_JUDGE_FLOOR; legacy strict thresholds are ignored unless IFRS_USE_LEGACY_STRICT_APPROVAL=1.",
-      "version": "V9.6-approval-config-fix-and-revision-guard",
+      "approval_policy": "current layer: deterministic gates/fact-lock/cleanliness are binding; IFRS and evidence judges use IFRS_SUPPORTED_SCOPE_JUDGE_FLOOR; legacy strict thresholds are ignored unless IFRS_USE_LEGACY_STRICT_APPROVAL=1.",
+      "version": "production_ifrs_report_engine",
       "section_generation_score": {
         "section_name": "General Requirements",
-        "overall_section_generation_score_0_to_100": 77.4,
-        "supported_scope_coverage_score_0_to_100": 60.0,
+        "overall_section_generation_score_0_to_100": 84.44,
+        "supported_scope_coverage_score_0_to_100": 77.04,
         "payload_readiness_component": {
           "requirements_total": 108,
           "supported_requirements_total": 98,
@@ -79,11 +56,11 @@
           "payload_readiness_score_0_to_100": 69.91,
           "policy": "Generation coverage excludes not_available_in_payload requirements. Payload readiness is reported separately for audit."
         },
-        "judge_average_0_to_100": 57.6,
+        "judge_average_0_to_100": 65.3,
         "judge_scores_0_to_10": {
           "ifrs_coverage": 6.0,
-          "evidence": 6.0,
-          "style": 3.6
+          "evidence": 7.0,
+          "style": 6.8
         },
         "deterministic_gate_score_0_to_100": 100.0,
         "report_cleanliness_score_0_to_100": 100.0,
@@ -102,13 +79,19 @@
         ],
         "missing_data_language_hits": [],
         "approved": true,
-        "policy": "Section generation score is based on supported-scope report quality. Payload readiness is reported separately and missing synthetic data does not lower the generation score."
+        "weights": {
+          "coverage": 0.3,
+          "judges": 0.25,
+          "deterministic_gates": 0.25,
+          "cleanliness": 0.2
+        },
+        "scoring_policy": "Coverage uses deterministic supported-scope evidence mapping. LLM judges are a separate quality signal. Payload readiness is reported separately and missing synthetic payload items do not lower the generation score."
       }
     },
     "section_generation_score": {
       "section_name": "General Requirements",
-      "overall_section_generation_score_0_to_100": 77.4,
-      "supported_scope_coverage_score_0_to_100": 60.0,
+      "overall_section_generation_score_0_to_100": 84.44,
+      "supported_scope_coverage_score_0_to_100": 77.04,
       "payload_readiness_component": {
         "requirements_total": 108,
         "supported_requirements_total": 98,
@@ -135,11 +118,11 @@
         "payload_readiness_score_0_to_100": 69.91,
         "policy": "Generation coverage excludes not_available_in_payload requirements. Payload readiness is reported separately for audit."
       },
-      "judge_average_0_to_100": 57.6,
+      "judge_average_0_to_100": 65.3,
       "judge_scores_0_to_10": {
         "ifrs_coverage": 6.0,
-        "evidence": 6.0,
-        "style": 3.6
+        "evidence": 7.0,
+        "style": 6.8
       },
       "deterministic_gate_score_0_to_100": 100.0,
       "report_cleanliness_score_0_to_100": 100.0,
@@ -158,7 +141,13 @@
       ],
       "missing_data_language_hits": [],
       "approved": true,
-      "policy": "Section generation score is based on supported-scope report quality. Payload readiness is reported separately and missing synthetic data does not lower the generation score."
+      "weights": {
+        "coverage": 0.3,
+        "judges": 0.25,
+        "deterministic_gates": 0.25,
+        "cleanliness": 0.2
+      },
+      "scoring_policy": "Coverage uses deterministic supported-scope evidence mapping. LLM judges are a separate quality signal. Payload readiness is reported separately and missing synthetic payload items do not lower the generation score."
     }
   },
   {
@@ -172,8 +161,8 @@
       "approved": true,
       "reason": "approved_after_deterministic_and_supported_scope_judges",
       "scores": {
-        "ifrs_coverage": 6.0,
-        "evidence": 6.0,
+        "ifrs_coverage": 7.0,
+        "evidence": 7.0,
         "style": 6.8
       },
       "failures": [],
@@ -186,12 +175,12 @@
         "approve_clean_sections_with_warnings": true,
         "judge_floor_for_clean_gate_auto_approval": 5.5
       },
-      "approval_policy": "V9.6: deterministic gates/fact-lock/cleanliness are binding; IFRS and evidence judges use IFRS_SUPPORTED_SCOPE_JUDGE_FLOOR; legacy strict thresholds are ignored unless IFRS_USE_LEGACY_STRICT_APPROVAL=1.",
-      "version": "V9.6-approval-config-fix-and-revision-guard",
+      "approval_policy": "current layer: deterministic gates/fact-lock/cleanliness are binding; IFRS and evidence judges use IFRS_SUPPORTED_SCOPE_JUDGE_FLOOR; legacy strict thresholds are ignored unless IFRS_USE_LEGACY_STRICT_APPROVAL=1.",
+      "version": "production_ifrs_report_engine",
       "section_generation_score": {
         "section_name": "Governance",
-        "overall_section_generation_score_0_to_100": 78.2,
-        "supported_scope_coverage_score_0_to_100": 60.0,
+        "overall_section_generation_score_0_to_100": 91.45,
+        "supported_scope_coverage_score_0_to_100": 96.67,
         "payload_readiness_component": {
           "requirements_total": 15,
           "supported_requirements_total": 15,
@@ -214,6 +203,131 @@
           "coverage_score_0_to_100": 96.67,
           "supported_scope_coverage_score_0_to_100": 96.67,
           "payload_readiness_score_0_to_100": 96.67,
+          "policy": "Generation coverage excludes not_available_in_payload requirements. Payload readiness is reported separately for audit."
+        },
+        "judge_average_0_to_100": 69.8,
+        "judge_scores_0_to_10": {
+          "ifrs_coverage": 7.0,
+          "evidence": 7.0,
+          "style": 6.8
+        },
+        "deterministic_gate_score_0_to_100": 100.0,
+        "report_cleanliness_score_0_to_100": 100.0,
+        "missing_requirements_count_flagged": 0,
+        "missing_requirement_ids_flagged": [],
+        "missing_data_language_hits": [],
+        "approved": true,
+        "weights": {
+          "coverage": 0.3,
+          "judges": 0.25,
+          "deterministic_gates": 0.25,
+          "cleanliness": 0.2
+        },
+        "scoring_policy": "Coverage uses deterministic supported-scope evidence mapping. LLM judges are a separate quality signal. Payload readiness is reported separately and missing synthetic payload items do not lower the generation score."
+      }
+    },
+    "section_generation_score": {
+      "section_name": "Governance",
+      "overall_section_generation_score_0_to_100": 91.45,
+      "supported_scope_coverage_score_0_to_100": 96.67,
+      "payload_readiness_component": {
+        "requirements_total": 15,
+        "supported_requirements_total": 15,
+        "coverage_counts": {
+          "covered": 14,
+          "partially_covered": 1
+        },
+        "coverage_score_0_to_100": 96.67,
+        "supported_scope_coverage_score_0_to_100": 96.67,
+        "payload_readiness_score_0_to_100": 96.67,
+        "policy": "Generation coverage excludes not_available_in_payload requirements. Payload readiness is reported separately for audit."
+      },
+      "coverage_component": {
+        "requirements_total": 15,
+        "supported_requirements_total": 15,
+        "coverage_counts": {
+          "covered": 14,
+          "partially_covered": 1
+        },
+        "coverage_score_0_to_100": 96.67,
+        "supported_scope_coverage_score_0_to_100": 96.67,
+        "payload_readiness_score_0_to_100": 96.67,
+        "policy": "Generation coverage excludes not_available_in_payload requirements. Payload readiness is reported separately for audit."
+      },
+      "judge_average_0_to_100": 69.8,
+      "judge_scores_0_to_10": {
+        "ifrs_coverage": 7.0,
+        "evidence": 7.0,
+        "style": 6.8
+      },
+      "deterministic_gate_score_0_to_100": 100.0,
+      "report_cleanliness_score_0_to_100": 100.0,
+      "missing_requirements_count_flagged": 0,
+      "missing_requirement_ids_flagged": [],
+      "missing_data_language_hits": [],
+      "approved": true,
+      "weights": {
+        "coverage": 0.3,
+        "judges": 0.25,
+        "deterministic_gates": 0.25,
+        "cleanliness": 0.2
+      },
+      "scoring_policy": "Coverage uses deterministic supported-scope evidence mapping. LLM judges are a separate quality signal. Payload readiness is reported separately and missing synthetic payload items do not lower the generation score."
+    }
+  },
+  {
+    "section_name": "Strategy",
+    "status": "approved",
+    "approved_markdown_path": "C:\\Users\\BV426BP\\Documents\\IFRS Data\\Reporting-Data-\\notebooks\\gen_data\\generated_reports\\agentic_ifrs_report\\10_approved_sections\\approved_strategy.md",
+    "approved_json_path": "C:\\Users\\BV426BP\\Documents\\IFRS Data\\Reporting-Data-\\notebooks\\gen_data\\generated_reports\\agentic_ifrs_report\\10_approved_sections\\approved_strategy.json",
+    "iterations": 0,
+    "approval": {
+      "section_name": "Strategy",
+      "approved": true,
+      "reason": "approved_after_deterministic_and_supported_scope_judges",
+      "scores": {
+        "ifrs_coverage": 6.0,
+        "evidence": 6.0,
+        "style": 6.8
+      },
+      "failures": [],
+      "warnings": [],
+      "thresholds": {
+        "ifrs_coverage_score_min": 5.5,
+        "evidence_score_min": 5.5,
+        "style_score_min": 0.0,
+        "style_judge_mode": "advisory_after_deterministic_pass",
+        "approve_clean_sections_with_warnings": true,
+        "judge_floor_for_clean_gate_auto_approval": 5.5
+      },
+      "approval_policy": "current layer: deterministic gates/fact-lock/cleanliness are binding; IFRS and evidence judges use IFRS_SUPPORTED_SCOPE_JUDGE_FLOOR; legacy strict thresholds are ignored unless IFRS_USE_LEGACY_STRICT_APPROVAL=1.",
+      "version": "production_ifrs_report_engine",
+      "section_generation_score": {
+        "section_name": "Strategy",
+        "overall_section_generation_score_0_to_100": 86.77,
+        "supported_scope_coverage_score_0_to_100": 88.57,
+        "payload_readiness_component": {
+          "requirements_total": 70,
+          "supported_requirements_total": 70,
+          "coverage_counts": {
+            "covered": 54,
+            "partially_covered": 16
+          },
+          "coverage_score_0_to_100": 88.57,
+          "supported_scope_coverage_score_0_to_100": 88.57,
+          "payload_readiness_score_0_to_100": 88.57,
+          "policy": "Generation coverage excludes not_available_in_payload requirements. Payload readiness is reported separately for audit."
+        },
+        "coverage_component": {
+          "requirements_total": 70,
+          "supported_requirements_total": 70,
+          "coverage_counts": {
+            "covered": 54,
+            "partially_covered": 16
+          },
+          "coverage_score_0_to_100": 88.57,
+          "supported_scope_coverage_score_0_to_100": 88.57,
+          "payload_readiness_score_0_to_100": 88.57,
           "policy": "Generation coverage excludes not_available_in_payload requirements. Payload readiness is reported separately for audit."
         },
         "judge_average_0_to_100": 60.8,
@@ -228,35 +342,41 @@
         "missing_requirement_ids_flagged": [],
         "missing_data_language_hits": [],
         "approved": true,
-        "policy": "Section generation score is based on supported-scope report quality. Payload readiness is reported separately and missing synthetic data does not lower the generation score."
+        "weights": {
+          "coverage": 0.3,
+          "judges": 0.25,
+          "deterministic_gates": 0.25,
+          "cleanliness": 0.2
+        },
+        "scoring_policy": "Coverage uses deterministic supported-scope evidence mapping. LLM judges are a separate quality signal. Payload readiness is reported separately and missing synthetic payload items do not lower the generation score."
       }
     },
     "section_generation_score": {
-      "section_name": "Governance",
-      "overall_section_generation_score_0_to_100": 78.2,
-      "supported_scope_coverage_score_0_to_100": 60.0,
+      "section_name": "Strategy",
+      "overall_section_generation_score_0_to_100": 86.77,
+      "supported_scope_coverage_score_0_to_100": 88.57,
       "payload_readiness_component": {
-        "requirements_total": 15,
-        "supported_requirements_total": 15,
+        "requirements_total": 70,
+        "supported_requirements_total": 70,
         "coverage_counts": {
-          "covered": 14,
-          "partially_covered": 1
+          "covered": 54,
+          "partially_covered": 16
         },
-        "coverage_score_0_to_100": 96.67,
-        "supported_scope_coverage_score_0_to_100": 96.67,
-        "payload_readiness_score_0_to_100": 96.67,
+        "coverage_score_0_to_100": 88.57,
+        "supported_scope_coverage_score_0_to_100": 88.57,
+        "payload_readiness_score_0_to_100": 88.57,
         "policy": "Generation coverage excludes not_available_in_payload requirements. Payload readiness is reported separately for audit."
       },
       "coverage_component": {
-        "requirements_total": 15,
-        "supported_requirements_total": 15,
+        "requirements_total": 70,
+        "supported_requirements_total": 70,
         "coverage_counts": {
-          "covered": 14,
-          "partially_covered": 1
+          "covered": 54,
+          "partially_covered": 16
         },
-        "coverage_score_0_to_100": 96.67,
-        "supported_scope_coverage_score_0_to_100": 96.67,
-        "payload_readiness_score_0_to_100": 96.67,
+        "coverage_score_0_to_100": 88.57,
+        "supported_scope_coverage_score_0_to_100": 88.57,
+        "payload_readiness_score_0_to_100": 88.57,
         "policy": "Generation coverage excludes not_available_in_payload requirements. Payload readiness is reported separately for audit."
       },
       "judge_average_0_to_100": 60.8,
@@ -271,120 +391,13 @@
       "missing_requirement_ids_flagged": [],
       "missing_data_language_hits": [],
       "approved": true,
-      "policy": "Section generation score is based on supported-scope report quality. Payload readiness is reported separately and missing synthetic data does not lower the generation score."
-    }
-  },
-  {
-    "section_name": "Strategy",
-    "status": "approved",
-    "approved_markdown_path": "C:\\Users\\BV426BP\\Documents\\IFRS Data\\Reporting-Data-\\notebooks\\gen_data\\generated_reports\\agentic_ifrs_report\\10_approved_sections\\approved_strategy.md",
-    "approved_json_path": "C:\\Users\\BV426BP\\Documents\\IFRS Data\\Reporting-Data-\\notebooks\\gen_data\\generated_reports\\agentic_ifrs_report\\10_approved_sections\\approved_strategy.json",
-    "iterations": 2,
-    "approval": {
-      "section_name": "Strategy",
-      "approved": true,
-      "reason": "approved_after_deterministic_and_supported_scope_judges",
-      "scores": {
-        "ifrs_coverage": 6.0,
-        "evidence": 6.0,
-        "style": 7.8
+      "weights": {
+        "coverage": 0.3,
+        "judges": 0.25,
+        "deterministic_gates": 0.25,
+        "cleanliness": 0.2
       },
-      "failures": [],
-      "warnings": [],
-      "thresholds": {
-        "ifrs_coverage_score_min": 5.5,
-        "evidence_score_min": 5.5,
-        "style_score_min": 0.0,
-        "style_judge_mode": "advisory_after_deterministic_pass",
-        "approve_clean_sections_with_warnings": true,
-        "judge_floor_for_clean_gate_auto_approval": 5.5
-      },
-      "approval_policy": "V9.6: deterministic gates/fact-lock/cleanliness are binding; IFRS and evidence judges use IFRS_SUPPORTED_SCOPE_JUDGE_FLOOR; legacy strict thresholds are ignored unless IFRS_USE_LEGACY_STRICT_APPROVAL=1.",
-      "version": "V9.6-approval-config-fix-and-revision-guard",
-      "section_generation_score": {
-        "section_name": "Strategy",
-        "overall_section_generation_score_0_to_100": 78.45,
-        "supported_scope_coverage_score_0_to_100": 60.0,
-        "payload_readiness_component": {
-          "requirements_total": 70,
-          "supported_requirements_total": 70,
-          "coverage_counts": {
-            "covered": 54,
-            "partially_covered": 16
-          },
-          "coverage_score_0_to_100": 88.57,
-          "supported_scope_coverage_score_0_to_100": 88.57,
-          "payload_readiness_score_0_to_100": 88.57,
-          "policy": "Generation coverage excludes not_available_in_payload requirements. Payload readiness is reported separately for audit."
-        },
-        "coverage_component": {
-          "requirements_total": 70,
-          "supported_requirements_total": 70,
-          "coverage_counts": {
-            "covered": 54,
-            "partially_covered": 16
-          },
-          "coverage_score_0_to_100": 88.57,
-          "supported_scope_coverage_score_0_to_100": 88.57,
-          "payload_readiness_score_0_to_100": 88.57,
-          "policy": "Generation coverage excludes not_available_in_payload requirements. Payload readiness is reported separately for audit."
-        },
-        "judge_average_0_to_100": 61.8,
-        "judge_scores_0_to_10": {
-          "ifrs_coverage": 6.0,
-          "evidence": 6.0,
-          "style": 7.8
-        },
-        "deterministic_gate_score_0_to_100": 100.0,
-        "report_cleanliness_score_0_to_100": 100.0,
-        "missing_requirements_count_flagged": 0,
-        "missing_requirement_ids_flagged": [],
-        "missing_data_language_hits": [],
-        "approved": true,
-        "policy": "Section generation score is based on supported-scope report quality. Payload readiness is reported separately and missing synthetic data does not lower the generation score."
-      }
-    },
-    "section_generation_score": {
-      "section_name": "Strategy",
-      "overall_section_generation_score_0_to_100": 78.45,
-      "supported_scope_coverage_score_0_to_100": 60.0,
-      "payload_readiness_component": {
-        "requirements_total": 70,
-        "supported_requirements_total": 70,
-        "coverage_counts": {
-          "covered": 54,
-          "partially_covered": 16
-        },
-        "coverage_score_0_to_100": 88.57,
-        "supported_scope_coverage_score_0_to_100": 88.57,
-        "payload_readiness_score_0_to_100": 88.57,
-        "policy": "Generation coverage excludes not_available_in_payload requirements. Payload readiness is reported separately for audit."
-      },
-      "coverage_component": {
-        "requirements_total": 70,
-        "supported_requirements_total": 70,
-        "coverage_counts": {
-          "covered": 54,
-          "partially_covered": 16
-        },
-        "coverage_score_0_to_100": 88.57,
-        "supported_scope_coverage_score_0_to_100": 88.57,
-        "payload_readiness_score_0_to_100": 88.57,
-        "policy": "Generation coverage excludes not_available_in_payload requirements. Payload readiness is reported separately for audit."
-      },
-      "judge_average_0_to_100": 61.8,
-      "judge_scores_0_to_10": {
-        "ifrs_coverage": 6.0,
-        "evidence": 6.0,
-        "style": 7.8
-      },
-      "deterministic_gate_score_0_to_100": 100.0,
-      "report_cleanliness_score_0_to_100": 100.0,
-      "missing_requirements_count_flagged": 0,
-      "missing_requirement_ids_flagged": [],
-      "missing_data_language_hits": [],
-      "approved": true,
-      "policy": "Section generation score is based on supported-scope report quality. Payload readiness is reported separately and missing synthetic data does not lower the generation score."
+      "scoring_policy": "Coverage uses deterministic supported-scope evidence mapping. LLM judges are a separate quality signal. Payload readiness is reported separately and missing synthetic payload items do not lower the generation score."
     }
   },
   {
@@ -399,8 +412,8 @@
       "reason": "approved_after_deterministic_and_supported_scope_judges",
       "scores": {
         "ifrs_coverage": 6.0,
-        "evidence": 6.0,
-        "style": 7.6
+        "evidence": 7.0,
+        "style": 7.2
       },
       "failures": [],
       "warnings": [],
@@ -412,12 +425,12 @@
         "approve_clean_sections_with_warnings": true,
         "judge_floor_for_clean_gate_auto_approval": 5.5
       },
-      "approval_policy": "V9.6: deterministic gates/fact-lock/cleanliness are binding; IFRS and evidence judges use IFRS_SUPPORTED_SCOPE_JUDGE_FLOOR; legacy strict thresholds are ignored unless IFRS_USE_LEGACY_STRICT_APPROVAL=1.",
-      "version": "V9.6-approval-config-fix-and-revision-guard",
+      "approval_policy": "current layer: deterministic gates/fact-lock/cleanliness are binding; IFRS and evidence judges use IFRS_SUPPORTED_SCOPE_JUDGE_FLOOR; legacy strict thresholds are ignored unless IFRS_USE_LEGACY_STRICT_APPROVAL=1.",
+      "version": "production_ifrs_report_engine",
       "section_generation_score": {
         "section_name": "Risk Management",
-        "overall_section_generation_score_0_to_100": 78.4,
-        "supported_scope_coverage_score_0_to_100": 60.0,
+        "overall_section_generation_score_0_to_100": 85.25,
+        "supported_scope_coverage_score_0_to_100": 79.41,
         "payload_readiness_component": {
           "requirements_total": 17,
           "supported_requirements_total": 17,
@@ -442,11 +455,11 @@
           "payload_readiness_score_0_to_100": 79.41,
           "policy": "Generation coverage excludes not_available_in_payload requirements. Payload readiness is reported separately for audit."
         },
-        "judge_average_0_to_100": 61.6,
+        "judge_average_0_to_100": 65.7,
         "judge_scores_0_to_10": {
           "ifrs_coverage": 6.0,
-          "evidence": 6.0,
-          "style": 7.6
+          "evidence": 7.0,
+          "style": 7.2
         },
         "deterministic_gate_score_0_to_100": 100.0,
         "report_cleanliness_score_0_to_100": 100.0,
@@ -454,13 +467,19 @@
         "missing_requirement_ids_flagged": [],
         "missing_data_language_hits": [],
         "approved": true,
-        "policy": "Section generation score is based on supported-scope report quality. Payload readiness is reported separately and missing synthetic data does not lower the generation score."
+        "weights": {
+          "coverage": 0.3,
+          "judges": 0.25,
+          "deterministic_gates": 0.25,
+          "cleanliness": 0.2
+        },
+        "scoring_policy": "Coverage uses deterministic supported-scope evidence mapping. LLM judges are a separate quality signal. Payload readiness is reported separately and missing synthetic payload items do not lower the generation score."
       }
     },
     "section_generation_score": {
       "section_name": "Risk Management",
-      "overall_section_generation_score_0_to_100": 78.4,
-      "supported_scope_coverage_score_0_to_100": 60.0,
+      "overall_section_generation_score_0_to_100": 85.25,
+      "supported_scope_coverage_score_0_to_100": 79.41,
       "payload_readiness_component": {
         "requirements_total": 17,
         "supported_requirements_total": 17,
@@ -485,11 +504,11 @@
         "payload_readiness_score_0_to_100": 79.41,
         "policy": "Generation coverage excludes not_available_in_payload requirements. Payload readiness is reported separately for audit."
       },
-      "judge_average_0_to_100": 61.6,
+      "judge_average_0_to_100": 65.7,
       "judge_scores_0_to_10": {
         "ifrs_coverage": 6.0,
-        "evidence": 6.0,
-        "style": 7.6
+        "evidence": 7.0,
+        "style": 7.2
       },
       "deterministic_gate_score_0_to_100": 100.0,
       "report_cleanliness_score_0_to_100": 100.0,
@@ -497,7 +516,13 @@
       "missing_requirement_ids_flagged": [],
       "missing_data_language_hits": [],
       "approved": true,
-      "policy": "Section generation score is based on supported-scope report quality. Payload readiness is reported separately and missing synthetic data does not lower the generation score."
+      "weights": {
+        "coverage": 0.3,
+        "judges": 0.25,
+        "deterministic_gates": 0.25,
+        "cleanliness": 0.2
+      },
+      "scoring_policy": "Coverage uses deterministic supported-scope evidence mapping. LLM judges are a separate quality signal. Payload readiness is reported separately and missing synthetic payload items do not lower the generation score."
     }
   },
   {
@@ -512,8 +537,8 @@
       "reason": "approved_after_deterministic_and_supported_scope_judges",
       "scores": {
         "ifrs_coverage": 6.0,
-        "evidence": 7.0,
-        "style": 7.6
+        "evidence": 8.0,
+        "style": 7.4
       },
       "failures": [],
       "warnings": [],
@@ -525,12 +550,12 @@
         "approve_clean_sections_with_warnings": true,
         "judge_floor_for_clean_gate_auto_approval": 5.5
       },
-      "approval_policy": "V9.6: deterministic gates/fact-lock/cleanliness are binding; IFRS and evidence judges use IFRS_SUPPORTED_SCOPE_JUDGE_FLOOR; legacy strict thresholds are ignored unless IFRS_USE_LEGACY_STRICT_APPROVAL=1.",
-      "version": "V9.6-approval-config-fix-and-revision-guard",
+      "approval_policy": "current layer: deterministic gates/fact-lock/cleanliness are binding; IFRS and evidence judges use IFRS_SUPPORTED_SCOPE_JUDGE_FLOOR; legacy strict thresholds are ignored unless IFRS_USE_LEGACY_STRICT_APPROVAL=1.",
+      "version": "production_ifrs_report_engine",
       "section_generation_score": {
         "section_name": "Metrics and Targets",
-        "overall_section_generation_score_0_to_100": 79.53,
-        "supported_scope_coverage_score_0_to_100": 60.0,
+        "overall_section_generation_score_0_to_100": 91.49,
+        "supported_scope_coverage_score_0_to_100": 96.3,
         "payload_readiness_component": {
           "requirements_total": 151,
           "supported_requirements_total": 135,
@@ -557,11 +582,11 @@
           "payload_readiness_score_0_to_100": 86.09,
           "policy": "Generation coverage excludes not_available_in_payload requirements. Payload readiness is reported separately for audit."
         },
-        "judge_average_0_to_100": 66.1,
+        "judge_average_0_to_100": 70.4,
         "judge_scores_0_to_10": {
           "ifrs_coverage": 6.0,
-          "evidence": 7.0,
-          "style": 7.6
+          "evidence": 8.0,
+          "style": 7.4
         },
         "deterministic_gate_score_0_to_100": 100.0,
         "report_cleanliness_score_0_to_100": 100.0,
@@ -586,13 +611,19 @@
         ],
         "missing_data_language_hits": [],
         "approved": true,
-        "policy": "Section generation score is based on supported-scope report quality. Payload readiness is reported separately and missing synthetic data does not lower the generation score."
+        "weights": {
+          "coverage": 0.3,
+          "judges": 0.25,
+          "deterministic_gates": 0.25,
+          "cleanliness": 0.2
+        },
+        "scoring_policy": "Coverage uses deterministic supported-scope evidence mapping. LLM judges are a separate quality signal. Payload readiness is reported separately and missing synthetic payload items do not lower the generation score."
       }
     },
     "section_generation_score": {
       "section_name": "Metrics and Targets",
-      "overall_section_generation_score_0_to_100": 79.53,
-      "supported_scope_coverage_score_0_to_100": 60.0,
+      "overall_section_generation_score_0_to_100": 91.49,
+      "supported_scope_coverage_score_0_to_100": 96.3,
       "payload_readiness_component": {
         "requirements_total": 151,
         "supported_requirements_total": 135,
@@ -619,11 +650,11 @@
         "payload_readiness_score_0_to_100": 86.09,
         "policy": "Generation coverage excludes not_available_in_payload requirements. Payload readiness is reported separately for audit."
       },
-      "judge_average_0_to_100": 66.1,
+      "judge_average_0_to_100": 70.4,
       "judge_scores_0_to_10": {
         "ifrs_coverage": 6.0,
-        "evidence": 7.0,
-        "style": 7.6
+        "evidence": 8.0,
+        "style": 7.4
       },
       "deterministic_gate_score_0_to_100": 100.0,
       "report_cleanliness_score_0_to_100": 100.0,
@@ -648,7 +679,13 @@
       ],
       "missing_data_language_hits": [],
       "approved": true,
-      "policy": "Section generation score is based on supported-scope report quality. Payload readiness is reported separately and missing synthetic data does not lower the generation score."
+      "weights": {
+        "coverage": 0.3,
+        "judges": 0.25,
+        "deterministic_gates": 0.25,
+        "cleanliness": 0.2
+      },
+      "scoring_policy": "Coverage uses deterministic supported-scope evidence mapping. LLM judges are a separate quality signal. Payload readiness is reported separately and missing synthetic payload items do not lower the generation score."
     }
   }
 ]

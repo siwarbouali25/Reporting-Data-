@@ -4,8 +4,8 @@
   "reason": "approved_after_deterministic_and_supported_scope_judges",
   "scores": {
     "ifrs_coverage": 6.0,
-    "evidence": 7.0,
-    "style": 7.6
+    "evidence": 8.0,
+    "style": 7.4
   },
   "failures": [],
   "warnings": [],
@@ -17,12 +17,12 @@
     "approve_clean_sections_with_warnings": true,
     "judge_floor_for_clean_gate_auto_approval": 5.5
   },
-  "approval_policy": "V9.6: deterministic gates/fact-lock/cleanliness are binding; IFRS and evidence judges use IFRS_SUPPORTED_SCOPE_JUDGE_FLOOR; legacy strict thresholds are ignored unless IFRS_USE_LEGACY_STRICT_APPROVAL=1.",
-  "version": "V9.6-approval-config-fix-and-revision-guard",
+  "approval_policy": "current layer: deterministic gates/fact-lock/cleanliness are binding; IFRS and evidence judges use IFRS_SUPPORTED_SCOPE_JUDGE_FLOOR; legacy strict thresholds are ignored unless IFRS_USE_LEGACY_STRICT_APPROVAL=1.",
+  "version": "production_ifrs_report_engine",
   "section_generation_score": {
     "section_name": "Metrics and Targets",
-    "overall_section_generation_score_0_to_100": 79.53,
-    "supported_scope_coverage_score_0_to_100": 60.0,
+    "overall_section_generation_score_0_to_100": 91.49,
+    "supported_scope_coverage_score_0_to_100": 96.3,
     "payload_readiness_component": {
       "requirements_total": 151,
       "supported_requirements_total": 135,
@@ -49,11 +49,11 @@
       "payload_readiness_score_0_to_100": 86.09,
       "policy": "Generation coverage excludes not_available_in_payload requirements. Payload readiness is reported separately for audit."
     },
-    "judge_average_0_to_100": 66.1,
+    "judge_average_0_to_100": 70.4,
     "judge_scores_0_to_10": {
       "ifrs_coverage": 6.0,
-      "evidence": 7.0,
-      "style": 7.6
+      "evidence": 8.0,
+      "style": 7.4
     },
     "deterministic_gate_score_0_to_100": 100.0,
     "report_cleanliness_score_0_to_100": 100.0,
@@ -78,6 +78,12 @@
     ],
     "missing_data_language_hits": [],
     "approved": true,
-    "policy": "Section generation score is based on supported-scope report quality. Payload readiness is reported separately and missing synthetic data does not lower the generation score."
+    "weights": {
+      "coverage": 0.3,
+      "judges": 0.25,
+      "deterministic_gates": 0.25,
+      "cleanliness": 0.2
+    },
+    "scoring_policy": "Coverage uses deterministic supported-scope evidence mapping. LLM judges are a separate quality signal. Payload readiness is reported separately and missing synthetic payload items do not lower the generation score."
   }
 }

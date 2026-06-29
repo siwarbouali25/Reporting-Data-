@@ -1,26 +1,13 @@
 {
   "section_name": "Strategy",
-  "approved": false,
-  "reason": "judge_scores_below_supported_scope_floor",
+  "approved": true,
+  "reason": "approved_after_deterministic_and_supported_scope_judges",
   "scores": {
     "ifrs_coverage": 6.0,
-    "evidence": 4.0,
-    "style": 7.2
+    "evidence": 6.0,
+    "style": 6.8
   },
-  "failures": [
-    {
-      "judge": "evidence_judge",
-      "score": 4.0,
-      "threshold": 5.5,
-      "required_fixes": [
-        "Add explicit evidence references (source documents/paths) for STR-014 (sustainable bond underwriting short-term opportunity) or remove the 'evidenced' wording.",
-        "Provide evidence sources for the quantified revenue-at-risk figure (€9,214.0), including scenario definition, calculation method, units, and why it is classified as 'medium term'.",
-        "Cite audited financial statements/management accounts (or equivalent) for the 2022–2024 capex/opex/revenue/assets/Tier 1 capital table, or remove the numbers.",
-        "Cite the financed emissions inventory methodology/output and target-setting documentation for the 2024 financed emissions figure, progress percentages, and intensity target; otherwise remove or qualify them as illustrative.",
-        "For Pillar 2 threshold-related statements, add the relevant threshold values/definitions and the metric being compared, or rephrase to a non-threshold qualitative statement."
-      ]
-    }
-  ],
+  "failures": [],
   "warnings": [],
   "thresholds": {
     "ifrs_coverage_score_min": 5.5,
@@ -30,12 +17,12 @@
     "approve_clean_sections_with_warnings": true,
     "judge_floor_for_clean_gate_auto_approval": 5.5
   },
-  "approval_policy": "V9.6: deterministic gates/fact-lock/cleanliness are binding; IFRS and evidence judges use IFRS_SUPPORTED_SCOPE_JUDGE_FLOOR; legacy strict thresholds are ignored unless IFRS_USE_LEGACY_STRICT_APPROVAL=1.",
-  "version": "V9.6-approval-config-fix-and-revision-guard",
+  "approval_policy": "current layer: deterministic gates/fact-lock/cleanliness are binding; IFRS and evidence judges use IFRS_SUPPORTED_SCOPE_JUDGE_FLOOR; legacy strict thresholds are ignored unless IFRS_USE_LEGACY_STRICT_APPROVAL=1.",
+  "version": "production_ifrs_report_engine",
   "section_generation_score": {
     "section_name": "Strategy",
-    "overall_section_generation_score_0_to_100": 76.05,
-    "supported_scope_coverage_score_0_to_100": 60.0,
+    "overall_section_generation_score_0_to_100": 86.77,
+    "supported_scope_coverage_score_0_to_100": 88.57,
     "payload_readiness_component": {
       "requirements_total": 70,
       "supported_requirements_total": 70,
@@ -60,18 +47,24 @@
       "payload_readiness_score_0_to_100": 88.57,
       "policy": "Generation coverage excludes not_available_in_payload requirements. Payload readiness is reported separately for audit."
     },
-    "judge_average_0_to_100": 52.2,
+    "judge_average_0_to_100": 60.8,
     "judge_scores_0_to_10": {
       "ifrs_coverage": 6.0,
-      "evidence": 4.0,
-      "style": 7.2
+      "evidence": 6.0,
+      "style": 6.8
     },
     "deterministic_gate_score_0_to_100": 100.0,
     "report_cleanliness_score_0_to_100": 100.0,
     "missing_requirements_count_flagged": 0,
     "missing_requirement_ids_flagged": [],
     "missing_data_language_hits": [],
-    "approved": false,
-    "policy": "Section generation score is based on supported-scope report quality. Payload readiness is reported separately and missing synthetic data does not lower the generation score."
+    "approved": true,
+    "weights": {
+      "coverage": 0.3,
+      "judges": 0.25,
+      "deterministic_gates": 0.25,
+      "cleanliness": 0.2
+    },
+    "scoring_policy": "Coverage uses deterministic supported-scope evidence mapping. LLM judges are a separate quality signal. Payload readiness is reported separately and missing synthetic payload items do not lower the generation score."
   }
 }
