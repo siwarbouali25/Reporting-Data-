@@ -164,3 +164,97 @@ for k, s in score["per_section"].items():
 print("gap ledger audit-only:", len(audit.gap_ledger), "entries")
 print("consistency:", "CONSISTENT" if final["consistency_report"]["consistent"] else "ISSUES")
 print("artifacts:", paths)
+
+
+# ============================================================
+# Azure OpenAI diagnostic test
+# Run this BEFORE the full pipeline
+# ============================================================
+
+import os
+import requests
+from getpass import getpass
+from openai import AzureOpenAI
+
+# ------------------------------------------------------------
+# Fill these with your real Azure values
+# ------------------------------------------------------------
+os.environ["AZURE_OPENAI_ENDPOINT"] = "https://YOUR-RESOURCE-NAME.openai.azure.com"
+os.environ["AZURE_OPENAI_API_VERSION"] = "2024-10-21"
+
+if not os.getenv("AZURE_OPENAI_API_KEY"):
+    os.environ["AZURE_OPENAI_API_KEY"] = getpass("Azure OpenAI API key: ")
+
+# IMPORTANT:
+# These are Azure DEPLOYMENT NAMES, not necessarily model names.
+os.environ["AZURE_WRITER_DEPLOYMENT"] = "YOUR_WRITER_DEPLOYMENT_NAME"
+os.environ["AZURE_EXTRACTOR_DEPLOYMENT"] = "YOUR_EXTRACTOR_DEPLOYMENT_NAME"
+os.environ["AZURE_JUDGE_DEPLOYMENT"] = "YOUR_JUDGE_DEPLOYMENT_NAME"
+os.environ["AZURE_REVISER_DEPLOYMENT"] = "YOUR_REVISER_DEPLOYMENT_NAME"
+
+endpoint = os.environ["AZURE_OPENAI_ENDPOINT"].strip().rstrip("/")
+api_key = os.environ["AZURE_OPENAI_API_KEY"].strip()
+api_version = os.environ["AZURE_OPENAI_API_VERSION"].strip()
+
+print("Endpoint:", endpoint)
+print("API version:", api_version)
+print("Extractor deployment:", os.environ["AZURE_EXTRACTOR_DEPLOYMENT"])
+
+# ------------------------------------------------------------
+# 1) Basic endpoint/deployments connectivity test
+# ------------------------------------------------------------
+deployments_url = f"{endpoint}/openai/deployments"
+
+try:
+    r = requests.get(
+        deployments_url,
+        headers={"api-key": api_key},
+        params={"api-version": api_version},
+        timeout=20,
+    )
+
+    print("Deployments status:", r.status_code)
+    print("Deployments response preview:")
+    print(r.text[:1000])
+
+    r.raise_for_status()
+
+except Exception as e:
+    print("\nAzure endpoint connection failed.")
+    print("Error:", repr(e))
+    raise
+
+
+# ------------------------------------------------------------
+# 2) Tiny chat completion test
+# ------------------------------------------------------------
+try:
+    client = AzureOpenAI(
+        azure_endpoint=endpoint,
+        api_key=api_key,
+        api_version=api_version,
+    )
+
+    resp = client.chat.completions.create(
+        model=os.environ["AZURE_EXTRACTOR_DEPLOYMENT"],
+        messages=[
+            {"role": "system", "content": "You are a test assistant."},
+            {"role": "user", "content": "Reply with only: OK"},
+        ],
+        temperature=0,
+    )
+
+    print("Chat test response:", resp.choices[0].message.content)
+
+except Exception as e:
+    print("\nAzure chat completion failed.")
+    print("Error:", repr(e))
+    raise
+
+
+# ------------------------------------------------------------
+# 3) Rebuild SETTINGS after env vars are set
+# ------------------------------------------------------------
+SETTINGS = Settings()
+
+print("\nAzure preflight passed.")
