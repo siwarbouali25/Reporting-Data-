@@ -1,6 +1,61 @@
 # ============================================================
+# Load and validate Azure URLs from .env
+# ============================================================
+
+import os
+from pathlib import Path
+
+try:
+    from dotenv import load_dotenv
+except ImportError:
+    raise ImportError("Install python-dotenv first: pip install python-dotenv")
+
+
+def find_dotenv(start: Path = Path.cwd()) -> Path | None:
+    candidates = [start / ".env"] + [p / ".env" for p in start.parents]
+    for p in candidates:
+        if p.exists():
+            return p
+    return None
+
+
+dotenv_path = find_dotenv()
+
+if dotenv_path:
+    load_dotenv(dotenv_path, override=True)
+    print("Loaded .env from:", dotenv_path)
+else:
+    load_dotenv(override=True)
+    print("No .env file found, using system environment variables.")
+
+
+required_env = [
+    "AZURE_WRITER_URL",
+    "AZURE_EXTRACTOR_URL",
+    "AZURE_JUDGE_URL",
+    "AZURE_REVISER_URL",
+]
+
+for key in required_env:
+    value = os.getenv(key)
+
+    if not value:
+        raise ValueError(f"Missing environment variable: {key}")
+
+    if not value.startswith("http"):
+        raise ValueError(
+            f"{key} is not a valid URL. Current value is: {value}"
+        )
+
+    print(f"{key} =", value[:120])
+
+
+
+
+
+    # ============================================================
 # URL-based Azure/OpenAI-compatible LLM client
-# Uses full URLs directly, no endpoint/deployment parsing
+# Reads full URLs directly from env
 # ============================================================
 
 import os
@@ -9,22 +64,6 @@ import requests
 
 
 class AzureURLLLM(LLMClient):
-    """
-    Calls full completion URLs directly.
-
-    Expected env vars:
-      AZURE_WRITER_URL
-      AZURE_EXTRACTOR_URL
-      AZURE_JUDGE_URL
-      AZURE_REVISER_URL
-      AZURE_OPENAI_API_KEY
-
-    This does NOT require:
-      AZURE_OPENAI_ENDPOINT
-      AZURE_OPENAI_API_VERSION
-      AZURE_*_DEPLOYMENT
-    """
-
     def __init__(
         self,
         *,
@@ -37,11 +76,12 @@ class AzureURLLLM(LLMClient):
         max_retries: int = 4,
         timeout: int = 120,
     ) -> None:
+
         self._urls = {
-            "writer": writer_url or os.environ["AZURE_WRITER_URL"],
-            "extractor": extractor_url or os.environ["AZURE_EXTRACTOR_URL"],
-            "judge": judge_url or os.environ["AZURE_JUDGE_URL"],
-            "reviser": reviser_url or os.environ["AZURE_REVISER_URL"],
+            "writer": self._resolve_url(writer_url, "AZURE_WRITER_URL"),
+            "extractor": self._resolve_url(extractor_url, "AZURE_EXTRACTOR_URL"),
+            "judge": self._resolve_url(judge_url, "AZURE_JUDGE_URL"),
+            "reviser": self._resolve_url(reviser_url, "AZURE_REVISER_URL"),
         }
 
         self._api_key = api_key or os.getenv("AZURE_OPENAI_API_KEY")
@@ -49,6 +89,32 @@ class AzureURLLLM(LLMClient):
         self._max_retries = max_retries
         self._timeout = timeout
         self._cfg = SETTINGS.model
+
+    def _resolve_url(self, value: str | None, env_name: str) -> str:
+        """
+        Resolves either:
+        - None -> os.environ[env_name]
+        - "AZURE_EXTRACTOR_URL" -> os.environ["AZURE_EXTRACTOR_URL"]
+        - "https://..." -> direct URL
+        """
+        if value is None:
+            value = os.getenv(env_name)
+
+        elif value in os.environ:
+            value = os.getenv(value)
+
+        if not value:
+            raise ValueError(f"Missing URL for {env_name}")
+
+        value = value.strip()
+
+        if not value.startswith("http"):
+            raise ValueError(
+                f"{env_name} must be a real URL starting with http/https. "
+                f"Current value is: {value}"
+            )
+
+        return value
 
     def _headers(self) -> dict:
         headers = {
@@ -69,9 +135,7 @@ class AzureURLLLM(LLMClient):
             pass
 
         else:
-            raise ValueError(
-                "auth_mode must be one of: 'api-key', 'bearer', 'none'"
-            )
+            raise ValueError("auth_mode must be: 'api-key', 'bearer', or 'none'")
 
         return headers
 
@@ -94,8 +158,6 @@ class AzureURLLLM(LLMClient):
             "temperature": temperature,
         }
 
-        # Only include this when the notebook explicitly asks for JSON mode.
-        # Some Azure/custom endpoints may not support it.
         if json_mode:
             payload["response_format"] = {"type": "json_object"}
 
@@ -112,31 +174,27 @@ class AzureURLLLM(LLMClient):
 
                 if response.status_code >= 400:
                     raise RuntimeError(
-                        f"HTTP {response.status_code}: {response.text[:1000]}"
+                        f"HTTP {response.status_code}: {response.text[:1500]}"
                     )
 
                 data = response.json()
 
-                # Standard chat/completions format
                 if "choices" in data:
                     return data["choices"][0]["message"]["content"] or ""
 
-                # Some gateway/custom formats
                 if "output_text" in data:
                     return data["output_text"] or ""
 
                 if "content" in data:
                     return data["content"] or ""
 
-                raise RuntimeError(
-                    f"Unexpected response format: {str(data)[:1000]}"
-                )
+                raise RuntimeError(f"Unexpected response format: {str(data)[:1500]}")
 
             except Exception as err:
                 last_err = err
                 print(
                     f"[URL LLM retry {attempt + 1}/{self._max_retries}] "
-                    f"role={role} url={url[:120]} error={repr(err)}"
+                    f"role={role} url={url[:100]} error={repr(err)}"
                 )
                 time.sleep(min(2**attempt, 8))
 
@@ -146,54 +204,3 @@ class AzureURLLLM(LLMClient):
             f"url={url}\n"
             f"last_error={repr(last_err)}"
         )
-    
-
-
-
-    # ============================================================
-# Azure URLs setup
-# You use full URLs directly, not endpoint/deployment names
-# ============================================================
-
-import os
-from getpass import getpass
-
-# Paste your real URLs here.
-# These should be the full URL that accepts a POST request for chat completion.
-os.environ["AZURE_WRITER_URL"] = "PASTE_WRITER_URL_HERE"
-os.environ["AZURE_EXTRACTOR_URL"] = "PASTE_EXTRACTOR_URL_HERE"
-os.environ["AZURE_JUDGE_URL"] = "PASTE_JUDGE_URL_HERE"
-os.environ["AZURE_REVISER_URL"] = "PASTE_REVISER_URL_HERE"
-
-if not os.getenv("AZURE_OPENAI_API_KEY"):
-    os.environ["AZURE_OPENAI_API_KEY"] = getpass("Azure API key: ")
-
-print("Writer URL:", os.environ["AZURE_WRITER_URL"][:120])
-print("Extractor URL:", os.environ["AZURE_EXTRACTOR_URL"][:120])
-print("Judge URL:", os.environ["AZURE_JUDGE_URL"][:120])
-print("Reviser URL:", os.environ["AZURE_REVISER_URL"][:120])
-
-
-
-
-
-# ============================================================
-# Test one URL before running the full pipeline
-# ============================================================
-
-test_llm = AzureURLLLM(
-    writer_url=os.environ["AZURE_WRITER_URL"],
-    extractor_url=os.environ["AZURE_EXTRACTOR_URL"],
-    judge_url=os.environ["AZURE_JUDGE_URL"],
-    reviser_url=os.environ["AZURE_REVISER_URL"],
-    api_key=os.environ["AZURE_OPENAI_API_KEY"],
-    auth_mode="api-key",
-)
-
-test_response = test_llm.complete(
-    role="extractor",
-    system="You are a test assistant.",
-    user="Reply with only: OK",
-)
-
-print("Test response:", test_response)
