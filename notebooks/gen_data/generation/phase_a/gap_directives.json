@@ -1,0 +1,83 @@
+[
+ {
+  "directive_id": "GAP-01",
+  "field": "scope1_fleet_tco2e",
+  "affected_years": [
+   2022,
+   2023
+  ],
+  "reason": "Vehicle activity data available for 2024 only.",
+  "instruction": "Report 2024 fleet Scope 1 only. State data unavailable for prior years. Do not report missing years as zero.",
+  "related_tags": [
+   "scope_1",
+   "ghg_emissions",
+   "metrics"
+  ],
+  "forbidden_claims": [
+   "Any fleet Scope 1 figure (including zero) for years [2022, 2023]",
+   "Presenting Scope 1 totals for 2022-2023 as like-for-like comparable with 2024 without noting the fleet coverage change"
+  ],
+  "required_disclosure_posture": "Report fleet emissions for 2024 only; state prior-year vehicle activity data is not available; comparative Scope 1 figures cover stationary combustion (gas) only."
+ },
+ {
+  "directive_id": "GAP-02",
+  "field": "scope3_travel_tco2e",
+  "affected_years": [
+   2022,
+   2023
+  ],
+  "reason": "Travel records cover 2024 only.",
+  "instruction": "Report 2024 Scope 3 Cat.6 only. Prior years not available.",
+  "related_tags": [
+   "scope_3",
+   "ghg_emissions",
+   "metrics"
+  ],
+  "forbidden_claims": [
+   "Any Scope 3 category 6 figure (including zero) for years [2022, 2023]",
+   "Any year-on-year trend statement for business travel emissions"
+  ],
+  "required_disclosure_posture": "Report Scope 3 category 6 for 2024 only; state comparatives are not available."
+ },
+ {
+  "directive_id": "GAP-03",
+  "field": "investments.counterparty_id",
+  "affected_years": [
+   2024
+  ],
+  "reason": "counterparty_id not populated in investments table. Investments attributed at bank level only.",
+  "instruction": "Note PCAF DQS 3 for investment attribution. Do not report issuer-level investment claims.",
+  "related_tags": [
+   "financed_emissions",
+   "commercial_banking",
+   "asset_management"
+  ],
+  "forbidden_claims": [
+   "Issuer-level or counterparty-level claims about investment financed emissions",
+   "PCAF data quality better than score 3 for investment attribution"
+  ],
+  "required_disclosure_posture": "Attribute investment financed emissions at portfolio level; disclose PCAF data quality score 3 for investment attribution."
+ },
+ {
+  "directive_id": "GAP-04",
+  "field": "total_loans_meur",
+  "affected_years": [
+   2022,
+   2023,
+   2024
+  ],
+  "reason": "total_loans_meur is constant across all reporting years in the available data. Loan book growth data not available.",
+  "instruction": "Carbon intensity trend reflects emission changes only, not loan book growth. Disclose this methodology limitation explicitly. Do not describe a trend in the loan book denominator.",
+  "related_tags": [
+   "financed_emissions",
+   "metrics",
+   "targets",
+   "commercial_banking"
+  ],
+  "forbidden_claims": [
+   "Any statement describing growth, decline or trend in the loan book / lending volumes",
+   "Attributing carbon intensity changes to changes in lending volume"
+  ],
+  "required_disclosure_posture": "State explicitly that the financed-emissions intensity trend reflects changes in absolute emissions only, because the loan-book denominator is held constant in the underlying data; disclose this as a methodology limitation."
+ }
+]
