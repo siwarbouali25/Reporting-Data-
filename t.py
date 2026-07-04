@@ -1,731 +1,184 @@
-# ── PREMIUM PDF EXPORT (cover + page-numbered TOC + section dividers) ──
-# Improvements:
-# 1) real cover page with logo auto-detection, report title, reporting year and bank name
-# 2) clean table of contents with PDF page numbers via WeasyPrint target counters
-# 3) section divider pages before each main report section
-#
-# Requires:
-# pip install markdown weasyprint
+# ============================================================
+# CELL B11 — SCORE VERIFICATION
+# ============================================================
 
-from pathlib import Path as _PPath
-import re as _re
-import json as _json
-import html as _html
-import markdown as _md
-import weasyprint as _wp
+import copy
+import random
 
+VERIFY_SECTIONS = RUN_SECTIONS            # or a subset
+CANARY_SECTION = "governance"             # section used for the recall test
+RUN_COLD_AUDIT = True                     # 2 judge calls per section
+RUN_CANARY = True                         # 1 judge call + deterministic gates
 
-_DESIGN_ACCENT = "#D5DE00"       # neon yellow/lime accent from the slide style
-_DESIGN_DARK = "#111111"         # premium black
-_DESIGN_INK = "#1c2b2f"
-_DESIGN_MUTED = "#667477"
-_DESIGN_TEAL = "#14323b"
+_POSTURE_INVARIANTS = {
+    # directive: (topic trigger -> only checked if the section discusses it, required patterns)
+    "GAP-01": (r"[Ss]cope 1", [r"stationary combustion", r"not available|2024 only|for 2024\b"]),
+    "GAP-02": (r"business travel|[Cc]ategory 6", [r"not available|2024 only|for 2024\b"]),
+    "GAP-03": (r"sovereign|listed equity|investment", [r"portfolio level", r"data quality score (?:of )?3"]),
+    "GAP-04": (r"intensity", [r"denominator", r"constant", r"absolute (?:financed )?emissions"]),
+}
 
 
-def _pdf_report_root() -> _PPath:
-    """
-    Default report root.
+def deterministic_invariants(section_key: str) -> dict:
+    wp = json.loads((PHASE_A_OUTPUT_DIR / f"work_package_{section_key}.json").read_text(encoding="utf-8"))
+    draft = json.loads((PHASE_B_OUTPUT_DIR / f"draft_{section_key}.json").read_text(encoding="utf-8"))
+    blocks = draft["blocks"]
+    allowed = set(json.loads((PHASE_A_OUTPUT_DIR / "allowed_numbers.json").read_text(encoding="utf-8")))
+    years = {str(wp["reporting_year"])} | {str(y) for y in wp["comparative_years"]}
+    issues = []
 
-    Uses OUTPUT_DIR if the notebook already defines it.
-    Otherwise falls back to:
-    gen_data/generated_reports/agentic_ifrs_report
-    """
-    if "OUTPUT_DIR" in globals():
-        try:
-            return _PPath(OUTPUT_DIR)
-        except Exception:
-            pass
+    ng = number_gate(blocks, allowed, years, wp.get("entity_allowlist"))
+    issues += [f"number: {v['detail']}" for v in ng["violations"]]
 
-    return _PPath("gen_data/generated_reports/agentic_ifrs_report")
+    mg = meta_commentary_gate(blocks)
+    issues += [f"meta: block {v['block_id']}" for v in mg["violations"]]
 
+    # citations resolve against every legitimate namespace:
+    #   payload paths | computed metric ids (bare or 'metric:' prefixed)
+    #   derived-facts paths | gap directive ids
+    metric_ids = set(wp["computed_metrics"].keys())
+    df_keys = set((wp.get("derived_facts") or {}).keys())
+    gap_ids = {g["directive_id"] for g in wp.get("gap_directives", [])}
 
-def _pdf_safe_bank_id() -> str:
-    if "_safe_bank_id" in globals():
-        try:
-            return str(_safe_bank_id())
-        except Exception:
-            pass
+    def _resolves(cit: str) -> bool:
+        cit = cit.strip()
+        if cit.startswith("metric:"):
+            return cit[7:] in metric_ids
+        if cit in metric_ids or cit in gap_ids:
+            return True
+        top = re.split(r"[.\[]", cit, maxsplit=1)[0]
+        return bool(top) and (top in wp["payload_slice"] or top in df_keys
+                              or top in ("derived_facts", "computed_metrics"))
 
-    for candidate in [globals().get("bank_id"), globals().get("BANK_ID"), "BANK01"]:
-        if candidate:
-            return str(candidate)
+    for b in blocks:
+        for cit in b.get("citations", []) or []:
+            if isinstance(cit, str) and not _resolves(cit):
+                issues.append(f"citation: unresolvable '{cit}' in {b['block_id']}")
 
-    return "BANK01"
+    # mandatory coverage claimed
+    mandatory = {r["requirement_id"] for r in wp["requirements"] if r["mandatory"]}
+    claimed = {rid for b in blocks for rid in b.get("requirement_ids", [])}
+    for rid in sorted(mandatory - claimed):
+        issues.append(f"coverage: mandatory {rid} not claimed")
 
+    # gap postures present where the topic is discussed
+    full_text = " ".join(b.get("text", "") for b in blocks)
+    for gid, (trigger, pats) in _POSTURE_INVARIANTS.items():
+        if re.search(trigger, full_text):
+            for p in pats:
+                if not re.search(p, full_text, re.IGNORECASE):
+                    issues.append(f"posture {gid}: pattern '{p}' absent though topic discussed")
 
-def _pdf_safe_bank_name() -> str:
-    if "_safe_bank_name" in globals():
-        try:
-            return str(_safe_bank_name())
-        except Exception:
-            pass
-
-    for candidate in [globals().get("bank_name"), globals().get("BANK_NAME")]:
-        if candidate:
-            return str(candidate)
-
-    return _pdf_safe_bank_id()
-
-
-def _pdf_safe_reporting_year() -> str:
-    if "_safe_reporting_year" in globals():
-        try:
-            return str(_safe_reporting_year())
-        except Exception:
-            pass
-
-    for candidate in [globals().get("reporting_year"), globals().get("REPORTING_YEAR"), "2024"]:
-        if candidate:
-            return str(candidate)
-
-    return "2024"
+    return {"section": section_key, "n_blocks": len(blocks), "issues": issues,
+            "passed": not issues}
 
 
-def _slugify_pdf_section(title: str) -> str:
-    slug = _re.sub(r"[^a-zA-Z0-9\s-]", "", title).strip().lower()
-    slug = _re.sub(r"\s+", "-", slug)
-    return f"section-{slug}"
+def cold_audit(section_key: str) -> dict:
+    """Independent full-pass fact + coverage judgment of the FINAL blocks."""
+    wp = json.loads((PHASE_A_OUTPUT_DIR / f"work_package_{section_key}.json").read_text(encoding="utf-8"))
+    wp["_allowed_numbers"] = json.loads((PHASE_A_OUTPUT_DIR / "allowed_numbers.json").read_text(encoding="utf-8"))
+    draft = json.loads((PHASE_B_OUTPUT_DIR / f"draft_{section_key}.json").read_text(encoding="utf-8"))
+    state = {"section_key": section_key, "work_package": wp, "blocks": draft["blocks"],
+             "plan": draft.get("plan") or {"subsections": []}, "revision_count": 0}
+    fr = node_fact_judge(state)["fact_report"]
+    cr = node_coverage_judge(state)["coverage_report"]
+    defects = [dict(v, gate="fact_judge") for v in fr.get("violations", [])
+               if v.get("kind") in FACT_BLOCKING_KINDS and not _is_pseudo_violation(v)]
+    for w in cr.get("weak", []) + cr.get("missing", []):
+        defects.append({"kind": "weak_coverage" if w.get("fixable_with_provided_data", True)
+                        else "add_limitation_statement",
+                        "detail": w.get("detail"), "gate": "coverage_judge"})
+    score = section_quality_score(defects, len(draft["blocks"]))
+    return {"section": section_key, "verified_score": score, "n_defects": len(defects),
+            "defects": defects}
 
 
-def _find_report_logo() -> str:
-    """
-    Return a file:// URI for a logo if the project has one; otherwise return an empty string.
+def canary_recall(section_key: str, seed: int = 7) -> dict:
+    """Inject known defects into a copy of the final blocks; measure gate+judge recall."""
+    rng = random.Random(seed)
+    wp = json.loads((PHASE_A_OUTPUT_DIR / f"work_package_{section_key}.json").read_text(encoding="utf-8"))
+    wp["_allowed_numbers"] = json.loads((PHASE_A_OUTPUT_DIR / "allowed_numbers.json").read_text(encoding="utf-8"))
+    draft = json.loads((PHASE_B_OUTPUT_DIR / f"draft_{section_key}.json").read_text(encoding="utf-8"))
+    blocks = copy.deepcopy(draft["blocks"])
+    paras = [b for b in blocks if b.get("type") == "paragraph" and len(b.get("text", "")) > 120]
+    if len(paras) < 5:  # fall back to any paragraph blocks
+        paras = [b for b in blocks if b.get("type") == "paragraph"]
+    if len(paras) < 5:
+        return {"section": section_key, "error": "not enough paragraph blocks for canaries"}
+    targets = rng.sample(paras, 5)
+    canaries = []
 
-    Add your logo to one of these paths to make the cover use it automatically:
-    - outputs/logo.png
-    - outputs/assets/logo.png
-    - assets/logo.png
-    - images/logo.png
-    - images/ey_logo.png
-    - images/bank_logo.png
-    """
-    candidates = [
-        _PPath("outputs/logo.png"),
-        _PPath("outputs/logo.jpg"),
-        _PPath("outputs/assets/logo.png"),
-        _PPath("outputs/assets/logo.jpg"),
-        _PPath("assets/logo.png"),
-        _PPath("assets/logo.jpg"),
-        _PPath("images/logo.png"),
-        _PPath("images/logo.jpg"),
-        _PPath("images/ey_logo.png"),
-        _PPath("images/bank_logo.png"),
-    ]
+    # C1 fabricated number (not in allowed set) - must be caught by the number gate
+    targets[0]["text"] += " Additional emissions of 123,456.7 tCO2e were recorded in the period."
+    canaries.append(("C1_fabricated_number", targets[0]["block_id"], "number_gate"))
+    # C2 fabricated committee - fact judge (entity/unsupported)
+    targets[1]["text"] += " These matters were also reviewed by the Quantum Climate Steering Council."
+    canaries.append(("C2_fabricated_entity", targets[1]["block_id"], "fact_judge"))
+    # C3 forbidden gap-year figure (uses an allowed numeral so only the judge can catch it)
+    yr = wp["comparative_years"][0]
+    some_disp = next(iter(wp["computed_metrics"].values()))["display"]
+    targets[2]["text"] += f" Fleet Scope 1 emissions for {yr} amounted to {some_disp} tCO2e."
+    canaries.append(("C3_forbidden_gap_claim", targets[2]["block_id"], "fact_judge"))
+    # C4 flipped pairing / false attribution
+    targets[3]["text"] += " The Full Board approved the climate scenario analysis methodology in 2022."
+    canaries.append(("C4_false_pairing", targets[3]["block_id"], "fact_judge"))
+    # C5 unsupported process claim
+    targets[4]["text"] += (" Management operates a proprietary AI-based early warning system that "
+                           "automatically reprices loans on climate signals.")
+    canaries.append(("C5_unsupported_process", targets[4]["block_id"], "fact_judge"))
 
-    for path in candidates:
-        if path.exists():
-            return path.resolve().as_uri()
+    allowed = set(wp["_allowed_numbers"])
+    years = {str(wp["reporting_year"])} | {str(y) for y in wp["comparative_years"]}
+    ng = number_gate(blocks, allowed, years, wp.get("entity_allowlist"))
+    flagged_by_gate = {v["block_id"] for v in ng["violations"]}
 
-    return ""
+    state = {"section_key": section_key, "work_package": wp, "blocks": blocks,
+             "plan": draft.get("plan") or {"subsections": []}, "revision_count": 0}
+    fr = node_fact_judge(state)["fact_report"]
+    flagged_by_judge = {v.get("block_id") for v in fr.get("violations", [])
+                        if not _is_pseudo_violation(v)}
 
-
-def _strip_markdown_cover_and_toc(report_md: str) -> str:
-    """
-    The markdown report may already contain a simple cover and markdown TOC.
-    For the PDF, we replace them with designed HTML pages.
-    """
-    text = report_md.strip()
-
-    first_section = _re.search(
-        r"(?m)^#{1,3}\s+(General Requirements|Governance|Strategy|Risk Management|Metrics and Targets)\s*$",
-        text,
-    )
-
-    if first_section:
-        return text[first_section.start():].strip()
-
-    return text
-
-
-def _split_report_into_major_blocks(report_body_md: str):
-    """
-    Split markdown into major blocks so we can insert divider pages.
-
-    Returns:
-        list of (title, slug, markdown_block)
-    """
-    section_titles = [
-        "General Requirements",
-        "Governance",
-        "Strategy",
-        "Risk Management",
-        "Metrics and Targets",
-        "Appendices",
-    ]
-
-    pattern = r"(?m)^#{1,3}\s+(" + "|".join(_re.escape(t) for t in section_titles) + r")\s*$"
-    matches = list(_re.finditer(pattern, report_body_md))
-
-    if not matches:
-        return [("Report", "section-report", report_body_md)]
-
-    blocks = []
-
-    for i, match in enumerate(matches):
-        title = match.group(1)
-        start = match.start()
-        end = matches[i + 1].start() if i + 1 < len(matches) else len(report_body_md)
-        block = report_body_md[start:end].strip()
-        slug = _slugify_pdf_section(title)
-        blocks.append((title, slug, block))
-
-    return blocks
+    results = []
+    for name, bid, expected in canaries:
+        caught = bid in (flagged_by_gate if expected == "number_gate"
+                         else flagged_by_gate | flagged_by_judge)
+        results.append({"canary": name, "block": bid, "expected_by": expected, "caught": caught})
+    recall = sum(r["caught"] for r in results) / len(results)
+    return {"section": section_key, "recall": recall, "results": results}
 
 
-def _replace_first_heading_with_anchor(block_md: str, title: str, slug: str) -> str:
-    escaped_title = _html.escape(title)
+# ---------------- run ----------------
+print("=== 1) Deterministic invariants ===")
+inv_rows = []
+for sec in VERIFY_SECTIONS:
+    r = deterministic_invariants(sec)
+    inv_rows.append({"section": sec, "invariants_passed": r["passed"], "issues": len(r["issues"])})
+    status = "OK" if r["passed"] else "ISSUES"
+    print(f"  {sec:<24} {status}  ({len(r['issues'])} issues)")
+    for i in r["issues"][:6]:
+        print("     -", i[:140])
+display(pd.DataFrame(inv_rows))
 
-    return _re.sub(
-        r"(?m)^#{1,3}\s+" + _re.escape(title) + r"\s*$",
-        f'<h3 id="{slug}">{escaped_title}</h3>',
-        block_md,
-        count=1,
-    )
+if RUN_COLD_AUDIT and not PHASE_B_CONFIG["mock_mode"]:
+    print("\n=== 2) Cold-read audit (independent judge pass) ===")
+    recorded = {r["section_key"]: r.get("quality_score") for r in results}
+    audit_rows = []
+    for sec in VERIFY_SECTIONS:
+        a = cold_audit(sec)
+        delta = None if recorded.get(sec) is None else round(a["verified_score"] - recorded[sec], 1)
+        audit_rows.append({"section": sec, "recorded": recorded.get(sec),
+                           "verified": a["verified_score"], "delta": delta,
+                           "audit_defects": a["n_defects"]})
+        print(f"  {sec:<24} recorded={recorded.get(sec)} verified={a['verified_score']} delta={delta}")
+    display(pd.DataFrame(audit_rows))
 
-
-def _build_cover_html(bank_name: str, reporting_year: str) -> str:
-    logo_uri = _find_report_logo()
-
-    if logo_uri:
-        logo_html = f'<img src="{logo_uri}" class="cover-logo" alt="logo">'
+if RUN_CANARY and not PHASE_B_CONFIG["mock_mode"]:
+    print("\n=== 3) Canary recall test ===")
+    c = canary_recall(CANARY_SECTION)
+    if "error" in c:
+        print(" ", c["error"])
     else:
-        logo_html = '<div class="cover-logo-placeholder">ESG</div>'
-
-    return f"""
-    <section class="cover-page">
-        <div class="cover-topline"></div>
-        <div class="cover-header">
-            {logo_html}
-            <div class="cover-label">Sustainability reporting package</div>
-        </div>
-        <div class="cover-main">
-            <div class="cover-kicker">{_html.escape(str(reporting_year))}</div>
-            <h1>{_html.escape(str(bank_name))}</h1>
-            <h2>Sustainability-related Financial Disclosures</h2>
-            <p>Prepared with reference to IFRS S1 and IFRS S2</p>
-        </div>
-        <div class="cover-footer">
-            <span>ESG Risk Intelligence System</span>
-            <span>Generated disclosure report</span>
-        </div>
-    </section>
-    """
-
-
-def _build_toc_html(blocks) -> str:
-    main_blocks = [(title, slug) for title, slug, _ in blocks]
-    rows = []
-
-    for idx, (title, slug) in enumerate(main_blocks, start=1):
-        rows.append(
-            f'<li><a href="#{slug}"><span class="toc-number">{idx:02d}</span>'
-            f'<span class="toc-title">{_html.escape(title)}</span></a></li>'
-        )
-
-    return f"""
-    <section class="toc-page">
-        <div class="toc-eyebrow">Contents</div>
-        <h2>Table of contents</h2>
-        <ol class="pdf-toc">
-            {''.join(rows)}
-        </ol>
-    </section>
-    """
-
-
-def _build_section_divider_html(title: str, index: int) -> str:
-    return f"""
-    <section class="section-divider-page">
-        <div class="divider-number">{index:02d}</div>
-        <div class="divider-rule"></div>
-        <h2>{_html.escape(title)}</h2>
-        <p>Key disclosures, evidence boundaries and supporting exhibits.</p>
-    </section>
-    """
-
-
-_PREMIUM_PDF_CSS = f"""
-@page {{
-    size: A4;
-    margin: 22mm 20mm 20mm 20mm;
-    @bottom-center {{ content: counter(page) " / " counter(pages); font-size: 8pt; color: #7b8587; }}
-}}
-
-@page cover {{
-    margin: 0;
-    @bottom-center {{ content: none; }}
-}}
-
-@page toc {{
-    margin: 24mm 22mm 22mm 22mm;
-    @bottom-center {{ content: counter(page) " / " counter(pages); font-size: 8pt; color: #7b8587; }}
-}}
-
-@page divider {{
-    margin: 0;
-    @bottom-center {{ content: none; }}
-}}
-
-html {{
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    font-size: 10.4pt;
-    color: {_DESIGN_INK};
-    line-height: 1.5;
-}}
-
-body {{
-    margin: 0;
-}}
-
-/* Cover page */
-.cover-page {{
-    page: cover;
-    height: 297mm;
-    background: {_DESIGN_DARK};
-    color: #ffffff;
-    position: relative;
-    page-break-after: always;
-    overflow: hidden;
-}}
-
-.cover-topline {{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 8mm;
-    background: {_DESIGN_ACCENT};
-}}
-
-.cover-header {{
-    position: absolute;
-    top: 24mm;
-    left: 24mm;
-    right: 24mm;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}}
-
-.cover-logo {{
-    max-width: 38mm;
-    max-height: 18mm;
-    object-fit: contain;
-    background: #ffffff;
-    padding: 4mm;
-    border-radius: 2mm;
-}}
-
-.cover-logo-placeholder {{
-    width: 24mm;
-    height: 24mm;
-    border: 1.2mm solid {_DESIGN_ACCENT};
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 800;
-    color: {_DESIGN_ACCENT};
-    letter-spacing: 1pt;
-}}
-
-.cover-label {{
-    font-size: 9pt;
-    text-transform: uppercase;
-    letter-spacing: 1.5pt;
-    color: #d9dddf;
-}}
-
-.cover-main {{
-    position: absolute;
-    left: 24mm;
-    right: 24mm;
-    top: 92mm;
-}}
-
-.cover-kicker {{
-    color: {_DESIGN_ACCENT};
-    font-size: 16pt;
-    font-weight: 800;
-    margin-bottom: 10mm;
-}}
-
-.cover-main h1 {{
-    color: #ffffff;
-    font-size: 34pt;
-    line-height: 1.05;
-    margin: 0 0 8mm 0;
-    max-width: 150mm;
-}}
-
-.cover-main h2 {{
-    color: #ffffff;
-    font-size: 18pt;
-    font-weight: 400;
-    margin: 0 0 5mm 0;
-}}
-
-.cover-main p {{
-    color: #d5dcdf;
-    font-size: 11pt;
-    margin: 0;
-    text-align: left;
-}}
-
-.cover-footer {{
-    position: absolute;
-    left: 24mm;
-    right: 24mm;
-    bottom: 22mm;
-    display: flex;
-    justify-content: space-between;
-    color: #c9d0d2;
-    font-size: 9pt;
-    border-top: 0.4mm solid #313a3d;
-    padding-top: 6mm;
-}}
-
-/* TOC with page numbers */
-.toc-page {{
-    page: toc;
-    page-break-after: always;
-}}
-
-.toc-eyebrow {{
-    color: {_DESIGN_ACCENT};
-    text-transform: uppercase;
-    letter-spacing: 1.5pt;
-    font-weight: 700;
-    font-size: 9pt;
-    margin-bottom: 5mm;
-}}
-
-.toc-page h2 {{
-    font-size: 28pt;
-    color: {_DESIGN_TEAL};
-    margin: 0 0 14mm 0;
-}}
-
-.pdf-toc {{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}}
-
-.pdf-toc li {{
-    margin: 0;
-    padding: 5mm 0;
-    border-bottom: 0.25mm solid #d9e1e3;
-}}
-
-.pdf-toc a {{
-    color: {_DESIGN_INK};
-    text-decoration: none;
-    display: block;
-    width: 100%;
-    font-size: 12pt;
-}}
-
-.pdf-toc a::after {{
-    content: leader('.') target-counter(attr(href), page);
-    color: {_DESIGN_MUTED};
-}}
-
-.toc-number {{
-    color: {_DESIGN_ACCENT};
-    background: {_DESIGN_DARK};
-    padding: 1.5mm 2.2mm;
-    margin-right: 5mm;
-    font-size: 8pt;
-    font-weight: 700;
-}}
-
-.toc-title {{
-    font-weight: 650;
-}}
-
-/* Section divider pages */
-.section-divider-page {{
-    page: divider;
-    height: 297mm;
-    background: {_DESIGN_DARK};
-    color: #ffffff;
-    position: relative;
-    page-break-after: always;
-    overflow: hidden;
-}}
-
-.divider-number {{
-    position: absolute;
-    top: 24mm;
-    left: 24mm;
-    color: {_DESIGN_ACCENT};
-    font-size: 24pt;
-    font-weight: 800;
-}}
-
-.divider-rule {{
-    position: absolute;
-    top: 61mm;
-    left: 24mm;
-    width: 36mm;
-    height: 1.2mm;
-    background: {_DESIGN_ACCENT};
-}}
-
-.section-divider-page h2 {{
-    position: absolute;
-    left: 24mm;
-    right: 24mm;
-    top: 82mm;
-    color: #ffffff;
-    font-size: 32pt;
-    line-height: 1.08;
-    margin: 0;
-}}
-
-.section-divider-page p {{
-    position: absolute;
-    left: 24mm;
-    bottom: 32mm;
-    color: #d5dcdf;
-    font-size: 11pt;
-    text-align: left;
-    margin: 0;
-}}
-
-/* Report body */
-h1 {{
-    font-size: 23pt;
-    color: {_DESIGN_TEAL};
-    margin: 0 0 2pt 0;
-}}
-
-h2 {{
-    font-size: 13pt;
-    font-weight: 500;
-    color: #2e7d7d;
-    margin: 0 0 14pt 0;
-}}
-
-h3 {{
-    font-size: 15.5pt;
-    color: {_DESIGN_TEAL};
-    border-bottom: 2px solid {_DESIGN_ACCENT};
-    padding-bottom: 4px;
-    margin: 0 0 12pt 0;
-    page-break-after: avoid;
-}}
-
-h4 {{
-    font-size: 11.5pt;
-    color: #1f4e5f;
-    margin: 16pt 0 6pt 0;
-    page-break-after: avoid;
-}}
-
-p {{
-    margin: 0 0 8pt 0;
-    text-align: justify;
-}}
-
-ul {{
-    margin: 0 0 8pt 0;
-}}
-
-li {{
-    margin: 0 0 3pt 0;
-}}
-
-strong {{
-    color: {_DESIGN_TEAL};
-}}
-
-table {{
-    border-collapse: collapse;
-    width: 100%;
-    margin: 4pt 0 14pt 0;
-    font-size: 8.4pt;
-    page-break-inside: avoid;
-}}
-
-thead {{
-    display: table-header-group;
-}}
-
-.exhibit-caption {{
-    page-break-after: avoid;
-    margin: 14pt 0 4pt 0;
-    font-weight: 700;
-    color: {_DESIGN_TEAL};
-}}
-
-th {{
-    background: {_DESIGN_TEAL};
-    color: #fff;
-    text-align: left;
-    padding: 5px 7px;
-    font-weight: 600;
-}}
-
-td {{
-    border-bottom: 1px solid #d6dee0;
-    padding: 4px 7px;
-    vertical-align: top;
-}}
-
-tr:nth-child(even) td {{
-    background: #f3f6f6;
-}}
-
-img {{
-    max-width: 100%;
-    margin: 5pt auto 12pt auto;
-    display: block;
-}}
-
-hr {{
-    border: none;
-    border-top: 1px solid #d6dee0;
-    margin: 16pt 0;
-}}
-
-a {{
-    color: #1f4e5f;
-    text-decoration: none;
-}}
-
-.report-section {{
-    page-break-before: always;
-}}
-
-.report-section:first-of-type {{
-    page-break-before: auto;
-}}
-"""
-
-
-def build_full_report_pdf(md_path=None, pdf_path=None, html_path=None, include_section_dividers=True):
-    bank_id = _pdf_safe_bank_id()
-    bank_name = _pdf_safe_bank_name()
-    reporting_year = _pdf_safe_reporting_year()
-
-    report_root = _pdf_report_root()
-    pdf_handoff_dir = report_root / "12_pdf_handoff"
-
-    # Markdown source:
-    # gen_data/generated_reports/agentic_ifrs_report/12_pdf_handoff/approved_report_markdown.md
-    if md_path is None:
-        md_path = pdf_handoff_dir / "approved_report_markdown.md"
-
-    # PDF output:
-    # gen_data/generated_reports/agentic_ifrs_report/full_report_BANK01_designed.pdf
-    if pdf_path is None:
-        pdf_path = report_root / f"full_report_{bank_id}_designed.pdf"
-
-    # HTML output:
-    # gen_data/generated_reports/agentic_ifrs_report/full_report_BANK01_designed.html
-    if html_path is None:
-        html_path = report_root / f"full_report_{bank_id}_designed.html"
-
-    md_path = _PPath(md_path)
-    pdf_path = _PPath(pdf_path)
-    html_path = _PPath(html_path)
-
-    if not md_path.exists():
-        raise FileNotFoundError(
-            f"Markdown report not found: {md_path}\n"
-            "Expected the final approved Markdown report under:\n"
-            "gen_data/generated_reports/agentic_ifrs_report/12_pdf_handoff/approved_report_markdown.md"
-        )
-
-    pdf_path.parent.mkdir(parents=True, exist_ok=True)
-    html_path.parent.mkdir(parents=True, exist_ok=True)
-
-    report_md = md_path.read_text(encoding="utf-8")
-    body_md = _strip_markdown_cover_and_toc(report_md)
-    blocks = _split_report_into_major_blocks(body_md)
-
-    cover_html = _build_cover_html(bank_name=bank_name, reporting_year=reporting_year)
-    toc_html = _build_toc_html(blocks)
-
-    section_html_parts = []
-
-    for idx, (title, slug, block_md) in enumerate(blocks, start=1):
-        if include_section_dividers:
-            section_html_parts.append(_build_section_divider_html(title, idx))
-
-        anchored_md = _replace_first_heading_with_anchor(block_md, title, slug)
-
-        block_html = _md.markdown(
-            anchored_md,
-            extensions=["tables", "sane_lists", "attr_list", "md_in_html"],
-            output_format="html5",
-        )
-
-        section_html_parts.append(f'<article class="report-section">{block_html}</article>')
-
-    html_doc = f"""<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>{_html.escape(bank_name)} - Sustainability-related Financial Disclosures {reporting_year}</title>
-</head>
-<body>
-    {cover_html}
-    {toc_html}
-    {''.join(section_html_parts)}
-</body>
-</html>"""
-
-    html_path.write_text(html_doc, encoding="utf-8")
-
-    # base_url points to the markdown/report output folder,
-    # so existing figure links like figures/x.png still resolve.
-    _wp.HTML(
-        string=html_doc,
-        base_url=str(md_path.parent.resolve()),
-    ).write_pdf(
-        str(pdf_path),
-        stylesheets=[_wp.CSS(string=_PREMIUM_PDF_CSS)],
-    )
-
-    design_meta = {
-        "bank_id": bank_id,
-        "bank_name": bank_name,
-        "reporting_year": reporting_year,
-        "source_markdown": str(md_path),
-        "html_output": str(html_path),
-        "pdf_output": str(pdf_path),
-        "improvements_added": [
-            "designed_cover_page_with_logo_autodetection",
-            "page_numbered_table_of_contents",
-            "section_divider_pages",
-        ],
-        "logo_detected": bool(_find_report_logo()),
-        "section_dividers": [title for title, _, _ in blocks],
-    }
-
-    # Metadata output:
-    # gen_data/generated_reports/agentic_ifrs_report/full_report_BANK01_designed.meta.json
-    meta_path = report_root / f"full_report_{bank_id}_designed.meta.json"
-    meta_path.parent.mkdir(parents=True, exist_ok=True)
-
-    meta_path.write_text(
-        _json.dumps(design_meta, indent=2, ensure_ascii=False),
-        encoding="utf-8",
-    )
-
-    return str(pdf_path), str(html_path), str(meta_path)
-
-
-pdf_output_path, html_output_path, pdf_meta_path = build_full_report_pdf()
-
-print("Designed PDF written:", pdf_output_path)
-print("HTML preview written:", html_output_path)
-print("PDF design metadata:", pdf_meta_path)
-
-try:
-    import os as _os
-    print("PDF size:", _os.path.getsize(pdf_output_path), "bytes")
-except Exception:
-    pass
+        for r in c["results"]:
+            print(f"  {r['canary']:<26} expected_by={r['expected_by']:<12} caught={r['caught']}")
+        print(f"  JUDGE+GATE RECALL: {c['recall']:.0%}  "
+              f"({'meaningful scores' if c['recall'] >= 0.8 else 'treat scores as upper bounds'})")
