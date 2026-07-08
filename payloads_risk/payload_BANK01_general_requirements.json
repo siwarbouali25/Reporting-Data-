@@ -1,0 +1,994 @@
+{
+  "metadata": {
+    "bank_id": "BANK01",
+    "reporting_year": 2024,
+    "comparative_years": [
+      2022,
+      2023
+    ],
+    "data_gaps": [
+      {
+        "field": "scope1_fleet_tco2e",
+        "affected_years": [
+          2022,
+          2023
+        ],
+        "reason": "Vehicle activity data available for 2024 only.",
+        "instruction": "Report 2024 fleet Scope 1 only. State data unavailable for prior years. Do not report missing years as zero."
+      },
+      {
+        "field": "scope3_travel_tco2e",
+        "affected_years": [
+          2022,
+          2023
+        ],
+        "reason": "Travel records cover 2024 only.",
+        "instruction": "Report 2024 Scope 3 Cat.6 only. Prior years not available."
+      },
+      {
+        "field": "investments.counterparty_id",
+        "affected_years": [
+          2024
+        ],
+        "reason": "counterparty_id not populated in investments table. Investments attributed at bank level only.",
+        "instruction": "Note PCAF DQS 3 for investment attribution. Do not report issuer-level investment claims."
+      },
+      {
+        "field": "total_loans_meur",
+        "affected_years": [
+          2022,
+          2023,
+          2024
+        ],
+        "reason": "total_loans_meur is constant across all reporting years in the available data. Loan book growth data not available.",
+        "instruction": "Carbon intensity trend reflects emission changes only, not loan book growth. Disclose this methodology limitation explicitly. Do not describe a trend in the loan book denominator."
+      }
+    ],
+    "pcaf_methodology": {
+      "corporate_loans": "outstanding_amount_meur / evic_meur * total_ghg_tco2e (PCAF Standard §B62)",
+      "sovereign_bonds_investments": "nominal_amount_meur / ppp_gdp_meur * national_scope1_tco2e (PCAF Standard §B62A)",
+      "listed_equity": "market_value_meur / issuer_evic_meur * issuer_revenue_meur (PCAF Standard §B61 proxy — revenue substituted for direct issuer emissions due to absence of counterparty-level emission data in investment records)",
+      "sovereign_bonds_note": "issuer_evic_meur and issuer_revenue_meur are null for sovereign bonds by design. EVIC and revenue are corporate concepts not applicable to sovereigns.",
+      "investments_counterparty_note": "counterparty_id is null across all 185 investment rows. This is a known data generation gap. Attribution is at bank level only."
+    },
+    "scope2_rec_reconciliation": "scope2_market_tco2e is sourced directly from utility_invoices.scope2_market_tco2e, which already reflects market-based accounting with grid emission factors adjusted for renewable energy certificates and PPAs. The rec_registry.csv data is not subtracted again during preparation — it is used for disclosure narrative only (certificate type, volume, registry). There is no double-counting.",
+    "risk_rating_methodology": "climate_risk_register.risk_rating is derived from a 5x5 risk matrix: scores 1-2 = low, 3-6 = medium, 8-12 = high, 15-25 = critical. Specifically: likelihood_score * severity_score; critical >= 15, high >= 8, medium >= 3, low < 3. This formula must be used verbatim if the rating methodology is described in the report.",
+    "vehicles_correction": {
+      "method": "Scope 1 fleet recalculated from annual_fuel_consumption_l * 2.67 kg_CO2/litre / 1000",
+      "reason": "Pre-computed scope1_tco2e_2024 had errors including non-zero values for electric vehicles.",
+      "electric_vehicles_zeroed": true,
+      "emission_factor_source": "Empirically derived — consistent 2.67 kg CO2/litre across all fuel types"
+    }
+  },
+  "bank": {
+    "bank_id": "BANK01",
+    "bank_name": "Eurolux Universal Bank AG",
+    "archetype": "large_universal",
+    "country": "DE",
+    "total_assets_meur": 850000,
+    "headcount": 48000,
+    "established_year": 1872,
+    "reporting_currency": "EUR",
+    "fiscal_year_end": "2024-12-31",
+    "target_intensity_tco2e_per_meur": 20.0,
+    "behavior": "average",
+    "lei_code": "DG0G0SOYM0MIP2WSDJ46",
+    "boundary_type": "financial_control",
+    "regulatory_regime": "CSRD",
+    "in_scope_esg_flag": true,
+    "total_loans_meur": 31150.64,
+    "tier1_capital_meur": 151208.6,
+    "cet1_ratio_pct": 27.4
+  },
+  "financial_summary": [
+    {
+      "summary_id": "FIN-BANK01-2022",
+      "bank_id": "BANK01",
+      "reporting_year": 2022,
+      "total_assets_meur": 763922.8,
+      "total_loans_meur": 31150.64,
+      "total_undrawn_meur": 6595.48,
+      "green_loans_meur": 3335.75,
+      "green_loans_pct": 10.71,
+      "total_revenue_meur": 25466.1,
+      "net_interest_income_meur": 17579.1,
+      "net_profit_meur": 5759.9,
+      "tier1_capital_meur": 95149.4,
+      "cet1_ratio_pct": 19.2,
+      "return_on_equity_pct": 6.05,
+      "climate_capex_meur": 322.2,
+      "climate_opex_meur": 420.32,
+      "carbon_intensity_tco2e_per_meur_lending": 1173.3363,
+      "financed_em_loans_tco2e": 36550177.696418606
+    },
+    {
+      "summary_id": "FIN-BANK01-2023",
+      "bank_id": "BANK01",
+      "reporting_year": 2023,
+      "total_assets_meur": 820167.2,
+      "total_loans_meur": 31150.64,
+      "total_undrawn_meur": 6595.48,
+      "green_loans_meur": 3335.75,
+      "green_loans_pct": 10.71,
+      "total_revenue_meur": 27779.7,
+      "net_interest_income_meur": 19263.8,
+      "net_profit_meur": 4731.7,
+      "tier1_capital_meur": 143979.2,
+      "cet1_ratio_pct": 27.0,
+      "return_on_equity_pct": 3.29,
+      "climate_capex_meur": 373.91,
+      "climate_opex_meur": 509.21,
+      "carbon_intensity_tco2e_per_meur_lending": 1201.5032,
+      "financed_em_loans_tco2e": 37427593.16354951
+    },
+    {
+      "summary_id": "FIN-BANK01-2024",
+      "bank_id": "BANK01",
+      "reporting_year": 2024,
+      "total_assets_meur": 850000.0,
+      "total_loans_meur": 31150.64,
+      "total_undrawn_meur": 6595.48,
+      "green_loans_meur": 3335.75,
+      "green_loans_pct": 10.71,
+      "total_revenue_meur": 24136.2,
+      "net_interest_income_meur": 15947.7,
+      "net_profit_meur": 3356.1,
+      "tier1_capital_meur": 151208.6,
+      "cet1_ratio_pct": 27.4,
+      "return_on_equity_pct": 2.22,
+      "climate_capex_meur": 476.95,
+      "climate_opex_meur": 219.32,
+      "carbon_intensity_tco2e_per_meur_lending": 1154.8131,
+      "financed_em_loans_tco2e": 35973167.6878965
+    }
+  ],
+  "general_requirements_context": {
+    "reporting_entity": "Eurolux Universal Bank AG",
+    "bank_id": "BANK01",
+    "reporting_period_end": "2024-12-31",
+    "reporting_year": 2024,
+    "comparative_years": [
+      2022,
+      2023
+    ],
+    "reporting_currency": "EUR",
+    "boundary_type": "financial_control",
+    "regulatory_regime": "CSRD",
+    "standards_basis": "IFRS S1 / IFRS S2-style sustainability-related financial disclosure basis",
+    "source_systems": [
+      {
+        "system_id": "CIF",
+        "system_name": "Customer Information File",
+        "purpose": "counterparty master data",
+        "owner": "CRM"
+      },
+      {
+        "system_id": "KYC",
+        "system_name": "Know Your Customer",
+        "purpose": "due diligence and onboarding",
+        "owner": "Compliance"
+      },
+      {
+        "system_id": "LMS",
+        "system_name": "Loan Management System",
+        "purpose": "exposure & collateral tracking",
+        "owner": "Credit"
+      },
+      {
+        "system_id": "ESG_DATA",
+        "system_name": "ESG Data Warehouse",
+        "purpose": "emissions, targets, sustainability metrics",
+        "owner": "Sustainability"
+      },
+      {
+        "system_id": "ERM_GRC",
+        "system_name": "Enterprise Risk / GRC",
+        "purpose": "risk register, governance documentation",
+        "owner": "Risk"
+      },
+      {
+        "system_id": "HR",
+        "system_name": "Human Resources System",
+        "purpose": "workforce, training, compensation",
+        "owner": "HR"
+      },
+      {
+        "system_id": "FACILITIES",
+        "system_name": "Facilities Management",
+        "purpose": "buildings, utilities, energy",
+        "owner": "Operations"
+      },
+      {
+        "system_id": "FLEET",
+        "system_name": "Fleet Management",
+        "purpose": "vehicles and fuel",
+        "owner": "Operations"
+      },
+      {
+        "system_id": "TRAVEL",
+        "system_name": "Travel & Expense",
+        "purpose": "business travel records",
+        "owner": "Operations"
+      },
+      {
+        "system_id": "PROCUREMENT",
+        "system_name": "Procurement System",
+        "purpose": "supplier data and spend",
+        "owner": "Procurement"
+      }
+    ],
+    "data_gaps": [
+      {
+        "field": "scope1_fleet_tco2e",
+        "affected_years": [
+          2022,
+          2023
+        ],
+        "reason": "Vehicle activity data available for 2024 only.",
+        "instruction": "Report 2024 fleet Scope 1 only. State data unavailable for prior years. Do not report missing years as zero."
+      },
+      {
+        "field": "scope3_travel_tco2e",
+        "affected_years": [
+          2022,
+          2023
+        ],
+        "reason": "Travel records cover 2024 only.",
+        "instruction": "Report 2024 Scope 3 Cat.6 only. Prior years not available."
+      },
+      {
+        "field": "investments.counterparty_id",
+        "affected_years": [
+          2024
+        ],
+        "reason": "counterparty_id not populated in investments table. Investments attributed at bank level only.",
+        "instruction": "Note PCAF DQS 3 for investment attribution. Do not report issuer-level investment claims."
+      },
+      {
+        "field": "total_loans_meur",
+        "affected_years": [
+          2022,
+          2023,
+          2024
+        ],
+        "reason": "total_loans_meur is constant across all reporting years in the available data. Loan book growth data not available.",
+        "instruction": "Carbon intensity trend reflects emission changes only, not loan book growth. Disclose this methodology limitation explicitly. Do not describe a trend in the loan book denominator."
+      }
+    ],
+    "pcaf_methodology": {
+      "corporate_loans": "outstanding_amount_meur / evic_meur * total_ghg_tco2e (PCAF Standard §B62)",
+      "sovereign_bonds_investments": "nominal_amount_meur / ppp_gdp_meur * national_scope1_tco2e (PCAF Standard §B62A)",
+      "listed_equity": "market_value_meur / issuer_evic_meur * issuer_revenue_meur (PCAF Standard §B61 proxy — revenue substituted for direct issuer emissions due to absence of counterparty-level emission data in investment records)",
+      "sovereign_bonds_note": "issuer_evic_meur and issuer_revenue_meur are null for sovereign bonds by design. EVIC and revenue are corporate concepts not applicable to sovereigns.",
+      "investments_counterparty_note": "counterparty_id is null across all 185 investment rows. This is a known data generation gap. Attribution is at bank level only."
+    },
+    "scope2_rec_reconciliation": "scope2_market_tco2e is sourced directly from utility_invoices.scope2_market_tco2e, which already reflects market-based accounting with grid emission factors adjusted for renewable energy certificates and PPAs. The rec_registry.csv data is not subtracted again during preparation — it is used for disclosure narrative only (certificate type, volume, registry). There is no double-counting.",
+    "risk_rating_methodology": "climate_risk_register.risk_rating is derived from a 5x5 risk matrix: scores 1-2 = low, 3-6 = medium, 8-12 = high, 15-25 = critical. Specifically: likelihood_score * severity_score; critical >= 15, high >= 8, medium >= 3, low < 3. This formula must be used verbatim if the rating methodology is described in the report.",
+    "external_assurance": "limited",
+    "assurance_provider": "EY",
+    "assurance_scope": "Scope 1 and 2 emissions",
+    "assurance_standard": "ISAE3000",
+    "coherence_fixes_applied": [
+      {
+        "bank_id": "BANK01",
+        "table": "banks",
+        "field": "tier1_capital_meur",
+        "old_value": 134389.7,
+        "new_value": 151208.6,
+        "reason": "Aligned bank master field to 2024 financial_summary."
+      },
+      {
+        "bank_id": "BANK01",
+        "table": "banks",
+        "field": "cet1_ratio_pct",
+        "old_value": 24.3,
+        "new_value": 27.4,
+        "reason": "Aligned bank master field to 2024 financial_summary."
+      },
+      {
+        "bank_id": "BANK01",
+        "table": "governance",
+        "field": "climate_on_board_agenda_pct",
+        "old_value": 75.0,
+        "new_value": 100.0,
+        "reason": "Recomputed from Full Board minutes climate_agenda_flag."
+      },
+      {
+        "bank_id": "BANK01",
+        "table": "governance",
+        "field": "climate_on_board_agenda_pct",
+        "old_value": 71.4,
+        "new_value": 85.7,
+        "reason": "Recomputed from Full Board minutes climate_agenda_flag."
+      },
+      {
+        "bank_id": "BANK01",
+        "table": "governance",
+        "field": "climate_on_board_agenda_pct",
+        "old_value": 75.0,
+        "new_value": 100.0,
+        "reason": "Recomputed from Full Board minutes climate_agenda_flag."
+      },
+      {
+        "bank_id": "BANK01",
+        "table": "climate_scenarios",
+        "field": "stranded_assets_estimate_meur",
+        "old_value": 10871.6,
+        "new_value": 2407.96,
+        "reason": "Recalculated as fossil-fuel exposure multiplied by high-risk exposure percentage."
+      },
+      {
+        "bank_id": "BANK01",
+        "table": "climate_scenarios",
+        "field": "revenue_at_risk_meur",
+        "old_value": 8423.5,
+        "new_value": 7240.86,
+        "reason": "Capped at 30% of 2024 revenue to avoid impossible report magnitudes."
+      },
+      {
+        "bank_id": "BANK01",
+        "table": "climate_scenarios",
+        "field": "stranded_assets_estimate_meur",
+        "old_value": 4703.7,
+        "new_value": 1041.84,
+        "reason": "Recalculated as fossil-fuel exposure multiplied by high-risk exposure percentage."
+      },
+      {
+        "bank_id": "BANK01",
+        "table": "climate_scenarios",
+        "field": "stranded_assets_estimate_meur",
+        "old_value": 10684.7,
+        "new_value": 2366.56,
+        "reason": "Recalculated as fossil-fuel exposure multiplied by high-risk exposure percentage."
+      },
+      {
+        "bank_id": "BANK01",
+        "table": "climate_scenarios",
+        "field": "revenue_at_risk_meur",
+        "old_value": 8278.7,
+        "new_value": 7240.86,
+        "reason": "Capped at 30% of 2024 revenue to avoid impossible report magnitudes."
+      },
+      {
+        "bank_id": "BANK01",
+        "table": "climate_scenarios",
+        "field": "stranded_assets_estimate_meur",
+        "old_value": 6323.6,
+        "new_value": 1400.62,
+        "reason": "Recalculated as fossil-fuel exposure multiplied by high-risk exposure percentage."
+      },
+      {
+        "bank_id": "BANK01",
+        "table": "climate_scenarios",
+        "field": "stranded_assets_estimate_meur",
+        "old_value": 3364.3,
+        "new_value": 745.16,
+        "reason": "Recalculated as fossil-fuel exposure multiplied by high-risk exposure percentage."
+      },
+      {
+        "bank_id": "BANK01",
+        "table": "climate_scenarios",
+        "field": "stranded_assets_estimate_meur",
+        "old_value": 8846.8,
+        "new_value": 1959.48,
+        "reason": "Recalculated as fossil-fuel exposure multiplied by high-risk exposure percentage."
+      },
+      {
+        "bank_id": "BANK01",
+        "table": "climate_scenarios",
+        "field": "stranded_assets_estimate_meur",
+        "old_value": 5731.7,
+        "new_value": 1269.52,
+        "reason": "Recalculated as fossil-fuel exposure multiplied by high-risk exposure percentage."
+      },
+      {
+        "bank_id": "BANK01",
+        "table": "climate_scenarios",
+        "field": "stranded_assets_estimate_meur",
+        "old_value": 1619.8,
+        "new_value": 358.78,
+        "reason": "Recalculated as fossil-fuel exposure multiplied by high-risk exposure percentage."
+      },
+      {
+        "bank_id": "BANK01",
+        "table": "climate_scenarios",
+        "field": "stranded_assets_estimate_meur",
+        "old_value": 3613.5,
+        "new_value": 800.35,
+        "reason": "Recalculated as fossil-fuel exposure multiplied by high-risk exposure percentage."
+      },
+      {
+        "bank_id": "BANK01",
+        "table": "climate_scenarios",
+        "field": "stranded_assets_estimate_meur",
+        "old_value": 6167.8,
+        "new_value": 1366.12,
+        "reason": "Recalculated as fossil-fuel exposure multiplied by high-risk exposure percentage."
+      },
+      {
+        "bank_id": "BANK01",
+        "table": "climate_scenarios",
+        "field": "stranded_assets_estimate_meur",
+        "old_value": 3083.9,
+        "new_value": 683.06,
+        "reason": "Recalculated as fossil-fuel exposure multiplied by high-risk exposure percentage."
+      },
+      {
+        "bank_id": "BANK01",
+        "table": "climate_scenarios",
+        "field": "stranded_assets_estimate_meur",
+        "old_value": 7787.7,
+        "new_value": 1724.9,
+        "reason": "Recalculated as fossil-fuel exposure multiplied by high-risk exposure percentage."
+      },
+      {
+        "bank_id": "BANK01",
+        "table": "climate_scenarios",
+        "field": "stranded_assets_estimate_meur",
+        "old_value": 4423.4,
+        "new_value": 979.74,
+        "reason": "Recalculated as fossil-fuel exposure multiplied by high-risk exposure percentage."
+      },
+      {
+        "bank_id": "BANK01",
+        "table": "climate_scenarios",
+        "field": "stranded_assets_estimate_meur",
+        "old_value": 2803.6,
+        "new_value": 620.96,
+        "reason": "Recalculated as fossil-fuel exposure multiplied by high-risk exposure percentage."
+      },
+      {
+        "bank_id": "BANK01",
+        "table": "climate_scenarios",
+        "field": "stranded_assets_estimate_meur",
+        "old_value": 9282.9,
+        "new_value": 2056.08,
+        "reason": "Recalculated as fossil-fuel exposure multiplied by high-risk exposure percentage."
+      },
+      {
+        "bank_id": "BANK01",
+        "table": "climate_scenarios",
+        "field": "stranded_assets_estimate_meur",
+        "old_value": 10155.1,
+        "new_value": 2249.27,
+        "reason": "Recalculated as fossil-fuel exposure multiplied by high-risk exposure percentage."
+      },
+      {
+        "bank_id": "BANK01",
+        "table": "climate_scenarios",
+        "field": "revenue_at_risk_meur",
+        "old_value": 7868.4,
+        "new_value": 7240.86,
+        "reason": "Capped at 30% of 2024 revenue to avoid impossible report magnitudes."
+      },
+      {
+        "bank_id": "BANK01",
+        "table": "climate_scenarios",
+        "field": "stranded_assets_estimate_meur",
+        "old_value": 2055.9,
+        "new_value": 455.37,
+        "reason": "Recalculated as fossil-fuel exposure multiplied by high-risk exposure percentage."
+      },
+      {
+        "bank_id": "BANK01",
+        "table": "climate_scenarios",
+        "field": "stranded_assets_estimate_meur",
+        "old_value": 6635.1,
+        "new_value": 1469.61,
+        "reason": "Recalculated as fossil-fuel exposure multiplied by high-risk exposure percentage."
+      },
+      {
+        "bank_id": "BANK01",
+        "table": "climate_risk_register",
+        "field": "mitigation_actions",
+        "old_value": "Engagement and transition-plan covenants with borrowers",
+        "new_value": "Collateral revaluation, flood-zone mapping overlay and updated mortgage underwriting criteria",
+        "reason": "Aligned mitigation action to risk type."
+      },
+      {
+        "bank_id": "BANK01",
+        "table": "climate_risk_register",
+        "field": "mitigation_actions",
+        "old_value": "Engagement and transition-plan covenants with borrowers",
+        "new_value": "Enhanced financed-emissions disclosure controls and client engagement on transition plans",
+        "reason": "Aligned mitigation action to risk type."
+      },
+      {
+        "bank_id": "BANK01",
+        "table": "climate_risk_register",
+        "field": "mitigation_actions",
+        "old_value": "Green retrofit financing incentives",
+        "new_value": "Sector exposure limits, enhanced due diligence and portfolio decarbonisation glide-path monitoring",
+        "reason": "Aligned mitigation action to risk type."
+      },
+      {
+        "bank_id": "BANK01",
+        "table": "climate_risk_register",
+        "field": "mitigation_actions",
+        "old_value": "Sector exposure limits and enhanced due diligence",
+        "new_value": "Sector exposure limits, carbon-cost sensitivity analysis and enhanced due diligence",
+        "reason": "Aligned mitigation action to risk type."
+      },
+      {
+        "bank_id": "BANK01",
+        "table": "climate_risk_register",
+        "field": "mitigation_actions",
+        "old_value": "Portfolio decarbonisation glide-path monitoring",
+        "new_value": "Technology transition monitoring, sector concentration limits and client transition-plan engagement",
+        "reason": "Aligned mitigation action to risk type."
+      },
+      {
+        "bank_id": "BANK01",
+        "table": "climate_risk_register",
+        "field": "mitigation_actions",
+        "old_value": "Green retrofit financing incentives",
+        "new_value": "Wildfire hazard mapping, collateral revaluation and borrower resilience engagement",
+        "reason": "Aligned mitigation action to risk type."
+      },
+      {
+        "bank_id": "BANK01",
+        "table": "climate_risk_register",
+        "field": "mitigation_actions",
+        "old_value": "Portfolio decarbonisation glide-path monitoring",
+        "new_value": "Sector exposure limits, carbon-cost sensitivity analysis and enhanced due diligence",
+        "reason": "Aligned mitigation action to risk type."
+      },
+      {
+        "bank_id": "BANK01",
+        "table": "climate_risk_register",
+        "field": "mitigation_actions",
+        "old_value": "Sector exposure limits and enhanced due diligence",
+        "new_value": "Climate scenario stress testing, sector monitoring and borrower adaptation engagement",
+        "reason": "Aligned mitigation action to risk type."
+      },
+      {
+        "bank_id": "BANK01",
+        "table": "climate_risk_register",
+        "field": "mitigation_actions",
+        "old_value": "Engagement and transition-plan covenants with borrowers",
+        "new_value": "Collateral revaluation, flood-zone mapping overlay and updated mortgage underwriting criteria",
+        "reason": "Aligned mitigation action to risk type."
+      },
+      {
+        "bank_id": "BANK01",
+        "table": "climate_risk_register",
+        "field": "mitigation_actions",
+        "old_value": "Green retrofit financing incentives",
+        "new_value": "Sector exposure limits, carbon-cost sensitivity analysis and enhanced due diligence",
+        "reason": "Aligned mitigation action to risk type."
+      },
+      {
+        "bank_id": "BANK01",
+        "table": "climate_risk_register",
+        "field": "mitigation_actions",
+        "old_value": "Climate scenario stress testing integrated into ICAAP",
+        "new_value": "Climate scenario stress testing, sector monitoring and borrower adaptation engagement",
+        "reason": "Aligned mitigation action to risk type."
+      },
+      {
+        "bank_id": "BANK01",
+        "table": "climate_risk_register",
+        "field": "mitigation_actions",
+        "old_value": "Collateral revaluation and flood mapping overlay",
+        "new_value": "Wildfire hazard mapping, collateral revaluation and borrower resilience engagement",
+        "reason": "Aligned mitigation action to risk type."
+      },
+      {
+        "bank_id": "BANK01",
+        "table": "climate_risk_register",
+        "field": "mitigation_actions",
+        "old_value": "Collateral revaluation and flood mapping overlay",
+        "new_value": "Sector exposure limits, enhanced due diligence and portfolio decarbonisation glide-path monitoring",
+        "reason": "Aligned mitigation action to risk type."
+      },
+      {
+        "bank_id": "BANK01",
+        "table": "climate_risk_register",
+        "field": "mitigation_actions",
+        "old_value": "Climate scenario stress testing integrated into ICAAP",
+        "new_value": "Technology transition monitoring, sector concentration limits and client transition-plan engagement",
+        "reason": "Aligned mitigation action to risk type."
+      },
+      {
+        "bank_id": "BANK01",
+        "table": "climate_risk_register",
+        "field": "mitigation_actions",
+        "old_value": "Portfolio decarbonisation glide-path monitoring",
+        "new_value": "Enhanced financed-emissions disclosure controls and client engagement on transition plans",
+        "reason": "Aligned mitigation action to risk type."
+      },
+      {
+        "bank_id": "BANK01",
+        "table": "climate_risk_register",
+        "field": "mitigation_actions",
+        "old_value": "Sector exposure limits and enhanced due diligence",
+        "new_value": "Sector exposure limits, carbon-cost sensitivity analysis and enhanced due diligence",
+        "reason": "Aligned mitigation action to risk type."
+      },
+      {
+        "bank_id": "BANK01",
+        "table": "climate_risk_register",
+        "field": "risk_rating",
+        "old_value": "high",
+        "new_value": "critical",
+        "reason": "Recalculated from likelihood_score * severity_score using the stated 5x5 risk matrix."
+      },
+      {
+        "bank_id": "BANK01",
+        "table": "climate_risk_register",
+        "field": "risk_rating",
+        "old_value": "high",
+        "new_value": "critical",
+        "reason": "Recalculated from likelihood_score * severity_score using the stated 5x5 risk matrix."
+      },
+      {
+        "bank_id": "BANK01",
+        "table": "climate_risk_register",
+        "field": "risk_rating",
+        "old_value": "medium",
+        "new_value": "high",
+        "reason": "Recalculated from likelihood_score * severity_score using the stated 5x5 risk matrix."
+      },
+      {
+        "bank_id": "BANK01",
+        "table": "climate_risk_register",
+        "field": "risk_rating",
+        "old_value": "medium",
+        "new_value": "high",
+        "reason": "Recalculated from likelihood_score * severity_score using the stated 5x5 risk matrix."
+      },
+      {
+        "bank_id": "BANK01",
+        "table": "climate_risk_register",
+        "field": "risk_rating",
+        "old_value": "high",
+        "new_value": "critical",
+        "reason": "Recalculated from likelihood_score * severity_score using the stated 5x5 risk matrix."
+      },
+      {
+        "bank_id": "BANK01",
+        "table": "climate_risk_register",
+        "field": "risk_rating",
+        "old_value": "high",
+        "new_value": "critical",
+        "reason": "Recalculated from likelihood_score * severity_score using the stated 5x5 risk matrix."
+      },
+      {
+        "bank_id": "BANK01",
+        "table": "climate_risk_register",
+        "field": "risk_rating",
+        "old_value": "medium",
+        "new_value": "high",
+        "reason": "Recalculated from likelihood_score * severity_score using the stated 5x5 risk matrix."
+      },
+      {
+        "bank_id": "BANK01",
+        "table": "climate_risk_register",
+        "field": "risk_rating",
+        "old_value": "medium",
+        "new_value": "high",
+        "reason": "Recalculated from likelihood_score * severity_score using the stated 5x5 risk matrix."
+      },
+      {
+        "bank_id": "BANK01",
+        "table": "climate_risk_register",
+        "field": "risk_rating",
+        "old_value": "medium",
+        "new_value": "high",
+        "reason": "Recalculated from likelihood_score * severity_score using the stated 5x5 risk matrix."
+      },
+      {
+        "bank_id": "BANK01",
+        "table": "climate_risk_register",
+        "field": "risk_rating",
+        "old_value": "high",
+        "new_value": "critical",
+        "reason": "Recalculated from likelihood_score * severity_score using the stated 5x5 risk matrix."
+      },
+      {
+        "bank_id": "BANK01",
+        "table": "climate_risk_register",
+        "field": "risk_rating",
+        "old_value": "high",
+        "new_value": "critical",
+        "reason": "Recalculated from likelihood_score * severity_score using the stated 5x5 risk matrix."
+      },
+      {
+        "bank_id": "BANK01",
+        "table": "climate_risk_register",
+        "field": "risk_rating",
+        "old_value": "medium",
+        "new_value": "high",
+        "reason": "Recalculated from likelihood_score * severity_score using the stated 5x5 risk matrix."
+      },
+      {
+        "bank_id": "BANK01",
+        "table": "climate_risk_register",
+        "field": "risk_rating",
+        "old_value": "high",
+        "new_value": "critical",
+        "reason": "Recalculated from likelihood_score * severity_score using the stated 5x5 risk matrix."
+      }
+    ]
+  },
+  "targets": [
+    {
+      "target_id": "TGT001",
+      "bank_id": "BANK01",
+      "target_type": "absolute_reduction",
+      "scope": "scope_1_and_2",
+      "metric": "tco2e",
+      "baseline_year": 2020,
+      "baseline_value": 137849.0,
+      "target_year": 2030,
+      "target_value_pct_reduction": 42,
+      "target_framework": "SBTi_1.5C",
+      "status": "on_track",
+      "gross_or_net": "gross",
+      "associated_gross_target_id": null,
+      "ghg_gases_covered": "all_kyoto_7",
+      "scope_coverage": "scope1_and_2",
+      "third_party_validated": true,
+      "validation_body": "SBTi",
+      "sectoral_decarbonisation": false,
+      "interim_milestones_json": "[{\"year\": 2025, \"value\": 120480.0, \"metric\": \"tco2e\"}, {\"year\": 2028, \"value\": 97321.4, \"metric\": \"tco2e\"}]",
+      "planned_carbon_credits_pct": null,
+      "planned_credit_type": null,
+      "target_applies_to": "whole_entity",
+      "latest_paris_alignment": true,
+      "review_frequency": "triennial",
+      "progress_metric": "tco2e_absolute",
+      "milestones_parsed": [
+        {
+          "year": 2025,
+          "value": 120480.0,
+          "metric": "tco2e"
+        },
+        {
+          "year": 2028,
+          "value": 97321.4,
+          "metric": "tco2e"
+        }
+      ],
+      "schedule_elapsed_pct_2024": 40.0,
+      "actual_progress_pct_2024": null,
+      "progress_basis": "schedule_elapsed_only",
+      "progress_is_schedule_proxy": true,
+      "target_progress_pct_2024": null
+    },
+    {
+      "target_id": "TGT002",
+      "bank_id": "BANK01",
+      "target_type": "intensity_reduction",
+      "scope": "scope_3_cat15_financed",
+      "metric": "tco2e_per_meur_lending",
+      "baseline_year": 2022,
+      "baseline_value": 1173.34,
+      "target_year": 2030,
+      "target_value_pct_reduction": 30,
+      "target_framework": "NZBA",
+      "status": "on_track",
+      "gross_or_net": "gross",
+      "associated_gross_target_id": null,
+      "ghg_gases_covered": "all_kyoto_7",
+      "scope_coverage": "scope3_cat15",
+      "third_party_validated": true,
+      "validation_body": "UNEP_FI",
+      "sectoral_decarbonisation": true,
+      "interim_milestones_json": "[{\"year\": 2025, \"value\": 1067.74, \"metric\": \"tco2e_per_meur_lending\"}, {\"year\": 2028, \"value\": 926.94, \"metric\": \"tco2e_per_meur_lending\"}]",
+      "planned_carbon_credits_pct": null,
+      "planned_credit_type": null,
+      "target_applies_to": "whole_entity",
+      "latest_paris_alignment": true,
+      "review_frequency": "annual",
+      "progress_metric": "tco2e_per_meur",
+      "milestones_parsed": [
+        {
+          "year": 2025,
+          "value": 1067.74,
+          "metric": "tco2e_per_meur_lending"
+        },
+        {
+          "year": 2028,
+          "value": 926.94,
+          "metric": "tco2e_per_meur_lending"
+        }
+      ],
+      "schedule_elapsed_pct_2024": 25.0,
+      "actual_progress_pct_2024": null,
+      "progress_basis": "schedule_elapsed_only",
+      "progress_is_schedule_proxy": true,
+      "target_progress_pct_2024": null
+    },
+    {
+      "target_id": "TGT003",
+      "bank_id": "BANK01",
+      "target_type": "net_zero",
+      "scope": "all_scopes",
+      "metric": "tco2e",
+      "baseline_year": 2020,
+      "baseline_value": 36688026.0,
+      "target_year": 2050,
+      "target_value_pct_reduction": 100,
+      "target_framework": "NZBA",
+      "status": "on_track",
+      "gross_or_net": "net",
+      "associated_gross_target_id": "TGT001",
+      "ghg_gases_covered": "all_kyoto_7",
+      "scope_coverage": "all_scopes",
+      "third_party_validated": true,
+      "validation_body": "UNEP_FI",
+      "sectoral_decarbonisation": false,
+      "interim_milestones_json": null,
+      "planned_carbon_credits_pct": 8.2,
+      "planned_credit_type": "technology_removal",
+      "target_applies_to": "whole_entity",
+      "latest_paris_alignment": true,
+      "review_frequency": "biennial",
+      "progress_metric": "pct_reduction_vs_baseline",
+      "milestones_parsed": [],
+      "schedule_elapsed_pct_2024": 13.3,
+      "actual_progress_pct_2024": null,
+      "progress_basis": "schedule_elapsed_only",
+      "progress_is_schedule_proxy": true,
+      "target_progress_pct_2024": null
+    }
+  ],
+  "scope1": [
+    {
+      "bank_id": "BANK01",
+      "reporting_year": 2022,
+      "scope1_gas_tco2e": 2072.3827,
+      "scope1_fleet_tco2e": 0.0,
+      "scope1_total_tco2e": 2072.3827,
+      "fleet_data_available": false
+    },
+    {
+      "bank_id": "BANK01",
+      "reporting_year": 2023,
+      "scope1_gas_tco2e": 2032.526,
+      "scope1_fleet_tco2e": 0.0,
+      "scope1_total_tco2e": 2032.526,
+      "fleet_data_available": false
+    },
+    {
+      "bank_id": "BANK01",
+      "reporting_year": 2024,
+      "scope1_gas_tco2e": 2012.3308,
+      "scope1_fleet_tco2e": 622.5775170000001,
+      "scope1_total_tco2e": 2634.908317,
+      "fleet_data_available": true
+    }
+  ],
+  "scope2": [
+    {
+      "bank_id": "BANK01",
+      "reporting_year": 2022,
+      "scope2_location_tco2e": 7697.2148,
+      "scope2_market_tco2e": 5001.3209
+    },
+    {
+      "bank_id": "BANK01",
+      "reporting_year": 2023,
+      "scope2_location_tco2e": 7314.0062,
+      "scope2_market_tco2e": 4014.4341
+    },
+    {
+      "bank_id": "BANK01",
+      "reporting_year": 2024,
+      "scope2_location_tco2e": 6963.4977,
+      "scope2_market_tco2e": 3060.5382
+    }
+  ],
+  "scope3_travel": [
+    {
+      "bank_id": "BANK01",
+      "reporting_year": 2024,
+      "scope3_travel_tco2e": 289.8833,
+      "travel_data_available": true
+    }
+  ],
+  "financed_emissions": [
+    {
+      "bank_id": "BANK01",
+      "financed_em_loans_tco2e": 36550177.696418606,
+      "reporting_year": 2022,
+      "total_loans_meur": 31150.64,
+      "carbon_intensity_tco2e_per_meur_lending": 1173.3363
+    },
+    {
+      "bank_id": "BANK01",
+      "financed_em_loans_tco2e": 37427593.16354951,
+      "reporting_year": 2023,
+      "total_loans_meur": 31150.64,
+      "carbon_intensity_tco2e_per_meur_lending": 1201.5032
+    },
+    {
+      "bank_id": "BANK01",
+      "financed_em_loans_tco2e": 35973167.6878965,
+      "reporting_year": 2024,
+      "total_loans_meur": 31150.64,
+      "carbon_intensity_tco2e_per_meur_lending": 1154.8131
+    }
+  ],
+  "reporting_kpis": {
+    "scope1_2024_tco2e": 2634.908317,
+    "scope2_location_2024_tco2e": 6963.4977,
+    "scope2_market_2024_tco2e": 3060.5382,
+    "scope3_travel_2024_tco2e": 289.8833,
+    "financed_emissions_2024_tco2e": 35973167.6878965,
+    "carbon_intensity_2024_tco2e_per_meur": 1154.8131,
+    "green_loans_pct_2024": 10.71,
+    "climate_capex_2024_meur": 476.95,
+    "climate_opex_2024_meur": 219.32,
+    "total_assets_2024_meur": 850000.0,
+    "total_loans_2024_meur": 31150.64,
+    "governance_maturity": {
+      "esg_committee_exists": true,
+      "esg_committee_meetings": 7,
+      "board_climate_expertise_pct": 40.0,
+      "ceo_esg_compensation_pct": 9.3,
+      "external_assurance": "limited",
+      "erm_integration": true
+    },
+    "target_summary": [
+      {
+        "target_id": "TGT001",
+        "type": "absolute_reduction",
+        "scope": "scope1_and_2",
+        "status": "on_track",
+        "target_year": 2030,
+        "framework": "SBTi_1.5C",
+        "target_progress_pct_2024": null,
+        "schedule_elapsed_pct_2024": 40.0,
+        "progress_basis": "schedule_elapsed_only",
+        "progress_is_schedule_proxy": true
+      },
+      {
+        "target_id": "TGT002",
+        "type": "intensity_reduction",
+        "scope": "scope3_cat15",
+        "status": "on_track",
+        "target_year": 2030,
+        "framework": "NZBA",
+        "target_progress_pct_2024": null,
+        "schedule_elapsed_pct_2024": 25.0,
+        "progress_basis": "schedule_elapsed_only",
+        "progress_is_schedule_proxy": true
+      },
+      {
+        "target_id": "TGT003",
+        "type": "net_zero",
+        "scope": "all_scopes",
+        "status": "on_track",
+        "target_year": 2050,
+        "framework": "NZBA",
+        "target_progress_pct_2024": null,
+        "schedule_elapsed_pct_2024": 13.3,
+        "progress_basis": "schedule_elapsed_only",
+        "progress_is_schedule_proxy": true
+      }
+    ],
+    "high_carbon_sector_exposure_pct": 35.5,
+    "fossil_fuel_exposure_pct": 22.15,
+    "high_carbon_sector_exposure_meur": 11059.49,
+    "fossil_fuel_exposure_meur": 6899.59,
+    "emissions_data_quality_summary": {
+      "audited_report": 0.7,
+      "cdp_disclosure": 35.5,
+      "estimated_economic": 47.5,
+      "proxy_model": 16.3
+    },
+    "carbon_credit_summary": {
+      "total_credits_tco2e": 21080,
+      "retired_tco2e": 21080,
+      "removal_pct": 0.0,
+      "high_permanence_pct": 100.0,
+      "additionality_verified_pct": 100.0
+    },
+    "scope1_fleet_included": true,
+    "scope3_travel_comparative_available": false,
+    "listed_equity_emissions_are_proxy": true,
+    "sovereign_bonds_with_data_gaps": 4
+  }
+}
