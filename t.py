@@ -1,184 +1,617 @@
 # ============================================================
-# CELL B11 — SCORE VERIFICATION
+# CELL 2 — ROBUST AZURE OPENAI CLIENT
+# Replaces the engine notebook's current Cell 2
 # ============================================================
 
-import copy
+import json
+import os
 import random
+import re
+import time
+import urllib.error
+import urllib.request
 
-VERIFY_SECTIONS = RUN_SECTIONS            # or a subset
-CANARY_SECTION = "governance"             # section used for the recall test
-RUN_COLD_AUDIT = True                     # 2 judge calls per section
-RUN_CANARY = True                         # 1 judge call + deterministic gates
+from typing import Any, Dict, Optional
 
-_POSTURE_INVARIANTS = {
-    # directive: (topic trigger -> only checked if the section discusses it, required patterns)
-    "GAP-01": (r"[Ss]cope 1", [r"stationary combustion", r"not available|2024 only|for 2024\b"]),
-    "GAP-02": (r"business travel|[Cc]ategory 6", [r"not available|2024 only|for 2024\b"]),
-    "GAP-03": (r"sovereign|listed equity|investment", [r"portfolio level", r"data quality score (?:of )?3"]),
-    "GAP-04": (r"intensity", [r"denominator", r"constant", r"absolute (?:financed )?emissions"]),
+
+# ============================================================
+# Azure configuration
+# ============================================================
+
+AZURE_OPENAI_API_KEY = (
+    os.getenv("AZURE_OPENAI_API_KEY")
+    or os.getenv("OPENAI_API_KEY")
+)
+
+
+def _clean_url(value: Optional[str]) -> Optional[str]:
+    if not value:
+        return None
+
+    value = str(value).strip().strip('"').strip("'")
+
+    markdown_match = re.search(
+        r"\]\((https://[^)\s]+)\)",
+        value,
+    )
+
+    if markdown_match:
+        value = markdown_match.group(1).strip()
+
+    https_positions = [
+        match.start()
+        for match in re.finditer(r"https://", value)
+    ]
+
+    if https_positions:
+        value = value[https_positions[-1]:]
+
+    return value.strip().strip("[]").rstrip(").,;")
+
+
+AZURE_STRONG_URL = _clean_url(
+    os.getenv("AZURE_OPENAI_GPT52_DEPLOYMENT_URL")
+)
+
+AZURE_FAST_URL = (
+    _clean_url(
+        os.getenv("AZURE_OPENAI_FAST_DEPLOYMENT_URL")
+    )
+    or AZURE_STRONG_URL
+)
+
+
+# ============================================================
+# Model routing
+# ============================================================
+
+MODEL_TIERS = {
+    "writer": "strong",
+    "patch_writer": "strong",
+    "binding_verifier": "fast",
+    "applicability_assessor": "fast",
+    "coverage_verifier": "strong",
+    "claims_checker": "strong",
+    "style_judge": "fast",
+    "editorial": "strong",
 }
 
 
-def deterministic_invariants(section_key: str) -> dict:
-    wp = json.loads((PHASE_A_OUTPUT_DIR / f"work_package_{section_key}.json").read_text(encoding="utf-8"))
-    draft = json.loads((PHASE_B_OUTPUT_DIR / f"draft_{section_key}.json").read_text(encoding="utf-8"))
-    blocks = draft["blocks"]
-    allowed = set(json.loads((PHASE_A_OUTPUT_DIR / "allowed_numbers.json").read_text(encoding="utf-8")))
-    years = {str(wp["reporting_year"])} | {str(y) for y in wp["comparative_years"]}
-    issues = []
+# ============================================================
+# Validate configuration
+# ============================================================
 
-    ng = number_gate(blocks, allowed, years, wp.get("entity_allowlist"))
-    issues += [f"number: {v['detail']}" for v in ng["violations"]]
+def validate_llm_config() -> None:
+    missing = []
 
-    mg = meta_commentary_gate(blocks)
-    issues += [f"meta: block {v['block_id']}" for v in mg["violations"]]
+    if not AZURE_OPENAI_API_KEY:
+        missing.append("AZURE_OPENAI_API_KEY")
 
-    # citations resolve against every legitimate namespace:
-    #   payload paths | computed metric ids (bare or 'metric:' prefixed)
-    #   derived-facts paths | gap directive ids
-    metric_ids = set(wp["computed_metrics"].keys())
-    df_keys = set((wp.get("derived_facts") or {}).keys())
-    gap_ids = {g["directive_id"] for g in wp.get("gap_directives", [])}
+    if not AZURE_STRONG_URL:
+        missing.append(
+            "AZURE_OPENAI_GPT52_DEPLOYMENT_URL"
+        )
 
-    def _resolves(cit: str) -> bool:
-        cit = cit.strip()
-        if cit.startswith("metric:"):
-            return cit[7:] in metric_ids
-        if cit in metric_ids or cit in gap_ids:
-            return True
-        top = re.split(r"[.\[]", cit, maxsplit=1)[0]
-        return bool(top) and (top in wp["payload_slice"] or top in df_keys
-                              or top in ("derived_facts", "computed_metrics"))
+    if not AZURE_FAST_URL:
+        missing.append(
+            "AZURE_OPENAI_FAST_DEPLOYMENT_URL"
+        )
 
-    for b in blocks:
-        for cit in b.get("citations", []) or []:
-            if isinstance(cit, str) and not _resolves(cit):
-                issues.append(f"citation: unresolvable '{cit}' in {b['block_id']}")
+    if missing:
+        raise ValueError(
+            "Missing Azure configuration:\n"
+            + "\n".join(f"- {name}" for name in missing)
+        )
 
-    # mandatory coverage claimed
-    mandatory = {r["requirement_id"] for r in wp["requirements"] if r["mandatory"]}
-    claimed = {rid for b in blocks for rid in b.get("requirement_ids", [])}
-    for rid in sorted(mandatory - claimed):
-        issues.append(f"coverage: mandatory {rid} not claimed")
+    for name, url in {
+        "strong": AZURE_STRONG_URL,
+        "fast": AZURE_FAST_URL,
+    }.items():
+        if not url.startswith("https://"):
+            raise ValueError(
+                f"The {name} Azure URL must start with https://"
+            )
 
-    # gap postures present where the topic is discussed
-    full_text = " ".join(b.get("text", "") for b in blocks)
-    for gid, (trigger, pats) in _POSTURE_INVARIANTS.items():
-        if re.search(trigger, full_text):
-            for p in pats:
-                if not re.search(p, full_text, re.IGNORECASE):
-                    issues.append(f"posture {gid}: pattern '{p}' absent though topic discussed")
-
-    return {"section": section_key, "n_blocks": len(blocks), "issues": issues,
-            "passed": not issues}
+        if "/chat/completions" not in url:
+            raise ValueError(
+                f"The {name} Azure URL must contain "
+                f"'/chat/completions'."
+            )
 
 
-def cold_audit(section_key: str) -> dict:
-    """Independent full-pass fact + coverage judgment of the FINAL blocks."""
-    wp = json.loads((PHASE_A_OUTPUT_DIR / f"work_package_{section_key}.json").read_text(encoding="utf-8"))
-    wp["_allowed_numbers"] = json.loads((PHASE_A_OUTPUT_DIR / "allowed_numbers.json").read_text(encoding="utf-8"))
-    draft = json.loads((PHASE_B_OUTPUT_DIR / f"draft_{section_key}.json").read_text(encoding="utf-8"))
-    state = {"section_key": section_key, "work_package": wp, "blocks": draft["blocks"],
-             "plan": draft.get("plan") or {"subsections": []}, "revision_count": 0}
-    fr = node_fact_judge(state)["fact_report"]
-    cr = node_coverage_judge(state)["coverage_report"]
-    defects = [dict(v, gate="fact_judge") for v in fr.get("violations", [])
-               if v.get("kind") in FACT_BLOCKING_KINDS and not _is_pseudo_violation(v)]
-    for w in cr.get("weak", []) + cr.get("missing", []):
-        defects.append({"kind": "weak_coverage" if w.get("fixable_with_provided_data", True)
-                        else "add_limitation_statement",
-                        "detail": w.get("detail"), "gate": "coverage_judge"})
-    score = section_quality_score(defects, len(draft["blocks"]))
-    return {"section": section_key, "verified_score": score, "n_defects": len(defects),
-            "defects": defects}
+validate_llm_config()
 
 
-def canary_recall(section_key: str, seed: int = 7) -> dict:
-    """Inject known defects into a copy of the final blocks; measure gate+judge recall."""
-    rng = random.Random(seed)
-    wp = json.loads((PHASE_A_OUTPUT_DIR / f"work_package_{section_key}.json").read_text(encoding="utf-8"))
-    wp["_allowed_numbers"] = json.loads((PHASE_A_OUTPUT_DIR / "allowed_numbers.json").read_text(encoding="utf-8"))
-    draft = json.loads((PHASE_B_OUTPUT_DIR / f"draft_{section_key}.json").read_text(encoding="utf-8"))
-    blocks = copy.deepcopy(draft["blocks"])
-    paras = [b for b in blocks if b.get("type") == "paragraph" and len(b.get("text", "")) > 120]
-    if len(paras) < 5:  # fall back to any paragraph blocks
-        paras = [b for b in blocks if b.get("type") == "paragraph"]
-    if len(paras) < 5:
-        return {"section": section_key, "error": "not enough paragraph blocks for canaries"}
-    targets = rng.sample(paras, 5)
-    canaries = []
+# ============================================================
+# LLM logging
+# ============================================================
 
-    # C1 fabricated number (not in allowed set) - must be caught by the number gate
-    targets[0]["text"] += " Additional emissions of 123,456.7 tCO2e were recorded in the period."
-    canaries.append(("C1_fabricated_number", targets[0]["block_id"], "number_gate"))
-    # C2 fabricated committee - fact judge (entity/unsupported)
-    targets[1]["text"] += " These matters were also reviewed by the Quantum Climate Steering Council."
-    canaries.append(("C2_fabricated_entity", targets[1]["block_id"], "fact_judge"))
-    # C3 forbidden gap-year figure (uses an allowed numeral so only the judge can catch it)
-    yr = wp["comparative_years"][0]
-    some_disp = next(iter(wp["computed_metrics"].values()))["display"]
-    targets[2]["text"] += f" Fleet Scope 1 emissions for {yr} amounted to {some_disp} tCO2e."
-    canaries.append(("C3_forbidden_gap_claim", targets[2]["block_id"], "fact_judge"))
-    # C4 flipped pairing / false attribution
-    targets[3]["text"] += " The Full Board approved the climate scenario analysis methodology in 2022."
-    canaries.append(("C4_false_pairing", targets[3]["block_id"], "fact_judge"))
-    # C5 unsupported process claim
-    targets[4]["text"] += (" Management operates a proprietary AI-based early warning system that "
-                           "automatically reprices loans on climate signals.")
-    canaries.append(("C5_unsupported_process", targets[4]["block_id"], "fact_judge"))
-
-    allowed = set(wp["_allowed_numbers"])
-    years = {str(wp["reporting_year"])} | {str(y) for y in wp["comparative_years"]}
-    ng = number_gate(blocks, allowed, years, wp.get("entity_allowlist"))
-    flagged_by_gate = {v["block_id"] for v in ng["violations"]}
-
-    state = {"section_key": section_key, "work_package": wp, "blocks": blocks,
-             "plan": draft.get("plan") or {"subsections": []}, "revision_count": 0}
-    fr = node_fact_judge(state)["fact_report"]
-    flagged_by_judge = {v.get("block_id") for v in fr.get("violations", [])
-                        if not _is_pseudo_violation(v)}
-
-    results = []
-    for name, bid, expected in canaries:
-        caught = bid in (flagged_by_gate if expected == "number_gate"
-                         else flagged_by_gate | flagged_by_judge)
-        results.append({"canary": name, "block": bid, "expected_by": expected, "caught": caught})
-    recall = sum(r["caught"] for r in results) / len(results)
-    return {"section": section_key, "recall": recall, "results": results}
+_LLM_CALL_LOG = STAGE_DIRS["logs"] / "llm_calls.jsonl"
+_LLM_CALL_LOG.parent.mkdir(parents=True, exist_ok=True)
 
 
-# ---------------- run ----------------
-print("=== 1) Deterministic invariants ===")
-inv_rows = []
-for sec in VERIFY_SECTIONS:
-    r = deterministic_invariants(sec)
-    inv_rows.append({"section": sec, "invariants_passed": r["passed"], "issues": len(r["issues"])})
-    status = "OK" if r["passed"] else "ISSUES"
-    print(f"  {sec:<24} {status}  ({len(r['issues'])} issues)")
-    for i in r["issues"][:6]:
-        print("     -", i[:140])
-display(pd.DataFrame(inv_rows))
+def _log_llm(record: Dict[str, Any]) -> None:
+    with open(
+        _LLM_CALL_LOG,
+        "a",
+        encoding="utf-8",
+    ) as file:
+        file.write(
+            json.dumps(
+                record,
+                ensure_ascii=False,
+                default=str,
+            )
+            + "\n"
+        )
 
-if RUN_COLD_AUDIT and not PHASE_B_CONFIG["mock_mode"]:
-    print("\n=== 2) Cold-read audit (independent judge pass) ===")
-    recorded = {r["section_key"]: r.get("quality_score") for r in results}
-    audit_rows = []
-    for sec in VERIFY_SECTIONS:
-        a = cold_audit(sec)
-        delta = None if recorded.get(sec) is None else round(a["verified_score"] - recorded[sec], 1)
-        audit_rows.append({"section": sec, "recorded": recorded.get(sec),
-                           "verified": a["verified_score"], "delta": delta,
-                           "audit_defects": a["n_defects"]})
-        print(f"  {sec:<24} recorded={recorded.get(sec)} verified={a['verified_score']} delta={delta}")
-    display(pd.DataFrame(audit_rows))
 
-if RUN_CANARY and not PHASE_B_CONFIG["mock_mode"]:
-    print("\n=== 3) Canary recall test ===")
-    c = canary_recall(CANARY_SECTION)
-    if "error" in c:
-        print(" ", c["error"])
-    else:
-        for r in c["results"]:
-            print(f"  {r['canary']:<26} expected_by={r['expected_by']:<12} caught={r['caught']}")
-        print(f"  JUDGE+GATE RECALL: {c['recall']:.0%}  "
-              f"({'meaningful scores' if c['recall'] >= 0.8 else 'treat scores as upper bounds'})")
+# ============================================================
+# Azure HTTP errors
+# ============================================================
+
+class AzureHTTPError(RuntimeError):
+    def __init__(
+        self,
+        status_code: int,
+        response_body: str,
+        headers: Optional[Dict[str, str]] = None,
+    ):
+        self.status_code = status_code
+        self.response_body = response_body
+        self.headers = headers or {}
+
+        super().__init__(
+            f"Azure HTTP {status_code}:\n"
+            f"{response_body[:3000]}"
+        )
+
+
+def _azure_request(
+    url: str,
+    body: Dict[str, Any],
+    timeout: int = 240,
+) -> Dict[str, Any]:
+
+    request = urllib.request.Request(
+        url,
+        data=json.dumps(body).encode("utf-8"),
+        headers={
+            "Content-Type": "application/json",
+            "api-key": AZURE_OPENAI_API_KEY or "",
+        },
+        method="POST",
+    )
+
+    try:
+        with urllib.request.urlopen(
+            request,
+            timeout=timeout,
+        ) as response:
+            return json.loads(
+                response.read().decode("utf-8")
+            )
+
+    except urllib.error.HTTPError as exc:
+        response_body = exc.read().decode(
+            "utf-8",
+            errors="replace",
+        )
+
+        headers = (
+            dict(exc.headers.items())
+            if exc.headers
+            else {}
+        )
+
+        raise AzureHTTPError(
+            status_code=exc.code,
+            response_body=response_body,
+            headers=headers,
+        ) from exc
+
+
+# ============================================================
+# Response helpers
+# ============================================================
+
+def _strip_json_fences(text: str) -> str:
+    text = str(text or "").strip()
+
+    text = re.sub(
+        r"^```(?:json)?\s*",
+        "",
+        text,
+        flags=re.IGNORECASE,
+    )
+
+    text = re.sub(
+        r"\s*```$",
+        "",
+        text,
+    )
+
+    return text.strip()
+
+
+def _parse_json_content(
+    content: str,
+    role_label: str,
+) -> Dict[str, Any]:
+
+    candidate = _strip_json_fences(content)
+
+    try:
+        return json.loads(candidate)
+
+    except json.JSONDecodeError:
+        # Handle short commentary before or after the JSON.
+        first_brace = candidate.find("{")
+        last_brace = candidate.rfind("}")
+
+        if first_brace >= 0 and last_brace > first_brace:
+            extracted = candidate[
+                first_brace:last_brace + 1
+            ]
+
+            try:
+                return json.loads(extracted)
+            except json.JSONDecodeError:
+                pass
+
+        raise ValueError(
+            f"LLM call '{role_label}' returned invalid JSON.\n"
+            f"Response preview:\n{candidate[:2000]}"
+        )
+
+
+def _retry_after_seconds(
+    headers: Dict[str, str],
+) -> Optional[float]:
+
+    value = (
+        headers.get("Retry-After")
+        or headers.get("retry-after")
+    )
+
+    if value is None:
+        return None
+
+    try:
+        return float(value)
+    except (TypeError, ValueError):
+        return None
+
+
+# ============================================================
+# Main engine LLM function
+# ============================================================
+
+def llm_json(
+    role_label: str,
+    system: str,
+    user: str,
+    max_tokens: int = 4000,
+    temperature: Optional[float] = None,
+) -> Dict[str, Any]:
+    """
+    JSON-returning Azure call used by the engine.
+
+    The temperature argument remains in the signature so existing
+    engine calls do not need to change. It is deliberately not sent,
+    because some GPT-5/reasoning deployments reject temperature.
+    """
+
+    started_at = time.time()
+
+    # --------------------------------------------------------
+    # Mock mode
+    # --------------------------------------------------------
+
+    if LLM_MODE == "mock":
+        handler_name = role_label.split(":")[0]
+        handler = MOCK_HANDLERS.get(handler_name)
+
+        if handler is None:
+            raise RuntimeError(
+                f"No mock handler for LLM role '{role_label}'"
+            )
+
+        output = handler(system, user)
+
+        _log_llm({
+            "role": role_label,
+            "mode": "mock",
+            "latency_s": round(
+                time.time() - started_at,
+                3,
+            ),
+        })
+
+        return output
+
+    # --------------------------------------------------------
+    # Azure routing
+    # --------------------------------------------------------
+
+    role_name = role_label.split(":")[0]
+
+    tier = MODEL_TIERS.get(
+        role_name,
+        "strong",
+    )
+
+    url = (
+        AZURE_STRONG_URL
+        if tier == "strong"
+        else AZURE_FAST_URL
+    )
+
+    if not url or not AZURE_OPENAI_API_KEY:
+        raise RuntimeError(
+            "Azure URL or API key is not configured."
+        )
+
+    base_body = {
+        "messages": [
+            {
+                "role": "system",
+                "content": system,
+            },
+            {
+                "role": "user",
+                "content": user,
+            },
+        ],
+        "response_format": {
+            "type": "json_object",
+        },
+    }
+
+    # Preferred field first; legacy fallback second.
+    token_fields = [
+        "max_completion_tokens",
+        "max_tokens",
+    ]
+
+    max_attempts = 6
+    last_error: Optional[Exception] = None
+
+    for token_field in token_fields:
+        body = dict(base_body)
+        body[token_field] = max_tokens
+
+        for attempt in range(1, max_attempts + 1):
+            try:
+                data = _azure_request(
+                    url=url,
+                    body=body,
+                )
+
+                try:
+                    content = data[
+                        "choices"
+                    ][0][
+                        "message"
+                    ][
+                        "content"
+                    ]
+                except (KeyError, IndexError, TypeError) as exc:
+                    raise ValueError(
+                        "Unexpected Azure response:\n"
+                        + json.dumps(
+                            data,
+                            ensure_ascii=False,
+                            indent=2,
+                        )[:3000]
+                    ) from exc
+
+                result = _parse_json_content(
+                    content=content,
+                    role_label=role_label,
+                )
+
+                _log_llm({
+                    "role": role_label,
+                    "mode": "azure",
+                    "tier": tier,
+                    "token_field": token_field,
+                    "attempt": attempt,
+                    "latency_s": round(
+                        time.time() - started_at,
+                        3,
+                    ),
+                    "prompt_chars": len(system) + len(user),
+                    "completion_chars": len(content),
+                    "usage": data.get("usage", {}),
+                })
+
+                return result
+
+            except AzureHTTPError as exc:
+                last_error = exc
+
+                _log_llm({
+                    "role": role_label,
+                    "mode": "azure",
+                    "tier": tier,
+                    "token_field": token_field,
+                    "attempt": attempt,
+                    "status_code": exc.status_code,
+                    "response": exc.response_body[:1500],
+                })
+
+                # Request compatibility error.
+                if exc.status_code in {400, 422}:
+                    if token_field == "max_completion_tokens":
+                        print(
+                            f"{role_label}: "
+                            "`max_completion_tokens` was rejected; "
+                            "trying `max_tokens`."
+                        )
+                        break
+
+                    raise RuntimeError(
+                        f"LLM call '{role_label}' was rejected.\n"
+                        f"{exc}"
+                    ) from exc
+
+                # Rate limit.
+                if exc.status_code == 429:
+                    if attempt < max_attempts:
+                        retry_after = _retry_after_seconds(
+                            exc.headers
+                        )
+
+                        wait = (
+                            retry_after
+                            if retry_after is not None
+                            else min(
+                                (2 ** attempt) + random.random(),
+                                60,
+                            )
+                        )
+
+                        print(
+                            f"{role_label}: rate limited; "
+                            f"retrying in {wait:.1f}s."
+                        )
+
+                        time.sleep(wait)
+                        continue
+
+                    raise
+
+                # Temporary Azure/server errors.
+                if exc.status_code in {
+                    500,
+                    502,
+                    503,
+                    504,
+                }:
+                    if attempt < max_attempts:
+                        wait = min(
+                            2 ** (attempt - 1)
+                            + random.random(),
+                            12,
+                        )
+
+                        print(
+                            f"{role_label}: Azure error "
+                            f"{exc.status_code}; retrying "
+                            f"in {wait:.1f}s."
+                        )
+
+                        time.sleep(wait)
+                        continue
+
+                    raise
+
+                raise
+
+            except (
+                urllib.error.URLError,
+                TimeoutError,
+                ConnectionError,
+                OSError,
+            ) as exc:
+                last_error = exc
+
+                _log_llm({
+                    "role": role_label,
+                    "mode": "azure",
+                    "tier": tier,
+                    "token_field": token_field,
+                    "attempt": attempt,
+                    "error": repr(exc)[:1500],
+                })
+
+                if attempt < max_attempts:
+                    wait = min(
+                        2 ** (attempt - 1)
+                        + random.random(),
+                        12,
+                    )
+
+                    print(
+                        f"{role_label}: connection problem; "
+                        f"retrying in {wait:.1f}s."
+                    )
+
+                    time.sleep(wait)
+                    continue
+
+                raise RuntimeError(
+                    f"LLM call '{role_label}' failed because "
+                    f"of a connection problem: {exc}"
+                ) from exc
+
+    raise RuntimeError(
+        f"LLM call '{role_label}' failed.\n"
+        f"Last Azure error:\n{last_error}"
+    )
+
+
+# ============================================================
+# Prompt truncation — required by later engine cells
+# ============================================================
+
+def truncate_for_prompt(
+    obj: Any,
+    max_chars: int = 60000,
+) -> str:
+
+    text = json.dumps(
+        obj,
+        ensure_ascii=False,
+        indent=1,
+        default=str,
+    )
+
+    if len(text) <= max_chars:
+        return text
+
+    return (
+        text[:max_chars - 60]
+        + "\n...[truncated for prompt length]..."
+    )
+
+
+# Later cells register the mock handlers.
+MOCK_HANDLERS: Dict[str, Any] = {}
+
+
+# ============================================================
+# Connection test
+# ============================================================
+
+def test_engine_llm(
+    tier: str = "strong",
+) -> Dict[str, Any]:
+
+    role_label = (
+        "writer:connection_test"
+        if tier == "strong"
+        else "style_judge:connection_test"
+    )
+
+    result = llm_json(
+        role_label=role_label,
+        system=(
+            "Return one valid JSON object only. "
+            "Do not use markdown."
+        ),
+        user='Return {"status": "ok"}.',
+        max_tokens=500,
+    )
+
+    print(f"{tier} endpoint response:", result)
+    return result
+
+
+print(
+    "LLM client ready | "
+    f"mode={LLM_MODE} | "
+    f"strong_url={'set' if AZURE_STRONG_URL else 'MISSING'} | "
+    f"fast_url={'set' if AZURE_FAST_URL else 'MISSING'}"
+)
